@@ -1,0 +1,15 @@
+# this is the material for my light source:
+
+void light bright
+0
+0
+3  100  100  100
+#^ r_radiance g_radiance b_radiance ^#
+
+# here is the light source:
+
+bright sphere fixture
+0
+0
+4  2  1  1.5  .125
+#^  xcent  ycent  zcent  radius  ^#

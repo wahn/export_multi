@@ -1,0 +1,14 @@
+ZONE= I 0 3 0 2 0 1.75
+scene= sky.rad
+scene= fixture.rad
+scene= outside2.rad
+scene= room.rad
+scene= window.rad
+EXPOSURE= 0.006
+VAR= High
+DET= L
+QUAL= Med
+AMB= cam2.amb
+INDIRECT= 1
+view= cam2 -vp 3.932 0.916 0.893 -vd -3.536 0.243 0.336
+RESOLUTION= 500

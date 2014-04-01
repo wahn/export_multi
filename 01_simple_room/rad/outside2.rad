@@ -1,0 +1,49 @@
+#
+# A standard sky and ground to follow
+# a gensky sun and sky distribution.
+#
+
+skyfunc glow sky_glow
+0
+0
+4 .9 .9 1.15 0
+
+sky_glow source sky
+0
+0
+4 0 0 1 180
+
+skyfunc glow ground_glow
+0
+0
+4 1.4 .9 .6 0
+
+ground_glow source ground
+0
+0
+4 0 0 -1 180
+
+# Terra Firma:
+
+void plastic ground_mat
+0
+0
+5 .28 .18 .12 0 0
+
+ground_mat ring groundplane
+0
+0
+8
+	0	0	-.01
+	0	0	1
+	0	30
+
+# A big, ugly, mirrored glass building:
+
+void mirror reflect20
+0
+0
+3 .15 .2 .2
+
+!genbox reflect20 building 10 10 2 \
+	| xform -t 10 5 0

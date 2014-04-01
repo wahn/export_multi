@@ -1,0 +1,154 @@
+#
+#  My first scene.
+#
+
+#
+# The basic primitive format is:
+#
+# modifier TYPE identifier
+# number_string_arguments [string arguments...]
+# number_integer_arguments [integer arguments...]
+# number_real_arguments [real arguments...]
+#
+# The special modifier "void" means no modifier.
+# TYPE is one of a finite number of
+# predefined types, and the meaning of
+# the arguments following is determined by
+# this type.  (See Radiance Reference
+# Manual on the CD-ROM for details.)
+# The identifier may be used as a modifier later
+# in this file or in files following this one.
+# All values are separated by white
+# space (spaces, tabs, newlines).
+#
+
+# this is the material for my test ball:
+
+void plastic red_plastic
+0
+0
+5  .7  .05  .05  .05  .05
+#^  red  green  blue  specularity  roughness  ^#
+
+# solid crystal:
+
+void dielectric crystal
+0
+0
+5  .5  .5  .5  1.5  0
+
+# dark brown:
+
+void plastic brown
+0
+0
+5  .2  .1  .1  0  0
+
+# light gray:
+
+void plastic white
+0
+0
+5  .7  .7  .7  0  0
+
+# here is the ball:
+
+crystal sphere ball
+0
+0
+4  .7  1.125  .625  .125
+
+# the wall material:
+
+void plastic gray_paint
+0
+0
+5  .5  .5  .5  0  0
+
+# a shiny blue box:
+
+void plastic blue_plastic
+0
+0
+5 .1 .1 .6 .05 .1
+
+!genbox blue_plastic box .5 .5 .5 \
+	| xform -rz 15 -t  .5 .75 0
+
+# a chrome rod to suspend
+# the light from the ceiling:
+
+void metal chrome
+0
+0
+5  .8  .8  .8  .9  0
+
+chrome cylinder fixture_support
+0
+0
+7
+	2	1	1.6
+	2	1	1.75
+	.05
+
+# genbox gray_paint room 3 2 1.75 -i
+
+gray_paint polygon room.1540
+0
+0
+12
+	                 0	                 0	                 0
+	                 0	                 0	              1.75
+	                 3	                 0	              1.75
+	                 3	                 0	                 0
+
+gray_paint polygon room.4620
+0
+0
+12
+	                 0	                 0	                 0
+	                 0	                 2	                 0
+	                 0	                 2	              1.75
+	                 0	                 0	              1.75
+
+brown polygon room.2310
+0
+0
+12
+	                 0	                 0	                 0
+	                 3	                 0	                 0
+	                 3	                 2	                 0
+	                 0	                 2	                 0
+
+gray_paint polygon room.3267
+0
+0
+12
+	                 3	                 2	              1.75
+	                 0	                 2	              1.75
+	                 0	                 2	                 0
+	                 3	                 2	                 0
+
+gray_paint polygon room.5137
+0
+0
+30
+	3	2	1.75
+	3	2	0
+	3	0	0
+	3	0	1.75
+	3	.625	1.75
+	3	.625	.625
+	3	1.375	.625
+	3	1.375	1.375
+	3	.625	1.375
+	3	.625	1.75
+
+white polygon room.6457
+0
+0
+12
+	                 3	                 2	              1.75
+	                 3	                 0	              1.75
+	                 0	                 0	              1.75
+	                 0	                 2	              1.75

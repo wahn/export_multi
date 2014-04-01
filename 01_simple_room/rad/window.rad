@@ -1,0 +1,9 @@
+# an 88% transmittance glass window has
+# a transmission of 96%:
+
+void glass window_glass
+0
+0
+3 .96 .96 .96
+
+!genbox window_glass window .01 .75 .75 | xform -t 2.99 .625 .625
