@@ -200,19 +200,26 @@ point_light
  samples 2
 }
 
-# sphere
-# {
-#  name CUfixture
-#  radius 1
-#  matrix
-#  0.125 0 0 0
-#  0 0.125 0 0
-#  0 0 0.125 0
-#  2 1 1.5 1
-#  visibility 255
-#  shader "MAbright"
-#  opaque on
-# }
+sphere
+{
+ name CUfixture
+ radius 1
+ matrix
+ 0.125 0 0 0
+ 0 0.125 0 0
+ 0 0 0.125 0
+ 2 1 1.5 1
+ visibility 255
+ shader "MAbright"
+ opaque on
+}
+
+utility
+{
+ name MAbright
+ shade_mode 2 # flat
+ color 5 5 5 # intensity 3 of point_light
+}
 
 # standard
 # {
