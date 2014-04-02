@@ -22,14 +22,14 @@ options
  bucket_size 64
  bucket_scanning "hilbert"
  camera "CAcam1"
- ##background "sun_sky"
+ background "sun_sky"
  shader_searchpath "/usr/people/jan/Graphics/Rendering/Arnold/shaders/current"
- GI_diffuse_depth 1
+ GI_diffuse_depth 2
  GI_glossy_depth 0
  GI_reflection_depth 6
  GI_refraction_depth 6
  GI_total_depth 12
- GI_diffuse_samples 7
+ GI_diffuse_samples 2 # 7
  GI_single_scatter_samples 5
  GI_glossy_samples 2
  GI_refraction_samples 2
@@ -126,25 +126,27 @@ driver_exr
  filename "arnold_aov_indirect_specular.exr"
 }
 
-# physical_sky
-# {
-#  name sun_sky
-#  turbidity 2
-#  elevation 43.2858849
-#  azimuth -54.6264381
-#  sun_direction 0 1 0
-#  intensity 1
-#  X 1 0 0
-#  Y 0 0 1
-#  Z 0 1 0
-# }
+physical_sky
+{
+ name sun_sky
+ turbidity 2
+ elevation 43.2858849
+ azimuth -54.6264381
+ sun_direction 0 1 0
+ intensity 100
+ X 1 0 0
+ Y 0 0 1
+ Z 0 1 0
+}
 
-# skydome_light
-# {
-#  name sun_skydome
-#  color sun_sky
-#  intensity 1
-# }
+skydome_light
+{
+ name sun_skydome
+ resolution 4096
+ color sun_sky
+ intensity 1
+ samples 6
+}
 
 polymesh
 {
@@ -186,19 +188,19 @@ standard
  IOR 1.51999998
 }
 
-point_light
-{
- name LAfixture
- radius 1
- color 1 1 1
- intensity 3
- matrix
- 0.125 0 0 0
- 0 0.125 0 0
- 0 0 0.125 0
- 2 1 1.5 1
- samples 3
-}
+# point_light
+# {
+#  name LAfixture
+#  radius 1
+#  color 1 1 1
+#  intensity 3
+#  matrix
+#  0.125 0 0 0
+#  0 0.125 0 0
+#  0 0 0.125 0
+#  2 1 1.5 1
+#  samples 3
+# }
 
 sphere
 {
@@ -214,11 +216,16 @@ sphere
  opaque on
 }
 
-utility
+# utility
+# {
+#  name MAbright
+#  shade_mode 2 # flat
+#  color 5 5 5 # intensity 3 of point_light
+# }
+
+standard
 {
  name MAbright
- shade_mode 2 # flat
- color 5 5 5 # intensity 3 of point_light
 }
 
 # standard
