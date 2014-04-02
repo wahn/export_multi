@@ -29,7 +29,7 @@ options
  GI_reflection_depth 6
  GI_refraction_depth 6
  GI_total_depth 12
- GI_diffuse_samples 2
+ GI_diffuse_samples 7
  GI_single_scatter_samples 5
  GI_glossy_samples 2
  GI_refraction_samples 2
@@ -197,7 +197,7 @@ point_light
  0 0.125 0 0
  0 0 0.125 0
  2 1 1.5 1
- samples 2
+ samples 3
 }
 
 sphere
