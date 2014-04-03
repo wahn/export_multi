@@ -1,0 +1,108 @@
+24,25c24,26
+<  camera "CAcam1"
+<  background "sun_sky"
+---
+>  camera "CAcam4"
+>  # background "sun_sky"
+>  background "PhysicalSky"
+27,28c28,29
+<  GI_diffuse_depth 2
+<  GI_glossy_depth 0
+---
+>  GI_diffuse_depth 1 # 2
+>  GI_glossy_depth 1
+129c130
+< physical_sky
+---
+> aaPhysicalSky
+131c132,133
+<  name sun_sky
+---
+>  name PhysicalSky
+>  y_is_up off
+133,148c135,156
+<  elevation 43.2858849
+<  azimuth -54.6264381
+<  sun_direction 0 1 0
+<  intensity 100
+<  X 1 0 0
+<  Y 0 0 1
+<  Z 0 1 0
+< }
+< 
+< skydome_light
+< {
+<  name sun_skydome
+<  resolution 4096
+<  color sun_sky
+<  intensity 1
+<  samples 6
+---
+>  multiplier 1
+>  sun_dir_x 4.21408987
+>  sun_dir_y -5.9355998
+>  sun_dir_z 6.85639
+>  ground_color 0.611 0.392 0.262 1 # 0.28 0.18 0.12 1
+>  sun_intensity 1
+> }
+> 
+> distant_light
+> {
+>  name sun
+>  matrix
+>  0.815394998 0.578904927 0 0
+>  -0.396919876 0.559066772 0.727941692 0
+>  0.421409011 -0.59356004 0.685639083 0
+>  4.21408987 -5.9355998 6.85639 1
+>  color 1 1 1
+>  intensity 10
+>  cast_shadows on
+>  samples 1
+>  affect_diffuse on
+>  affect_specular on
+150a159,180
+> # physical_sky
+> # {
+> #  name sun_sky
+> #  turbidity 2
+> #  elevation 43.2858849
+> #  azimuth -54.6264381
+> #  sun_direction 0 1 0
+> #  intensity 100
+> #  X 1 0 0
+> #  Y 0 0 1
+> #  Z 0 1 0
+> # }
+> 
+> # skydome_light
+> # {
+> #  name sun_skydome
+> #  resolution 4096
+> #  color sun_sky
+> #  intensity 1
+> #  samples 6
+> # }
+> 
+274,275c304,305
+<  Ks 0
+<  Ks_color 1 1 1
+---
+>  Ks 1
+>  Ks_color 0.150000006 0.200000003 0.200000003
+276a307
+>  specular_roughness 0
+278a310,311
+>  enable_glossy_caustics true
+>  enable_reflective_caustics true
+302a336,337
+>  enable_glossy_caustics true
+>  enable_reflective_caustics true
+335c370
+<  Ks 0
+---
+>  Ks 0.05
+337c372,373
+<  Kr 0.0500000007
+---
+>  specular_roughness 0.1
+>  Kr 0.05
