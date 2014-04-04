@@ -23,12 +23,12 @@ options
  bucket_scanning "hilbert"
  camera "CACamera"
  shader_searchpath "/usr/people/jan/Graphics/Rendering/Arnold/shaders/current"
- GI_diffuse_depth 1 # 2
+ GI_diffuse_depth 2
  GI_glossy_depth 0
  GI_reflection_depth 6
  GI_refraction_depth 6
  GI_total_depth 12
- GI_diffuse_samples 12
+ GI_diffuse_samples 20
  GI_single_scatter_samples 5
  GI_glossy_samples 2
  GI_refraction_samples 2
