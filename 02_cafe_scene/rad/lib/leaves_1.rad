@@ -1,0 +1,17 @@
+### leaves_1.rad   Rendering with Radiance
+#                  collect leaf segment into 1/2 of a branch  
+
+!xform -n l1 -ry -10     -rz -125 -ry 25  -s .12 -t 0 0 0 leaf_1.rad
+!xform -n l2 -ry -10 -mx -rz -125 -ry 25  -s .12 -t 0 0 0 leaf_1.rad
+
+!xform -n l3 -ry 20     -rz -100 -ry 20  -s .15 -t 0 .04 0 leaf_1.rad
+!xform -n l4 -ry 20 -mx -rz -100 -ry 20  -s .15 -t 0 .04 0 leaf_1.rad
+
+!xform -n l5 -ry 25     -rz -65   -ry 0   -s .14 -t 0 .06  0 leaf_1.rad
+!xform -n l6 -ry 25 -mx -rz -65   -ry 0   -s .14 -t 0 .06  0 leaf_1.rad
+
+!xform -n l7 -ry 10     -rz -45 -rx 20   -s .12 -t 0 .1 .025 leaf_1.rad
+!xform -n l8 -ry 10 -mx -rz -45 -rx 20   -s .12 -t 0 .1 .025 leaf_1.rad
+
+!xform -n l9 -ry 30 -mx -rz 0   -rx 35   -s .10 -t 0 .125  .05  leaf_1.rad
+# end leaves_1.rad

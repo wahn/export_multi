@@ -1,0 +1,43 @@
+### flower.rad  Rendering with Radiance
+# 	rose bud, stem and two branches of leaves
+# 	requires leaves_1.rad (leaf.rad)
+
+void plastic red1
+0
+0
+5 1 0 0 0 0 
+
+void plastic green3
+0
+0
+5 0 .8 .1 0 0 
+
+red1 cone rosea
+0
+0
+8   0  0   0
+    0  0  .075
+    .02  0
+
+red1 sphere roseb
+0
+0
+4    0  0 0 .02 
+
+green3 cone stem1
+0
+0
+8    0 0 -.01 
+     0 0 -.03
+     .02 .004
+
+green3 cylinder stem2 
+0
+0
+7	0 0 -.03
+	0 0 -.4
+	.004
+
+!xform -n lvs1 -s 1   -a 2  -mx -i 1 -rx 45 -t 0  0 -.075  leaves_1.rad
+!xform -n lvs2 -s .7  -a 2  -mx -i 1 -rx -65 -rz 140 -t 0  0 -.125  leaves_1.rad
+# end flower.rad

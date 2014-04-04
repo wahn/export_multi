@@ -1,0 +1,59 @@
+### fixture_1.rad   Rendering with Radiance
+#                   decorative wall sconce
+
+void plastic   red_porcelain
+0
+0
+5    .7   .05   .05   .05  .02
+
+void light diffuse
+0
+0
+3  2.6 1.7  .6
+
+void light lumensf
+0
+0
+3  15.794  10.413  3.993
+
+red_porcelain cylinder post1
+0
+0
+7	-.45 0 -.45
+	-.45 -.45 -.45
+	.025
+
+red_porcelain cylinder post2
+0
+0
+7	 .45 0 -.45
+	 .45 -.45 -.45
+	.025
+
+red_porcelain cylinder post3
+0
+0
+7	 .45 0  .45
+	 .45 -.45  .45
+	.025
+
+red_porcelain cylinder post4
+0
+0
+7	 -.45 0  .45
+	 -.45 -.45  .45
+	.025
+
+diffuse polygon lens
+0
+0
+12  -.5 -.5  -.5
+    .5  -.5  -.5
+    .5  -.5  .5
+    -.5  -.5  .5
+
+lumensf sphere bulbf
+0
+0
+4   0 -.25 0 .2
+#end fixture_1.rad

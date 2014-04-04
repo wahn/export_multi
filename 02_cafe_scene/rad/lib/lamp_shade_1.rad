@@ -1,0 +1,87 @@
+### lamp_shade1.rad  Rendering with Radiance
+# 	canopy decorative shade
+
+void plastic   green_gloss
+0
+0
+5    .1 .6 .2 .1 .02
+
+void plastic   white_matte
+0
+0
+5    .8 .8 .8 0 0
+
+# white light for 55_w tungsten spherical  lamp r = .25
+void      light     lumens
+0
+0
+3    200 200 200
+
+green_gloss    cone shade_out_1
+0
+0
+8    0 0 0
+     0 0 .2
+     .75 .7
+
+green_gloss    cone shade_out_2
+0
+0
+8    0 0 .2
+     0 0 .4
+     .7 .3
+
+green_gloss    cone shade_out_3
+0
+0
+8    0 0 .4
+     0 0 .7
+     .3 .2
+
+green_gloss    ring shade_out_4
+0
+0
+8    0 0 .7
+     0 0  1
+     .2  0
+
+white_matte    ring shade_in_0
+0
+0
+8    0 0 0
+     0 0 -1
+     .75 .725
+
+white_matte    cone shade_in_1
+0
+0
+8    0 0 0
+     0 0 .2
+     .725 .675
+
+white_matte    cone shade_in_2
+0
+0
+8    0 0 .2
+     0 0 .4
+     .675 .275
+
+white_matte    cone shade_in_3
+0
+0
+8    0 0 .4
+     0 0 .675
+     .275 .175
+
+white_matte    ring shade_in_4
+0
+0
+8    0 0 .675
+     0 0  1
+     .175  0
+
+lumens    sphere    55w_lightbulb
+0
+0
+4    0 0 .25     .25
+# end lamp_shade1.rad

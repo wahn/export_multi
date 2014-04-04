@@ -1,0 +1,41 @@
+### mirror.rad  Rendering with Radiance
+#
+
+void mirror  mirror_glass
+0
+0
+3  .8 .8 .8 
+
+void metal antique_copper
+0
+0
+5  .136  .102  .083  .3  .2
+
+mirror_glass ring mirror_ring
+0
+0
+8  0 0 0 
+   0 -1 0
+   1.25 0
+
+antique_copper cylinder f1
+0
+0
+7  0 0 0 
+   0 -.1 0
+   1.35
+
+antique_copper tube f2
+0
+0
+7  0 0 0 
+   0 -.1 0
+   1.25
+
+antique_copper ring f3
+0
+0
+8 0 -.1 0
+  0 -1 0 
+  1.25 1.35 
+# end mirror.rad 

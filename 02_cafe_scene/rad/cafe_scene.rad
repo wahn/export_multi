@@ -1,0 +1,86 @@
+# warm light for decorative light panel 1sq'
+void light diffuse
+0
+0
+3  4 3  1.5
+
+# warm light lamp behind decorative panel, spherical r = .2
+void light lumensf
+0
+0
+3  12  10  6
+
+void   plastic        brown_satin_paint
+0
+0
+5    0.2  0.1  0.01 0.05 0.03
+
+void plastic   red_porcelain
+0
+0
+5    .7   .05   .05   .05  .02
+
+void plastic   cream_porcelain
+0
+0
+5    .6   .45   .3   .05  .02
+
+void plastic   red_tile
+0
+0
+5    .5  .01 .05 0.02  0.03
+
+void plastic   white_tile
+0
+0
+5    .6  .5 .3  0.02  0.03
+
+void plastic red1
+0
+0
+5 1 0 0 0 0 
+
+void plastic green3
+0
+0
+5 0 .8 .1 0 0 
+
+void plastic green1
+0
+0
+5 0 1 0 0 0 
+
+void mirror  mirror_glass
+0
+0
+3  .8 .8 .8 
+
+void metal antique_copper
+0
+0
+5  .136  .102  .083  .3  .2
+
+void plastic frame_brown
+0
+0
+5  .2 .05 .01 0 0 
+
+!cat ./lib/table_1.rad
+!cat ./lib/vase_1.rad
+!cat ./lib/wall_ceiling.rad 
+
+# locate stools
+!xform    -n stool1          -t -2.0 0 0  lib/stool_1.rad
+!xform    -n stool2  -rz 30  -t  2.5 0 0  lib/stool_1.rad
+
+# floor
+!xform -n floor   -t -4 -4 0   -a 4 -t 2 0 0   -a 4 -t 0 2 0   -i 1  lib/tile_x4_1.rad
+
+# locate the rose in the vase
+!xform -n rose -s 2.5  -rz -30 -ry 2 -t 0 0 5.05 lib/flower_1.rad
+
+# mirror
+!xform -n mirror -rx 5 -t 0 3.7 5 lib/mirror_1.rad
+
+# baseboard
+!xform -n baseboard -t -4 4 0 lib/baseboard_1.rad

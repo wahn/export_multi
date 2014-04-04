@@ -1,0 +1,11 @@
+### baseboard_1.rad   Rendering with Radiance
+#
+void plastic frame_brown
+0
+0
+5  .2 .05 .01 0 0 
+
+!genprism frame_brown baseboard1 \
+7    0 0  0 -.1    .05 -.1    .1 -.08   .4 -.08  \
+    .5 -.04    .5  0  -l 0 0 8  | xform -ry -90 -t 8 0 0    
+# end baseboard_1.rad

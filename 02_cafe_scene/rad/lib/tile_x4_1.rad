@@ -1,0 +1,18 @@
+### tile_4.rad  Rendering with Radiance
+#               makes a 4' x 4' section of tile
+
+void plastic   red_tile
+0
+0
+5    .5  .01 .05 0.02  0.03
+
+void plastic   white_tile
+0
+0
+5    .6  .5 .3  0.02  0.03
+
+!genbox   red_tile       tile_a   1 1 .1 -b .025  | xform -t 0 0 -.1
+!genbox   white_tile     tile_b   1 1 .1 -b .025  | xform -t 1 0 -.1
+!genbox   red_tile       tile_c   1 1 .1 -b .025  | xform -t 1 1 -.1
+!genbox   white_tile     tile_d   1 1 .1 -b .025  | xform -t 0 1 -.1
+# end tile_4.rad 

@@ -1,0 +1,38 @@
+# Based on 2400 lumens from from 2 x 18 watt fluorescent sources
+# 6" diffuse lensed aperture 
+# derated by .85 design lumens and .75 luminaire efficiency
+# illuminates the floor at approximately 10fc 
+void light lightring
+0
+0
+3 229.130493 151.068357 57.0
+
+# The center of this cone of light has four times the intensity of the
+# center of the fluorescent downlights.
+# Note that spotlight "clips" the diffuse output into a cone
+void  spotlight lightring2
+0
+0
+7 1344 888 85   40 0 0 -.1
+
+# warm light for decorative 1sq'. light panel 
+void light diffuse
+0
+0
+3  2.6 1.7  .6
+
+# warm globe lamp behind decorative panel, spherical r = .2
+void light lumensf
+0
+0
+3  15.794  10.413  3.993
+
+# two wall sconces
+!xform -n fix1 -ry 45  -t -2.75 4 6.5 lib/fixture_1.rad
+!xform -n fix2 -ry 45  -t  2.75 4 6.5 lib/fixture_1.rad
+
+# two recessed floodlights and a recessed spotlight
+!xform -n flood -t -3 -1 7.99 -a 2 -t 6 0 0 lib/downlight_a1.rad
+!xform -n spot  -t -0 -.5  7.99  lib/downlight_b1.rad
+
+# baseboard

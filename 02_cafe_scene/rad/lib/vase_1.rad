@@ -1,0 +1,61 @@
+### vase_1.rad   Rendering with Radiance
+#
+
+void plastic   red_porcelain
+0
+0
+5    .7   .05   .05   .05  .02
+
+void plastic   cream_porcelain
+0
+0
+5    .6   .45   .3   .05  .02
+
+red_porcelain  cone vase_a
+0
+0
+8    0 0 3.3
+     0 0 3.4
+     .20  .18
+
+red_porcelain  sphere    vase_b
+0
+0
+4    0 0 3.6  .3
+
+red_porcelain  cylinder  vase_c
+0
+0
+7    0 0 3.8
+     0 0 4.6
+     .05
+
+red_porcelain  cone vase_d
+0
+0
+8    0 0 4.6
+     0 0 4.625
+     .05  .08
+
+
+cream_porcelain     ring vase_e
+0
+0
+8    0 0 4.625
+     0 0 1
+     .08  .06
+
+cream_porcelain     cone vase_f
+0
+0
+8    0 0 4.625
+     0 0 4.6
+     .06 .03
+
+cream_porcelain  cylinder  vase_g
+0
+0
+7    0 0 3.8
+     0 0 4.6
+     .03
+# end vase_1.rad 

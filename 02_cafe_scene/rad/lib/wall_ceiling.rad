@@ -1,0 +1,11 @@
+### wall_ceiling.rad   Rendering with Radiance
+#
+
+void plastic   white_matte
+0
+0
+5    .8 .8 .8 0 0
+
+!genbox  white_matte wall     8 .2 8 | xform -t -4  4 0
+!genbox  white_matte ceiling  8 8 .2 | xform -t -4 -4 8
+# end wall_ceiling.rad

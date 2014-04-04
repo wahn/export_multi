@@ -1,0 +1,11 @@
+ZONE = I -4.15001 4.15001 -4.05001 4.25001 -0.10001 8.20001
+scene= cafe_scene.rad
+scene= lights2.rad
+EXPOSURE= 1.0
+VAR= High
+DET= L
+QUAL= High
+AMB= lights2.amb
+INDIRECT= 1
+view= Camera -vp 0 -15 4.3 -vd 0 1 0
+RESOLUTION= 500

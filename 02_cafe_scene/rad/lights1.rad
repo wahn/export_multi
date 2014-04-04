@@ -1,0 +1,3 @@
+# locate canopy lights
+!xform -n light1    -t -3 0 7    lib/lamp_shade_1.rad
+!xform -n light2    -t  3 0 7    lib/lamp_shade_1.rad

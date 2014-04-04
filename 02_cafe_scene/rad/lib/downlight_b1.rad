@@ -1,0 +1,15 @@
+### downlight_b1.rad  Rendering with Radiance
+#     lightring2 defined in light1.rad
+
+void  spotlight lightring2
+0
+0
+7 1344 888 85   40 0 0 -.1
+
+lightring2 ring downlight2
+0
+0
+8 0 0 0 
+  0 0 -1
+  .25 0
+# end downlight_b1.rad

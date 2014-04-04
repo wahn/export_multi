@@ -1,0 +1,62 @@
+###stool_1a.rad    Rendering with Radiance
+#
+
+void   plastic        brown_satin_paint
+0
+0
+5    0.2  0.1  0.01 0.05 0.03
+
+brown_satin_paint   polygon   stool_top
+0
+0
+12   -0.75     -.75    2.6
+      0.75     -.75    2.6
+      0.75      .75    2.6
+     -0.75      .75    2.6
+
+
+brown_satin_paint   polygon   stool_side_n
+0
+0
+12   -0.75     .75  2.45
+     -0.75     .75  2.6
+      0.75     .75  2.6
+      0.75     .75  2.45
+
+brown_satin_paint   polygon   stool_side_s
+0
+0
+12   -0.75     -.75    2.45
+      0.75     -.75    2.45
+      0.75     -.75    2.6
+     -0.75     -.75    2.6
+
+brown_satin_paint   polygon   stool_side_e
+0
+0
+12   -0.75     -.75    2.45
+     -0.75     -.75    2.6
+     -0.75     .75  2.6
+     -0.75     .75  2.45
+
+brown_satin_paint   polygon   stool_side_w
+0
+0
+12   0.75  -.75   2.45
+     0.75   .75   2.45
+     0.75   .75   2.6
+     0.75  -.75   2.6
+
+!genprism brown_satin_paint   stool_leg_sw \
+     4    -0.7  -0.7    -0.6  -0.7  -0.6  -0.6  -0.7 -0.6     -l  0 0 2.5
+
+
+!genprism brown_satin_paint   stool_leg_se \
+     4    0.7  -0.7    0.7  -0.6    0.6  -0.6    0.6  -0.7    -l  0 0 2.5
+
+!genprism brown_satin_paint   stool_leg_ne \
+     4    0.7  0.7     0.6  0.7     0.6  0.6     0.7   0.6    -l  0 0 2.5
+
+!genprism brown_satin_paint   stool_leg_nw \
+     4    -0.7  0.7   -0.7  0.6    -0.6  0.6     -0.6   0.7   -l  0 0 2.5
+# end stool_1a.rad

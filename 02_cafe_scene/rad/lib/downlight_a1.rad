@@ -1,0 +1,18 @@
+### downlight_a1.rad Rendering with Radiance
+#      based on 1700 lumens from a 100w halogen lamp
+#      6" diffuse lensed aperture 
+#      derated by .85  10fc at floor below.
+#      lightring is defined in light1.rad
+
+void light lightring
+0
+0
+3 229.130493 151.068357 57.0
+
+lightring ring downlight
+0
+0
+8 0 0 0 
+  0 0 -1
+  .25 0
+# end downlight_a1.rad

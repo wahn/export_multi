@@ -1,0 +1,28 @@
+### table_1.rad  Rendering with Radiance
+#
+
+void   plastic        brown_satin_paint
+0
+0
+5    0.2  0.1  0.01 0.05 0.03
+
+!genbox   brown_satin_paint   table_top \
+          2.5    2.5    0.15 -r .05 \
+          | xform   -t  -1.25  -1.25  3.15
+
+!genbox   brown_satin_paint   table_base \
+          1.2     1.2    0.15 \
+          | xform   -t  -.6  -.6   0
+
+!genbox   brown_satin_paint   table_leg_sw   \
+          .15   .15   3.15      |  xform   -t   -.6  -.6  0
+
+!genbox   brown_satin_paint   table_leg_se   \
+          .15   .15   3.15      |  xform   -t   .45    -.6  0
+
+!genbox   brown_satin_paint   table_leg_ne   \
+          .15   .15   3.15      |  xform   -t   .45    .45  0
+
+!genbox   brown_satin_paint   table_leg_nw   \
+          .15   .15   3.15      |  xform   -t   -.6    .45   0
+# end table_1.rad
