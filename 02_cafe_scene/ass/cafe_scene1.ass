@@ -7,7 +7,7 @@
 options
 {
  name options
- AA_samples 1
+ AA_samples 3
  outputs 7 1 STRING
 
   "RGBA RGBA filter driver" 
@@ -22,13 +22,16 @@ options
  bucket_size 64
  bucket_scanning "hilbert"
  camera "CACamera"
- shader_searchpath "/Users/jan/Graphics/Rendering/Arnold/shaders/current"
- GI_diffuse_depth 3
- GI_glossy_depth 1
+ shader_searchpath "/usr/people/jan/Graphics/Rendering/Arnold/shaders/current"
+ GI_diffuse_depth 1 # 2
+ GI_glossy_depth 0
  GI_reflection_depth 6
  GI_refraction_depth 6
  GI_total_depth 12
- GI_diffuse_samples 3
+ GI_diffuse_samples 12
+ GI_single_scatter_samples 5
+ GI_glossy_samples 2
+ GI_refraction_samples 2
 }
 
 persp_camera
@@ -89,31 +92,59 @@ driver_exr
  filename "arnold_aov_indirect_specular.exr"
 }
 
-sphere
+point_light
 {
- name CU55w_lightbulb
- radius 1
+ name CU55w_lightbulb1
+ radius 0.25
+ color 1 1 1
+ intensity 25
+ samples 4
  matrix
- 0.25 0 0 0
- 0 0.25 0 0
- 0 0 0.25 0
+ 1 0 0 0
+ 0 1 0 0
+ 0 0 1 0
  3 0 7.25 1
- shader "MAlumens"
- opaque on
 }
 
-standard
+point_light
 {
- name MAlumens
- Kd 0
- Kd_color 1 1 1
- Ks 0
- Ks_color 1 1 1
- specular_brdf "cook_torrance"
- emission 200
- emission_color 1 1 1
- opacity 1 1 1
+ name CU55w_lightbulb2
+ radius 0.25
+ color 1 1 1
+ intensity 25
+ samples 4
+ matrix
+ 1 0 0 0
+ 0 1 0 0
+ 0 0 1 0
+ -3 0 7.25 1
 }
+
+# sphere
+# {
+#  name CU55w_lightbulb
+#  radius 1
+#  matrix
+#  0.25 0 0 0
+#  0 0.25 0 0
+#  0 0 0.25 0
+#  3 0 7.25 1
+#  shader "MAlumens"
+#  opaque on
+# }
+
+# standard
+# {
+#  name MAlumens
+#  Kd 0
+#  Kd_color 1 1 1
+#  Ks 0
+#  Ks_color 1 1 1
+#  specular_brdf "cook_torrance"
+#  emission 200
+#  emission_color 1 1 1
+#  opacity 1 1 1
+# }
 
 disk
 {
@@ -273,17 +304,17 @@ cone
  opaque on
 }
 
-sphere
-{
- radius 1
- matrix
- 0.25 0 0 0
- 0 0.25 0 0
- 0 0 0.25 0
- -3 0 7.25 1
- shader "MAlumens"
- opaque on
-}
+# sphere
+# {
+#  radius 1
+#  matrix
+#  0.25 0 0 0
+#  0 0.25 0 0
+#  0 0 0.25 0
+#  -3 0 7.25 1
+#  shader "MAlumens"
+#  opaque on
+# }
 
 disk
 {
