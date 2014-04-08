@@ -145,9 +145,12 @@ disk
 #  opacity 1 1 1
 # }
 
-point_light
+spot_light
 {
  name CUdownlight1_point
+ radius 0.0762
+ cone_angle 180.0
+ decay_type "quadratic"
  matrix
  1 0 0 0
  0 1 0 0
@@ -158,9 +161,12 @@ point_light
  max_bounces 0
 }
 
-point_light
+spot_light
 {
  name CUdownlight3_point
+ radius 0.0762
+ cone_angle 180.0
+ decay_type "quadratic"
  matrix
  1 0 0 0
  0 1 0 0
