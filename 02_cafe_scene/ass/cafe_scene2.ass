@@ -1,5 +1,5 @@
-### exported: Fri Apr  4 15:53:24 2014
-### from:     Arnold 4.1.3.3 darwin clang420 oiio10202 rlm1012 2014/01/13 16:38:50
+### exported: Tue Apr  8 11:33:06 2014
+### from:     Arnold 4.1.3.3 linux icc130 glibc25 libstdc++348 oiio10202 rlm1012 2014/01/13 16:38:26
 ### host app: Blender 2.70.0
 
 
@@ -7,7 +7,7 @@
 options
 {
  name options
- AA_samples 1
+ AA_samples 5
  outputs 7 1 STRING
 
   "RGBA RGBA filter driver" 
@@ -22,7 +22,7 @@ options
  bucket_size 64
  bucket_scanning "hilbert"
  camera "CACamera"
- shader_searchpath "/Users/jan/Graphics/Rendering/Arnold/shaders/current"
+ shader_searchpath "/usr/people/jan/Graphics/Rendering/Arnold/shaders/current"
  GI_diffuse_depth 3
  GI_glossy_depth 1
  GI_reflection_depth 6
