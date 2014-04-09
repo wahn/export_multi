@@ -1,0 +1,24 @@
+###  track_S3.rad	Rendering with Radiance
+#
+#			track lampholder with typeS1 photometry
+#			lampholder in feet
+#			suspension yoke in track_y.rad
+ 
+enamel_white cylinder	housing1
+0
+0
+7  	0 0 0
+	0 0 .6
+	.21
+
+enamel_white  ring 		housing2
+0
+0
+8	0 0 .6
+	0 0 1
+	.21 0
+
+# insert photometry into the aperture of the cylinder
+!xform -n lamp1 typeS3.rad
+# end track_S3.rad
+

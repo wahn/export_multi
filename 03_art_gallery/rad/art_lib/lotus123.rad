@@ -1,0 +1,69 @@
+### lotus123.rad    Rendering with Radiance
+#
+#  This file creates the base of the lotus using
+#  4 'glass' spheres. The bowl is scooped out
+#  by subtracting an antimatter sphere.
+#  Two additional sets of 'lotus leaves' are
+#  then inserted into the hollowed bowl.  	
+#  Requires lotus_2.rad and lotus_3.rad 
+#
+#  Lotus is approximately 6" in diameter.
+#  Insertion point is at the center of the base.
+
+glass_outer  sphere  l1_sw
+0
+0
+4    -1 -1 2.5  3
+
+glass_outer  sphere  l1_ne
+0
+0
+4    1 1 2.5  3
+
+glass_outer  sphere  l1_nw
+0
+0
+4    -1 1 2.5  3
+
+glass_outer  sphere  l1_se
+0
+0
+4    1 -1 2.5  3
+
+# use an antimatter sphere to scoop out the bowl.
+hollow_1 sphere bowl_1
+0
+0
+4  0 0 5.5 4.0
+
+# apply an antimatter cylinder to flatten the bottom of the lotus.
+# Note the surface normal directions of the rings which cap this
+# cylinder.
+
+hollow_1 ring clip_base_t
+0
+0
+8  0 0 0.001
+   0 0 1
+   3 0
+
+hollow_1 cylinder clip_bast_m
+0
+0
+7   0 0 0.001
+    0 0 -1.6 
+    3
+
+hollow_1 ring clip_base_b
+0
+0
+8  0 0 -1.6
+   0 0 -1
+   3 0
+
+# insert two additional sets of lotus leaves:
+!xform -n num2 -rz 45   		lotus_2.rad
+!xform -n num3 -s .6 -t 0 0 .75  lotus_3.rad
+
+#end lotus123.rad
+

@@ -1,0 +1,31 @@
+### doorx2.rad	Rendering with Radiance
+#
+# a double door frame with two openable doors
+# requires:	 doorbase.rad
+# unit is 7' wide, 8' tall and .5' deep
+# insertion point is front lower left corner.
+
+# door and doorframe materials
+
+void plastic frame_mat
+0
+0
+5 .6 .5 .4 .02 .02
+
+void metal sill_mat
+0
+0
+5 .6 .6 .6 .85 .05
+
+# construct the door frame and sill
+!genbox frame_mat jambl   .1  .5   8
+!genbox frame_mat jambt  6.8  .5   .1  | xform -t .1    0    7.9
+!genbox frame_mat jambr   .1  .5   8   | xform -t 6.9  0    0 
+!genbox sill_mat  sill   6.8  .55  .05 | xform -t .1   -.05  0
+
+# insert each door. Note that the doors can be opened by
+# changing the -rz values. A negative value opens both doors outwards
+!xform -n door_w -rz -0     -t .1  .1 0  doorbase.rad
+!xform -n door_e -rz -0 -mx -t 6.9 .1 0  doorbase.rad
+#end doorx2.rad
+

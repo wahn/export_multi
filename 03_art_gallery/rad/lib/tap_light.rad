@@ -1,0 +1,11 @@
+### tap_light.rad	Rendering with Radiance
+#
+#	Special set of luminaires which are part of the
+#	Tapestry installation
+
+!xform -n par1 -rx 50 -rz 0  -t 2.5  -6.4  3.5    track_S4T.rad
+!xform -n par2 -rx 50 -rz 0  -t 0    -6.4  3.5    track_S4T.rad  
+!xform -n par3 -rx 50 -rz 0  -t -2.5 -6.4  3.5    track_S4T.rad
+!xform -n par4 -rx 45 -rz 0  -t 0    -3.5  3.5    track_S4T.rad 
+# end tap_light.rad
+

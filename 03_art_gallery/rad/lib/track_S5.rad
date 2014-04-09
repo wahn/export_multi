@@ -1,0 +1,29 @@
+###  track_S5.rad	Rendering with Radiance
+#
+#			track lampholder with typeS1 photometry
+#			lampholder in feet
+#			suspension yoke in track_y.rad
+ 
+void plastic enamel_white
+0
+0
+5  .7 .6 .5 .03  0.02
+
+enamel_white cylinder	S5housing1
+0
+0
+7  	0 0 0
+	0 0 .6
+	.21
+
+enamel_white  ring 		S5housing2
+0
+0
+8	0 0 .6
+	0 0 1
+	.21 0
+
+# insert photometry into the aperture of the cylinder
+!xform -n S5lamp typeS5.rad
+# end track_S5.rad
+

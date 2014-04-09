@@ -1,0 +1,86 @@
+### tble2_c1.rad	Rendering with Radiance
+#
+#side table 2' square, 1.3' tall
+#insertion point at floor level at table center
+
+void metal pipe_color
+0
+0
+5 .7 .7 .7 .9 .02
+
+void plastic table_color
+0
+0
+5 .1 .1 .1 .025  .025 
+
+!genworm pipe_color se_side_2 'tx(t)' 'ty(t)' 0 r 8  \
+                -e 'r:.075;R:.5;Tmax:90*PI/180' \
+                -e 'tx(t)=R*cos(t*Tmax)' -e 'ty(t)=R*sin(t*Tmax)'\
+                | xform -rz -90 -t  .5 -.5 1.25
+
+!genworm pipe_color ne_side_2 'tx(t)' 'ty(t)' 0 r 8  \
+                -e 'r:.075;R:.5;Tmax:90*PI/180' \
+                -e 'tx(t)=R*cos(t*Tmax)' -e 'ty(t)=R*sin(t*Tmax)'\
+                | xform -rz 0   -t .5 .5 1.25
+
+
+!genworm pipe_color nw_side_2 'tx(t)' 'ty(t)' 0 r 8  \
+                -e 'r:.075;R:.5;Tmax:90*PI/180' \
+                -e 'tx(t)=R*cos(t*Tmax)' -e 'ty(t)=R*sin(t*Tmax)'\
+                | xform -rz 90   -t -.5 .5 1.25
+
+
+!genworm pipe_color sw_side_2 'tx(t)' 'ty(t)' 0 r 8  \
+                -e 'r:.075;R:.5;Tmax:90*PI/180' \
+                -e 'tx(t)=R*cos(t*Tmax)' -e 'ty(t)=R*sin(t*Tmax)'\
+                | xform -rz 180   -t -.5 -.5 1.25
+
+pipe_color cylinder n_pipe_2
+0
+0
+7	-.5  1 1.25
+	 .5  1 1.25 .075
+
+pipe_color cylinder s_pipe_2
+0
+0
+7	-.5  -1 1.25
+	 .5  -1 1.25 .075
+
+
+pipe_color cylinder e_pipe_2
+0
+0
+7	 1   .5 1.25
+	 1  -.5 1.25 .075
+
+pipe_color cylinder w_pipe_2
+0
+0
+7	 -1   .5 1.25
+	 -1  -.5 1.25 .075
+
+!genworm pipe_color leg1 'tx(t)' 'ty(t)' 0 r 9  \
+                -e 'r:.075;R:1.25;Tmax:80*PI/180' \
+                -e 'tx(t)=R*cos(t*Tmax)' -e 'ty(t)=R*sin(t*Tmax)'\
+                | xform  -ry 90 -t 0 -.75 1.325 
+
+!genworm pipe_color leg2 'tx(t)' 'ty(t)' 0 r 9  \
+                -e 'r:.075;R:1.25;Tmax:80*PI/180' \
+                -e 'tx(t)=R*cos(t*Tmax)' -e 'ty(t)=R*sin(t*Tmax)'\
+                | xform  -ry 90 -t 0 -.75 1.325 -my
+
+
+!genworm pipe_color leg3 'tx(t)' 'ty(t)' 0 r 9  \
+                -e 'r:.075;R:1.25;Tmax:80*PI/180' \
+                -e 'tx(t)=R*cos(t*Tmax)' -e 'ty(t)=R*sin(t*Tmax)'\
+                | xform  -ry 90 -t 0 -.75 1.325 -rz 90
+
+!genworm pipe_color leg4 'tx(t)' 'ty(t)' 0 r 9  \
+                -e 'r:.075;R:1.25;Tmax:80*PI/180' \
+                -e 'tx(t)=R*cos(t*Tmax)' -e 'ty(t)=R*sin(t*Tmax)'\
+                | xform  -ry 90 -t 0 -.75 1.325 -my -rz 90
+
+!genbox table_color table_top 1.8 1.8 .05  | xform -t -.9 -.9 1.25
+# end tble2_c1.rad
+

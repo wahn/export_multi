@@ -1,0 +1,12 @@
+### feather.mat   Rendering with Radiance
+#
+void  plastic	  quill_material
+0
+0
+5	.6 .8 .9 .03 .02 
+
+void  plastic  pearl
+0
+0
+5      .5 .8 .9 .2 .03
+# end feather.mat

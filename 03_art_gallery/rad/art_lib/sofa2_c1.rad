@@ -1,0 +1,57 @@
+### sofa2_c1.rad	Rendering with Radiance
+#
+# back to back sofa has a 5' wide cushion
+# insertion point is at floor level, at center of unit
+
+void metal pipe_color
+0
+0
+5 .7 .7 .7 .9 .02
+
+void plastic seat_color
+0
+0
+5 .8 .6 .05 0 0 
+
+# left side support
+!genworm pipe_color l_sidef 'tx(t)' 'ty(t)' 0 r 15  \
+		-e 'r:.075;R:2.5;Tmax:60*PI/180' \
+		-e 'tx(t)=R*cos(t*Tmax)' -e 'ty(t)=R*sin(t*Tmax)'\
+		| xform -rz -75 -rx 90 -rz 90 -t -2.5375 -2.8 2.5
+
+!genworm pipe_color l_sider 'tx(t)' 'ty(t)' 0 r 15  \
+		-e 'r:.075;R:2.5;Tmax:60*PI/180' \
+		-e 'tx(t)=R*cos(t*Tmax)' -e 'ty(t)=R*sin(t*Tmax)'\
+		| xform -rz -75 -rx 90 -rz 90 -t -2.5375 -2.8 2.5 -my
+
+!genworm pipe_color l_leg_s2 'tx(t)' 'ty(t)' 0 r 15  \
+		-e 'r:.075;R:1.6;Tmax:150*PI/180' \
+		-e 'tx(t)=R*cos(t*Tmax)' -e 'ty(t)=R*sin(t*Tmax)'\
+		| xform -ry 90 -rx -75 -t -2.425 0  1.65 
+
+# right side support
+!genworm pipe_color r_sidef 'tx(t)' 'ty(t)' 0 r 15  \
+		-e 'r:.075;R:2.5;Tmax:60*PI/180' \
+		-e 'tx(t)=R*cos(t*Tmax)' -e 'ty(t)=R*sin(t*Tmax)'\
+		| xform -rz -75 -rx 90 -rz 90 -t 2.5375 -2.8 2.5
+
+!genworm pipe_color r_sider 'tx(t)' 'ty(t)' 0 r 15  \
+		-e 'r:.075;R:2.5;Tmax:60*PI/180' \
+		-e 'tx(t)=R*cos(t*Tmax)' -e 'ty(t)=R*sin(t*Tmax)'\
+		| xform -rz -75 -rx 90 -rz 90 -t 2.5375 -2.8 2.5 -my
+
+!genworm pipe_color r_leg_s2 'tx(t)' 'ty(t)' 0 r 15  \
+		-e 'r:.075;R:1.6;Tmax:150*PI/180' \
+		-e 'tx(t)=R*cos(t*Tmax)' -e 'ty(t)=R*sin(t*Tmax)'\
+		| xform -ry 90 -rx -75 -t 2.425 0  1.65 
+
+# front seats
+!genbox seat_color seat1 5  2  .4   -r .15  | xform -rx -15 -t -2.5  -2.5 1.3
+!genbox seat_color back1 5 .3   1.9 -r .125 | xform -rx -20 -t -2.5  -.75 1.3
+
+# rear seats
+!genbox seat_color seat2 5  2  .4   -r .15  | xform -rx -15 -t -2.5 -2.5 1.3 -my
+!genbox seat_color back2 5 .3   1.9 -r .125 | xform -rx -20 -t -2.5 -.75 1.3 -my
+# end sofa2_c1.rad
+
+

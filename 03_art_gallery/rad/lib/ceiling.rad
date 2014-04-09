@@ -1,0 +1,45 @@
+### ceiling.rad 	Rendering with Radiance scene2
+#
+#            ceilings, roofs and daylight reflector
+
+# high reflectance adobe material for ceiling
+void  plastic stucco_white2
+0
+0
+5  .875 .825 .75  0 0 
+
+void plastic red_roofing
+0
+0
+5 .6 .05 .05 .03  .03
+
+# ceiling and roof elements constructed together
+!genbox stucco_white2 ceiling_south_w 29.98 11.2 .5 | \
+        xform -t 0.01   0   -.5 -rx  21  -t 0  0  10.5
+!genbox red_roofing   roof_south_w    30.18 11.4 .1 | \
+        xform -t -.19   -.2   0 -rx  21  -t 0  0  10.5
+
+!genbox stucco_white2 ceiling_north_w 29.98 11.2 .5 | \
+        xform -t 0.01 -11.2 -.5 -rx -21  -t 0  25 10.5
+!genbox red_roofing   roof_north_w    30.18 11.4 .1 | \
+        xform -t -.19 -11.2  0  -rx -21  -t 0  25 10.5
+
+!genbox stucco_white2 ceiling_south_e 9.99  13.45 .5 | \
+        xform -t 0      0   -.5 -rx  21  -t 30 0  10.5
+!genbox red_roofing  roof_south_e    10.19 13.65 .1 | \
+        xform -t 0     -.2   0  -rx  21  -t 30 0  10.5
+
+!genbox stucco_white2 ceiling_north_e 9.99  13.45 .5 | \
+        xform -t 0  -13.45  -.5 -rx -21  -t 30 25 10.5
+!genbox red_roofing roof_north_e    10.19  13.7 .1 | \
+        xform -t 0  -13.5    0  -rx -21  -t 30 25 10.5
+
+# art gallery indirect reflector located beneath the 
+# long skylight aperture, to reflect daylight towards the
+# ceiling and interior walls. 
+
+!genprism  stucco_white2 reflector 3 \
+        0 -3.5   2.45 0   0 3.5  -l 0 0 29.98 | \
+        xform  -ry -90 -t 29.99 12.5 8.01
+# end ceiling.rad   
+

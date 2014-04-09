@@ -1,0 +1,56 @@
+### waves.mat	Rendering with Radiance
+#
+#	material file for waves and waves instances
+
+void	plastic	cepia
+0
+0
+5	.4  .25  .05  0 0 
+
+void	plastic blue
+0
+0
+5	.15 .2  .8   0 0 
+
+void	metal   pewter
+0
+0
+5	.8 .8 .82   .85 .05
+
+
+void	metal	gold
+0
+0
+5	.8  .6  .3  .85 .03
+
+# dummy geometry to import the materials into Blender
+
+# cepia polygon dummy1
+# 0
+# 0
+# 9 0 0 0
+#   1 0 0
+#   0 1 0
+
+# blue polygon dummy2
+# 0
+# 0
+# 9 0 0 0
+#   1 0 0
+#   0 1 0
+
+# pewter polygon dummy3
+# 0
+# 0
+# 9 0 0 0
+#   1 0 0
+#   0 1 0
+
+# gold polygon dummy4
+# 0
+# 0
+# 9 0 0 0
+#   1 0 0
+#   0 1 0
+
+# end waves.mat

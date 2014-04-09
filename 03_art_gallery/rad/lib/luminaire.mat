@@ -1,0 +1,10 @@
+###  luminaire.mat	Rendering with Radiance
+#
+#     			track system surface finish
+
+void plastic enamel_white
+0
+0
+5  .7 .6 .5 .03  0.02
+# end  luminaire.mat
+

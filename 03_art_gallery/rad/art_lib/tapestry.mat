@@ -1,0 +1,39 @@
+### tapestry.mat   Rendering with Radiance
+#
+void glass dk_green_g
+0
+0
+3  .01 .2  .05
+
+void glass dk_red_g
+0
+0
+3  .2 .01 .02
+
+void glass dk_mag_g
+0
+0
+3  .25 .01 .2
+
+void glass dk_blue_g
+0
+0
+3  .02  .01 .4
+
+
+void glass amber_g
+0
+0
+3   .25 .1 .01
+
+void glass yellow_g
+0
+0
+3   .6 .6 .25
+
+void plastic white_plaster
+0
+0
+5	.8 .8 .8 0 0 
+#end tapestry.mat
+

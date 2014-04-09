@@ -1,0 +1,29 @@
+# 05/31 at 1:00 pm in Bloomington, Indiana on a sunny day
+# 06/21 at 1:00 pm  First day of summer!
+!gensky  6 21 12.5  -a 39.1 -o 86.3 -m 75 +s
+
+       skyfunc glow skyglow
+       0
+       0
+       4 .8 .8 1 0
+
+       skyglow source sky
+       0
+       0
+       4 0 0 1 180
+
+# proceedure for mapping sky luminance to the
+# invisible material illum. The data in
+# skyfunc is created by gensky.
+skyfunc brightfunc winbright
+2 winxmit winxmit.cal 
+0
+0
+
+winbright illum sky_illum
+0
+0
+3 .88 .88 .98 
+
+#end sky_d.mat
+

@@ -1,0 +1,29 @@
+### lotus_2.rad    Rendering with Radiance
+#
+#   middle lotus leaves inserted into lotus123.rad
+
+glass_mid  sphere  l2_sw
+0
+0
+4    -.75  -.75   2.75  2.5
+
+glass_mid  sphere  l2_ne
+0
+0
+4    .75   .75    2.75  2.5
+
+glass_mid  sphere  l2_nw
+0
+0
+4    -.75   .75  2.75   2.5
+
+glass_mid  sphere  l2_se
+0
+0
+4    .75   -.75   2.75  2.5  
+
+hollow_2  sphere  bowl_2
+0
+0
+4  0 0 5.75 3
+# end lotus_2.rad

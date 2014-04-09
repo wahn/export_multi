@@ -1,0 +1,45 @@
+### cups.mat	Rendering with Radiance
+#
+#   	materials for cups and goblets
+
+void metal goldc
+0
+0
+5  1  .7   .4  .9  .02 
+
+void metal  silverc
+0
+0
+5 .8  .8  .81  .9  .02
+
+void  dielectric clear_liquid
+0
+0
+5   .8 .8 .6  1.1  0
+ 
+
+# noise is applied to give a more rustic appearance
+# using the alias command to combine the function
+# with the grey plastic material
+
+
+void    brightfunc dirty
+4  dirt dirt.cal -s .02
+0
+1 .35
+
+dirty   plastic grey
+0
+0
+5       .7 .7 .65  .02 .01
+
+dirty   alias pottery
+        grey
+
+
+
+void plastic china
+0
+0
+5 .9 .9 .9 .03 .02
+# end cups.mat

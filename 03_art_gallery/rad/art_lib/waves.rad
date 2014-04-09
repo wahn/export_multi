@@ -1,0 +1,15 @@
+### waves.rad	Rendering with Radiance
+#
+#
+
+# surface has .25 deep depressions and .25 high  mounds
+# the modulation decreases with height
+# the panel is 5' x 5' with insertion point at center back
+!gensurf cepia  waves \
+	'5 - s*(5 - 0)'	\
+	'5 - t*(5 - 0)'	\
+	'mag(s,t)*.25*sin(5*PI*t)*sin(7*PI*s)' \
+	100  140 -s  \
+	-e 'mag(s,t)=t' | xform -rx 90 -t -2.5 -.26 -2.5
+
+# end waves.rad

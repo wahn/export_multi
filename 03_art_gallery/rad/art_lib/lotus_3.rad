@@ -1,0 +1,33 @@
+### lotus_3.rad    Rendering with Radiance
+#
+#   inner lotus leaves inserted into lotus123.rad
+
+glass_inner  sphere  l3_sw
+0
+0
+4    -.75  -.75   2.75  2.5
+
+glass_inner  sphere  l3_ne
+0
+0
+4    .75    .75   2.75  2.5
+
+glass_inner  sphere  l3_nw
+0
+0
+4    -.75   .75   2.75   2.5
+
+glass_inner  sphere  l3_se
+0
+0
+4    .75    -.75  2.75   2.5  
+
+hollow_3  sphere  bowl_3
+0
+0
+4  0 0 5.75 3
+# end lotus_3.rad
+
+
+
+

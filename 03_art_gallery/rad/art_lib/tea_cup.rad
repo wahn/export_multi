@@ -1,0 +1,47 @@
+### tea_cup	Rendering with Radiance
+#
+# China tea cup and saucer. Tea cup is 1 unit tall
+# cup handle is on the right side  of the cup
+
+void plastic china
+0
+0
+5 .9 .9 .9 .03 .02
+
+!genrev china tea_cup_outer\
+  'hermite(.18,1,-1.5,1.5,t)'\
+  'hermite(.2,.85,.6,.8,t)'\
+   12 -s 
+
+
+!genrev china tea_cup_inner\
+  'hermite(.18,1,-1.5,1.5,t)'\
+  'hermite(.2,.85,.6,.8,t)'\
+   12 -s | xform -s .95 -t 0 0 .05
+
+china ring tea_cup_rim
+0
+0
+8   0  0  1
+    0  0  1
+    .85 .8075
+
+china  ring tea_cup_base_inner
+0
+0
+8   0  0  .25
+    0  0  1
+    .475 0
+
+!genworm china tea_cup_handle\
+ 'hermite(.5,.85,1.5,-1.5,t)'\
+ '0'\
+ 'hermite(.15,.9,1,-1,t)'\
+ .07 12 
+
+!genrev china  tea_saucer\
+  'hermite(.05,.15,.45,1,t)'\
+  'hermite(0,1.4,2.5,5,t)'\
+   12 -s 
+
+# end tea_cup.rad

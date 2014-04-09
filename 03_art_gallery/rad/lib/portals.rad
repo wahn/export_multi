@@ -1,0 +1,17 @@
+# Art Gallery: lobby area daylighting
+# illum in east wall, north window
+!gensurf  sky_illum iwindow_e_n \
+  '39.49' '18 + t*(22.5-18)' '2 + s*(8-2)'  2 1
+
+# illum in east wall, south window
+!gensurf  sky_illum iwindow_e_s \
+  '39.49' '2.5 + t*(7-2.5)'  '2 + s*(8-2)'  2 1
+
+# illum in south wall, south glass_door
+!gensurf  sky_illum idoor_s \
+  '31.2 + t*(38.2-31.2)' '0.51'  '0 + s*(8-0)'  3 1
+
+# Art Gallery: gallery daylighting
+# illum at top of skylight aperture
+!gensurf  sky_illum skylight \
+  '1 + t*(29-1)' '10.5 + s*(14.5-10.5 )' '19.4' 2 4

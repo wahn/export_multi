@@ -1,0 +1,38 @@
+### lotus.mat     Rendering with Radiance
+#
+#   lotus material file. 
+
+# outer lotus material
+void  dielectric glass_outer
+0
+0
+5   .8 .8 .9 1.5 0
+
+void antimatter  hollow_1
+1 glass_outer
+0
+0
+
+# middle lotus material
+void dielectric  glass_mid
+0
+0
+5   .8 .8 .9 1.5  0
+
+void antimatter  hollow_2
+1 glass_mid
+0
+0
+
+# inner lotus material
+void dielectric  glass_inner
+0
+0
+5   .8 .8 .9 1.5  0
+
+void antimatter  hollow_3
+1 glass_inner
+0
+0
+#end lotus.mat
+

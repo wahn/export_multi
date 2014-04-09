@@ -1,0 +1,16 @@
+### sign.mat	Rendering with Radiance
+#
+#  gold and acrylic sign materials
+
+
+void dielectric acrylic
+0
+0
+5 .98 .98 .98 1.4 0
+
+void metal gold_leaf
+0
+0
+5 .68 .27 .002 .875 .05
+
+#end sign.mat

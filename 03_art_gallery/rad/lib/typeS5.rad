@@ -1,0 +1,24 @@
+# ies2rad -df -t default -m 0 -c 1 1 1 -o lib/typeS5
+# Dimensions in feet
+#<IESNA91
+#<Q150P38S.ies
+#<150 watt quartz PAR38 spot      Beam spread: 10.5'
+# 150 watt luminaire, lamp*ballast factor = 1
+
+void brightdata typeS5_dist
+4 flatcorr lib/typeS5.dat source.cal src_theta 
+0
+1 0
+
+typeS5_dist light typeS5_light
+0
+0
+3 1 1 1
+
+typeS5_light ring typeS5.d
+0
+0
+8
+	0 0 0.4
+	0 0 -1
+	0 0.2

@@ -1,0 +1,29 @@
+### furniture.mat	Rendering with Radiance
+#
+#	file contains all furniture material
+
+void plastic table_color
+0
+0
+5 .1 .1 .1 .025  .025 
+
+void metal pipe_color
+0
+0
+5 .7 .7 .7 .9 .02
+
+void plastic seat_color
+0
+0
+5 .8 .6 .05 0 0 
+
+void plastic desktop_color
+0
+0
+5  .8 .6 .05 0 0
+
+void plastic deskmid_color
+0
+0
+5  .1 .1 .1  .025 .025
+# end furniture.mat

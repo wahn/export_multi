@@ -1,0 +1,15 @@
+### fthrbase.rad     Rendering with Radiance
+#
+#  The base  'quill" shape of the feather
+
+void  plastic	  quill_material
+0
+0
+5	.6 .8 .9 .03 .02 
+
+quill_material cone  vane
+0
+0
+8  0 0 0    2 0 0  .1 .025 
+# end fthrbase.rad
+

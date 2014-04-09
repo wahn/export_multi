@@ -1,0 +1,30 @@
+# ies2rad -df -t default -m 0 -c 1 1 1 -o lib/typeRLF1
+# Dimensions in feet
+#<IESNA91
+#<[TEST] 1000.IES
+#<[MANUFAC] DOWNLIGHT CORPORATION
+#<[LUMCAT]  dl-4
+#<[LUMINAIRE] dl-4-24-T8-AP
+#<[LAMP] FO32/41K
+#<[SEARCH]
+#<[OTHER] acrylic prismatic
+# 78 watt luminaire, lamp*ballast factor = 1
+
+void brightdata typeRLF1_dist
+5 flatcorr lib/typeRLF1.dat source.cal src_phi4 src_theta 
+0
+1 0
+
+typeRLF1_dist light typeRLF1_light
+0
+0
+3 1 1 1
+
+typeRLF1_light polygon typeRLF1.d
+0
+0
+12
+	-2	-0.21	-0.00082021
+	-2	0.21	-0.00082021
+	2	0.21	-0.00082021
+	2	-0.21	-0.00082021

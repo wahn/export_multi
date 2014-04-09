@@ -1,0 +1,23 @@
+### phone.rad	Rendering with Radiance
+#
+#   desk phone set
+#   constructed in inch units: 3.5" x 9" x 4" tall
+#   insertion point:  center front of base
+
+void plastic accent_red
+0
+0
+5   .4 .01 .05 .04 .025 	
+
+!genprism accent_red p_base 6 \
+	.5 0   8.5 0   9 1.5  8.5 2.65   0 1.5  0 .75 \
+	-l 0 0 3.5   | xform   -rx 90 -rz 90 -t -1.75 0 0 
+
+!genprism accent_red p_receiver 10 \
+	.1 0    2 0    2 .2  6.5 .2  6.5 0  8.4 0  8.5 .1 \
+        8 1.3  .5 1.3  0 .1 \
+	-l 0 0 2.0  | xform  -rx 90 -rz 90 -rx 8  -t -1.0 0 1.5 
+
+!genbox accent_red p_antenna 4 .25 .25 -b .075 \
+	|  xform  -rx 90 -rz 90 -t 0 8 .75 -rx 8  -t -.125 0 1.5
+# end phone.rad

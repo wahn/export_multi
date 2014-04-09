@@ -1,0 +1,60 @@
+### champagne.rad	Rendering with Radiance
+#
+#champagne bowl with liquid. 1 unit tall.
+
+void metal goldc
+0
+0
+5  1  .7   .4  .9  .02 
+
+void metal  silverc
+0
+0
+5 .8  .8  .81  .9  .02
+
+void  dielectric clear_liquid
+0
+0
+5   .8 .8 .6  1.1  0
+ 
+!genrev goldc  champagne_top \
+ 'hermite(.6,1,1,.8,t)' \
+ 'hermite(.025,.275,.05,0.005,t)' \
+ 16 -s
+
+!genrev silverc  champagne_top_in \
+ 'hermite(.76,1,.6,.8,t)' \
+ 'hermite(.0,.26,-.1,0,t)' \
+ 8 -s
+
+
+silverc  ring champagne_rim
+0
+0
+8  	0	0	1
+	0	0	1
+	.275	.26
+   
+
+
+goldc  cylinder  champagne_stem
+0
+0
+7	0	0	.2
+	0	0	.6
+	.025
+
+
+
+!genrev goldc champagne_base \
+	'hermite(0,.2,-.1,.35,t)' \
+	'hermite(.2,.025,.5,.03,t)' \
+	 8 -s
+
+
+clear_liquid ring champagne
+0
+0
+8	0	0	.97
+	0	0	 1
+	.245	0

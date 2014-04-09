@@ -1,0 +1,17 @@
+### track_y.rad   Rendering with Radiance
+#
+#			tracklight yoke 
+#			yoke in feet
+#			use with track_xx.rad lampholder
+ 
+void plastic enamel_white
+0
+0
+5  .7 .6 .5 .03  0.02
+
+!genbox enamel_white  yoke_stem  .1 .1 .1 -r .02  | xform -t -.05  -.05  .35
+!genbox  enamel_white  yoke_top  .5 .1 .05   | xform -t -.25   -.05  .3
+!genbox  enamel_white  yoke_lft  .04 .1 .3   | xform -t -.25   -.05  0
+!genbox  enamel_white  yoke_rgt  .04 .1 .3   | xform -t  .21   -.05  0
+# end  track_y.rad 
+

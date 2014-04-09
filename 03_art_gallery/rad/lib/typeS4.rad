@@ -1,0 +1,24 @@
+# ies2rad -df -t default -m 0 -c 1 1 1 -o lib/typeS4
+# Dimensions in feet
+#<IESNA91
+#<Q150P38F.ies
+#<150 watt quartz Par38 flood     Beam spread: 47.6'
+# 150 watt luminaire, lamp*ballast factor = 1
+
+void brightdata typeS4_dist
+4 flatcorr lib/typeS4.dat source.cal src_theta 
+0
+1 0
+
+typeS4_dist light typeS4_light
+0
+0
+3 1 1 1
+
+typeS4_light ring typeS4.d
+0
+0
+8
+	0 0 0.4
+	0 0 -1
+	0 0.2

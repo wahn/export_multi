@@ -1,0 +1,33 @@
+###  window.rad  	Rendering with Radiance
+#
+#     single 4.5' x 6' window with frame
+#     insertion point is front lower left corner
+
+# door and doorframe materials
+
+void plastic frame_mat
+0
+0
+5 .6  .5 .4 .02 .02
+
+void glass door_glass
+0
+0
+3  .9 .9 .9 
+
+# frame and sash
+
+!genbox frame_mat framel   .1  .5   6
+!genbox frame_mat framet  4.3  .5   .1  | xform -t .1    0    5.9
+!genbox frame_mat framer   .1  .5   6   | xform -t 4.4   0    0 
+!genbox frame_mat frameb  4.3  .5   .1  | xform -t .1    0    0
+
+!genbox frame_mat sashl   .1  .1   5.8  | xform -t .1	   .3	  .1
+!genbox frame_mat sasht  4.1  .1   .1   | xform -t .2	   .3    5.8
+!genbox frame_mat sashr   .1  .1   5.8  | xform -t 4.3  .3    .1 
+!genbox frame_mat sashb  4.1  .1   .1   | xform -t .2   .3    .1
+
+# glass panel
+!genbox door_glass window 4.1 .02 5.6 | xform -t .2 .34 .2
+
+# end window.rad

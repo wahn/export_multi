@@ -1,0 +1,95 @@
+### building.mat   	Rendering with Radiance scene2
+#
+
+# adobe texture function
+void texfunc ad
+6 cdx cdy cdz  adobe.cal -s .1
+0
+1 .015
+
+# wall adobe material
+ad plastic stucco_white
+0
+0
+5  .8 .7 .5 0 0 
+
+# high reflectance adobe material for ceiling
+void  plastic stucco_white2
+0
+0
+5  .875 .825 .75  0 0 
+
+# carpet pattern function
+void colorfunc carp
+6 carpr carpg carpb carpet.cal -s .02
+0
+4 .7  .8  .9  .7
+
+carp plastic carpet_blue
+0
+0
+5  .9 .9 .9  0 0 
+
+void colorfunc carp
+6 carpr carpg carpb carpet.cal -s .0175
+0
+4 .7 .825  .9  1
+
+carp plastic carpet_blue
+0
+0
+5 .9 .9 .9 0 0
+
+
+void plastic red_roofing
+0
+0
+5 .6 .05 .05 .03  .03
+
+#door and doorframe materials
+void plastic frame_mat2
+0
+0
+5 .6 .5 .4 .02 .02
+
+void plastic frame_mat
+0
+0
+5 .6  .5 .4 .02 .02
+
+
+void metal sill_mat
+0
+0
+5 .6 .6 .6 .85 .05
+
+void plastic handle_mat
+0
+0
+5  .6 .1 .1 0 0 
+
+void glass door_glass
+0
+0
+3  .9 .9 .9 
+
+#end building.mat
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

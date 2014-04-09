@@ -1,0 +1,108 @@
+### tapestry.rad   Rendering with Radiance
+#
+# A collage of colored glass.
+# This file is a complete installation, and
+# includes a screen and suspended glass
+#
+# Insertion point is at the center of the vertical screen,
+# which measures 10' x 8'
+
+void glass dk_green_g
+0
+0
+3  .01 .2  .05
+
+void glass dk_red_g
+0
+0
+3  .2 .01 .02
+
+void glass dk_mag_g
+0
+0
+3  .25 .01 .2
+
+void glass dk_blue_g
+0
+0
+3  .02  .01 .4
+
+
+void glass dk_amber_g
+0
+0
+3   .25 .1 .01
+
+void glass dk_yellow_g
+0
+0
+3   .6 .6 .25
+
+void plastic white_plaster
+0
+0
+5	.8 .8 .8 0 0
+
+!genprism dk_red_g l1 4 \
+ -3  -2 \
+  3  -2 \
+	3  -.5 \
+ -3  -.5 \
+ -l 0 0 .009 | xform -rx 90 -t 0 -2 0
+
+!genprism dk_yellow_g l2 4 \
+ -3 -.5	\
+  3 -.5	\
+  3  .5	\
+ -3  .5	\
+ -l 0 0 .009 | xform -rx 90 -t 0 -2 0
+
+!genprism dk_green_g l3 4 \
+ -3 .5 \
+  3 .5 \
+  3 1	 \
+ -3 1	 \
+ -l 0 0 .009 | xform -rx 90 -t 0 -2 0
+
+!genprism dk_amber_g l4 4 \
+ -3 1		\
+  3 1		\
+  3 1.4	\
+ -3 1.4	\
+ -l 0 0 .009 | xform -rx 90 -t 0 -2 0
+
+!genprism dk_mag_g l5 4 \
+ -3 1.4 \
+  3 1.4	\
+  3 1.7	\
+ -3 1.7	\
+ -l 0 0 .009 | xform -rx 90 -t 0 -2 0
+
+!genprism dk_blue_g l6 4 \
+ -3 1.7 \
+  3 1.7	\
+  3 1.9	\
+ -3 1.9	\
+ -l 0 0 .009 | xform -rx 90 -t 0 -2 0
+
+!genprism dk_red_g l7 4 \
+ -3 1.9 \
+  3 1.9	\
+  3 2		\
+ -3 2		\
+ -l 0 0 .009 | xform -rx 90 -t 0 -2 0
+
+# horizon stripe
+!genprism dk_blue_g h1 4 \
+ -3 -.025 \
+  3 -.025	\
+  3 .025	\
+ -3 .025	\
+ -l 0 0 .009 | xform -rx 90 -t 0 -2.01 0
+
+# backing panel
+!genbox	white_plaster 	backing 10 .1 7.5 | xform -t -5 -.1 -4
+
+
+# end  tapestry.rad
+

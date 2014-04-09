@@ -1,0 +1,77 @@
+### walls.rad   	Rendering with Radiance scene2
+#
+
+# adobe texture function
+void texfunc ad
+6 cdx cdy cdz  adobe.cal -s .1
+0
+1 .015
+
+# wall adobe material
+ad plastic stucco_white
+0
+0
+5  .8 .7 .5 0 0 
+
+# north wall has no openings and is simply made using genbox
+!genbox stucco_white wall_north  39.0 .5 10.5 | xform -t 0.5 24.5 0
+
+# south wall with door opening. wall_south1 is a door header.
+!genbox stucco_white wall_south1 30.7 .5 10.5 | xform -t 0.5 0 0
+!genbox stucco_white wall_south2 7  .5    2.5 | xform -t 31.2 0 8
+!genbox stucco_white wall_south3 1.3  .5 10.5 | xform -t 38.2 0 0 
+
+# west wall is a complex shape requiring the genprism function.
+# the wall is constructed on the ground before being raised.
+!genprism stucco_white wall_west   8 \
+        0 25         0 0        10.5 0      14 10.15    \
+        19.4 10.15  19.4 14.85  14 14.85    10.5 25     \
+        -l 0 0 .5   | xform -ry -90 -t .5 0 0   
+
+# center wall partition requires a archway. Simply copy the west wall
+# genprism description, insert 4 more vertices to define the doorway,
+# then move it into position.
+!genprism stucco_white wall_center   12 \
+        0.0 24.5    0.0 16    8 16  8 9   \
+        0.0 9     0.0 0.5     10.6724 0.5      14 10.15   \
+        19.4 10.15  19.4 14.85  14 14.85  10.6724 24.5 \
+        -l 0 0 .5  | xform -ry -90 -t 30 0 0   
+
+## east wall with 2 windows
+!genprism stucco_white wall_east   17 \
+	0 25	0 22.5  8 22.5  8 18   2 18  2 22.5  0 22.5 \
+	0 7    8 7     8 2.5   2 2.5  2 7   0 7 \
+	0 0    10.5 0  15.3 12.5  10.5 25 \
+	-l 0 0 .5  | xform -ry -90  -t 40 0 0
+
+## skylight walls
+!genbox  stucco_white wall_skylight_s 29.00 .5 5.4 | \
+        xform -t .5 10.15  14
+!genbox  stucco_white wall_skylight_n 29.00 .5 5.4 | \
+        xform -t .5 14.35  14
+
+
+!xform -n s_doors -t 31.2 0 0 doorx2.rad
+
+# insert windows into the apertures located in the east wall
+!xform -n  se_window  -rz 90 -t  40 2.5  2  window.rad
+!xform -n  ne_window  -rz 90 -t  40 18   2  window.rad
+
+# # Art Gallery: lobby area daylighting
+# # illum in east wall, north window
+# !gensurf  sky_illum iwindow_e_n \
+#   '39.49' '18 + t*(22.5-18)' '2 + s*(8-2)'  2 1
+
+# # illum in east wall, south window
+# !gensurf  sky_illum iwindow_e_s \
+#   '39.49' '2.5 + t*(7-2.5)'  '2 + s*(8-2)'  2 1
+
+# # illum in south wall, south glass_door
+# !gensurf  sky_illum idoor_s \
+#   '31.2 + t*(38.2-31.2)' '0.51'  '0 + s*(8-0)'  3 1
+
+#    # Art Gallery: gallery daylighting
+# # illum at top of skylight aperture
+# !gensurf  sky_illum skylight \
+#   '1 + t*(29-1)' '10.5 + s*(14.5-10.5 )' '19.4' 2 4
+# # end walls.rad

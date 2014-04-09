@@ -1,0 +1,74 @@
+### unfurled.rad   Rendering with Radiance
+#
+#  create a free form sculpture from a continuous rod
+
+void plastic rod_color
+0
+0
+5  .9 .8 .7 .04 .02 
+
+#base constructed from 180 degrees of a torus
+!genworm rod_color leg1_unf 'tx(t)' 'ty(t)' 0 r 15  \
+                -e 'r:.1;R:1;Tmax:180*PI/180' \
+                -e 'tx(t)=R*cos(t*Tmax)' -e 'ty(t)=R*sin(t*Tmax)'\
+                | xform  -rz 180 -t -.14  0 -.5
+
+# connect  tilted and rotated  torii to create a  pseudo spiral
+!genworm rod_color leg2_unf 'tx(t)' 'ty(t)' 0 r 15  \
+                -e 'r:.1;R:1;Tmax:180*PI/180' \
+                -e 'tx(t)=R*cos(t*Tmax)' -e 'ty(t)=R*sin(t*Tmax)'\
+                | xform -ry 30
+
+!genworm rod_color leg3_unf 'tx(t)' 'ty(t)' 0 r 15  \
+                -e 'r:.1;R:1;Tmax:180*PI/180' \
+                -e 'tx(t)=R*cos(t*Tmax)' -e 'ty(t)=R*sin(t*Tmax)'\
+                | xform -ry 30 -rz 180 -t 0 0 1 
+
+# begin to taper the "spiral' by reducing the radius
+!genworm rod_color leg4_unf 'tx(t)' 'ty(t)' 0 '0.1*((2-t)/2)'  15  \
+                -e 'r:.1;R:1;Tmax:180*PI/180' \
+                -e 'tx(t)=R*cos(t*Tmax)' -e 'ty(t)=R*sin(t*Tmax)'\
+                | xform -ry 30 -t 0 0 2
+
+
+# continue the taper at the same rate
+!genworm rod_color leg5_unf 'tx(t)' 'ty(t)' 0 '0.05*((2-t)/2)' 15  \
+                -e 'R:1;Tmax:125*PI/180' \
+                -e 'tx(t)=R*cos(t*Tmax)' -e 'ty(t)=R*sin(t*Tmax)'\
+                | xform -ry 30 -rz 180 -t 0 0 3 
+
+# terminate spiral with a freeform tapering wisp
+!genworm rod_color twist\
+ 'hermite(.3,.3,.30,.4,t)'\
+ '0'\
+ 'hermite(0,.7,.5,1.1,t)'\
+ '0.025*((2-t)/2)' 10   \
+ | xform -t -.3 0 0 -rx -45 -rz 30   -t .496 -.82 3.29 
+
+
+# add a horizontal tapered cone to the base spiral
+rod_color cone base_unf
+0
+0
+8 .2 1 -.5 
+  -1.14  0  -.5  .075 .1
+
+# terminate the base cone with a sphere
+rod_color sphere tip1_unf
+0
+0
+4 .2 1 -.5  .075
+
+# add a vertical leaning cone
+rod_color cone  lean_unf
+0
+0
+8  .2 1 -.5 
+    .3 -1.1  4.2  .075 .02
+
+# add a sphere at the top of the cone
+rod_color sphere tip2_unf
+0
+0
+4 .3 -1.1  4.2  .175
+# end unfurled

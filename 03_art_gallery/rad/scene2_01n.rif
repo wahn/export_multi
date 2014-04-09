@@ -1,0 +1,37 @@
+### scene2_01n.rif    Rendering with Radiance
+#
+#   scene2 (cam01) input file
+#   camera looks at the door (light emitters only)
+
+AMBFILE= scene2_01n.amb
+DETAIL= Medium
+EXPOSURE= 1.1
+INDIRECT= 1
+OCTREE= scene2_01n.oct
+PENUMBRAS= False
+PICTURE= pics/scene2_01n
+QUALITY= Medium # High
+# DETAIL= High
+REPORT= 2
+RESOLUTION= 500 500
+UP= Z
+VARIABILITY= Medium
+ZONE= Interior 0 40.1 0 25 0 19.4
+materials= art.mat lib/building.mat lib/luminaire.mat
+render=  -aw 0 -av .05  .04 .02 
+scene=  sc2light.rad sc2bldg.rad scene_art.rad missing.rad outside.rad
+objects= art_lib/waves.oct    art_lib/sign.rad       art_lib/goblet.rad
+objects= art_lib/phone.rad    art_lib/tea_cup.rad    art_lib/champagne.rad
+objects= art_lib/sofa1_c1.rad art_lib/tble2_c1.rad   art_lib/chair_c1.rad
+objects= art_lib/desk_c1.rad  art_lib/deskc_c1.rad   art_lib/tble4_c1.rad
+objects= art_lib/sofa2_c1.rad art_lib/feather.rad    art_lib/cafe_pic.rad
+objects= art_lib/fthrbase.rad art_lib/unfurled.rad   art_lib/lotus_3.rad
+objects= art_lib/lotus123.rad art_lib/lotus_2.rad    art_lib/tapestry.rad
+objects= art_lib/lotus.mat    art_lib/cups.mat       art_lib/waves.mat
+objects= art_lib/sign.mat     art_lib/unfurled.mat   art_lib/furniture.mat
+objects= art_lib/tapestry.mat art_lib/feather.mat
+objects= lib/track_S1.rad     lib/track_S2.rad
+objects= lib/track_S4.rad     lib/track_S4T.rad      lib/track_S5.rad   
+pfilt= -r .6 
+view= cam01 -vf view_lib/cam01.vf
+# end scene2_01n.rif

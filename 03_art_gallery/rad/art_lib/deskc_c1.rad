@@ -1,0 +1,45 @@
+### deskc_c1.rad	Rendering with Radiance
+#
+# Executive desk chair with arms and headrest
+# insertion point is at floor level, at center front of the seat
+
+void metal pipe_color
+0
+0
+5 .7 .7 .7 .9 .02
+
+void plastic seat_color
+0
+0
+5 .8 .6 .05 0 0 
+
+# left side_dc support
+!genworm pipe_color l_side 'tx(t)' 'ty(t)' 0 r 15  \
+		-e 'r:.075;R:2.5;Tmax:60*PI/180' \
+		-e 'tx(t)=R*cos(t*Tmax)' -e 'ty(t)=R*sin(t*Tmax)'\
+		| xform -rz -75 -rx 90 -rz 90 -t -1.0375 -.3 2.5
+
+!genworm pipe_color l_leg_dc 'tx(t)' 'ty(t)' 0 r 15  \
+		-e 'r:.075;R:1.6;Tmax:105*PI/180' \
+		-e 'tx(t)=R*cos(t*Tmax)' -e 'ty(t)=R*sin(t*Tmax)'\
+		| xform -ry 90 -rz 180 -t -.9  2.5 1.65 
+
+# right side support
+!genworm pipe_color r_side_dc 'tx(t)' 'ty(t)' 0 r 15  \
+		-e 'r:.075;R:2.5;Tmax:60*PI/180' \
+		-e 'tx(t)=R*cos(t*Tmax)' -e 'ty(t)=R*sin(t*Tmax)'\
+		| xform -rz -75 -rx 90 -rz 90 -t 1.0375 -.3 2.5
+
+!genworm pipe_color r_leg_dc 'tx(t)' 'ty(t)' 0 r 15  \
+		-e 'r:.075;R:1.6;Tmax:105*PI/180' \
+		-e 'tx(t)=R*cos(t*Tmax)' -e 'ty(t)=R*sin(t*Tmax)'\
+		| xform -ry 90 -rz 180 -t .9 2.5 1.65 
+
+# front seats
+!genbox seat_color seat_dc   2  2  .4   -r .15	| xform -rx -5 -t -1  0   1.15
+!genbox seat_color back_l_dc 2 .3   1.9 -r .125  	| xform -rx -15 -t -1 1.75 1.3
+!genbox seat_color back_u_dc 2 .3   .75 -r .125  	| xform -rx -5  -t -1 2.2  3.0
+!genbox seat_color arm_l_dc  .35 1.5   .2  -r .05  | xform -rx -5  -t .82 .7  2 -mx
+
+!genbox seat_color arm_r_dc  .35 1.5   .2  -r .05  | xform -rx -5  -t .82 .7  2
+# end deskc_c1.rad

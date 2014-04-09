@@ -1,0 +1,20 @@
+### sconce.rad 	Rendering with Radiance
+#
+#  Assymetric indirect luminaire
+#  Photometry from 2001.ies (26 watt compact fluorescent)
+#  insertion point at top rear of bracket. Luminaire protrudes
+#  1.05 feet and is 1 foot wide.
+
+void plastic enamel_white
+0
+0
+5  .7 .6 .5 .03  0.02
+
+!genprism enamel_white housing 3 -.4 0 0 -.25  0 .25  -l 0 0 1 \
+	 | xform -ry -90 -t .5 -.5  0 
+!genprism enamel_white bracket 3 -.4 0 0 -.25  0 .25 -l 0 0 .5 \
+	 | xform -ry -90 -rz -90 -t 0 -.5  0 
+
+!xform  -n sconce  -rz -90 -ry 180 -t 0 -.5 .01       typeWM1.rad
+
+# end sconce.rad

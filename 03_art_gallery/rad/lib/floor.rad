@@ -1,0 +1,23 @@
+### floor.rad   Rendering with Radiance
+#
+
+# carpet pattern function
+void colorfunc carp
+6 carpr carpg carpb carpet.cal -s .02
+0
+4 .7  .8  .9  .7
+
+carp plastic carpet_blue
+0
+0
+5  .9 .9 .9  0 0 
+
+# floor
+carpet_blue polygon floor
+0
+0
+12      .01     .01      0
+        39.99   .01      0
+        39.99   24.99    0
+        .01     24.99   0
+# end floor.rad

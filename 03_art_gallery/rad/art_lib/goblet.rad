@@ -1,0 +1,21 @@
+### goblet.rad		Rendering with Radiance
+#
+# very simple goblet from 2 x genrevs. 1 unit tall.
+
+dirty   plastic pottery
+0
+0
+5       .7 .7 .65  .02 .01
+
+!genrev	pottery  goblet_top \
+ 'hermite(.4,1,.4,1.1,t)' \
+ 'hermite(.025,.25,.3,.025,t)' \
+ 12 -s | xform -t 0 0 .04
+
+!genrev	pottery goblet_base \
+ 	 'hermite(0,.4,-.2,1.5,t)' \
+	'hermite(.2,.025,.22,.2,t)' \
+ 12 -s | xform -t 0 0 .04
+
+# end goblet.rad
+
