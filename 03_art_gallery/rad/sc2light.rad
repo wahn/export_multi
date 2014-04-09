@@ -1,0 +1,130 @@
+###  sc2light.rad	Rendering with Radiance
+#
+#	electric lighting systems for scene2.
+#	active photometry is listed in light_n.cvt and light_d.cvt
+#	If photometry is updated, then execute:
+#		oconv light_n.cvt  or  oconv  light_d.cvt
+
+void plastic enamel_white
+0
+0
+5  .7 .6 .5 .03  0.02
+
+# south ceiling track followed by individual tracklights
+!genbox enamel_white track1 24 .15 .15 | xform -t 3  4.35  11.55
+
+# wave on sw wall
+!xform -n 11s  -t 0 0 -.5  -rx 45  -rz 95  -t 7  4.35 11.1   lib/track_S4.rad
+!xform -n l1y                      -rz 95  -t 7  4.35 11.1   lib/track_y.rad
+
+
+# lotus lighting
+!xform -n 12s  -t 0 0 -.5  -rx 2    -rz 180  -t 4  4.35 11.1   lib/track_S5.rad
+!xform -n l2y                       -rz 180  -t 4  4.35 11.1   lib/track_y.rad
+
+!xform -n 13s  -t 0 0 -.5  -rx 5    -rz 92  -t 6  4.35 11.1   lib/track_S4.rad
+!xform -n l3y                       -rz 92  -t 6  4.35 11.1   lib/track_y.rad
+
+
+# feather lighting
+!xform -n l4s  -t 0 0 -.5  -rx 40  -rz -90 -t 8  4.35 11.1  lib/track_S4.rad
+!xform -n l4y                      -rz -90 -t 8  4.35 11.1  lib/track_y.rad
+
+!xform -n l5s  -t 0 0 -.5  -rx 10  -rz -90 -t 14  4.35 11.1  lib/track_S4.rad
+!xform -n l5y                      -rz -90 -t 14  4.35 11.1  lib/track_y.rad
+
+!xform -n l6s  -t 0 0 -.5  -rx 15  -rz 90  -t 17  4.35 11.1  lib/track_S4.rad
+!xform -n l6y                      -rz 90  -t 17  4.35 11.1  lib/track_y.rad
+
+
+# wave on se gallery wall
+!xform -n l7s  -t 0 0 -.5 -rx 42.5 -rz -90 -t 23.5 4.35 11.1  lib/track_S4.rad
+!xform -n l7y                      -rz -90 -t 23.5 4.35 11.1  lib/track_y.rad
+
+# champagne bowl display
+!xform -n l8s  -t 0 0 -.5  -rx 5   -rz -95  -t 25  4.35 11.1  lib/track_S5.rad
+!xform -n l8y                      -rz -95  -t 25  4.35 11.1  lib/track_y.rad
+
+
+
+# north ceiling track followed by individual tracklights
+!genbox enamel_white track2 24 .15 .15 | xform -t 3  20.5 11.55
+
+# wave on nw gallery wall
+!xform -n 21s  -t 0 0 -.5  -rx 45  -rz 95  -t 7   20.5 11.1   lib/track_S4.rad
+!xform -n 21y                      -rz 95  -t 7   20.5 11.1   lib/track_y.rad
+
+# unfurled lighting
+!xform -n 22s  -t 0 0 -.5  -rx 35  -rz -90  -t 4   20.5 11.1   lib/track_S4.rad
+!xform -n 22y                      -rz -90  -t 4   20.5 11.1   lib/track_y.rad
+
+!xform -n 23s  -t 0 0 -.5  -rx 0   -rz   5  -t 8   20.5 11.1   lib/track_S5.rad
+!xform -n 23y                      -rz   5  -t 8   20.5 11.1   lib/track_y.rad
+
+!xform -n 24s  -t 0 0 -.5  -rx 45  -rz  90  -t 14.5  20.5 11.1 lib/track_S2.rad
+!xform -n 24y                      -rz  90  -t 14.5  20.5 11.1 lib/track_y.rad
+
+# cafe picture lighting
+!xform -n 25s  -t 0 0 -.5  -rx 40  -rz -10  -t 15.2  20.5 11.1 lib/track_S1.rad
+!xform -n 25y                      -rz -10  -t 15.2  20.5 11.1 lib/track_y.rad
+
+!xform -n 26s  -t 0 0 -.5  -rx 30  -rz 0    -t 17  20.5 11.1   lib/track_S1.rad
+!xform -n 26y                      -rz 0    -t 17  20.5 11.1   lib/track_y.rad
+
+!xform -n 27s  -t 0 0 -.5  -rx 40  -rz  10  -t 19  20.5 11.1   lib/track_S1.rad
+!xform -n 27y                      -rz  10  -t 19  20.5 11.1   lib/track_y.rad
+
+# wave on north gallery wall
+!xform -n 28s  -t 0 0 -.5  -rx 35  -rz  0  -t 25.5  20.5 11.1  lib/track_S4.rad
+!xform -n 28y                      -rz  0  -t 25.5  20.5 11.1  lib/track_y.rad
+
+# Direct louvered recessed fluorescents 
+!xform -n  rlfd -rz 0 -t  11  12.5  7.99 -a 5 -t 4 0 0 -i 1    lib/typeRLF2.rad
+
+# Indirect recessed prismatic fluorescents
+!xform -n  rlfin  -rx  145 -t 6 15.75 8.35 -a 5 -t 4 0 0 -i 0  lib/typeRLF1.rad
+!xform -n  rlfis  -rx -145 -t 6  9.25 8.35 -a 5 -t 4 0 0 -i 0  lib/typeRLF1.rad
+
+# gallery interior entrance indirect sconces
+!xform -n sc_se -rz -90 -t 29.5   8.5 6.25 lib/sconce.rad
+!xform -n sc_ne -rz -90 -t 29.5  16.5 6.25 lib/sconce.rad
+
+
+# south lobby track
+!genbox enamel_white track3 8 .15 .15 | xform -t 31  4.35  11.55
+
+!xform -n 31s  -t 0 0 -.5  -rx 0   -rz 0  -t 33  4.35   11.1  lib/track_S4.rad
+!xform -n 31y                      -rz 0  -t 33  4.35   11.1  lib/track_y.rad
+
+!xform -n 32s  -t 0 0 -.5  -rx 0   -rz 0  -t 37  4.35   11.1  lib/track_S4.rad
+!xform -n 32y                      -rz 0  -t 37  4.35   11.1  lib/track_y.rad
+
+!xform -n 33s  -t 0 0 -.5  -rx 40  -rz 90 -t 35  4.35   11.1  lib/track_S4.rad
+!xform -n 33y                      -rz 90 -t 35  4.35   11.1  lib/track_y.rad
+
+!xform -n 34s  -t 0 0 -.5  -rx 35  -rz 0  -t 36  4.35   11.1  lib/track_S4.rad
+!xform -n 34y                      -rz 0  -t 36  4.35   11.1  lib/track_y.rad
+
+
+# north lobby track
+!genbox enamel_white track4 8 .15 .15 | xform -t 31  20.5  11.55
+
+!xform -n 41s  -t 0 0 -.5  -rx 0   -rz 0  -t 33  20.5 11.1   lib/track_S4.rad
+!xform -n 41y                      -rz 0  -t 33  20.5 11.1   lib/track_y.rad
+
+!xform -n 42s  -t 0 0 -.5  -rx 0   -rz 0  -t 37  20.5 11.1   lib/track_S4.rad
+!xform -n 42y                      -rz 0  -t 37  20.5 11.1   lib/track_y.rad
+
+!xform -n 43s  -t 0 0 -.5  -rx 40  -rz 90 -t 35  20.5 11.1   lib/track_S4.rad
+!xform -n 43y                      -rz 90 -t 35  20.5 11.1   lib/track_y.rad
+
+
+# lobby indirect sconces
+# gallery arch
+!xform -n sc_sw -rz 90   -t 30   8.5 6.25 lib/sconce.rad
+!xform -n sc_nw -rz 90   -t 30  16.5 6.25 lib/sconce.rad
+# front door
+!xform -n sc_e  -rz 180  -t 30.7  .5 6.25 lib/sconce.rad
+!xform -n sc_w  -rz 180  -t 38.7  .5 6.25 lib/sconce.rad
+
+# #end sc2light.rad

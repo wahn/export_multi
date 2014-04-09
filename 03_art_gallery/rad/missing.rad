@@ -1,0 +1,39 @@
+# lotus
+!xform -n lotus -s .0833  -t 4  4  3.26  art_lib/lotus123.rad
+
+# painting
+!xform -n painting -t 14 24.4 2.5  art_lib/cafe_pic_org.rad
+
+# sign
+!xform -n sign1 -t 30.75 24.44 6 art_lib/sign_org.rad
+
+# waves
+void 	instance  wave1
+9  art_lib/waves.oct -ry 90 -rz 90 -t 30 4  5
+0
+0
+
+blue	instance  wave2
+9  art_lib/waves.oct -ry -90 -rz 90 -t 30 21  5
+0
+0
+
+gold	instance  wave3
+7  art_lib/waves.oct -ry 45    -t 25.75  24.5  5
+0
+0
+
+blue	instance  wave4
+9  art_lib/waves.oct -ry -45 -rz -90 -t 29.5 4.0  5
+0
+0
+
+gold	instance  wave5
+9  art_lib/waves.oct -ry -90 -rz 90 -t .5  3.5  5
+0
+0
+
+pewter	instance  wave6
+9  art_lib/waves.oct -ry  90 -rz 90 -t .5  21.5  5
+0
+0

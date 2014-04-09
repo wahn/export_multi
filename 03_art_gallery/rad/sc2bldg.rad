@@ -1,0 +1,8 @@
+### sc2bldg.rad 	Rendering with Radiance
+#
+#	collection of building scene descriptions
+
+!xform -n floor lib/floor.rad
+!xform -n walls lib/walls.rad
+!xform -n ceiling lib/ceiling.rad
+#end sc2bldg.rad

@@ -1,0 +1,25 @@
+###  art.mat	Rendering with Radiance
+#
+#	file collects individual art materials
+#	for convenient handeling
+
+!cat art_lib/tapestry.mat  art_lib/unfurled.mat art_lib/feather.mat
+!cat art_lib/furniture.mat art_lib/waves.mat    art_lib/cups.mat
+!cat art_lib/lotus.mat	   art_lib/sign.mat
+
+void  plastic accent_white
+0
+0
+5   .8 .8 .8 0 0 
+
+void plastic accent_green
+0
+0
+5   .01 .9 .02  0 0 
+
+void plastic accent_red
+0
+0
+5   .4 .01 .05 .04 .025 	
+# end art.mat
+

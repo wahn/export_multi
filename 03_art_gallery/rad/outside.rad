@@ -1,0 +1,12 @@
+void plastic ground_mat
+0
+0
+5 .2 .2 .2 0 0
+
+ground_mat ring groundplane
+0
+0
+8
+	0	0	-.1
+	0	0	1
+	0	2000

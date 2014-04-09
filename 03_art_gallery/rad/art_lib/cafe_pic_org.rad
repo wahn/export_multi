@@ -1,0 +1,26 @@
+### cafe_pic.rad        Rendering with Radiance
+#
+# mapping a picture onto a canvas
+
+
+void plastic titanium_white_canvas
+0
+0
+5	.92 .92 .92 0 0
+
+void	colorpict	cafe_image_data
+11 clip_r  clip_g  clip_b  art_lib/scene1.pic picture.cal pic_u pic_v -s 6 -rx 90
+0
+0
+
+
+cafe_image_data alias cafe_art titanium_white_canvas
+
+cafe_art  polygon  cafe_painting
+0
+0
+12	0 0 0 
+	6 0 0 
+	6 0 6
+	0 0 6
+#end cafe_pic.rad

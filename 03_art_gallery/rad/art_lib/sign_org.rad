@@ -1,0 +1,83 @@
+### sign.rad		Rendering with Radiance
+#
+# creates an 8.55' x 1.5' x .05 thick sign
+# clear acrylic background with gold lettering
+# sign faces south (xz plane) with insertion point
+# in the lower left rear corner
+#
+# The text mixing gold foreground with acrylic background for a
+# sign 11.4 by 2 oriented in the XZ plane with (0,0,0) at lower left
+#
+
+void mixtext sign_mat
+6 gold_leaf acrylic helvet.fnt . ART GALLERY 
+0
+9
+	.2	0	1.5
+	.75	0	0
+	-.1	0	-1.5
+
+#       border  0  (height-sp=top of letters) (Orientation)
+#       distance_apart 0 offset_upwards     (aspect ratio)
+#       (-=r +=l slant) (drags bottom down+) (drags top up-)			    
+
+
+# Just switch surface on front:
+# genbox acrylic sign 8.55 0.05 1.5
+
+sign_mat polygon sign.1540
+0
+0
+12
+                      8.55                       0                       0
+                      8.55                       0                     1.5
+                         0                       0                     1.5
+                         0                       0                       0
+
+acrylic polygon sign.4620
+0
+0
+12
+                         0                       0                     1.5
+                         0                    0.05                     1.5
+                         0                    0.05                       0
+                         0                       0                       0
+
+acrylic polygon sign.2310
+0
+0
+12
+                         0                    0.05                       0
+                      8.55                    0.05                       0
+                      8.55                       0                       0
+                         0                       0                       0
+
+acrylic polygon sign.3267
+0
+0
+12
+                      8.55                    0.05                       0
+                         0                    0.05                       0
+                         0                    0.05                     1.5
+                      8.55                    0.05                     1.5
+
+acrylic polygon sign.5137
+0
+0
+12
+                      8.55                       0                     1.5
+                      8.55                       0                       0
+                      8.55                    0.05                       0
+                      8.55                    0.05                     1.5
+
+acrylic polygon sign.6457
+0
+0
+12
+                         0                    0.05                     1.5
+                         0                       0                     1.5
+                      8.55                       0                     1.5
+                      8.55                    0.05                     1.5
+#end sign.rad
+
+
