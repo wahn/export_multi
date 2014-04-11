@@ -1,0 +1,24 @@
+skyfunc glow ground_glow
+0
+0
+4 1.0 1.0 1.0 0
+
+ground_glow source ground
+0
+0
+4 0 0 -1 180
+
+# Terra Firma:
+
+void plastic ground_mat
+0
+0
+5 .2 .2 .2 0 0
+
+ground_mat ring groundplane
+0
+0
+8
+	0	0	-.1
+	0	0	1
+	0	2000
