@@ -1,0 +1,29 @@
+###   lights_n.cvt   Rendering with Radiance
+#
+#     file for maintaining active scene two photometry
+#     for night-time settings.
+#     Turn off a circuit:	-m  0
+#     Turn on a circuit:	-m >0  (.8 for reasonable LLF)
+
+#spotlights for the art gallery
+ies2rad -df -t default -m .8  -c  1 1 1   -o lib/typeS1  ies_lib/90pfl.ies
+ies2rad -df -t default -m .8  -c  1 1 1   -o lib/typeS2  ies_lib/90psp.ies
+ies2rad -df -t default -m .8  -c  1 1 1   -o lib/typeS3  ies_lib/90pns.ies
+ies2rad -df -t default -m .8  -c  1 1 1   -o lib/typeS4  ies_lib/q150p38f.ies
+ies2rad -df -t default -m .8  -c  1 1 1   -o lib/typeS5  ies_lib/q150p38s.ies
+
+# tapestry lighting
+ies2rad -df -t default -m .8  -c  1 1 1   -o lib/typeS4T ies_lib/q150p38f.ies
+
+# 4' x .5' recessed linear fluorescent luminaires
+# 1000.ies = prismatic indirect.
+#	     Significant Light Loss Factor (.6) from surface dust.
+# 1001.ies = louvered downlight
+ies2rad -df -t default -m .6  -c  1 1 1   -o lib/typeRLF1 ies_lib/1000.ies
+ies2rad -df -t default -m .8  -c  1 1 1   -o lib/typeRLF2 ies_lib/1001.ies
+
+#2001.ies = indirect wall mounted sconce
+ies2rad -df -t default -m .8  -c  1 1 1   -o lib/typeWM1  ies_lib/2001.ies
+
+#end lights_n.cvt
+
