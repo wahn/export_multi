@@ -28,3 +28,9 @@ pics/scene2_01n_cam01.png: clobber
 	rad scene2_01n.rif
 	ra_tiff pics/scene2_01n_cam01.hdr pics/scene2_01n_cam01.tiff
 	imf_copy pics/scene2_01n_cam01.tiff pics/scene2_01n_cam01.png
+
+pics/scene2_02_cam02.png: clobber
+	./lights_01.cvt
+	rad scene2_02.rif
+	ra_tiff pics/scene2_02_cam02.hdr pics/scene2_02_cam02.tiff
+	imf_copy pics/scene2_02_cam02.tiff pics/scene2_02_cam02.png
