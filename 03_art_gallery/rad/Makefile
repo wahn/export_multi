@@ -40,3 +40,15 @@ pics/scene2_02n_cam02.png: clobber
 	rad scene2_02n.rif
 	ra_tiff pics/scene2_02n_cam02.hdr pics/scene2_02n_cam02.tiff
 	imf_copy pics/scene2_02n_cam02.tiff pics/scene2_02n_cam02.png
+
+pics/scene2_03_cam03.png: clobber
+	./lights_01.cvt
+	rad scene2_03.rif
+	ra_tiff pics/scene2_03_cam03.hdr pics/scene2_03_cam03.tiff
+	imf_copy pics/scene2_03_cam03.tiff pics/scene2_03_cam03.png
+
+pics/scene2_03n_cam03.png: clobber
+	./lights_01n.cvt
+	rad scene2_03n.rif
+	ra_tiff pics/scene2_03n_cam03.hdr pics/scene2_03n_cam03.tiff
+	imf_copy pics/scene2_03n_cam03.tiff pics/scene2_03n_cam03.png
