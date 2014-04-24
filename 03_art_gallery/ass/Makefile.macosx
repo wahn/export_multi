@@ -1,0 +1,41 @@
+# usage:
+# make clobber
+# make art_gallery_01.exr -j 4
+
+ARNOLD = /usr/local/Arnold
+KICK = $(ARNOLD)/bin/kick
+
+all: \
+art_gallery_01.ass
+
+clean:
+	-rm -f *~ art_gallery_0*.ass
+
+clobber: clean
+	-rm -f *.exr
+
+art_gallery_01.ass: art_gallery_01.patch
+	patch art_gallery.ass -i art_gallery_01.patch -o art_gallery_01.ass
+
+art_gallery_01.exr: \
+art_gallery_01_seed_1.exr \
+art_gallery_01_seed_2.exr \
+art_gallery_01_seed_3.exr \
+art_gallery_01_seed_4.exr
+	echo "TODO: combine seed images into a single one"
+
+art_gallery_01_seed_1.exr: art_gallery_01.ass
+	$(KICK) -dp -dw -i art_gallery_01.ass -o art_gallery_01_seed_1.exr \
+-set options.AA_seed 1 -r 2000 2000 -v 0
+
+art_gallery_01_seed_2.exr: art_gallery_01.ass
+	$(KICK) -dp -dw -i art_gallery_01.ass -o art_gallery_01_seed_2.exr \
+-set options.AA_seed 2 -r 2000 2000 -v 0
+
+art_gallery_01_seed_3.exr: art_gallery_01.ass
+	$(KICK) -dp -dw -i art_gallery_01.ass -o art_gallery_01_seed_3.exr \
+-set options.AA_seed 3 -r 2000 2000 -v 0
+
+art_gallery_01_seed_4.exr: art_gallery_01.ass
+	$(KICK) -dp -dw -i art_gallery_01.ass -o art_gallery_01_seed_4.exr \
+-set options.AA_seed 4 -r 2000 2000 -v 0
