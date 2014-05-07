@@ -1,0 +1,13 @@
+Light Groups:
+
+- lightring2: 1.0
+- lightring:  1.0
+- lumensf:    50.0
+- diffuse:    5.0
+
+Tone Mapping:
+
+Film ISO: 640
+Shutter:  0.067
+f-stop:   5.6
+

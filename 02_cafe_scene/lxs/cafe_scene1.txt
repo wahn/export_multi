@@ -1,0 +1,6 @@
+Tone Mapping:
+
+Film ISO: 400
+Shutter:  1.0
+f-stop:   5.6
+
