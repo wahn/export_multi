@@ -3705,6 +3705,6 @@
     </external>
   </mesh>
   <include>
-    <pathname>igmesh/object2.igs</pathname>
+    <pathname>igmesh/objects2.igs</pathname>
   </include>
 </scene>
