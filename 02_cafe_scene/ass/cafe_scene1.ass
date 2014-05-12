@@ -254,6 +254,9 @@ standard
  Ks 0.100000001
  Ks_color 1 1 1
  specular_brdf "cook_torrance"
+ specular_roughness 0.0199999996
+ Kr 0.100000001
+ Kr_color 1 1 1
 }
 
 cone
@@ -509,6 +512,7 @@ standard
  Ks 0
  Ks_color 1 1 1
  specular_brdf "cook_torrance"
+ specular_roughness 0.200000003
  Kr 0.300000012
  Kr_color 0.136000007 0.101999998 0.0829999968
 }
@@ -565,6 +569,7 @@ standard
  Ks 0
  Ks_color 1 1 1
  specular_brdf "cook_torrance"
+ specular_roughness 0.5
  Kr 1
  Kr_color 0.800000012 0.800000012 0.800000012
 }
@@ -1645,6 +1650,9 @@ standard
  Ks 0.0199999996
  Ks_color 1 1 1
  specular_brdf "cook_torrance"
+ specular_roughness 0.0299999993
+ Kr 0.0199999996
+ Kr_color 1 1 1
 }
 
 polymesh
@@ -1696,6 +1704,9 @@ standard
  Ks 0.0199999996
  Ks_color 1 1 1
  specular_brdf "cook_torrance"
+ specular_roughness 0.0299999993
+ Kr 0.0199999996
+ Kr_color 1 1 1
 }
 
 polymesh
@@ -4215,6 +4226,9 @@ standard
  Ks 0.0500000007
  Ks_color 1 1 1
  specular_brdf "cook_torrance"
+ specular_roughness 0.0299999993
+ Kr 0.0500000007
+ Kr_color 1 1 1
 }
 
 polymesh
@@ -5148,6 +5162,9 @@ standard
  Ks 0.0500000007
  Ks_color 1 1 1
  specular_brdf "cook_torrance"
+ specular_roughness 0.0199999996
+ Kr 0.0500000007
+ Kr_color 1 1 1
 }
 
 cone
@@ -5204,6 +5221,9 @@ standard
  Ks 0.0500000007
  Ks_color 1 1 1
  specular_brdf "cook_torrance"
+ specular_roughness 0.0199999996
+ Kr 0.0500000007
+ Kr_color 1 1 1
 }
 
 cylinder
