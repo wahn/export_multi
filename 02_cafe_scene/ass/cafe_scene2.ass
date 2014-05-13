@@ -103,7 +103,7 @@ spot_light
  0 0 1 0
  0 -0.152500004 2.43694997 1
  color 1 0.660714269 0.0632440448
- intensity 13.44
+ intensity 26.88 # 13.44
  affect_diffuse on
  affect_specular on
  max_bounces 0
@@ -157,7 +157,7 @@ spot_light
  0 0 1 0
  0.914399981 -0.304800004 2.43535185 1
  color 1 0.659311473 0.248766541
- intensity 2.2913
+ intensity 4.5826 # 2.2913
  samples 3
  max_bounces 0
 }
@@ -174,7 +174,7 @@ spot_light
  0 0 1 0
  -0.914399981 -0.304800004 2.43535185 1
  color 1 0.659311473 0.248766541
- intensity 2.2913
+ intensity 4.5826 # 2.2913
  samples 3
  max_bounces 0
 }
@@ -232,7 +232,7 @@ point_light
  0 0 1 0
  0.838200033 1.14300001 1.98119998 1
  color 1 0.659300983 0.252817512
- intensity .16
+ intensity .32 # .16
  samples 3
  max_bounces 0
 }
@@ -247,7 +247,7 @@ point_light
  0 0 1 0
  -0.838200033 1.14300001 1.98119998 1
  color 1 0.659300983 0.252817512
- intensity .16
+ intensity .32 # .16
  samples 3
  max_bounces 0
 }
@@ -306,7 +306,7 @@ mesh_light
  name MElens1_light
  mesh MElens1
  color 1 0.653846145 0.230769232
- intensity 0.25999999
+ intensity 0.52 # 0.26
  samples 3
  max_bounces 0
 }
@@ -316,7 +316,7 @@ mesh_light
  name MElens2_light
  mesh MElens2
  color 1 0.653846145 0.230769232
- intensity 0.25999999
+ intensity 0.52 # 0.26
  samples 3
  max_bounces 0
 }
