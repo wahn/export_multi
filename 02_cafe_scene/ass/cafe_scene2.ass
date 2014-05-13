@@ -157,6 +157,7 @@ spot_light
  0 0 1 0
  0.914399981 -0.304800004 2.43535185 1
  color 1 0.659311473 0.248766541
+ intensity 2.2913
  samples 3
  max_bounces 0
 }
@@ -173,6 +174,7 @@ spot_light
  0 0 1 0
  -0.914399981 -0.304800004 2.43535185 1
  color 1 0.659311473 0.248766541
+ intensity 2.2913
  samples 3
  max_bounces 0
 }
