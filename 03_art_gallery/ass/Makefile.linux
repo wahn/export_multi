@@ -8,7 +8,8 @@ KICK = $(ARNOLD)/bin/kick
 all: \
 art_gallery_01.ass \
 art_gallery_02.ass \
-art_gallery_03.ass
+art_gallery_03.ass \
+art_gallery_04.ass
 
 clean:
 	-rm -f *~ art_gallery_0*.ass
