@@ -1,0 +1,142 @@
+10c10,11
+<  AA_samples 16
+---
+>  AA_samples 3
+>  AA_seed 1
+24,25c25,26
+<  camera "CAcam02"
+<  background "sun_sky"
+---
+>  camera "CAcam04"
+>  # background "sun_sky"
+27,28c28,29
+<  GI_diffuse_depth 3
+<  GI_glossy_depth 1
+---
+>  GI_diffuse_depth 0
+>  GI_glossy_depth 2
+32a34,36
+>  GI_single_scatter_samples 5
+>  GI_glossy_samples 2
+>  GI_refraction_samples 2
+159,178d162
+< physical_sky
+< {
+<  name sun_sky
+<  turbidity 2
+<  elevation 73.9559555
+<  azimuth -76.0981598
+<  sun_direction 0 1 0
+<  intensity 1
+<  X 1 0 0
+<  Y 0 0 1
+<  Z 0 1 0
+< }
+< 
+< skydome_light
+< {
+<  name sun_skydome
+<  color sun_sky
+<  intensity 1
+< }
+< 
+363599c363583
+<  shader "MAtypeS4T_light"
+---
+>  # shader "MAtypeS4T_light"
+363603c363587
+< standard
+---
+> mesh_light
+363605,363613c363589,363593
+<  name MAtypeS4T_light
+<  Kd 0
+<  Kd_color 1 1 1
+<  Ks 0
+<  Ks_color 1 1 1
+<  specular_brdf "cook_torrance"
+<  emission 1
+<  emission_color 1 1 1
+<  opacity 1 1 1
+---
+>  name LAtypeS4T_light1
+>  mesh MEtypeS4T.d
+>  color 1 1 1
+>  intensity 5
+>  samples 3
+363656a363637
+>  name MEtypeS4T.d2
+363698c363679
+<  shader "MAtypeS4T_light"
+---
+>  # shader "MAtypeS4T_light"
+363701a363683,363691
+> mesh_light
+> {
+>  name LAtypeS4T_light2
+>  mesh MEtypeS4T.d2
+>  color 1 1 1
+>  intensity 5
+>  samples 3
+> }
+> 
+363730a363721
+>  name MEtypeS4T.d3
+363772c363763
+<  shader "MAtypeS4T_light"
+---
+>  # shader "MAtypeS4T_light"
+363775a363767,363775
+> mesh_light
+> {
+>  name LAtypeS4T_light3
+>  mesh MEtypeS4T.d3
+>  color 1 1 1
+>  intensity 5
+>  samples 3
+> }
+> 
+363804a363805
+>  name MEtypeS4T.d4
+363846c363847
+<  shader "MAtypeS4T_light"
+---
+>  # shader "MAtypeS4T_light"
+363849a363851,363859
+> mesh_light
+> {
+>  name LAtypeS4T_light4
+>  mesh MEtypeS4T.d4
+>  color 1 1 1
+>  intensity 5
+>  samples 3
+> }
+> 
+364319c364329
+<  emission 1
+---
+>  emission 0 # 1
+365124c365134
+<  emission 1
+---
+>  emission 0 # 1
+368095c368105
+<  emission 1
+---
+>  emission 0 # 1
+368329c368339
+<  emission 1
+---
+>  emission 0 # 1
+369294c369304
+<  emission 1
+---
+>  emission 0 # 1
+370645c370655
+<  emission 1
+---
+>  emission 0 # 1
+371106c371116
+<  emission 1
+---
+>  emission 0 # 1
