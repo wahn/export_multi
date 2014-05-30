@@ -1,0 +1,59 @@
+10c10
+<  AA_samples 16
+---
+>  AA_samples 3
+24c24
+<  camera "CAcam02"
+---
+>  camera "CAcam05"
+28c28
+<  GI_glossy_depth 1
+---
+>  GI_glossy_depth 0
+32c32,35
+<  GI_diffuse_samples 3
+---
+>  GI_diffuse_samples 12
+>  GI_single_scatter_samples 5
+>  GI_glossy_samples 2
+>  GI_refraction_samples 2
+166c169
+<  intensity 1
+---
+>  intensity 50
+174a178
+>  resolution 4096
+176a181
+>  samples 10
+363611c363616
+<  emission 1
+---
+>  emission 0 # 1
+364319c364324
+<  emission 1
+---
+>  emission 0 # 1
+365124c365129
+<  emission 1
+---
+>  emission 0 # 1
+368095c368100
+<  emission 1
+---
+>  emission 0 # 1
+368329c368334
+<  emission 1
+---
+>  emission 0 # 1
+369294c369299
+<  emission 1
+---
+>  emission 0 # 1
+370645c370650
+<  emission 1
+---
+>  emission 0 # 1
+371106c371111
+<  emission 1
+---
+>  emission 0 # 1
