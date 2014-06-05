@@ -61,19 +61,19 @@ art_gallery_01n_seed_4.exr
 
 art_gallery_01n_seed_1.exr: art_gallery_01n.ass
 	$(KICK) -dp -dw -i art_gallery_01n.ass -o art_gallery_01n_seed_1.exr \
--set options.AA_seed 1 -r 2000 2000 -v 0
+-set options.AA_seed 1 -r 2000 2000 -v 6
 
 art_gallery_01n_seed_2.exr: art_gallery_01n.ass
 	$(KICK) -dp -dw -i art_gallery_01n.ass -o art_gallery_01n_seed_2.exr \
--set options.AA_seed 2 -r 2000 2000 -v 0
+-set options.AA_seed 2 -r 2000 2000 -v 6
 
 art_gallery_01n_seed_3.exr: art_gallery_01n.ass
 	$(KICK) -dp -dw -i art_gallery_01n.ass -o art_gallery_01n_seed_3.exr \
--set options.AA_seed 3 -r 2000 2000 -v 0
+-set options.AA_seed 3 -r 2000 2000 -v 6
 
 art_gallery_01n_seed_4.exr: art_gallery_01n.ass
 	$(KICK) -dp -dw -i art_gallery_01n.ass -o art_gallery_01n_seed_4.exr \
--set options.AA_seed 4 -r 2000 2000 -v 0
+-set options.AA_seed 4 -r 2000 2000 -v 6
 
 # art_gallery_02
 
