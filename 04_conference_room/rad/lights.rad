@@ -1,0 +1,63 @@
+#
+# Front inner bank of lights
+#
+
+!xform -n inner1.front1 -t 21 0 0 -t 0 90 0 -s .0833 lib/fixture.rad
+
+!xform -n inner1.front2 -t 69 0 0 -t 0 90 0 -s .0833 lib/fixture.rad
+
+!xform -n inner1.front3 -t 117 0 0 -t 0 90 0 -s .0833 lib/fixture.rad
+
+!xform -n inner2.front1 -t 21 0 0 -t 0 138 0 -s .0833 lib/fixture.rad
+
+!xform -n inner2.front2 -t 69 0 0 -t 0 138 0 -s .0833 lib/fixture.rad
+
+!xform -n inner2.front3 -t 117 0 0 -t 0 138 0 -s .0833 lib/fixture.rad
+
+#
+# Front outer bank of lights
+#
+
+!xform -n outer1.front1 -t 21 0 0 -t 0 42 0 -s .0833 lib/fixture.rad
+
+!xform -n outer1.front2 -t 69 0 0 -t 0 42 0 -s .0833 lib/fixture.rad
+
+!xform -n outer1.front3 -t 117 0 0 -t 0 42 0 -s .0833 lib/fixture.rad
+
+!xform -n outer2.front1 -t 21 0 0 -t 0 186 0 -s .0833 lib/fixture.rad
+
+!xform -n outer2.front2 -t 69 0 0 -t 0 186 0 -s .0833 lib/fixture.rad
+
+!xform -n outer2.front3 -t 117 0 0 -t 0 186 0 -s .0833 lib/fixture.rad
+
+#
+# Rear inner bank of lights
+#
+
+!xform -n inner1.rear1 -t 21 0 0 -t 0 90 0 -s .0833 -t 12 0 0 lib/fixture.rad
+
+!xform -n inner1.rear2 -t 69 0 0 -t 0 90 0 -s .0833 -t 12 0 0 lib/fixture.rad
+
+!xform -n inner1.rear3 -t 117 0 0 -t 0 90 0 -s .0833 -t 12 0 0 lib/fixture.rad
+
+!xform -n inner2.rear1 -t 21 0 0 -t 0 138 0 -s .0833 -t 12 0 0 lib/fixture.rad
+
+!xform -n inner2.rear2 -t 69 0 0 -t 0 138 0 -s .0833 -t 12 0 0 lib/fixture.rad
+
+!xform -n inner2.rear3 -t 117 0 0 -t 0 138 0 -s .0833 -t 12 0 0 lib/fixture.rad
+
+#
+# Rear outer bank of lights
+#
+
+!xform -n outer1.rear1 -t 21 0 0 -t 0 42 0 -s .0833 -t 12 0 0 lib/fixture.rad
+
+!xform -n outer1.rear2 -t 69 0 0 -t 0 42 0 -s .0833 -t 12 0 0 lib/fixture.rad
+
+!xform -n outer1.rear3 -t 117 0 0 -t 0 42 0 -s .0833 -t 12 0 0 lib/fixture.rad
+
+!xform -n outer2.rear1 -t 21 0 0 -t 0 186 0 -s .0833 -t 12 0 0 lib/fixture.rad
+
+!xform -n outer2.rear2 -t 69 0 0 -t 0 186 0 -s .0833 -t 12 0 0 lib/fixture.rad
+
+!xform -n outer2.rear3 -t 117 0 0 -t 0 186 0 -s .0833 -t 12 0 0 lib/fixture.rad

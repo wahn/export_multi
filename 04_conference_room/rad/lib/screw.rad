@@ -1,0 +1,24 @@
+#
+# description of a screw
+#
+
+void metal screw_mat
+0
+0
+5 .709 .709 .709 .7 0
+
+screw_mat cone screw
+0
+0
+8
+	0	0	0
+	0	.005	0
+	.03	.025
+
+screw_mat ring screw_top
+0
+0
+8
+	0	.005	0
+	0	1	0
+	0	.025

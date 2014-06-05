@@ -1,0 +1,24 @@
+# description of a frame at window unit number 1
+
+void plastic window_board_mat
+0
+0
+5 .6 .6 .6 0 .1
+
+window_board_mat polygon border1.1
+0
+0
+12
+	0	0	0
+	0	0	6.06	
+	.166	0	6.06
+	.166	0	0
+
+window_board_mat polygon border1.2
+0
+0
+12
+                3.83               0                  0
+                3.83               0                6.06
+                4                  0                6.06
+                4                  0                  0

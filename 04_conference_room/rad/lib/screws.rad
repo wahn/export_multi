@@ -1,0 +1,50 @@
+#############################
+# screws on wood baseboards #
+#############################
+
+# screws on left wall after door1 
+
+!xform -n screw1 -rz 180 -t 6.41 21.925 2.476 screw.rad
+!xform -n screw2 -rz 180 -t 8.43 21.925 2.476 screw.rad
+!xform -n screw3 -rz 180 -t 10.6 21.925 2.476 screw.rad
+
+# screws after shaft4
+
+!xform -n screw4 -rz 180 -t 12.62 21.925 2.476 screw.rad
+!xform -n screw5 -rz 180 -t 13.646 21.925 2.476 screw.rad
+!xform -n screw6 -rz 180 -t 16.31 21.925 2.476 screw.rad
+!xform -n screw7 -rz 180 -t 18.98 21.925 2.476 screw.rad
+!xform -n screw8 -rz 180 -t 21.687 21.925 2.476 screw.rad
+!xform -n screw9 -rz 180 -t 24.35 21.925 2.476 screw.rad
+
+# screws after door2
+
+!xform -n screw10 -rz 180 -t 30 21.925 2.476 screw.rad
+!xform -n screw11 -rz 180 -t 32.66 21.925 2.476 screw.rad
+!xform -n screw12 -rz 180 -t 35.18 21.925 2.476 screw.rad
+
+# after shaft3
+
+!xform -n screw13 -rz 90 -t 35.085 21 2.476 screw.rad
+!xform -n screw14 -rz 90 -t 35.085 19.9 2.476 screw.rad
+!xform -n screw15 -rz 90 -t 35.085 16.33 2.476 screw.rad
+!xform -n screw16 -rz 90 -t 35.085 13.66 2.476 screw.rad
+
+# Big_shaft 1
+
+!xform -n screw17 -t 32.05 13.28 2.476 screw.rad
+!xform -n screw18 -t 29.3 13.28 2.476 screw.rad
+
+# Big_shaft 2 (front)
+
+!xform -n screw19 -rz 90 -t 28.925 13.03 2.476 screw.rad
+!xform -n screw20 -rz 90 -t 28.925 10.9 2.476 screw.rad
+!xform -n screw21 -rz 90 -t 28.925 8.9 2.476 screw.rad
+!xform -n screw22 -rz 90 -t 28.925 6.95 2.476 screw.rad
+
+# Big_shaft 3
+
+!xform -n screw23 -rz 180 -t 29.18 6.675 2.476 screw.rad
+!xform -n screw24 -rz 180 -t 30.8 6.675 2.476 screw.rad
+!xform -n screw25 -rz 180 -t 32.5 6.675 2.476 screw.rad
+

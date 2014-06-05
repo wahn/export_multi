@@ -1,0 +1,44 @@
+# creation of the small green board
+
+void plastic green_board
+0
+0
+5 .123 .263 .151 0 .1
+
+void metal edge_mat  
+0 
+0
+5 .33 .33 .33 .4 .05
+
+green_board polygon small_board
+0
+0
+12
+	0	.05	0
+	6.03	.05	0
+	6.03	.05	4.04
+	0	.05	4.04
+
+!genbox edge_mat Sboard_right .062 .052 4.04 | xform -t 5.968 0 0
+!genbox edge_mat Sboard_left  .062 .052 4.04 
+!genbox edge_mat Sboard_top  6.03  .052 .062 | xform -t 0 0 3.978  
+!genbox edge_mat Sboard_down.1 6.03 .052 .062
+!genbox edge_mat Sboard_down.2  6.03 .052 .062 | xform -t 0 0 .0625
+
+edge_mat polygon Sboard_support_horiz 
+0
+0
+12
+	.002	0	.0623
+	.002	.26	.0623
+	6.028	.26	.0623
+	6.028	0	.0623
+
+edge_mat polygon Sboard_support_vert
+0
+0
+12
+              0.062               0.26             0.0623
+              5.948               0.26             0.0623
+              5.968               0.26             0.1033
+              0.062               0.26             0.1033

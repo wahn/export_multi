@@ -1,0 +1,227 @@
+#
+# Furniture in the conference room
+#
+
+#
+# The podium
+#
+
+!xform -e -n podium -s .0833 -rz -50 -t 5 5 0 lib/podium.rad
+
+#
+# A couple of wastebaskets
+#
+
+!xform -e -n waste1 -s .0833 -rz 100 -t 1 21 0 lib/wastebasket.rad
+
+!xform -e -n waste2 -s .0833 -rz 82 -t 29.3 21 0 lib/wastebasket.rad
+
+#
+# The conference table
+#
+
+!xform -e -n table.left -s .0833 -t 10 10 0 lib/table.rad
+
+# doesn't quite line up:
+
+!xform -e -n table.right -mx -t 133.1 -.3 -.2 -s .0833 -t 10 10 0 lib/table.rad
+
+#
+# Chairs around the conference table
+#
+
+!xform -n chair2.1  -s .0833 -rz -102 -t 10 10.5 0 lib/chair2.rad
+# void instance chair2.1 
+# 9 chair2.oct -s .0833 -rz -102 -t 10 10.5 0 
+# 0
+# 0
+
+!xform -n chair2.2 -s .0833 -rz -93 -t 12.3 10.3 0 lib/chair2.rad
+# void instance chair2.2
+# 9 chair2.oct -s .0833 -rz -93 -t 12.3 10.3 0
+# 0
+# 0
+
+!xform -n chair2.3 -s .0833 -rz -95 -t 15.1 10.7 0 lib/chair2.rad
+# void instance chair2.3
+# 9 chair2.oct -s .0833 -rz -95 -t 15.1 10.7 0
+# 0
+# 0
+
+!xform -n chair2.4 -s .0833 -rz -91 -t 17.4 10.4 0 lib/chair2.rad
+# void instance chair2.4
+# 9 chair2.oct -s .0833 -rz -91 -t 17.4 10.4 0
+# 0
+# 0
+
+!xform -n chair2.5 -s .0833 -rz -77 -t 20.2 10.35 0 lib/chair2.rad
+# void instance chair2.5
+# 9 chair2.oct -s .0833 -rz -77 -t 20.2 10.35 0
+# 0
+# 0
+
+!xform -n chair2.6 -s .0833 -rz 5 -t 21.8 11.3 0 lib/chair2.rad
+# void instance chair2.6
+# 9 chair2.oct -s .0833 -rz 5 -t 21.8 11.3 0
+# 0
+# 0
+
+!xform -n chair2.7 -s .0833 -rz 76 -t 21.6 13.4 0 lib/chair2.rad
+# void instance chair2.7
+# 9 chair2.oct -s .0833 -rz 76 -t 21.6 13.4 0
+# 0
+# 0
+
+!xform -n chair2.8 -s .0833 -rz 92 -t 19.4 13.7 0 lib/chair2.rad
+# void instance chair2.8
+# 9 chair2.oct -s .0833 -rz 92 -t 19.4 13.7 0
+# 0
+# 0
+
+!xform -n chair2.9 -s .0833 -rz 89 -t 16.9 13.5 0 lib/chair2.rad
+# void instance chair2.9
+# 9 chair2.oct -s .0833 -rz 89 -t 16.9 13.5 0
+# 0
+# 0
+
+!xform -n chair2.10 -s .0833 -rz 87 -t 14.2 13.3 0 lib/chair2.rad
+# void instance chair2.10
+# 9 chair2.oct -s .0833 -rz 87 -t 14.2 13.3 0
+# 0
+# 0
+
+!xform -n chair2.11 -s .0833 -rz 105 -t 11.6 13.6 0 lib/chair2.rad
+# void instance chair2.11
+# 9 chair2.oct -s .0833 -rz 105 -t 11.6 13.6 0
+# 0
+# 0
+
+!xform -n chair2.12 -s .0833 -rz 190 -t 9.7 13.1 0 lib/chair2.rad
+# void instance chair2.12
+# 9 chair2.oct -s .0833 -rz 190 -t 9.7 13.1 0
+# 0
+# 0
+
+#
+# Chairs around the room perimeter
+#
+
+!xform -n chair1.1 -s .0833 -rz 4 -t 7.2 19.9 0 lib/chair1.rad
+# void instance chair1.1
+# 9 chair1.oct -s .0833 -rz 4 -t 7.2 19.9 0
+# 0
+# 0
+
+!xform -n chair1.2 -s .0833 -rz -5 -t 9.1 19.85 0 lib/chair1.rad
+# void instance chair1.2
+# 9 chair1.oct -s .0833 -rz -5 -t 9.1 19.85 0
+# 0
+# 0
+
+!xform -n chair1.3 -s .0833 -rz -7.27158 -t 12.9432 19.7133 0 lib/chair1.rad
+# void instance chair1.3
+# 9 chair1.oct -s .0833 -rz -7.27158 -t 12.9432 19.7133 0
+# 0
+# 0
+
+!xform -n chair1.4 -s .0833 -rz 2.39867 -t 15.0208 19.9273 0 lib/chair1.rad
+# void instance chair1.4
+# 9 chair1.oct -s .0833 -rz 2.39867 -t 15.0208 19.9273 0
+# 0
+# 0
+
+!xform -n chair1.5 -s .0833 -rz -3.71808 -t 17.1686 19.713 0 lib/chair1.rad
+# void instance chair1.5
+# 9 chair1.oct -s .0833 -rz -3.71808 -t 17.1686 19.713 0
+# 0
+# 0
+
+!xform -n chair1.6 -s .0833 -rz 2.90625 -t 19.3608 19.8884 0 lib/chair1.rad
+# void instance chair1.6
+# 9 chair1.oct -s .0833 -rz 2.90625 -t 19.3608 19.8884 0
+# 0
+# 0
+
+!xform -n chair1.7 -s .0833 -rz 1.5997 -t 21.4179 19.7994 0 lib/chair1.rad
+# void instance chair1.7
+# 9 chair1.oct -s .0833 -rz 1.5997 -t 21.4179 19.7994 0
+# 0
+# 0
+
+!xform -n chair1.8 -s .0833 -rz -3 -t 23.5724 19.8092 0 lib/chair1.rad
+# void instance chair1.8
+# 9 chair1.oct -s .0833 -rz -3 -t 23.5724 19.8092 0
+# 0
+# 0
+
+!xform -n chair1.9 -s .0833 -rz -2 -t 30 19.9 0 lib/chair1.rad
+# void instance chair1.9
+# 9 chair1.oct -s .0833 -rz -2 -t 30 19.9 0
+# 0
+# 0
+
+!xform -n chair1.10 -s .0833 -rz 6 -t 32.2 19.8 0 lib/chair1.rad
+# void instance chair1.10
+# 9 chair1.oct -s .0833 -rz 6 -t 32.2 19.8 0
+# 0
+# 0
+
+!xform -n chair1.11 -s .0833 -rz 172.728 -t 34.3568 2.38666 0 lib/chair1.rad
+# void instance chair1.11
+# 9 chair1.oct -s .0833 -rz 172.728 -t 34.3568 2.38666 0
+# 0
+# 0
+
+!xform -n chair1.12 -s .0833 -rz 182.399 -t 32.2792 2.17274 0 lib/chair1.rad
+# void instance chair1.12
+# 9 chair1.oct -s .0833 -rz 182.399 -t 32.2792 2.17274 0
+# 0
+# 0
+
+!xform -n chair1.13 -s .0833 -rz 176.282 -t 30.1314 2.38704 0 lib/chair1.rad
+# void instance chair1.13
+# 9 chair1.oct -s .0833 -rz 176.282 -t 30.1314 2.38704 0
+# 0
+# 0
+
+!xform -n chair1.14 -s .0833 -rz 182.906 -t 27.9392 2.21155 0 lib/chair1.rad
+# void instance chair1.14
+# 9 chair1.oct -s .0833 -rz 182.906 -t 27.9392 2.21155 0
+# 0
+# 0
+
+!xform -n chair1.15 -s .0833 -rz  181.6 -t 25.8821 2.30057 0 lib/chair1.rad
+# void instance chair1.15
+# 9 chair1.oct -s .0833 -rz  181.6 -t 25.8821 2.30057 0
+# 0
+# 0
+
+!xform -n chair1.16 -s .0833 -rz 184.929 -t 23.7276 2.29083 0 lib/chair1.rad
+# void instance chair1.16
+# 9 chair1.oct -s .0833 -rz 184.929 -t 23.7276 2.29083 0
+# 0
+# 0
+
+!xform -n chair1.17 -s .0833 -rz 178.501 -t 21.4709 2.49039 0 lib/chair1.rad
+# void instance chair1.17
+# 9 chair1.oct -s .0833 -rz 178.501 -t 21.4709 2.49039 0
+# 0
+# 0
+
+!xform -n chair1.18 -s .0833 -rz 172.565 -t 19.3517 2.47388 0 lib/chair1.rad
+# void instance chair1.18
+# 9 chair1.oct -s .0833 -rz 172.565 -t 19.3517 2.47388 0
+# 0
+# 0
+
+!xform -n chair1.19 -s .0833 -rz 174.715 -t 17.2449 2.10068 0 lib/chair1.rad
+# void instance chair1.19
+# 9 chair1.oct -s .0833 -rz 174.715 -t 17.2449 2.10068 0
+# 0
+# 0
+
+!xform -n chair1.20 -s .0833 -rz 185.805 -t 15.1226 2.22079 0 lib/chair1.rad
+# void instance chair1.20
+# 9 chair1.oct -s .0833 -rz 185.805 -t 15.1226 2.22079 0
+# 0
+# 0

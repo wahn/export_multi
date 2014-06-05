@@ -1,0 +1,31 @@
+#
+# Closed curtains on conference room windows
+#
+
+# void brightfunc speckled
+# 4 speck speck.cal -s .02
+# 0
+# 1 .2
+
+speckled plastic curtain_mat
+0
+0
+5 .6 .6 .6 0 0
+
+!xform -n curtain.1 -t 0 -.27 2.9 lib/curtain.rad
+# curtain_mat instance curtain.1
+# 5 curtain.oct -t 0 -.27 2.9
+# 0
+# 0
+
+!xform -n curtain.2 -t 12.5 -.27 2.9 lib/curtain.rad
+# curtain_mat instance curtain.2
+# 5 curtain.oct -t 12.5 -.27 2.9
+# 0
+# 0
+
+!xform -n curtain.3 -t 24.5 -.27 2.9 lib/curtain.rad
+# curtain_mat instance curtain.3
+# 5 curtain.oct -t 24.5 -.27 2.9
+# 0
+# 0

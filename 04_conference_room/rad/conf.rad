@@ -1,0 +1,597 @@
+
+# Input file for the conference room building 90 third floor
+#
+# all values are in FEET !!
+#
+
+#############
+# MATERIALS #
+#############
+
+void plastic wall_mat
+0
+0
+5 .64 .6 .61 0 0
+
+void plastic door_mat
+0
+0
+5 .74 .4 .16 .02 .15
+
+void brightfunc mottled
+4 dirt dirt.cal -s .15
+0
+1 .15
+
+mottled brightfunc carpeted
+4 bwave bwave.cal -s .02
+0
+0
+
+carpeted plastic floor_mat
+0
+0
+5 .18 .065 .058 0 0
+
+void brightfunc ceil_speck
+4 speck speck.cal -s .05
+0
+1 .1
+
+ceil_speck plastic ceiling_mat
+0
+0
+5 .9 .9 .9 0 0
+ 
+void plastic baseboard_mat
+0
+0
+5 .069 .069 .069 .03 .1
+ 
+void plastic wood_base_mat
+0
+0
+5	0.6923	0.4263	0.175 .05 .2
+
+# void brightfunc xwood_base_pat
+# 4 xgrain woodpat.cal -s .02
+# 0
+# 1 .3
+
+# xwood_base_pat alias xwood_base_mat wood_base_mat
+
+# void brightfunc ywood_base_pat
+# 4 ygrain woodpat.cal -s .02
+# 0
+# 1 .3
+
+# ywood_base_pat alias ywood_base_mat wood_base_mat
+ 
+# void brightfunc zwood_base_pat
+# 4 zgrain woodpat.cal -s .02
+# 0
+# 1 .3
+
+# zwood_base_pat alias zwood_base_mat wood_base_mat
+
+void plastic door_jam_mat
+0
+0
+5 .7 .7 .7 .02 .08
+
+void metal on_door_mat
+0
+0
+5 .37 .37 .37 .5 0
+
+############
+# SURFACES #
+############
+
+wall_mat polygon right_wall
+0
+0
+12
+	35.5	1.167	0
+	35.5	1.167	8.9
+	35.5	21.05	8.9
+	35.5	21.05	0
+
+wall_mat polygon rear_wall
+0
+0
+36
+	0	22	0
+	2.9	22	0
+	2.9	22	7.17
+	6.34	22	7.17
+	6.34	22	0
+	25.33	22	0
+	25.33	22	7.17
+	28.77	22	7.17
+	28.77	22	0
+	35.08	22	0
+	35.08	22	8.9
+	0	22	8.9
+
+wall_mat polygon left_wall
+0
+0
+12
+	0	0	0
+	0	22	0
+	0	22	8.9
+	0	0	8.9
+
+# xform -t 11 0 0
+# genbox wall_mat shaft1 1.58 1.16 8.9
+
+
+wall_mat polygon shaft1.4620
+0
+0
+12
+                 11                  0                8.9
+                 11               1.16                8.9
+                 11               1.16                  0
+                 11                  0                  0
+
+wall_mat polygon shaft1.3267
+0
+0
+12
+              12.58               1.16                  0
+                 11               1.16                  0
+                 11               1.16                8.9
+              12.58               1.16                8.9
+
+wall_mat polygon shaft1.5137
+0
+0
+12
+              12.58                  0                8.9
+              12.58                  0                  0
+              12.58               1.16                  0
+              12.58               1.16                8.9
+
+# xform -t 34.95 0 0
+# genbox wall_mat shaft2 .55 1.167 8.9
+
+wall_mat polygon shaft2.1540
+0
+0
+12
+               35.5                  0                  0
+               35.5                  0                8.9
+              34.95                  0                8.9
+              34.95                  0                  0
+
+wall_mat polygon shaft2.4620
+0
+0
+12
+              34.95                  0                8.9
+              34.95              1.167                8.9
+              34.95              1.167                  0
+              34.95                  0                  0
+
+wall_mat polygon shaft2.3267
+0
+0
+12
+               35.5              1.167                  0
+              34.95              1.167                  0
+              34.95              1.167                8.9
+               35.5              1.167                8.9
+
+wall_mat polygon shaft2.5137
+0
+0
+12
+               35.5                  0                8.9
+               35.5                  0                  0
+               35.5              1.167                  0
+               35.5              1.167                8.9
+
+void brightfunc shaft_wood_pat
+4 zgrain woodpat.cal -s .1
+0
+1 .3
+
+shaft_wood_pat plastic shaft_wood_mat
+0
+0
+5 .64 .395 .127 0 0
+
+# xform -t 29 6.75 0
+# genbox shaft_wood_mat big_shaft 6.5 6.45 8.9
+
+shaft_wood_mat polygon big_shaft.1540
+0
+0
+12
+               35.5               6.75                  0
+               35.5               6.75                8.9
+                 29               6.75                8.9
+                 29               6.75                  0
+
+shaft_wood_mat polygon big_shaft.4620
+0
+0
+30
+                 29               6.75                8.9
+                 29               13.2                8.9
+                 29               13.2                  0
+                 29               6.75                  0
+	29	6.75	4.625
+	29	12.575	4.625
+	29	12.575	6.975
+	29	7.375	6.975
+	29	7.375	4.625
+	29	6.75	4.625
+
+shaft_wood_mat polygon big_shaft.3267
+0
+0
+12
+               35.5               13.2                  0
+                 29               13.2                  0
+                 29               13.2                8.9
+               35.5               13.2                8.9
+
+
+
+# xform -t 35.08 21.05 0
+# genbox wall_mat shaft3 .4167 .95 8.9
+
+wall_mat polygon shaft3.1540
+0
+0
+12
+            35.5              21.05                  0
+            35.5              21.05                8.9
+              35.08              21.05                8.9
+              35.08              21.05                  0
+
+wall_mat polygon shaft3.4620
+0
+0
+12
+              35.08              21.05                8.9
+              35.08                 22                8.9
+              35.08                 22                  0
+              35.08              21.05                  0
+
+# xform -t 11 21.05 0
+# genbox wall_mat shaft4 1.25 .95 8.9
+
+wall_mat polygon shaft4.1540
+0
+0
+12
+              12.25              21.05                  0
+              12.25              21.05                8.9
+                 11              21.05                8.9
+                 11              21.05                  0
+
+wall_mat polygon shaft4.4620
+0
+0
+12
+                 11              21.05                8.9
+                 11                 22                8.9
+                 11                 22                  0
+                 11              21.05                  0
+
+
+wall_mat polygon shaft4.5137
+0
+0
+12
+              12.25              21.05                8.9
+              12.25              21.05                  0
+              12.25                 22                  0
+              12.25                 22                8.9
+
+door_mat polygon door1
+0
+0
+12
+	3.17	22.237	0
+	6.07	22.237	0
+	6.07	22.237	6.9
+	3.17	22.237	6.9	
+
+on_door_mat polygon hand_door.1
+0
+0
+12
+	6.0075	22.2369	2.8958
+	6.0075	22.2369	4.3958 
+	5.674	22.2369	4.3958
+	5.674	22.2369	2.8958
+
+on_door_mat polygon down_door.1
+0
+0
+12
+	6.01	22.2369	.0416
+	6.01	22.2369	1.0625
+	3.26	22.2369 1.0625
+	3.26	22.2369	.0416
+
+door_mat polygon door2
+0
+0
+12
+	25.6	22.237	0
+	28.5	22.237	0
+	28.5	22.237	6.9
+	25.6	22.237	6.9
+
+on_door_mat polygon hand_door.2
+0
+0
+12
+	28.4375	22.2369	2.8958
+	28.4375	22.2369	4.3958
+	28.1041	22.2369	4.3958
+	28.1041 22.2369 2.8958
+
+on_door_mat polygon down_door.2
+0
+0
+12
+	28.44	22.2369	.0416
+	28.44	22.2369	1.0625
+	25.69	22.2369	1.0625
+	25.69	22.2369	.0416
+
+floor_mat polygon floor
+0
+0
+12
+	0	0	0
+	35.5	0	0
+	35.5	23	0
+	0	23	0
+
+ceiling_mat polygon ceiling
+0
+0
+12
+	0	0	8.9
+	35.5	0	8.9
+	35.5	22	8.9
+	0	22	8.9
+	
+
+############
+#baseboards#
+############
+
+!genbox baseboard_mat before_door1 2.9 .041 .333 | xform -t 0 21.958 0
+!genbox baseboard_mat after_door1 4.66 .041 .333 | xform -t 6.34 21.958 0
+!genbox baseboard_mat shaft1.1 .041 .909 .333 | xform -t 10.959 21.05 0
+!genbox baseboard_mat shaft1.2 1.25 .041 .333 | xform -t 11 21.009 0
+!genbox baseboard_mat shaft1.3 .041 .909 .333 | xform -t 12.25 21.05 0
+!genbox baseboard_mat before_door2 13.08 .041 .333 | xform -t 12.25 21.958 0
+!genbox baseboard_mat after_door2 6.31 .041 .333 | xform -t 28.77 21.958 0
+!genbox baseboard_mat shaft2.1 .041 .95 .333 | xform -t 35.0423 21.05 0
+!genbox baseboard_mat shaft2.2 .4577 .041 .333 | xform -t 35.0423 21.009 0
+!genbox baseboard_mat before_big_shaft .041 7.809 .333 | xform -t 35.459 13.2 0
+!genbox baseboard_mat big_shaft1 6.5 .041 1 | xform -t 29 13.2 0
+!genbox baseboard_mat big_shaft2 .041 6.532 1 | xform -t 28.959 6.709 0
+!genbox baseboard_mat big_shaft3 6.5 .041 1 | xform -t 29 6.709 0
+!genbox baseboard_mat after_big_shaft .041 5.039 .333 | xform -t 35.459 1.167 0
+!genbox baseboard_mat shaft3.1 .509 .041 .333 | xform -t 34.95 1.167 0
+!genbox baseboard_mat shaft3.2 .041 1.208 .333 | xform -t 34.909 0 0
+!genbox baseboard_mat before_shaft4 22.37 .041 .333 | xform -t 12.58 0 0
+!genbox baseboard_mat shaft4.1 .041 1.16 .333 | xform -t 12.58 0 0
+!genbox baseboard_mat shaft4.2 1.662 .041 .333 | xform -t 10.959 1.16 0
+!genbox baseboard_mat shaft4.3 .041 1.16 .333 | xform -t 10.959 0 0
+!genbox baseboard_mat after_shaft4 11 .041 .333
+!genbox baseboard_mat base_left_wall .041 21.9167 .333 | xform -t 0 .041 0
+
+##############
+# door jams ##
+##############
+
+!genprism door_jam_mat door1_right.jam 8 0 .279 0 .11238 .04165 .11238 .04165 .04998 .0624 .04998 .0624 0 .2707 0 .2707 .04165 -l 0 0 7.17 -e -c | xform -t 6.07 21.958 0
+
+!genprism door_jam_mat door1_left.jam 8 0 .279 0 .11238 .04165 .11238 .04165 .04998 .0624 .04998 .0624 0 .2707 0 .2707 .04165 -l 0 0 7.17 -e -c | xform -mx -t 3.17 21.958 0
+
+!genprism door_jam_mat door1_top.jam 8 0 .279 0 .11238 .04165 .11238 .04165 .04998 .0624 .04998 .0624 0 .2707 0 .2707 .04165 -l 0 0 3.44 -e -c | xform -ry -90 -t 6.34 21.958 6.9
+
+!genprism door_jam_mat door2_right.jam 8 0 .279 0 .11238 .04165 .11238 .04165 .04998 .0624 .04998 .0624 0 .2707 0 .2707 .04165 -l 0 0 7.17 -e -c | xform -t 6.07 21.958 0 -t 22.43 0 0
+
+!genprism door_jam_mat door2_left.jam 8 0 .279 0 .11238 .04165 .11238 .04165 .04998 .0624 .04998 .0624 0 .2707 0 .2707 .04165 -l 0 0 7.17 -e -c | xform -mx -t 3.17 21.958 0 -t 22.43 0 0
+
+!genprism door_jam_mat door2_top.jam 8 0 .279 0 .11238 .04165 .11238 .04165 .04998 .0624 .04998 .0624 0 .2707 0 .2707 .04165 -l 0 0 3.44 -e -c | xform -ry -90 -t 6.34 21.958 6.9 -t 22.43 0 0
+
+###################
+# wood baseboards #
+###################
+
+#!genbox xwood_base_mat wood_base.1 2.9 0.075 .291 -b .02 | xform -t 0 21.925 2.4167
+
+!genbox  wood_base_mat wood_base.2 5.66 .075 .291 -b .02 | xform -t 6.34 21.925 2.4167
+
+!genbox      wood_base_mat wood_base.3 13.079 .075 .291 -b .02 | xform -t 12.25 21.925 2.4167
+
+!genbox wood_base_mat wood_base.4 6.31 .075 .291 -b .02 | xform -t 28.77 21.925 2.4167
+
+!genbox wood_base_mat wood_base.5 .075 7.85 .291 -b .02 | xform -t 35.08 13.2 2.4167
+
+!genbox wood_base_mat wood_base.6 6.5 .075 .291 -b .02 | xform -t 29 13.2 2.4167
+
+!genbox wood_base_mat wood_base.7 .075 6.6 .291 -b .02 | xform -t 28.925 6.675  2.4167
+
+!genbox wood_base_mat wood_base.8 6.5 .075 .291 -b .02 | xform -t 29 6.675 2.4167
+
+# 2 lines of screws along the wood board
+
+!xform -e -n screws_bottom lib/screws.rad
+!xform -e -n screws_top -t 0 0 .166 lib/screws.rad
+
+
+# Addition of the window frames
+
+!xform -e -n window1.1 -t 32 -.54 2.83 lib/window1_frame.rad
+!xform -e -n window2.1 -t 28 -.54 2.83 lib/window2_frame.rad
+!xform -e -n window1.2 -t 24 -.54 2.83 lib/window1_frame.rad
+!xform -e -n window2.2 -t 20 -.54 2.83 lib/window2_frame.rad
+!xform -e -n window1.3 -t 16 -.54 2.83 lib/window1_frame.rad
+!xform -e -n window2.3 -t 12 -.54 2.83 lib/window2_frame.rad
+!xform -e -n window1.4 -t 8 -.54 2.83 lib/window1_frame.rad
+!xform -e -n window2.4 -t 4 -.54  2.83 lib/window2_frame.rad
+!xform -e -n window1.5 -t 0 -.54  2.83 lib/window1_frame.rad
+
+wall_mat polygon window_sill
+0
+0
+12
+	0	0	2.875
+	0	-.54	2.875
+	35	-.54	2.875
+	35	0	2.875
+
+!genbox wood_base_mat window_trim.down 34.95 .0525 .33 | xform -t 0 0 2.83
+!genbox wood_base_mat window_trim.top  34.95 .0525 .5 | xform -t 0 .105 8.4
+!genbox wood_base_mat window_trim.right .5 .0525 6.06 | xform -t 0 .0525 2.83
+!genbox wood_base_mat window_trim.left  .5 .0525 6.06 | xform -t 34.45 .0525 2.83
+!genbox wood_base_mat window_trim.midright .5 .0525 6.06 | xform -t 10.5 .0525 2.83
+!genbox wood_base_mat window_trim.midleft  .5 .0525 6.06 | xform -t 12.58 .0525 2.83
+
+
+# Creation of the blackboard on the left wall
+# Creation of the small blackboard and of the pinboard on the rear wall
+
+!xform -e -n blackboard -t .001 .916 3.958 lib/blackboard.rad
+!xform -e -n small_board -rz 180 -t 18.63 22 3.125 lib/small_board.rad
+!xform -e -n pinboard -rz 180 -t 24.661 22 3.125 lib/pinboard.rad
+
+
+# creation of the corner guards
+
+!xform -e -n shaft_guard.1.1 -t 10.999 21.0499 .3331 lib/shaft_guard.rad
+!xform -e -n shaft_guard.1.2 -rz 180 -t 12.2501 21.0499 .3331 lib/shaft_guard.rad
+!xform -e -n shaft_guard.1.3 -rz +90 -t 10.999 21.0499 .3331 lib/shaft_guard.rad
+!xform -e -n shaft_guard.1.4 -rz +90 -t 12.2501 21.0499 .3331 lib/shaft_guard.rad
+
+!xform -e -n shaft_guard.2.1 -t 10.999 1.1601 .3331 lib/shaft_guard.rad
+!xform -e -n shaft_guard.2.2 -rz 180 -t 12.58001 1.1601 .3331 lib/shaft_guard.rad
+!xform -e -n shaft_guard.2.3 -rz -90 -t 12.58001 1.1601 .3331 lib/shaft_guard.rad
+!xform -e -n shaft_guard.2.4 -rz -90 -t 10.999 1.1601 .3331 lib/shaft_guard.rad
+
+# addition of the door_closer on the 2 doors
+
+!xform -e -n door_closer1 -t 3.65 22.04 6.40 lib/door_closer.rad
+!xform -e -n door_closer2 -t 25.94 22.04 6.40 lib/door_closer.rad
+
+# void brightfunc frame_vert_wood_pat
+# 4 ygrain woodpat.cal -s .01
+# 0
+# 1 .3
+
+# void brightfunc frame_horiz_wood_pat
+# 4 ygrain woodpat.cal -s .01
+# 0
+# 1 .3
+
+# frame_vert_wood_pat alias frame_vert_wood_mat shaft_wood_mat
+
+# frame_horiz_wood_pat alias frame_horiz_wood_mat shaft_wood_mat
+
+# 
+# description of the window on the big shaft ( projection window )
+#
+
+!genbox shaft_wood_mat outer_frame.1 .0625 5.116 .0833 | xform -t 28.93 7.375 4.625
+!genbox shaft_wood_mat outer_frame.2 .0625 .0833 2.266 | xform -t 0 5.116 0 -t 28.93 7.375 4.625
+!genbox shaft_wood_mat outer_frame.3 .0625 5.116 .0833 | xform -t 0 .0833 2.266 -t 28.93 7.375 4.625
+!genbox shaft_wood_mat outer_frame.4 .0625 .0833 2.266 | xform -t 0 0 .0833 -t 28.93 7.375 4.625
+
+!genbox shaft_wood_mat inner_frame.1 .0416 4.9918 .0416 | xform -ry -1 -t 28.9509 7.4583 4.7083 -t .02 0 0
+
+!genbox shaft_wood_mat inner_frame.2 .0416 .0416 2.1418 | xform -t 0 4.9918  0 -ry -1 -t 28.9509 7.4583 4.7083 -t .02 0 0
+
+!genbox shaft_wood_mat inner_frame.3 .0416 4.9918 .0416 | xform -t 0 .0416 2.1418 -ry -1 -t 28.9509 7.4583 4.7083 -t .02 0 0
+
+!genbox shaft_wood_mat inner_frame.4 .0416 .0416 2.1418 | xform -t 0 0 .0416 -ry -1 -t 28.9509 7.4583 4.7083 -t .02 0 0
+
+void glass window_glass
+0
+0
+3               0.96               0.96               0.96
+
+window_glass polygon shaft_window
+0
+0
+12
+            29.0334             7.4583             4.7083
+            28.9953             7.4583      6.89036993171
+            28.9953            12.4917      6.89036993171
+            29.0334            12.4917             4.7083
+
+# input of the exit sign
+!xform -e -n exit_door1 -s .08333 -rx 90 -t 4.078 22 7.333 lib/exit_sign.rad
+!xform -e -n exit_door2 -s .08333 -rx 90 -t 26.508 22 7.333 lib/exit_sign.rad
+
+#
+# Wall switches near left door
+#
+
+void plastic ivory_plastic
+0
+0
+5 .83 .7 .43 .02 .05
+
+!xform -e -n switch1 -t 78 0 48 -s .0833 -t 0 22 0 lib/plate.rad
+
+!xform -e -n switch2 -t 78 0 48 -t 4.625 0 0 -s .0833 -t 0 22 0 lib/plate.rad
+
+!xform -e -n switch3 -t 78 0 48 -t 0 0 4.625 -s .0833 -t 0 22 0 lib/plate.rad
+
+!xform -e -n switch4 -t 78 0 48 -t 4.625 0 4.625 -s .0833 -t 0 22 0 lib/plate.rad
+
+# intercom speaker by left door
+
+!xform -e -n speaker -t 88.5 -4 94 -s .0833 -t 0 22 0 lib/speaker.rad
+
+#
+# Fire extinguisher
+#
+
+void plastic red_paint
+0
+0
+5 .82 .09 .07 .02 .1
+
+!genbox red_paint mount 8 .75 32 | xform -t 26.5 -.75 3.5 -s .0833 -t 0 22 0
+
+!xform -e -n extinguisher -t 30.5 -4.75 5 -s .0833 -t 0 22 0 lib/extinguisher.rad
+
+#
+# vent panels.
+#
+
+!xform -e -n panel1 -s .0833 -t 31.5 0 2 lib/vent_panel.rad
+!xform -e -n panel2 -s .0833 -t 27.5 0 2 lib/vent_panel.rad
+!xform -e -n panel3 -s .0833 -t 23.5 0 2 lib/vent_panel.rad
+!xform -e -n panel4 -s .0833 -t 19.5 0 2 lib/vent_panel.rad
+!xform -e -n panel5 -s .0833 -t 15.5 0 2 lib/vent_panel.rad
+!xform -e -n panel6 -s .0833 -t 11.5 0 2 lib/vent_panel.rad
+!xform -e -n panel7 -s .0833 -t 7.5 0 2  lib/vent_panel.rad
+!xform -e -n panel8 -s .0833 -t 3.5 0 2  lib/vent_panel.rad
+!xform -e -n panel9 -s .0833 -t -.5 0 2  lib/vent_panel.rad
+
+wall_mat polygon behind_vent
+0
+0
+12
+	0	-.5	0
+	0	-.5	2.958
+	35.5	-.5	2.958
+	35.5	-.5	0
+

@@ -1,0 +1,27 @@
+void plastic vent_mat
+0
+0
+5 .469 .452 .433 0 0
+
+!xform -e -n vent.top vent.rad
+# vent_mat instance vent.top
+# 1 vent.oct
+# 0
+# 0
+
+vent_mat polygon vent.middle
+0
+0
+12
+0	0	0
+48	0	0
+48	0	-10.5
+0	0	-10.5
+
+!xform -e -n vent.down -ry 180 -t 48 0 -10.5 vent.rad
+# vent_mat instance vent.down
+# 7 vent.oct -ry 180 -t 48 0 -10.5
+# 0
+# 0
+
+!genbox vent_mat panel_vert 2 .1 31.5 | xform -t -1 .01 -21

@@ -1,0 +1,48 @@
+# creation of the blackboard
+
+void plastic green_board
+0
+0
+5 .123 .263 .151 0 .1
+
+void metal edge_mat  
+0 
+0
+5 .43 .43 .43 .5 0
+
+green_board polygon blackboard
+0
+0
+12
+	.05	0	0
+	.05	0	4.02
+	.05	20.06	4.02
+	.05	20.06	0
+
+!genbox edge_mat board_right .052 .062 4.02 | xform -t 0 19.998 0
+
+!genbox edge_mat board_left .052 .062 4.02
+
+!genbox edge_mat board_top .052 20.06 .062 | xform -t 0 0 3.958
+
+!genbox edge_mat board_down.1 .052 20.06 .062
+
+!genbox edge_mat board_down.2 .052 20.06 .062 | xform -t 0 0 .0623
+
+edge_mat polygon bord_support_horiz
+0
+0
+12
+	0	.062	0.0623
+	0	19.936	0.0623
+	.26	19.936	0.0623
+	.26	.062	0.0623
+
+edge_mat polygon bord_support_vert
+0
+0
+12
+               0.26              0.062             0.0623
+               0.26              19.96             0.0623
+               0.26              19.98             0.1033
+               0.26              0.062             0.1033

@@ -1,0 +1,35 @@
+# creation of the pinboard
+
+void brightfunc pinbspeck
+4 speck speck.cal -s .003
+0
+1 .4
+
+void metal edge_mat
+0
+0
+5 .43 .43 .43 .5 0
+
+pinbspeck brightfunc pinbpat
+6 bwave bwave.cal -s .02 -rx 90
+0
+0
+
+pinbpat plastic white_mat
+0
+0
+5 .516 .45 .34 0 .2
+
+white_mat polygon pinboard
+0
+0
+12
+	0	.05	0
+	6	.05	0
+	6	.05	4.04
+	0	.05	4.04
+
+!genbox edge_mat board_right .062 .052 4.04 | xform -t 5.938 0 0
+!genbox edge_mat board_left .062 .052 4.04
+!genbox edge_mat board_top  6 .052 .062 | xform -t 0 0 3.978
+!genbox edge_mat board_down 6 .052 .062

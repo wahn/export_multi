@@ -1,0 +1,151 @@
+#
+# The stand for a table
+#
+
+# genrev leg_mat lower hermite(0,4.3,0,7.6,t) hermite(4,1,-4.4,0,t) 8
+
+leg_mat cone lower.1
+0
+0
+8
+	0	0	                 0
+	0	0	       0.080859375
+	                 4	              3.45
+
+leg_mat cone lower.2
+0
+0
+8
+	0	0	       0.080859375
+	0	0	          0.315625
+	              3.45	            2.9125
+
+leg_mat cone lower.3
+0
+0
+8
+	0	0	          0.315625
+	0	0	       0.692578125
+	            2.9125	           2.40625
+
+leg_mat cone lower.4
+0
+0
+8
+	0	0	       0.692578125
+	0	0	               1.2
+	           2.40625	              1.95
+
+leg_mat cone lower.5
+0
+0
+8
+	0	0	               1.2
+	0	0	       1.826171875
+	              1.95	            1.5625
+
+leg_mat cone lower.6
+0
+0
+8
+	0	0	       1.826171875
+	0	0	          2.559375
+	            1.5625	            1.2625
+
+leg_mat cone lower.7
+0
+0
+8
+	0	0	          2.559375
+	0	0	       3.387890625
+	            1.2625	           1.06875
+
+leg_mat cone lower.8
+0
+0
+8
+	0	0	       3.387890625
+	0	0	               4.3
+	           1.06875	                 1
+
+leg_mat cylinder mid
+0
+0
+7
+	0	0	4.3
+	0	0	18.325
+	1
+
+# genrev leg_mat upper hermite(18.325,28,17.1,0,t) hermite(1,9,0,9.9,t) 8
+
+leg_mat cone upper.1
+0
+0
+8
+	0	0	            18.325
+	0	0	     20.3772460937
+	                 1	      1.2083984375
+
+leg_mat cone upper.2
+0
+0
+8
+	0	0	     20.3772460937
+	0	0	       22.24140625
+	      1.2083984375	         1.7859375
+
+leg_mat cone upper.3
+0
+0
+8
+	0	0	       22.24140625
+	0	0	     23.8911132812
+	         1.7859375	      2.6611328125
+
+leg_mat cone upper.4
+0
+0
+8
+	0	0	     23.8911132812
+	0	0	              25.3
+	      2.6611328125	            3.7625
+
+leg_mat cone upper.5
+0
+0
+8
+	0	0	              25.3
+	0	0	     26.4416992187
+	            3.7625	      5.0185546875
+
+leg_mat cone upper.6
+0
+0
+8
+	0	0	     26.4416992187
+	0	0	       27.28984375
+	      5.0185546875	         6.3578125
+
+leg_mat cone upper.7
+0
+0
+8
+	0	0	       27.28984375
+	0	0	     27.8180664063
+	         6.3578125	      7.7087890625
+
+leg_mat cone upper.8
+0
+0
+8
+	0	0	     27.8180664063
+	0	0	                28
+	      7.7087890625	                 9
+
+!xform -n leg1 -rz 45 table_leg.rad
+
+!xform -n leg2 -rz 45 -rz 90 table_leg.rad
+
+!xform -n leg3 -rz 45 -rz 180 table_leg.rad
+
+!xform -n leg4 -rz 45 -rz 270 table_leg.rad

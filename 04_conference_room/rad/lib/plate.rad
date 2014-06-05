@@ -1,0 +1,65 @@
+#
+# Blank wall switch plate
+#
+# xform -t 0 -.1 0
+
+ivory_plastic polygon plate.dhgc
+0
+0
+12
+              4.375               -0.1              0.125
+              4.375               -0.1              4.375
+              0.125               -0.1              4.375
+              0.125               -0.1              0.125
+
+ivory_plastic cylinder plate.hi
+0
+0
+7
+              0.125              0.025              0.125
+              4.375              0.025              0.125
+              0.125
+
+ivory_plastic cylinder plate.hl
+0
+0
+7
+              0.125              0.025              0.125
+              0.125              0.025              4.375
+              0.125
+
+ivory_plastic cylinder plate.mi
+0
+0
+7
+              4.375              0.025              4.375
+              4.375              0.025              0.125
+              0.125
+
+ivory_plastic cylinder plate.ml
+0
+0
+7
+              4.375              0.025              4.375
+              0.125              0.025              4.375
+              0.125
+
+ivory_plastic sphere plate.h
+0
+0
+4              0.125              0.025              0.125              0.125
+
+ivory_plastic sphere plate.i
+0
+0
+4              4.375              0.025              0.125              0.125
+
+ivory_plastic sphere plate.l
+0
+0
+4              0.125              0.025              4.375              0.125
+
+ivory_plastic sphere plate.m
+0
+0
+4              4.375              0.025              4.375              0.125

@@ -1,0 +1,16 @@
+	LBL Building 90 Third Floor Conference Room
+
+		by:
+			Anat Grynberg
+			Greg Ward
+			Windows and Lighting Program
+			Lawrence Berkeley Laboratory
+			Berkeley, California
+
+This model was created over a period of three weeks by painstaking
+measurements and many vi editing sessions.  The real conference room
+looks very similar to the Radiance renderings as a consequence, and we
+would be interested to compare results to other rendering techniques
+if you have them.
+
+Please do not use this model for any purpose without giving proper credit.
