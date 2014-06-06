@@ -1,0 +1,5 @@
+{
+this file creates the waves of the pinboard and carpet
+}
+bwave=1-.5*( fnoise3(Px*4,Py*4,Pz*4)/2 +1 ) * ( sin(Px*2*PI)/3 + 2/3 )*
+   ( sin(Py*2*PI)/3 +2/3 )

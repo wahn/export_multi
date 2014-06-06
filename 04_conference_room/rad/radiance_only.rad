@@ -1,0 +1,9 @@
+void brightfunc speckled
+4 speck speck.cal -s .02
+0
+1 .2
+
+void brightfunc xwood_pat
+4 xgrain woodpat.cal -s .2
+0
+1 .6

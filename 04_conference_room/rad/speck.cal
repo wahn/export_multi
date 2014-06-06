@@ -1,0 +1,7 @@
+{
+  this is a file for a speckle pattern
+
+  A1 = brightness of specks
+}
+
+speck = if(noise3(Px,Py,Pz)^4- .50 , A1 ,1);
