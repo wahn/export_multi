@@ -1,0 +1,46 @@
+RESOLUTION = 1000 676
+EXPOSURE = -2
+ZONE = Interior 0 35.5 0 22 0 8.9
+AMB = door2y.amb
+INDIRECT = 2
+DETAIL = Medium
+QUALITY = Medium
+VARIABILITY = Medium
+# render
+render = -av .02 .02 .02
+# scene
+scene = radiance_only.rad conf.rad curtains.rad furniture.rad lights.rad
+# objects
+objects = lib/blackboard.rad
+objects = lib/chair1.rad
+objects = lib/chair2.rad
+objects = lib/curtain.rad
+objects = lib/door_closer.rad
+objects = lib/E.rad
+objects = lib/exit_sign.rad
+objects = lib/extinguisher.rad
+objects = lib/fixture.rad
+objects = lib/I.rad
+objects = lib/pinboard.rad
+objects = lib/plate.rad
+objects = lib/podium.rad
+objects = lib/screw.rad
+objects = lib/screws.rad
+objects = lib/shaft_guard.rad
+objects = lib/small_board.rad
+objects = lib/speaker.rad
+objects = lib/T.rad
+objects = lib/table.rad
+objects = lib/table_leg.rad
+objects = lib/table_stand.rad
+objects = lib/vent.rad
+objects = lib/vent_panel.rad
+objects = lib/wastebasket.rad
+objects = lib/window1_frame.rad
+objects = lib/window2_frame.rad
+objects = lib/X.rad
+# pfilt
+pfilt = -r .6
+# view
+view = cam -vf vf/door2y_cam.vf
+# end door2y.rif
