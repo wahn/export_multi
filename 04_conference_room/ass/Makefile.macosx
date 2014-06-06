@@ -1,0 +1,13 @@
+# usage:
+# make clobber
+
+ARNOLD = /usr/local/Arnold
+KICK = $(ARNOLD)/bin/kick
+
+all: clobber
+
+clean:
+	-rm -f *~ art_gallery_0*.ass
+
+clobber: clean
+	-rm -f *.exr
