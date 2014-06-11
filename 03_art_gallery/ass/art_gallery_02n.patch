@@ -54,8 +54,16 @@
 364307c364293
 <  shader "MAtypeWM1_light"
 ---
->  # shader "MAtypeWM1_light"
-364310a364297,364305
+>  shader "MAtypeWM1_util"
+364310a364297,364313
+> utility
+> {
+>  name MAtypeWM1_util
+>  color_mode 0 # color
+>  shade_mode 2 # flat
+>  color 1 1 1
+> }
+> 
 > mesh_light
 > {
 >  name LAtypeWM1_light1
@@ -65,23 +73,23 @@
 >  samples 5
 > }
 > 
-364313c364308
+364313c364316
 <  name MAtypeWM1_light
 ---
 >  name M
-364319c364314
+364319c364322
 <  emission 1
 ---
 >  emission 0 # 1
-364326c364321
+364326c364329
 <  name MEtypeWM1.d
 ---
 >  name MEtypeWM1.d1
-364343c364338
+364343c364346
 <  shader "MAtypeWM1_light"
 ---
->  # shader "MAtypeWM1_light"
-364346a364342,364350
+>  shader "MAtypeWM1_util"
+364346a364350,364358
 > mesh_light
 > {
 >  name LAtypeWM1_light2
@@ -91,13 +99,13 @@
 >  samples 5
 > }
 > 
-364398a364403
+364398a364411
 >  name MEtypeWM1.u2
-364415c364420
+364415c364428
 <  shader "MAtypeWM1_light"
 ---
->  # shader "MAtypeWM1_light"
-364418a364424,364432
+>  shader "MAtypeWM1_util"
+364418a364432,364440
 > mesh_light
 > {
 >  name LAtypeWM1_light3
@@ -107,13 +115,13 @@
 >  samples 5
 > }
 > 
-364420a364435
+364420a364443
 >  name MEtypeWM1.d2
-364437c364452
+364437c364460
 <  shader "MAtypeWM1_light"
 ---
->  # shader "MAtypeWM1_light"
-364440a364456,364464
+>  shader "MAtypeWM1_util"
+364440a364464,364472
 > mesh_light
 > {
 >  name LAtypeWM1_light4
@@ -123,13 +131,13 @@
 >  samples 5
 > }
 > 
-364490a364515
+364490a364523
 >  name MEtypeWM1.u3
-364507c364532
+364507c364540
 <  shader "MAtypeWM1_light"
 ---
->  # shader "MAtypeWM1_light"
-364510a364536,364544
+>  shader "MAtypeWM1_util"
+364510a364544,364552
 > mesh_light
 > {
 >  name LAtypeWM1_light5
@@ -139,13 +147,13 @@
 >  samples 5
 > }
 > 
-364512a364547
+364512a364555
 >  name MEtypeWM1.d3
-364529c364564
+364529c364572
 <  shader "MAtypeWM1_light"
 ---
->  # shader "MAtypeWM1_light"
-364532a364568,364576
+>  shader "MAtypeWM1_util"
+364532a364576,364584
 > mesh_light
 > {
 >  name LAtypeWM1_light6
@@ -155,13 +163,13 @@
 >  samples 5
 > }
 > 
-364582a364627
+364582a364635
 >  name MEtypeWM1.u4
-364599c364644
+364599c364652
 <  shader "MAtypeWM1_light"
 ---
->  # shader "MAtypeWM1_light"
-364602a364648,364656
+>  shader "MAtypeWM1_util"
+364602a364656,364664
 > mesh_light
 > {
 >  name LAtypeWM1_light7
@@ -171,13 +179,13 @@
 >  samples 5
 > }
 > 
-364604a364659
+364604a364667
 >  name MEtypeWM1.d4
-364621c364676
+364621c364684
 <  shader "MAtypeWM1_light"
 ---
->  # shader "MAtypeWM1_light"
-364624a364680,364688
+>  shader "MAtypeWM1_util"
+364624a364688,364696
 > mesh_light
 > {
 >  name LAtypeWM1_light8
@@ -187,19 +195,19 @@
 >  samples 5
 > }
 > 
-365070c365134
+365070c365142
 <  name MEtypeS4.d
 ---
 >  name MEtypeS4.d1
-365112c365176
+365112c365184
 <  shader "MAtypeS4_light"
 ---
 >  # shader "MAtypeS4_light"
-365116c365180
+365116c365188
 < standard
 ---
 > mesh_light
-365118,365126c365182,365186
+365118,365126c365190,365194
 <  name MAtypeS4_light
 <  Kd 0
 <  Kd_color 1 1 1
@@ -215,13 +223,13 @@
 >  color 1 1 1
 >  intensity 15
 >  samples 5
-365530a365591
+365530a365599
 >  name MEtypeS4.d2
-365572c365633
+365572c365641
 <  shader "MAtypeS4_light"
 ---
 >  # shader "MAtypeS4_light"
-365575a365637,365645
+365575a365645,365653
 > mesh_light
 > {
 >  name LAtypeS4_light2
@@ -231,13 +239,13 @@
 >  samples 5
 > }
 > 
-365975a366046
+365975a366054
 >  name MEtypeS4.d3
-366017c366088
+366017c366096
 <  shader "MAtypeS4_light"
 ---
 >  # shader "MAtypeS4_light"
-366020a366092,366100
+366020a366100,366108
 > mesh_light
 > {
 >  name LAtypeS4_light3
@@ -247,13 +255,13 @@
 >  samples 5
 > }
 > 
-366446a366527
+366446a366535
 >  name MEtypeS4.d4
-366488c366569
+366488c366577
 <  shader "MAtypeS4_light"
 ---
 >  # shader "MAtypeS4_light"
-366491a366573,366581
+366491a366581,366589
 > mesh_light
 > {
 >  name LAtypeS4_light4
@@ -263,13 +271,13 @@
 >  samples 5
 > }
 > 
-366891a366982
+366891a366990
 >  name MEtypeS4.d5
-366933c367024
+366933c367032
 <  shader "MAtypeS4_light"
 ---
 >  # shader "MAtypeS4_light"
-366936a367028,367036
+366936a367036,367044
 > mesh_light
 > {
 >  name LAtypeS4_light5
@@ -279,13 +287,13 @@
 >  samples 5
 > }
 > 
-367336a367437
+367336a367445
 >  name MEtypeS4.d6
-367378c367479
+367378c367487
 <  shader "MAtypeS4_light"
 ---
 >  # shader "MAtypeS4_light"
-367381a367483,367491
+367381a367491,367499
 > mesh_light
 > {
 >  name LAtypeS4_light6
@@ -295,13 +303,13 @@
 >  samples 5
 > }
 > 
-367781a367892
+367781a367900
 >  name MEtypeS4.d7
-367823c367934
+367823c367942
 <  shader "MAtypeS4_light"
 ---
 >  # shader "MAtypeS4_light"
-367826a367938,367946
+367826a367946,367954
 > mesh_light
 > {
 >  name LAtypeS4_light7
@@ -311,13 +319,13 @@
 >  samples 5
 > }
 > 
-367881a368002
+367881a368010
 >  name MEtypeWM1.u5
-367898c368019
+367898c368027
 <  shader "MAtypeWM1_light"
 ---
->  # shader "MAtypeWM1_light"
-367901a368023,368031
+>  shader "MAtypeWM1_util"
+367901a368031,368039
 > mesh_light
 > {
 >  name LAtypeWM1_light9
@@ -327,13 +335,13 @@
 >  samples 5
 > }
 > 
-367903a368034
+367903a368042
 >  name MEtypeWM1.d5
-367920c368051
+367920c368059
 <  shader "MAtypeWM1_light"
 ---
->  # shader "MAtypeWM1_light"
-367923a368055,368063
+>  shader "MAtypeWM1_util"
+367923a368063,368071
 > mesh_light
 > {
 >  name LAtypeWM1_light10
@@ -343,13 +351,13 @@
 >  samples 5
 > }
 > 
-367973a368114
+367973a368122
 >  name MEtypeWM1.u6
-367990c368131
+367990c368139
 <  shader "MAtypeWM1_light"
 ---
->  # shader "MAtypeWM1_light"
-367993a368135,368143
+>  shader "MAtypeWM1_util"
+367993a368143,368151
 > mesh_light
 > {
 >  name LAtypeWM1_light11
@@ -359,13 +367,13 @@
 >  samples 5
 > }
 > 
-367995a368146
+367995a368154
 >  name MEtypeWM1.d6
-368012c368163
+368012c368171
 <  shader "MAtypeWM1_light"
 ---
->  # shader "MAtypeWM1_light"
-368015a368167,368175
+>  shader "MAtypeWM1_util"
+368015a368175,368183
 > mesh_light
 > {
 >  name LAtypeWM1_light12
@@ -375,19 +383,19 @@
 >  samples 5
 > }
 > 
-368066c368226
+368066c368234
 <  name MEtypeRLF1.d
 ---
 >  name MEtypeRLF1.d1
-368083c368243
+368083c368251
 <  shader "MAtypeRLF1_light"
 ---
 >  # shader "MAtypeRLF1_light"
-368087c368247
+368087c368255
 < standard
 ---
 > mesh_light
-368089,368097c368249,368253
+368089,368097c368257,368261
 <  name MAtypeRLF1_light
 <  Kd 0
 <  Kd_color 1 1 1
@@ -403,13 +411,13 @@
 >  color 1 1 1
 >  intensity 0.78
 >  samples 5
-368101a368258
+368101a368266
 >  name MEtypeRLF1.d2
-368118c368275
+368118c368283
 <  shader "MAtypeRLF1_light"
 ---
 >  # shader "MAtypeRLF1_light"
-368121a368279,368287
+368121a368287,368295
 > mesh_light
 > {
 >  name LAtypeRLF1_light2
@@ -419,13 +427,13 @@
 >  samples 5
 > }
 > 
-368123a368290
+368123a368298
 >  name MEtypeRLF1.d3
-368140c368307
+368140c368315
 <  shader "MAtypeRLF1_light"
 ---
 >  # shader "MAtypeRLF1_light"
-368143a368311,368319
+368143a368319,368327
 > mesh_light
 > {
 >  name LAtypeRLF1_light3
@@ -435,13 +443,13 @@
 >  samples 5
 > }
 > 
-368145a368322
+368145a368330
 >  name MEtypeRLF1.d4
-368162c368339
+368162c368347
 <  shader "MAtypeRLF1_light"
 ---
 >  # shader "MAtypeRLF1_light"
-368165a368343,368351
+368165a368351,368359
 > mesh_light
 > {
 >  name LAtypeRLF1_light4
@@ -451,13 +459,13 @@
 >  samples 5
 > }
 > 
-368167a368354
+368167a368362
 >  name MEtypeRLF1.d5
-368184c368371
+368184c368379
 <  shader "MAtypeRLF1_light"
 ---
 >  # shader "MAtypeRLF1_light"
-368187a368375,368383
+368187a368383,368391
 > mesh_light
 > {
 >  name LAtypeRLF1_light5
@@ -467,13 +475,13 @@
 >  samples 5
 > }
 > 
-368189a368386
+368189a368394
 >  name MEtypeRLF1.d6
-368206c368403
+368206c368411
 <  shader "MAtypeRLF1_light"
 ---
 >  # shader "MAtypeRLF1_light"
-368209a368407,368415
+368209a368415,368423
 > mesh_light
 > {
 >  name LAtypeRLF1_light6
@@ -483,13 +491,13 @@
 >  samples 5
 > }
 > 
-368211a368418
+368211a368426
 >  name MEtypeRLF1.d7
-368228c368435
+368228c368443
 <  shader "MAtypeRLF1_light"
 ---
 >  # shader "MAtypeRLF1_light"
-368231a368439,368447
+368231a368447,368455
 > mesh_light
 > {
 >  name LAtypeRLF1_light7
@@ -499,13 +507,13 @@
 >  samples 5
 > }
 > 
-368233a368450
+368233a368458
 >  name MEtypeRLF1.d8
-368250c368467
+368250c368475
 <  shader "MAtypeRLF1_light"
 ---
 >  # shader "MAtypeRLF1_light"
-368253a368471,368479
+368253a368479,368487
 > mesh_light
 > {
 >  name LAtypeRLF1_light8
@@ -515,13 +523,13 @@
 >  samples 5
 > }
 > 
-368255a368482
+368255a368490
 >  name MEtypeRLF1.d9
-368272c368499
+368272c368507
 <  shader "MAtypeRLF1_light"
 ---
 >  # shader "MAtypeRLF1_light"
-368275a368503,368511
+368275a368511,368519
 > mesh_light
 > {
 >  name LAtypeRLF1_light9
@@ -531,13 +539,13 @@
 >  samples 5
 > }
 > 
-368277a368514
+368277a368522
 >  name MEtypeRLF1.d10
-368294c368531
+368294c368539
 <  shader "MAtypeRLF1_light"
 ---
 >  # shader "MAtypeRLF1_light"
-368297a368535,368543
+368297a368543,368551
 > mesh_light
 > {
 >  name LAtypeRLF1_light10
@@ -547,19 +555,19 @@
 >  samples 5
 > }
 > 
-368300c368546
+368300c368554
 <  name MEtypeRLF2.d
 ---
 >  name MEtypeRLF2.d1
-368317c368563
+368317c368571
 <  shader "MAtypeRLF2_light"
 ---
 >  # shader "MAtypeRLF2_light"
-368321c368567
+368321c368575
 < standard
 ---
 > mesh_light
-368323,368331c368569,368573
+368323,368331c368577,368581
 <  name MAtypeRLF2_light
 <  Kd 0
 <  Kd_color 1 1 1
@@ -575,13 +583,13 @@
 >  color 1 1 1
 >  intensity 0.64
 >  samples 5
-368335a368578
+368335a368586
 >  name MEtypeRLF2.d2
-368352c368595
+368352c368603
 <  shader "MAtypeRLF2_light"
 ---
 >  # shader "MAtypeRLF2_light"
-368355a368599,368607
+368355a368607,368615
 > mesh_light
 > {
 >  name LAtypeRLF2_light2
@@ -591,13 +599,13 @@
 >  samples 5
 > }
 > 
-368357a368610
+368357a368618
 >  name MEtypeRLF2.d3
-368374c368627
+368374c368635
 <  shader "MAtypeRLF2_light"
 ---
 >  # shader "MAtypeRLF2_light"
-368377a368631,368639
+368377a368639,368647
 > mesh_light
 > {
 >  name LAtypeRLF2_light3
@@ -607,13 +615,13 @@
 >  samples 5
 > }
 > 
-368379a368642
+368379a368650
 >  name MEtypeRLF2.d4
-368396c368659
+368396c368667
 <  shader "MAtypeRLF2_light"
 ---
 >  # shader "MAtypeRLF2_light"
-368399a368663,368671
+368399a368671,368679
 > mesh_light
 > {
 >  name LAtypeRLF2_light4
@@ -623,13 +631,13 @@
 >  samples 5
 > }
 > 
-368401a368674
+368401a368682
 >  name MEtypeRLF2.d5
-368418c368691
+368418c368699
 <  shader "MAtypeRLF2_light"
 ---
 >  # shader "MAtypeRLF2_light"
-368421a368695,368703
+368421a368703,368711
 > mesh_light
 > {
 >  name LAtypeRLF2_light5
@@ -639,13 +647,13 @@
 >  samples 5
 > }
 > 
-368794a369077
+368794a369085
 >  name MEtypeS4.d8
-368836c369119
+368836c369127
 <  shader "MAtypeS4_light"
 ---
 >  # shader "MAtypeS4_light"
-368839a369123,369131
+368839a369131,369139
 > mesh_light
 > {
 >  name LAtypeS4_light8
@@ -655,27 +663,27 @@
 >  samples 5
 > }
 > 
-369294c369586
+369294c369594
 <  emission 1
 ---
 >  emission 0 # 1
-370645c370937
+370645c370945
 <  emission 1
 ---
 >  emission 0 # 1
-371052c371344
+371052c371352
 <  name MEtypeS5.d
 ---
 >  name MEtypeS5.d1
-371094c371386
+371094c371394
 <  shader "MAtypeS5_light"
 ---
 >  # shader "MAtypeS5_light"
-371098c371390
+371098c371398
 < standard
 ---
 > mesh_light
-371100,371108c371392,371396
+371100,371108c371400,371404
 <  name MAtypeS5_light
 <  Kd 0
 <  Kd_color 1 1 1
@@ -691,13 +699,13 @@
 >  color 1 1 1
 >  intensity 15
 >  samples 5
-371512a371801
+371512a371809
 >  name MEtypeS4.d9
-371554c371843
+371554c371851
 <  shader "MAtypeS4_light"
 ---
 >  # shader "MAtypeS4_light"
-371557a371847,371855
+371557a371855,371863
 > mesh_light
 > {
 >  name LAtypeS4_light9
@@ -707,13 +715,13 @@
 >  samples 5
 > }
 > 
-371957a372256
+371957a372264
 >  name MEtypeS4.d10
-371999c372298
+371999c372306
 <  shader "MAtypeS4_light"
 ---
 >  # shader "MAtypeS4_light"
-372002a372302,372310
+372002a372310,372318
 > mesh_light
 > {
 >  name LAtypeS4_light10
@@ -723,13 +731,13 @@
 >  samples 5
 > }
 > 
-372428a372737
+372428a372745
 >  name MEtypeS5.d2
-372470c372779
+372470c372787
 <  shader "MAtypeS5_light"
 ---
 >  # shader "MAtypeS5_light"
-372473a372783,372791
+372473a372791,372799
 > mesh_light
 > {
 >  name LAtypeS5_light2
@@ -739,13 +747,13 @@
 >  samples 5
 > }
 > 
-372873a373192
+372873a373200
 >  name MEtypeS4.d11
-372915c373234
+372915c373242
 <  shader "MAtypeS4_light"
 ---
 >  # shader "MAtypeS4_light"
-372918a373238,373246
+372918a373246,373254
 > mesh_light
 > {
 >  name LAtypeS4_light11
@@ -755,13 +763,13 @@
 >  samples 5
 > }
 > 
-373318a373647
+373318a373655
 >  name MEtypeS4.d12
-373360c373689
+373360c373697
 <  shader "MAtypeS4_light"
 ---
 >  # shader "MAtypeS4_light"
-373363a373693,373701
+373363a373701,373709
 > mesh_light
 > {
 >  name LAtypeS4_light12
@@ -771,13 +779,13 @@
 >  samples 5
 > }
 > 
-373763a374102
+373763a374110
 >  name MEtypeS4.d13
-373805c374144
+373805c374152
 <  shader "MAtypeS4_light"
 ---
 >  # shader "MAtypeS4_light"
-373808a374148,374156
+373808a374156,374164
 > mesh_light
 > {
 >  name LAtypeS4_light13
@@ -787,13 +795,13 @@
 >  samples 5
 > }
 > 
-374208a374557
+374208a374565
 >  name MEtypeS4.d14
-374250c374599
+374250c374607
 <  shader "MAtypeS4_light"
 ---
 >  # shader "MAtypeS4_light"
-374253a374603,374611
+374253a374611,374619
 > mesh_light
 > {
 >  name LAtypeS4_light14
@@ -803,13 +811,13 @@
 >  samples 5
 > }
 > 
-374653a375012
+374653a375020
 >  name MEtypeS4.d15
-374695c375054
+374695c375062
 <  shader "MAtypeS4_light"
 ---
 >  # shader "MAtypeS4_light"
-374698a375058,375066
+374698a375066,375074
 > mesh_light
 > {
 >  name LAtypeS4_light15
@@ -819,13 +827,13 @@
 >  samples 5
 > }
 > 
-375098a375467
+375098a375475
 >  name MEtypeS5.d3
-375140c375509
+375140c375517
 <  shader "MAtypeS5_light"
 ---
 >  # shader "MAtypeS5_light"
-375143a375513,375521
+375143a375521,375529
 > mesh_light
 > {
 >  name LAtypeS5_light3
@@ -835,13 +843,13 @@
 >  samples 5
 > }
 > 
-375543a375922
+375543a375930
 >  name MEtypeS4.d16
-375585c375964
+375585c375972
 <  shader "MAtypeS4_light"
 ---
 >  # shader "MAtypeS4_light"
-375588a375968,375976
+375588a375976,375984
 > mesh_light
 > {
 >  name LAtypeS4_light16
