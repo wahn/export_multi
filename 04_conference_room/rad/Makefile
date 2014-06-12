@@ -1,5 +1,6 @@
 # usage:
 # make clobber
+# make apply_patches
 # make -j 5 all
 
 all: \
