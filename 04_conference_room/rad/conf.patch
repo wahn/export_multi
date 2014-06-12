@@ -1,0 +1,138 @@
+56,66c56,59
+< # void brightfunc xwood_base_pat
+< # 4 xgrain woodpat.cal -s .02
+< # 0
+< # 1 .3
+< 
+< # xwood_base_pat alias xwood_base_mat wood_base_mat
+< 
+< # void brightfunc ywood_base_pat
+< # 4 ygrain woodpat.cal -s .02
+< # 0
+< # 1 .3
+---
+> void brightfunc xwood_base_pat
+> 4 xgrain woodpat.cal -s .02
+> 0
+> 1 .3
+68c61,68
+< # ywood_base_pat alias ywood_base_mat wood_base_mat
+---
+> xwood_base_pat alias xwood_base_mat wood_base_mat
+> 
+> void brightfunc ywood_base_pat
+> 4 ygrain woodpat.cal -s .02
+> 0
+> 1 .3
+> 
+> ywood_base_pat alias ywood_base_mat wood_base_mat
+70,73c70,73
+< # void brightfunc zwood_base_pat
+< # 4 zgrain woodpat.cal -s .02
+< # 0
+< # 1 .3
+---
+> void brightfunc zwood_base_pat
+> 4 zgrain woodpat.cal -s .02
+> 0
+> 1 .3
+75c75
+< # zwood_base_pat alias zwood_base_mat wood_base_mat
+---
+> zwood_base_pat alias zwood_base_mat wood_base_mat
+418c418
+< !genbox  wood_base_mat wood_base.2 5.66 .075 .291 -b .02 | xform -t 6.34 21.925 2.4167
+---
+> !genbox  xwood_base_mat wood_base.2 5.66 .075 .291 -b .02 | xform -t 6.34 21.925 2.4167
+420c420
+< !genbox      wood_base_mat wood_base.3 13.079 .075 .291 -b .02 | xform -t 12.25 21.925 2.4167
+---
+> !genbox      xwood_base_mat wood_base.3 13.079 .075 .291 -b .02 | xform -t 12.25 21.925 2.4167
+422c422
+< !genbox wood_base_mat wood_base.4 6.31 .075 .291 -b .02 | xform -t 28.77 21.925 2.4167
+---
+> !genbox xwood_base_mat wood_base.4 6.31 .075 .291 -b .02 | xform -t 28.77 21.925 2.4167
+424c424
+< !genbox wood_base_mat wood_base.5 .075 7.85 .291 -b .02 | xform -t 35.08 13.2 2.4167
+---
+> !genbox ywood_base_mat wood_base.5 .075 7.85 .291 -b .02 | xform -t 35.08 13.2 2.4167
+426c426
+< !genbox wood_base_mat wood_base.6 6.5 .075 .291 -b .02 | xform -t 29 13.2 2.4167
+---
+> !genbox xwood_base_mat wood_base.6 6.5 .075 .291 -b .02 | xform -t 29 13.2 2.4167
+428c428
+< !genbox wood_base_mat wood_base.7 .075 6.6 .291 -b .02 | xform -t 28.925 6.675  2.4167
+---
+> !genbox ywood_base_mat wood_base.7 .075 6.6 .291 -b .02 | xform -t 28.925 6.675  2.4167
+430c430
+< !genbox wood_base_mat wood_base.8 6.5 .075 .291 -b .02 | xform -t 29 6.675 2.4167
+---
+> !genbox xwood_base_mat wood_base.8 6.5 .075 .291 -b .02 | xform -t 29 6.675 2.4167
+459,464c459,464
+< !genbox wood_base_mat window_trim.down 34.95 .0525 .33 | xform -t 0 0 2.83
+< !genbox wood_base_mat window_trim.top  34.95 .0525 .5 | xform -t 0 .105 8.4
+< !genbox wood_base_mat window_trim.right .5 .0525 6.06 | xform -t 0 .0525 2.83
+< !genbox wood_base_mat window_trim.left  .5 .0525 6.06 | xform -t 34.45 .0525 2.83
+< !genbox wood_base_mat window_trim.midright .5 .0525 6.06 | xform -t 10.5 .0525 2.83
+< !genbox wood_base_mat window_trim.midleft  .5 .0525 6.06 | xform -t 12.58 .0525 2.83
+---
+> !genbox xwood_base_mat window_trim.down 34.95 .0525 .33 |xform -t 0 0 2.83
+> !genbox xwood_base_mat window_trim.top  34.95 .0525 .5 |xform -t 0 .105 8.4
+> !genbox zwood_base_mat window_trim.right .5 .0525 6.06 | xform -t 0 .0525 2.83
+> !genbox zwood_base_mat window_trim.left  .5 .0525 6.06 | xform -t 34.45 .0525 2.83
+> !genbox zwood_base_mat window_trim.midright .5 .0525 6.06 | xform -t 10.5 .0525 2.83
+> !genbox zwood_base_mat window_trim.midleft  .5 .0525 6.06 | xform -t 12.58 .0525 2.83
+492,500c492,500
+< # void brightfunc frame_vert_wood_pat
+< # 4 ygrain woodpat.cal -s .01
+< # 0
+< # 1 .3
+< 
+< # void brightfunc frame_horiz_wood_pat
+< # 4 ygrain woodpat.cal -s .01
+< # 0
+< # 1 .3
+---
+> void brightfunc frame_vert_wood_pat
+> 4 ygrain woodpat.cal -s .01
+> 0
+> 1 .3
+> 
+> void brightfunc frame_horiz_wood_pat
+> 4 ygrain woodpat.cal -s .01
+> 0
+> 1 .3
+502c502
+< # frame_vert_wood_pat alias frame_vert_wood_mat shaft_wood_mat
+---
+> frame_vert_wood_pat alias frame_vert_wood_mat shaft_wood_mat
+504c504
+< # frame_horiz_wood_pat alias frame_horiz_wood_mat shaft_wood_mat
+---
+> frame_horiz_wood_pat alias frame_horiz_wood_mat shaft_wood_mat
+510,513c510,513
+< !genbox shaft_wood_mat outer_frame.1 .0625 5.116 .0833 | xform -t 28.93 7.375 4.625
+< !genbox shaft_wood_mat outer_frame.2 .0625 .0833 2.266 | xform -t 0 5.116 0 -t 28.93 7.375 4.625
+< !genbox shaft_wood_mat outer_frame.3 .0625 5.116 .0833 | xform -t 0 .0833 2.266 -t 28.93 7.375 4.625
+< !genbox shaft_wood_mat outer_frame.4 .0625 .0833 2.266 | xform -t 0 0 .0833 -t 28.93 7.375 4.625
+---
+> !genbox frame_horiz_wood_mat outer_frame.1 .0625 5.116 .0833|xform -t 28.93 7.375 4.625
+> !genbox frame_vert_wood_mat outer_frame.2 .0625 .0833 2.266|xform -t 0 5.116 0 -t 28.93 7.375 4.625
+> !genbox frame_horiz_wood_mat outer_frame.3 .0625 5.116 .0833|xform -t 0 .0833 2.266 -t 28.93 7.375 4.625
+> !genbox frame_vert_wood_mat outer_frame.4 .0625 .0833 2.266|xform -t 0 0 .0833 -t 28.93 7.375 4.625
+515c515
+< !genbox shaft_wood_mat inner_frame.1 .0416 4.9918 .0416 | xform -ry -1 -t 28.9509 7.4583 4.7083 -t .02 0 0
+---
+> !genbox frame_horiz_wood_mat inner_frame.1 .0416 4.9918 .0416|xform -ry -1 -t 28.9509 7.4583 4.7083 -t .02 0 0
+517c517
+< !genbox shaft_wood_mat inner_frame.2 .0416 .0416 2.1418 | xform -t 0 4.9918  0 -ry -1 -t 28.9509 7.4583 4.7083 -t .02 0 0
+---
+> !genbox frame_vert_wood_mat inner_frame.2 .0416 .0416 2.1418|xform -t 0 4.9918  0 -ry -1 -t 28.9509 7.4583 4.7083 -t .02 0 0
+519c519
+< !genbox shaft_wood_mat inner_frame.3 .0416 4.9918 .0416 | xform -t 0 .0416 2.1418 -ry -1 -t 28.9509 7.4583 4.7083 -t .02 0 0
+---
+> !genbox frame_horiz_wood_mat inner_frame.3 .0416 4.9918 .0416|xform -t 0 .0416 2.1418 -ry -1 -t 28.9509 7.4583 4.7083 -t .02 0 0
+521c521
+< !genbox shaft_wood_mat inner_frame.4 .0416 .0416 2.1418 | xform -t 0 0 .0416 -ry -1 -t 28.9509 7.4583 4.7083 -t .02 0 0
+---
+> !genbox frame_vert_wood_mat inner_frame.4 .0416 .0416 2.1418|xform -t 0 0 .0416 -ry -1 -t 28.9509 7.4583 4.7083 -t .02 0 0

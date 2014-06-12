@@ -1,0 +1,10 @@
+4,7c4,7
+< # void brightfunc xwood_pat
+< # 4 xgrain woodpat.cal -s .4
+< # 0
+< # 1                0.6
+---
+> void brightfunc xwood_pat
+> 4 xgrain woodpat.cal -s .4
+> 0
+> 1                0.6

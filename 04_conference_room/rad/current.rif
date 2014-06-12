@@ -9,7 +9,7 @@ VARIABILITY = Medium
 # render
 render = -av .02 .02 .02
 # scene
-scene = radiance_only.rad conf.rad curtains.rad furniture.rad lights.rad
+scene = conf.rad curtains.rad furniture.rad lights.rad
 # objects
 objects = lib/blackboard.rad
 objects = lib/chair1.rad

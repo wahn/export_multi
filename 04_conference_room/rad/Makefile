@@ -9,13 +9,51 @@ conference_room_radiance_door2y.png \
 conference_room_radiance_shaft.png \
 conference_room_radiance_xY.png
 
-RAD_FILES = radiance_only.rad conf.rad curtains.rad furniture.rad lights.rad
+RAD_FILES = conf.rad curtains.rad furniture.rad lights.rad
+PATCHED_FILES = \
+conf.rad \
+curtains.rad \
+lib/chair2.rad \
+lib/curtain.rad \
+lib/extinguisher.rad \
+lib/podium.rad \
+lib/speaker.rad \
+lib/table.rad \
+lib/vent.rad \
+lib/vent_panel.rad
 
 clean:
-	-rm -f *~ *.amb *.oct *.unf *.tiff
+	-rm -f *~ *.amb *.oct *.unf *.tiff lib/*~
 
 clobber: clean
 	-rm -f *.hdr *.png
+	git checkout $(PATCHED_FILES)
+
+curtain.oct: lib/curtain.patch
+	patch lib/curtain.rad -i lib/curtain.patch
+	oconv -f lib/curtain.rad > curtain.oct
+
+vent.oct:	lib/vent.patch
+	patch lib/vent.rad -i lib/vent.patch
+	oconv -f lib/vent.rad > vent.oct
+
+apply_patches: curtain.oct vent.oct \
+conf.patch \
+curtains.patch \
+lib/chair2.patch \
+lib/extinguisher.patch \
+lib/podium.patch \
+lib/speaker.patch \
+lib/table.patch \
+lib/vent_panel.patch
+	patch conf.rad -i conf.patch
+	patch curtains.rad -i curtains.patch
+	patch lib/chair2.rad -i lib/chair2.patch
+	patch lib/extinguisher.rad -i lib/extinguisher.patch
+	patch lib/podium.rad -i lib/podium.patch
+	patch lib/speaker.rad -i lib/speaker.patch
+	patch lib/table.rad -i lib/table.patch
+	patch lib/vent_panel.rad -i lib/vent_panel.patch
 
 conference_room_radiance_current.png: vf/current_cam.vf
 	oconv $(RAD_FILES) > current.oct

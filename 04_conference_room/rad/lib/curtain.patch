@@ -1,0 +1,1604 @@
+5c5
+< # gensurf curtain_mat curtain s*12 .25*sin(24*2*PI*s) t*6 400 1
+---
+> # gensurf void curtain s*12 .25*sin(24*2*PI*s) t*6 400 1
+7c7
+< curtain_mat polygon curtain.1
+---
+> void polygon curtain.1
+16c16
+< curtain_mat polygon curtain.2
+---
+> void polygon curtain.2
+25c25
+< curtain_mat polygon curtain.3
+---
+> void polygon curtain.3
+34c34
+< curtain_mat polygon curtain.4
+---
+> void polygon curtain.4
+43c43
+< curtain_mat polygon curtain.5
+---
+> void polygon curtain.5
+52c52
+< curtain_mat polygon curtain.6
+---
+> void polygon curtain.6
+61c61
+< curtain_mat polygon curtain.7
+---
+> void polygon curtain.7
+70c70
+< curtain_mat polygon curtain.8
+---
+> void polygon curtain.8
+79c79
+< curtain_mat polygon curtain.9
+---
+> void polygon curtain.9
+88c88
+< curtain_mat polygon curtain.10
+---
+> void polygon curtain.10
+97c97
+< curtain_mat polygon curtain.11
+---
+> void polygon curtain.11
+106c106
+< curtain_mat polygon curtain.12
+---
+> void polygon curtain.12
+115c115
+< curtain_mat polygon curtain.13
+---
+> void polygon curtain.13
+124c124
+< curtain_mat polygon curtain.14
+---
+> void polygon curtain.14
+133c133
+< curtain_mat polygon curtain.15
+---
+> void polygon curtain.15
+142c142
+< curtain_mat polygon curtain.16
+---
+> void polygon curtain.16
+151c151
+< curtain_mat polygon curtain.17
+---
+> void polygon curtain.17
+160c160
+< curtain_mat polygon curtain.18
+---
+> void polygon curtain.18
+169c169
+< curtain_mat polygon curtain.19
+---
+> void polygon curtain.19
+178c178
+< curtain_mat polygon curtain.20
+---
+> void polygon curtain.20
+187c187
+< curtain_mat polygon curtain.21
+---
+> void polygon curtain.21
+196c196
+< curtain_mat polygon curtain.22
+---
+> void polygon curtain.22
+205c205
+< curtain_mat polygon curtain.23
+---
+> void polygon curtain.23
+214c214
+< curtain_mat polygon curtain.24
+---
+> void polygon curtain.24
+223c223
+< curtain_mat polygon curtain.25
+---
+> void polygon curtain.25
+232c232
+< curtain_mat polygon curtain.26
+---
+> void polygon curtain.26
+241c241
+< curtain_mat polygon curtain.27
+---
+> void polygon curtain.27
+250c250
+< curtain_mat polygon curtain.28
+---
+> void polygon curtain.28
+259c259
+< curtain_mat polygon curtain.29
+---
+> void polygon curtain.29
+268c268
+< curtain_mat polygon curtain.30
+---
+> void polygon curtain.30
+277c277
+< curtain_mat polygon curtain.31
+---
+> void polygon curtain.31
+286c286
+< curtain_mat polygon curtain.32
+---
+> void polygon curtain.32
+295c295
+< curtain_mat polygon curtain.33
+---
+> void polygon curtain.33
+304c304
+< curtain_mat polygon curtain.34
+---
+> void polygon curtain.34
+313c313
+< curtain_mat polygon curtain.35
+---
+> void polygon curtain.35
+322c322
+< curtain_mat polygon curtain.36
+---
+> void polygon curtain.36
+331c331
+< curtain_mat polygon curtain.37
+---
+> void polygon curtain.37
+340c340
+< curtain_mat polygon curtain.38
+---
+> void polygon curtain.38
+349c349
+< curtain_mat polygon curtain.39
+---
+> void polygon curtain.39
+358c358
+< curtain_mat polygon curtain.40
+---
+> void polygon curtain.40
+367c367
+< curtain_mat polygon curtain.41
+---
+> void polygon curtain.41
+376c376
+< curtain_mat polygon curtain.42
+---
+> void polygon curtain.42
+385c385
+< curtain_mat polygon curtain.43
+---
+> void polygon curtain.43
+394c394
+< curtain_mat polygon curtain.44
+---
+> void polygon curtain.44
+403c403
+< curtain_mat polygon curtain.45
+---
+> void polygon curtain.45
+412c412
+< curtain_mat polygon curtain.46
+---
+> void polygon curtain.46
+421c421
+< curtain_mat polygon curtain.47
+---
+> void polygon curtain.47
+430c430
+< curtain_mat polygon curtain.48
+---
+> void polygon curtain.48
+439c439
+< curtain_mat polygon curtain.49
+---
+> void polygon curtain.49
+448c448
+< curtain_mat polygon curtain.50
+---
+> void polygon curtain.50
+457c457
+< curtain_mat polygon curtain.51
+---
+> void polygon curtain.51
+466c466
+< curtain_mat polygon curtain.52
+---
+> void polygon curtain.52
+475c475
+< curtain_mat polygon curtain.53
+---
+> void polygon curtain.53
+484c484
+< curtain_mat polygon curtain.54
+---
+> void polygon curtain.54
+493c493
+< curtain_mat polygon curtain.55
+---
+> void polygon curtain.55
+502c502
+< curtain_mat polygon curtain.56
+---
+> void polygon curtain.56
+511c511
+< curtain_mat polygon curtain.57
+---
+> void polygon curtain.57
+520c520
+< curtain_mat polygon curtain.58
+---
+> void polygon curtain.58
+529c529
+< curtain_mat polygon curtain.59
+---
+> void polygon curtain.59
+538c538
+< curtain_mat polygon curtain.60
+---
+> void polygon curtain.60
+547c547
+< curtain_mat polygon curtain.61
+---
+> void polygon curtain.61
+556c556
+< curtain_mat polygon curtain.62
+---
+> void polygon curtain.62
+565c565
+< curtain_mat polygon curtain.63
+---
+> void polygon curtain.63
+574c574
+< curtain_mat polygon curtain.64
+---
+> void polygon curtain.64
+583c583
+< curtain_mat polygon curtain.65
+---
+> void polygon curtain.65
+592c592
+< curtain_mat polygon curtain.66
+---
+> void polygon curtain.66
+601c601
+< curtain_mat polygon curtain.67
+---
+> void polygon curtain.67
+610c610
+< curtain_mat polygon curtain.68
+---
+> void polygon curtain.68
+619c619
+< curtain_mat polygon curtain.69
+---
+> void polygon curtain.69
+628c628
+< curtain_mat polygon curtain.70
+---
+> void polygon curtain.70
+637c637
+< curtain_mat polygon curtain.71
+---
+> void polygon curtain.71
+646c646
+< curtain_mat polygon curtain.72
+---
+> void polygon curtain.72
+655c655
+< curtain_mat polygon curtain.73
+---
+> void polygon curtain.73
+664c664
+< curtain_mat polygon curtain.74
+---
+> void polygon curtain.74
+673c673
+< curtain_mat polygon curtain.75
+---
+> void polygon curtain.75
+682c682
+< curtain_mat polygon curtain.76
+---
+> void polygon curtain.76
+691c691
+< curtain_mat polygon curtain.77
+---
+> void polygon curtain.77
+700c700
+< curtain_mat polygon curtain.78
+---
+> void polygon curtain.78
+709c709
+< curtain_mat polygon curtain.79
+---
+> void polygon curtain.79
+718c718
+< curtain_mat polygon curtain.80
+---
+> void polygon curtain.80
+727c727
+< curtain_mat polygon curtain.81
+---
+> void polygon curtain.81
+736c736
+< curtain_mat polygon curtain.82
+---
+> void polygon curtain.82
+745c745
+< curtain_mat polygon curtain.83
+---
+> void polygon curtain.83
+754c754
+< curtain_mat polygon curtain.84
+---
+> void polygon curtain.84
+763c763
+< curtain_mat polygon curtain.85
+---
+> void polygon curtain.85
+772c772
+< curtain_mat polygon curtain.86
+---
+> void polygon curtain.86
+781c781
+< curtain_mat polygon curtain.87
+---
+> void polygon curtain.87
+790c790
+< curtain_mat polygon curtain.88
+---
+> void polygon curtain.88
+799c799
+< curtain_mat polygon curtain.89
+---
+> void polygon curtain.89
+808c808
+< curtain_mat polygon curtain.90
+---
+> void polygon curtain.90
+817c817
+< curtain_mat polygon curtain.91
+---
+> void polygon curtain.91
+826c826
+< curtain_mat polygon curtain.92
+---
+> void polygon curtain.92
+835c835
+< curtain_mat polygon curtain.93
+---
+> void polygon curtain.93
+844c844
+< curtain_mat polygon curtain.94
+---
+> void polygon curtain.94
+853c853
+< curtain_mat polygon curtain.95
+---
+> void polygon curtain.95
+862c862
+< curtain_mat polygon curtain.96
+---
+> void polygon curtain.96
+871c871
+< curtain_mat polygon curtain.97
+---
+> void polygon curtain.97
+880c880
+< curtain_mat polygon curtain.98
+---
+> void polygon curtain.98
+889c889
+< curtain_mat polygon curtain.99
+---
+> void polygon curtain.99
+898c898
+< curtain_mat polygon curtain.100
+---
+> void polygon curtain.100
+907c907
+< curtain_mat polygon curtain.101
+---
+> void polygon curtain.101
+916c916
+< curtain_mat polygon curtain.102
+---
+> void polygon curtain.102
+925c925
+< curtain_mat polygon curtain.103
+---
+> void polygon curtain.103
+934c934
+< curtain_mat polygon curtain.104
+---
+> void polygon curtain.104
+943c943
+< curtain_mat polygon curtain.105
+---
+> void polygon curtain.105
+952c952
+< curtain_mat polygon curtain.106
+---
+> void polygon curtain.106
+961c961
+< curtain_mat polygon curtain.107
+---
+> void polygon curtain.107
+970c970
+< curtain_mat polygon curtain.108
+---
+> void polygon curtain.108
+979c979
+< curtain_mat polygon curtain.109
+---
+> void polygon curtain.109
+988c988
+< curtain_mat polygon curtain.110
+---
+> void polygon curtain.110
+997c997
+< curtain_mat polygon curtain.111
+---
+> void polygon curtain.111
+1006c1006
+< curtain_mat polygon curtain.112
+---
+> void polygon curtain.112
+1015c1015
+< curtain_mat polygon curtain.113
+---
+> void polygon curtain.113
+1024c1024
+< curtain_mat polygon curtain.114
+---
+> void polygon curtain.114
+1033c1033
+< curtain_mat polygon curtain.115
+---
+> void polygon curtain.115
+1042c1042
+< curtain_mat polygon curtain.116
+---
+> void polygon curtain.116
+1051c1051
+< curtain_mat polygon curtain.117
+---
+> void polygon curtain.117
+1060c1060
+< curtain_mat polygon curtain.118
+---
+> void polygon curtain.118
+1069c1069
+< curtain_mat polygon curtain.119
+---
+> void polygon curtain.119
+1078c1078
+< curtain_mat polygon curtain.120
+---
+> void polygon curtain.120
+1087c1087
+< curtain_mat polygon curtain.121
+---
+> void polygon curtain.121
+1096c1096
+< curtain_mat polygon curtain.122
+---
+> void polygon curtain.122
+1105c1105
+< curtain_mat polygon curtain.123
+---
+> void polygon curtain.123
+1114c1114
+< curtain_mat polygon curtain.124
+---
+> void polygon curtain.124
+1123c1123
+< curtain_mat polygon curtain.125
+---
+> void polygon curtain.125
+1132c1132
+< curtain_mat polygon curtain.126
+---
+> void polygon curtain.126
+1141c1141
+< curtain_mat polygon curtain.127
+---
+> void polygon curtain.127
+1150c1150
+< curtain_mat polygon curtain.128
+---
+> void polygon curtain.128
+1159c1159
+< curtain_mat polygon curtain.129
+---
+> void polygon curtain.129
+1168c1168
+< curtain_mat polygon curtain.130
+---
+> void polygon curtain.130
+1177c1177
+< curtain_mat polygon curtain.131
+---
+> void polygon curtain.131
+1186c1186
+< curtain_mat polygon curtain.132
+---
+> void polygon curtain.132
+1195c1195
+< curtain_mat polygon curtain.133
+---
+> void polygon curtain.133
+1204c1204
+< curtain_mat polygon curtain.134
+---
+> void polygon curtain.134
+1213c1213
+< curtain_mat polygon curtain.135
+---
+> void polygon curtain.135
+1222c1222
+< curtain_mat polygon curtain.136
+---
+> void polygon curtain.136
+1231c1231
+< curtain_mat polygon curtain.137
+---
+> void polygon curtain.137
+1240c1240
+< curtain_mat polygon curtain.138
+---
+> void polygon curtain.138
+1249c1249
+< curtain_mat polygon curtain.139
+---
+> void polygon curtain.139
+1258c1258
+< curtain_mat polygon curtain.140
+---
+> void polygon curtain.140
+1267c1267
+< curtain_mat polygon curtain.141
+---
+> void polygon curtain.141
+1276c1276
+< curtain_mat polygon curtain.142
+---
+> void polygon curtain.142
+1285c1285
+< curtain_mat polygon curtain.143
+---
+> void polygon curtain.143
+1294c1294
+< curtain_mat polygon curtain.144
+---
+> void polygon curtain.144
+1303c1303
+< curtain_mat polygon curtain.145
+---
+> void polygon curtain.145
+1312c1312
+< curtain_mat polygon curtain.146
+---
+> void polygon curtain.146
+1321c1321
+< curtain_mat polygon curtain.147
+---
+> void polygon curtain.147
+1330c1330
+< curtain_mat polygon curtain.148
+---
+> void polygon curtain.148
+1339c1339
+< curtain_mat polygon curtain.149
+---
+> void polygon curtain.149
+1348c1348
+< curtain_mat polygon curtain.150
+---
+> void polygon curtain.150
+1357c1357
+< curtain_mat polygon curtain.151
+---
+> void polygon curtain.151
+1366c1366
+< curtain_mat polygon curtain.152
+---
+> void polygon curtain.152
+1375c1375
+< curtain_mat polygon curtain.153
+---
+> void polygon curtain.153
+1384c1384
+< curtain_mat polygon curtain.154
+---
+> void polygon curtain.154
+1393c1393
+< curtain_mat polygon curtain.155
+---
+> void polygon curtain.155
+1402c1402
+< curtain_mat polygon curtain.156
+---
+> void polygon curtain.156
+1411c1411
+< curtain_mat polygon curtain.157
+---
+> void polygon curtain.157
+1420c1420
+< curtain_mat polygon curtain.158
+---
+> void polygon curtain.158
+1429c1429
+< curtain_mat polygon curtain.159
+---
+> void polygon curtain.159
+1438c1438
+< curtain_mat polygon curtain.160
+---
+> void polygon curtain.160
+1447c1447
+< curtain_mat polygon curtain.161
+---
+> void polygon curtain.161
+1456c1456
+< curtain_mat polygon curtain.162
+---
+> void polygon curtain.162
+1465c1465
+< curtain_mat polygon curtain.163
+---
+> void polygon curtain.163
+1474c1474
+< curtain_mat polygon curtain.164
+---
+> void polygon curtain.164
+1483c1483
+< curtain_mat polygon curtain.165
+---
+> void polygon curtain.165
+1492c1492
+< curtain_mat polygon curtain.166
+---
+> void polygon curtain.166
+1501c1501
+< curtain_mat polygon curtain.167
+---
+> void polygon curtain.167
+1510c1510
+< curtain_mat polygon curtain.168
+---
+> void polygon curtain.168
+1519c1519
+< curtain_mat polygon curtain.169
+---
+> void polygon curtain.169
+1528c1528
+< curtain_mat polygon curtain.170
+---
+> void polygon curtain.170
+1537c1537
+< curtain_mat polygon curtain.171
+---
+> void polygon curtain.171
+1546c1546
+< curtain_mat polygon curtain.172
+---
+> void polygon curtain.172
+1555c1555
+< curtain_mat polygon curtain.173
+---
+> void polygon curtain.173
+1564c1564
+< curtain_mat polygon curtain.174
+---
+> void polygon curtain.174
+1573c1573
+< curtain_mat polygon curtain.175
+---
+> void polygon curtain.175
+1582c1582
+< curtain_mat polygon curtain.176
+---
+> void polygon curtain.176
+1591c1591
+< curtain_mat polygon curtain.177
+---
+> void polygon curtain.177
+1600c1600
+< curtain_mat polygon curtain.178
+---
+> void polygon curtain.178
+1609c1609
+< curtain_mat polygon curtain.179
+---
+> void polygon curtain.179
+1618c1618
+< curtain_mat polygon curtain.180
+---
+> void polygon curtain.180
+1627c1627
+< curtain_mat polygon curtain.181
+---
+> void polygon curtain.181
+1636c1636
+< curtain_mat polygon curtain.182
+---
+> void polygon curtain.182
+1645c1645
+< curtain_mat polygon curtain.183
+---
+> void polygon curtain.183
+1654c1654
+< curtain_mat polygon curtain.184
+---
+> void polygon curtain.184
+1663c1663
+< curtain_mat polygon curtain.185
+---
+> void polygon curtain.185
+1672c1672
+< curtain_mat polygon curtain.186
+---
+> void polygon curtain.186
+1681c1681
+< curtain_mat polygon curtain.187
+---
+> void polygon curtain.187
+1690c1690
+< curtain_mat polygon curtain.188
+---
+> void polygon curtain.188
+1699c1699
+< curtain_mat polygon curtain.189
+---
+> void polygon curtain.189
+1708c1708
+< curtain_mat polygon curtain.190
+---
+> void polygon curtain.190
+1717c1717
+< curtain_mat polygon curtain.191
+---
+> void polygon curtain.191
+1726c1726
+< curtain_mat polygon curtain.192
+---
+> void polygon curtain.192
+1735c1735
+< curtain_mat polygon curtain.193
+---
+> void polygon curtain.193
+1744c1744
+< curtain_mat polygon curtain.194
+---
+> void polygon curtain.194
+1753c1753
+< curtain_mat polygon curtain.195
+---
+> void polygon curtain.195
+1762c1762
+< curtain_mat polygon curtain.196
+---
+> void polygon curtain.196
+1771c1771
+< curtain_mat polygon curtain.197
+---
+> void polygon curtain.197
+1780c1780
+< curtain_mat polygon curtain.198
+---
+> void polygon curtain.198
+1789c1789
+< curtain_mat polygon curtain.199
+---
+> void polygon curtain.199
+1798c1798
+< curtain_mat polygon curtain.200
+---
+> void polygon curtain.200
+1807c1807
+< curtain_mat polygon curtain.201
+---
+> void polygon curtain.201
+1816c1816
+< curtain_mat polygon curtain.202
+---
+> void polygon curtain.202
+1825c1825
+< curtain_mat polygon curtain.203
+---
+> void polygon curtain.203
+1834c1834
+< curtain_mat polygon curtain.204
+---
+> void polygon curtain.204
+1843c1843
+< curtain_mat polygon curtain.205
+---
+> void polygon curtain.205
+1852c1852
+< curtain_mat polygon curtain.206
+---
+> void polygon curtain.206
+1861c1861
+< curtain_mat polygon curtain.207
+---
+> void polygon curtain.207
+1870c1870
+< curtain_mat polygon curtain.208
+---
+> void polygon curtain.208
+1879c1879
+< curtain_mat polygon curtain.209
+---
+> void polygon curtain.209
+1888c1888
+< curtain_mat polygon curtain.210
+---
+> void polygon curtain.210
+1897c1897
+< curtain_mat polygon curtain.211
+---
+> void polygon curtain.211
+1906c1906
+< curtain_mat polygon curtain.212
+---
+> void polygon curtain.212
+1915c1915
+< curtain_mat polygon curtain.213
+---
+> void polygon curtain.213
+1924c1924
+< curtain_mat polygon curtain.214
+---
+> void polygon curtain.214
+1933c1933
+< curtain_mat polygon curtain.215
+---
+> void polygon curtain.215
+1942c1942
+< curtain_mat polygon curtain.216
+---
+> void polygon curtain.216
+1951c1951
+< curtain_mat polygon curtain.217
+---
+> void polygon curtain.217
+1960c1960
+< curtain_mat polygon curtain.218
+---
+> void polygon curtain.218
+1969c1969
+< curtain_mat polygon curtain.219
+---
+> void polygon curtain.219
+1978c1978
+< curtain_mat polygon curtain.220
+---
+> void polygon curtain.220
+1987c1987
+< curtain_mat polygon curtain.221
+---
+> void polygon curtain.221
+1996c1996
+< curtain_mat polygon curtain.222
+---
+> void polygon curtain.222
+2005c2005
+< curtain_mat polygon curtain.223
+---
+> void polygon curtain.223
+2014c2014
+< curtain_mat polygon curtain.224
+---
+> void polygon curtain.224
+2023c2023
+< curtain_mat polygon curtain.225
+---
+> void polygon curtain.225
+2032c2032
+< curtain_mat polygon curtain.226
+---
+> void polygon curtain.226
+2041c2041
+< curtain_mat polygon curtain.227
+---
+> void polygon curtain.227
+2050c2050
+< curtain_mat polygon curtain.228
+---
+> void polygon curtain.228
+2059c2059
+< curtain_mat polygon curtain.229
+---
+> void polygon curtain.229
+2068c2068
+< curtain_mat polygon curtain.230
+---
+> void polygon curtain.230
+2077c2077
+< curtain_mat polygon curtain.231
+---
+> void polygon curtain.231
+2086c2086
+< curtain_mat polygon curtain.232
+---
+> void polygon curtain.232
+2095c2095
+< curtain_mat polygon curtain.233
+---
+> void polygon curtain.233
+2104c2104
+< curtain_mat polygon curtain.234
+---
+> void polygon curtain.234
+2113c2113
+< curtain_mat polygon curtain.235
+---
+> void polygon curtain.235
+2122c2122
+< curtain_mat polygon curtain.236
+---
+> void polygon curtain.236
+2131c2131
+< curtain_mat polygon curtain.237
+---
+> void polygon curtain.237
+2140c2140
+< curtain_mat polygon curtain.238
+---
+> void polygon curtain.238
+2149c2149
+< curtain_mat polygon curtain.239
+---
+> void polygon curtain.239
+2158c2158
+< curtain_mat polygon curtain.240
+---
+> void polygon curtain.240
+2167c2167
+< curtain_mat polygon curtain.241
+---
+> void polygon curtain.241
+2176c2176
+< curtain_mat polygon curtain.242
+---
+> void polygon curtain.242
+2185c2185
+< curtain_mat polygon curtain.243
+---
+> void polygon curtain.243
+2194c2194
+< curtain_mat polygon curtain.244
+---
+> void polygon curtain.244
+2203c2203
+< curtain_mat polygon curtain.245
+---
+> void polygon curtain.245
+2212c2212
+< curtain_mat polygon curtain.246
+---
+> void polygon curtain.246
+2221c2221
+< curtain_mat polygon curtain.247
+---
+> void polygon curtain.247
+2230c2230
+< curtain_mat polygon curtain.248
+---
+> void polygon curtain.248
+2239c2239
+< curtain_mat polygon curtain.249
+---
+> void polygon curtain.249
+2248c2248
+< curtain_mat polygon curtain.250
+---
+> void polygon curtain.250
+2257c2257
+< curtain_mat polygon curtain.251
+---
+> void polygon curtain.251
+2266c2266
+< curtain_mat polygon curtain.252
+---
+> void polygon curtain.252
+2275c2275
+< curtain_mat polygon curtain.253
+---
+> void polygon curtain.253
+2284c2284
+< curtain_mat polygon curtain.254
+---
+> void polygon curtain.254
+2293c2293
+< curtain_mat polygon curtain.255
+---
+> void polygon curtain.255
+2302c2302
+< curtain_mat polygon curtain.256
+---
+> void polygon curtain.256
+2311c2311
+< curtain_mat polygon curtain.257
+---
+> void polygon curtain.257
+2320c2320
+< curtain_mat polygon curtain.258
+---
+> void polygon curtain.258
+2329c2329
+< curtain_mat polygon curtain.259
+---
+> void polygon curtain.259
+2338c2338
+< curtain_mat polygon curtain.260
+---
+> void polygon curtain.260
+2347c2347
+< curtain_mat polygon curtain.261
+---
+> void polygon curtain.261
+2356c2356
+< curtain_mat polygon curtain.262
+---
+> void polygon curtain.262
+2365c2365
+< curtain_mat polygon curtain.263
+---
+> void polygon curtain.263
+2374c2374
+< curtain_mat polygon curtain.264
+---
+> void polygon curtain.264
+2383c2383
+< curtain_mat polygon curtain.265
+---
+> void polygon curtain.265
+2392c2392
+< curtain_mat polygon curtain.266
+---
+> void polygon curtain.266
+2401c2401
+< curtain_mat polygon curtain.267
+---
+> void polygon curtain.267
+2410c2410
+< curtain_mat polygon curtain.268
+---
+> void polygon curtain.268
+2419c2419
+< curtain_mat polygon curtain.269
+---
+> void polygon curtain.269
+2428c2428
+< curtain_mat polygon curtain.270
+---
+> void polygon curtain.270
+2437c2437
+< curtain_mat polygon curtain.271
+---
+> void polygon curtain.271
+2446c2446
+< curtain_mat polygon curtain.272
+---
+> void polygon curtain.272
+2455c2455
+< curtain_mat polygon curtain.273
+---
+> void polygon curtain.273
+2464c2464
+< curtain_mat polygon curtain.274
+---
+> void polygon curtain.274
+2473c2473
+< curtain_mat polygon curtain.275
+---
+> void polygon curtain.275
+2482c2482
+< curtain_mat polygon curtain.276
+---
+> void polygon curtain.276
+2491c2491
+< curtain_mat polygon curtain.277
+---
+> void polygon curtain.277
+2500c2500
+< curtain_mat polygon curtain.278
+---
+> void polygon curtain.278
+2509c2509
+< curtain_mat polygon curtain.279
+---
+> void polygon curtain.279
+2518c2518
+< curtain_mat polygon curtain.280
+---
+> void polygon curtain.280
+2527c2527
+< curtain_mat polygon curtain.281
+---
+> void polygon curtain.281
+2536c2536
+< curtain_mat polygon curtain.282
+---
+> void polygon curtain.282
+2545c2545
+< curtain_mat polygon curtain.283
+---
+> void polygon curtain.283
+2554c2554
+< curtain_mat polygon curtain.284
+---
+> void polygon curtain.284
+2563c2563
+< curtain_mat polygon curtain.285
+---
+> void polygon curtain.285
+2572c2572
+< curtain_mat polygon curtain.286
+---
+> void polygon curtain.286
+2581c2581
+< curtain_mat polygon curtain.287
+---
+> void polygon curtain.287
+2590c2590
+< curtain_mat polygon curtain.288
+---
+> void polygon curtain.288
+2599c2599
+< curtain_mat polygon curtain.289
+---
+> void polygon curtain.289
+2608c2608
+< curtain_mat polygon curtain.290
+---
+> void polygon curtain.290
+2617c2617
+< curtain_mat polygon curtain.291
+---
+> void polygon curtain.291
+2626c2626
+< curtain_mat polygon curtain.292
+---
+> void polygon curtain.292
+2635c2635
+< curtain_mat polygon curtain.293
+---
+> void polygon curtain.293
+2644c2644
+< curtain_mat polygon curtain.294
+---
+> void polygon curtain.294
+2653c2653
+< curtain_mat polygon curtain.295
+---
+> void polygon curtain.295
+2662c2662
+< curtain_mat polygon curtain.296
+---
+> void polygon curtain.296
+2671c2671
+< curtain_mat polygon curtain.297
+---
+> void polygon curtain.297
+2680c2680
+< curtain_mat polygon curtain.298
+---
+> void polygon curtain.298
+2689c2689
+< curtain_mat polygon curtain.299
+---
+> void polygon curtain.299
+2698c2698
+< curtain_mat polygon curtain.300
+---
+> void polygon curtain.300
+2707c2707
+< curtain_mat polygon curtain.301
+---
+> void polygon curtain.301
+2716c2716
+< curtain_mat polygon curtain.302
+---
+> void polygon curtain.302
+2725c2725
+< curtain_mat polygon curtain.303
+---
+> void polygon curtain.303
+2734c2734
+< curtain_mat polygon curtain.304
+---
+> void polygon curtain.304
+2743c2743
+< curtain_mat polygon curtain.305
+---
+> void polygon curtain.305
+2752c2752
+< curtain_mat polygon curtain.306
+---
+> void polygon curtain.306
+2761c2761
+< curtain_mat polygon curtain.307
+---
+> void polygon curtain.307
+2770c2770
+< curtain_mat polygon curtain.308
+---
+> void polygon curtain.308
+2779c2779
+< curtain_mat polygon curtain.309
+---
+> void polygon curtain.309
+2788c2788
+< curtain_mat polygon curtain.310
+---
+> void polygon curtain.310
+2797c2797
+< curtain_mat polygon curtain.311
+---
+> void polygon curtain.311
+2806c2806
+< curtain_mat polygon curtain.312
+---
+> void polygon curtain.312
+2815c2815
+< curtain_mat polygon curtain.313
+---
+> void polygon curtain.313
+2824c2824
+< curtain_mat polygon curtain.314
+---
+> void polygon curtain.314
+2833c2833
+< curtain_mat polygon curtain.315
+---
+> void polygon curtain.315
+2842c2842
+< curtain_mat polygon curtain.316
+---
+> void polygon curtain.316
+2851c2851
+< curtain_mat polygon curtain.317
+---
+> void polygon curtain.317
+2860c2860
+< curtain_mat polygon curtain.318
+---
+> void polygon curtain.318
+2869c2869
+< curtain_mat polygon curtain.319
+---
+> void polygon curtain.319
+2878c2878
+< curtain_mat polygon curtain.320
+---
+> void polygon curtain.320
+2887c2887
+< curtain_mat polygon curtain.321
+---
+> void polygon curtain.321
+2896c2896
+< curtain_mat polygon curtain.322
+---
+> void polygon curtain.322
+2905c2905
+< curtain_mat polygon curtain.323
+---
+> void polygon curtain.323
+2914c2914
+< curtain_mat polygon curtain.324
+---
+> void polygon curtain.324
+2923c2923
+< curtain_mat polygon curtain.325
+---
+> void polygon curtain.325
+2932c2932
+< curtain_mat polygon curtain.326
+---
+> void polygon curtain.326
+2941c2941
+< curtain_mat polygon curtain.327
+---
+> void polygon curtain.327
+2950c2950
+< curtain_mat polygon curtain.328
+---
+> void polygon curtain.328
+2959c2959
+< curtain_mat polygon curtain.329
+---
+> void polygon curtain.329
+2968c2968
+< curtain_mat polygon curtain.330
+---
+> void polygon curtain.330
+2977c2977
+< curtain_mat polygon curtain.331
+---
+> void polygon curtain.331
+2986c2986
+< curtain_mat polygon curtain.332
+---
+> void polygon curtain.332
+2995c2995
+< curtain_mat polygon curtain.333
+---
+> void polygon curtain.333
+3004c3004
+< curtain_mat polygon curtain.334
+---
+> void polygon curtain.334
+3013c3013
+< curtain_mat polygon curtain.335
+---
+> void polygon curtain.335
+3022c3022
+< curtain_mat polygon curtain.336
+---
+> void polygon curtain.336
+3031c3031
+< curtain_mat polygon curtain.337
+---
+> void polygon curtain.337
+3040c3040
+< curtain_mat polygon curtain.338
+---
+> void polygon curtain.338
+3049c3049
+< curtain_mat polygon curtain.339
+---
+> void polygon curtain.339
+3058c3058
+< curtain_mat polygon curtain.340
+---
+> void polygon curtain.340
+3067c3067
+< curtain_mat polygon curtain.341
+---
+> void polygon curtain.341
+3076c3076
+< curtain_mat polygon curtain.342
+---
+> void polygon curtain.342
+3085c3085
+< curtain_mat polygon curtain.343
+---
+> void polygon curtain.343
+3094c3094
+< curtain_mat polygon curtain.344
+---
+> void polygon curtain.344
+3103c3103
+< curtain_mat polygon curtain.345
+---
+> void polygon curtain.345
+3112c3112
+< curtain_mat polygon curtain.346
+---
+> void polygon curtain.346
+3121c3121
+< curtain_mat polygon curtain.347
+---
+> void polygon curtain.347
+3130c3130
+< curtain_mat polygon curtain.348
+---
+> void polygon curtain.348
+3139c3139
+< curtain_mat polygon curtain.349
+---
+> void polygon curtain.349
+3148c3148
+< curtain_mat polygon curtain.350
+---
+> void polygon curtain.350
+3157c3157
+< curtain_mat polygon curtain.351
+---
+> void polygon curtain.351
+3166c3166
+< curtain_mat polygon curtain.352
+---
+> void polygon curtain.352
+3175c3175
+< curtain_mat polygon curtain.353
+---
+> void polygon curtain.353
+3184c3184
+< curtain_mat polygon curtain.354
+---
+> void polygon curtain.354
+3193c3193
+< curtain_mat polygon curtain.355
+---
+> void polygon curtain.355
+3202c3202
+< curtain_mat polygon curtain.356
+---
+> void polygon curtain.356
+3211c3211
+< curtain_mat polygon curtain.357
+---
+> void polygon curtain.357
+3220c3220
+< curtain_mat polygon curtain.358
+---
+> void polygon curtain.358
+3229c3229
+< curtain_mat polygon curtain.359
+---
+> void polygon curtain.359
+3238c3238
+< curtain_mat polygon curtain.360
+---
+> void polygon curtain.360
+3247c3247
+< curtain_mat polygon curtain.361
+---
+> void polygon curtain.361
+3256c3256
+< curtain_mat polygon curtain.362
+---
+> void polygon curtain.362
+3265c3265
+< curtain_mat polygon curtain.363
+---
+> void polygon curtain.363
+3274c3274
+< curtain_mat polygon curtain.364
+---
+> void polygon curtain.364
+3283c3283
+< curtain_mat polygon curtain.365
+---
+> void polygon curtain.365
+3292c3292
+< curtain_mat polygon curtain.366
+---
+> void polygon curtain.366
+3301c3301
+< curtain_mat polygon curtain.367
+---
+> void polygon curtain.367
+3310c3310
+< curtain_mat polygon curtain.368
+---
+> void polygon curtain.368
+3319c3319
+< curtain_mat polygon curtain.369
+---
+> void polygon curtain.369
+3328c3328
+< curtain_mat polygon curtain.370
+---
+> void polygon curtain.370
+3337c3337
+< curtain_mat polygon curtain.371
+---
+> void polygon curtain.371
+3346c3346
+< curtain_mat polygon curtain.372
+---
+> void polygon curtain.372
+3355c3355
+< curtain_mat polygon curtain.373
+---
+> void polygon curtain.373
+3364c3364
+< curtain_mat polygon curtain.374
+---
+> void polygon curtain.374
+3373c3373
+< curtain_mat polygon curtain.375
+---
+> void polygon curtain.375
+3382c3382
+< curtain_mat polygon curtain.376
+---
+> void polygon curtain.376
+3391c3391
+< curtain_mat polygon curtain.377
+---
+> void polygon curtain.377
+3400c3400
+< curtain_mat polygon curtain.378
+---
+> void polygon curtain.378
+3409c3409
+< curtain_mat polygon curtain.379
+---
+> void polygon curtain.379
+3418c3418
+< curtain_mat polygon curtain.380
+---
+> void polygon curtain.380
+3427c3427
+< curtain_mat polygon curtain.381
+---
+> void polygon curtain.381
+3436c3436
+< curtain_mat polygon curtain.382
+---
+> void polygon curtain.382
+3445c3445
+< curtain_mat polygon curtain.383
+---
+> void polygon curtain.383
+3454c3454
+< curtain_mat polygon curtain.384
+---
+> void polygon curtain.384
+3463c3463
+< curtain_mat polygon curtain.385
+---
+> void polygon curtain.385
+3472c3472
+< curtain_mat polygon curtain.386
+---
+> void polygon curtain.386
+3481c3481
+< curtain_mat polygon curtain.387
+---
+> void polygon curtain.387
+3490c3490
+< curtain_mat polygon curtain.388
+---
+> void polygon curtain.388
+3499c3499
+< curtain_mat polygon curtain.389
+---
+> void polygon curtain.389
+3508c3508
+< curtain_mat polygon curtain.390
+---
+> void polygon curtain.390
+3517c3517
+< curtain_mat polygon curtain.391
+---
+> void polygon curtain.391
+3526c3526
+< curtain_mat polygon curtain.392
+---
+> void polygon curtain.392
+3535c3535
+< curtain_mat polygon curtain.393
+---
+> void polygon curtain.393
+3544c3544
+< curtain_mat polygon curtain.394
+---
+> void polygon curtain.394
+3553c3553
+< curtain_mat polygon curtain.395
+---
+> void polygon curtain.395
+3562c3562
+< curtain_mat polygon curtain.396
+---
+> void polygon curtain.396
+3571c3571
+< curtain_mat polygon curtain.397
+---
+> void polygon curtain.397
+3580c3580
+< curtain_mat polygon curtain.398
+---
+> void polygon curtain.398
+3589c3589
+< curtain_mat polygon curtain.399
+---
+> void polygon curtain.399
+3598c3598
+< curtain_mat polygon curtain.400
+---
+> void polygon curtain.400

@@ -1,0 +1,22 @@
+6,10c6,9
+< !xform -e -n vent.top vent.rad
+< # vent_mat instance vent.top
+< # 1 vent.oct
+< # 0
+< # 0
+---
+> vent_mat instance vent.top
+> 1 vent.oct
+> 0
+> 0
+21,25c20,23
+< !xform -e -n vent.down -ry 180 -t 48 0 -10.5 vent.rad
+< # vent_mat instance vent.down
+< # 7 vent.oct -ry 180 -t 48 0 -10.5
+< # 0
+< # 0
+---
+> vent_mat instance vent.down
+> 7 vent.oct -ry 180 -t 48 0 -10.5
+> 0
+> 0
