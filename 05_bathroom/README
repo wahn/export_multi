@@ -1,0 +1,25 @@
+		Creston Bathroom Model
+
+			by Greg Ward
+
+This model was created as part of a bathroom rennovation project that
+proved once and for all that computer modeling is a good way to avoid
+doing any real work.  Please do not lift the toilet lid, as I
+never got around to cleaning the bowl.
+
+The Makefile may be used to build the various octrees by the different
+rad input files (.rif suffix).  They are:
+
+	blue_day.rif		- (not used) blue materials, daytime
+	blue_night.rif		- (not used) blue materials, nighttime
+	orig_day.rif		- pre-rennovation materials, daytime
+	orig_night.rif		- pre-rennovation materials, nighttime
+	rose_day.rif		- post-rennovation materials, daytime
+	rose_night.rif		- post-rennovation materials, nighttime
+	simple.rif		- simple (untextured) materials
+
+To generate an interactive rendering of the sink for the original nighttime
+bathroom model (for example), type:
+
+	% make orig_night.oct
+	% rad -o x11 orig_night.rif &

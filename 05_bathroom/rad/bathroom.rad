@@ -1,0 +1,392 @@
+#
+#  Bathroom at 779 Creston Road
+#
+#	Origin is at southeast corner, x axis points north.
+#
+
+#
+# Room surfaces
+#
+
+swall_mat polygon swall
+0
+0
+12
+	0	0	0
+	0	100	0
+	0	100	99
+	0	0	99
+
+ceiling_mat polygon ceiling
+0
+0
+12
+	0	0	99
+	0	100	99
+	45.5	100	99
+	45.5	0	99
+
+floor_mat polygon floor
+0
+0
+18
+	0	0	0
+	49.5	0	0
+	49.5	64	0
+	45.5	68	0
+	45.5	104	0
+	0	104	0
+
+ewall_mat polygon ewall
+0
+0
+30
+	0	0	0
+	0	0	99
+	49.5	0	99
+	49.5	0	0
+	44.5	0	0
+	44.5	0	80
+	15.5	0	80
+	15.5	0	40
+	44.5	0	40
+	44.5	0	0
+
+wwall_mat polygon wwall
+0
+0
+24
+	0	100	0
+	9	100	0
+	9	100	80.25
+	37	100	80.25
+	37	100	0
+	45.5	100	0
+	45.5	100	99
+	0	100	99
+
+ntubwall_mat polygon ntubwall
+0
+0
+12
+	79	0	16
+	79	0	83.25
+	79	64	83.25
+	79	64	16
+
+etubwall_mat polygon etubwall
+0
+0
+12
+	49.5	0	16
+	49.5	0	83.25
+	79	0	83.25
+	79	0	16
+
+wtubwall_mat polygon wtubwall
+0
+0
+12
+	49.5	64	16
+	79	64	16
+	79	64	83.25
+	49.5	64	83.25
+
+tubceil_mat polygon tubceil
+0
+0
+15
+	79	0	83.25
+	45.5	0	83.25
+	45.5	68	83.25
+	49.5	64	83.25
+	79	64	83.25
+	
+
+wnwallbdr_mat polygon wnwallbdr
+0
+0
+12
+	49.5	64	0
+	49.5	64	99
+	45.5	68	99
+	45.5	68	0
+
+nwall_mat polygon nwall
+0
+0
+18
+	45.5	100	0
+	45.5	68	0
+	45.5	68	83.25
+	45.5	0	83.25
+	45.5	0	99
+	45.5	100	99
+
+#
+# Bathtub
+#
+
+tub_mat polygon tub_sout
+0
+0
+12
+	49.5	0	0
+	49.5	0	15
+	49.5	64	15
+	49.5	64	0
+
+tub_mat polygon tub_sout_lip
+0
+0
+12
+	49.5	0	15
+	50	0	16
+	50	64	16
+	49.5	64	15
+
+tub_mat polygon tub_rim
+0
+0
+30
+	50	0	16
+	79	0	16
+	79	64	16
+	50	64	16
+	50	2	16
+	53.5	2	16
+	53.5	62	16
+	77	62	16
+	77	2	16
+	50	2	16
+
+tub_mat polygon tub_ein
+0
+0
+12
+	53.5	2	16
+	77	2	16
+	76.42857	2	0
+	54.07143	2	0
+
+tub_mat polygon tub_nin
+0
+0
+12
+	77	2	16
+	77	62	16
+	76.5	56	2
+	76.42857	2	0
+
+tub_mat polygon tub_sin
+0
+0
+12
+	53.5	2	16
+	54.07143	2	0
+	54	56	2
+	53.5	62	16
+
+tub_mat polygon tub_win
+0
+0
+12
+	53.5	62	16
+	54	56	2
+	76.5	56	2
+	77	62	16
+
+tub_mat polygon tub_bot
+0
+0
+12
+	54.07143	2	0
+	76.42857	2	0
+	76.5	56	2
+	54	56	2
+
+#
+# Shower door
+#
+
+!xform -n shower_door_frame -e -t 50.25 .01 16.01 shdoor.frame
+
+!xform -n shower_door_outer -e -t 50.6 31 16.05 shdoor.outer
+
+!xform -n shower_door_inner -e -t 51.6 30.5 16.05 shdoor.inner
+
+#
+# Tub fixtures
+#
+
+!xform -n hot -e -ry -38 -t 69.5 0 33 bathfauc
+
+!xform -n shower -e -ry 13 -t 64 0 33 bathfauc
+
+!xform -n cold -e -ry 42 -t 58.5 0 33 bathfauc
+
+!genworm bathfauc_mat bathfaucet 64 'hermite(0,4.5,10,0,t)' 'hermite(21.5,20.75,0,-8,t)' 'hermite(1.13,.5,0,-2,t)' 12
+
+!genworm bathfauc_mat showerpipe 64 'hermite(0,3.5,2,1,t)' 'hermite(71,68,-1,-2,t)' .48 4
+
+bathfauc_mat ring showerhead.1
+0
+0
+8
+	64	3.5	68
+	0	1	-2
+	.48	.6
+
+bathfauc_mat cone showerhead.2
+0
+0
+8
+	64	3.5	68
+	64	3.78	67.4
+	.6	.65
+
+black_plastic ring showerhead.3
+0
+0
+8
+	64	3.75	67.4
+	0	1	-2
+	.65	1.125
+
+bathfauc_mat cylinder showerhead.4
+0
+0
+7
+	64	3.75	67.4
+	64	4.64	65.6
+	1.125
+
+black_plastic cylinder showerhead.5
+0
+0
+7
+	64	4.64	65.6
+	64	4.86	65.15
+	1.125
+
+black_plastic ring showerhead.6
+0
+0
+8
+	64	4.86	65.15
+	0	1	-2
+	1.125	.5
+
+bathfauc_mat ring showerhead.7
+0
+0
+8
+	64	4.86	65.15
+	0	1	-2
+	.5	0
+
+bathfauc_mat cylinder drainplug.1
+0
+0
+7
+	64	2	13
+	64	2.5	13
+	1.5
+
+bathfauc_mat cone drainplug.2
+0
+0
+8
+	64	2.5	13
+	64	2.6	13
+	1.5	0
+
+bathfauc_mat sphere drainplug.3
+0
+0
+4	64	2.7	13	.25
+
+bathfauc_mat cone drainplug.4
+0
+0
+8
+	64	2.7	13
+	64	3.95	14.25
+	.125	.3125
+
+bathfauc_mat sphere drainplug.5
+0
+0
+4	64	3.95	14.25	.3125
+
+bathfauc_mat ring drain
+0
+0
+8
+	64	6	.2
+	0	0	1
+	0	1.3
+
+#
+# Window
+#
+
+!genbox wframe_mat wframe.lower 33.5 5.75 2.25 | xform -t 13.5 -4.75 37.75
+
+!genbox wframe_mat wframe.north 2.25 5.75 44.5 | xform -t 44.5 -4.75 37.75
+
+!genbox wframe_mat wframe.upper 33.5 5.75 2.25 | xform -t 13.5 -4.75 80
+
+!genbox wframe_mat wframe.south 2.25 5.75 44.5 | xform -t 13.5 -4.75 37.75
+
+!genprism window_mat window 22 44.5 80 44.5 40 15.5 40 15.5 78 17.5 78 17.5 \
+	61 29.5 61 29.5 59 17.5 59 17.5 42 29.5 42 29.5 78 30.5 78 30.5 42 \
+	42.5 42 42.5 59 30.5 59 30.5 61 42.5 61 42.5 78 15.5 78 15.5 80 \
+	-l 0 0 -1 | xform -rx 90 -t 0 -1.75 0
+
+#glass_mat polygon window_glass
+#0
+#0
+#12
+#	17.5	-1.25	40
+#	17.5	-1.25	80
+#	44.5	-1.25	80
+#	44.5	-1.25	40
+
+#
+# Door Frame
+#
+
+!genbox dframe_mat dframe.upper 32.5 6.75 2.25 -r .25 | xform -t 6.75 99.5 80.25
+
+!genbox dframe_mat dframe.south 2.25 6.75 82.5 -r .25 | xform -t 6.75 99.5 0
+
+!genbox dframe_mat dframe.north 2.25 6.75 82.5 -r .25 | xform -t 37 99.5 0
+
+#
+# Closed door
+#
+
+!xform -e -n door -t 9 99.5 0 door
+
+#
+# Vanity and Mirrored Cabinet
+#
+
+!xform -e -n vanity -rz 90 -t 22.1 36.6 0 vanity
+
+!xform -e -n mirror -t .1 27 45.5 medcab
+
+!xform -e -n light_fixture -t 0 49 79.125 vanfixt
+
+#
+# Towel rack
+#
+
+!xform -e -n towel_rack -t 0 67.5 39.5 towel_rack
+
+#
+# Toilet
+#
+
+!xform -e -n toilet -t 2.375 8.25 0 toilet
