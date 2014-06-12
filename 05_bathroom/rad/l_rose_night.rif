@@ -1,0 +1,18 @@
+OCTREE= rose_night.oct
+AMB= rose_night.amb
+ZONE= I  0 50  0 100  0 99
+EXPOSURE= 7.5
+
+QUALITY= High
+VARIABILITY = Medium
+PENUMBRAS= True
+
+UP= z
+
+render= -dj .3
+
+# Standard views:
+view= van -vp 58.6 4.0 62 -vd -0.79231 0.554513 -0.254481 -vh 36.38 -vv 51.81
+view= mir -vp 40.8 90.2 60 -vd -0.707107 -0.707107 0 -vh 36.38 -vv 51.81
+view= sink -vp 41.1 90.9 60 -vd -0.429078 -0.829068 -0.358522 -vh 36.38 -vv 51.81
+view= shwin -vp 18.4 90.6 60 -vd 0.235228 -0.968741 -0.0788003 -vh 36.38 -vv 51.81

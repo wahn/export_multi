@@ -1,0 +1,21 @@
+ZONE= I  0 50  0 100  0 99
+EXPOSURE= 7.5
+
+QUALITY= Medium
+VARIABILITY = Medium
+PENUMBRAS= True
+
+UP= z
+
+render= -dj .3
+
+# Standard views:
+#view= bath -vp 3 80 60 -vd 0.779439 -0.581671 -0.232668 -vh 63.7 -vv 63.7
+# view= sink -vp 66.34 31.12 77.80 -vd -0.741 0.288 -0.606 -vh 15.7 -vv 15.7
+# view= toi -vp 78 62 50 -vd -0.759 -0.511 -0.403 -vh 27.1 -vv 27.1
+#view= van -vp 76.1 15.6 78.4 -vd -0.798 0.379 -0.469 -vh 51.1 -vv 51.1
+view= shwin -vp 16 90 60 -vd 0.235228 -0.968741 -0.0788003 -vh 36.38 -vv 51.81
+view= van -vp 60 6 62 -vd -0.79231 0.554513 -0.254481 -vh 36.38 -vv 51.81
+view= mir -vp 39 92 60 -vd -0.707107 -0.707107 0 -vh 36.38 -vv 51.81
+view= stall -vp 57 60 65 -vd 0.0800951 -0.954125 -0.288497 -vh 36.38 -vv 51.81
+view= sink -vp 39 92 60 -vd -0.429078 -0.829068 -0.358522 -vh 36.38 -vv 51.81
