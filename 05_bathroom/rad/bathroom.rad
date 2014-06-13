@@ -373,11 +373,11 @@ bathfauc_mat ring drain
 # Vanity and Mirrored Cabinet
 #
 
-##!xform -e -n vanity -rz 90 -t 22.1 36.6 0 vanity
+!xform -e -n vanity -rz 90 -t 22.1 36.6 0 lib/vanity.rad
 
-##!xform -e -n mirror -t .1 27 45.5 medcab
+!xform -e -n mirror -t .1 27 45.5 lib/medcab.rad
 
-##!xform -e -n light_fixture -t 0 49 79.125 vanfixt
+!xform -e -n light_fixture -t 0 49 79.125 lib/vanfixt.rad
 
 #
 # Towel rack
