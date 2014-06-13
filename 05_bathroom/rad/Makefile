@@ -1,7 +1,7 @@
-OBJECTS = bathroom.rad
-# sinkfauc.rad sinkspig.rad bathfauc.rad toilet.rad \
-flushand.rad medcab.rad vanity.rad basin.cal sinkspig.rad vanfixt.rad \
-lamp_holder.rad door.rad towel_rack.rad towel_rack.rad.bracket.rad
+OBJECTS = bathroom.rad lib/sinkfauc.rad lib/sinkspig.rad lib/bathfauc.rad \
+lib/toilet.rad lib/flushand.rad lib/medcab.rad lib/vanity.rad lib/basin.cal \
+lib/sinkspig.rad lib/vanfixt.rad lib/lamp_holder.rad lib/door.rad \
+lib/towel_rack.rad lib/towel_rack_bracket.rad
 
 all: orig.oct
 
