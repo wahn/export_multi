@@ -209,21 +209,21 @@ tub_mat polygon tub_bot
 # Shower door
 #
 
-!xform -n shower_door_frame -e -t 50.25 .01 16.01 shdoor.frame
+##!xform -n shower_door_frame -e -t 50.25 .01 16.01 shdoor.frame
 
-!xform -n shower_door_outer -e -t 50.6 31 16.05 shdoor.outer
+##!xform -n shower_door_outer -e -t 50.6 31 16.05 shdoor.outer
 
-!xform -n shower_door_inner -e -t 51.6 30.5 16.05 shdoor.inner
+##!xform -n shower_door_inner -e -t 51.6 30.5 16.05 shdoor.inner
 
 #
 # Tub fixtures
 #
 
-!xform -n hot -e -ry -38 -t 69.5 0 33 bathfauc
+##!xform -n hot -e -ry -38 -t 69.5 0 33 bathfauc
 
-!xform -n shower -e -ry 13 -t 64 0 33 bathfauc
+##!xform -n shower -e -ry 13 -t 64 0 33 bathfauc
 
-!xform -n cold -e -ry 42 -t 58.5 0 33 bathfauc
+##!xform -n cold -e -ry 42 -t 58.5 0 33 bathfauc
 
 !genworm bathfauc_mat bathfaucet 64 'hermite(0,4.5,10,0,t)' 'hermite(21.5,20.75,0,-8,t)' 'hermite(1.13,.5,0,-2,t)' 12
 
@@ -367,26 +367,26 @@ bathfauc_mat ring drain
 # Closed door
 #
 
-!xform -e -n door -t 9 99.5 0 door
+##!xform -e -n door -t 9 99.5 0 door
 
 #
 # Vanity and Mirrored Cabinet
 #
 
-!xform -e -n vanity -rz 90 -t 22.1 36.6 0 vanity
+##!xform -e -n vanity -rz 90 -t 22.1 36.6 0 vanity
 
-!xform -e -n mirror -t .1 27 45.5 medcab
+##!xform -e -n mirror -t .1 27 45.5 medcab
 
-!xform -e -n light_fixture -t 0 49 79.125 vanfixt
+##!xform -e -n light_fixture -t 0 49 79.125 vanfixt
 
 #
 # Towel rack
 #
 
-!xform -e -n towel_rack -t 0 67.5 39.5 towel_rack
+##!xform -e -n towel_rack -t 0 67.5 39.5 towel_rack
 
 #
 # Toilet
 #
 
-!xform -e -n toilet -t 2.375 8.25 0 toilet
+##!xform -e -n toilet -t 2.375 8.25 0 toilet
