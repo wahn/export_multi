@@ -27,22 +27,22 @@ brass sphere base_screw
 	'hermite(-1.25,-10.25,-5,-5,t)' 'hermite(-2.165,1.25,-7.5,-5,t)' \
 	.1875 16
 
-!xform -e -n far_left_holder -ry -30 -rz -30 -t 3.5 -10.25 1.25 lamp_holder
+!xform -e -n far_left_holder -ry -30 -rz -30 -t 3.5 -10.25 1.25 lamp_holder.rad
 
 !genworm brass mid_left_arm 'hermite(.375,3,0,8,t)' \
 	'hermite(-1.25,-4.25,-5,-2,t)' 'hermite(2.165,4.165,6,-4,t)' \
 	.1875 10
 
-!xform -e -n mid_left_holder -ry -45 -rz -15 -t 3 -4.25 4.165 lamp_holder
+!xform -e -n mid_left_holder -ry -45 -rz -15 -t 3 -4.25 4.165 lamp_holder.rad
 
 !genworm brass mid_right_arm 'hermite(.375,3,0,8,t)' \
 	'hermite(1.25,4.25,5,2,t)' 'hermite(2.165,4.165,6,-4,t)' \
 	.1875 10
 
-!xform -e -n mid_right_holder -ry -45 -rz 15 -t 3 4.25 4.165 lamp_holder
+!xform -e -n mid_right_holder -ry -45 -rz 15 -t 3 4.25 4.165 lamp_holder.rad
 
 !genworm brass far_right_arm 'hermite(.375,3.5,0,10,t)' \
 	'hermite(1.25,10.25,5,5,t)' 'hermite(-2.165,1.25,-7.5,-5,t)' \
 	.1875 16
 
-!xform -e -n far_right_holder -ry -30 -rz 30 -t 3.5 10.25 1.25 lamp_holder
+!xform -e -n far_right_holder -ry -30 -rz 30 -t 3.5 10.25 1.25 lamp_holder.rad

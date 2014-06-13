@@ -8,14 +8,14 @@
 # The fixtures
 #
 
-!xform -e -n left_fauc -rz -150 -t 11.5 19 30.75 sinkfauc
+!xform -e -n left_fauc -rz -150 -t 11.5 19 30.75 sinkfauc.rad
 
-!xform -e -n right_fauc -rz -30 -t 19.5 19 30.75 sinkfauc
+!xform -e -n right_fauc -rz -30 -t 19.5 19 30.75 sinkfauc.rad
 
 !genrev brass stopper 'hermite(0,.25,.09,0,t)' \
 	'hermite(1.0625,0,0,-.7,t)' 4 -s | xform -t 15.5 13.3 26.25
 
-!xform -e -n spigot -rz -90 -t 15.5 19.5 30.75 sinkspig
+!xform -e -n spigot -rz -90 -t 15.5 19.5 30.75 sinkspig.rad
 
 #
 # The sink
