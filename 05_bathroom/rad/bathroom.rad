@@ -383,7 +383,7 @@ bathfauc_mat ring drain
 # Towel rack
 #
 
-##!xform -e -n towel_rack -t 0 67.5 39.5 towel_rack
+!xform -e -n towel_rack -t 0 67.5 39.5 lib/towel_rack.rad
 
 #
 # Toilet
