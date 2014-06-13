@@ -1,0 +1,152 @@
+#
+# Bathroom materials (measured with spectrophotometer)
+#
+# Jan 21 1994
+#
+
+void metal brass
+0
+0
+5 0.726 0.563 0.223 0.850 0.0000
+
+void plastic blue_enamel
+0
+0
+5 0.331 0.551 0.757 0.010 0.0350
+
+void plastic white_porcelain
+0
+0
+5 0.639 0.634 0.561 0.036 0.0000
+
+void metal chrome
+0
+0
+5 0.808 0.821 0.789 0.823 .05
+
+void alias swall_mat blue_enamel
+
+void alias ceiling_mat blue_enamel
+
+void alias ewall_mat blue_enamel
+
+void alias wwall_mat blue_enamel
+
+void alias wnwallbdr_mat blue_enamel
+
+void colorfunc diamond_tiled
+8 red_ti grn_ti blu_ti tile.cal -s 5 -rz 45
+0
+3 1.75 1.15 1.11
+
+diamond_tiled plastic blue_tile
+0
+0
+5 0.344 0.517 0.533 0.02 0.0800
+
+diamond_tiled alias floor_mat blue_tile
+
+void alias ntubwall_mat blue_enamel
+
+void alias wtubwall_mat blue_enamel
+
+void alias etubwall_mat blue_enamel
+
+void alias tubceil_mat blue_enamel
+
+void colorpict wallpaper_pat
+13 clip clip clip wallpaper.pic picture.cal match_u match_v -rz -90 -ry -90 -s 20
+0
+1 1.32291667
+
+wallpaper_pat plastic nwall_mat
+0
+0
+5 .5 .5 .5 0 0
+
+void alias tub_mat white_porcelain
+
+void alias toilet_mat white_porcelain
+
+void alias bathfauc_mat brass
+
+void alias window_mat blue_enamel
+
+void plastic white_enamel
+0
+0
+5 .65 .65 .65 0 0
+
+void alias wframe_mat white_enamel
+
+void alias dframe_mat blue_enamel
+
+void alias door_mat blue_enamel
+
+void plastic black_plastic
+0
+0
+5 .1 .1 .1 0 0
+
+void brightfunc marblepat
+4 marble marble.cal -s 6
+0
+1 .35
+
+marblepat plastic marble
+0
+0
+5 0.639 0.620 0.555 0.000 0.0500
+
+void brightfunc zwoodpat
+4 zgrain woodpat.cal -s .3
+0
+1 .5
+
+void brightfunc ywoodpat
+4 ygrain woodpat.cal -s .3
+0
+1 .5
+
+void brightfunc xwoodpat
+4 xgrain woodpat.cal -s .3
+0
+1 .5
+
+xwoodpat plastic2 xwood
+4 1 .01 -.01 .
+0
+6 0.333 0.173 0.072 0.019 0.0400 0.0600
+
+ywoodpat plastic2 ywood
+4 .01 1 -.01 .
+0
+6 0.333 0.173 0.072 0.019 0.0400 0.0600
+
+zwoodpat plastic2 zwood
+4 -.01 .01 1 .
+0
+6 0.333 0.173 0.072 0.019 0.0400 0.0600
+
+void mirror mirror
+0
+0
+3 .916 .938 .858
+
+void trans blasted_glass
+0
+0
+7 .7 .7 .7 .05 .1 .8 .75
+
+void alias shdoor_frame_mat chrome
+
+void texfunc shdoor_texture
+4 .5*noise3a(5*Px,5*Py,5*Pz) .5*noise3b(5*Px,5*Py,5*Pz)
+	.5*noise3c(5*Px,5*Py,5*Pz) .
+0
+0
+
+shdoor_texture glass shdoor_mat
+0
+0
+3 .9 .9 .9
