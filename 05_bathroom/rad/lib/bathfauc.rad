@@ -1,0 +1,34 @@
+#
+#  Bathtub Faucet handle
+#
+
+bathfauc_mat cylinder bathfauc_base.bot
+0
+0
+7
+	0	0	0
+	0	.75	0
+	.75
+
+bathfauc_mat cone bathfauc_base.top
+0
+0
+8
+	0	.75	0
+	0	1.5	0
+	.75	.375
+
+bathfauc_mat sphere bathfauc_handle.mid
+0
+0
+4	0	1.5625	0	.4375
+
+bathfauc_mat cone bathfauc_handle.end
+0
+0
+8
+	0	1.5625	-.375
+	0	1.5625	-.625
+	.25	.375
+
+!genrev bathfauc_mat bathfauc_handle 'hermite(-2.75,-.625,0,1.8,t)' 'hermite(0,.375,1,-.3,t)' 16 -s | xform -t 0 1.5625 0

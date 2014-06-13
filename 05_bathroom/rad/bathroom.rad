@@ -209,21 +209,21 @@ tub_mat polygon tub_bot
 # Shower door
 #
 
-##!xform -n shower_door_frame -e -t 50.25 .01 16.01 shdoor.frame
+!xform -n shower_door_frame -e -t 50.25 .01 16.01 lib/shdoor_frame.rad
 
-##!xform -n shower_door_outer -e -t 50.6 31 16.05 shdoor.outer
+!xform -n shower_door_outer -e -t 50.6 31 16.05 lib/shdoor_outer.rad
 
-##!xform -n shower_door_inner -e -t 51.6 30.5 16.05 shdoor.inner
+!xform -n shower_door_inner -e -t 51.6 30.5 16.05 lib/shdoor_inner.rad
 
 #
 # Tub fixtures
 #
 
-##!xform -n hot -e -ry -38 -t 69.5 0 33 bathfauc
+!xform -n hot -e -ry -38 -t 69.5 0 33 lib/bathfauc.rad
 
-##!xform -n shower -e -ry 13 -t 64 0 33 bathfauc
+!xform -n shower -e -ry 13 -t 64 0 33 lib/bathfauc.rad
 
-##!xform -n cold -e -ry 42 -t 58.5 0 33 bathfauc
+!xform -n cold -e -ry 42 -t 58.5 0 33 lib/bathfauc.rad
 
 !genworm bathfauc_mat bathfaucet 64 'hermite(0,4.5,10,0,t)' 'hermite(21.5,20.75,0,-8,t)' 'hermite(1.13,.5,0,-2,t)' 12
 
