@@ -389,4 +389,4 @@ bathfauc_mat ring drain
 # Toilet
 #
 
-##!xform -e -n toilet -t 2.375 8.25 0 toilet
+!xform -e -n toilet -t 2.375 8.25 0 lib/toilet.rad
