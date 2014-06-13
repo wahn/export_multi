@@ -8,5 +8,5 @@ clobber: clean
 	-rm -f *.png
 
 conference_room_current.lxs:
-	patch conference_room_current -i conference_room_current.patch \
+	patch conference_room.lxs -i conference_room_current.patch \
 -o conference_room_current.lxs
