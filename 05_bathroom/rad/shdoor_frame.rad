@@ -1,0 +1,227 @@
+#
+# The shower door frame
+#
+
+# genbox shdoor_frame_mat bottom 1.7 63.98 1
+
+shdoor_frame_mat polygon bottom.1540
+0
+0
+12
+	               1.7	                 0	                 0
+	               1.7	                 0	                 1
+	                 0	                 0	                 1
+	                 0	                 0	                 0
+
+shdoor_frame_mat polygon bottom.4620
+0
+0
+12
+	                 0	                 0	                 1
+	                 0	             63.98	                 1
+	                 0	             63.98	                 0
+	                 0	                 0	                 0
+
+shdoor_frame_mat polygon bottom.2310
+0
+0
+12
+	                 0	             63.98	                 0
+	               1.7	             63.98	                 0
+	               1.7	                 0	                 0
+	                 0	                 0	                 0
+
+shdoor_frame_mat polygon bottom.3267
+0
+0
+12
+	               1.7	             63.98	                 0
+	                 0	             63.98	                 0
+	                 0	             63.98	                 1
+	               1.7	             63.98	                 1
+
+shdoor_frame_mat polygon bottom.5137
+0
+0
+12
+	               1.7	                 0	                 1
+	               1.7	                 0	                 0
+	               1.7	             63.98	                 0
+	               1.7	             63.98	                 1
+
+#shdoor_frame_mat polygon bottom.6457
+#0
+#0
+#12
+#	                 0	             63.98	                 1
+#	                 0	                 0	                 1
+#	               1.7	                 0	                 1
+#	               1.7	             63.98	                 1
+
+# genbox shdoor_frame_mat east 1.7 1.25 57
+
+shdoor_frame_mat polygon east.1540
+0
+0
+12
+	               1.7	                 0	                 0
+	               1.7	                 0	                57
+	                 0	                 0	                57
+	                 0	                 0	                 0
+
+shdoor_frame_mat polygon east.4620
+0
+0
+12
+	                 0	                 0	                57
+	                 0	              1.25	                57
+	                 0	              1.25	                 0
+	                 0	                 0	                 0
+
+shdoor_frame_mat polygon east.2310
+0
+0
+12
+	                 0	              1.25	                 0
+	               1.7	              1.25	                 0
+	               1.7	                 0	                 0
+	                 0	                 0	                 0
+
+#shdoor_frame_mat polygon east.3267
+#0
+#0
+#12
+#	               1.7	              1.25	                 0
+#	                 0	              1.25	                 0
+#	                 0	              1.25	                57
+#	               1.7	              1.25	                57
+
+shdoor_frame_mat polygon east.5137
+0
+0
+12
+	               1.7	                 0	                57
+	               1.7	                 0	                 0
+	               1.7	              1.25	                 0
+	               1.7	              1.25	                57
+
+shdoor_frame_mat polygon east.6457
+0
+0
+12
+	                 0	              1.25	                57
+	                 0	                 0	                57
+	               1.7	                 0	                57
+	               1.7	              1.25	                57
+# xform -t 0 0 54.875
+# genbox shdoor_frame_mat upper 1.7 63.98 2.125
+
+shdoor_frame_mat polygon upper.1540
+0
+0
+12
+                1.7                  0             54.875
+                1.7                  0                 57
+                  0                  0                 57
+                  0                  0             54.875
+
+shdoor_frame_mat polygon upper.4620
+0
+0
+12
+                  0                  0                 57
+                  0              63.98                 57
+                  0              63.98             54.875
+                  0                  0             54.875
+
+#shdoor_frame_mat polygon upper.2310
+#0
+#0
+#12
+#                  0              63.98             54.875
+#                1.7              63.98             54.875
+#                1.7                  0             54.875
+#                  0                  0             54.875
+
+shdoor_frame_mat polygon upper.3267
+0
+0
+12
+                1.7              63.98             54.875
+                  0              63.98             54.875
+                  0              63.98                 57
+                1.7              63.98                 57
+
+shdoor_frame_mat polygon upper.5137
+0
+0
+12
+                1.7                  0                 57
+                1.7                  0             54.875
+                1.7              63.98             54.875
+                1.7              63.98                 57
+
+shdoor_frame_mat polygon upper.6457
+0
+0
+12
+                  0              63.98                 57
+                  0                  0                 57
+                1.7                  0                 57
+                1.7              63.98                 57
+# xform -t 0 62.73 0
+# genbox shdoor_frame_mat west 1.7 1.25 57
+
+#shdoor_frame_mat polygon west.1540
+#0
+#0
+#12
+#                1.7              62.73                  0
+#                1.7              62.73                 57
+#                  0              62.73                 57
+#                  0              62.73                  0
+
+shdoor_frame_mat polygon west.4620
+0
+0
+12
+                  0              62.73                 57
+                  0              63.98                 57
+                  0              63.98                  0
+                  0              62.73                  0
+
+shdoor_frame_mat polygon west.2310
+0
+0
+12
+                  0              63.98                  0
+                1.7              63.98                  0
+                1.7              62.73                  0
+                  0              62.73                  0
+
+shdoor_frame_mat polygon west.3267
+0
+0
+12
+                1.7              63.98                  0
+                  0              63.98                  0
+                  0              63.98                 57
+                1.7              63.98                 57
+
+shdoor_frame_mat polygon west.5137
+0
+0
+12
+                1.7              62.73                 57
+                1.7              62.73                  0
+                1.7              63.98                  0
+                1.7              63.98                 57
+
+shdoor_frame_mat polygon west.6457
+0
+0
+12
+                  0              63.98                 57
+                  0              62.73                 57
+                1.7              62.73                 57
+                1.7              63.98                 57

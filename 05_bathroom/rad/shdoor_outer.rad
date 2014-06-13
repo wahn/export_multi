@@ -1,0 +1,24 @@
+#
+# Outer shower door
+#
+
+shdoor_mat polygon door
+0
+0
+12
+	0	0	.2
+	0	0	56
+	0	33	56
+	0	33	.2
+
+!genprism shdoor_frame_mat ehandle 9  .125 -.125  -.125 -.125  -.125 .875 \
+	-1.375 0  -1.875 0  -1.875 .125  -1.5 .125  -.125 1  .125 1 \
+	-l 0 0 3 | xform -t 0 0 29
+
+!genprism shdoor_frame_mat whandle 9  .125 -.125  -.125 -.125  -.125 .875 \
+	-1.375 0  -1.875 0  -1.875 .125  -1.5 .125  -.125 1  .125 1 \
+	-l 0 0 3 | xform -my -t 0 33 29
+
+!genbox shdoor_frame_mat lhandle .3125 33 .75 | xform -t -1.8125 0 29
+
+!genbox shdoor_frame_mat uhandle .3125 33 .75 | xform -t -1.8125 0 31.25
