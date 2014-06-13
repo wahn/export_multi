@@ -1,0 +1,47 @@
+#
+# The bathroom door
+#
+
+!genbox door_mat door 27 1.375 78
+
+chrome sphere inner_doorknob
+0
+0
+4             25.125               -1.5                 36                  1
+
+chrome cone inner_knobstem
+0
+0
+8
+             25.125                  0                 36
+             25.125              -0.53                 36
+                0.8                0.3
+
+chrome ring inner_knobplate
+0
+0
+8
+             25.125              -0.01                 36
+                  0                 -1                  0
+                1.5                0.8
+
+chrome sphere outer_doorknob
+0
+0
+4             25.125              2.875                 36                  1
+
+chrome cone outer_knobstem
+0
+0
+8
+             25.125              1.375                 36
+             25.125              1.905                 36
+                0.8                0.3
+
+chrome ring outer_knobplate
+0
+0
+8
+             25.125              1.385                 36
+                  0                  1                  0
+                1.5                0.8

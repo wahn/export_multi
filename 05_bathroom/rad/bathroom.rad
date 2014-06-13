@@ -367,7 +367,7 @@ bathfauc_mat ring drain
 # Closed door
 #
 
-##!xform -e -n door -t 9 99.5 0 door
+!xform -e -n door -t 9 99.5 0 lib/door.rad
 
 #
 # Vanity and Mirrored Cabinet
