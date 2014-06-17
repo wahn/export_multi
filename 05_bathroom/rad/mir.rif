@@ -1,0 +1,18 @@
+RESOLUTION = 346 512
+EXPOSURE = 1.2
+ZONE = Interior 0 50  0 100  0 99
+AMB = mir.amb
+DETAIL = Medium
+QUALITY = Medium
+VARIABILITY = Medium
+# scene
+scene = skylight_night.rad window_night.rad lights_on.rad
+# objects
+objects = orig.oct
+# pfilt
+pfilt = -r .6
+# view
+view = cam -vf vf/cam_mir.vf
+# end mir.rif
+
+

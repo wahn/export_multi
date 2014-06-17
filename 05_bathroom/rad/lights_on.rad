@@ -1,0 +1,84 @@
+# xform -e -n far_left -ry -30 -rz -30 -t 3.5 -10.25 1.25 -t 0 49 79.125
+
+void glow lamp_color
+0
+0
+4                130                130                130                  4
+
+lamp_color sphere far_left.lamp
+0
+0
+4      5.39443057078           37.65625      76.5861388584              1.125
+
+void illum fixt_illum
+0
+0
+3                 10                 10                 10
+
+fixt_illum sphere far_left.fixt_emit
+0
+0
+4      4.92894191624             37.925      77.5171161675                3.5
+# xform -e -n mid_left -ry -45 -rz -15 -t 3 -4.25 4.165 -t 0 49 79.125
+
+void glow lamp_color
+0
+0
+4                130                130                130                  4
+
+lamp_color sphere mid_left.lamp
+0
+0
+4      5.98818057078      43.9493194292      80.1964078323              1.125
+
+void illum fixt_illum
+0
+0
+3                 10                 10                 10
+
+fixt_illum sphere mid_left.fixt_emit
+0
+0
+4      5.25394191624      44.1460580838      80.9565476221                3.5
+# xform -e -n mid_right -ry -45 -rz 15 -t 3 4.25 4.165 -t 0 49 79.125
+
+void glow lamp_color
+0
+0
+4                130                130                130                  4
+
+lamp_color sphere mid_right.lamp
+0
+0
+4      5.98818057078      54.0506805708      80.1964078323              1.125
+
+void illum fixt_illum
+0
+0
+3                 10                 10                 10
+
+fixt_illum sphere mid_right.fixt_emit
+0
+0
+4      5.25394191624      53.8539419162      80.9565476221                3.5
+# xform -e -n far_right -ry -30 -rz 30 -t 3.5 10.25 1.25 -t 0 49 79.125
+
+void glow lamp_color
+0
+0
+4                130                130                130                  4
+
+lamp_color sphere far_right.lamp
+0
+0
+4      5.39443057078           60.34375      76.5861388584              1.125
+
+void illum fixt_illum
+0
+0
+3                 10                 10                 10
+
+fixt_illum sphere far_right.fixt_emit
+0
+0
+4      4.92894191624             60.075      77.5171161675                3.5

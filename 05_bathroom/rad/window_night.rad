@@ -1,0 +1,49 @@
+#
+# Window under daytime conditions
+#
+
+void colorpict window_pat
+11 noneg noneg noneg window.pic picture.cal tile_u tile_v -s 1.75 -rx 90
+0
+0
+
+window_pat metal window_mat
+0
+0
+5 .1 .1 .1 .5 .08
+
+window_mat polygon window_pane.1
+0
+0
+12
+               17.5              -1.25                 59
+               29.5              -1.25                 59
+               29.5              -1.25                 42
+               17.5              -1.25                 42
+
+window_mat polygon window_pane.2
+0
+0
+12
+               30.5              -1.25                 42
+               30.5              -1.25                 59
+               42.5              -1.25                 59
+               42.5              -1.25                 42
+
+window_mat polygon window_pane.3
+0
+0
+12
+               17.5              -1.25                 61
+               17.5              -1.25                 78
+               29.5              -1.25                 78
+               29.5              -1.25                 61
+
+window_mat polygon window_pane.4
+0
+0
+12
+               30.5              -1.25                 78
+               42.5              -1.25                 78
+               42.5              -1.25                 61
+               30.5              -1.25                 61

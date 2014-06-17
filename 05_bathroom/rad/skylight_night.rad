@@ -1,0 +1,22 @@
+#
+# A 13" dia. round skylight centered near the vanity
+#
+
+void plastic globe_mat
+0
+0
+5 .4 .4 .4 .04 0
+
+void alias diffuse_skylight globe_mat
+
+!gensurf diffuse_skylight sky_globe '20+rad*cos(2*PI*s)*sin(PI/2*t)' \
+	'49+rad*sin(2*PI*s)*sin(PI/2*t)' '99-depth+rad-rad*cos(tlim*t)' \
+	6 3 -e 'rad:13/2;depth:5;tlim:acos((rad-depth)/rad)'
+
+globe_mat ring globe_rim
+0
+0
+8
+	20	49	98.99
+	0	0	-1
+	0	7.5
