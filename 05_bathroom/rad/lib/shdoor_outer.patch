@@ -1,0 +1,27 @@
+4a5,9
+> shdoor_texture glass shdoor_mat
+> 0
+> 0
+> 3 .9 .9 .9
+> 
+14c19,24
+< !genprism shdoor_frame_mat ehandle 9  .125 -.125  -.125 -.125  -.125 .875 \
+---
+> void metal chrome
+> 0
+> 0
+> 5 0.808 0.821 0.789 0.823 .05
+> 
+> !genprism chrome ehandle 9  .125 -.125  -.125 -.125  -.125 .875 \
+18c28
+< !genprism shdoor_frame_mat whandle 9  .125 -.125  -.125 -.125  -.125 .875 \
+---
+> !genprism chrome whandle 9  .125 -.125  -.125 -.125  -.125 .875 \
+22c32
+< !genbox shdoor_frame_mat lhandle .3125 33 .75 | xform -t -1.8125 0 29
+---
+> !genbox chrome lhandle .3125 33 .75 | xform -t -1.8125 0 29
+24c34
+< !genbox shdoor_frame_mat uhandle .3125 33 .75 | xform -t -1.8125 0 31.25
+---
+> !genbox chrome uhandle .3125 33 .75 | xform -t -1.8125 0 31.25
