@@ -102,7 +102,7 @@
 > 0
 > 5 0.726 0.563 0.223 0.850 0.0000
 > 
-228c258,310
+228c258,478
 < !genworm bathfauc_mat bathfaucet 64 'hermite(0,4.5,10,0,t)' 'hermite(21.5,20.75,0,-8,t)' 'hermite(1.13,.5,0,-2,t)' 12
 ---
 > # genworm brass bathfaucet 64 hermite(0,4.5,10,0,t) hermite(21.5,20.75,0,-8,t) hermite(1.13,.5,0,-2,t) 12
@@ -158,16 +158,12 @@
 >                 64      2.12990798678      21.7631607807
 >                 64      2.66848958917      21.9034465364
 >      1.12511244549      1.11461662655
-230c312,315
-< !genworm bathfauc_mat showerpipe 64 'hermite(0,3.5,2,1,t)' 'hermite(71,68,-1,-2,t)' .48 4
----
+> 
 > brass sphere bathfaucet.s4
 > 0
 > 0
 > 4                 64      2.64814814815      21.8981481481      1.11481481481
-232c317,481
-< bathfauc_mat ring showerhead.1
----
+> 
 > brass cone bathfaucet.c5
 > 0
 > 0
@@ -330,8 +326,11 @@
 > 0
 > 0
 > 4                 64                3.5                 68               0.48
-> 
-> 
+230d479
+< !genworm bathfauc_mat showerpipe 64 'hermite(0,3.5,2,1,t)' 'hermite(71,68,-1,-2,t)' .48 4
+232c481
+< bathfauc_mat ring showerhead.1
+---
 > brass ring showerhead.1
 240c489
 < bathfauc_mat cone showerhead.2
@@ -375,65 +374,320 @@
 < bathfauc_mat ring drain
 ---
 > brass ring drain
-334c588
+334c588,746
 < !genbox wframe_mat wframe.lower 33.5 5.75 2.25 | xform -t 13.5 -4.75 37.75
 ---
-> ##!genbox white_enamel wframe.lower 33.5 5.75 2.25 | xform -t 13.5 -4.75 37.75
-336c590
+> void plastic white_enamel
+> 0
+> 0
+> 5 .65 .65 .65 0 0
+> 
+> !genbox white_enamel wframe.lower 33.5 5.75 2.25 | xform -t 13.5 -4.75 37.75
+> 
+> !genbox white_enamel wframe.north 2.25 5.75 44.5 | xform -t 44.5 -4.75 37.75
+> 
+> !genbox white_enamel wframe.upper 33.5 5.75 2.25 | xform -t 13.5 -4.75 80
+> 
+> !genbox white_enamel wframe.south 2.25 5.75 44.5 | xform -t 13.5 -4.75 37.75
+> 
+> # xform -rx 90 -t 0 -1.75 0
+> # genprism blue_enamel window 22 44.5 80 44.5 40 15.5 40 15.5 78 17.5 78 17.5 61 29.5 61 29.5 59 17.5 59 17.5 42 29.5 42 29.5 78 30.5 78 30.5 42 42.5 42 42.5 59 30.5 59 30.5 61 42.5 61 42.5 78 15.5 78 15.5 80 -l 0 0 -1
+> 
+> blue_enamel polygon window.b
+> 0
+> 0
+> 66
+>                44.5              -1.75                 80
+>                44.5              -1.75                 40
+>                15.5              -1.75                 40
+>                15.5              -1.75                 78
+>                17.5              -1.75                 78
+>                17.5              -1.75                 61
+>                29.5              -1.75                 61
+>                29.5              -1.75                 59
+>                17.5              -1.75                 59
+>                17.5              -1.75                 42
+>                29.5              -1.75                 42
+>                29.5              -1.75                 78
+>                30.5              -1.75                 78
+>                30.5              -1.75                 42
+>                42.5              -1.75                 42
+>                42.5              -1.75                 59
+>                30.5              -1.75                 59
+>                30.5              -1.75                 61
+>                42.5              -1.75                 61
+>                42.5              -1.75                 78
+>                15.5              -1.75                 78
+>                15.5              -1.75                 80
+> 
+> blue_enamel polygon window.t
+> 0
+> 0
+> 66
+>                15.5              -0.75                 80
+>                15.5              -0.75                 78
+>                42.5              -0.75                 78
+>                42.5              -0.75                 61
+>                30.5              -0.75                 61
+>                30.5              -0.75                 59
+>                42.5              -0.75                 59
+>                42.5              -0.75                 42
+>                30.5              -0.75                 42
+>                30.5              -0.75                 78
+>                29.5              -0.75                 78
+>                29.5              -0.75                 42
+>                17.5              -0.75                 42
+>                17.5              -0.75                 59
+>                29.5              -0.75                 59
+>                29.5              -0.75                 61
+>                17.5              -0.75                 61
+>                17.5              -0.75                 78
+>                15.5              -0.75                 78
+>                15.5              -0.75                 40
+>                44.5              -0.75                 40
+>                44.5              -0.75                 80
+> 
+> blue_enamel polygon window.1
+> 0
+> 0
+> 12
+>                44.5              -1.75                 80
+>                44.5              -0.75                 80
+>                44.5              -0.75                 40
+>                44.5              -1.75                 40
+> 
+> blue_enamel polygon window.2
+> 0
+> 0
+> 12
+>                44.5              -1.75                 40
+>                44.5              -0.75                 40
+>                15.5              -0.75                 40
+>                15.5              -1.75                 40
+> 
+> blue_enamel polygon window.3
+> 0
+> 0
+> 12
+>                15.5              -1.75                 40
+>                15.5              -0.75                 40
+>                15.5              -0.75                 78
+>                15.5              -1.75                 78
+> 
+> blue_enamel polygon window.4
+> 0
+> 0
+> 12
+>                15.5              -1.75                 78
+>                15.5              -0.75                 78
+>                17.5              -0.75                 78
+>                17.5              -1.75                 78
+> 
+> blue_enamel polygon window.5
+> 0
+> 0
+> 12
+>                17.5              -1.75                 78
+>                17.5              -0.75                 78
+>                17.5              -0.75                 61
+>                17.5              -1.75                 61
+> 
+> blue_enamel polygon window.6
+> 0
+> 0
+> 12
+>                17.5              -1.75                 61
+>                17.5              -0.75                 61
+>                29.5              -0.75                 61
+>                29.5              -1.75                 61
+> 
+> blue_enamel polygon window.7
+> 0
+> 0
+> 12
+>                29.5              -1.75                 61
+>                29.5              -0.75                 61
+>                29.5              -0.75                 59
+>                29.5              -1.75                 59
+> 
+> blue_enamel polygon window.8
+> 0
+> 0
+> 12
+>                29.5              -1.75                 59
+>                29.5              -0.75                 59
+>                17.5              -0.75                 59
+>                17.5              -1.75                 59
+> 
+> blue_enamel polygon window.9
+> 0
+> 0
+> 12
+>                17.5              -1.75                 59
+>                17.5              -0.75                 59
+>                17.5              -0.75                 42
+>                17.5              -1.75                 42
+> 
+> blue_enamel polygon window.10
+> 0
+> 0
+> 12
+>                17.5              -1.75                 42
+>                17.5              -0.75                 42
+>                29.5              -0.75                 42
+>                29.5              -1.75                 42
+336c748,755
 < !genbox wframe_mat wframe.north 2.25 5.75 44.5 | xform -t 44.5 -4.75 37.75
 ---
-> ##!genbox white_enamel wframe.north 2.25 5.75 44.5 | xform -t 44.5 -4.75 37.75
-338c592
+> blue_enamel polygon window.11
+> 0
+> 0
+> 12
+>                29.5              -1.75                 42
+>                29.5              -0.75                 42
+>                29.5              -0.75                 78
+>                29.5              -1.75                 78
+338c757,764
 < !genbox wframe_mat wframe.upper 33.5 5.75 2.25 | xform -t 13.5 -4.75 80
 ---
-> ##!genbox white_enamel wframe.upper 33.5 5.75 2.25 | xform -t 13.5 -4.75 80
-340c594
+> blue_enamel polygon window.12
+> 0
+> 0
+> 12
+>                29.5              -1.75                 78
+>                29.5              -0.75                 78
+>                30.5              -0.75                 78
+>                30.5              -1.75                 78
+340c766,773
 < !genbox wframe_mat wframe.south 2.25 5.75 44.5 | xform -t 13.5 -4.75 37.75
 ---
-> ##!genbox white_enamel wframe.south 2.25 5.75 44.5 | xform -t 13.5 -4.75 37.75
-342,345c596,599
+> blue_enamel polygon window.13
+> 0
+> 0
+> 12
+>                30.5              -1.75                 78
+>                30.5              -0.75                 78
+>                30.5              -0.75                 42
+>                30.5              -1.75                 42
+342,345c775,854
 < !genprism window_mat window 22 44.5 80 44.5 40 15.5 40 15.5 78 17.5 78 17.5 \
 < 	61 29.5 61 29.5 59 17.5 59 17.5 42 29.5 42 29.5 78 30.5 78 30.5 42 \
 < 	42.5 42 42.5 59 30.5 59 30.5 61 42.5 61 42.5 78 15.5 78 15.5 80 \
 < 	-l 0 0 -1 | xform -rx 90 -t 0 -1.75 0
 ---
-> ##!genprism blue_enamel window 22 44.5 80 44.5 40 15.5 40 15.5 78 17.5 78 17.5 \
-> ##	61 29.5 61 29.5 59 17.5 59 17.5 42 29.5 42 29.5 78 30.5 78 30.5 42 \
-> ##	42.5 42 42.5 59 30.5 59 30.5 61 42.5 61 42.5 78 15.5 78 15.5 80 \
-> ##	-l 0 0 -1 | xform -rx 90 -t 0 -1.75 0
-360c614
+> blue_enamel polygon window.14
+> 0
+> 0
+> 12
+>                30.5              -1.75                 42
+>                30.5              -0.75                 42
+>                42.5              -0.75                 42
+>                42.5              -1.75                 42
+> 
+> blue_enamel polygon window.15
+> 0
+> 0
+> 12
+>                42.5              -1.75                 42
+>                42.5              -0.75                 42
+>                42.5              -0.75                 59
+>                42.5              -1.75                 59
+> 
+> blue_enamel polygon window.16
+> 0
+> 0
+> 12
+>                42.5              -1.75                 59
+>                42.5              -0.75                 59
+>                30.5              -0.75                 59
+>                30.5              -1.75                 59
+> 
+> blue_enamel polygon window.17
+> 0
+> 0
+> 12
+>                30.5              -1.75                 59
+>                30.5              -0.75                 59
+>                30.5              -0.75                 61
+>                30.5              -1.75                 61
+> 
+> blue_enamel polygon window.18
+> 0
+> 0
+> 12
+>                30.5              -1.75                 61
+>                30.5              -0.75                 61
+>                42.5              -0.75                 61
+>                42.5              -1.75                 61
+> 
+> blue_enamel polygon window.19
+> 0
+> 0
+> 12
+>                42.5              -1.75                 61
+>                42.5              -0.75                 61
+>                42.5              -0.75                 78
+>                42.5              -1.75                 78
+> 
+> blue_enamel polygon window.20
+> 0
+> 0
+> 12
+>                42.5              -1.75                 78
+>                42.5              -0.75                 78
+>                15.5              -0.75                 78
+>                15.5              -1.75                 78
+> 
+> blue_enamel polygon window.21
+> 0
+> 0
+> 12
+>                15.5              -1.75                 78
+>                15.5              -0.75                 78
+>                15.5              -0.75                 80
+>                15.5              -1.75                 80
+> 
+> blue_enamel polygon window.22
+> 0
+> 0
+> 12
+>                15.5              -1.75                 80
+>                15.5              -0.75                 80
+>                44.5              -0.75                 80
+>                44.5              -1.75                 80
+360c869
 < !genbox dframe_mat dframe.upper 32.5 6.75 2.25 -r .25 | xform -t 6.75 99.5 80.25
 ---
 > ##!genbox blue_enamel dframe.upper 32.5 6.75 2.25 -r .25 | xform -t 6.75 99.5 80.25
-362c616
+362c871
 < !genbox dframe_mat dframe.south 2.25 6.75 82.5 -r .25 | xform -t 6.75 99.5 0
 ---
 > ##!genbox blue_enamel dframe.south 2.25 6.75 82.5 -r .25 | xform -t 6.75 99.5 0
-364c618
+364c873
 < !genbox dframe_mat dframe.north 2.25 6.75 82.5 -r .25 | xform -t 37 99.5 0
 ---
 > ##!genbox blue_enamel dframe.north 2.25 6.75 82.5 -r .25 | xform -t 37 99.5 0
-370c624
+370c879
 < !xform -e -n door -t 9 99.5 0 lib/door.rad
 ---
 > ##!xform -e -n door -t 9 99.5 0 lib/door.rad
-376c630
+376c885
 < !xform -e -n vanity -rz 90 -t 22.1 36.6 0 lib/vanity.rad
 ---
 > ##!xform -e -n vanity -rz 90 -t 22.1 36.6 0 lib/vanity.rad
-378c632
+378c887
 < !xform -e -n mirror -t .1 27 45.5 lib/medcab.rad
 ---
 > ##!xform -e -n mirror -t .1 27 45.5 lib/medcab.rad
-380c634
+380c889
 < !xform -e -n light_fixture -t 0 49 79.125 lib/vanfixt.rad
 ---
 > ##!xform -e -n light_fixture -t 0 49 79.125 lib/vanfixt.rad
-386c640
+386c895
 < !xform -e -n towel_rack -t 0 67.5 39.5 lib/towel_rack.rad
 ---
 > ##!xform -e -n towel_rack -t 0 67.5 39.5 lib/towel_rack.rad
-392c646
+392c901
 < !xform -e -n toilet -t 2.375 8.25 0 lib/toilet.rad
 ---
 > ##!xform -e -n toilet -t 2.375 8.25 0 lib/toilet.rad
