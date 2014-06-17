@@ -7,7 +7,8 @@ bathroom.rad \
 skylight_night.rad \
 lib/shdoor_frame.rad \
 lib/shdoor_outer.rad \
-lib/bathfauc.rad
+lib/bathfauc.rad \
+lib/door.rad
 
 OBJECTS = bathroom.rad lib/sinkfauc.rad lib/sinkspig.rad lib/bathfauc.rad \
 lib/toilet.rad lib/flushand.rad lib/medcab.rad lib/vanity.rad lib/basin.cal \
@@ -35,12 +36,14 @@ bathroom.patch \
 skylight_night.patch \
 lib/shdoor_frame.patch \
 lib/shdoor_outer.patch \
-lib/bathfauc.patch
+lib/bathfauc.patch \
+lib/door.patch
 	patch bathroom.rad -i bathroom.patch
 	patch skylight_night.rad -i skylight_night.patch
 	patch lib/shdoor_frame.rad -i lib/shdoor_frame.patch
 	patch lib/shdoor_outer.rad -i lib/shdoor_outer.patch
 	patch lib/bathfauc.rad -i lib/bathfauc.patch
+	patch lib/door.rad -i lib/door.patch
 
 pics/bathroom_radiance_mir.png: clobber
 	rad mir.rif
