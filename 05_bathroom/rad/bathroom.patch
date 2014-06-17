@@ -102,77 +102,296 @@
 > 0
 > 5 0.726 0.563 0.223 0.850 0.0000
 > 
-228c258
+228c258,310
 < !genworm bathfauc_mat bathfaucet 64 'hermite(0,4.5,10,0,t)' 'hermite(21.5,20.75,0,-8,t)' 'hermite(1.13,.5,0,-2,t)' 12
 ---
-> ##!genworm brass bathfaucet 64 'hermite(0,4.5,10,0,t)' 'hermite(21.5,20.75,0,-8,t)' 'hermite(1.13,.5,0,-2,t)' 12
-230c260
+> # genworm brass bathfaucet 64 hermite(0,4.5,10,0,t) hermite(21.5,20.75,0,-8,t) hermite(1.13,.5,0,-2,t) 12
+> 
+> brass sphere bathfaucet.s0
+> 0
+> 0
+> 4                 64                  0               21.5               1.13
+> 
+> brass cone bathfaucet.c1
+> 0
+> 0
+> 8
+>                 64 -0.000479842120692       21.499977997
+>                 64     0.788293163498      21.5361469719
+>      1.12999989791      1.13033554602
+> 
+> brass sphere bathfaucet.s1
+> 0
+> 0
+> 4                 64     0.788773148148      21.5361689815      1.13033564815
+> 
+> brass cone bathfaucet.c2
+> 0
+> 0
+> 8
+>                 64     0.789890205222      21.5363177075
+>                 64      1.49185710009      21.6297782628
+>       1.1303350864      1.12962906823
+> 
+> brass sphere bathfaucet.s2
+> 0
+> 0
+> 4                 64      1.49074074074      21.6296296296      1.12962962963
+> 
+> brass cone bathfaucet.c3
+> 0
+> 0
+> 8
+>                 64      1.49829933015       21.631195792
+>                 64      2.11690470258      21.7593726769
+>      1.12960325557      1.12528622674
+> 
+> brass sphere bathfaucet.s3
+> 0
+> 0
+> 4                 64           2.109375         21.7578125          1.1253125
+> 
+> brass cone bathfaucet.c4
+> 0
+> 0
+> 8
+>                 64      2.12990798678      21.7631607807
+>                 64      2.66848958917      21.9034465364
+>      1.12511244549      1.11461662655
+230c312,315
 < !genworm bathfauc_mat showerpipe 64 'hermite(0,3.5,2,1,t)' 'hermite(71,68,-1,-2,t)' .48 4
 ---
-> ##!genworm brass showerpipe 64 'hermite(0,3.5,2,1,t)' 'hermite(71,68,-1,-2,t)' .48 4
-232c262
+> brass sphere bathfaucet.s4
+> 0
+> 0
+> 4                 64      2.64814814815      21.8981481481      1.11481481481
+232c317,481
 < bathfauc_mat ring showerhead.1
 ---
+> brass cone bathfaucet.c5
+> 0
+> 0
+> 8
+>                 64      2.69115897871      21.9102331687
+>                 64      3.15280064026      22.0399434979
+>      1.11391924845      1.09468702554
+> 
+> brass sphere bathfaucet.s5
+> 0
+> 0
+> 4                 64      3.11053240741      22.0280671296      1.09556712963
+> 
+> brass cone bathfaucet.c6
+> 0
+> 0
+> 8
+>                 64       3.1915017655      22.0482192358
+>                 64      3.57871025338      22.1445898476
+>       1.0923850929      1.06190674444
+> 
+> brass sphere bathfaucet.s6
+> 0
+> 0
+> 4                 64                3.5             22.125              1.065
+> 
+> brass cone bathfaucet.c7
+> 0
+> 0
+> 8
+>                 64      3.64551194201       22.143813931
+>                 64      3.95946102294      22.1844059008
+>       1.0548446856      1.01081257773
+> 
+> brass sphere bathfaucet.s7
+> 0
+> 0
+> 4                 64      3.82002314815      22.1663773148      1.02054398148
+> 
+> brass cone bathfaucet.c8
+> 0
+> 0
+> 8
+>                 64       4.0597064048      22.1317078688
+>                 64      4.29945108769      22.0970295377
+>     0.991392951424     0.932218569759
+> 
+> brass sphere bathfaucet.s8
+> 0
+> 0
+> 4                 64      4.07407407407      22.1296296296      0.95962962963
+> 
+> brass cone bathfaucet.c9
+> 0
+> 0
+> 8
+>                 64      4.33845413375      21.9399309463
+>                 64       4.5079808283      21.8182917018
+>     0.902777170548     0.827571145883
+> 
+> brass sphere bathfaucet.s9
+> 0
+> 0
+> 4                 64           4.265625         21.9921875          0.8796875
+> 
+> brass cone bathfaucet.c10
+> 0
+> 0
+> 8
+>                 64      4.40402497589      21.7199202985
+>                 64      4.52057308308      21.4906411619
+>     0.824964311545      0.72974147219
+> 
+> brass sphere bathfaucet.s10
+> 0
+> 0
+> 4                 64      4.39814814815      21.7314814815     0.778148148148
+> 
+> brass cone bathfaucet.c11
+> 0
+> 0
+> 8
+>                 64      4.44212528275      21.4991962404
+>                 64      4.51198858484      21.1301814305
+>     0.741366386403     0.621602281174
+> 
+> brass sphere bathfaucet.s11
+> 0
+> 0
+> 4                 64      4.47511574074      21.3249421296      0.65244212963
+> 
+> brass cone bathfaucet.c12
+> 0
+> 0
+> 8
+>                 64      4.48258901058       21.152274837
+>                 64      4.50572715149      20.6176761626
+>     0.629135032266     0.482138571143
+> 
+> brass sphere bathfaucet.s12
+> 0
+> 0
+> 4                 64                4.5              20.75                0.5
+> 
+> # genworm brass showerpipe 64 hermite(0,3.5,2,1,t) hermite(71,68,-1,-2,t) .48 4
+> 
+> brass sphere showerpipe.s0
+> 0
+> 0
+> 4                 64                  0                 71               0.48
+> 
+> brass cylinder showerpipe.c1
+> 0
+> 0
+> 7
+>                 64                  0                 71
+>                 64            0.78125          70.484375
+>               0.48
+> 
+> brass sphere showerpipe.s1
+> 0
+> 0
+> 4                 64            0.78125          70.484375               0.48
+> 
+> brass cylinder showerpipe.c2
+> 0
+> 0
+> 7
+>                 64            0.78125          70.484375
+>                 64              1.875             69.625
+>               0.48
+> 
+> brass sphere showerpipe.s2
+> 0
+> 0
+> 4                 64              1.875             69.625               0.48
+> 
+> brass cylinder showerpipe.c3
+> 0
+> 0
+> 7
+>                 64              1.875             69.625
+>                 64            2.90625          68.703125
+>               0.48
+> 
+> brass sphere showerpipe.s3
+> 0
+> 0
+> 4                 64            2.90625          68.703125               0.48
+> 
+> brass cylinder showerpipe.c4
+> 0
+> 0
+> 7
+>                 64            2.90625          68.703125
+>                 64                3.5                 68
+>               0.48
+> 
+> brass sphere showerpipe.s4
+> 0
+> 0
+> 4                 64                3.5                 68               0.48
+> 
+> 
 > brass ring showerhead.1
-240c270
+240c489
 < bathfauc_mat cone showerhead.2
 ---
 > brass cone showerhead.2
-247a278,282
+247a497,501
 > void plastic black_plastic
 > 0
 > 0
 > 5 .1 .1 .1 0 0
 > 
-256c291
+256c510
 < bathfauc_mat cylinder showerhead.4
 ---
 > brass cylinder showerhead.4
-280c315
+280c534
 < bathfauc_mat ring showerhead.7
 ---
 > brass ring showerhead.7
-288c323
+288c542
 < bathfauc_mat cylinder drainplug.1
 ---
 > brass cylinder drainplug.1
-296c331
+296c550
 < bathfauc_mat cone drainplug.2
 ---
 > brass cone drainplug.2
-304c339
+304c558
 < bathfauc_mat sphere drainplug.3
 ---
 > brass sphere drainplug.3
-309c344
+309c563
 < bathfauc_mat cone drainplug.4
 ---
 > brass cone drainplug.4
-317c352
+317c571
 < bathfauc_mat sphere drainplug.5
 ---
 > brass sphere drainplug.5
-322c357
+322c576
 < bathfauc_mat ring drain
 ---
 > brass ring drain
-334c369
+334c588
 < !genbox wframe_mat wframe.lower 33.5 5.75 2.25 | xform -t 13.5 -4.75 37.75
 ---
 > ##!genbox white_enamel wframe.lower 33.5 5.75 2.25 | xform -t 13.5 -4.75 37.75
-336c371
+336c590
 < !genbox wframe_mat wframe.north 2.25 5.75 44.5 | xform -t 44.5 -4.75 37.75
 ---
 > ##!genbox white_enamel wframe.north 2.25 5.75 44.5 | xform -t 44.5 -4.75 37.75
-338c373
+338c592
 < !genbox wframe_mat wframe.upper 33.5 5.75 2.25 | xform -t 13.5 -4.75 80
 ---
 > ##!genbox white_enamel wframe.upper 33.5 5.75 2.25 | xform -t 13.5 -4.75 80
-340c375
+340c594
 < !genbox wframe_mat wframe.south 2.25 5.75 44.5 | xform -t 13.5 -4.75 37.75
 ---
 > ##!genbox white_enamel wframe.south 2.25 5.75 44.5 | xform -t 13.5 -4.75 37.75
-342,345c377,380
+342,345c596,599
 < !genprism window_mat window 22 44.5 80 44.5 40 15.5 40 15.5 78 17.5 78 17.5 \
 < 	61 29.5 61 29.5 59 17.5 59 17.5 42 29.5 42 29.5 78 30.5 78 30.5 42 \
 < 	42.5 42 42.5 59 30.5 59 30.5 61 42.5 61 42.5 78 15.5 78 15.5 80 \
@@ -182,39 +401,39 @@
 > ##	61 29.5 61 29.5 59 17.5 59 17.5 42 29.5 42 29.5 78 30.5 78 30.5 42 \
 > ##	42.5 42 42.5 59 30.5 59 30.5 61 42.5 61 42.5 78 15.5 78 15.5 80 \
 > ##	-l 0 0 -1 | xform -rx 90 -t 0 -1.75 0
-360c395
+360c614
 < !genbox dframe_mat dframe.upper 32.5 6.75 2.25 -r .25 | xform -t 6.75 99.5 80.25
 ---
 > ##!genbox blue_enamel dframe.upper 32.5 6.75 2.25 -r .25 | xform -t 6.75 99.5 80.25
-362c397
+362c616
 < !genbox dframe_mat dframe.south 2.25 6.75 82.5 -r .25 | xform -t 6.75 99.5 0
 ---
 > ##!genbox blue_enamel dframe.south 2.25 6.75 82.5 -r .25 | xform -t 6.75 99.5 0
-364c399
+364c618
 < !genbox dframe_mat dframe.north 2.25 6.75 82.5 -r .25 | xform -t 37 99.5 0
 ---
 > ##!genbox blue_enamel dframe.north 2.25 6.75 82.5 -r .25 | xform -t 37 99.5 0
-370c405
+370c624
 < !xform -e -n door -t 9 99.5 0 lib/door.rad
 ---
 > ##!xform -e -n door -t 9 99.5 0 lib/door.rad
-376c411
+376c630
 < !xform -e -n vanity -rz 90 -t 22.1 36.6 0 lib/vanity.rad
 ---
 > ##!xform -e -n vanity -rz 90 -t 22.1 36.6 0 lib/vanity.rad
-378c413
+378c632
 < !xform -e -n mirror -t .1 27 45.5 lib/medcab.rad
 ---
 > ##!xform -e -n mirror -t .1 27 45.5 lib/medcab.rad
-380c415
+380c634
 < !xform -e -n light_fixture -t 0 49 79.125 lib/vanfixt.rad
 ---
 > ##!xform -e -n light_fixture -t 0 49 79.125 lib/vanfixt.rad
-386c421
+386c640
 < !xform -e -n towel_rack -t 0 67.5 39.5 lib/towel_rack.rad
 ---
 > ##!xform -e -n towel_rack -t 0 67.5 39.5 lib/towel_rack.rad
-392c427
+392c646
 < !xform -e -n toilet -t 2.375 8.25 0 lib/toilet.rad
 ---
 > ##!xform -e -n toilet -t 2.375 8.25 0 lib/toilet.rad
