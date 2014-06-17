@@ -1,0 +1,39 @@
+RESOLUTION = 346 512
+EXPOSURE = 7.5
+ZONE = Interior 0 50  0 100  0 99
+AMB = sink.amb
+DETAIL = Medium
+QUALITY = High
+VARIABILITY = Medium
+PENUMBRAS = True
+PICTURE = pics/sink
+# materials
+materials = materials.rad
+# scene
+scene = bathroom.rad
+scene = skylight_night.rad
+scene = window_night.rad
+scene = lights_on.rad
+# objects
+objects = lib/sinkfauc.rad
+objects = lib/sinkspig.rad
+objects = lib/bathfauc.rad
+objects = lib/toilet.rad
+objects = lib/flushand.rad
+objects = lib/medcab.rad
+objects = lib/vanity.rad
+objects = lib/sinkspig.rad
+objects = lib/vanfixt.rad
+objects = lib/lamp_holder.rad
+objects = lib/door.rad
+objects = lib/towel_rack.rad
+objects = lib/towel_rack_bracket.rad
+# render
+render = -dj .3
+# pfilt
+pfilt = -r .6
+# view
+view = cam -vf vf/cam_sink.vf
+# end sink.rif
+
+
