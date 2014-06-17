@@ -1,0 +1,37 @@
+14a15,19
+> void metal brass
+> 0
+> 0
+> 5 0.726 0.563 0.223 0.850 0.0000
+> 
+24,30c29,37
+< !( echo marble polygon sink_top 0 0 108 31 10.5 30.75 31 22 30.75 \
+< 	0 22 30.75 0 0 30.75 31 0 30.75 31 10.5 30.75 ; \
+< 	cnt 30 | rcalc -e '$1=15.5+x(theta(0),phi(1-$1/29))' \
+< 	-e '$2=10.5+y(theta(0),phi(1-$1/29))' -e '$3=30.75' -f basin.cal )
+< 
+< !gensurf marble sink '15.5+x(theta(s),phi(t))' '10.5+y(theta(s),phi(t))' \
+< 	'30.75+z(theta(s),phi(t))' 8 29 -f basin.cal -s
+---
+> # !( echo marble polygon sink_top 0 0 108 31 10.5 30.75 31 22 30.75 \
+> # 	0 22 30.75 0 0 30.75 31 0 30.75 31 10.5 30.75 ; \
+> # 	cnt 30 | rcalc -e '$1=15.5+x(theta(0),phi(1-$1/29))' \
+> # 	-e '$2=10.5+y(theta(0),phi(1-$1/29))' -e '$3=30.75' -f basin.cal )
+> !xform -n sink_top -t 0 0 0 sink_top.rad
+> 
+> # !gensurf marble sink '15.5+x(theta(s),phi(t))' '10.5+y(theta(s),phi(t))' \
+> # 	'30.75+z(theta(s),phi(t))' 8 29 -f basin.cal -s
+> !xform -n sink -t 0 0 0 sink.rad
+92a100,104
+> zwoodpat plastic zwood
+> 0
+> 0
+> 5 .57 .24 .15 .03 0.08
+> 
+98a111,116
+> # ywoodpat alias ywood zwood
+> zwoodpat plastic ywood
+> 0
+> 0
+> 5 .57 .24 .15 .03 0.08
+> 
