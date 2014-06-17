@@ -8,7 +8,12 @@ skylight_night.rad \
 lib/shdoor_frame.rad \
 lib/shdoor_outer.rad \
 lib/bathfauc.rad \
-lib/door.rad
+lib/door.rad \
+lib/sinkfauc.rad \
+lib/sinkspig.rad \
+lib/vanity.rad \
+lib/medcab.rad \
+lib/vanfixt.rad
 
 OBJECTS = bathroom.rad lib/sinkfauc.rad lib/sinkspig.rad lib/bathfauc.rad \
 lib/toilet.rad lib/flushand.rad lib/medcab.rad lib/vanity.rad lib/basin.cal \
@@ -37,13 +42,23 @@ skylight_night.patch \
 lib/shdoor_frame.patch \
 lib/shdoor_outer.patch \
 lib/bathfauc.patch \
-lib/door.patch
+lib/door.patch \
+lib/sinkfauc.patch \
+lib/sinkspig.patch \
+lib/vanity.patch \
+lib/medcab.patch \
+lib/vanfixt.patch
 	patch bathroom.rad -i bathroom.patch
 	patch skylight_night.rad -i skylight_night.patch
 	patch lib/shdoor_frame.rad -i lib/shdoor_frame.patch
 	patch lib/shdoor_outer.rad -i lib/shdoor_outer.patch
 	patch lib/bathfauc.rad -i lib/bathfauc.patch
 	patch lib/door.rad -i lib/door.patch
+	patch lib/sinkfauc.rad -i lib/sinkfauc.patch
+	patch lib/sinkspig.rad -i lib/sinkspig.patch
+	patch lib/vanity.rad -i lib/vanity.patch
+	patch lib/medcab.rad -i lib/medcab.patch
+	patch lib/vanfixt.rad -i lib/vanfixt.patch
 
 pics/bathroom_radiance_mir.png: clobber
 	rad mir.rif
