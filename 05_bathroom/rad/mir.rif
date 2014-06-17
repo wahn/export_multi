@@ -1,10 +1,11 @@
 RESOLUTION = 346 512
-EXPOSURE = 1.2
+EXPOSURE = 7.5
 ZONE = Interior 0 50  0 100  0 99
 AMB = mir.amb
 DETAIL = Medium
-QUALITY = Medium
+QUALITY = High
 VARIABILITY = Medium
+PENUMBRAS = True
 PICTURE = pics/mir
 # materials
 materials = materials.rad
@@ -27,6 +28,8 @@ objects = lib/lamp_holder.rad
 objects = lib/door.rad
 objects = lib/towel_rack.rad
 objects = lib/towel_rack_bracket.rad
+# render
+render = -dj .3
 # pfilt
 pfilt = -r .6
 # view
