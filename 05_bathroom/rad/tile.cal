@@ -1,0 +1,31 @@
+{
+	Tile grout function
+
+	A1, A2, A3 - color to change to from white
+
+	or:
+
+	A1 - slope at edge for texture
+}
+
+GWIDTH : (3/16)/6;			{ grout width }
+
+fPx = frac(Px); fPy = frac(Py); fPz = frac(Pz);
+
+in_grout = if(Nx*Nx-1/3, or(GWIDTH-fPy,GWIDTH-fPz),
+		if(Ny*Ny-1/3, or(GWIDTH-fPx,GWIDTH-fPz),
+		or(GWIDTH-fPx,GWIDTH-fPy)));
+
+grout_coef = if(in_grout, 1, 0);
+
+red_ti = if(in_grout, A1, 1);
+grn_ti = if(in_grout, A2, 1);
+blu_ti = if(in_grout, A3, 1);
+
+ti_dx = if(or(in_grout,Nx*Nx-1/3), 0, slope(fPx));
+
+ti_dy = if(or(in_grout,Ny*Ny-1/3), 0, slope(fPy));
+
+ti_dz = if(or(in_grout,Nz*Nz-1/3), 0, slope(fPz));
+
+slope(f) = A1*if(f-.5, GWIDTH/(1+GWIDTH-f), GWIDTH/f);

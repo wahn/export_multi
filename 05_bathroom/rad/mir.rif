@@ -5,10 +5,28 @@ AMB = mir.amb
 DETAIL = Medium
 QUALITY = Medium
 VARIABILITY = Medium
+PICTURE = pics/mir
+# materials
+materials = materials.rad
 # scene
-scene = skylight_night.rad window_night.rad lights_on.rad
+scene = skylight_night.rad
+scene = window_night.rad
+scene = lights_on.rad
+scene = bathroom.rad
 # objects
-objects = orig.oct
+objects = lib/sinkfauc.rad
+objects = lib/sinkspig.rad
+objects = lib/bathfauc.rad
+objects = lib/toilet.rad
+objects = lib/flushand.rad
+objects = lib/medcab.rad
+objects = lib/vanity.rad
+objects = lib/sinkspig.rad
+objects = lib/vanfixt.rad
+objects = lib/lamp_holder.rad
+objects = lib/door.rad
+objects = lib/towel_rack.rad
+objects = lib/towel_rack_bracket.rad
 # pfilt
 pfilt = -r .6
 # view
