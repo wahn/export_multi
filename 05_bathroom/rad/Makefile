@@ -20,6 +20,12 @@ clean:
 clobber: clean
 	-rm -f *.png
 
+blender: apply_patches
+
+apply_patches: \
+bathroom.patch
+	patch bathroom.rad -i bathroom.patch
+
 pics/bathroom_radiance_mir.png: clobber
 	rad mir.rif
 	ra_tiff pics/mir_cam.hdr pics/bathroom_radiance_mir.tiff
