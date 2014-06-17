@@ -403,15 +403,15 @@
 360c619
 < !genbox dframe_mat dframe.upper 32.5 6.75 2.25 -r .25 | xform -t 6.75 99.5 80.25
 ---
-> ##!genbox blue_enamel dframe.upper 32.5 6.75 2.25 -r .25 | xform -t 6.75 99.5 80.25
+> !genbox blue_enamel dframe.upper 32.5 6.75 2.25 -r .25 | xform -t 6.75 99.5 80.25
 362c621
 < !genbox dframe_mat dframe.south 2.25 6.75 82.5 -r .25 | xform -t 6.75 99.5 0
 ---
-> ##!genbox blue_enamel dframe.south 2.25 6.75 82.5 -r .25 | xform -t 6.75 99.5 0
+> !genbox blue_enamel dframe.south 2.25 6.75 82.5 -r .25 | xform -t 6.75 99.5 0
 364c623
 < !genbox dframe_mat dframe.north 2.25 6.75 82.5 -r .25 | xform -t 37 99.5 0
 ---
-> ##!genbox blue_enamel dframe.north 2.25 6.75 82.5 -r .25 | xform -t 37 99.5 0
+> !genbox blue_enamel dframe.north 2.25 6.75 82.5 -r .25 | xform -t 37 99.5 0
 370c629
 < !xform -e -n door -t 9 99.5 0 lib/door.rad
 ---
