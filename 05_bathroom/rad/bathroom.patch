@@ -96,23 +96,12 @@
 < tub_mat polygon tub_bot
 ---
 > white_porcelain polygon tub_bot
-222c247,252
-< !xform -n hot -e -ry -38 -t 69.5 0 33 lib/bathfauc.rad
----
+221a247,251
 > void metal brass
 > 0
 > 0
 > 5 0.726 0.563 0.223 0.850 0.0000
 > 
-> ##!xform -n hot -e -ry -38 -t 69.5 0 33 lib/bathfauc.rad
-224c254
-< !xform -n shower -e -ry 13 -t 64 0 33 lib/bathfauc.rad
----
-> ##!xform -n shower -e -ry 13 -t 64 0 33 lib/bathfauc.rad
-226c256
-< !xform -n cold -e -ry 42 -t 58.5 0 33 lib/bathfauc.rad
----
-> ##!xform -n cold -e -ry 42 -t 58.5 0 33 lib/bathfauc.rad
 228c258
 < !genworm bathfauc_mat bathfaucet 64 'hermite(0,4.5,10,0,t)' 'hermite(21.5,20.75,0,-8,t)' 'hermite(1.13,.5,0,-2,t)' 12
 ---

@@ -1,0 +1,25 @@
+5c5,10
+< bathfauc_mat cylinder bathfauc_base.bot
+---
+> void metal brass
+> 0
+> 0
+> 5 0.726 0.563 0.223 0.850 0.0000
+> 
+> brass cylinder bathfauc_base.bot
+13c18
+< bathfauc_mat cone bathfauc_base.top
+---
+> brass cone bathfauc_base.top
+21c26
+< bathfauc_mat sphere bathfauc_handle.mid
+---
+> brass sphere bathfauc_handle.mid
+26c31
+< bathfauc_mat cone bathfauc_handle.end
+---
+> brass cone bathfauc_handle.end
+34c39
+< !genrev bathfauc_mat bathfauc_handle 'hermite(-2.75,-.625,0,1.8,t)' 'hermite(0,.375,1,-.3,t)' 16 -s | xform -t 0 1.5625 0
+---
+> !genrev brass bathfauc_handle 'hermite(-2.75,-.625,0,1.8,t)' 'hermite(0,.375,1,-.3,t)' 16 -s | xform -t 0 1.5625 0
