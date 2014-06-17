@@ -96,10 +96,6 @@
 < tub_mat polygon tub_bot
 ---
 > white_porcelain polygon tub_bot
-212c237
-< !xform -n shower_door_frame -e -t 50.25 .01 16.01 lib/shdoor_frame.rad
----
-> ##!xform -n shower_door_frame -e -t 50.25 .01 16.01 lib/shdoor_frame.rad
 214c239
 < !xform -n shower_door_outer -e -t 50.6 31 16.05 lib/shdoor_outer.rad
 ---

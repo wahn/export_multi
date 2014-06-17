@@ -1,0 +1,117 @@
+5c5
+< # genbox shdoor_frame_mat bottom 1.7 63.98 1
+---
+> # genbox chrome bottom 1.7 63.98 1
+7c7,12
+< shdoor_frame_mat polygon bottom.1540
+---
+> void metal chrome
+> 0
+> 0
+> 5 0.808 0.821 0.789 0.823 .05
+> 
+> chrome polygon bottom.1540
+16c21
+< shdoor_frame_mat polygon bottom.4620
+---
+> chrome polygon bottom.4620
+25c30
+< shdoor_frame_mat polygon bottom.2310
+---
+> chrome polygon bottom.2310
+34c39
+< shdoor_frame_mat polygon bottom.3267
+---
+> chrome polygon bottom.3267
+43c48
+< shdoor_frame_mat polygon bottom.5137
+---
+> chrome polygon bottom.5137
+52c57
+< #shdoor_frame_mat polygon bottom.6457
+---
+> #chrome polygon bottom.6457
+61c66
+< # genbox shdoor_frame_mat east 1.7 1.25 57
+---
+> # genbox chrome east 1.7 1.25 57
+63c68
+< shdoor_frame_mat polygon east.1540
+---
+> chrome polygon east.1540
+72c77
+< shdoor_frame_mat polygon east.4620
+---
+> chrome polygon east.4620
+81c86
+< shdoor_frame_mat polygon east.2310
+---
+> chrome polygon east.2310
+90c95
+< #shdoor_frame_mat polygon east.3267
+---
+> #chrome polygon east.3267
+99c104
+< shdoor_frame_mat polygon east.5137
+---
+> chrome polygon east.5137
+108c113
+< shdoor_frame_mat polygon east.6457
+---
+> chrome polygon east.6457
+117c122
+< # genbox shdoor_frame_mat upper 1.7 63.98 2.125
+---
+> # genbox chrome upper 1.7 63.98 2.125
+119c124
+< shdoor_frame_mat polygon upper.1540
+---
+> chrome polygon upper.1540
+128c133
+< shdoor_frame_mat polygon upper.4620
+---
+> chrome polygon upper.4620
+137c142
+< #shdoor_frame_mat polygon upper.2310
+---
+> #chrome polygon upper.2310
+146c151
+< shdoor_frame_mat polygon upper.3267
+---
+> chrome polygon upper.3267
+155c160
+< shdoor_frame_mat polygon upper.5137
+---
+> chrome polygon upper.5137
+164c169
+< shdoor_frame_mat polygon upper.6457
+---
+> chrome polygon upper.6457
+173c178
+< # genbox shdoor_frame_mat west 1.7 1.25 57
+---
+> # genbox chrome west 1.7 1.25 57
+175c180
+< #shdoor_frame_mat polygon west.1540
+---
+> #chrome polygon west.1540
+184c189
+< shdoor_frame_mat polygon west.4620
+---
+> chrome polygon west.4620
+193c198
+< shdoor_frame_mat polygon west.2310
+---
+> chrome polygon west.2310
+202c207
+< shdoor_frame_mat polygon west.3267
+---
+> chrome polygon west.3267
+211c216
+< shdoor_frame_mat polygon west.5137
+---
+> chrome polygon west.5137
+220c225
+< shdoor_frame_mat polygon west.6457
+---
+> chrome polygon west.6457

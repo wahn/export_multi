@@ -4,7 +4,8 @@
 
 PATCHED_FILES = \
 bathroom.rad \
-skylight_night.rad
+skylight_night.rad \
+lib/shdoor_frame.rad
 
 OBJECTS = bathroom.rad lib/sinkfauc.rad lib/sinkspig.rad lib/bathfauc.rad \
 lib/toilet.rad lib/flushand.rad lib/medcab.rad lib/vanity.rad lib/basin.cal \
@@ -29,9 +30,11 @@ blender: apply_patches
 
 apply_patches: \
 bathroom.patch \
-skylight_night.patch
+skylight_night.patch \
+lib/shdoor_frame.patch
 	patch bathroom.rad -i bathroom.patch
 	patch skylight_night.rad -i skylight_night.patch
+	patch lib/shdoor_frame.rad -i lib/shdoor_frame.patch
 
 pics/bathroom_radiance_mir.png: clobber
 	rad mir.rif
