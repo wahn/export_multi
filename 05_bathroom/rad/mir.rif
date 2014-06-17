@@ -10,10 +10,10 @@ PICTURE = pics/mir
 # materials
 materials = materials.rad
 # scene
+scene = bathroom.rad
 scene = skylight_night.rad
 scene = window_night.rad
 scene = lights_on.rad
-scene = bathroom.rad
 # objects
 objects = lib/sinkfauc.rad
 objects = lib/sinkspig.rad
