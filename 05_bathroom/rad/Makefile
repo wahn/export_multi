@@ -2,6 +2,10 @@
 # make clobber
 # make -j 5 all
 
+PATCHED_FILES = \
+bathroom.rad \
+skylight_night.rad
+
 OBJECTS = bathroom.rad lib/sinkfauc.rad lib/sinkspig.rad lib/bathfauc.rad \
 lib/toilet.rad lib/flushand.rad lib/medcab.rad lib/vanity.rad lib/basin.cal \
 lib/sinkspig.rad lib/vanfixt.rad lib/lamp_holder.rad lib/door.rad \
@@ -19,12 +23,15 @@ clean:
 
 clobber: clean
 	-rm -f *.png
+	git checkout $(PATCHED_FILES)
 
 blender: apply_patches
 
 apply_patches: \
-bathroom.patch
+bathroom.patch \
+skylight_night.patch
 	patch bathroom.rad -i bathroom.patch
+	patch skylight_night.rad -i skylight_night.patch
 
 pics/bathroom_radiance_mir.png: clobber
 	rad mir.rif
