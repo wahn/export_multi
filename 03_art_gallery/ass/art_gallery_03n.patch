@@ -1,0 +1,880 @@
+10c10,13
+<  AA_samples 16
+---
+>  AA_samples 3
+>  AA_seed 1
+>  # AA_sample_clamp 2.0
+>  # AA_sample_clamp_affects_aovs true
+24,25c27,28
+<  camera "CAcam02"
+<  background "sun_sky"
+---
+>  camera "CAcam03"
+>  # background "sun_sky"
+27,28c30,32
+<  GI_diffuse_depth 3
+<  GI_glossy_depth 1
+---
+>  texture_gamma 0.45454545454545453
+>  GI_diffuse_depth 1
+>  GI_glossy_depth 0
+32c36,39
+<  GI_diffuse_samples 3
+---
+>  GI_diffuse_samples 15
+>  GI_single_scatter_samples 5
+>  GI_glossy_samples 2
+>  GI_refraction_samples 2
+159,178d165
+< physical_sky
+< {
+<  name sun_sky
+<  turbidity 2
+<  elevation 73.9559555
+<  azimuth -76.0981598
+<  sun_direction 0 1 0
+<  intensity 1
+<  X 1 0 0
+<  Y 0 0 1
+<  Z 0 1 0
+< }
+< 
+< skydome_light
+< {
+<  name sun_skydome
+<  color sun_sky
+<  intensity 1
+< }
+< 
+363611c363598
+<  emission 1
+---
+>  emission 0 # 1
+364290c364277
+<  name MEtypeWM1.u
+---
+>  name MEtypeWM1.u1
+364307c364294
+<  shader "MAtypeWM1_light"
+---
+>  shader "MAtypeWM1_util"
+364310a364298,364314
+> utility
+> {
+>  name MAtypeWM1_util
+>  color_mode 0 # color
+>  shade_mode 2 # flat
+>  color 1 1 1
+> }
+> 
+> mesh_light
+> {
+>  name LAtypeWM1_light1
+>  mesh MEtypeWM1.u1
+>  color 1 1 1
+>  intensity 0.28
+>  samples 5
+> }
+> 
+364313c364317
+<  name MAtypeWM1_light
+---
+>  name M
+364319c364323
+<  emission 1
+---
+>  emission 0 # 1
+364326c364330
+<  name MEtypeWM1.d
+---
+>  name MEtypeWM1.d1
+364343c364347
+<  shader "MAtypeWM1_light"
+---
+>  shader "MAtypeWM1_util"
+364346a364351,364359
+> mesh_light
+> {
+>  name LAtypeWM1_light2
+>  mesh MEtypeWM1.d1
+>  color 1 1 1
+>  intensity 0.28
+>  samples 5
+> }
+> 
+364398a364412
+>  name MEtypeWM1.u2
+364415c364429
+<  shader "MAtypeWM1_light"
+---
+>  shader "MAtypeWM1_util"
+364418a364433,364441
+> mesh_light
+> {
+>  name LAtypeWM1_light3
+>  mesh MEtypeWM1.u2
+>  color 1 1 1
+>  intensity 0.28
+>  samples 5
+> }
+> 
+364420a364444
+>  name MEtypeWM1.d2
+364437c364461
+<  shader "MAtypeWM1_light"
+---
+>  shader "MAtypeWM1_util"
+364440a364465,364473
+> mesh_light
+> {
+>  name LAtypeWM1_light4
+>  mesh MEtypeWM1.d2
+>  color 1 1 1
+>  intensity 0.28
+>  samples 5
+> }
+> 
+364490a364524
+>  name MEtypeWM1.u3
+364507c364541
+<  shader "MAtypeWM1_light"
+---
+>  shader "MAtypeWM1_util"
+364510a364545,364553
+> mesh_light
+> {
+>  name LAtypeWM1_light5
+>  mesh MEtypeWM1.u3
+>  color 1 1 1
+>  intensity 0.28
+>  samples 5
+> }
+> 
+364512a364556
+>  name MEtypeWM1.d3
+364529c364573
+<  shader "MAtypeWM1_light"
+---
+>  shader "MAtypeWM1_util"
+364532a364577,364585
+> mesh_light
+> {
+>  name LAtypeWM1_light6
+>  mesh MEtypeWM1.d3
+>  color 1 1 1
+>  intensity 0.28
+>  samples 5
+> }
+> 
+364582a364636
+>  name MEtypeWM1.u4
+364599c364653
+<  shader "MAtypeWM1_light"
+---
+>  shader "MAtypeWM1_util"
+364602a364657,364665
+> mesh_light
+> {
+>  name LAtypeWM1_light7
+>  mesh MEtypeWM1.u4
+>  color 1 1 1
+>  intensity 0.28
+>  samples 5
+> }
+> 
+364604a364668
+>  name MEtypeWM1.d4
+364621c364685
+<  shader "MAtypeWM1_light"
+---
+>  shader "MAtypeWM1_util"
+364624a364689,364697
+> mesh_light
+> {
+>  name LAtypeWM1_light8
+>  mesh MEtypeWM1.d4
+>  color 1 1 1
+>  intensity 0.28
+>  samples 5
+> }
+> 
+365070c365143
+<  name MEtypeS4.d
+---
+>  name MEtypeS4.d1
+365112c365185
+<  shader "MAtypeS4_light"
+---
+>  # shader "MAtypeS4_light"
+365116c365189
+< standard
+---
+> mesh_light
+365118,365126c365191,365195
+<  name MAtypeS4_light
+<  Kd 0
+<  Kd_color 1 1 1
+<  Ks 0
+<  Ks_color 1 1 1
+<  specular_brdf "cook_torrance"
+<  emission 1
+<  emission_color 1 1 1
+<  opacity 1 1 1
+---
+>  name LAtypeS4_light1
+>  mesh MEtypeS4.d1
+>  color 1 1 1
+>  intensity 15
+>  samples 5
+365530a365600
+>  name MEtypeS4.d2
+365572c365642
+<  shader "MAtypeS4_light"
+---
+>  # shader "MAtypeS4_light"
+365575a365646,365654
+> mesh_light
+> {
+>  name LAtypeS4_light2
+>  mesh MEtypeS4.d2
+>  color 1 1 1
+>  intensity 15
+>  samples 5
+> }
+> 
+365975a366055
+>  name MEtypeS4.d3
+366017c366097
+<  shader "MAtypeS4_light"
+---
+>  # shader "MAtypeS4_light"
+366020a366101,366109
+> mesh_light
+> {
+>  name LAtypeS4_light3
+>  mesh MEtypeS4.d3
+>  color 1 1 1
+>  intensity 15
+>  samples 5
+> }
+> 
+366446a366536
+>  name MEtypeS4.d4
+366488c366578
+<  shader "MAtypeS4_light"
+---
+>  # shader "MAtypeS4_light"
+366491a366582,366590
+> mesh_light
+> {
+>  name LAtypeS4_light4
+>  mesh MEtypeS4.d4
+>  color 1 1 1
+>  intensity 15
+>  samples 5
+> }
+> 
+366891a366991
+>  name MEtypeS4.d5
+366933c367033
+<  shader "MAtypeS4_light"
+---
+>  # shader "MAtypeS4_light"
+366936a367037,367045
+> mesh_light
+> {
+>  name LAtypeS4_light5
+>  mesh MEtypeS4.d5
+>  color 1 1 1
+>  intensity 15
+>  samples 5
+> }
+> 
+367336a367446
+>  name MEtypeS4.d6
+367378c367488
+<  shader "MAtypeS4_light"
+---
+>  # shader "MAtypeS4_light"
+367381a367492,367500
+> mesh_light
+> {
+>  name LAtypeS4_light6
+>  mesh MEtypeS4.d6
+>  color 1 1 1
+>  intensity 15
+>  samples 5
+> }
+> 
+367781a367901
+>  name MEtypeS4.d7
+367823c367943
+<  shader "MAtypeS4_light"
+---
+>  # shader "MAtypeS4_light"
+367826a367947,367955
+> mesh_light
+> {
+>  name LAtypeS4_light7
+>  mesh MEtypeS4.d7
+>  color 1 1 1
+>  intensity 15
+>  samples 5
+> }
+> 
+367881a368011
+>  name MEtypeWM1.u5
+367898c368028
+<  shader "MAtypeWM1_light"
+---
+>  shader "MAtypeWM1_util"
+367901a368032,368040
+> mesh_light
+> {
+>  name LAtypeWM1_light9
+>  mesh MEtypeWM1.u5
+>  color 1 1 1
+>  intensity 0.28
+>  samples 5
+> }
+> 
+367903a368043
+>  name MEtypeWM1.d5
+367920c368060
+<  shader "MAtypeWM1_light"
+---
+>  shader "MAtypeWM1_util"
+367923a368064,368072
+> mesh_light
+> {
+>  name LAtypeWM1_light10
+>  mesh MEtypeWM1.d5
+>  color 1 1 1
+>  intensity 0.28
+>  samples 5
+> }
+> 
+367973a368123
+>  name MEtypeWM1.u6
+367990c368140
+<  shader "MAtypeWM1_light"
+---
+>  shader "MAtypeWM1_util"
+367993a368144,368152
+> mesh_light
+> {
+>  name LAtypeWM1_light11
+>  mesh MEtypeWM1.u6
+>  color 1 1 1
+>  intensity 0.28
+>  samples 5
+> }
+> 
+367995a368155
+>  name MEtypeWM1.d6
+368012c368172
+<  shader "MAtypeWM1_light"
+---
+>  shader "MAtypeWM1_util"
+368015a368176,368184
+> mesh_light
+> {
+>  name LAtypeWM1_light12
+>  mesh MEtypeWM1.d6
+>  color 1 1 1
+>  intensity 0.28
+>  samples 5
+> }
+> 
+368066c368235
+<  name MEtypeRLF1.d
+---
+>  name MEtypeRLF1.d1
+368083c368252
+<  shader "MAtypeRLF1_light"
+---
+>  shader "MAtypeRLF1_util"
+368087c368256
+< standard
+---
+> utility
+368089,368097c368258,368270
+<  name MAtypeRLF1_light
+<  Kd 0
+<  Kd_color 1 1 1
+<  Ks 0
+<  Ks_color 1 1 1
+<  specular_brdf "cook_torrance"
+<  emission 1
+<  emission_color 1 1 1
+<  opacity 1 1 1
+---
+>  name MAtypeRLF1_util
+>  color_mode 0 # color
+>  shade_mode 2 # flat
+>  color 1 1 1
+> }
+> 
+> mesh_light
+> {
+>  name LAtypeRLF1_light1
+>  mesh MEtypeRLF1.d1
+>  color 1 1 1
+>  intensity 0.78
+>  samples 5
+368101a368275
+>  name MEtypeRLF1.d2
+368118c368292
+<  shader "MAtypeRLF1_light"
+---
+>  shader "MAtypeRLF1_util"
+368121a368296,368304
+> mesh_light
+> {
+>  name LAtypeRLF1_light2
+>  mesh MEtypeRLF1.d2
+>  color 1 1 1
+>  intensity 0.78
+>  samples 5
+> }
+> 
+368123a368307
+>  name MEtypeRLF1.d3
+368140c368324
+<  shader "MAtypeRLF1_light"
+---
+>  shader "MAtypeRLF1_util"
+368143a368328,368336
+> mesh_light
+> {
+>  name LAtypeRLF1_light3
+>  mesh MEtypeRLF1.d3
+>  color 1 1 1
+>  intensity 0.78
+>  samples 5
+> }
+> 
+368145a368339
+>  name MEtypeRLF1.d4
+368162c368356
+<  shader "MAtypeRLF1_light"
+---
+>  shader "MAtypeRLF1_util"
+368165a368360,368368
+> mesh_light
+> {
+>  name LAtypeRLF1_light4
+>  mesh MEtypeRLF1.d4
+>  color 1 1 1
+>  intensity 0.78
+>  samples 5
+> }
+> 
+368167a368371
+>  name MEtypeRLF1.d5
+368184c368388
+<  shader "MAtypeRLF1_light"
+---
+>  shader "MAtypeRLF1_util"
+368187a368392,368400
+> mesh_light
+> {
+>  name LAtypeRLF1_light5
+>  mesh MEtypeRLF1.d5
+>  color 1 1 1
+>  intensity 0.78
+>  samples 5
+> }
+> 
+368189a368403
+>  name MEtypeRLF1.d6
+368206c368420
+<  shader "MAtypeRLF1_light"
+---
+>  shader "MAtypeRLF1_util"
+368209a368424,368432
+> mesh_light
+> {
+>  name LAtypeRLF1_light6
+>  mesh MEtypeRLF1.d6
+>  color 1 1 1
+>  intensity 0.78
+>  samples 5
+> }
+> 
+368211a368435
+>  name MEtypeRLF1.d7
+368228c368452
+<  shader "MAtypeRLF1_light"
+---
+>  shader "MAtypeRLF1_util"
+368231a368456,368464
+> mesh_light
+> {
+>  name LAtypeRLF1_light7
+>  mesh MEtypeRLF1.d7
+>  color 1 1 1
+>  intensity 0.78
+>  samples 5
+> }
+> 
+368233a368467
+>  name MEtypeRLF1.d8
+368250c368484
+<  shader "MAtypeRLF1_light"
+---
+>  shader "MAtypeRLF1_util"
+368253a368488,368496
+> mesh_light
+> {
+>  name LAtypeRLF1_light8
+>  mesh MEtypeRLF1.d8
+>  color 1 1 1
+>  intensity 0.78
+>  samples 5
+> }
+> 
+368255a368499
+>  name MEtypeRLF1.d9
+368272c368516
+<  shader "MAtypeRLF1_light"
+---
+>  shader "MAtypeRLF1_util"
+368275a368520,368528
+> mesh_light
+> {
+>  name LAtypeRLF1_light9
+>  mesh MEtypeRLF1.d9
+>  color 1 1 1
+>  intensity 0.78
+>  samples 5
+> }
+> 
+368277a368531
+>  name MEtypeRLF1.d10
+368294c368548
+<  shader "MAtypeRLF1_light"
+---
+>  shader "MAtypeRLF1_util"
+368297a368552,368560
+> mesh_light
+> {
+>  name LAtypeRLF1_light10
+>  mesh MEtypeRLF1.d10
+>  color 1 1 1
+>  intensity 0.78
+>  samples 5
+> }
+> 
+368300c368563
+<  name MEtypeRLF2.d
+---
+>  name MEtypeRLF2.d1
+368317c368580
+<  shader "MAtypeRLF2_light"
+---
+>  shader "MAtypeRLF2_util"
+368321c368584
+< standard
+---
+> utility
+368323,368331c368586,368598
+<  name MAtypeRLF2_light
+<  Kd 0
+<  Kd_color 1 1 1
+<  Ks 0
+<  Ks_color 1 1 1
+<  specular_brdf "cook_torrance"
+<  emission 1
+<  emission_color 1 1 1
+<  opacity 1 1 1
+---
+>  name MAtypeRLF2_util
+>  color_mode 0 # color
+>  shade_mode 2 # flat
+>  color 1 1 1
+> }
+> 
+> mesh_light
+> {
+>  name LAtypeRLF2_light1
+>  mesh MEtypeRLF2.d1
+>  color 1 1 1
+>  intensity 0.64
+>  samples 5
+368335a368603
+>  name MEtypeRLF2.d2
+368352c368620
+<  shader "MAtypeRLF2_light"
+---
+>  shader "MAtypeRLF2_util"
+368355a368624,368632
+> mesh_light
+> {
+>  name LAtypeRLF2_light2
+>  mesh MEtypeRLF2.d2
+>  color 1 1 1
+>  intensity 0.64
+>  samples 5
+> }
+> 
+368357a368635
+>  name MEtypeRLF2.d3
+368374c368652
+<  shader "MAtypeRLF2_light"
+---
+>  shader "MAtypeRLF2_util"
+368377a368656,368664
+> mesh_light
+> {
+>  name LAtypeRLF2_light3
+>  mesh MEtypeRLF2.d3
+>  color 1 1 1
+>  intensity 0.64
+>  samples 5
+> }
+> 
+368379a368667
+>  name MEtypeRLF2.d4
+368396c368684
+<  shader "MAtypeRLF2_light"
+---
+>  shader "MAtypeRLF2_util"
+368399a368688,368696
+> mesh_light
+> {
+>  name LAtypeRLF2_light4
+>  mesh MEtypeRLF2.d4
+>  color 1 1 1
+>  intensity 0.64
+>  samples 5
+> }
+> 
+368401a368699
+>  name MEtypeRLF2.d5
+368418c368716
+<  shader "MAtypeRLF2_light"
+---
+>  shader "MAtypeRLF2_util"
+368421a368720,368728
+> mesh_light
+> {
+>  name LAtypeRLF2_light5
+>  mesh MEtypeRLF2.d5
+>  color 1 1 1
+>  intensity 0.64
+>  samples 5
+> }
+> 
+368794a369102
+>  name MEtypeS4.d8
+368836c369144
+<  shader "MAtypeS4_light"
+---
+>  # shader "MAtypeS4_light"
+368839a369148,369156
+> mesh_light
+> {
+>  name LAtypeS4_light8
+>  mesh MEtypeS4.d8
+>  color 1 1 1
+>  intensity 15
+>  samples 5
+> }
+> 
+369294c369611
+<  emission 1
+---
+>  emission 0 # 1
+370645c370962
+<  emission 1
+---
+>  emission 0 # 1
+371052c371369
+<  name MEtypeS5.d
+---
+>  name MEtypeS5.d1
+371094c371411
+<  shader "MAtypeS5_light"
+---
+>  # shader "MAtypeS5_light"
+371098c371415
+< standard
+---
+> mesh_light
+371100,371108c371417,371421
+<  name MAtypeS5_light
+<  Kd 0
+<  Kd_color 1 1 1
+<  Ks 0
+<  Ks_color 1 1 1
+<  specular_brdf "cook_torrance"
+<  emission 1
+<  emission_color 1 1 1
+<  opacity 1 1 1
+---
+>  name LAtypeS5_light1
+>  mesh MEtypeS5.d1
+>  color 1 1 1
+>  intensity 15
+>  samples 5
+371512a371826
+>  name MEtypeS4.d9
+371554c371868
+<  shader "MAtypeS4_light"
+---
+>  # shader "MAtypeS4_light"
+371557a371872,371880
+> mesh_light
+> {
+>  name LAtypeS4_light9
+>  mesh MEtypeS4.d9
+>  color 1 1 1
+>  intensity 15
+>  samples 5
+> }
+> 
+371957a372281
+>  name MEtypeS4.d10
+371999c372323
+<  shader "MAtypeS4_light"
+---
+>  # shader "MAtypeS4_light"
+372002a372327,372335
+> mesh_light
+> {
+>  name LAtypeS4_light10
+>  mesh MEtypeS4.d10
+>  color 1 1 1
+>  intensity 15
+>  samples 5
+> }
+> 
+372428a372762
+>  name MEtypeS5.d2
+372470c372804
+<  shader "MAtypeS5_light"
+---
+>  # shader "MAtypeS5_light"
+372473a372808,372816
+> mesh_light
+> {
+>  name LAtypeS5_light2
+>  mesh MEtypeS5.d2
+>  color 1 1 1
+>  intensity 15
+>  samples 5
+> }
+> 
+372873a373217
+>  name MEtypeS4.d11
+372915c373259
+<  shader "MAtypeS4_light"
+---
+>  # shader "MAtypeS4_light"
+372918a373263,373271
+> mesh_light
+> {
+>  name LAtypeS4_light11
+>  mesh MEtypeS4.d11
+>  color 1 1 1
+>  intensity 15
+>  samples 5
+> }
+> 
+373318a373672
+>  name MEtypeS4.d12
+373360c373714
+<  shader "MAtypeS4_light"
+---
+>  # shader "MAtypeS4_light"
+373363a373718,373726
+> mesh_light
+> {
+>  name LAtypeS4_light12
+>  mesh MEtypeS4.d12
+>  color 1 1 1
+>  intensity 15
+>  samples 5
+> }
+> 
+373763a374127
+>  name MEtypeS4.d13
+373805c374169
+<  shader "MAtypeS4_light"
+---
+>  # shader "MAtypeS4_light"
+373808a374173,374181
+> mesh_light
+> {
+>  name LAtypeS4_light13
+>  mesh MEtypeS4.d13
+>  color 1 1 1
+>  intensity 15
+>  samples 5
+> }
+> 
+374208a374582
+>  name MEtypeS4.d14
+374250c374624
+<  shader "MAtypeS4_light"
+---
+>  # shader "MAtypeS4_light"
+374253a374628,374636
+> mesh_light
+> {
+>  name LAtypeS4_light14
+>  mesh MEtypeS4.d14
+>  color 1 1 1
+>  intensity 15
+>  samples 5
+> }
+> 
+374653a375037
+>  name MEtypeS4.d15
+374695c375079
+<  shader "MAtypeS4_light"
+---
+>  # shader "MAtypeS4_light"
+374698a375083,375091
+> mesh_light
+> {
+>  name LAtypeS4_light15
+>  mesh MEtypeS4.d15
+>  color 1 1 1
+>  intensity 15
+>  samples 5
+> }
+> 
+375098a375492
+>  name MEtypeS5.d3
+375140c375534
+<  shader "MAtypeS5_light"
+---
+>  # shader "MAtypeS5_light"
+375143a375538,375546
+> mesh_light
+> {
+>  name LAtypeS5_light3
+>  mesh MEtypeS5.d3
+>  color 1 1 1
+>  intensity 15
+>  samples 5
+> }
+> 
+375543a375947
+>  name MEtypeS4.d16
+375585c375989
+<  shader "MAtypeS4_light"
+---
+>  # shader "MAtypeS4_light"
+375588a375993,376001
+> mesh_light
+> {
+>  name LAtypeS4_light16
+>  mesh MEtypeS4.d16
+>  color 1 1 1
+>  intensity 15
+>  samples 5
+> }
+> 

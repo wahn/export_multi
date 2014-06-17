@@ -9,7 +9,9 @@ all: \
 art_gallery_01.ass \
 art_gallery_01n.ass \
 art_gallery_02.ass \
+art_gallery_02n.ass \
 art_gallery_03.ass \
+art_gallery_03n.ass \
 art_gallery_04.ass \
 art_gallery_05.ass
 
@@ -61,19 +63,19 @@ art_gallery_01n_seed_4.exr
 
 art_gallery_01n_seed_1.exr: art_gallery_01n.ass
 	$(KICK) -dp -dw -i art_gallery_01n.ass -o art_gallery_01n_seed_1.exr \
--set options.AA_seed 1 -r 2000 2000 -v 0
+-set options.AA_seed 1 -r 2000 2000 -v 6
 
 art_gallery_01n_seed_2.exr: art_gallery_01n.ass
 	$(KICK) -dp -dw -i art_gallery_01n.ass -o art_gallery_01n_seed_2.exr \
--set options.AA_seed 2 -r 2000 2000 -v 0
+-set options.AA_seed 2 -r 2000 2000 -v 6
 
 art_gallery_01n_seed_3.exr: art_gallery_01n.ass
 	$(KICK) -dp -dw -i art_gallery_01n.ass -o art_gallery_01n_seed_3.exr \
--set options.AA_seed 3 -r 2000 2000 -v 0
+-set options.AA_seed 3 -r 2000 2000 -v 6
 
 art_gallery_01n_seed_4.exr: art_gallery_01n.ass
 	$(KICK) -dp -dw -i art_gallery_01n.ass -o art_gallery_01n_seed_4.exr \
--set options.AA_seed 4 -r 2000 2000 -v 0
+-set options.AA_seed 4 -r 2000 2000 -v 6
 
 # art_gallery_02
 
@@ -103,6 +105,34 @@ art_gallery_02_seed_4.exr: art_gallery_02.ass
 	$(KICK) -dp -dw -i art_gallery_02.ass -o art_gallery_02_seed_4.exr \
 -set options.AA_seed 4 -r 2000 2000 -v 0
 
+# art_gallery_02n
+
+art_gallery_02n.ass: art_gallery_02n.patch
+	patch art_gallery.ass -i art_gallery_02n.patch -o art_gallery_02n.ass
+
+art_gallery_02n.exr: \
+art_gallery_02n_seed_1.exr \
+art_gallery_02n_seed_2.exr \
+art_gallery_02n_seed_3.exr \
+art_gallery_02n_seed_4.exr
+	echo "TODO: combine seed images into a single one"
+
+art_gallery_02n_seed_1.exr: art_gallery_02n.ass
+	$(KICK) -dp -dw -i art_gallery_02n.ass -o art_gallery_02n_seed_1.exr \
+-set options.AA_seed 1 -r 2000 2000 -v 6
+
+art_gallery_02n_seed_2.exr: art_gallery_02n.ass
+	$(KICK) -dp -dw -i art_gallery_02n.ass -o art_gallery_02n_seed_2.exr \
+-set options.AA_seed 2 -r 2000 2000 -v 6
+
+art_gallery_02n_seed_3.exr: art_gallery_02n.ass
+	$(KICK) -dp -dw -i art_gallery_02n.ass -o art_gallery_02n_seed_3.exr \
+-set options.AA_seed 3 -r 2000 2000 -v 6
+
+art_gallery_02n_seed_4.exr: art_gallery_02n.ass
+	$(KICK) -dp -dw -i art_gallery_02n.ass -o art_gallery_02n_seed_4.exr \
+-set options.AA_seed 4 -r 2000 2000 -v 6
+
 # art_gallery_03
 
 art_gallery_03.ass: art_gallery_03.patch
@@ -130,6 +160,34 @@ art_gallery_03_seed_3.exr: art_gallery_03.ass
 art_gallery_03_seed_4.exr: art_gallery_03.ass
 	$(KICK) -dp -dw -i art_gallery_03.ass -o art_gallery_03_seed_4.exr \
 -set options.AA_seed 4 -r 2000 2000 -v 0
+
+# art_gallery_03n
+
+art_gallery_03n.ass: art_gallery_03n.patch
+	patch art_gallery.ass -i art_gallery_03n.patch -o art_gallery_03n.ass
+
+art_gallery_03n.exr: \
+art_gallery_03n_seed_1.exr \
+art_gallery_03n_seed_2.exr \
+art_gallery_03n_seed_3.exr \
+art_gallery_03n_seed_4.exr
+	echo "TODO: combine seed images into a single one"
+
+art_gallery_03n_seed_1.exr: art_gallery_03n.ass
+	$(KICK) -dp -dw -i art_gallery_03n.ass -o art_gallery_03n_seed_1.exr \
+-set options.AA_seed 1 -r 2000 2000 -v 6
+
+art_gallery_03n_seed_2.exr: art_gallery_03n.ass
+	$(KICK) -dp -dw -i art_gallery_03n.ass -o art_gallery_03n_seed_2.exr \
+-set options.AA_seed 2 -r 2000 2000 -v 6
+
+art_gallery_03n_seed_3.exr: art_gallery_03n.ass
+	$(KICK) -dp -dw -i art_gallery_03n.ass -o art_gallery_03n_seed_3.exr \
+-set options.AA_seed 3 -r 2000 2000 -v 6
+
+art_gallery_03n_seed_4.exr: art_gallery_03n.ass
+	$(KICK) -dp -dw -i art_gallery_03n.ass -o art_gallery_03n_seed_4.exr \
+-set options.AA_seed 4 -r 2000 2000 -v 6
 
 # art_gallery_04
 
