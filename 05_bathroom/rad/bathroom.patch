@@ -412,18 +412,6 @@
 < !genbox dframe_mat dframe.north 2.25 6.75 82.5 -r .25 | xform -t 37 99.5 0
 ---
 > !genbox blue_enamel dframe.north 2.25 6.75 82.5 -r .25 | xform -t 37 99.5 0
-370c629
-< !xform -e -n door -t 9 99.5 0 lib/door.rad
----
-> ##!xform -e -n door -t 9 99.5 0 lib/door.rad
-376c635
-< !xform -e -n vanity -rz 90 -t 22.1 36.6 0 lib/vanity.rad
----
-> ##!xform -e -n vanity -rz 90 -t 22.1 36.6 0 lib/vanity.rad
-378c637
-< !xform -e -n mirror -t .1 27 45.5 lib/medcab.rad
----
-> ##!xform -e -n mirror -t .1 27 45.5 lib/medcab.rad
 380c639
 < !xform -e -n light_fixture -t 0 49 79.125 lib/vanfixt.rad
 ---
