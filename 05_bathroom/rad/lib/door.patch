@@ -1,7 +1,12 @@
-5c5,10
+5c5,15
 < !genbox door_mat door 27 1.375 78
 ---
-> !genbox blue_enamel bathroom_door 27 1.375 78
+> void plastic blue_enamel
+> 0
+> 0
+> 5 0.331 0.551 0.757 0.010 0.0350
+> 
+> !genbox blue_enamel bathroom_door 28 1.375 80.25
 > 
 > void metal chrome
 > 0
