@@ -1,9 +1,12 @@
-4a5,9
+5c5,10
+< !genbox zwood base .5 2 5
+---
 > zwoodpat plastic2 zwood
 > 4 -.01 .01 1 .
 > 0
 > 6 0.333 0.173 0.072 0.019 0.0400 0.0600
 > 
+> !genbox zwood towel_rack_base .5 2 5
 16a22,26
 > xwoodpat plastic2 xwood
 > 4 1 .01 -.01 .

@@ -1,9 +1,12 @@
-4a5,9
+5c5,10
+< !genrev brass base '-1.375+1.375*cos(PI/2*(1-t))' '1.375*sin(PI/2*(1-t))' 5
+---
 > void metal brass
 > 0
 > 0
 > 5 0.726 0.563 0.223 0.850 0.0000
 > 
+> !genrev brass lamp_holder_base '-1.375+1.375*cos(PI/2*(1-t))' '1.375*sin(PI/2*(1-t))' 5
 11a17,21
 > void trans blasted_glass
 > 0

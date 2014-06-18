@@ -1,16 +1,19 @@
-4a5,9
+5c5,10
+< brass cone base_bot
+---
 > void metal brass
 > 0
 > 0
 > 5 0.726 0.563 0.223 0.850 0.0000
 > 
+> brass cone faucet_handle_base_bot
 13,14c18,58
 < !genrev brass base 'hermite(.25,1.75,.857,0,t)' \
 < 	'hermite(1,0,-1.5,-3,t)' 5
 ---
-> # genrev brass base hermite(.25,1.75,.857,0,t) hermite(1,0,-1.5,-3,t) 5
+> # genrev brass faucet_handle_base hermite(.25,1.75,.857,0,t) hermite(1,0,-1.5,-3,t) 5
 > 
-> brass cone base.1
+> brass cone faucet_handle_base.1
 > 0
 > 0
 > 8
@@ -18,7 +21,7 @@
 > 	0	0	          0.515696
 > 	                 1	               0.8
 > 
-> brass cone base.2
+> brass cone faucet_handle_base.2
 > 0
 > 0
 > 8
@@ -26,7 +29,7 @@
 > 	0	0	          0.901408
 > 	               0.8	              0.72
 > 
-> brass cone base.3
+> brass cone faucet_handle_base.3
 > 0
 > 0
 > 8
@@ -34,7 +37,7 @@
 > 	0	0	          1.304272
 > 	              0.72	              0.64
 > 
-> brass cone base.4
+> brass cone faucet_handle_base.4
 > 0
 > 0
 > 8
@@ -42,7 +45,7 @@
 > 	0	0	          1.621424
 > 	              0.64	              0.44
 > 
-> brass cone base.5
+> brass cone faucet_handle_base.5
 > 0
 > 0
 > 8
