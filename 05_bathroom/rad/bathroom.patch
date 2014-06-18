@@ -412,10 +412,6 @@
 < !genbox dframe_mat dframe.north 2.25 6.75 82.5 -r .25 | xform -t 37 99.5 0
 ---
 > !genbox blue_enamel dframe.north 2.25 6.75 82.5 -r .25 | xform -t 37 99.5 0
-386c645
-< !xform -e -n towel_rack -t 0 67.5 39.5 lib/towel_rack.rad
----
-> ##!xform -e -n towel_rack -t 0 67.5 39.5 lib/towel_rack.rad
 392c651
 < !xform -e -n toilet -t 2.375 8.25 0 lib/toilet.rad
 ---
