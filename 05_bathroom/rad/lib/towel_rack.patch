@@ -1,6 +1,11 @@
-6a7,11
+5c5,12
+< !xform -e -a 2 -t 0 21.5 0 towel_rack_bracket.rad
+---
+> # !xform -e -a 2 -t 0 21.5 0 towel_rack_bracket.rad
+> !xform -n bracket1 -t 0 0 0 towel_rack_bracket.rad
+> !xform -n bracket2 -t 0 21.5 0 towel_rack_bracket.rad
+> 
 > ywoodpat plastic2 ywood
 > 4 .01 1 -.01 .
 > 0
 > 6 0.333 0.173 0.072 0.019 0.0400 0.0600
-> 
