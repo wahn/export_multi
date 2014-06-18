@@ -13,6 +13,7 @@ lib/sinkfauc.rad \
 lib/sinkspig.rad \
 lib/vanity.rad \
 lib/medcab.rad \
+lib/lamp_holder.rad \
 lib/vanfixt.rad
 
 OBJECTS = bathroom.rad lib/sinkfauc.rad lib/sinkspig.rad lib/bathfauc.rad \
@@ -47,6 +48,7 @@ lib/sinkfauc.patch \
 lib/sinkspig.patch \
 lib/vanity.patch \
 lib/medcab.patch \
+lib/lamp_holder.patch \
 lib/vanfixt.patch
 	patch bathroom.rad -i bathroom.patch
 	patch skylight_night.rad -i skylight_night.patch
@@ -58,6 +60,7 @@ lib/vanfixt.patch
 	patch lib/sinkspig.rad -i lib/sinkspig.patch
 	patch lib/vanity.rad -i lib/vanity.patch
 	patch lib/medcab.rad -i lib/medcab.patch
+	patch lib/lamp_holder.rad -i lib/lamp_holder.patch
 	patch lib/vanfixt.rad -i lib/vanfixt.patch
 
 pics/bathroom_radiance_mir.png: clobber

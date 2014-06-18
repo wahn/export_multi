@@ -412,10 +412,6 @@
 < !genbox dframe_mat dframe.north 2.25 6.75 82.5 -r .25 | xform -t 37 99.5 0
 ---
 > !genbox blue_enamel dframe.north 2.25 6.75 82.5 -r .25 | xform -t 37 99.5 0
-380c639
-< !xform -e -n light_fixture -t 0 49 79.125 lib/vanfixt.rad
----
-> ##!xform -e -n light_fixture -t 0 49 79.125 lib/vanfixt.rad
 386c645
 < !xform -e -n towel_rack -t 0 67.5 39.5 lib/towel_rack.rad
 ---
