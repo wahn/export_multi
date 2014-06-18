@@ -23,11 +23,11 @@
 < !genprism toilet_mat tank_lid 10	0 1	0 19.5	1 20.25	5.5 20.25 \
 ---
 > !genprism white_porcelain tank_lid 10	0 1	0 19.5	1 20.25	5.5 20.25 \
-22c27
+22,32c27,45
 < !gensurf toilet_mat bowl '18+8*cos(ph(s))*sin(th(t))' \
----
-> !gensurf white_porcelain bowl '18+8*cos(ph(s))*sin(th(t))' \
-26,32c31,44
+< 	'10+7*sin(ph(s))*sin(th(t))' '14+8*cos(th(t))' 12 7 -s \
+< 	-e 'ph(s)=2*PI*s;th(t)=PI*(.9-.44*t);'
+< 
 < !cnt 20 | rcalc -e '$1=8*cos(th);$2=7*sin(th);th=(-150+300*$1/19)*PI/180' \
 < 	| genprism xwood lid_lower - -l 0 0 .875 \
 < 	| xform -s 1.05 -t 18 10 15.15
@@ -36,6 +36,11 @@
 < 	| genprism xwood lid_upper - -l 0 0 .875 \
 < 	| xform -s .98 -t 18 10 16.25
 ---
+> # !gensurf white_porcelain bowl '18+8*cos(ph(s))*sin(th(t))' \
+> # 	'10+7*sin(ph(s))*sin(th(t))' '14+8*cos(th(t))' 12 7 -s \
+> # 	-e 'ph(s)=2*PI*s;th(t)=PI*(.9-.44*t);'
+> !xform -n bowl -t 0 0 0 bowl.rad
+> 
 > # !cnt 20 | rcalc -e '$1=8*cos(th);$2=7*sin(th);th=(-150+300*$1/19)*PI/180' \
 > # 	| genprism xwood lid_lower - -l 0 0 .875 \
 > # 	| xform -s 1.05 -t 18 10 15.15
