@@ -1,0 +1,35 @@
+5c5,10
+< !genbox toilet_mat base0 15 9 1 -r .2 | xform -t 7 5.5 0
+---
+> void plastic white_porcelain
+> 0
+> 0
+> 5 0.639 0.634 0.561 0.036 0.0000
+> 
+> !genbox white_porcelain base0 15 9 1 -r .2 | xform -t 7 5.5 0
+7c12
+< !genprism toilet_mat base1 7	9 .5	3 9	3 13	10 13 \
+---
+> !genprism white_porcelain base1 7	9 .5	3 9	3 13	10 13 \
+10c15
+< !genbox toilet_mat base2 11 8.5 2 -r .2 | xform -t 0 5.75 13
+---
+> !genbox white_porcelain base2 11 8.5 2 -r .2 | xform -t 0 5.75 13
+12c17
+< !genprism toilet_mat tank 10	0.25 1	0.25 19.25	1 20	5.5 20 \
+---
+> !genprism white_porcelain tank 10	0.25 1	0.25 19.25	1 20	5.5 20 \
+16c21
+< !genprism toilet_mat tank_lid 10	0 1	0 19.5	1 20.25	5.5 20.25 \
+---
+> !genprism white_porcelain tank_lid 10	0 1	0 19.5	1 20.25	5.5 20.25 \
+22c27
+< !gensurf toilet_mat bowl '18+8*cos(ph(s))*sin(th(t))' \
+---
+> !gensurf white_porcelain bowl '18+8*cos(ph(s))*sin(th(t))' \
+33a39,43
+> void metal brass
+> 0
+> 0
+> 5 0.726 0.563 0.223 0.850 0.0000
+> 

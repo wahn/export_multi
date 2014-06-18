@@ -16,7 +16,9 @@ lib/medcab.rad \
 lib/lamp_holder.rad \
 lib/vanfixt.rad \
 lib/towel_rack_bracket.rad \
-lib/towel_rack.rad
+lib/towel_rack.rad \
+lib/flushand.rad \
+lib/toilet.rad
 
 OBJECTS = bathroom.rad lib/sinkfauc.rad lib/sinkspig.rad lib/bathfauc.rad \
 lib/toilet.rad lib/flushand.rad lib/medcab.rad lib/vanity.rad lib/basin.cal \
@@ -53,7 +55,9 @@ lib/medcab.patch \
 lib/lamp_holder.patch \
 lib/vanfixt.patch \
 lib/towel_rack_bracket.patch \
-lib/towel_rack.patch
+lib/towel_rack.patch \
+lib/flushand.patch \
+lib/toilet.patch
 	patch bathroom.rad -i bathroom.patch
 	patch skylight_night.rad -i skylight_night.patch
 	patch lib/shdoor_frame.rad -i lib/shdoor_frame.patch
@@ -68,6 +72,8 @@ lib/towel_rack.patch
 	patch lib/vanfixt.rad -i lib/vanfixt.patch
 	patch lib/towel_rack_bracket.rad -i lib/towel_rack_bracket.patch
 	patch lib/towel_rack.rad -i lib/towel_rack.patch
+	patch lib/flushand.rad -i lib/flushand.patch
+	patch lib/toilet.rad -i lib/toilet.patch
 
 pics/bathroom_radiance_mir.png: clobber
 	rad mir.rif
