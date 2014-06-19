@@ -1,0 +1,101 @@
+38a39,61
+> 		<white_point>
+> 			0.333333 0.333333			
+> 		</white_point>
+> 		<layer_setting>
+> 			<name>default</name>
+> 			<xyz>0 0 0</xyz>
+> 			<gain>0</gain>
+> 		</layer_setting>
+> 		<layer_setting>
+> 			<name>sun</name>
+> 			<xyz>0.9993232488632202 0.9994908571243286 0.9989829063415527</xyz>
+> 			<gain>0.05</gain>
+> 		</layer_setting>
+> 		<layer_setting>
+> 			<name>sky</name>
+> 			<xyz>0.9993232488632202 0.9994908571243286 0.9989829063415527</xyz>
+> 			<gain>0.05</gain>
+> 		</layer_setting>
+> 		<layer_setting>
+> 			<name>bright</name>
+> 			<xyz>0.9993232488632202 0.9994908571243286 0.9989829063415527</xyz>
+> 			<gain>100</gain>
+> 		</layer_setting>
+44c67
+<     <focus_distance>10</focus_distance>
+---
+>     <focus_distance>5.0</focus_distance>
+50d72
+<     <autofocus/>
+56c78
+<       <pos>2.25 0.375 1.0</pos>
+---
+>       <pos>7.617000102996826 0.9879999756813049 2.869999885559082</pos>
+62,63c84,85
+<     <up>-0.3651483952999115 0.18257419764995575 0.9128709435462952</up>
+<     <forwards>-0.8164965510368347 0.40824827551841736 -0.40824827551841736</forwards>
+---
+>     <up>-0.2580360472202301 0.0 0.9661353230476379</up>
+>     <forwards>-0.9661352634429932 -0.0 -0.2580360174179077</forwards>
+69,76c91,93
+<     <reinhard>
+<       <pre_scale>4</pre_scale>
+<       <post_scale>1</post_scale>
+<       <burn>6</burn>
+<     </reinhard>
+<     <linear>
+<       <scale>1</scale>
+<     </linear>
+---
+> 		<linear>
+> 			<scale>2.0</scale>
+> 		</linear>
+132,139c149,154
+<       <absorption_coefficient>
+<         <constant>
+<           <rgb>
+<             <gamma>1.0</gamma>
+<             <rgb>0.0 0.0 0.0</rgb>
+<           </rgb>
+<         </constant>
+<       </absorption_coefficient>
+---
+>       <absorption_coefficient_spectrum>
+>         <rgb>
+>           <gamma>1.0</gamma>
+>           <rgb>0.9599999785423279 0.9599999785423279 0.9599999785423279</rgb>
+>         </rgb>
+>       </absorption_coefficient_spectrum>
+141c156
+<     <precedence>2</precedence>
+---
+>     <precedence>10</precedence>
+289c304
+<       <ior>1.5000000074505806</ior>
+---
+>       <ior>1.5</ior>
+291c306
+<         <constant>4999.999925494194</constant>
+---
+>         <constant>10000.0</constant>
+426,433c441,446
+<       <absorption_coefficient>
+<         <constant>
+<           <rgb>
+<             <gamma>1.0</gamma>
+<             <rgb>8.000000000000007 8.000000000000007 8.000000000000007</rgb>
+<           </rgb>
+<         </constant>
+<       </absorption_coefficient>
+---
+>       <absorption_coefficient_spectrum>
+>         <rgb>
+>           <gamma>1.0</gamma>
+>           <rgb>0.5 0.5 0.5</rgb>
+>         </rgb>
+>       </absorption_coefficient_spectrum>
+435c448
+<     <precedence>2</precedence>
+---
+>     <precedence>10</precedence>
