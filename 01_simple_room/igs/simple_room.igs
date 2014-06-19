@@ -36,29 +36,6 @@
       </mn_cubic>
     </downsize_filter>
     <halt_time>-1</halt_time>
-		<white_point>
-			0.333333 0.333333			
-		</white_point>
-		<layer_setting>
-			<name>default</name>
-			<xyz>0 0 0</xyz>
-			<gain>0</gain>
-		</layer_setting>
-		<layer_setting>
-			<name>sun</name>
-			<xyz>0.9993232488632202 0.9994908571243286 0.9989829063415527</xyz>
-			<gain>0.2</gain>
-		</layer_setting>
-		<layer_setting>
-			<name>sky</name>
-			<xyz>0.9993232488632202 0.9994908571243286 0.9989829063415527</xyz>
-			<gain>0.2</gain>
-		</layer_setting>
-		<layer_setting>
-			<name>bright</name>
-			<xyz>0.9993232488632202 0.9994908571243286 0.9989829063415527</xyz>
-			<gain>100</gain>
-		</layer_setting>
   </renderer_settings>
   <camera>
     <uid>2</uid>
@@ -89,9 +66,14 @@
   <tonemapping>
     <uid>3</uid>
     <name>Tone Mapping</name>
-		<linear>
-			<scale>10</scale>
-		</linear>
+    <reinhard>
+      <pre_scale>4</pre_scale>
+      <post_scale>1</post_scale>
+      <burn>6</burn>
+    </reinhard>
+    <linear>
+      <scale>1</scale>
+    </linear>
   </tonemapping>
   <layer_name>
     <layer_index>0</layer_index>
@@ -147,14 +129,16 @@
     <basic>
       <ior>1.5199999809265137</ior>
       <cauchy_b_coeff>0.0</cauchy_b_coeff>
-      <absorption_coefficient_spectrum>
-        <rgb>
-          <gamma>1.0</gamma>
-          <rgb>0.9599999785423279 0.9599999785423279 0.9599999785423279</rgb>
-        </rgb>
-      </absorption_coefficient_spectrum>
+      <absorption_coefficient>
+        <constant>
+          <rgb>
+            <gamma>1.0</gamma>
+            <rgb>0.0 0.0 0.0</rgb>
+          </rgb>
+        </constant>
+      </absorption_coefficient>
     </basic>
-    <precedence>10</precedence>
+    <precedence>2</precedence>
   </medium>
   <material>
     <uid>7</uid>
@@ -302,9 +286,9 @@
     <uid>14</uid>
     <name>blue_plastic</name>
     <phong>
-      <ior>1.5</ior>
+      <ior>1.5000000074505806</ior>
       <exponent>
-        <constant>10000.0</constant>
+        <constant>4999.999925494194</constant>
       </exponent>
       <diffuse_albedo>
         <constant>
@@ -439,14 +423,16 @@
     <basic>
       <ior>1.5</ior>
       <cauchy_b_coeff>0.0</cauchy_b_coeff>
-      <absorption_coefficient_spectrum>
-        <rgb>
-          <gamma>1.0</gamma>
-          <rgb>0.5 0.5 0.5</rgb>
-        </rgb>
-      </absorption_coefficient_spectrum>
+      <absorption_coefficient>
+        <constant>
+          <rgb>
+            <gamma>1.0</gamma>
+            <rgb>8.000000000000007 8.000000000000007 8.000000000000007</rgb>
+          </rgb>
+        </constant>
+      </absorption_coefficient>
     </basic>
-    <precedence>10</precedence>
+    <precedence>2</precedence>
   </medium>
   <material>
     <uid>23</uid>

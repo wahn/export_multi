@@ -1,0 +1,85 @@
+38a39,61
+> 		<white_point>
+> 			0.333333 0.333333			
+> 		</white_point>
+> 		<layer_setting>
+> 			<name>default</name>
+> 			<xyz>0 0 0</xyz>
+> 			<gain>0</gain>
+> 		</layer_setting>
+> 		<layer_setting>
+> 			<name>sun</name>
+> 			<xyz>0.9993232488632202 0.9994908571243286 0.9989829063415527</xyz>
+> 			<gain>0.2</gain>
+> 		</layer_setting>
+> 		<layer_setting>
+> 			<name>sky</name>
+> 			<xyz>0.9993232488632202 0.9994908571243286 0.9989829063415527</xyz>
+> 			<gain>0.2</gain>
+> 		</layer_setting>
+> 		<layer_setting>
+> 			<name>bright</name>
+> 			<xyz>0.9993232488632202 0.9994908571243286 0.9989829063415527</xyz>
+> 			<gain>100</gain>
+> 		</layer_setting>
+69,76c92,94
+<     <reinhard>
+<       <pre_scale>4</pre_scale>
+<       <post_scale>1</post_scale>
+<       <burn>6</burn>
+<     </reinhard>
+<     <linear>
+<       <scale>1</scale>
+<     </linear>
+---
+> 		<linear>
+> 			<scale>10</scale>
+> 		</linear>
+132,139c150,155
+<       <absorption_coefficient>
+<         <constant>
+<           <rgb>
+<             <gamma>1.0</gamma>
+<             <rgb>0.0 0.0 0.0</rgb>
+<           </rgb>
+<         </constant>
+<       </absorption_coefficient>
+---
+>       <absorption_coefficient_spectrum>
+>         <rgb>
+>           <gamma>1.0</gamma>
+>           <rgb>0.9599999785423279 0.9599999785423279 0.9599999785423279</rgb>
+>         </rgb>
+>       </absorption_coefficient_spectrum>
+141c157
+<     <precedence>2</precedence>
+---
+>     <precedence>10</precedence>
+289c305
+<       <ior>1.5000000074505806</ior>
+---
+>       <ior>1.5</ior>
+291c307
+<         <constant>4999.999925494194</constant>
+---
+>         <constant>10000.0</constant>
+426,433c442,447
+<       <absorption_coefficient>
+<         <constant>
+<           <rgb>
+<             <gamma>1.0</gamma>
+<             <rgb>8.000000000000007 8.000000000000007 8.000000000000007</rgb>
+<           </rgb>
+<         </constant>
+<       </absorption_coefficient>
+---
+>       <absorption_coefficient_spectrum>
+>         <rgb>
+>           <gamma>1.0</gamma>
+>           <rgb>0.5 0.5 0.5</rgb>
+>         </rgb>
+>       </absorption_coefficient_spectrum>
+435c449
+<     <precedence>2</precedence>
+---
+>     <precedence>10</precedence>
