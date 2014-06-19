@@ -1,3 +1,7 @@
+# usage:
+# make clobber
+# make -j 4
+
 all: \
 simple_room_cam1.ass \
 simple_room_cam2.ass \
