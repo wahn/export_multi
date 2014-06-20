@@ -18,8 +18,28 @@ clobber: clean
 bathroom_mir.ass: bathroom_mir.patch
 	patch bathroom.ass -i bathroom_mir.patch -o bathroom_mir.ass
 
-bathroom_mir.exr: bathroom_mir.ass
-	$(KICK) -dp -dw -i bathroom_mir.ass -o bathroom_mir.exr -e -6 -v 6
+bathroom_mir.exr: \
+bathroom_mir_seed_1.exr \
+bathroom_mir_seed_2.exr \
+bathroom_mir_seed_3.exr \
+bathroom_mir_seed_4.exr
+	echo "TODO: combine seed images into a single one"
+
+bathroom_mir_seed_1.exr: bathroom_mir.ass
+	$(KICK) -dp -dw -i bathroom_mir.ass -o bathroom_mir_seed_1.exr \
+-set options.AA_seed 1 -r 1384 2048 -v 6
+
+bathroom_mir_seed_2.exr: bathroom_mir.ass
+	$(KICK) -dp -dw -i bathroom_mir.ass -o bathroom_mir_seed_2.exr \
+-set options.AA_seed 2 -r 1384 2048 -v 6
+
+bathroom_mir_seed_3.exr: bathroom_mir.ass
+	$(KICK) -dp -dw -i bathroom_mir.ass -o bathroom_mir_seed_3.exr \
+-set options.AA_seed 3 -r 1384 2048 -v 6
+
+bathroom_mir_seed_4.exr: bathroom_mir.ass
+	$(KICK) -dp -dw -i bathroom_mir.ass -o bathroom_mir_seed_4.exr \
+-set options.AA_seed 4 -r 1384 2048 -v 6
 
 # bathroom_shwin.exr
 # bathroom_sink.exr

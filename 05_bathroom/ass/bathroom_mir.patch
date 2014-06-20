@@ -1,68 +1,66 @@
-10c10
+10c10,11
 <  AA_samples 5
 ---
 >  AA_samples 3
-23c23,24
-<  bucket_scanning "hilbert"
----
->  # bucket_scanning "hilbert"
->  bucket_scanning "bottom"
-27,28c28,29
+>  AA_seed 1
+23a25
+>  # bucket_scanning "bottom"
+27,28c29,30
 <  GI_diffuse_depth 3
 <  GI_glossy_depth 1
 ---
 >  GI_diffuse_depth 1
 >  GI_glossy_depth 0
-32c33,36
+32c34,37
 <  GI_diffuse_samples 3
 ---
 >  GI_diffuse_samples 9
 >  GI_single_scatter_samples 5
 >  GI_glossy_samples 2
 >  GI_refraction_samples 2
-168,169c172,173
+168,169c173,174
 <  intensity 10
 <  samples 1
 ---
 >  intensity 4 # 10
 >  samples 4
-203,204c207,208
+203,204c208,209
 <  intensity 130
 <  samples 1
 ---
 >  intensity 0.8 # 130
 >  samples 3
-231,232c235,236
+231,232c236,237
 <  intensity 10
 <  samples 1
 ---
 >  intensity 4 # 10
 >  samples 4
-259,260c263,264
+259,260c264,265
 <  intensity 130
 <  samples 1
 ---
 >  intensity 0.8 # 130
 >  samples 3
-287,288c291,292
+287,288c292,293
 <  intensity 10
 <  samples 1
 ---
 >  intensity 4 # 10
 >  samples 4
-315,316c319,320
+315,316c320,321
 <  intensity 130
 <  samples 1
 ---
 >  intensity 0.8 # 130
 >  samples 3
-343,344c347,348
+343,344c348,349
 <  intensity 10
 <  samples 1
 ---
 >  intensity 4 # 10
 >  samples 4
-371,372c375,376
+371,372c376,377
 <  intensity 130
 <  samples 1
 ---
