@@ -33,10 +33,10 @@ pics/bathroom_radiance_stall.png \
 pics/bathroom_radiance_van.png
 
 clean:
-	-rm -f *~ lib/*~ *.amb *.oct *.sh *.tiff *.hdr
+	-rm -f *~ lib/*~ *.amb *.oct *.sh pics/*.tiff pics/*.hdr
 
 clobber: clean
-	-rm -f *.png
+	-rm -f pics/*.png
 	git checkout $(PATCHED_FILES)
 
 blender: apply_patches
