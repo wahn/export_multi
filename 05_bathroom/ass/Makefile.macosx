@@ -41,7 +41,34 @@ bathroom_mir_seed_4.exr: bathroom_mir.ass
 	$(KICK) -dp -dw -i bathroom_mir.ass -o bathroom_mir_seed_4.exr \
 -set options.AA_seed 4 -r 1384 2048 -v 6
 
-# bathroom_shwin.exr
+# bathroom_shwin
+
+bathroom_shwin.ass: bathroom_shwin.patch
+	patch bathroom.ass -i bathroom_shwin.patch -o bathroom_shwin.ass
+
+bathroom_shwin.exr: \
+bathroom_shwin_seed_1.exr \
+bathroom_shwin_seed_2.exr \
+bathroom_shwin_seed_3.exr \
+bathroom_shwin_seed_4.exr
+	echo "TODO: combine seed images into a single one"
+
+bathroom_shwin_seed_1.exr: bathroom_shwin.ass
+	$(KICK) -dp -dw -i bathroom_shwin.ass -o bathroom_shwin_seed_1.exr \
+-set options.AA_seed 1 -r 1384 2048 -v 6
+
+bathroom_shwin_seed_2.exr: bathroom_shwin.ass
+	$(KICK) -dp -dw -i bathroom_shwin.ass -o bathroom_shwin_seed_2.exr \
+-set options.AA_seed 2 -r 1384 2048 -v 6
+
+bathroom_shwin_seed_3.exr: bathroom_shwin.ass
+	$(KICK) -dp -dw -i bathroom_shwin.ass -o bathroom_shwin_seed_3.exr \
+-set options.AA_seed 3 -r 1384 2048 -v 6
+
+bathroom_shwin_seed_4.exr: bathroom_shwin.ass
+	$(KICK) -dp -dw -i bathroom_shwin.ass -o bathroom_shwin_seed_4.exr \
+-set options.AA_seed 4 -r 1384 2048 -v 6
+
 # bathroom_sink.exr
 # bathroom_stall.exr
 # bathroom_van.exr
