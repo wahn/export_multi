@@ -34,6 +34,10 @@
 <  emission 1
 ---
 >  emission 0 # 1
+364314c364319
+<  Kd 0
+---
+>  Kd 1
 364319c364324
 <  emission 1
 ---
