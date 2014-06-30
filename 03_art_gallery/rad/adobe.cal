@@ -1,0 +1,23 @@
+{
+	Adobe texture.
+
+	Applies to any large, flat surface.
+
+	A1	- overall magnitude
+}
+
+dx = A1 * noise3a(Px, Py, Pz) + if(in_crack, cdx, 0);
+dy = A1 * noise3b(Px, Py, Pz) + if(in_crack, cdy, 0);
+dz = A1 * noise3c(Px, Py, Pz) + if(in_crack, cdz, 0);
+
+fn3 = fnoise3(Px, Py, Pz);
+cu = Px/3 + fn3/30;
+cv = Py/3 + fn3/30;
+cw = Pz/3 + fn3/30;
+
+in_crack = inside(-.02, noise3(cu, cv, cw) + .4*fnoise3(cu, cv, cw), .02);
+
+cdx = 5*A1*noise3a(cu, cv, cw);
+cdy = 5*A1*noise3b(cu, cv, cw);
+cdz = 5*A1*noise3c(cu, cv, cw);
+

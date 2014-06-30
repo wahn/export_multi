@@ -1,0 +1,24 @@
+{ carpet.cal begin }
+{
+	Carpet function.
+
+	Scale pattern to tuft size.
+
+	A1	- tuft red color
+	A2	- tuft green color
+	A3	- tuft blue color
+	A4	- degree of variation
+}
+					{ carpet tuft position }
+carpt = A4*(.5+.5*noise3(Px,Py,Pz));
+					{ exponent for carpet color }
+carpe = 1 + 4*(1-carpt);
+					{ coefficient (with fuzzies) }
+coef = noneg( carpt*carpt * (1 + .25*A1*fnoise3(Px*10,Py*10,Pz*10)) );
+					{ carpet color }
+carpr = coef * A1^carpe;
+carpg = coef * A2^carpe;
+carpb = coef * A3^carpe;
+
+{ end carpet.cal }
+
