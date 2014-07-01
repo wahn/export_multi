@@ -19779,7 +19779,7 @@ polymesh
  0 0.0833000019 0 0
  0 0 0.0833000019 0
  6.62821198 4.72251034 0 1
- shader "MAlum_bright"
+ shader "MAlum_bright_util"
  opaque on
  declare Pref_matrix constant MATRIX
  Pref_matrix 
@@ -19789,16 +19789,21 @@ polymesh
  0 0 0 1
 }
 
-standard
+utility
 {
- name MAlum_bright
- Kd 0
- Kd_color 1 1 1
- Ks 0
- Ks_color 1 1 1
- emission 3.1 # 1.54999995
- emission_color 1 1 1
- opacity 1 1 1
+ name MAlum_bright_util
+ color_mode 0 # color
+ shade_mode 2 # flat
+ color 1 1 1
+}
+
+mesh_light
+{
+ name MAlum_bright_light1
+ mesh MEluminaire
+ color 1 1 1
+ intensity 3.1 # 1.54999995
+ samples 1
 }
 
 polymesh
@@ -19816,7 +19821,7 @@ polymesh
  0 0.0833000019 0 0
  0 0 0.0833000019 0
  5.40949917 4.72251034 0 1
- shader "MAlum_bright"
+ shader "MAlum_bright_util"
  opaque on
  declare Pref_matrix constant MATRIX
  Pref_matrix 
@@ -19824,6 +19829,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MAlum_bright_light2
+ mesh MEluminaire_un0206
+ color 1 1 1
+ intensity 3.1 # 1.54999995
+ samples 1
 }
 
 polymesh
@@ -19841,7 +19855,7 @@ polymesh
  0 0.0833000019 0 0
  0 0 0.0833000019 0
  4.19078684 4.72251034 0 1
- shader "MAlum_bright"
+ shader "MAlum_bright_util"
  opaque on
  declare Pref_matrix constant MATRIX
  Pref_matrix 
@@ -19849,6 +19863,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MAlum_bright_light3
+ mesh MEluminaire_un0207
+ color 1 1 1
+ intensity 3.1 # 1.54999995
+ samples 1
 }
 
 polymesh
@@ -19866,7 +19889,7 @@ polymesh
  0 0.0833000019 0 0
  0 0 0.0833000019 0
  6.62821198 1.06637335 0 1
- shader "MAlum_bright"
+ shader "MAlum_bright_util"
  opaque on
  declare Pref_matrix constant MATRIX
  Pref_matrix 
@@ -19874,6 +19897,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MAlum_bright_light4
+ mesh MEluminaire_un0208
+ color 1 1 1
+ intensity 3.1 # 1.54999995
+ samples 1
 }
 
 polymesh
@@ -19891,7 +19923,7 @@ polymesh
  0 0.0833000019 0 0
  0 0 0.0833000019 0
  5.40949917 1.06637335 0 1
- shader "MAlum_bright"
+ shader "MAlum_bright_util"
  opaque on
  declare Pref_matrix constant MATRIX
  Pref_matrix 
@@ -19899,6 +19931,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MAlum_bright_light5
+ mesh MEluminaire_un0209
+ color 1 1 1
+ intensity 3.1 # 1.54999995
+ samples 1
 }
 
 polymesh
@@ -19916,7 +19957,7 @@ polymesh
  0 0.0833000019 0 0
  0 0 0.0833000019 0
  4.19078684 1.06637335 0 1
- shader "MAlum_bright"
+ shader "MAlum_bright_util"
  opaque on
  declare Pref_matrix constant MATRIX
  Pref_matrix 
@@ -19924,6 +19965,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MAlum_bright_light6
+ mesh MEluminaire_un0210
+ color 1 1 1
+ intensity 3.1 # 1.54999995
+ samples 1
 }
 
 polymesh
@@ -19941,7 +19991,7 @@ polymesh
  0 0.0833000019 0 0
  0 0 0.0833000019 0
  6.62821198 3.50379801 0 1
- shader "MAlum_bright"
+ shader "MAlum_bright_util"
  opaque on
  declare Pref_matrix constant MATRIX
  Pref_matrix 
@@ -19949,6 +19999,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MAlum_bright_light7
+ mesh MEluminaire_un0211
+ color 1 1 1
+ intensity 3.1 # 1.54999995
+ samples 1
 }
 
 polymesh
@@ -19966,7 +20025,7 @@ polymesh
  0 0.0833000019 0 0
  0 0 0.0833000019 0
  5.40949917 3.50379801 0 1
- shader "MAlum_bright"
+ shader "MAlum_bright_util"
  opaque on
  declare Pref_matrix constant MATRIX
  Pref_matrix 
@@ -19974,6 +20033,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MAlum_bright_light8
+ mesh MEluminaire_un0212
+ color 1 1 1
+ intensity 3.1 # 1.54999995
+ samples 1
 }
 
 polymesh
@@ -19991,7 +20059,7 @@ polymesh
  0 0.0833000019 0 0
  0 0 0.0833000019 0
  4.19078684 3.50379801 0 1
- shader "MAlum_bright"
+ shader "MAlum_bright_util"
  opaque on
  declare Pref_matrix constant MATRIX
  Pref_matrix 
@@ -19999,6 +20067,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MAlum_bright_light9
+ mesh MEluminaire_un0213
+ color 1 1 1
+ intensity 3.1 # 1.54999995
+ samples 1
 }
 
 polymesh
@@ -20016,7 +20093,7 @@ polymesh
  0 0.0833000019 0 0
  0 0 0.0833000019 0
  6.62821198 2.28508568 0 1
- shader "MAlum_bright"
+ shader "MAlum_bright_util"
  opaque on
  declare Pref_matrix constant MATRIX
  Pref_matrix 
@@ -20024,6 +20101,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MAlum_bright_light10
+ mesh MEluminaire_un0214
+ color 1 1 1
+ intensity 3.1 # 1.54999995
+ samples 1
 }
 
 polymesh
@@ -20041,7 +20127,7 @@ polymesh
  0 0.0833000019 0 0
  0 0 0.0833000019 0
  5.40949917 2.28508568 0 1
- shader "MAlum_bright"
+ shader "MAlum_bright_util"
  opaque on
  declare Pref_matrix constant MATRIX
  Pref_matrix 
@@ -20049,6 +20135,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MAlum_bright_light11
+ mesh MEluminaire_un0215
+ color 1 1 1
+ intensity 3.1 # 1.54999995
+ samples 1
 }
 
 polymesh
@@ -20066,7 +20161,7 @@ polymesh
  0 0.0833000019 0 0
  0 0 0.0833000019 0
  4.19078684 2.28508568 0 1
- shader "MAlum_bright"
+ shader "MAlum_bright_util"
  opaque on
  declare Pref_matrix constant MATRIX
  Pref_matrix 
@@ -20074,6 +20169,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MAlum_bright_light12
+ mesh MEluminaire_un0216
+ color 1 1 1
+ intensity 3.1 # 1.54999995
+ samples 1
 }
 
 polymesh
@@ -20091,7 +20195,7 @@ polymesh
  0 0.0833000019 0 0
  0 0 0.0833000019 0
  2.97061133 4.72251034 0 1
- shader "MAlum_bright"
+ shader "MAlum_bright_util"
  opaque on
  declare Pref_matrix constant MATRIX
  Pref_matrix 
@@ -20099,6 +20203,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MAlum_bright_light13
+ mesh MEluminaire_un0217
+ color 1 1 1
+ intensity 3.1 # 1.54999995
+ samples 1
 }
 
 polymesh
@@ -20116,7 +20229,7 @@ polymesh
  0 0.0833000019 0 0
  0 0 0.0833000019 0
  1.751899 4.72251034 0 1
- shader "MAlum_bright"
+ shader "MAlum_bright_util"
  opaque on
  declare Pref_matrix constant MATRIX
  Pref_matrix 
@@ -20124,6 +20237,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MAlum_bright_light14
+ mesh MEluminaire_un0218
+ color 1 1 1
+ intensity 3.1 # 1.54999995
+ samples 1
 }
 
 polymesh
@@ -20141,7 +20263,7 @@ polymesh
  0 0.0833000019 0 0
  0 0 0.0833000019 0
  0.533186674 4.72251034 0 1
- shader "MAlum_bright"
+ shader "MAlum_bright_util"
  opaque on
  declare Pref_matrix constant MATRIX
  Pref_matrix 
@@ -20149,6 +20271,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MAlum_bright_light15
+ mesh MEluminaire_un0219
+ color 1 1 1
+ intensity 3.1 # 1.54999995
+ samples 1
 }
 
 polymesh
@@ -20166,7 +20297,7 @@ polymesh
  0 0.0833000019 0 0
  0 0 0.0833000019 0
  2.97061133 1.06637335 0 1
- shader "MAlum_bright"
+ shader "MAlum_bright_util"
  opaque on
  declare Pref_matrix constant MATRIX
  Pref_matrix 
@@ -20174,6 +20305,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MAlum_bright_light16
+ mesh MEluminaire_un0220
+ color 1 1 1
+ intensity 3.1 # 1.54999995
+ samples 1
 }
 
 polymesh
@@ -20191,7 +20331,7 @@ polymesh
  0 0.0833000019 0 0
  0 0 0.0833000019 0
  1.751899 1.06637335 0 1
- shader "MAlum_bright"
+ shader "MAlum_bright_util"
  opaque on
  declare Pref_matrix constant MATRIX
  Pref_matrix 
@@ -20199,6 +20339,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MAlum_bright_light17
+ mesh MEluminaire_un0221
+ color 1 1 1
+ intensity 3.1 # 1.54999995
+ samples 1
 }
 
 polymesh
@@ -20216,7 +20365,7 @@ polymesh
  0 0.0833000019 0 0
  0 0 0.0833000019 0
  0.533186674 1.06637335 0 1
- shader "MAlum_bright"
+ shader "MAlum_bright_util"
  opaque on
  declare Pref_matrix constant MATRIX
  Pref_matrix 
@@ -20224,6 +20373,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MAlum_bright_light18
+ mesh MEluminaire_un0222
+ color 1 1 1
+ intensity 3.1 # 1.54999995
+ samples 1
 }
 
 polymesh
@@ -20241,7 +20399,7 @@ polymesh
  0 0.0833000019 0 0
  0 0 0.0833000019 0
  2.97061133 3.50379801 0 1
- shader "MAlum_bright"
+ shader "MAlum_bright_util"
  opaque on
  declare Pref_matrix constant MATRIX
  Pref_matrix 
@@ -20249,6 +20407,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MAlum_bright_light19
+ mesh MEluminaire_un0223
+ color 1 1 1
+ intensity 3.1 # 1.54999995
+ samples 1
 }
 
 polymesh
@@ -20266,7 +20433,7 @@ polymesh
  0 0.0833000019 0 0
  0 0 0.0833000019 0
  1.751899 3.50379801 0 1
- shader "MAlum_bright"
+ shader "MAlum_bright_util"
  opaque on
  declare Pref_matrix constant MATRIX
  Pref_matrix 
@@ -20274,6 +20441,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MAlum_bright_light20
+ mesh MEluminaire_un0224
+ color 1 1 1
+ intensity 3.1 # 1.54999995
+ samples 1
 }
 
 polymesh
@@ -20291,7 +20467,7 @@ polymesh
  0 0.0833000019 0 0
  0 0 0.0833000019 0
  0.533186674 3.50379801 0 1
- shader "MAlum_bright"
+ shader "MAlum_bright_util"
  opaque on
  declare Pref_matrix constant MATRIX
  Pref_matrix 
@@ -20299,6 +20475,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MAlum_bright_light21
+ mesh MEluminaire_un0225
+ color 1 1 1
+ intensity 3.1 # 1.54999995
+ samples 1
 }
 
 polymesh
@@ -20316,7 +20501,7 @@ polymesh
  0 0.0833000019 0 0
  0 0 0.0833000019 0
  2.97061133 2.28508568 0 1
- shader "MAlum_bright"
+ shader "MAlum_bright_util"
  opaque on
  declare Pref_matrix constant MATRIX
  Pref_matrix 
@@ -20324,6 +20509,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MAlum_bright_light22
+ mesh MEluminaire_un0226
+ color 1 1 1
+ intensity 3.1 # 1.54999995
+ samples 1
 }
 
 polymesh
@@ -20341,7 +20535,7 @@ polymesh
  0 0.0833000019 0 0
  0 0 0.0833000019 0
  1.751899 2.28508568 0 1
- shader "MAlum_bright"
+ shader "MAlum_bright_util"
  opaque on
  declare Pref_matrix constant MATRIX
  Pref_matrix 
@@ -20349,6 +20543,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MAlum_bright_light23
+ mesh MEluminaire_un0227
+ color 1 1 1
+ intensity 3.1 # 1.54999995
+ samples 1
 }
 
 polymesh
@@ -20366,7 +20569,7 @@ polymesh
  0 0.0833000019 0 0
  0 0 0.0833000019 0
  0.533186674 2.28508568 0 1
- shader "MAlum_bright"
+ shader "MAlum_bright_util"
  opaque on
  declare Pref_matrix constant MATRIX
  Pref_matrix 
@@ -20374,6 +20577,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MAlum_bright_light24
+ mesh MEluminaire_un0228
+ color 1 1 1
+ intensity 3.1 # 1.54999995
+ samples 1
 }
 
 polymesh
