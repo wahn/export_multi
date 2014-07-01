@@ -7,7 +7,7 @@
 options
 {
  name options
- AA_samples 5
+ AA_samples 8
  outputs 7 1 STRING
 
   "RGBA RGBA filter driver" 
@@ -24,12 +24,15 @@ options
  camera "CAdoor2y_cam"
  shader_searchpath "/usr/people/jan/Graphics/Rendering/Arnold/shaders/current"
  texture_gamma 2.20000005
- GI_diffuse_depth 3
- GI_glossy_depth 1
+ GI_diffuse_depth 1
+ GI_glossy_depth 0
  GI_reflection_depth 6
  GI_refraction_depth 6
  GI_total_depth 12
- GI_diffuse_samples 3
+ GI_diffuse_samples 2
+ GI_single_scatter_samples 5
+ GI_glossy_samples 2
+ GI_refraction_samples 2
 }
 
 persp_camera
@@ -7120,6 +7123,16 @@ polymesh
  2.93370008 0 0 1
 }
 
+rad_woodpat
+{
+ name MAspeaker_zwood_pat
+ Kd_color 0.289999992 0.150000006 0.129999995
+ magnitude 0.6
+ direction "zgrain"
+ scale 0.1524 0.1524 0.1524 # 0.5 * 0.3048 (feet to meters)
+ rotation 0 0 0
+}
+
 standard
 {
  name MAspeaker_zwood_mat
@@ -7184,6 +7197,16 @@ polymesh
  0 4 0 0
  0 0 0.75 0
  0.228599995 0 2.93370008 1
+}
+
+rad_woodpat
+{
+ name MAspeaker_xwood_pat
+ Kd_color 0.289999992 0.150000006 0.129999995
+ magnitude 0.6
+ direction "xgrain"
+ scale 0.1524 0.1524 0.1524 # 0.5 * 0.3048 (feet to meters)
+ rotation 0 0 0
 }
 
 standard
@@ -8484,11 +8507,21 @@ polymesh
  opaque on
 }
 
+rad_woodpat
+{
+ name MAshaft_wood_pat
+ Kd_color 0.639999986 0.395000011 0.127000004
+ magnitude 0.3
+ direction "zgrain"
+ scale 0.03048 0.03048 0.03048 # 0.1 * 0.3048 (feet to meters)
+ rotation 0 0 0
+}
+
 standard
 {
  name MAshaft_wood_mat
  Kd 1
- Kd_color 0.639999986 0.395000011 0.127000004
+ Kd_color MAshaft_wood_pat # 0.639999986 0.395000011 0.127000004
  Ks 0
  Ks_color 1 1 1
 }
@@ -10127,11 +10160,21 @@ polymesh
  opaque on
 }
 
+rad_woodpat
+{
+ name MAxwood_base_pat
+ Kd_color 0.692300022 0.426299989 0.174999997
+ magnitude 0.3
+ direction "xgrain"
+ scale 0.006096 0.006096 0.006096 # 0.02 * 0.3048 (feet to meters)
+ rotation 0 0 0
+}
+
 standard
 {
  name MAxwood_base_mat
  Kd 0.949999988
- Kd_color 0.692300022 0.426299989 0.174999997
+ Kd_color MAxwood_base_pat # 0.692300022 0.426299989 0.174999997
  Ks 0.0500000007
  Ks_color 1 1 1
  specular_roughness 0.200000003
@@ -12269,11 +12312,21 @@ polymesh
  opaque on
 }
 
+rad_woodpat
+{
+ name MAywood_base_pat
+ Kd_color 0.692300022 0.426299989 0.174999997
+ magnitude 0.3
+ direction "ygrain"
+ scale 0.006096 0.006096 0.006096 # 0.02 * 0.3048 (feet to meters)
+ rotation 0 0 0
+}
+
 standard
 {
  name MAywood_base_mat
  Kd 0.949999988
- Kd_color 0.692300022 0.426299989 0.174999997
+ Kd_color MAywood_base_pat # 0.692300022 0.426299989 0.174999997
  Ks 0.0500000007
  Ks_color 1 1 1
  specular_roughness 0.200000003
@@ -13722,7 +13775,7 @@ standard
  Kd_color 1 1 1
  Ks 0
  Ks_color 1 1 1
- emission 1.54999995
+ emission 3.1 # 1.54999995
  emission_color 1 1 1
  opacity 1 1 1
 }
@@ -45257,11 +45310,21 @@ polymesh
  5.42543983 0.586907983 7.5362215 1
 }
 
+rad_woodpat
+{
+ name MAarm_pat
+ Kd_color 0.479999989 0.236000001 0.120999999
+ magnitude 0.8
+ direction "ygrain"
+ scale 0.09144 0.09144 0.09144 # 0.3 * 0.3048 (feet to meters)
+ rotation -4.43 0 0
+}
+
 standard
 {
  name MAarm_mat
  Kd 0.949999988
- Kd_color 0.479999989 0.236000001 0.120999999
+ Kd_color MAarm_pat # 0.479999989 0.236000001 0.120999999
  Ks 0.0500000007
  Ks_color 1 1 1
  specular_roughness 0.0199999996
@@ -77306,11 +77369,21 @@ polymesh
  -0.0381000005 0 4.03859997 1
 }
 
+rad_woodpat
+{
+ name MAchair_ywood_pat
+ Kd_color .5 .23 .14
+ magnitude 0.6
+ direction "ygrain"
+ scale 0.06096 0.06096 0.06096 # 0.2 * 0.3048 (feet to meters)
+ rotation 0 0 0
+}
+
 standard
 {
  name MAchair_ywood_mat
  Kd 0.980000019
- Kd_color 0.5 0.230000004 0.140000001
+ Kd_color MAchair_ywood_pat # 0.5 0.230000004 0.140000001
  Ks 0.0199999996
  Ks_color 1 1 1
  specular_roughness 0.150000006
@@ -77436,11 +77509,19 @@ polymesh
  6.02372837 5.2578001 9.34256554 1
 }
 
+rad_upholstery
+{
+ name MAcloth1_pat
+ Kd_color 0.980000019 0.182999998 0.165000007
+ scale 0.0381 0.0381 0.0381 # 0.125 * 0.3048 (feet to meters)
+ rotation 0 -45 0
+}
+
 standard
 {
  name MAcloth1_mat
  Kd 1
- Kd_color 0.980000019 0.182999998 0.165000007
+ Kd_color MAcloth1_pat # 0.980000019 0.182999998 0.165000007
  Ks 0
  Ks_color 1 1 1
 }
@@ -77629,11 +77710,21 @@ polymesh
  0 6.01980019 0 1
 }
 
+rad_woodpat
+{
+ name MAchair_xwood_pat
+ Kd_color .5 .23 .14
+ magnitude 0.6
+ direction "xgrain"
+ scale 0.06096 0.06096 0.06096 # 0.2 * 0.3048 (feet to meters)
+ rotation 0 0 0
+}
+
 standard
 {
  name MAchair_xwood_mat
  Kd 0.980000019
- Kd_color 0.5 0.230000004 0.140000001
+ Kd_color MAchair_xwood_pat # 0.5 0.230000004 0.140000001
  Ks 0.00200000009
  Ks_color 1 1 1
  specular_roughness 0.150000006
@@ -77826,11 +77917,21 @@ polymesh
  0 5.48640013 0 1
 }
 
+rad_woodpat
+{
+ name MAchair_zwood_pat
+ Kd_color .5 .23 .14
+ magnitude 0.6
+ direction "zgrain"
+ scale 0.06096 0.06096 0.06096 # 0.2 * 0.3048 (feet to meters)
+ rotation 0 0 0
+}
+
 standard
 {
  name MAchair_zwood_mat
  Kd 0.980000019
- Kd_color 0.5 0.230000004 0.140000001
+ Kd_color MAchair_zwood_pat # 0.5 0.230000004 0.140000001
  Ks 0.00200000009
  Ks_color 1 1 1
  specular_roughness 0.150000006
@@ -85774,11 +85875,21 @@ polymesh
  0 0 8.53439999 1
 }
 
+rad_woodpat
+{
+ name MAtable_pat
+ Kd_color 0.289999992 0.150000006 0.129999995
+ magnitude 0.6
+ direction "xgrain"
+ scale 0.12192 0.12192 0.12192 # 0.4 * 0.3048 (feet to meters)
+ rotation 0 0 0
+}
+
 standard
 {
  name MAtable_mat
  Kd 0.995000005
- Kd_color 0.289999992 0.150000006 0.129999995
+ Kd_color MAtable_pat # 0.289999992 0.150000006 0.129999995
  Ks 0.00499999989
  Ks_color 1 1 1
  specular_roughness 0.100000001
@@ -88415,11 +88526,21 @@ polymesh
  0 0 12.2681999 1
 }
 
+rad_woodpat
+{
+ name MApodium_zwood_pat
+ Kd_color 0.289999992 0.150000006 0.129999995
+ magnitude 0.6
+ direction "zgrain"
+ scale 0.12192 0.12192 0.12192 # 0.4 * 0.3048 (feet to meters)
+ rotation 0 0 0
+}
+
 standard
 {
  name MApodium_zwood_mat
  Kd 0.980000019
- Kd_color 0.289999992 0.150000006 0.129999995
+ Kd_color MApodium_zwood_pat # 0.289999992 0.150000006 0.129999995
  Ks 0.0199999996
  Ks_color 1 1 1
  specular_roughness 0.150000006
@@ -88506,6 +88627,16 @@ polymesh
  0 4.75 0 0
  0 0 0.75 0
  0 3.42900014 14.0970001 1
+}
+
+rad_woodpat
+{
+ name MApodium_xwood_pat
+ Kd_color 0.289999992 0.150000006 0.129999995
+ magnitude 0.6
+ direction "xgrain"
+ scale 0.12192 0.12192 0.12192 # 0.4 * 0.3048 (feet to meters)
+ rotation 0 0 0
 }
 
 standard
