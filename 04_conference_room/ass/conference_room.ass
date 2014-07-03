@@ -20661,6 +20661,7 @@ rad_speck
  name MAcurtain_pat
  Kd_color 0.600000024 0.600000024 0.600000024
  brightness 0.2
+ use_Pref_matrix false
  scale 0.006096 0.006096 0.006096 # 0.02 * 0.3048 (feet to meters)
  rotation 0 0 0
 }
