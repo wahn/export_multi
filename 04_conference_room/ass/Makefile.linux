@@ -2,7 +2,7 @@
 # make clobber
 # make -j 5
 
-ARNOLD = /usr/local/Arnold
+ARNOLD = /mill3d/server/apps/ARNOLD/linux-x86-64/Arnold-4.2.0.5
 KICK = $(ARNOLD)/bin/kick
 
 all: \
