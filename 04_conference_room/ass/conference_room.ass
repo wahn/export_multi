@@ -15770,11 +15770,28 @@ polymesh
  0 0 0 1
 }
 
+rad_dirt
+{
+ name MAwhite_pat1
+ Kd_color 0.515999973 0.449999988 0.340000004
+ dirtiness 0.4
+ scale 0.0009144 0.0009144 0.0009144 # 0.003 * 0.3048 (feet to meters)
+ rotation 0 0 0
+}
+
+rad_bwave
+{
+ name MAwhite_pat2
+ Kd_color MAwhite_pat1
+ scale 0.006096 0.006096 0.006096 # 0.02 * 0.3048 (feet to meters)
+ rotation 90 0 0
+}
+
 standard
 {
  name MAwhite_mat
  Kd 1
- Kd_color 0.515999973 0.449999988 0.340000004
+ Kd_color MAwhite_pat2 # 0.515999973 0.449999988 0.340000004
  Ks 0
  Ks_color 1 1 1
 }
