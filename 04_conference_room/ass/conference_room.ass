@@ -13939,7 +13939,7 @@ utility
  name MAalpha_util
  color_mode 0 # color
  shade_mode 2 # flat
- color 10 0.5 0.25 # 1 0.05 0.025
+ color 15 0.75 0.375 # 1 0.05 0.025
 }
 
 mesh_light
@@ -13947,8 +13947,8 @@ mesh_light
  name MAalpha_light1
  mesh MET
  color 1 0.05 0.025
- intensity 0.1 # 1
- samples 3
+ intensity 0.005 # 1
+ samples 15
 }
 
 polymesh
@@ -13984,8 +13984,8 @@ mesh_light
  name MAalpha_light2
  mesh MEI
  color 1 0.05 0.025
- intensity 0.1 # 1
- samples 3
+ intensity 0.005 # 1
+ samples 15
 }
 
 polymesh
@@ -14035,8 +14035,8 @@ mesh_light
  name MAalpha_light3
  mesh MEX
  color 1 0.05 0.025
- intensity 0.1 # 1
- samples 3
+ intensity 0.005 # 1
+ samples 15
 }
 
 polymesh
@@ -14080,8 +14080,8 @@ mesh_light
  name MAalpha_light4
  mesh MEE
  color 1 0.05 0.025
- intensity 0.1 # 1
- samples 3
+ intensity 0.005 # 1
+ samples 15
 }
 
 polymesh
@@ -14305,8 +14305,8 @@ mesh_light
  name MAalpha_light5
  mesh MET_un0061
  color 1 0.05 0.025
- intensity 0.1 # 1
- samples 3
+ intensity 0.005 # 1
+ samples 15
 }
 
 polymesh
@@ -14342,8 +14342,8 @@ mesh_light
  name MAalpha_light6
  mesh MEI_un0062
  color 1 0.05 0.025
- intensity 0.1 # 1
- samples 3
+ intensity 0.005 # 1
+ samples 15
 }
 
 polymesh
@@ -14393,8 +14393,8 @@ mesh_light
  name MAalpha_light7
  mesh MEX_un0063
  color 1 0.05 0.025
- intensity 0.1 # 1
- samples 3
+ intensity 0.005 # 1
+ samples 15
 }
 
 polymesh
@@ -14438,8 +14438,8 @@ mesh_light
  name MAalpha_light8
  mesh MEE_un0064
  color 1 0.05 0.025
- intensity 0.1 # 1
- samples 3
+ intensity 0.005 # 1
+ samples 15
 }
 
 polymesh
