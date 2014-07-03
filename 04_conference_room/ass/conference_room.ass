@@ -16102,11 +16102,21 @@ polymesh
  opaque on
 }
 
+rad_woodpat
+{
+ name MAzwood_base_pat
+ Kd_color 0.692300022 0.426299989 0.174999997
+ magnitude 0.3
+ direction "zgrain"
+ scale 0.006096 0.006096 0.006096 # 0.02 * 0.3048 (feet to meters)
+ rotation 0 0 0
+}
+
 standard
 {
  name MAzwood_base_mat
  Kd 0.949999988
- Kd_color 0.692300022 0.426299989 0.174999997
+ Kd_color MAzwood_base_pat # 0.692300022 0.426299989 0.174999997
  Ks 0.0500000007
  Ks_color 1 1 1
  specular_roughness 0.200000003
