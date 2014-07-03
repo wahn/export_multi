@@ -19245,11 +19245,20 @@ polymesh
  opaque on
 }
 
+rad_speck
+{
+ name MAceiling_pat
+ Kd_color 0.899999976 0.899999976 0.899999976
+ brightness 0.1
+ scale 0.01524 0.01524 0.01524 # 0.05 * 0.3048 (feet to meters)
+ rotation 0 0 0
+}
+
 standard
 {
  name MAceiling_mat
  Kd 1
- Kd_color 0.899999976 0.899999976 0.899999976
+ Kd_color MAceiling_pat # 0.899999976 0.899999976 0.899999976
  Ks 0
  Ks_color 1 1 1
 }
