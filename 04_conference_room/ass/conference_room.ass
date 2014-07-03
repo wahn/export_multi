@@ -13924,7 +13924,7 @@ polymesh
  0 -8.6508658e-09 0.197908744 0
  0 -0.197908744 -8.6508658e-09 0
  8.30822945 6.63003778 2.27637196 1
- shader "MAalpha_mat"
+ shader "MAalpha_util"
  opaque on
  declare Pref_matrix constant MATRIX
  Pref_matrix 
@@ -13934,16 +13934,21 @@ polymesh
  0 0 0 1
 }
 
-standard
+utility
 {
- name MAalpha_mat
- Kd 0
- Kd_color 1 0.0500000007 0.0250000004
- Ks 0
- Ks_color 1 1 1
- emission 1
- emission_color 1 0.0500000007 0.0250000004
- opacity 1 1 1
+ name MAalpha_util
+ color_mode 0 # color
+ shade_mode 2 # flat
+ color 10 0.5 0.25 # 1 0.05 0.025
+}
+
+mesh_light
+{
+ name MAalpha_light1
+ mesh MET
+ color 1 0.05 0.025
+ intensity 0.1 # 1
+ samples 3
 }
 
 polymesh
@@ -13964,7 +13969,7 @@ polymesh
  0 -8.6508658e-09 0.197908744 0
  0 -0.197908744 -8.6508658e-09 0
  8.25108147 6.63003778 2.27637196 1
- shader "MAalpha_mat"
+ shader "MAalpha_util"
  opaque on
  declare Pref_matrix constant MATRIX
  Pref_matrix 
@@ -13972,6 +13977,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MAalpha_light2
+ mesh MEI
+ color 1 0.05 0.025
+ intensity 0.1 # 1
+ samples 3
 }
 
 polymesh
@@ -14006,7 +14020,7 @@ polymesh
  0 -8.6508658e-09 0.197908744 0
  0 -0.197908744 -8.6508658e-09 0
  8.18758392 6.63003778 2.27637196 1
- shader "MAalpha_mat"
+ shader "MAalpha_util"
  opaque on
  declare Pref_matrix constant MATRIX
  Pref_matrix 
@@ -14014,6 +14028,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MAalpha_light3
+ mesh MEX
+ color 1 0.05 0.025
+ intensity 0.1 # 1
+ samples 3
 }
 
 polymesh
@@ -14042,7 +14065,7 @@ polymesh
  0 -8.6508658e-09 0.197908744 0
  0 -0.197908744 -8.6508658e-09 0
  8.12408638 6.63003778 2.27637196 1
- shader "MAalpha_mat"
+ shader "MAalpha_util"
  opaque on
  declare Pref_matrix constant MATRIX
  Pref_matrix 
@@ -14050,6 +14073,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MAalpha_light4
+ mesh MEE
+ color 1 0.05 0.025
+ intensity 0.1 # 1
+ samples 3
 }
 
 polymesh
@@ -14258,7 +14290,7 @@ polymesh
  0 -8.6508658e-09 0.197908744 0
  0 -0.197908744 -8.6508658e-09 0
  1.47156525 6.63003778 2.27637196 1
- shader "MAalpha_mat"
+ shader "MAalpha_util"
  opaque on
  declare Pref_matrix constant MATRIX
  Pref_matrix 
@@ -14266,6 +14298,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MAalpha_light5
+ mesh MET_un0061
+ color 1 0.05 0.025
+ intensity 0.1 # 1
+ samples 3
 }
 
 polymesh
@@ -14286,7 +14327,7 @@ polymesh
  0 -8.6508658e-09 0.197908744 0
  0 -0.197908744 -8.6508658e-09 0
  1.41441762 6.63003778 2.27637196 1
- shader "MAalpha_mat"
+ shader "MAalpha_util"
  opaque on
  declare Pref_matrix constant MATRIX
  Pref_matrix 
@@ -14294,6 +14335,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MAalpha_light6
+ mesh MEI_un0062
+ color 1 0.05 0.025
+ intensity 0.1 # 1
+ samples 3
 }
 
 polymesh
@@ -14328,7 +14378,7 @@ polymesh
  0 -8.6508658e-09 0.197908744 0
  0 -0.197908744 -8.6508658e-09 0
  1.3509202 6.63003778 2.27637196 1
- shader "MAalpha_mat"
+ shader "MAalpha_util"
  opaque on
  declare Pref_matrix constant MATRIX
  Pref_matrix 
@@ -14336,6 +14386,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MAalpha_light7
+ mesh MEX_un0063
+ color 1 0.05 0.025
+ intensity 0.1 # 1
+ samples 3
 }
 
 polymesh
@@ -14364,7 +14423,7 @@ polymesh
  0 -8.6508658e-09 0.197908744 0
  0 -0.197908744 -8.6508658e-09 0
  1.28742254 6.63003778 2.27637196 1
- shader "MAalpha_mat"
+ shader "MAalpha_util"
  opaque on
  declare Pref_matrix constant MATRIX
  Pref_matrix 
@@ -14372,6 +14431,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MAalpha_light8
+ mesh MEE_un0064
+ color 1 0.05 0.025
+ intensity 0.1 # 1
+ samples 3
 }
 
 polymesh
