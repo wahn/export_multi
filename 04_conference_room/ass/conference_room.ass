@@ -19281,11 +19281,28 @@ polymesh
  opaque on
 }
 
+rad_dirt
+{
+ name MAfloor_pat1
+ Kd_color 0.180000007 0.0649999976 0.0579999983
+ dirtiness 0.15
+ scale 0.04572 0.04572 0.04572 # 0.15 * 0.3048 (feet to meters)
+ rotation 0 0 0
+}
+
+rad_bwave
+{
+ name MAfloor_pat2
+ Kd_color MAfloor_pat1
+ scale 0.006096 0.006096 0.006096 # 0.02 * 0.3048 (feet to meters)
+ rotation 0 0 0
+}
+
 standard
 {
  name MAfloor_mat
  Kd 1
- Kd_color 0.180000007 0.0649999976 0.0579999983
+ Kd_color MAfloor_pat2 # 0.180000007 0.0649999976 0.0579999983
  Ks 0
  Ks_color 1 1 1
 }
