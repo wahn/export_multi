@@ -19,6 +19,10 @@ options
   "indirect_specular RGB filter driver_indirect_specular"
  xres 1000
  yres 676
+ # region_min_x 256
+ # region_min_y 14
+ # region_max_x 468
+ # region_max_y 230
  bucket_size 64
  bucket_scanning "hilbert"
  camera "CAcurrent_cam"
@@ -13934,12 +13938,10 @@ polymesh
  0 0 0 1
 }
 
-utility
+ass_constant
 {
  name MAalpha_util
- color_mode 0 # color
- shade_mode 2 # flat
- color 15 0.75 0.375 # 1 0.05 0.025
+ Color 1 0.7 0.5 # 1 0.559 0.523 # 1 0.05 0.025
 }
 
 mesh_light
@@ -13947,8 +13949,8 @@ mesh_light
  name MAalpha_light1
  mesh MET
  color 1 0.05 0.025
- intensity 0.005 # 1
- samples 15
+ intensity 0.05 # 1
+ samples 2
 }
 
 polymesh
@@ -13984,8 +13986,8 @@ mesh_light
  name MAalpha_light2
  mesh MEI
  color 1 0.05 0.025
- intensity 0.005 # 1
- samples 15
+ intensity 0.05 # 1
+ samples 2
 }
 
 polymesh
@@ -14035,8 +14037,8 @@ mesh_light
  name MAalpha_light3
  mesh MEX
  color 1 0.05 0.025
- intensity 0.005 # 1
- samples 15
+ intensity 0.05 # 1
+ samples 2
 }
 
 polymesh
@@ -14080,8 +14082,8 @@ mesh_light
  name MAalpha_light4
  mesh MEE
  color 1 0.05 0.025
- intensity 0.005 # 1
- samples 15
+ intensity 0.05 # 1
+ samples 2
 }
 
 polymesh
@@ -14305,8 +14307,8 @@ mesh_light
  name MAalpha_light5
  mesh MET_un0061
  color 1 0.05 0.025
- intensity 0.005 # 1
- samples 15
+ intensity 0.05 # 1
+ samples 2
 }
 
 polymesh
@@ -14342,8 +14344,8 @@ mesh_light
  name MAalpha_light6
  mesh MEI_un0062
  color 1 0.05 0.025
- intensity 0.005 # 1
- samples 15
+ intensity 0.05 # 1
+ samples 2
 }
 
 polymesh
@@ -14393,8 +14395,8 @@ mesh_light
  name MAalpha_light7
  mesh MEX_un0063
  color 1 0.05 0.025
- intensity 0.005 # 1
- samples 15
+ intensity 0.05 # 1
+ samples 2
 }
 
 polymesh
@@ -14438,8 +14440,8 @@ mesh_light
  name MAalpha_light8
  mesh MEE_un0064
  color 1 0.05 0.025
- intensity 0.005 # 1
- samples 15
+ intensity 0.05 # 1
+ samples 2
 }
 
 polymesh
@@ -19910,12 +19912,10 @@ polymesh
  0 0 0 1
 }
 
-utility
+ass_constant
 {
  name MAlum_bright_util
- color_mode 0 # color
- shade_mode 2 # flat
- color 1 1 1
+ Color 1 1 1
 }
 
 mesh_light
