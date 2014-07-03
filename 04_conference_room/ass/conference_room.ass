@@ -20656,11 +20656,20 @@ polymesh
  0 0 0 1
 }
 
+rad_speck
+{
+ name MAcurtain_pat
+ Kd_color 0.600000024 0.600000024 0.600000024
+ brightness 0.2
+ scale 0.006096 0.006096 0.006096 # 0.02 * 0.3048 (feet to meters)
+ rotation 0 0 0
+}
+
 standard
 {
  name MAcurtain_mat
  Kd 1
- Kd_color 0.600000024 0.600000024 0.600000024
+ Kd_color MAcurtain_pat # 0.600000024 0.600000024 0.600000024
  Ks 0
  Ks_color 1 1 1
 }
