@@ -66,3 +66,77 @@
 ---
 >  intensity 0.8 # 130
 >  samples 3
+948a954,963
+> rad_woodpat
+> {
+>  name MAxwood_pat
+>  Kd_color 0.333 0.173 0.072 # from materials.rad (xwood)
+>  magnitude 0.5
+>  direction "xgrain"
+>  scale 0.00762 0.00762 0.00762 # 0.3 * 0.0254 (inch to meters)
+>  rotation 0 0 0
+> }
+> 
+953c968
+<  Kd_color 0.569999993 0.239999995 0.150000006
+---
+>  Kd_color MAxwood_pat # 0.569999993 0.239999995 0.150000006
+2059a2075,2084
+> rad_woodpat
+> {
+>  name MAzwood_pat
+>  Kd_color 0.333000004 0.172999993 0.0719999969
+>  magnitude 0.5
+>  direction "zgrain"
+>  scale 0.00762 0.00762 0.00762 # 0.3 * 0.0254 (inch to meters)
+>  rotation 0 0 0
+> }
+> 
+2064c2089
+<  Kd_color 0.333000004 0.172999993 0.0719999969
+---
+>  Kd_color MAzwood_pat # 0.333000004 0.172999993 0.0719999969
+2185a2211,2220
+> rad_woodpat
+> {
+>  name MAywood_pat
+>  Kd_color 0.333000004 0.172999993 0.0719999969
+>  magnitude 0.5
+>  direction "ygrain"
+>  scale 0.00762 0.00762 0.00762 # 0.3 * 0.0254 (inch to meters)
+>  rotation 0 0 0
+> }
+> 
+2190c2225
+<  Kd_color 0.333000004 0.172999993 0.0719999969
+---
+>  Kd_color MAywood_pat # 0.333000004 0.172999993 0.0719999969
+8691a8727,8736
+> rad_marble
+> {
+>  name MAmarble_pat
+>  Kd_color 0.600000024 0.600000024 0.600000024
+>  magnitude 0.35
+>  use_Pref_matrix false
+>  scale 0.1524 0.1524 0.1524 # 6 * 0.0254 (inch to meters)
+>  rotation 0 0 0
+> }
+> 
+8696c8741
+<  Kd_color 0.600000024 0.600000024 0.600000024
+---
+>  Kd_color MAmarble_pat # 0.600000024 0.600000024 0.600000024
+15275a15321,15329
+> rad_tile
+> {
+>  name MAblue_tile_pat
+>  Kd_color 0.344000012 0.51700002 0.532999992
+>  use_Pref_matrix false
+>  scale 0.127 0.127 0.127 # 5 * 0.0254 (inch to meters)
+>  rotation 0 0 45.0 # -rz 45
+> }
+> 
+15280c15334
+<  Kd_color 0.344000012 0.51700002 0.532999992
+---
+>  Kd_color MAblue_tile_pat # 0.344000012 0.51700002 0.532999992
