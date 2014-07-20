@@ -1,77 +1,78 @@
-10c10,11
+10c10,12
 <  AA_samples 5
 ---
 >  AA_samples 3
 >  AA_seed 1
-23,24c24,26
+>  AA_sample_clamp 0.8
+23,24c25,27
 <  bucket_scanning "hilbert"
 <  camera "CAcam_mir"
 ---
 >  # bucket_scanning "hilbert"
 >  bucket_scanning "bottom"
 >  camera "CAcam_sink"
-27,28c29,30
+27,28c30,31
 <  GI_diffuse_depth 3
 <  GI_glossy_depth 1
 ---
 >  GI_diffuse_depth 1 # 2
 >  GI_glossy_depth 0
-32c34,37
+32c35,38
 <  GI_diffuse_samples 3
 ---
 >  GI_diffuse_samples 9
 >  GI_single_scatter_samples 5
 >  GI_glossy_samples 2
 >  GI_refraction_samples 2
-168,169c173,174
+168,169c174,175
 <  intensity 10
 <  samples 1
 ---
 >  intensity 1 # 10
 >  samples 4
-203,204c208,209
+203,204c209,210
 <  intensity 130
 <  samples 1
 ---
 >  intensity 0.8 # 130
 >  samples 3
-231,232c236,237
+231,232c237,238
 <  intensity 10
 <  samples 1
 ---
 >  intensity 1 # 10
 >  samples 4
-259,260c264,265
+259,260c265,266
 <  intensity 130
 <  samples 1
 ---
 >  intensity 0.8 # 130
 >  samples 3
-287,288c292,293
+287,288c293,294
 <  intensity 10
 <  samples 1
 ---
 >  intensity 1 # 10
 >  samples 4
-315,316c320,321
+315,316c321,322
 <  intensity 130
 <  samples 1
 ---
 >  intensity 0.8 # 130
 >  samples 3
-343,344c348,349
+343,344c349,350
 <  intensity 10
 <  samples 1
 ---
 >  intensity 1 # 10
 >  samples 4
-371,372c376,377
+371,372c377,378
 <  intensity 130
 <  samples 1
 ---
 >  intensity 0.8 # 130
 >  samples 3
-948a954,963
+948a955,964
 > rad_woodpat
 > {
 >  name MAxwood_pat
@@ -82,11 +83,11 @@
 >  rotation 0 0 0
 > }
 > 
-953c968
+953c969
 <  Kd_color 0.569999993 0.239999995 0.150000006
 ---
 >  Kd_color MAxwood_pat # 0.569999993 0.239999995 0.150000006
-2059a2075,2084
+2059a2076,2085
 > rad_woodpat
 > {
 >  name MAzwood_pat
@@ -97,11 +98,11 @@
 >  rotation 0 0 0
 > }
 > 
-2064c2089
+2064c2090
 <  Kd_color 0.333000004 0.172999993 0.0719999969
 ---
 >  Kd_color MAzwood_pat # 0.333000004 0.172999993 0.0719999969
-2185a2211,2220
+2185a2212,2221
 > rad_woodpat
 > {
 >  name MAywood_pat
@@ -112,11 +113,11 @@
 >  rotation 0 0 0
 > }
 > 
-2190c2225
+2190c2226
 <  Kd_color 0.333000004 0.172999993 0.0719999969
 ---
 >  Kd_color MAywood_pat # 0.333000004 0.172999993 0.0719999969
-8691a8727,8736
+8691a8728,8737
 > rad_marble
 > {
 >  name MAmarble_pat
@@ -127,11 +128,11 @@
 >  rotation 0 0 0
 > }
 > 
-8696c8741
+8696c8742
 <  Kd_color 0.600000024 0.600000024 0.600000024
 ---
 >  Kd_color MAmarble_pat # 0.600000024 0.600000024 0.600000024
-15275a15321,15329
+15275a15322,15330
 > rad_tile
 > {
 >  name MAblue_tile_pat
@@ -141,7 +142,7 @@
 >  rotation 0 0 45.0 # -rz 45
 > }
 > 
-15280c15334
+15280c15335
 <  Kd_color 0.344000012 0.51700002 0.532999992
 ---
 >  Kd_color MAblue_tile_pat # 0.344000012 0.51700002 0.532999992
