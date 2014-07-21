@@ -132,7 +132,7 @@ bathroom_stall_seed_4.exr: bathroom_stall.ass
 
 # bathroom_van.exr
 
-bathroom_van.exr.ass: bathroom_van.patch
+bathroom_van.ass: bathroom_van.patch
 	patch bathroom.ass -i bathroom_van.patch -o bathroom_van.ass
 
 bathroom_van.exr: \
