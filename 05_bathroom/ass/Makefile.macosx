@@ -8,7 +8,9 @@ KICK = $(ARNOLD)/bin/kick
 all: \
 bathroom_mir.exr \
 bathroom_shwin.exr \
-bathroom_sink.exr
+bathroom_sink.exr \
+bathroom_stall.exr \
+bathroom_van.exr
 
 clean:
 	-rm -f *~ bathroom_*.ass 
@@ -100,5 +102,59 @@ bathroom_sink_seed_4.exr: bathroom_sink.ass
 	$(KICK) -dp -dw -i bathroom_sink.ass -o bathroom_sink_seed_4.exr \
 -set options.AA_seed 4 -r 1384 2048 -v 6
 
-# bathroom_stall.exr
+# bathroom_stall
+
+bathroom_stall.ass: bathroom_stall.patch
+	patch bathroom.ass -i bathroom_stall.patch -o bathroom_stall.ass
+
+bathroom_stall.exr: \
+bathroom_stall_seed_1.exr \
+bathroom_stall_seed_2.exr \
+bathroom_stall_seed_3.exr \
+bathroom_stall_seed_4.exr
+	echo "TODO: combine seed images into a single one"
+
+bathroom_stall_seed_1.exr: bathroom_stall.ass
+	$(KICK) -dp -dw -i bathroom_stall.ass -o bathroom_stall_seed_1.exr \
+-set options.AA_seed 1 -r 1384 2048 -v 6
+
+bathroom_stall_seed_2.exr: bathroom_stall.ass
+	$(KICK) -dp -dw -i bathroom_stall.ass -o bathroom_stall_seed_2.exr \
+-set options.AA_seed 2 -r 1384 2048 -v 6
+
+bathroom_stall_seed_3.exr: bathroom_stall.ass
+	$(KICK) -dp -dw -i bathroom_stall.ass -o bathroom_stall_seed_3.exr \
+-set options.AA_seed 3 -r 1384 2048 -v 6
+
+bathroom_stall_seed_4.exr: bathroom_stall.ass
+	$(KICK) -dp -dw -i bathroom_stall.ass -o bathroom_stall_seed_4.exr \
+-set options.AA_seed 4 -r 1384 2048 -v 6
+
 # bathroom_van.exr
+
+bathroom_van.exr.ass: bathroom_van.patch
+	patch bathroom.ass -i bathroom_van.patch -o bathroom_van.ass
+
+bathroom_van.exr: \
+bathroom_van_seed_1.exr \
+bathroom_van_seed_2.exr \
+bathroom_van_seed_3.exr \
+bathroom_van_seed_4.exr
+	echo "TODO: combine seed images into a single one"
+
+bathroom_van_seed_1.exr: bathroom_van.ass
+	$(KICK) -dp -dw -i bathroom_van.ass -o bathroom_van_seed_1.exr \
+-set options.AA_seed 1 -r 1384 2048 -v 6
+
+bathroom_van_seed_2.exr: bathroom_van.ass
+	$(KICK) -dp -dw -i bathroom_van.ass -o bathroom_van_seed_2.exr \
+-set options.AA_seed 2 -r 1384 2048 -v 6
+
+bathroom_van_seed_3.exr: bathroom_van.ass
+	$(KICK) -dp -dw -i bathroom_van.ass -o bathroom_van_seed_3.exr \
+-set options.AA_seed 3 -r 1384 2048 -v 6
+
+bathroom_van_seed_4.exr: bathroom_van.ass
+	$(KICK) -dp -dw -i bathroom_van.ass -o bathroom_van_seed_4.exr \
+-set options.AA_seed 4 -r 1384 2048 -v 6
+
