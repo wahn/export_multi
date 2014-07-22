@@ -12,7 +12,7 @@
 <  GI_diffuse_depth 3
 <  GI_glossy_depth 1
 ---
->  GI_diffuse_depth 0
+>  GI_diffuse_depth 1
 >  GI_glossy_depth 0
 32a35,37
 >  GI_single_scatter_samples 5
