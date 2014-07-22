@@ -4,90 +4,104 @@
 >  AA_samples 3
 >  AA_seed 1
 >  AA_sample_clamp 0.8
-23,24c25,27
-<  bucket_scanning "hilbert"
-<  camera "CAcam_mir"
+24c26
+<  camera "CAcam_stall"
 ---
->  # bucket_scanning "hilbert"
->  bucket_scanning "bottom"
 >  camera "CAcam_sink"
-27,28c30,31
+27,28c29,30
 <  GI_diffuse_depth 3
 <  GI_glossy_depth 1
 ---
->  GI_diffuse_depth 1 # 2
+>  GI_diffuse_depth 0
 >  GI_glossy_depth 0
-32c35,38
-<  GI_diffuse_samples 3
----
->  GI_diffuse_samples 9
+32a35,37
 >  GI_single_scatter_samples 5
 >  GI_glossy_samples 2
 >  GI_refraction_samples 2
-168,169c174,175
+127a133
+>  name CAcam_mir
+150c156
+< utility
+---
+> ass_constant
+153,154c159
+<  shade_mode "flat"
+<  color 10 10 10
+---
+>  Color 1 1 1 # 10 10 10
+167,168c172,173
 <  intensity 10
 <  samples 1
 ---
 >  intensity 1 # 10
 >  samples 4
-203,204c209,210
+185c190
+< utility
+---
+> ass_constant
+188,189c193
+<  shade_mode "flat"
+<  color 130 130 130
+---
+>  Color 1 1 1 # 130 130 130
+202,203c206,207
 <  intensity 130
 <  samples 1
 ---
 >  intensity 0.8 # 130
 >  samples 3
-231,232c237,238
+230,231c234,235
 <  intensity 10
 <  samples 1
 ---
 >  intensity 1 # 10
 >  samples 4
-259,260c265,266
+258,259c262,263
 <  intensity 130
 <  samples 1
 ---
 >  intensity 0.8 # 130
 >  samples 3
-287,288c293,294
+286,287c290,291
 <  intensity 10
 <  samples 1
 ---
 >  intensity 1 # 10
 >  samples 4
-315,316c321,322
+314,315c318,319
 <  intensity 130
 <  samples 1
 ---
 >  intensity 0.8 # 130
 >  samples 3
-343,344c349,350
+342,343c346,347
 <  intensity 10
 <  samples 1
 ---
 >  intensity 1 # 10
 >  samples 4
-371,372c377,378
+370,371c374,375
 <  intensity 130
 <  samples 1
 ---
 >  intensity 0.8 # 130
 >  samples 3
-948a955,964
+959a964,973
 > rad_woodpat
 > {
 >  name MAxwood_pat
->  Kd_color 0.333 0.173 0.072 # from materials.rad (xwood)
+>  Kd_color 0.333000004 0.172999993 0.0719999969
 >  magnitude 0.5
 >  direction "xgrain"
 >  scale 0.00762 0.00762 0.00762 # 0.3 * 0.0254 (inch to meters)
 >  rotation 0 0 0
 > }
 > 
-953c969
-<  Kd_color 0.569999993 0.239999995 0.150000006
+964c978
+<  Kd_color 0.333000004 0.172999993 0.0719999969
 ---
->  Kd_color MAxwood_pat # 0.569999993 0.239999995 0.150000006
-2059a2076,2085
+>  Kd_color MAxwood_pat # 0.333000004 0.172999993 0.0719999969
+2122a2137,2146
 > rad_woodpat
 > {
 >  name MAzwood_pat
@@ -98,11 +112,11 @@
 >  rotation 0 0 0
 > }
 > 
-2064c2090
+2127c2151
 <  Kd_color 0.333000004 0.172999993 0.0719999969
 ---
 >  Kd_color MAzwood_pat # 0.333000004 0.172999993 0.0719999969
-2185a2212,2221
+2259a2284,2293
 > rad_woodpat
 > {
 >  name MAywood_pat
@@ -113,11 +127,11 @@
 >  rotation 0 0 0
 > }
 > 
-2190c2226
+2264c2298
 <  Kd_color 0.333000004 0.172999993 0.0719999969
 ---
 >  Kd_color MAywood_pat # 0.333000004 0.172999993 0.0719999969
-8691a8728,8737
+8931a8966,8975
 > rad_marble
 > {
 >  name MAmarble_pat
@@ -128,11 +142,11 @@
 >  rotation 0 0 0
 > }
 > 
-8696c8742
+8936c8980
 <  Kd_color 0.600000024 0.600000024 0.600000024
 ---
 >  Kd_color MAmarble_pat # 0.600000024 0.600000024 0.600000024
-15275a15322,15330
+15683a15728,15736
 > rad_tile
 > {
 >  name MAblue_tile_pat
@@ -142,7 +156,24 @@
 >  rotation 0 0 45.0 # -rz 45
 > }
 > 
-15280c15335
+15688c15741
 <  Kd_color 0.344000012 0.51700002 0.532999992
 ---
 >  Kd_color MAblue_tile_pat # 0.344000012 0.51700002 0.532999992
+58759a58813,58816
+>  subdiv_type "catclark"
+>  subdiv_iterations 4
+>  disp_map "MAshdoor_disp"
+>  disp_padding 0.0125
+58763a58821,58831
+> rad_noiseABC
+> {
+>  name MAshdoor_disp
+>  magnitudeA 0.00127 # 0.05 * 0.0254 (inch to meters)
+>  magnitudeB 0.00127 # 0.05 * 0.0254 (inch to meters)
+>  magnitudeC 0.00127 # 0.05 * 0.0254 (inch to meters)
+>  use_Pref_matrix false
+>  scale 0.127 0.127 0.127 # 5 * 0.0254 (inch to meters)
+>  rotation 0 0 0
+> }
+> 
