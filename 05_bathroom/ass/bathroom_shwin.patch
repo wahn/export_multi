@@ -86,52 +86,55 @@
 ---
 >  intensity 0.8 # 130
 >  samples 3
-959a964,973
+959a964,974
 > rad_woodpat
 > {
 >  name MAxwood_pat
 >  Kd_color 0.333000004 0.172999993 0.0719999969
 >  magnitude 0.5
 >  direction "xgrain"
+>  use_Pref_matrix false
 >  scale 0.00762 0.00762 0.00762 # 0.3 * 0.0254 (inch to meters)
 >  rotation 0 0 0
 > }
 > 
-964c978
+964c979
 <  Kd_color 0.333000004 0.172999993 0.0719999969
 ---
 >  Kd_color MAxwood_pat # 0.333000004 0.172999993 0.0719999969
-2122a2137,2146
+2122a2138,2148
 > rad_woodpat
 > {
 >  name MAzwood_pat
 >  Kd_color 0.333000004 0.172999993 0.0719999969
 >  magnitude 0.5
 >  direction "zgrain"
+>  use_Pref_matrix false
 >  scale 0.00762 0.00762 0.00762 # 0.3 * 0.0254 (inch to meters)
 >  rotation 0 0 0
 > }
 > 
-2127c2151
+2127c2153
 <  Kd_color 0.333000004 0.172999993 0.0719999969
 ---
 >  Kd_color MAzwood_pat # 0.333000004 0.172999993 0.0719999969
-2259a2284,2293
+2259a2286,2296
 > rad_woodpat
 > {
 >  name MAywood_pat
 >  Kd_color 0.333000004 0.172999993 0.0719999969
 >  magnitude 0.5
 >  direction "ygrain"
+>  use_Pref_matrix false
 >  scale 0.00762 0.00762 0.00762 # 0.3 * 0.0254 (inch to meters)
 >  rotation 0 0 0
 > }
 > 
-2264c2298
+2264c2301
 <  Kd_color 0.333000004 0.172999993 0.0719999969
 ---
 >  Kd_color MAywood_pat # 0.333000004 0.172999993 0.0719999969
-8931a8966,8975
+8931a8969,8978
 > rad_marble
 > {
 >  name MAmarble_pat
@@ -142,11 +145,11 @@
 >  rotation 0 0 0
 > }
 > 
-8936c8980
+8936c8983
 <  Kd_color 0.600000024 0.600000024 0.600000024
 ---
 >  Kd_color MAmarble_pat # 0.600000024 0.600000024 0.600000024
-15683a15728,15736
+15683a15731,15739
 > rad_tile
 > {
 >  name MAblue_tile_pat
@@ -156,16 +159,16 @@
 >  rotation 0 0 45.0 # -rz 45
 > }
 > 
-15688c15741
+15688c15744
 <  Kd_color 0.344000012 0.51700002 0.532999992
 ---
 >  Kd_color MAblue_tile_pat # 0.344000012 0.51700002 0.532999992
-58759a58813,58816
+58759a58816,58819
 >  subdiv_type "catclark"
 >  subdiv_iterations 4
 >  disp_map "MAshdoor_disp"
 >  disp_padding 0.0125
-58763a58821,58831
+58763a58824,58834
 > rad_noiseABC
 > {
 >  name MAshdoor_disp
