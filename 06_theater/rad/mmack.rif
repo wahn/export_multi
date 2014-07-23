@@ -1,0 +1,43 @@
+#
+# RIF File for Candlestick Point SRA Theatre (never built)
+#
+QUALITY=MEDIUM
+RESOLUTION=2496 1376 0 
+REPORT= 10 bright.err
+INDIRECT= 1
+AMBFILE=bright.amb
+render= -ps 4 -dj .70
+render= -av .006 .006 .006 -aa .1 -ad 512 -as 256 -ar 64
+render= -ai LTGREY -ai CATWALK -ai REDPLY -ai CONCBLK -ai SPLITFAC
+
+##ALL Scenes
+scene= materials.ray scene.ray railing.ray grate.ray
+
+##BRIGHT Lights
+scene= lhouse.ray libooth.ray lhstage.ray lubalcony.ray
+scene= lubooth.ray lwbalcony.ray lwubalcony.ray lstep.ray
+scene= HMFA1400.ray BO-75_none step_light wall_light
+EXP = 13.8
+
+##DIM Lights
+#scene= libooth.ray lstage.ray lhstage.ray lstep.ray lubalcony.ray
+#scene= lubooth.ray lwbalcony.ray lwubalcony.ray
+#scene= HMFA1400.ray BO-75_none spot_light step_light wall_light
+
+view= c1 -vf views/entry_c.vp  
+view= c2 -vf views/right_c.vp  
+view= c3 -vf views/row3_c.vp   
+view= c4 -vf views/stage_c.vp  
+view= c5 -vf views/stair_c.vp
+
+#view= v1 -vf views/corner.vp
+#view= v2 -vf views/entry.vp
+#view= v3 -vf views/leftbalc.vp
+#view= v4 -vf views/middle.vp
+#view= v5 -vf views/rightbalc.vp
+#view= v6 -vf views/stair.vf
+#view= v7 -vf views/row3.vp
+#view= v8 -vf views/stage.vp
+#view= p1 -vf views/plan.vp
+#view= p2 -vf views/ceil.vp
+#

@@ -1,0 +1,84 @@
+
+   Candlestick Point State Recreation Area (SRA)
+             Community Theater (unbuilt)
+
+Copyright 1989, University of California Regents.
+
+
+Design: Mark Mack Architects
+3D Model: Charles Ehrlich and Greg Ward
+Renderings: Charles Ehrlich and Greg Ward
+
+Acknowledgements: This work was conducted as a research
+project during the Architecture 239X course taught by
+Kevin Matthews formerly at UC Berkeley, College of 
+Environmental Design.  His assistance and guidance was 
+critical to the success of this study.  
+
+Permission is hereby granted to use and distribute derivative
+works (images) from the Candlestick Theater Model for research 
+and educational purposes provided that the above attributions
+and acknowledgements are closely associated with any such
+distribution or publication, and that the colors and overall 
+geometry of the model will not be altered.
+
+It is permissible to enhance the geometry with the addition
+of objects on the stage or persons in the audience.  Since
+the building will probably never be built, it would be 
+nice to see it being enjoyed, at least virtually.
+
+Permission to publish any derivative works for commercial 
+purposes must be granted in writing.  Please contact the
+author for more information: Charles Ehrlich, Lawrence
+Berkeley National Laboratory, 1 Cyclotron Road MS:90-3111,
+Berkeley, CA  94703  Phone: (510) 486-7916 Fax: 486-4089
+e-mail: ckehrlich@lbl.gov  
+
+Copying and redistribution of the Theater Model itself for 
+any other purpose is hereby granted provided that this README
+file is included in all copies with any distribution media.
+
+History:
+This model was created using the Graphic Design System (GDS)
+formerly distributed by McDonnell Douglas, currently by
+Electronic Data Systems (EDS), in 1988.  The purpose of
+the study was to analyze the house lighting in the main
+theater.  The study was critical for resolving problems
+in the original lighting scheme. 
+
+Contents:
+The main directory contains all of the necessary scene
+and lighting geometry along with a Makefile and two ".rif"
+files for use with the "RAD" program (recommended).
+
+The views directory contains a number of pre-defined 
+views for your convenience.
+
+The "things" directory contains the original GDS "things"
+files if you would rather convert the the theater geometry
+from this source.  This does not include light sources,
+patterns and textures. 
+
+The mmack.mgf file in the main directory contains the
+geometry and materials (minus patterns and textures)
+of the Theater in the "MGF" format.--broken, not included.
+
+Instructions for use:
+
+To render the scene with Radiance on Unix with X11 use:
+
+   rad -o x11 bright.rif IND=0
+
+To render the scene with ADELINE/Radiance on MS-DOS use:
+
+   rad -o vga bright.rif IND=0
+
+To start a high resolution batch rendering use:
+
+   rad bright.rif &
+
+Alternatively, the Makefile may be used.  And, the pieces.csh
+file can be edited to provide access to the rpiece command for
+rendering on multiple processors.
+
+   pieces.csh
