@@ -13,8 +13,13 @@ blender: apply_patches blender_patched.rad
 blender_patched.rad: blender.rad
 	patch blender.rad -i blender.patch -o blender_patched.rad
 
-blender.rad: materials.rad scene.rad lhouse.rad
-	cat materials.rad scene.rad lhouse.rad > blender.rad
+blender.rad: \
+materials.rad \
+scene.rad \
+railing.rad \
+grate.rad \
+lhouse.rad
+	cat materials.rad scene.rad railing.rad grate.rad lhouse.rad > blender.rad
 
 apply_patches: \
 HMFA1400.patch
