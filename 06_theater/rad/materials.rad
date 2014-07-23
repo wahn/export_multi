@@ -1,0 +1,207 @@
+#
+# Material descriptions for the Candelstick Park S.R.A. Comminty Theater.
+#
+
+# Description of metal railings and seat supports
+
+void metal GRATE
+0
+0
+5 .1 .1 .1 .5 .4
+
+void metal GALV
+	0
+	0
+	5 .975 .975 .975 .80 .15
+
+void alias GLAV GALV
+
+# Description of the ceiling surfaces.
+
+void plastic LTGREY
+	0
+	0
+	5 .54 .54 .58     0.01     0.19
+
+void plastic WHITE
+0
+0
+5 .68 .68 .68 0.01 0.19
+
+# Description of anything that was not "materialized" -- obvious
+
+void plastic DEFAULT
+	0
+	0
+	5 .3 1.0 .1     0.000000     0.000000
+
+# Descriptions of various types of wood surfaces.
+
+void plastic MAPLE
+	0
+	0
+	5 .855 .589 .38     0.02     0.19
+
+void alias STAIR MAPLE
+
+void alias XMAPLE MAPLE
+
+# Description of Douglas Fir type wood, used for heavy timber and stairs.
+void plastic YELLWD
+	0
+	0
+	5 .794 .441 .154     0.01     0.19
+
+void alias YELWOOD YELLWD
+
+# Description of hard plywood-like surface on stage, very homogenous.
+# -20%
+void plastic MASONITE
+	0
+	0
+	5 .618 .370 .175     0.03     0.17
+
+void alias PLYRON MASONITE
+void alias STAGEFLR MASONITE
+
+void plastic REDPLY
+	0
+	0
+	5 .76 .152 .055     0.01     0.19
+
+void plastic YELLPLY
+	0
+	0
+	5 .937 .363 .056    0.01     0.19
+
+# Description of the metal used for the catwalks
+# Feb 11, 89 catwalks are now made of plywood
+
+void alias CATWALK YELLPLY
+
+#
+# Description of the concrete block walls
+#
+void brightfunc brick_dirt
+2 dirt dirt.cal
+0
+1 .51
+
+brick_dirt brightfunc brick_pat_x
+6 brick_x brick.cal -t 21.8333 15.3333 7.8333
+0
+6 .03125 .6667 1.3333 .6667 1.15 1.70
+
+brick_dirt brightfunc brick_pat_y
+6 brick_y brick.cal -t 21.8333 15.3333 7.8333
+0
+6 .03125 .6667 1.3333 .6667 1.15 1.70
+
+brick_pat_x colorpict mason_tex_x
+11 grey grey grey concbloc.pic picture.cal match_u match_v -s .4 -rx 90
+0
+0
+
+brick_pat_y colorpict mason_tex_y
+11 grey grey grey concbloc.pic picture.cal match_u match_v -s .4 -ry 90
+0
+0
+
+# Translation is the "origin" of the concrete block courses.
+void mixfunc mason_tex
+4 mason_tex_x mason_tex_y brick_inx brick.cal
+0
+0
+
+# The average of the above pattern is .5
+mason_tex plastic CONCBLK
+	0
+	0
+	5 1.15 1.15 1.15     0.000000     0.000000
+
+# Description of the edges of the concrete block walls at the pilasters.
+mason_tex plastic SPLITFAC
+	0
+	0
+	5 1.15 1.15 1.15    0.000000     0.000000
+
+#
+# Descriptions for concrete surfaces at cross-aisle and entries,
+# differently oriented scoring patterns, all have a dirty-ness for
+# added reality.
+
+void brightfunc conc_dirt
+	4 dirt dirt.cal -s .8
+	0
+	1 .6
+
+conc_dirt plastic CONC
+	0
+	0
+	5 .6 .6 .6     .03     .15
+
+conc_dirt plastic REDCONC
+	0
+	0
+	5 .830 .327 .255   .03  .15
+
+conc_dirt brightfunc yzscore
+6 score_yz score.cal -t 60.5 0 0
+0
+4 .014 9.3333 .4633 0.01
+
+yzscore plastic CONCYX
+0
+0
+5 .830 .315 .245 .04 .15
+
+yzscore alias CONCZX CONCYX
+
+conc_dirt brightfunc xzscore
+6 score_xz score.cal -t 0 23.5 0
+0
+4 .014 5.9047 .4633 0
+
+xzscore plastic CONCXY
+0
+0
+5 .830 .315 .245 .04 .15
+
+xzscore alias CONCZY CONCXY
+
+conc_dirt plastic GROUND
+	0
+	0
+	5 .0 .100 .100     0.000000     0.000000
+
+#
+# Descriptions for wavy curtain of different colors on the stage.
+#
+
+void texfunc curtain
+8 cur_dx cur_dy cur_dz curtain.cal -s .3 -rz 90
+0
+0
+
+curtain plastic YELLVELV
+	0
+	0
+	5 .996 .606 .00    0     0
+
+curtain plastic BLCKVEVL
+	0
+	0
+	5 .10 .10 .10     0     0
+
+curtain plastic GREYVELV
+	0
+	0
+	5 .26 .23 .23     0     0
+
+curtain alias CURTAIN GREYVELV
+
+# Description of the mono-planar window of the tech booth.
+void glass SURFGLAS
+	0
+	0
+	3 .956 .958 .958
