@@ -1,0 +1,102 @@
+17c17
+< void alias GLAV GALV
+---
+> ## void alias GLAV GALV
+45c45,55
+< void alias STAIR MAPLE
+---
+> void plastic STAIR
+> 	0
+> 	0
+> 	5 .855 .589 .38     0.02     0.19
+> 
+> void plastic XMAPLE
+> 	0
+> 	0
+> 	5 .855 .589 .38     0.02     0.19
+> 
+> ## void alias STAIR MAPLE
+47c57
+< void alias XMAPLE MAPLE
+---
+> ## void alias XMAPLE MAPLE
+55c65,70
+< void alias YELWOOD YELLWD
+---
+> void plastic YELWOOD
+> 	0
+> 	0
+> 	5 .794 .441 .154     0.01     0.19
+> 
+> ## void alias YELWOOD YELLWD
+64,65c79,90
+< void alias PLYRON MASONITE
+< void alias STAGEFLR MASONITE
+---
+> void plastic PLYRON
+> 	0
+> 	0
+> 	5 .618 .370 .175     0.03     0.17
+> 
+> void plastic STAGEFLR
+> 	0
+> 	0
+> 	5 .618 .370 .175     0.03     0.17
+> 
+> ## void alias PLYRON MASONITE
+> ## void alias STAGEFLR MASONITE
+76a102,106
+> void plastic CATWALK
+> 	0
+> 	0
+> 	5 .937 .363 .056    0.01     0.19
+> 
+80c110
+< void alias CATWALK YELLPLY
+---
+> ## void alias CATWALK YELLPLY
+111,114c141,144
+< void mixfunc mason_tex
+< 4 mason_tex_x mason_tex_y brick_inx brick.cal
+< 0
+< 0
+---
+> # void mixfunc mason_tex
+> # 4 mason_tex_x mason_tex_y brick_inx brick.cal
+> # 0
+> # 0
+117c147
+< mason_tex plastic CONCBLK
+---
+> void plastic CONCBLK
+123c153
+< mason_tex plastic SPLITFAC
+---
+> void plastic SPLITFAC
+158c188,193
+< yzscore alias CONCZX CONCYX
+---
+> yzscore plastic CONCZX
+> 0
+> 0
+> 5 .830 .315 .245 .04 .15
+> 
+> ## yzscore alias CONCZX CONCYX
+170c205,210
+< xzscore alias CONCZY CONCXY
+---
+> xzscore plastic CONCZY
+> 0
+> 0
+> 5 .830 .315 .245 .04 .15
+> 
+> ## xzscore alias CONCZY CONCXY
+201c241,246
+< curtain alias CURTAIN GREYVELV
+---
+> curtain plastic CURTAIN
+> 	0
+> 	0
+> 	5 .26 .23 .23     0     0
+> 
+> ## curtain alias CURTAIN GREYVELV
