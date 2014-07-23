@@ -1,31 +1,31 @@
 #These xyz triplets represent the locations of the main house lights
 #that hang from the ceiling.
 # Modified February 24, 1989
-!xform -e -n hl1.1 -s .0833 -t 26.91666 29.25000 33.8333 HMFA1400.ray
-!xform -e -n hl1.2 -s .0833 -t 26.91666 59.25000 33.8333 HMFA1400.ray
+!xform -e -n hl1.1 -s .0833 -t 26.91666 29.25000 33.8333 HMFA1400.rad
+!xform -e -n hl1.2 -s .0833 -t 26.91666 59.25000 33.8333 HMFA1400.rad
 
-!xform -e -n hl2.1 -s .0833 -t 34.16666 20.83333 33.8333 HMFA1400.ray
-!xform -e -n hl2.2 -s .0833 -t 34.16666 33.33333 33.8333 HMFA1400.ray
-!xform -e -n hl2.3 -s .0833 -t 34.16666 44.16666 33.8333 HMFA1400.ray
-!xform -e -n hl2.4 -s .0833 -t 34.16666 55.16666 33.8333 HMFA1400.ray
-!xform -e -n hl2.5 -s .0833 -t 34.16666 67.66666 33.8333 HMFA1400.ray
+!xform -e -n hl2.1 -s .0833 -t 34.16666 20.83333 33.8333 HMFA1400.rad
+!xform -e -n hl2.2 -s .0833 -t 34.16666 33.33333 33.8333 HMFA1400.rad
+!xform -e -n hl2.3 -s .0833 -t 34.16666 44.16666 33.8333 HMFA1400.rad
+!xform -e -n hl2.4 -s .0833 -t 34.16666 55.16666 33.8333 HMFA1400.rad
+!xform -e -n hl2.5 -s .0833 -t 34.16666 67.66666 33.8333 HMFA1400.rad
 
-!xform -e -n hl3.1 -s .0833 -t 43.66666 32.08333 33.8333 HMFA1400.ray
-!xform -e -n hl3.2 -s .0833 -t 43.66666 44.16666 33.8333 HMFA1400.ray
-!xform -e -n hl3.3 -s .0833 -t 43.66666 56.41666 33.8333 HMFA1400.ray
+!xform -e -n hl3.1 -s .0833 -t 43.66666 32.08333 33.8333 HMFA1400.rad
+!xform -e -n hl3.2 -s .0833 -t 43.66666 44.16666 33.8333 HMFA1400.rad
+!xform -e -n hl3.3 -s .0833 -t 43.66666 56.41666 33.8333 HMFA1400.rad
 
-!xform -e -n hl4.1 -s .0833 -t 56.41666 20.83333 32.8333 HMFA1400.ray
-!xform -e -n hl4.2 -s .0833 -t 56.41666 29.25000 32.8333 HMFA1400.ray
-!xform -e -n hl4.3 -s .0833 -t 56.41666 44.16666 32.8333 HMFA1400.ray
-!xform -e -n hl4.4 -s .0833 -t 56.41666 59.25000 32.8333 HMFA1400.ray
-!xform -e -n hl4.5 -s .0833 -t 56.41666 67.66666 32.8333 HMFA1400.ray
+!xform -e -n hl4.1 -s .0833 -t 56.41666 20.83333 32.8333 HMFA1400.rad
+!xform -e -n hl4.2 -s .0833 -t 56.41666 29.25000 32.8333 HMFA1400.rad
+!xform -e -n hl4.3 -s .0833 -t 56.41666 44.16666 32.8333 HMFA1400.rad
+!xform -e -n hl4.4 -s .0833 -t 56.41666 59.25000 32.8333 HMFA1400.rad
+!xform -e -n hl4.5 -s .0833 -t 56.41666 67.66666 32.8333 HMFA1400.rad
 
-!xform -e -n hl5.1 -s .0833 -t 62.33333 33.33333 33.8333 HMFA1400.ray
-!xform -e -n hl5.2 -s .0833 -t 62.33333 55.16666 33.8333 HMFA1400.ray
+!xform -e -n hl5.1 -s .0833 -t 62.33333 33.33333 33.8333 HMFA1400.rad
+!xform -e -n hl5.2 -s .0833 -t 62.33333 55.16666 33.8333 HMFA1400.rad
 
-!xform -e -n hl6.1 -s .0833 -t 75.08333 20.83333 32.8333 HMFA1400.ray
-!xform -e -n hl6.2 -s .0833 -t 75.08333 29.25000 32.8333 HMFA1400.ray
-!xform -e -n hl6.3 -s .0833 -t 75.08333 44.16666 32.8333 HMFA1400.ray
-!xform -e -n hl6.4 -s .0833 -t 75.08333 59.25000 32.8333 HMFA1400.ray
-!xform -e -n hl6.5 -s .0833 -t 75.08333 67.66666 32.8333 HMFA1400.ray
+!xform -e -n hl6.1 -s .0833 -t 75.08333 20.83333 32.8333 HMFA1400.rad
+!xform -e -n hl6.2 -s .0833 -t 75.08333 29.25000 32.8333 HMFA1400.rad
+!xform -e -n hl6.3 -s .0833 -t 75.08333 44.16666 32.8333 HMFA1400.rad
+!xform -e -n hl6.4 -s .0833 -t 75.08333 59.25000 32.8333 HMFA1400.rad
+!xform -e -n hl6.5 -s .0833 -t 75.08333 67.66666 32.8333 HMFA1400.rad
 
