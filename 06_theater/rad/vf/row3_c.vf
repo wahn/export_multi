@@ -1,0 +1,2 @@
+rview -vtc -vp 27 26 23 -vd 0.987496 0.157644 0 -vu 0 0 1 -vh 360 -vv 80 -vo 0 -va 0 -vs 0 -vl 0
+rview -vtc -vp 27 26 23 -vd 0.987496 0.157644 0 -vu 0 0 1 -vh 360 -vv 120 -vo 0 -va 0 -vs 0 -vl 0
