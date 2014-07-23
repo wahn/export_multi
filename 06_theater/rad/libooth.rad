@@ -2,5 +2,5 @@
 # mounted lights on the ceiling inside the control booth. 75watt incandescent.
 # These points are coplanar with the ceiling.
 
-!xform -e -n uboothl.1 -s .08333 -t 20.85226 39.20854 39.33333 BO-75_none
-!xform -e -n uboothl.2 -s .08333 -t 20.85226 49.45834 39.33333 BO-75_none
+!xform -e -n uboothl.1 -s .08333 -t 20.85226 39.20854 39.33333 BO-75_none.rad
+!xform -e -n uboothl.2 -s .08333 -t 20.85226 49.45834 39.33333 BO-75_none.rad

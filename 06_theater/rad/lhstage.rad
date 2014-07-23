@@ -2,14 +2,14 @@
 #that hang from the ceiling above the Stage area.
 # Modified January 18, 1989
 # Modified February 6, 1989
-!xform -e -n lhs1.1 -s .0833 -t 88.91666 29.25000 35.83333 HMFA1400.ray
-!xform -e -n lhs1.3 -s .0833 -t 88.91666 59.25000 35.83333 HMFA1400.ray
+!xform -e -n lhs1.1 -s .0833 -t 88.91666 29.25000 35.83333 HMFA1400.rad
+!xform -e -n lhs1.3 -s .0833 -t 88.91666 59.25000 35.83333 HMFA1400.rad
 
-!xform -e -n lhs2.1 -s .0833 -t 97.91666 29.25000 35.83333 HMFA1400.ray
-!xform -e -n lhs2.2 -s .0833 -t 97.91666 44.16666 35.83333 HMFA1400.ray
-!xform -e -n lhs2.3 -s .0833 -t 97.91666 59.25000 35.83333 HMFA1400.ray
+!xform -e -n lhs2.1 -s .0833 -t 97.91666 29.25000 35.83333 HMFA1400.rad
+!xform -e -n lhs2.2 -s .0833 -t 97.91666 44.16666 35.83333 HMFA1400.rad
+!xform -e -n lhs2.3 -s .0833 -t 97.91666 59.25000 35.83333 HMFA1400.rad
 
-!xform -e -n lhs3.1 -s .0833 -t 106.91666 29.25000 35.83333 HMFA1400.ray
-!xform -e -n lhs3.2 -s .0833 -t 106.91666 44.16666 35.83333 HMFA1400.ray
-!xform -e -n lhs3.3 -s .0833 -t 106.91666 59.25000 35.83333 HMFA1400.ray
+!xform -e -n lhs3.1 -s .0833 -t 106.91666 29.25000 35.83333 HMFA1400.rad
+!xform -e -n lhs3.2 -s .0833 -t 106.91666 44.16666 35.83333 HMFA1400.rad
+!xform -e -n lhs3.3 -s .0833 -t 106.91666 59.25000 35.83333 HMFA1400.rad
 

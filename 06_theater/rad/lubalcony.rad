@@ -2,15 +2,15 @@
 #lights located under the balcony.  They are the S type with grating, 75 watt.
 # These points are coplanar with the ceiling.
 #Modified February 6, 1989
-!xform -e -n ubalconyl.1 -s .08333 -t 55.83333 19.21580 19.00000 BO-75_none
-!xform -e -n ubalconyl.2 -s .08333 -t 65.16666 19.21580 19.00000 BO-75_none
+!xform -e -n ubalconyl.1 -s .08333 -t 55.83333 19.21580 19.00000 BO-75_none.rad
+!xform -e -n ubalconyl.2 -s .08333 -t 65.16666 19.21580 19.00000 BO-75_none.rad
 
-!xform -e -n ubalconyl.3 -s .08333 -t 55.83333 69.20088 19.00000 BO-75_none
-!xform -e -n ubalconyl.4 -s .08333 -t 65.16666 69.20088 19.00000 BO-75_none
+!xform -e -n ubalconyl.3 -s .08333 -t 55.83333 69.20088 19.00000 BO-75_none.rad
+!xform -e -n ubalconyl.4 -s .08333 -t 65.16666 69.20088 19.00000 BO-75_none.rad
 
 # These lights have been added on January 7, 1989.  They reside under
 # the prescenium arch above the balcony stairs.
 
-!xform -e -n ubalconyl.5 -s .08333 -t 83.98099 19.67082 28.16667 BO-75_none
-!xform -e -n ubalconyl.6 -s .08333 -t 83.98099 67.06681 28.16667 BO-75_none
+!xform -e -n ubalconyl.5 -s .08333 -t 83.98099 19.67082 28.16667 BO-75_none.rad
+!xform -e -n ubalconyl.6 -s .08333 -t 83.98099 67.06681 28.16667 BO-75_none.rad
 
