@@ -1,0 +1,90 @@
+72,77c72,77
+< brushed_aluminum texfunc phong
+< 4 rev_dx rev_dy rev_dz rev.cal
+< 0
+< 4
+< 	    0.121296430803	                 0
+< 	     -1.1558385753	     8.30758975999
+---
+> # brushed_aluminum texfunc phong
+> # 4 rev_dx rev_dy rev_dz rev.cal
+> # 0
+> # 4
+> # 	    0.121296430803	                 0
+> # 	     -1.1558385753	     8.30758975999
+79c79
+< phong cone reflector.1
+---
+> brushed_aluminum cone reflector.1
+87,92c87,92
+< brushed_aluminum texfunc phong
+< 4 rev_dx rev_dy rev_dz rev.cal
+< 0
+< 4
+< 	    0.130987194614	   -0.190300937579
+< 	    0.134387550246	    0.112440892601
+---
+> # brushed_aluminum texfunc phong
+> # 4 rev_dx rev_dy rev_dz rev.cal
+> # 0
+> # 4
+> # 	    0.130987194614	   -0.190300937579
+> # 	    0.134387550246	    0.112440892601
+94c94
+< phong cone reflector.2
+---
+> brushed_aluminum cone reflector.2
+102,107c102,107
+< brushed_aluminum texfunc phong
+< 4 rev_dx rev_dy rev_dz rev.cal
+< 0
+< 4
+< 	     0.18820050683	   -0.680795601478
+< 	    0.193437927135	   -0.113391182603
+---
+> # brushed_aluminum texfunc phong
+> # 4 rev_dx rev_dy rev_dz rev.cal
+> # 0
+> # 4
+> # 	     0.18820050683	   -0.680795601478
+> # 	    0.193437927135	   -0.113391182603
+109c109
+< phong cone reflector.3
+---
+> brushed_aluminum cone reflector.3
+117,122c117,122
+< brushed_aluminum texfunc phong
+< 4 rev_dx rev_dy rev_dz rev.cal
+< 0
+< 4
+< 	    0.301549888138	    -1.68681027941
+< 	    0.320902225371	   -0.508843308647
+---
+> # brushed_aluminum texfunc phong
+> # 4 rev_dx rev_dy rev_dz rev.cal
+> # 0
+> # 4
+> # 	    0.301549888138	    -1.68681027941
+> # 	    0.320902225371	   -0.508843308647
+124c124
+< phong cone reflector.4
+---
+> brushed_aluminum cone reflector.4
+132,137c132,137
+< brushed_aluminum texfunc phong
+< 4 rev_dx rev_dy rev_dz rev.cal
+< 0
+< 4
+< 	    -1.49093898455	     13.4184508609
+< 	    0.768697172806	    -1.65731110457
+---
+> # brushed_aluminum texfunc phong
+> # 4 rev_dx rev_dy rev_dz rev.cal
+> # 0
+> # 4
+> # 	    -1.49093898455	     13.4184508609
+> # 	    0.768697172806	    -1.65731110457
+139c139
+< phong cone reflector.5
+---
+> brushed_aluminum cone reflector.5
