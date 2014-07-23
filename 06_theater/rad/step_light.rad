@@ -1,0 +1,165 @@
+# xform -s .656
+#
+#  Recessed wall light model 432-??, 60 watt incandescent
+#
+#	Dimensions in feet, origin at bottom middle (in xz plane, facing +y)
+#
+
+void brightfunc uppercut
+2 zpcut cutoff.cal
+0
+1               0.25
+
+uppercut illum visible.output
+0
+0
+3               1.54               1.54               1.54
+
+visible.output polygon wall_light
+0
+0
+12
+         -0.4373552             0.0328                  0
+         -0.4373552             0.0328          0.4373552
+          0.4373552             0.0328          0.4373552
+          0.4373552             0.0328                  0
+
+void glow highlight.output
+0
+0
+4               1.54               1.54               1.54              0.328
+
+highlight.output polygon wall_light_glow
+0
+0
+12
+         -0.4373552                  0                  0
+         -0.4373552                  0          0.4373552
+          0.4373552                  0          0.4373552
+          0.4373552                  0                  0
+
+void plastic black_anodized
+0
+0
+5                0.1                0.1                0.1                0.1                0.1
+
+black_anodized polygon wall_light_visor.p1
+0
+0
+12
+         -0.4373552            0.02624                  0
+          0.4373552            0.02624                  0
+          0.4373552            0.02624       0.0273333552
+         -0.4373552            0.02624       0.0273333552
+
+black_anodized polygon wall_light_skirt.p1
+0
+0
+12
+         -0.4373552            0.02624                  0
+          0.4373552            0.02624                  0
+          0.4373552                  0                  0
+         -0.4373552                  0                  0
+
+black_anodized polygon wall_light_skirt.p2
+0
+0
+12
+         -0.4373552            0.02624          0.4373552
+          0.4373552            0.02624          0.4373552
+          0.4373552                  0          0.4373552
+         -0.4373552                  0          0.4373552
+
+black_anodized polygon wall_light_visor.p2
+0
+0
+24
+         -0.4373552            0.02624       0.4373333552
+          0.4373552            0.02624       0.4373333552
+          0.4373552            0.02624       0.0273333552
+               0.41            0.02624       0.0273333552
+               0.41            0.02624               0.41
+              -0.41            0.02624               0.41
+              -0.41            0.02624       0.0273333552
+         -0.4373552            0.02624       0.0273333552
+
+black_anodized polygon wall_light_skirt.p3
+0
+0
+12
+          0.4373552            0.02624       0.4373333552
+          0.4373552            0.02624                  0
+          0.4373552                  0                  0
+          0.4373552                  0       0.4373333552
+
+black_anodized polygon wall_light_skirt.p4
+0
+0
+12
+         -0.4373552            0.02624       0.4373333552
+         -0.4373552            0.02624                  0
+         -0.4373552                  0                  0
+         -0.4373552                  0       0.4373333552
+
+black_anodized polygon wall_light_visor.p3
+0
+0
+12
+               0.41            0.01312               0.41
+              -0.41            0.01312               0.41
+              -0.41            0.02624         0.35533552
+               0.41            0.02624         0.35533552
+
+black_anodized polygon wall_light_visor.p5
+0
+0
+12
+               0.41            0.01312         0.35533552
+              -0.41            0.01312         0.35533552
+              -0.41            0.02624         0.30066448
+               0.41            0.02624         0.30066448
+
+black_anodized polygon wall_light_visor.p6
+0
+0
+12
+               0.41            0.01312         0.30066448
+              -0.41            0.01312         0.30066448
+              -0.41            0.02624              0.246
+               0.41            0.02624              0.246
+
+black_anodized polygon wall_light_visor.p7
+0
+0
+12
+               0.41            0.01312              0.246
+              -0.41            0.01312              0.246
+              -0.41            0.02624         0.19133552
+               0.41            0.02624         0.19133552
+
+black_anodized polygon wall_light_visor.p8
+0
+0
+12
+               0.41            0.01312         0.19133552
+              -0.41            0.01312         0.19133552
+              -0.41            0.02624         0.13666448
+               0.41            0.02624         0.13666448
+
+black_anodized polygon wall_light_visor.p9
+0
+0
+12
+               0.41            0.01312         0.13666448
+              -0.41            0.01312         0.13666448
+              -0.41            0.02624              0.082
+               0.41            0.02624              0.082
+
+black_anodized polygon wall_light_visor.p10
+0
+0
+12
+               0.41            0.01312              0.082
+              -0.41            0.01312              0.082
+              -0.41            0.02624         0.02733552
+               0.41            0.02624         0.02733552

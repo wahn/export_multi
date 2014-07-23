@@ -1,0 +1,173 @@
+#
+#  Recessed wall light model 432-??, 60 watt incandescent
+#
+#	Dimensions in feet, origin at bottom middle (in xz plane, facing +y)
+#
+
+void brightfunc uppercut
+2 zpcut cutoff.cal
+0
+1 .25
+
+uppercut illum visible.output
+0
+0
+3 1.21 1.21 1.21
+
+visible.output polygon wall_light
+0
+0
+12
+	-.6667	.05 	0
+	-.6667	.05 	.6667
+	.6667	.05 	.6667
+	.6667	.05 	0
+
+void glow highlight.output
+0
+0
+4 1.21 1.21 1.21 .5 
+
+highlight.output polygon wall_light_glow
+0
+0
+12
+	-.6667	0 	0
+	-.6667	0 	.6667
+	.6667	0 	.6667
+	.6667	0 	0
+
+
+void plastic black_anodized
+0
+0
+5 .1 .1 .1 .1 .1 
+
+black_anodized polygon wall_light_visor.p1
+0
+0
+12
+	-.6667	.04	0
+	.6667	.04	0
+	.6667	.04	.0416667
+	-.6667	.04	.0416667
+
+black_anodized polygon wall_light_skirt.p1
+0
+0
+12
+	-.6667	.04	0
+	.6667	.04	0
+	.6667	0	0
+	-.6667	0	0
+
+black_anodized polygon wall_light_skirt.p2
+0
+0
+12
+	-.6667	.04	.6667
+	.6667	.04	.6667
+	.6667	0	.6667
+	-.6667	0	.6667
+
+black_anodized polygon wall_light_visor.p2
+0
+0
+24
+	-.6667	.04	.6666667
+	.6667	.04	.6666667
+	.6667	.04	.0416667
+	.6250	.04	.0416667
+	.6250	.04	.62500
+	-.6250	.04	.62500
+	-.6250	.04	.0416667
+	-.6667	.04	.0416667
+
+black_anodized polygon wall_light_skirt.p3
+0
+0
+12
+	.6667	.04	.6666667
+	.6667	.04	0
+	.6667	0	0
+	.6667	0	.6666667
+
+black_anodized polygon wall_light_skirt.p4
+0
+0
+12
+	-.6667	.04	.6666667
+	-.6667	.04	0
+	-.6667	0	0
+	-.6667	0	.6666667
+
+
+black_anodized polygon wall_light_visor.p3
+0
+0
+12
+
+	.6250	.02	.62500
+	-.6250	.02	.62500
+	-.6250	.04	.54167
+	.6250	.04	.54167
+
+black_anodized polygon wall_light_visor.p5
+0
+0
+12
+
+	.6250	.02	.54167
+	-.6250	.02	.54167
+	-.6250	.04	.45833
+	.6250	.04	.45833
+
+black_anodized polygon wall_light_visor.p6
+0
+0
+12
+
+	.6250	.02	.45833
+	-.6250	.02	.45833
+	-.6250	.04	.37500
+	.6250	.04	.37500
+
+black_anodized polygon wall_light_visor.p7
+0
+0
+12
+
+	.6250	.02	.37500
+	-.6250	.02	.37500
+	-.6250	.04	.29167
+	.6250	.04	.29167
+
+black_anodized polygon wall_light_visor.p8
+0
+0
+12
+
+	.6250	.02	.29167
+	-.6250	.02	.29167
+	-.6250	.04	.20833
+	.6250	.04	.20833
+
+black_anodized polygon wall_light_visor.p9
+0
+0
+12
+
+	.6250	.02	.20833
+	-.6250	.02	.20833
+	-.6250	.04	.12500
+	.6250	.04	.12500
+
+black_anodized polygon wall_light_visor.p10
+0
+0
+12
+
+	.6250	.02	.12500
+	-.6250	.02	.12500
+	-.6250	.04	.04167
+	.6250	.04	.04167

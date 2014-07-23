@@ -1,0 +1,41 @@
+# These xyz triplets represent the center of the bottom edge of the
+# step lights along the edges of the stairs.  30 watt incandescent.
+# These positions are coplanar with the vertical sides of the stair sides
+# left and right.)
+# This first group of light coordinates (until the next comment) 
+# should face in the negative y direction.
+
+!xform -e -n wsl.1 -rz 180 -t 49.33334 33.83333 9.58335 step_light
+!xform -e -n wsl.2 -rz 180 -t 43.33333 33.83333 11.91668 step_light
+!xform -e -n wsl.3 -rz 180 -t 37.50000 33.83333 14.25002 step_light
+!xform -e -n wsl.4 -rz 180 -t 31.33333 33.83333 16.58336 step_light
+!xform -e -n wsl.5 -rz 180 -t 25.33333 33.83333 18.91669 step_light
+
+!xform -e -n wsl.6 -rz 180 -t 40.33333 58.83333 13.08335 step_light
+!xform -e -n wsl.7 -rz 180 -t 46.33333 58.83333 10.75001 step_light
+!xform -e -n wsl.8 -rz 180 -t 34.50000 58.83333 15.41669 step_light
+!xform -e -n wsl.9 -rz 180 -t 28.33333 58.83333 17.75002 step_light
+
+#These lights no longer exist
+#!xform -e -n wsl.10 -rz 180 -t 62.33334 64.83335 6.83334 step_light
+#!xform -e -n wsl.11 -rz 180 -t 68.33335 64.83335 5.83334 step_light
+#!xform -e -n wsl.12 -rz 180 -t 80.33335 64.83335 4.33334 step_light
+
+# This next group represents light sources that should face in the
+# positive y direction.
+
+!xform -e -n wsl.13 -t 43.33333 54.83334 11.91668 step_light
+!xform -e -n wsl.14 -t 49.33334 54.83334 9.58335 step_light
+!xform -e -n wsl.15 -t 37.50000 54.83334 14.25002 step_light
+!xform -e -n wsl.16 -t 25.33333 54.83334 18.91669 step_light
+!xform -e -n wsl.17 -t 31.33333 54.83334 16.58336 step_light
+
+!xform -e -n wsl.18 -t 40.33333 29.83333 13.08335 step_light
+!xform -e -n wsl.19 -t 46.33333 29.83333 10.75002 step_light
+!xform -e -n wsl.20 -t 28.33333 29.83333 17.75002 step_light
+!xform -e -n wsl.21 -t 34.50000 29.83333 15.41669 step_light
+
+# These lights no longer exist
+#!xform -e -n wsl.22 -t 80.33335 23.50000 4.33334 step_light
+#!xform -e -n wsl.23 -t 68.33335 23.50000 5.83334 step_light
+#!xform -e -n wsl.24 -t 62.33334 23.50000 6.83334 step_light

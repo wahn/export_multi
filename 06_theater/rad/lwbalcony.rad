@@ -1,0 +1,24 @@
+#These xyz triplets represent the location of the center of the bottom
+# edge of the light fixtures mounted inside the concrete block wall (S,S1?).
+# 60 Watt incandescent.  Balcony level.
+# These positions are coplanar with wall surfaces.
+# This group of lights should face in the positive y direction
+# The new additions, wbl.11-14, illuminate the balcony stairs
+
+!xform -e -n wbl.1 -t 55.83333 15.33333 20.5 wall_light
+!xform -e -n wbl.2 -t 46.50001 15.33333 20.5 wall_light
+!xform -e -n wbl.3 -t 65.16668 15.33333 20.5 wall_light
+!xform -e -n wbl.4 -t 26.83334 15.33333 20.5 wall_light
+!xform -e -n wbl.5 -t 37.16667 15.33333 20.5 wall_light
+!xform -e -n wbl.11 -t 72.50001 15.33333 19.166667 wall_light
+!xform -e -n wbl.12 -t 77.16667 15.33333 15.833334 wall_light
+
+# This group of lights should face in the negative y direction
+
+!xform -e -n wbl.6 -rz 180 -t 65.16667 73.16667 20.5 wall_light
+!xform -e -n wbl.7 -rz 180 -t 55.83333 73.16667 20.5 wall_light
+#!xform -e -n wbl.8 -rz 180 -t 26.83334 73.16667 20.5 wall_light
+!xform -e -n wbl.9 -rz 180 -t 37.16667 73.16667 20.5 wall_light
+!xform -e -n wbl.10 -rz 180 -t 46.50001 73.16667 20.5 wall_light
+!xform -e -n wbl.13 -rz 180 -t 72.50001 73.16667 19.166667 wall_light
+!xform -e -n wbl.14 -rz 180 -t 77.16667 73.16667 15.833334 wall_light
