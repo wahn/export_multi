@@ -1,0 +1,18 @@
+{
+	curtain.cal  
+
+        A surface normal perterbation texture for wavy curtains.
+
+        by Charles Ehrlich
+
+	Curtain are hanging in z-direction,
+	and has a period of one unit in the x-direction.
+}
+			{ jerk surface back and forth }
+cur_dx = cur_dfx-cur_dot*Nx;
+cur_dy = cur_dfy-cur_dot*Ny;
+cur_dz = 0;
+
+cur_dfx = cos(Px);
+cur_dfy = sin(Px);
+cur_dot = cur_dfx*Nx+cur_dfy*Ny;

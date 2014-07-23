@@ -1,0 +1,19 @@
+{
+        score.cal
+ 	
+        by Charles Ehrlich
+
+	Repetitive planar scoring patterns.
+
+	A1	= Score width
+	A2 	= Interval distance
+	A3	= Material brightness
+	A4	= Score brightness
+}
+
+
+score_xy = if( out_score(Pz), A3, A4 );
+score_xz = if( out_score(Py), A3, A4 );
+score_yz = if( out_score(Px), A3, A4 );
+
+out_score(x) = mod(x,A2) - A1 ;

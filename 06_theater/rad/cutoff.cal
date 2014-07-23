@@ -1,0 +1,9 @@
+{
+	Cutoff angles for step light fixture
+
+        by Greg Ward
+
+}
+zpcut = cutoff(-Dz,A1);		{ z positive }
+
+cutoff(lo,hi) = if( hi-lo, 1, exp(25*(hi-lo)) );
