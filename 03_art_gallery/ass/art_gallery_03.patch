@@ -66,3 +66,18 @@
 <  emission 1
 ---
 >  emission 0 # 1
+377069a377075,377083
+> rad_carpet
+> {
+>  name MAcarpet_blue_pat
+>  Kd_color .7 .825  .9
+>  variation 1.0 # 0.7
+>  scale 0.005334 0.005334 0.005334 # 0.0175 * 0.3048 (feet to meters)
+>  rotation 0 0 0
+> }
+> 
+377074c377088,377089
+<  Kd_color 0.699999988 0.800000012 0.899999976
+---
+>  Kd_color MAcarpet_blue_pat
+>  ##Kd_color 0.699999988 0.800000012 0.899999976
