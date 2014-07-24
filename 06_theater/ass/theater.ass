@@ -8,6 +8,9 @@ options
 {
  name options
  AA_samples 5
+ AA_seed 1
+ AA_sample_clamp 1e+30
+ AA_sample_clamp_affects_aovs false
  outputs 7 1 STRING
 
   "RGBA RGBA filter driver" 
@@ -24,12 +27,15 @@ options
  camera "CAstage"
  shader_searchpath "/Users/jan/Graphics/Rendering/Arnold/shaders/current"
  texture_gamma 2.20000005
- GI_diffuse_depth 3
- GI_glossy_depth 1
+ GI_diffuse_depth 0
+ GI_glossy_depth 0
  GI_reflection_depth 6
  GI_refraction_depth 6
  GI_total_depth 12
- GI_diffuse_samples 3
+ GI_diffuse_samples 2
+ GI_single_scatter_samples 5
+ GI_glossy_samples 2
+ GI_refraction_samples 2
 }
 
 persp_camera
