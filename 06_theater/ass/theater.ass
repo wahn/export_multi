@@ -561,16 +561,19 @@ polymesh
  0 0 0 1
 }
 
-standard
+mesh_light
+{
+ name MEwall_light_glow_light
+ mesh MEwall_light_glow
+ color 1 1 1
+ intensity 1.53999996 # 1.53999996
+ samples 1
+}
+
+ass_constant
 {
  name MAhighlight.output
- Kd 0
- Kd_color 1 1 1
- Ks 0
- Ks_color 1 1 1
- emission 1.53999996
- emission_color 1 1 1
- opacity 1 1 1
+ Color 1 1 1
 }
 
 polymesh
@@ -922,6 +925,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MEwall_light_glow_un0014_light
+ mesh MEwall_light_glow_un0014
+ color 1 1 1
+ intensity 1.53999996 # 1.53999996
+ samples 1
 }
 
 polymesh
@@ -1299,6 +1311,15 @@ polymesh
  0 0 0 1
 }
 
+mesh_light
+{
+ name MEwall_light_glow_un0029_light
+ mesh MEwall_light_glow_un0029
+ color 1 1 1
+ intensity 1.53999996 # 1.53999996
+ samples 1
+}
+
 polymesh
 {
  name MEwall_light_glow_un0029
@@ -1672,6 +1693,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MEwall_light_glow_un0044_light
+ mesh MEwall_light_glow_un0044
+ color 1 1 1
+ intensity 1.53999996 # 1.53999996
+ samples 1
 }
 
 polymesh
@@ -2049,6 +2079,15 @@ polymesh
  0 0 0 1
 }
 
+mesh_light
+{
+ name MEwall_light_glow_un0059_light
+ mesh MEwall_light_glow_un0059
+ color 1 1 1
+ intensity 1.53999996 # 1.53999996
+ samples 1
+}
+
 polymesh
 {
  name MEwall_light_glow_un0059
@@ -2422,6 +2461,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MEwall_light_glow_un0074_light
+ mesh MEwall_light_glow_un0074
+ color 1 1 1
+ intensity 1.53999996 # 1.53999996
+ samples 1
 }
 
 polymesh
@@ -2799,6 +2847,15 @@ polymesh
  0 0 0 1
 }
 
+mesh_light
+{
+ name MEwall_light_glow_un0089_light
+ mesh MEwall_light_glow_un0089
+ color 1 1 1
+ intensity 1.53999996 # 1.53999996
+ samples 1
+}
+
 polymesh
 {
  name MEwall_light_glow_un0089
@@ -3172,6 +3229,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MEwall_light_glow_un0104_light
+ mesh MEwall_light_glow_un0104
+ color 1 1 1
+ intensity 1.53999996 # 1.53999996
+ samples 1
 }
 
 polymesh
@@ -3549,6 +3615,15 @@ polymesh
  0 0 0 1
 }
 
+mesh_light
+{
+ name MEwall_light_glow_un0119_light
+ mesh MEwall_light_glow_un0119
+ color 1 1 1
+ intensity 1.53999996 # 1.53999996
+ samples 1
+}
+
 polymesh
 {
  name MEwall_light_glow_un0119
@@ -3922,6 +3997,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MEwall_light_glow_un0134_light
+ mesh MEwall_light_glow_un0134
+ color 1 1 1
+ intensity 1.53999996 # 1.53999996
+ samples 1
 }
 
 polymesh
@@ -4299,6 +4383,15 @@ polymesh
  0 0 0 1
 }
 
+mesh_light
+{
+ name MEwall_light_glow_un0149_light
+ mesh MEwall_light_glow_un0149
+ color 1 1 1
+ intensity 1.53999996 # 1.53999996
+ samples 1
+}
+
 polymesh
 {
  name MEwall_light_glow_un0149
@@ -4674,6 +4767,15 @@ polymesh
  0 0 0 1
 }
 
+mesh_light
+{
+ name MEwall_light_glow_un0164_light
+ mesh MEwall_light_glow_un0164
+ color 1 1 1
+ intensity 1.53999996 # 1.53999996
+ samples 1
+}
+
 polymesh
 {
  name MEwall_light_glow_un0164
@@ -5047,6 +5149,15 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+}
+
+mesh_light
+{
+ name MEwall_light_glow_un0179_light
+ mesh MEwall_light_glow_un0179
+ color 1 1 1
+ intensity 1.53999996 # 1.53999996
+ samples 1
 }
 
 polymesh
