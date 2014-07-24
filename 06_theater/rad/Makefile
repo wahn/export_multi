@@ -23,10 +23,11 @@ lstep.rad \
 lubalcony.rad \
 lubooth.rad \
 lwbalcony.rad \
+lwubalcony.rad \
 step_light.rad
 
 clean:
-	-rm -f *~ *.amb *.oct
+	-rm -f *~ *.amb *.oct *.unf *.hdr *.tiff *.err
 
 clobber: clean
 	-rm -f blender.rad blender_patched.rad
