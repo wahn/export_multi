@@ -1,0 +1,18 @@
+# These xyz triplets represent the first level wall lights mounted
+#inside the concrete block wall.  60 Watt incandescent.
+#These positions are coplanar with wall surfaces.
+# These lights should face in the positive y direction
+
+!xform -e -n wubl.1 -t 65.16668 15.33333 8.5000 wall_light.rad
+!xform -e -n wubl.2 -t 76.83334 15.33333 8.5000 wall_light.rad
+!xform -e -n wubl.3 -t 55.83333 15.33333 8.5000 wall_light.rad
+!xform -e -n wubl.4 -t 46.50000 15.33333 8.5000 wall_light.rad
+#!xform -e -n wubl.5 -t 37.16667 15.33333 8.5000 wall_light.rad
+#!xform -e -n wubl.6 -t 26.83334 15.33333 8.5000 wall_light.rad
+
+# These lights should face in the negative y direction
+
+!xform -e -n wubl.7 -rz 180 -t 76.83334 73.16667 8.5000 wall_light.rad
+!xform -e -n wubl.8 -rz 180 -t 65.16667 73.16667 8.5000 wall_light.rad
+!xform -e -n wubl.9 -rz 180 -t 55.83333 73.16667 8.5000 wall_light.rad
+!xform -e -n wubl.10 -rz 180 -t 46.50001 73.16667 8.5000 wall_light.rad
