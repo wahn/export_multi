@@ -25,7 +25,7 @@ options
  bucket_size 64
  bucket_scanning "hilbert"
  camera "CAstage"
- shader_searchpath "/Users/jan/Graphics/Rendering/Arnold/shaders/current"
+ shader_searchpath "/usr/people/jan/Graphics/Rendering/Arnold/shaders/current"
  texture_gamma 2.20000005
  GI_diffuse_depth 0
  GI_glossy_depth 0
@@ -13834,16 +13834,19 @@ polymesh
  0 0 0 1
 }
 
-standard
+mesh_light
+{
+ name MEHMFA1400_lamp_light
+ mesh MEHMFA1400_lamp
+ color 1 1 1
+ intensity 9.55000019
+ samples 1
+}
+
+ass_constant
 {
  name MAHMFA1400.output
- Kd 0
- Kd_color 1 1 1
- Ks 0
- Ks_color 1 1 1
- emission 9.55000019
- emission_color 1 1 1
- opacity 1 1 1
+ Color 1 1 1
 }
 
 polymesh
@@ -14035,6 +14038,15 @@ cylinder
  32.5881958 13.461998 11.2806301 1
  shader "MAbrushed_aluminum"
  opaque on
+}
+
+mesh_light
+{
+ name MEHMFA1400_lamp_un0538_light
+ mesh MEHMFA1400_lamp_un0538
+ color 1 1 1
+ intensity 9.55000019
+ samples 1
 }
 
 polymesh
@@ -14286,6 +14298,15 @@ cylinder
  opaque on
 }
 
+mesh_light
+{
+ name MEHMFA1400_lamp_un0550_light
+ mesh MEHMFA1400_lamp_un0550
+ color 1 1 1
+ intensity 9.55000019
+ samples 1
+}
+
 polymesh
 {
  name MEHMFA1400_lamp_un0550
@@ -14533,6 +14554,15 @@ cylinder
  29.8449974 18.0594006 11.2806301 1
  shader "MAbrushed_aluminum"
  opaque on
+}
+
+mesh_light
+{
+ name MEHMFA1400_lamp_un0562_light
+ mesh MEHMFA1400_lamp_un0562
+ color 1 1 1
+ intensity 9.55000019
+ samples 1
 }
 
 polymesh
@@ -14784,6 +14814,15 @@ cylinder
  opaque on
 }
 
+mesh_light
+{
+ name MEHMFA1400_lamp_un0574_light
+ mesh MEHMFA1400_lamp_un0574
+ color 1 1 1
+ intensity 9.55000019
+ samples 1
+}
+
 polymesh
 {
  name MEHMFA1400_lamp_un0574
@@ -15031,6 +15070,15 @@ cylinder
  29.8449974 8.91540051 11.2806301 1
  shader "MAbrushed_aluminum"
  opaque on
+}
+
+mesh_light
+{
+ name MEHMFA1400_lamp_un0586_light
+ mesh MEHMFA1400_lamp_un0586
+ color 1 1 1
+ intensity 9.55000019
+ samples 1
 }
 
 polymesh
@@ -15282,6 +15330,15 @@ cylinder
  opaque on
 }
 
+mesh_light
+{
+ name MEHMFA1400_lamp_un0598_light
+ mesh MEHMFA1400_lamp_un0598
+ color 1 1 1
+ intensity 9.55000019
+ samples 1
+}
+
 polymesh
 {
  name MEHMFA1400_lamp_un0598
@@ -15529,6 +15586,15 @@ cylinder
  27.1017971 8.91540051 11.2806301 1
  shader "MAbrushed_aluminum"
  opaque on
+}
+
+mesh_light
+{
+ name MEHMFA1400_lamp_un0610_light
+ mesh MEHMFA1400_lamp_un0610
+ color 1 1 1
+ intensity 9.55000019
+ samples 1
 }
 
 polymesh
@@ -15780,6 +15846,15 @@ cylinder
  opaque on
 }
 
+mesh_light
+{
+ name MEHMFA1400_lamp_un0622_light
+ mesh MEHMFA1400_lamp_un0622
+ color 1 1 1
+ intensity 9.55000019
+ samples 1
+}
+
 polymesh
 {
  name MEHMFA1400_lamp_un0622
@@ -16027,6 +16102,15 @@ cylinder
  22.8853989 18.0594006 10.3662224 1
  shader "MAbrushed_aluminum"
  opaque on
+}
+
+mesh_light
+{
+ name MEHMFA1400_lamp_un0634_light
+ mesh MEHMFA1400_lamp_un0634
+ color 1 1 1
+ intensity 9.55000019
+ samples 1
 }
 
 polymesh
@@ -16278,6 +16362,15 @@ cylinder
  opaque on
 }
 
+mesh_light
+{
+ name MEHMFA1400_lamp_un0646_light
+ mesh MEHMFA1400_lamp_un0646
+ color 1 1 1
+ intensity 9.55000019
+ samples 1
+}
+
 polymesh
 {
  name MEHMFA1400_lamp_un0646
@@ -16525,6 +16618,15 @@ cylinder
  22.8853989 8.91540051 10.3662224 1
  shader "MAbrushed_aluminum"
  opaque on
+}
+
+mesh_light
+{
+ name MEHMFA1400_lamp_un0658_light
+ mesh MEHMFA1400_lamp_un0658
+ color 1 1 1
+ intensity 9.55000019
+ samples 1
 }
 
 polymesh
@@ -16776,6 +16878,15 @@ cylinder
  opaque on
 }
 
+mesh_light
+{
+ name MEHMFA1400_lamp_un0670_light
+ mesh MEHMFA1400_lamp_un0670
+ color 1 1 1
+ intensity 9.55000019
+ samples 1
+}
+
 polymesh
 {
  name MEHMFA1400_lamp_un0670
@@ -17023,6 +17134,15 @@ cylinder
  18.9991989 16.8147984 10.6710224 1
  shader "MAbrushed_aluminum"
  opaque on
+}
+
+mesh_light
+{
+ name MEHMFA1400_lamp_un0682_light
+ mesh MEHMFA1400_lamp_un0682
+ color 1 1 1
+ intensity 9.55000019
+ samples 1
 }
 
 polymesh
@@ -17274,6 +17394,15 @@ cylinder
  opaque on
 }
 
+mesh_light
+{
+ name MEHMFA1400_lamp_un0694_light
+ mesh MEHMFA1400_lamp_un0694
+ color 1 1 1
+ intensity 9.55000019
+ samples 1
+}
+
 polymesh
 {
  name MEHMFA1400_lamp_un0694
@@ -17521,6 +17650,15 @@ cylinder
  17.1957989 20.6247978 10.3662224 1
  shader "MAbrushed_aluminum"
  opaque on
+}
+
+mesh_light
+{
+ name MEHMFA1400_lamp_un0706_light
+ mesh MEHMFA1400_lamp_un0706
+ color 1 1 1
+ intensity 9.55000019
+ samples 1
 }
 
 polymesh
@@ -17772,6 +17910,15 @@ cylinder
  opaque on
 }
 
+mesh_light
+{
+ name MEHMFA1400_lamp_un0718_light
+ mesh MEHMFA1400_lamp_un0718
+ color 1 1 1
+ intensity 9.55000019
+ samples 1
+}
+
 polymesh
 {
  name MEHMFA1400_lamp_un0718
@@ -18019,6 +18166,15 @@ cylinder
  17.1957989 13.461998 10.3662224 1
  shader "MAbrushed_aluminum"
  opaque on
+}
+
+mesh_light
+{
+ name MEHMFA1400_lamp_un0730_light
+ mesh MEHMFA1400_lamp_un0730
+ color 1 1 1
+ intensity 9.55000019
+ samples 1
 }
 
 polymesh
@@ -18270,6 +18426,15 @@ cylinder
  opaque on
 }
 
+mesh_light
+{
+ name MEHMFA1400_lamp_un0742_light
+ mesh MEHMFA1400_lamp_un0742
+ color 1 1 1
+ intensity 9.55000019
+ samples 1
+}
+
 polymesh
 {
  name MEHMFA1400_lamp_un0742
@@ -18517,6 +18682,15 @@ cylinder
  17.1957989 6.34999895 10.3662224 1
  shader "MAbrushed_aluminum"
  opaque on
+}
+
+mesh_light
+{
+ name MEHMFA1400_lamp_un0754_light
+ mesh MEHMFA1400_lamp_un0754
+ color 1 1 1
+ intensity 9.55000019
+ samples 1
 }
 
 polymesh
@@ -18768,6 +18942,15 @@ cylinder
  opaque on
 }
 
+mesh_light
+{
+ name MEHMFA1400_lamp_un0766_light
+ mesh MEHMFA1400_lamp_un0766
+ color 1 1 1
+ intensity 9.55000019
+ samples 1
+}
+
 polymesh
 {
  name MEHMFA1400_lamp_un0766
@@ -19015,6 +19198,15 @@ cylinder
  13.309598 13.461998 10.6710224 1
  shader "MAbrushed_aluminum"
  opaque on
+}
+
+mesh_light
+{
+ name MEHMFA1400_lamp_un0778_light
+ mesh MEHMFA1400_lamp_un0778
+ color 1 1 1
+ intensity 9.55000019
+ samples 1
 }
 
 polymesh
@@ -19266,6 +19458,15 @@ cylinder
  opaque on
 }
 
+mesh_light
+{
+ name MEHMFA1400_lamp_un0790_light
+ mesh MEHMFA1400_lamp_un0790
+ color 1 1 1
+ intensity 9.55000019
+ samples 1
+}
+
 polymesh
 {
  name MEHMFA1400_lamp_un0790
@@ -19513,6 +19714,15 @@ cylinder
  10.4139986 20.6247978 10.6710224 1
  shader "MAbrushed_aluminum"
  opaque on
+}
+
+mesh_light
+{
+ name MEHMFA1400_lamp_un0802_light
+ mesh MEHMFA1400_lamp_un0802
+ color 1 1 1
+ intensity 9.55000019
+ samples 1
 }
 
 polymesh
@@ -19764,6 +19974,15 @@ cylinder
  opaque on
 }
 
+mesh_light
+{
+ name MEHMFA1400_lamp_un0814_light
+ mesh MEHMFA1400_lamp_un0814
+ color 1 1 1
+ intensity 9.55000019
+ samples 1
+}
+
 polymesh
 {
  name MEHMFA1400_lamp_un0814
@@ -20011,6 +20230,15 @@ cylinder
  10.4139986 13.461998 10.6710224 1
  shader "MAbrushed_aluminum"
  opaque on
+}
+
+mesh_light
+{
+ name MEHMFA1400_lamp_un0826_light
+ mesh MEHMFA1400_lamp_un0826
+ color 1 1 1
+ intensity 9.55000019
+ samples 1
 }
 
 polymesh
@@ -20262,6 +20490,15 @@ cylinder
  opaque on
 }
 
+mesh_light
+{
+ name MEHMFA1400_lamp_un0838_light
+ mesh MEHMFA1400_lamp_un0838
+ color 1 1 1
+ intensity 9.55000019
+ samples 1
+}
+
 polymesh
 {
  name MEHMFA1400_lamp_un0838
@@ -20509,6 +20746,15 @@ cylinder
  10.4139986 6.34999895 10.6710224 1
  shader "MAbrushed_aluminum"
  opaque on
+}
+
+mesh_light
+{
+ name MEHMFA1400_lamp_un0850_light
+ mesh MEHMFA1400_lamp_un0850
+ color 1 1 1
+ intensity 9.55000019
+ samples 1
 }
 
 polymesh
@@ -20760,6 +21006,15 @@ cylinder
  opaque on
 }
 
+mesh_light
+{
+ name MEHMFA1400_lamp_un0862_light
+ mesh MEHMFA1400_lamp_un0862
+ color 1 1 1
+ intensity 9.55000019
+ samples 1
+}
+
 polymesh
 {
  name MEHMFA1400_lamp_un0862
@@ -21007,6 +21262,15 @@ cylinder
  8.20419788 8.91540051 10.6710224 1
  shader "MAbrushed_aluminum"
  opaque on
+}
+
+mesh_light
+{
+ name MEHMFA1400_lamp_un0874_light
+ mesh MEHMFA1400_lamp_un0874
+ color 1 1 1
+ intensity 9.55000019
+ samples 1
 }
 
 polymesh
