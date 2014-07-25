@@ -64711,11 +64711,25 @@ polymesh
  opaque on
 }
 
+rad_score
+{
+ name MACONCYX_score
+ Kd_color 0.829999983 0.314999998 0.245000005
+ direction "yz"
+ score_width 0.014
+ interval_distance 9.3333
+ material_brightness 0.4633
+ score_brightness 0.01
+ use_Pref_matrix false
+ scale 0.3048 0.3048 0.3048 # 1.0 * 0.3048 (feet to meters)
+ rotation 0 0 0
+}
+
 standard
 {
  name MACONCYX
  Kd 0.959999979
- Kd_color 0.829999983 0.314999998 0.245000005
+ Kd_color MACONCYX_score # 0.829999983 0.314999998 0.245000005
  Ks 0.0399999991
  Ks_color 1 1 1
  specular_roughness 0.150000006
@@ -64856,11 +64870,36 @@ polymesh
  opaque on
 }
 
+rad_dirt
+{
+ name MACONCXY_dirt
+ Kd_color 0.829999983 0.314999998 0.245000005
+ dirtiness 0.6
+ use_Pref_matrix false
+ scale 0.18288 0.18288 0.18288 # 0.6 * 0.3048 (feet to meters)
+ rotation 0 0 0
+}
+
+rad_score
+{
+ name MACONCXY_score
+ Kd_color MACONCXY_dirt # 0.829999983 0.314999998 0.245000005
+ direction "xz"
+ score_width 0.014
+ interval_distance 5.9047
+ material_brightness 0.4633
+ score_brightness 0.0
+ use_Pref_matrix false
+ scale 0.3048 0.3048 0.3048 # 1.0 * 0.3048 (feet to meters)
+ rotation 0 0 0
+ translation 0 -7.1628 0 # 23.5 * 0.3048 (feet to meters)
+}
+
 standard
 {
  name MACONCXY
  Kd 0.959999979
- Kd_color 0.829999983 0.314999998 0.245000005
+ Kd_color MACONCXY_score # 0.829999983 0.314999998 0.245000005
  Ks 0.0399999991
  Ks_color 1 1 1
  specular_roughness 0.150000006
