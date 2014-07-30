@@ -22,6 +22,10 @@ options
   "indirect_specular RGB filter driver_indirect_specular"
  xres 1000
  yres 676
+ # region_min_x 844
+ # region_min_y 31
+ # region_max_x 970
+ # region_max_y 343
  bucket_size 64
  bucket_scanning "hilbert"
  camera "CAstage"
@@ -54943,6 +54947,24 @@ polymesh
  0 0 0 1
  shader "MACURTAIN"
  opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MACURTAIN_disp"
+ disp_padding 1.0
+ ##disp_autobump true
+ opaque on
+}
+
+rad_curtain
+{
+ name MACURTAIN_disp
+ selectionX "dx" # dx dy dz dfx dfy dot
+ selectionY "dy" # dx dy dz dfx dfy dot
+ selectionZ "dz" # dx dy dz dfx dfy dot
+ use_Pref_matrix false
+ scale 0.09144 0.09144 0.09144 # 0.3 * 0.3048 (feet to meters)
+ rotation 0 0 90
 }
 
 standard
@@ -54971,6 +54993,13 @@ polymesh
  0 0 0 1
  shader "MACURTAIN"
  opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MACURTAIN_disp"
+ disp_padding 0.41
+ ##disp_autobump true
+ opaque on
 }
 
 polymesh
@@ -54989,6 +55018,13 @@ polymesh
  0 0 1 0
  0 0 0 1
  shader "MACURTAIN"
+ opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MACURTAIN_disp"
+ disp_padding 1.0
+ ##disp_autobump true
  opaque on
 }
 
@@ -55009,6 +55045,13 @@ polymesh
  0 0 0 1
  shader "MACURTAIN"
  opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MACURTAIN_disp"
+ disp_padding 0.4
+ ##disp_autobump true
+ opaque on
 }
 
 polymesh
@@ -55028,6 +55071,13 @@ polymesh
  0 0 0 1
  shader "MACURTAIN"
  opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MACURTAIN_disp"
+ disp_padding 1.0
+ ##disp_autobump true
+ opaque on
 }
 
 polymesh
@@ -55045,8 +55095,36 @@ polymesh
  0 1 0 0
  0 0 1 0
  0 0 0 1
+ ## shader "MAGREYVELV_util"
  shader "MAGREYVELV"
  opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MAGREYVELV_disp"
+ disp_padding 1.0
+ ##disp_autobump true
+}
+
+rad_curtain
+{
+ name MAGREYVELV_disp
+ selectionX "dx" # dx dy dz dfx dfy dot
+ selectionY "dy" # dx dy dz dfx dfy dot
+ selectionZ "dz" # dx dy dz dfx dfy dot
+ use_Pref_matrix false
+ scale 0.09144 0.09144 0.09144 # 0.3 * 0.3048 (feet to meters)
+ rotation 0 0 90
+}
+
+wireframe
+{
+ name MAGREYVELV_util
+ line_width 1
+ fill_color 1 1 1
+ line_color 0 0 0
+ raster_space true
+ edge_type 0 # triangles polygons patches
 }
 
 standard
@@ -55075,6 +55153,13 @@ polymesh
  0 0 0 1
  shader "MACURTAIN"
  opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MACURTAIN_disp"
+ disp_padding 0.4
+ ##disp_autobump true
+ opaque on
 }
 
 polymesh
@@ -55093,6 +55178,13 @@ polymesh
  0 0 1 0
  0 0 0 1
  shader "MACURTAIN"
+ opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MACURTAIN_disp"
+ disp_padding 1.0
+ ##disp_autobump true
  opaque on
 }
 
@@ -55113,6 +55205,13 @@ polymesh
  0 0 0 1
  shader "MACURTAIN"
  opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MACURTAIN_disp"
+ disp_padding 0.4
+ ##disp_autobump true
+ opaque on
 }
 
 polymesh
@@ -55131,6 +55230,13 @@ polymesh
  0 0 1 0
  0 0 0 1
  shader "MACURTAIN"
+ opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MACURTAIN_disp"
+ disp_padding 1.0
+ ##disp_autobump true
  opaque on
 }
 
@@ -55151,6 +55257,13 @@ polymesh
  0 0 0 1
  shader "MACURTAIN"
  opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MACURTAIN_disp"
+ disp_padding 1.0
+ ##disp_autobump true
+ opaque on
 }
 
 polymesh
@@ -55170,6 +55283,12 @@ polymesh
  0 0 0 1
  shader "MAGREYVELV"
  opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MAGREYVELV_disp"
+ disp_padding 1.0
+ ##disp_autobump true
 }
 
 polymesh
@@ -55188,6 +55307,13 @@ polymesh
  0 0 1 0
  0 0 0 1
  shader "MACURTAIN"
+ opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MACURTAIN_disp"
+ disp_padding 1.0
+ ##disp_autobump true
  opaque on
 }
 
@@ -55208,6 +55334,13 @@ polymesh
  0 0 0 1
  shader "MACURTAIN"
  opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MACURTAIN_disp"
+ disp_padding 1.0
+ ##disp_autobump true
+ opaque on
 }
 
 polymesh
@@ -55226,6 +55359,13 @@ polymesh
  0 0 1 0
  0 0 0 1
  shader "MACURTAIN"
+ opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MACURTAIN_disp"
+ disp_padding 1.0
+ ##disp_autobump true
  opaque on
 }
 
@@ -55246,6 +55386,13 @@ polymesh
  0 0 0 1
  shader "MACURTAIN"
  opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MACURTAIN_disp"
+ disp_padding 1.0
+ ##disp_autobump true
+ opaque on
 }
 
 polymesh
@@ -55264,6 +55411,13 @@ polymesh
  0 0 1 0
  0 0 0 1
  shader "MACURTAIN"
+ opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MACURTAIN_disp"
+ disp_padding 1.0
+ ##disp_autobump true
  opaque on
 }
 
@@ -55284,6 +55438,24 @@ polymesh
  0 0 0 1
  shader "MABLCKVEVL"
  opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MABLCKVEVL_disp"
+ disp_padding 1.0
+ ##disp_autobump true
+ opaque on
+}
+
+rad_curtain
+{
+ name MABLCKVEVL_disp
+ selectionX "dx" # dx dy dz dfx dfy dot
+ selectionY "dy" # dx dy dz dfx dfy dot
+ selectionZ "dz" # dx dy dz dfx dfy dot
+ use_Pref_matrix false
+ scale 0.09144 0.09144 0.09144 # 0.3 * 0.3048 (feet to meters)
+ rotation 0 0 90
 }
 
 standard
@@ -55312,6 +55484,24 @@ polymesh
  0 0 0 1
  shader "MAYELLVELV"
  opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MAYELLVELV_disp"
+ disp_padding 1.0
+ ##disp_autobump true
+ opaque on
+}
+
+rad_curtain
+{
+ name MAYELLVELV_disp
+ selectionX "dx" # dx dy dz dfx dfy dot
+ selectionY "dy" # dx dy dz dfx dfy dot
+ selectionZ "dz" # dx dy dz dfx dfy dot
+ use_Pref_matrix false
+ scale 0.09144 0.09144 0.09144 # 0.3 * 0.3048 (feet to meters)
+ rotation 0 0 90
 }
 
 standard
@@ -55340,6 +55530,13 @@ polymesh
  0 0 0 1
  shader "MACURTAIN"
  opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MACURTAIN_disp"
+ disp_padding 1.0
+ ##disp_autobump true
+ opaque on
 }
 
 polymesh
@@ -55358,6 +55555,13 @@ polymesh
  0 0 1 0
  0 0 0 1
  shader "MACURTAIN"
+ opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MACURTAIN_disp"
+ disp_padding 1.0
+ ##disp_autobump true
  opaque on
 }
 
@@ -55378,6 +55582,13 @@ polymesh
  0 0 0 1
  shader "MACURTAIN"
  opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MACURTAIN_disp"
+ disp_padding 1.0
+ ##disp_autobump true
+ opaque on
 }
 
 polymesh
@@ -55396,6 +55607,13 @@ polymesh
  0 0 1 0
  0 0 0 1
  shader "MACURTAIN"
+ opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MACURTAIN_disp"
+ disp_padding 1.0
+ ##disp_autobump true
  opaque on
 }
 
@@ -55416,6 +55634,13 @@ polymesh
  0 0 0 1
  shader "MACURTAIN"
  opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MACURTAIN_disp"
+ disp_padding 1.0
+ ##disp_autobump true
+ opaque on
 }
 
 polymesh
@@ -55434,6 +55659,13 @@ polymesh
  0 0 1 0
  0 0 0 1
  shader "MACURTAIN"
+ opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MACURTAIN_disp"
+ disp_padding 1.0
+ ##disp_autobump true
  opaque on
 }
 
@@ -55454,6 +55686,13 @@ polymesh
  0 0 0 1
  shader "MACURTAIN"
  opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MACURTAIN_disp"
+ disp_padding 0.45
+ ##disp_autobump true
+ opaque on
 }
 
 polymesh
@@ -55472,6 +55711,13 @@ polymesh
  0 0 1 0
  0 0 0 1
  shader "MACURTAIN"
+ opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MACURTAIN_disp"
+ disp_padding 1.0
+ ##disp_autobump true
  opaque on
 }
 
@@ -55492,6 +55738,13 @@ polymesh
  0 0 0 1
  shader "MACURTAIN"
  opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MACURTAIN_disp"
+ disp_padding 0.45
+ ##disp_autobump true
+ opaque on
 }
 
 polymesh
@@ -55510,6 +55763,13 @@ polymesh
  0 0 1 0
  0 0 0 1
  shader "MACURTAIN"
+ opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MACURTAIN_disp"
+ disp_padding 1.0
+ ##disp_autobump true
  opaque on
 }
 
@@ -55530,6 +55790,13 @@ polymesh
  0 0 0 1
  shader "MABLCKVEVL"
  opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MABLCKVEVL_disp"
+ disp_padding 1.0
+ ##disp_autobump true
+ opaque on
 }
 
 polymesh
@@ -55548,6 +55815,13 @@ polymesh
  0 0 1 0
  0 0 0 1
  shader "MACURTAIN"
+ opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MACURTAIN_disp"
+ disp_padding 1.0
+ ##disp_autobump true
  opaque on
 }
 
@@ -55568,6 +55842,13 @@ polymesh
  0 0 0 1
  shader "MACURTAIN"
  opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MACURTAIN_disp"
+ disp_padding 1.0
+ ##disp_autobump true
+ opaque on
 }
 
 polymesh
@@ -55586,6 +55867,13 @@ polymesh
  0 0 1 0
  0 0 0 1
  shader "MACURTAIN"
+ opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MACURTAIN_disp"
+ disp_padding 1.0
+ ##disp_autobump true
  opaque on
 }
 
@@ -55606,6 +55894,13 @@ polymesh
  0 0 0 1
  shader "MACURTAIN"
  opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MACURTAIN_disp"
+ disp_padding 1.0
+ ##disp_autobump true
+ opaque on
 }
 
 polymesh
@@ -55625,6 +55920,13 @@ polymesh
  0 0 0 1
  shader "MACURTAIN"
  opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MACURTAIN_disp"
+ disp_padding 1.0
+ ##disp_autobump true
+ opaque on
 }
 
 polymesh
@@ -55643,6 +55945,13 @@ polymesh
  0 0 1 0
  0 0 0 1
  shader "MAYELLVELV"
+ opaque on
+ subdiv_type "linear"
+ subdiv_iterations 8
+ ##subdiv_pixel_error .1
+ disp_map "MAYELLVELV_disp"
+ disp_padding 1.0
+ ##disp_autobump true
  opaque on
 }
 
