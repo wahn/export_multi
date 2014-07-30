@@ -1,0 +1,212 @@
+#
+# A "single" fluorescent fixture (two lamps end-to-end)
+# Emergency light level
+#
+
+void glow fixt1glow
+0
+0
+4 2.79 2.79 2.79 10
+
+void glow fixt1glowdull
+0
+0
+4 2.79 2.79 2.79 -1
+
+void light fixt1light
+0
+0
+3 2.79 2.79 2.79
+
+# xform -t -1.2 -.2085 -.21
+# genbox fixt1glowdull fixt1 2.4 .417 .21 -r .05
+
+fixt1glow polygon fixt1.dhgc
+0
+0
+12
+               1.15            -0.2085              -0.16
+               1.15            -0.2085              -0.05
+              -1.15            -0.2085              -0.05
+              -1.15            -0.2085              -0.16
+
+fixt1glowdull polygon fixt1.oqmk
+0
+0
+12
+               -1.2            -0.1585              -0.05
+               -1.2             0.1585              -0.05
+               -1.2             0.1585              -0.16
+               -1.2            -0.1585              -0.16
+
+fixt1light polygon fixt1.OPNM
+0
+0
+12
+              -1.15             0.1585              -0.21
+               1.15             0.1585              -0.21
+               1.15            -0.1585              -0.21
+              -1.15            -0.1585              -0.21
+
+fixt1glow polygon fixt1.feij
+0
+0
+12
+               1.15             0.2085              -0.16
+              -1.15             0.2085              -0.16
+              -1.15             0.2085              -0.05
+               1.15             0.2085              -0.05
+
+fixt1glowdull polygon fixt1.plnr
+0
+0
+12
+                1.2            -0.1585              -0.05
+                1.2            -0.1585              -0.16
+                1.2             0.1585              -0.16
+                1.2             0.1585              -0.05
+
+wall_paint polygon fixt1.SQRT
+0
+0
+12
+              -1.15             0.1585                  0
+              -1.15            -0.1585                  0
+               1.15            -0.1585                  0
+               1.15             0.1585                  0
+
+fixt1glowdull cylinder fixt1.hi
+0
+0
+7
+              -1.15            -0.1585              -0.16
+               1.15            -0.1585              -0.16
+               0.05
+
+fixt1glowdull cylinder fixt1.hl
+0
+0
+7
+              -1.15            -0.1585              -0.16
+              -1.15            -0.1585              -0.05
+               0.05
+
+fixt1glowdull cylinder fixt1.hj
+0
+0
+7
+              -1.15            -0.1585              -0.16
+              -1.15             0.1585              -0.16
+               0.05
+
+fixt1glowdull cylinder fixt1.ki
+0
+0
+7
+               1.15             0.1585              -0.16
+               1.15            -0.1585              -0.16
+               0.05
+
+fixt1glowdull cylinder fixt1.kj
+0
+0
+7
+               1.15             0.1585              -0.16
+              -1.15             0.1585              -0.16
+               0.05
+
+fixt1glowdull cylinder fixt1.ko
+0
+0
+7
+               1.15             0.1585              -0.16
+               1.15             0.1585              -0.05
+               0.05
+
+fixt1glowdull cylinder fixt1.mi
+0
+0
+7
+               1.15            -0.1585              -0.05
+               1.15            -0.1585              -0.16
+               0.05
+
+wall_paint cylinder fixt1.ml
+0
+0
+7
+               1.15            -0.1585              -0.05
+              -1.15            -0.1585              -0.05
+               0.05
+
+wall_paint cylinder fixt1.mo
+0
+0
+7
+               1.15            -0.1585              -0.05
+               1.15             0.1585              -0.05
+               0.05
+
+fixt1glowdull cylinder fixt1.nj
+0
+0
+7
+              -1.15             0.1585              -0.05
+              -1.15             0.1585              -0.16
+               0.05
+
+wall_paint cylinder fixt1.nl
+0
+0
+7
+              -1.15             0.1585              -0.05
+              -1.15            -0.1585              -0.05
+               0.05
+
+wall_paint cylinder fixt1.no
+0
+0
+7
+              -1.15             0.1585              -0.05
+               1.15             0.1585              -0.05
+               0.05
+
+fixt1glowdull sphere fixt1.h
+0
+0
+4              -1.15            -0.1585              -0.16               0.05
+
+fixt1glowdull sphere fixt1.i
+0
+0
+4               1.15            -0.1585              -0.16               0.05
+
+fixt1glowdull sphere fixt1.j
+0
+0
+4              -1.15             0.1585              -0.16               0.05
+
+fixt1glowdull sphere fixt1.k
+0
+0
+4               1.15             0.1585              -0.16               0.05
+
+wall_paint sphere fixt1.l
+0
+0
+4              -1.15            -0.1585              -0.05               0.05
+
+wall_paint sphere fixt1.m
+0
+0
+4               1.15            -0.1585              -0.05               0.05
+
+wall_paint sphere fixt1.n
+0
+0
+4              -1.15             0.1585              -0.05               0.05
+
+wall_paint sphere fixt1.o
+0
+0
+4               1.15             0.1585              -0.05               0.05

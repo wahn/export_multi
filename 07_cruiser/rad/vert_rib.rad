@@ -1,0 +1,28 @@
+# A vertical hull rib
+
+wall_paint polygon vrib.front
+0
+0
+12
+               -0.4                  0                  8
+               -0.4               1                  8
+               -0.4               1                  0
+               -0.4                  0                  0
+
+wall_paint polygon vrib.inner
+0
+0
+12
+                0.4               1                  0
+               -0.4               1                  0
+               -0.4               1                  8
+                0.4               1                  8
+
+wall_paint polygon vrib.back
+0
+0
+12
+                0.4                  0                  8
+                0.4                  0                  0
+                0.4               1                  0
+                0.4               1                  8

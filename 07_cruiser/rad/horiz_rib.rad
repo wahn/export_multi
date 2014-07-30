@@ -1,0 +1,28 @@
+# A horizontal hull rib
+
+wall_paint polygon hrib.bottom
+0
+0
+12
+                  0               .5             -.25
+                 80               .5             -.25
+                 80                  0             -.25
+                  0                  0             -.25
+
+wall_paint polygon hrib.inner
+0
+0
+12
+                 80               .5             -.25
+                  0               .5             -.25
+                  0               .5              .25
+                 80               .5              .25
+
+wall_paint polygon hrib.top
+0
+0
+12
+                  0               .5              .25
+                  0                  0              .25
+                 80                  0              .25
+                 80               .5              .25

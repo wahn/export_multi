@@ -1,0 +1,55 @@
+!genworm red_paint red_hose '.5*cos(t*PI/2.5)' 0 '.5*sin(t*PI/2.5)' .035 6 \
+   | xform -t 0 0 3
+
+red_paint cylinder red_hose 
+0
+0
+7
+     0.5  0  3
+     0.5  0  1
+     .035   
+
+
+#dull_brass cylinder head_hose1
+#0
+#0
+#7
+    #0  0  3.5
+    #.2 0  3.5
+    #.053 
+
+#dull_brass cone head_hose2
+#0
+#0
+#8
+    #-.1  0  3.5
+     #.15 0 3.5
+     #.02 .045
+
+#dull_brass cylinder head_hose3
+#0
+#0
+#7
+    #-.07 0  3.5
+    #-.06 0  3.5
+     #.042
+
+#dull_brass cylinder head_hose4
+#0
+#0
+#7
+    #-.05 0  3.5
+    #-.04 0  3.5
+     #.042
+
+#dull_brass cylinder head_hose5
+#0
+#0
+#7
+    #-.03 0  3.5
+    #-.02 0  3.5
+     #.042
+ 
+
+
+      

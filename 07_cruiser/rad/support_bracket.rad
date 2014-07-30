@@ -1,0 +1,23 @@
+!genbox ceil_paint support_bracket .06 1.55 .03 
+ceil_paint cylinder support1 
+0
+0
+7
+        .02       .02      .02 
+        .02       .02       .62
+        .02
+
+
+ceil_paint cylinder support2
+0
+0
+7
+        .02       1.53      .02 
+        .02       1.53       .62
+        .02
+
+
+
+
+
+   

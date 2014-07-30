@@ -1,0 +1,19 @@
+# A vent box and duct to the next
+
+ceil_paint cylinder duct
+0
+0
+7
+                  0                  0                7.5
+                 16                  0                7.5
+               0.35
+
+ceil_paint instance ventbox
+5 ventbox.oct -t 18 0 7.5
+0
+0
+
+ceil_paint sphere plug
+0
+0
+4              20.25                  0                7.5               0.35

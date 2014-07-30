@@ -1,0 +1,883 @@
+#
+# The port side of our deck (mirror image of starboard side)
+#
+
+########################
+# The hull and ribbing:
+
+wall_paint polygon hull
+0
+0
+12
+	0	-1	0
+	0	-1	8
+	80	-1	8
+	80	-1	0
+
+!xform -t 0 -1 2 -a 3 -t 0 0 2 horiz_rib.rad
+
+!xform -t 0 -1 0 -a 11 -t 8 0 0 vert_rib.rad
+
+########################
+# The deck:
+
+deck_mat polygon bow_deck
+0
+0
+24
+	0	-1	0
+	40	-1	0
+	40	5	0
+	17.5	5	0
+	17.5	3	0
+	10	3	0
+	10	5	0
+	0	5	0
+
+deck_mat polygon stern_deck
+0
+0
+24
+	40	-1	0
+	80	-1	0
+	80	5	0
+	67	5	0
+	67	3	0
+	50	3	0
+	50	5	0
+	40	5	0
+
+#########################
+# The ceiling:
+
+ceil_paint polygon bow_ceiling
+0
+0
+24
+	0	-1	8
+	0	5	8
+	10	5	8
+	10	3	8
+	23	3	8
+	23	5	8
+	40	5	8
+	40	-1	8
+
+ceil_paint polygon stern_ceiling
+0
+0
+30
+	40	-1	8
+	40	5	8
+	50	5	8
+	50	3	8
+	57	3	8
+	57	7	8
+	67	7	8
+	67	5	8
+	80	5	8
+	80	-1	8
+
+#########################
+# Interior walls:
+
+!genprism wallbase_mat iwall1 8  0 5.5  10.5 5.5  10.5 3.5  13 3.5 \
+	13 3  10 3  10 5  0 5  -l 0 0 8 -e -c
+
+!genbox wall_paint iwall1-2.head 2.5 .5 1 | xform -t 13 3 7
+
+!genprism wallbase_mat iwall2 8  40 5  17.5 5  17.5 3  15.5 3 \
+	15.5 3.5  17 3.5  17 5.5  40 5.5  -l 0 0 8 -e -c
+
+!genprism wallbase_mat iwall3 12  50.5 3.5  56.5 3.5  56.5 7.5  67.5 7.5 \
+	67.5 5.5  70 5.5  70 5  67 5  67 7  57 7  57 3  50.5 3  -l 0 0 8 -e -c
+
+!genbox wall_paint iwall3-4.head 2.5 .5 1 | xform -t 70 5 7
+
+!genprism wallbase_mat iwall4 4  80 5  72.5 5  72.5 5.5  80 5.5 \
+	-l 0 0 8 -e -c
+
+#########################
+# Vertical hatches:
+#
+#!xform -n bow_hatch cvhatch.rad
+#
+#!xform -n mid_hatch -t 40 0 0 ovhatch.rad
+#
+#!xform -n stern_hatch -t 80 0 0 cvhatch.rad
+
+void instance bow_hatch
+1 cvhatch.oct
+0
+0
+
+void instance mid_hatch
+5 ovhatch.oct -t 40 0 0
+0
+0
+
+void instance stern_hatch
+5 cvhatch.oct -t 80 0 0
+0
+0
+
+############################################
+# Horizontal hatch and stairs to lower deck:
+#
+
+void instance down_stairs
+1 ohhatch.oct
+0
+0
+
+# xform -t 52 1 -8
+# genbox wall_paint lower_room 12 8 8
+
+wall_paint polygon lower_room.1540
+0
+0
+12
+                 64                  1                 -8
+                 64                  1                  0
+                 52                  1                  0
+                 52                  1                 -8
+
+wall_paint polygon lower_room.4620
+0
+0
+12
+                 52                  1                  0
+                 52                  9                  0
+                 52                  9                 -8
+                 52                  1                 -8
+
+deck_mat polygon lower_room.2310
+0
+0
+12
+                 52                  9                 -8
+                 64                  9                 -8
+                 64                  1                 -8
+                 52                  1                 -8
+
+wall_paint polygon lower_room.3267
+0
+0
+12
+                 64                  9                 -8
+                 52                  9                 -8
+                 52                  9                  0
+                 64                  9                  0
+
+wall_paint polygon lower_room.5137
+0
+0
+12
+                 64                  1                  0
+                 64                  1                 -8
+                 64                  9                 -8
+                 64                  9                  0
+
+#################################
+# Unlatched stairs to upper deck:
+#
+#!xform -n stairsup -e -t 23 3 0 stairs.rad
+
+void instance up_stairs
+5 stairs.oct -t 23 3 0
+0
+0
+
+# xform -t 15 0 8
+# genbox wall_paint upper_room 8 8 8
+
+wall_paint polygon upper_room.1540
+0
+0
+12
+                 23                  0                  8
+                 23                  0                 16
+                 15                  0                 16
+                 15                  0                  8
+
+wall_paint polygon upper_room.4620
+0
+0
+12
+                 15                  0                 16
+                 15                  8                 16
+                 15                  8                  8
+                 15                  0                  8
+
+wall_paint polygon upper_room.3267
+0
+0
+12
+                 23                  8                  8
+                 15                  8                  8
+                 15                  8                 16
+                 23                  8                 16
+
+wall_paint polygon upper_room.5137
+0
+0
+12
+                 23                  0                 16
+                 23                  0                  8
+                 23                  8                  8
+                 23                  8                 16
+
+wall_paint polygon upper_room.6457
+0
+0
+12
+                 15                  8                 16
+                 15                  0                 16
+                 23                  0                 16
+                 23                  8                 16
+
+#########################
+# Things in the ceiling:
+
+!genbox ceil_paint wirecage 80 1.4 .6 | xform -t 0 1.5 7
+
+!xform -e -n ventduct -mx -t 80 .75 0 -a 4 -t -18 0 0 ventduct.rad
+
+ceil_paint cylinder pipe1.0
+0
+0
+7
+	0	4.2	7.1
+	7	4.2	7.1
+	.28
+
+!genworm ceil_paint pipe1.1 'hermite(7,11,3,3,t)' 'hermite(4.2,1.8,0,0,t)' \
+	'hermite(7.1,7.7,0,0,if(t-.5,1,t*2))' .28 12
+
+ceil_paint cylinder pipe1.2
+0
+0
+7
+	11	1.8	7.7
+	24	1.8	7.7
+	.28
+
+!genworm ceil_paint pipe1.3 'hermite(24,28,3,3,t)' 'hermite(1.8,4.2,0,0,t)' \
+	'hermite(7.7,7.1,0,0,if(.5-t,0,t*2-1))' .28 12
+
+ceil_paint cylinder pipe1.4
+0
+0
+7
+	28	4.2	7.1
+	45	4.2	7.1
+	.28
+
+!genworm ceil_paint pipe1.5 'hermite(45,49,3,3,t)' 'hermite(4.2,1.8,0,0,t)' \
+	'hermite(7.1,7.7,0,0,if(t-.5,1,t*2))' .28 12
+
+ceil_paint cylinder pipe1.6
+0
+0
+7
+	49	1.8	7.7
+	58	1.8	7.7
+	.28
+
+!genworm ceil_paint pipe1.7 'hermite(58,62,3,3,t)' 'hermite(1.8,4.2,0,0,t)' \
+	'hermite(7.7,7.1,0,0,if(.5-t,0,t*2-1))' .28 12
+
+ceil_paint cylinder pipe1.7
+0
+0
+7
+	62	1.8	7.7
+	80	1.8	7.7
+	.28
+
+!genbox ceil_paint wirecage 80 1.4 .6 | xform -t 0 1.5 7
+
+!xform -e -n ventduct -mx -t 80 .75 0 -a 4 -t -18 0 0 ventduct.rad
+
+####################################
+# An array of valves and indicators:
+
+!xform -e -t 6 5 4 -a 6 -t .583333 0 0 -a 2 -t 0 0 1 valve_unit.rad
+
+wallbase_mat cylinder valve_array_supply_pipe
+0
+0
+7
+	5.6	4.85	0
+	5.6	4.85	8
+	.0625
+
+wall_paint sphere lower_valve_row_supply_joint
+0
+0
+4 5.6 4.85 4 .1
+
+wall_paint cylinder lower_valve_row_supply_pipe
+0
+0
+7
+	5.6	4.85	4
+	6	4.85	4
+	.05
+
+wall_paint sphere upper_valve_row_supply_joint
+0
+0
+4 5.6 4.85 5 .1
+
+wallbase_mat cylinder upper_valve_row_supply_pipe
+0
+0
+7
+	5.6	4.85	5
+	6	4.85	5
+	.05
+
+ 
+######################
+# Signs on the walls:
+
+void colorpict dirsgn_pic
+7 clip clip clip pat/dirsgn.pic . (Px-10.5)/1.8 (Pz-4.25)/1.8
+0
+0
+
+dirsgn_pic plastic dirsgn_paint
+0
+0
+5 1 1 1 0 0
+
+dirsgn_paint polygon direction_sign
+0
+0
+12
+	10.5	2.999	4.25
+	12.5	2.999	4.25
+	12.5	2.999	6.05
+	10.5	2.999	6.05
+
+void colorpict sectsgn_pic
+7 clip clip clip pat/yelsgn.pic . 21.1-Px Pz-4.6
+0
+0
+
+sectsgn_pic plastic sectsgn_paint
+0
+0
+5 1 1 1 0 0
+
+sectsgn_paint polygon section_sign
+0
+0
+12
+	21.1	-.999	4.6
+	19.83	-.999	4.6
+	19.83	-.999	5.6
+	21.1	-.999	5.6
+
+#####################################
+# Vertical pipes just hanging around:
+
+wallbase_mat cylinder vert_pipe1
+0
+0
+7
+	9.75	4.75	0
+	9.75	4.75	8
+	.15
+
+wall_paint sphere pipe1.1
+0
+0
+4 9.75 4.75 2 .22
+
+wall_paint cylinder pipe1.2
+0
+0
+7
+	9.75	4.75	2
+	9.75	4.75	3
+	.22
+
+wall_paint sphere pipe1.3
+0
+0
+4 9.75 4.75 3 .22
+
+!genbox dark_green pipe1.valve.box 4 6 6 -r .7 | xform -t -4 -3 -3 -s .08333 \
+	-t 9.55 4.75 2.5
+
+!genprism dark_green pipe1.valve.housing 6  -3 -3  -5 -2  -5 2 \
+	-3 3  3 3   3 -3  -l 0 0 4 | xform -ry -90 -s .08333 -t 9.2167 4.75 2.5
+
+stainless cylinder pipe1.valve.stem
+0
+0
+7
+	9	4.75	2.167	
+	9	4.25	2.167
+	.04
+
+!xform -e -n pipe1.valve.handle -t 9 4.25 2.167 fire_valve.rad
+
+wallbase_mat cylinder pipe2
+0
+0
+7
+	27.6	4.5	0
+	27.6	4.5	8
+	.16
+
+wallbase_mat cylinder pipe3
+0
+0
+7
+	28.2	4.6	0
+	28.2	4.6	8
+	.16
+
+###############################
+# Emergency connection boxes:
+
+void instance connbox1
+9 connbox.oct -rz 180 -ry 180 -t 15.96 0 4.66
+0
+0
+
+!genworm wall_paint conduit1 'hermite(15.994,16,.3,0,t)' \
+	'hermite(.185,.04,0,0,t)' 'hermite(4.164,3,-1,-1,t)' .038 4
+
+wall_paint cylinder conduit1b
+0
+0
+7
+	16	.04	3
+	16	.04	0
+	.038
+
+void instance connbox2
+7 connbox.oct -rz 180 -t 17.95 -1 4.7
+0
+0
+
+!genworm wall_paint conduit2 'hermite(17.91,16.44,-.05,-.05,t)' \
+	'hermite(-.817,-.3,0,0,t)' 'hermite(5.195,4.8,1.6,-2.8,t)' .038 12
+
+wall_paint cylinder conduit2b
+0
+0
+7
+	16.44	-.3	4.8
+	16.44	-.3	0
+	.038
+
+void instance connbox3
+7 connbox.oct -rz 90 -t .01 4.25 5.35
+0
+0
+
+!xform -e -n cbox0 -rz 180 -t 2.04 5 3 jbox2.rad
+
+!genworm wall_paint conduit3_0 'hermite(1.07,.189,0,0,t)' \
+	'hermite(4.78,4.285,0,-.2,t)' 'hermite(5.92,5.846,2,-3,t)' .038 11
+
+void instance connbox4
+7 connbox.oct -ry 180 -t 53.5 3 5.25 
+0
+0
+
+!genworm wall_paint conduit4a 'hermite(53.465,53,0,0,t)' \
+        'hermite(2.814,2.965,0,0,t)' 'hermite(4.76,4.04,-1,-1,t)' .038 11
+
+!genworm wall_paint conduit4b 'hermite(53,54.55,0,0,t)' \
+        'hermite(2.965,2.86,0,0,t)' 'hermite(4.04,3.57,-1,1,t)' .038 11
+
+void instance connbox5
+7 connbox.oct -ry 180 -t 52.2552 3 5.48997
+0
+0
+
+!genworm wall_paint conduit5a 'hermite(52.22,52.2,0,0,t)' \
+        'hermite(2.82,2.965,0,0,t)' 'hermite(4.98,4.49,-1,-1,t)' .038 11
+
+wall_paint cylinder conduit5b
+0
+0
+7
+        52.2 2.965 4.49 
+        52.2 2.965 2.32 
+        .038
+
+!genworm wall_paint conduit5c 'hermite(52.2,52.2,0,0,t)' \
+        'hermite(2.965,2.82,0,0,t)' 'hermite(2.32,0,-1,-1,t)' .038 11
+
+####################################
+# Carbon-dioxide fire extinguishers:
+
+void instance extinguisher1
+5 extinguisher.oct -t 24 0 1
+0
+0
+
+void instance exting2a
+9 exting2.oct -s .08333 -s .6 -t 34 4.84 2.55  
+0
+0
+
+void instance exting2b
+9 exting2.oct -s .08333 -s .6 -t 34.7 4.84 2.55
+0
+0
+#!xform -s .08333 -s .6 -t 34 4.84 2.55 parts/exting2.rad  
+#!xform -s .08333 -s .6 -t 34.7 4.84 2.55 parts/exting2.rad  
+
+########################################
+# Connection boxes, control panels, etc:
+
+!genbox grey_paint cbox1 2 1.5 2 | xform -t 24.75 -.5 .33
+
+!genbox grey_paint cbox2 2 1.5 2 | xform -t 27 -.5 .33
+
+!genbox grey_paint cbox3 2 1.5 2 | xform -t 29.25 -.5 .33
+
+wall_paint cylinder conduit1_2_3
+0
+0
+7
+	25	.5	1.5
+	30	.5	1.5
+	.08
+
+!xform -e -n cbox4 -t 32.5 -.5 3.5 jbox2.rad
+
+!genworm wall_paint conduit3_4 'hermite(31.25,33.156,5,0,t)' \
+	'hermite(.3103,-.280,0,0,t)' 'hermite(1.765,3.5,0,5,t)' .08 10
+
+!xform -e -n cbox5 -rz 180 -t 4.84 5 2.85 jbox1.rad
+
+wall_paint cylinder conduit0_5a
+0
+0
+7
+	2.84	4.48	5.13
+	2.04	4.48	5.13
+	.05
+
+wall_paint cylinder conduit0_5b
+0
+0
+7
+	2.84	4.48	4.5
+	2.04	4.48	4.5
+	.05
+
+### port section
+!xform -n cbox6 -e -t 6.037383e+00  -5.000000e-01   3.56913  jbox2.rad
+!xform -n cbox7 -e -rz 180 -t 55.9022 3 3.56913  jbox2.rad
+
+####################################
+# Foot lockers:
+
+!xform -e -n locker1 -rz 180 -t 19.08 4.99 0 locker.rad
+!xform -e -n locker2 -t 77 -.5 -.5 locker.rad
+
+####################################
+# Meters and indicators:
+
+!xform -e -n meter1 -rz 180 -t 26.75 5 4.5 meters.rad
+
+###################################
+# Electrical jumper cable racks:
+
+void instance cable_rack1
+5 cable_rack.oct -t 1.074766e+01    -5.000000e-01   3.981308e+00
+0
+0
+
+void instance cable_rack2
+5 cable_rack.oct -t  53.5 -.5 3.967 
+0
+0
+
+###################################
+# breathers & breather_rack
+
+!xform -e -n  breatherack -t 0.58 0.08 2.08 -t 46.9 -0.5 0.0 breatherack.rad
+
+green_paint instance breather1
+9 breather.oct  -rz 180 -rx -90 -t 47.45 -.45 .082
+0
+0
+
+green_paint instance breather2
+9 breather.oct -rz 180 -rx -90 -t 47.45 -.45 .25 
+0
+0
+
+green_paint instance breather3
+9 breather.oct -rz 180 -rx -90 -t 47.45 -.45 .418 
+0
+0
+
+green_paint instance breather4
+9 breather.oct -rz 180 -rx -90 -t 47.45 -.45 .586 
+0
+0
+
+green_paint instance breather5
+9 breather.oct -rz 180 -rx -90 -t 47.45 -.45 .754 
+0
+0
+
+green_paint instance breather6
+9 breather.oct -rz 180 -rx -90 -t 47.45 -.45 .922 
+0
+0
+
+green_paint instance breather7
+9 breather.oct -rz 180 -rx -90 -t 47.45 -.45 1.09 
+0
+0
+
+green_paint instance breather8
+9 breather.oct -rz 180 -rx -90 -t 47.45 -.45 1.258 
+0
+0
+
+green_paint instance breather9
+9 breather.oct -rz 180 -rx -90 -t 47.45 -.45 1.426 
+0
+0
+
+green_paint instance breather10
+9 breather.oct -rz 180 -rx -90 -t 47.45 -.45 1.594 
+0
+0
+
+green_paint instance breather11
+9 breather.oct -rz 180 -rx -90 -t 47.45 -.45 1.762 
+0
+0
+
+green_paint instance breather12
+9 breather.oct -rz 180 -rx -90 -t 47.45 -.45 1.93 
+0
+0
+
+green_paint instance breather13
+9 breather.oct -rz 180 -rx -90 -t 47.45 -.45 2.09 
+0
+0
+
+green_paint instance breather14
+9 breather.oct -rz 180 -rx -90 -t 47.45 -.45 2.266 
+0
+0
+
+green_paint instance breather15
+9 breather.oct -rz 180 -rx -90 -t 47.45 -.45 2.434 
+0
+0
+
+green_paint instance breather16
+9 breather.oct -rz 180 -rx -90 -t 47.45 -.45 2.602 
+0
+0
+
+###################################
+# helmets & helmet_rack
+
+!xform -e -n helmet_rack -rz -90 -s 1.1 -t 73.1 0.5 0.4 parts/helmet_rack.rad
+!xform -e -n helmet_rack -rz -90 -s 1.1 -t 74.6 0.5 0.4 parts/helmet_rack.rad
+
+red_paint instance helmet1
+7 helmet.oct -rx 180 -t 73.05 .5 1
+0
+0
+
+red_paint instance helmet2
+7 helmet.oct -rx 185 -t 73.05 .5 1.2
+0
+0
+ 
+red_paint instance helmet3
+7 helmet.oct -rx 170 -t 73.05 .5 1.5
+0
+0
+
+red_paint instance helmet4
+9 helmet.oct -rx 170 -ry 20 -t 73.05 .5 1.7
+0
+0
+
+red_paint instance helmet5
+9 helmet.oct -rx 180 -ry -20 -t 73.05 .5 2
+0
+0
+
+red_paint instance helmet6
+7 helmet.oct -rx 180 -t 73.05 .5 2.2 
+0
+0
+
+red_paint instance helmet7
+7 helmet.oct -rx 185 -t 73.05 .5 2.5
+0
+0
+
+red_paint instance helmet8
+7 helmet.oct -rx 170 -t 73.05 .5 2.7
+0
+0
+
+red_paint instance helmet9
+9 helmet.oct -rx 170 -ry 20 -t 73.05 .5 3
+0
+0
+
+red_paint instance helmet10
+9 helmet.oct -rx 180 -ry -20 -t 73.05 .5 3.2
+0
+0
+ 
+red_paint instance helmet11
+7 helmet.oct -rx 180 -t 73.05 .5 3.5
+0
+0
+
+red_paint instance helmet12
+7 helmet.oct -rx 185 -t 73.05 .5 3.7
+0
+0
+
+red_paint instance helmet12
+7 helmet.oct -rx 170 -t 73.05 .5 4
+0
+0
+
+red_paint instance helmet13
+9 helmet.oct -rx 170 -ry 20 -t 73.05 .5 4.2
+0
+0
+
+red_paint instance helmet14
+9 helmet.oct -rx 180 -ry -20 -t 73.05 .5 4.5 
+0
+0
+
+red_paint instance helmet15
+7 helmet.oct -rx 180 -t 73.05 .5 4.7
+0 
+0
+ 
+red_paint instance helmet16
+9 helmet.oct -rz 170 -rx 180 -t 74.55 .5 1.0
+0
+0
+
+red_paint instance helmet17
+9 helmet.oct -rz 170 -rx 185 -t 74.55 .5 1.2
+0
+0
+
+red_paint instance helmet18
+9 helmet.oct -rz 170 -rx 170 -t 74.55 .5 1.5
+0
+0
+
+red_paint instance helmet19
+11 helmet.oct -rz 170 -rx 170 -ry 20 -t 74.55 .5 1.7
+0
+0
+
+red_paint instance helmet20
+11 helmet.oct -rz 170 -rx 180 -ry -20 -t 74.55 .5 2
+0
+0
+
+red_paint instance helmet21
+9 helmet.oct -rz 170 -rx 180 -t 74.55 .5 2.2
+0
+0
+
+red_paint instance helmet22 
+9 helmet.oct -rz 170 -rx 185 -t 74.55 .5 2.5
+0
+0
+ 
+red_paint instance helmet23
+9 helmet.oct -rz 170 -rx 170 -t 74.55 .5 2.7
+0
+0
+
+red_paint instance helmet24
+11 helmet.oct -rz 170 -rx 170 -ry 20 -t 74.55 .5 3
+0
+0
+
+red_paint instance helmet25
+11 helmet.oct -rz 170 -rx 180 -ry -20 -t 74.55 .5 3.2
+0
+0
+
+red_paint instance helmet26
+9 helmet.oct -rz 170 -rx 180 -t 74.55 .5 3.5
+0
+0
+
+red_paint instance helmet27
+9 helmet.oct -rz 170 -rx 185 -t 74.55 .5 3.7
+0
+0
+
+red_paint instance helmet28
+9 helmet.oct -rz 170 -rx 170 -t 74.55 .5 4
+0
+0
+
+red_paint instance helmet29
+11 helmet.oct -rz 170 -rx 170 -ry 20 -t 74.55 .5 4.2
+0
+0
+
+red_paint instance helmet30
+11 helmet.oct -rz 170 -rx 180 -ry -20 -t 74.55 .5 4.5
+0
+0
+
+red_paint instance helmet31
+9 helmet.oct -rz 170 -rx 180 -t 74.55 .5 4.7
+0
+0
+
+###############################  
+# carbon dioxide box
+
+!xform -e -n red_box -t 34 4.83 3.8 parts/red_box.rad
+!xform -e -n clamp -t 34 4.9 3 parts/clamp.rad
+!xform -e -n red_box -t 34.7 4.83 3.8 parts/red_box.rad
+!xform -e -n clamp -t 34.7 4.9 3 parts/clamp.rad
+
+!genworm wall_paint conduit6a 'hermite(34.3,35.6,0,0,t)' \
+        'hermite(4.86,4.86,0,0,t)' 'hermite(2.54,2.45,-.5,0,t)' .038 4
+
+!genworm wall_paint conduit6b 'hermite(35.6,36,0,0,t)' \
+        'hermite(4.86,4.86,0,0,t)' 'hermite(2.45,2.3,0,-.5,t)' .038 4
+
+wall_paint cylinder conduit6
+0
+0
+7
+        36      4.86    2.3 
+        36      4.86    0 
+        .038
+
+###############################
+# Support brackets 
+
+!xform -t .5 1.41 6.95 -a 20 -t 3.5 0 0 support_bracket.rad 

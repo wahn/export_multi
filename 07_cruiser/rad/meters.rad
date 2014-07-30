@@ -1,0 +1,205 @@
+# xform -e -s .08333
+#
+# A pair of meters, units in inches, all coordinates positive
+#
+
+void colorpict meter_img
+11 red green blue pat/meters.pic . 1-Px/14 Pz/14 -i 1 -s .08333
+0
+0
+
+meter_img plastic meter_mat
+0
+0
+5                  1                  1                  1                  0                  0
+# genbox meter_mat meter_box 14 3 14 -r .5
+
+meter_mat polygon meter_box.dhgc
+0
+0
+12
+           1.124955                  0           0.041665
+           1.124955                  0           1.124955
+           0.041665                  0           1.124955
+           0.041665                  0           0.041665
+
+meter_mat polygon meter_box.oqmk
+0
+0
+12
+                  0           0.041665           1.124955
+                  0           0.208325           1.124955
+                  0           0.208325           0.041665
+                  0           0.041665           0.041665
+
+meter_mat polygon meter_box.OPNM
+0
+0
+12
+           0.041665           0.208325                  0
+           1.124955           0.208325                  0
+           1.124955           0.041665                  0
+           0.041665           0.041665                  0
+
+meter_mat polygon meter_box.feij
+0
+0
+12
+           1.124955            0.24999           0.041665
+           0.041665            0.24999           0.041665
+           0.041665            0.24999           1.124955
+           1.124955            0.24999           1.124955
+
+meter_mat polygon meter_box.plnr
+0
+0
+12
+            1.16662           0.041665           1.124955
+            1.16662           0.041665           0.041665
+            1.16662           0.208325           0.041665
+            1.16662           0.208325           1.124955
+
+meter_mat polygon meter_box.SQRT
+0
+0
+12
+           0.041665           0.208325            1.16662
+           0.041665           0.041665            1.16662
+           1.124955           0.041665            1.16662
+           1.124955           0.208325            1.16662
+
+meter_mat cylinder meter_box.hi
+0
+0
+7
+           0.041665           0.041665           0.041665
+           1.124955           0.041665           0.041665
+           0.041665
+
+meter_mat cylinder meter_box.hl
+0
+0
+7
+           0.041665           0.041665           0.041665
+           0.041665           0.041665           1.124955
+           0.041665
+
+meter_mat cylinder meter_box.hj
+0
+0
+7
+           0.041665           0.041665           0.041665
+           0.041665           0.208325           0.041665
+           0.041665
+
+meter_mat cylinder meter_box.ki
+0
+0
+7
+           1.124955           0.208325           0.041665
+           1.124955           0.041665           0.041665
+           0.041665
+
+meter_mat cylinder meter_box.kj
+0
+0
+7
+           1.124955           0.208325           0.041665
+           0.041665           0.208325           0.041665
+           0.041665
+
+meter_mat cylinder meter_box.ko
+0
+0
+7
+           1.124955           0.208325           0.041665
+           1.124955           0.208325           1.124955
+           0.041665
+
+meter_mat cylinder meter_box.mi
+0
+0
+7
+           1.124955           0.041665           1.124955
+           1.124955           0.041665           0.041665
+           0.041665
+
+meter_mat cylinder meter_box.ml
+0
+0
+7
+           1.124955           0.041665           1.124955
+           0.041665           0.041665           1.124955
+           0.041665
+
+meter_mat cylinder meter_box.mo
+0
+0
+7
+           1.124955           0.041665           1.124955
+           1.124955           0.208325           1.124955
+           0.041665
+
+meter_mat cylinder meter_box.nj
+0
+0
+7
+           0.041665           0.208325           1.124955
+           0.041665           0.208325           0.041665
+           0.041665
+
+meter_mat cylinder meter_box.nl
+0
+0
+7
+           0.041665           0.208325           1.124955
+           0.041665           0.041665           1.124955
+           0.041665
+
+meter_mat cylinder meter_box.no
+0
+0
+7
+           0.041665           0.208325           1.124955
+           1.124955           0.208325           1.124955
+           0.041665
+
+meter_mat sphere meter_box.h
+0
+0
+4           0.041665           0.041665           0.041665           0.041665
+
+meter_mat sphere meter_box.i
+0
+0
+4           1.124955           0.041665           0.041665           0.041665
+
+meter_mat sphere meter_box.j
+0
+0
+4           0.041665           0.208325           0.041665           0.041665
+
+meter_mat sphere meter_box.k
+0
+0
+4           1.124955           0.208325           0.041665           0.041665
+
+meter_mat sphere meter_box.l
+0
+0
+4           0.041665           0.041665           1.124955           0.041665
+
+meter_mat sphere meter_box.m
+0
+0
+4           1.124955           0.041665           1.124955           0.041665
+
+meter_mat sphere meter_box.n
+0
+0
+4           0.041665           0.208325           1.124955           0.041665
+
+meter_mat sphere meter_box.o
+0
+0
+4           1.124955           0.208325           1.124955           0.041665

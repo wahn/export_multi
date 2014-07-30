@@ -1,0 +1,8 @@
+#####################
+# Ship light fixtures
+
+!xform -n mid.lum -e -rz 90 -t 45 5 6.85 -a 3 -t 0 5 0 fixt2.rad
+
+!xform -n port -e portfullfixt.rad
+
+!xform -n starboard -e -t 0 -12.5 0 -my -t 0 12.5 0 portfullfixt.rad

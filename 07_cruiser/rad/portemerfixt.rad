@@ -1,0 +1,35 @@
+#################################
+# Light fixtures:
+
+!xform -n bow.lume -t 2 2 6.85 -a 3 -t 18 0 0 fixt1e.rad
+
+!xform -n bow1.lumo -t 2 2 6.85 -t 6 0 0 -a 2 -t 6 0 0 fixt1o.rad
+
+!xform -n bow2.lumo -t 2 2 6.85 -t 24 0 0 -a 2 -t 6 0 0 fixt1o.rad
+
+!xform -n stern.lume -t 42 2 6.85 -a 3 -t 18 0 0 fixt1e.rad
+
+!xform -n stern1.lumo -t 42 2 6.85 -t 6 0 0 -a 2 -t 6 0 0 fixt1o.rad
+
+!xform -n stern2.lumo -t 42 2 6.85 -t 24 0 0 -a 2 -t 6 0 0 fixt1o.rad
+
+!xform -n stern_lower.lume -t 55 4 0 fixt2e.rad
+
+!xform -n bow_upper.lume -t 19 4 15 fixt2e.rad
+
+##########################################
+# Battle lanterns:
+
+!xform -e -n blant1 -rx 27 -rz 65 -t .09 4 1.6 lantern.rad
+
+!xform -e -n blant2 -rx 43 -rz 229 -t 28 -.4 6.9 lantern.rad
+
+!xform -e -n blant3 -rx 20 -rz -115 -t 39.6 .74 1.5 lantern.rad
+
+!xform -e -n blant4 -rx 22.5 -rz 172.7 -t 7 -.8 7.2 lantern.rad
+
+!xform -e -n blant5 -rx 27 -rz 55.4 -t 40.1 5 1.5 lantern.rad
+
+!xform -e -n blant6 -rx 27.5 -rz -70 -t 66.8 6.5 1.5 lantern.rad
+
+!xform -e -n blant7 -rx 27 -rz -65 -t 79.9 4 1.6 lantern.rad
