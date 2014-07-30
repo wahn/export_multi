@@ -54951,7 +54951,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MACURTAIN_disp"
- disp_padding 1.0
+ disp_padding 0.31
  ##disp_autobump true
  opaque on
 }
@@ -54997,7 +54997,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MACURTAIN_disp"
- disp_padding 0.41
+ disp_padding 0.122
  ##disp_autobump true
  opaque on
 }
@@ -55023,7 +55023,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MACURTAIN_disp"
- disp_padding 1.0
+ disp_padding 0.31
  ##disp_autobump true
  opaque on
 }
@@ -55049,7 +55049,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MACURTAIN_disp"
- disp_padding 0.4
+ disp_padding 0.122
  ##disp_autobump true
  opaque on
 }
@@ -55075,7 +55075,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MACURTAIN_disp"
- disp_padding 1.0
+ disp_padding 0.31
  ##disp_autobump true
  opaque on
 }
@@ -55102,7 +55102,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MAGREYVELV_disp"
- disp_padding 1.0
+ disp_padding 0.31
  ##disp_autobump true
 }
 
@@ -55157,7 +55157,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MACURTAIN_disp"
- disp_padding 0.4
+ disp_padding 0.122
  ##disp_autobump true
  opaque on
 }
@@ -55183,7 +55183,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MACURTAIN_disp"
- disp_padding 1.0
+ disp_padding 0.31
  ##disp_autobump true
  opaque on
 }
@@ -55209,7 +55209,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MACURTAIN_disp"
- disp_padding 0.4
+ disp_padding 0.122
  ##disp_autobump true
  opaque on
 }
@@ -55235,7 +55235,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MACURTAIN_disp"
- disp_padding 1.0
+ disp_padding 0.31
  ##disp_autobump true
  opaque on
 }
@@ -55261,7 +55261,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MACURTAIN_disp"
- disp_padding 1.0
+ disp_padding 0.31
  ##disp_autobump true
  opaque on
 }
@@ -55287,7 +55287,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MAGREYVELV_disp"
- disp_padding 1.0
+ disp_padding 0.31
  ##disp_autobump true
 }
 
@@ -55312,7 +55312,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MACURTAIN_disp"
- disp_padding 1.0
+ disp_padding 0.31
  ##disp_autobump true
  opaque on
 }
@@ -55338,7 +55338,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MACURTAIN_disp"
- disp_padding 1.0
+ disp_padding 0.31
  ##disp_autobump true
  opaque on
 }
@@ -55364,7 +55364,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MACURTAIN_disp"
- disp_padding 1.0
+ disp_padding 0.31
  ##disp_autobump true
  opaque on
 }
@@ -55390,7 +55390,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MACURTAIN_disp"
- disp_padding 1.0
+ disp_padding 0.31
  ##disp_autobump true
  opaque on
 }
@@ -55416,7 +55416,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MACURTAIN_disp"
- disp_padding 1.0
+ disp_padding 0.31
  ##disp_autobump true
  opaque on
 }
@@ -55442,7 +55442,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MABLCKVEVL_disp"
- disp_padding 1.0
+ disp_padding 0.31
  ##disp_autobump true
  opaque on
 }
@@ -55488,7 +55488,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MAYELLVELV_disp"
- disp_padding 1.0
+ disp_padding 0.31
  ##disp_autobump true
  opaque on
 }
@@ -55534,7 +55534,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MACURTAIN_disp"
- disp_padding 1.0
+ disp_padding 0.31
  ##disp_autobump true
  opaque on
 }
@@ -55560,7 +55560,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MACURTAIN_disp"
- disp_padding 1.0
+ disp_padding 0.31
  ##disp_autobump true
  opaque on
 }
@@ -55586,7 +55586,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MACURTAIN_disp"
- disp_padding 1.0
+ disp_padding 0.31
  ##disp_autobump true
  opaque on
 }
@@ -55612,7 +55612,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MACURTAIN_disp"
- disp_padding 1.0
+ disp_padding 0.31
  ##disp_autobump true
  opaque on
 }
@@ -55638,7 +55638,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MACURTAIN_disp"
- disp_padding 1.0
+ disp_padding 0.31
  ##disp_autobump true
  opaque on
 }
@@ -55664,7 +55664,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MACURTAIN_disp"
- disp_padding 1.0
+ disp_padding 0.31
  ##disp_autobump true
  opaque on
 }
@@ -55690,7 +55690,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MACURTAIN_disp"
- disp_padding 0.45
+ disp_padding 0.135
  ##disp_autobump true
  opaque on
 }
@@ -55716,7 +55716,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MACURTAIN_disp"
- disp_padding 1.0
+ disp_padding 0.31
  ##disp_autobump true
  opaque on
 }
@@ -55742,7 +55742,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MACURTAIN_disp"
- disp_padding 0.45
+ disp_padding 0.135
  ##disp_autobump true
  opaque on
 }
@@ -55768,7 +55768,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MACURTAIN_disp"
- disp_padding 1.0
+ disp_padding 0.31
  ##disp_autobump true
  opaque on
 }
@@ -55794,7 +55794,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MABLCKVEVL_disp"
- disp_padding 1.0
+ disp_padding 0.31
  ##disp_autobump true
  opaque on
 }
@@ -55820,7 +55820,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MACURTAIN_disp"
- disp_padding 1.0
+ disp_padding 0.31
  ##disp_autobump true
  opaque on
 }
@@ -55846,7 +55846,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MACURTAIN_disp"
- disp_padding 1.0
+ disp_padding 0.31
  ##disp_autobump true
  opaque on
 }
@@ -55872,7 +55872,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MACURTAIN_disp"
- disp_padding 1.0
+ disp_padding 0.31
  ##disp_autobump true
  opaque on
 }
@@ -55898,7 +55898,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MACURTAIN_disp"
- disp_padding 1.0
+ disp_padding 0.31
  ##disp_autobump true
  opaque on
 }
@@ -55924,7 +55924,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MACURTAIN_disp"
- disp_padding 1.0
+ disp_padding 0.31
  ##disp_autobump true
  opaque on
 }
@@ -55950,7 +55950,7 @@ polymesh
  subdiv_iterations 8
  ##subdiv_pixel_error .1
  disp_map "MAYELLVELV_disp"
- disp_padding 1.0
+ disp_padding 0.31
  ##disp_autobump true
  opaque on
 }
