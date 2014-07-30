@@ -1,0 +1,102 @@
+#
+# Materials used in ship
+#
+
+void plastic wall_paint
+0
+0
+5 .65 .61 .53 0 .1
+
+void alias ceil_paint wall_paint
+
+void plastic black_paint
+0
+0
+5 .07 .07 .07 .02 .1
+
+void plastic rubber
+0
+0
+5 .03 .03 .03 .01 .08
+
+void plastic dark_grey
+0
+0
+5 .2 .2 .2 0 0
+
+void plastic grey_paint
+0
+0
+5 .3 .3 .3 0 0
+
+void plastic dark
+0
+0
+5 .08 .08 .08 0 0
+
+void plastic red_paint
+0
+0
+5 .6 .04 .04 .03 .05
+
+void metal dull_brass
+0
+0
+5                0.7                0.2               0.08                0.4                0.1
+
+void glass porthole_glass
+0
+0
+3 .9 .94 .92
+
+void metal brass
+0
+0
+5 .6 .2 .07 .65 .03
+
+void metal aluminum
+0
+0
+5 .65 .65 .65 .55 .08
+
+void metal stainless
+0
+0
+5 .55 .55 .55 .4 .05
+
+void brightfunc dirty
+4 dirt dirt.cal -s .04
+0
+1 .65
+
+dirty plastic dark_green
+0
+0
+5 .08 .25 .12 0 0
+
+void plastic green_paint
+0
+0
+5 0  1    0  0.05 0.1
+
+#void colorpict deck_pat
+#7 clip clip clip pat/floor.pic picture.cal tile_u tile_v
+#0
+#0
+
+void colorfunc deck_pat
+4 deckr deckg deckb deck.cal
+0
+0
+
+deck_pat plastic deck_mat
+0
+0
+5 .33 .33 .33 0 .04
+
+void brightfunc baseboard
+2 if(Pz-.417,1,.07) .
+0
+0
+
+baseboard alias wallbase_mat wall_paint
