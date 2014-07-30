@@ -1,0 +1,25 @@
+#
+# A single chain link
+#
+
+!genworm stainless end0 '.0125*cos(t*PI)' 0 '.0125*sin(t*PI)' .005 5 \
+                     | xform -ry -90
+
+!genworm stainless end1 '.0125*cos(t*PI)' 0 '.0125*sin(t*PI)' .005 5 \
+                     | xform -ry 90 -t .03 0 0 
+
+stainless cylinder top  
+0
+0
+7
+     0 0 .0125 
+     .03 0 .0125  
+     .005
+
+stainless cylinder bottom  
+0
+0
+7
+     0 0 -.0125 
+     .03 0 -.0125  
+     .005

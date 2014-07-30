@@ -1,0 +1,67 @@
+#
+# A closed vertical hatchway (bulkhead)
+# units in inches, origin at lower left corner as seen from hatch opening side,
+# hatch opens into negative y direction
+#
+
+!( echo 65 96  65 0  0 0  0 96  65 96; \
+   rcalc -e '$1=$1*.97+.5+12;$2=$2*.985+.5+9' hatch.pts ) \
+	| genprism wall_paint bulkhead - -l 0 0 .25 -c \
+		| xform -rx 90 -t 0 .125 0
+
+!xform -e -t 9.75 -3 0 vh_shinge vert_hatch
+
+!xform -rz 180 -rx 90 -t 1 1.499 26 -a 3 -t 0 0 15 \
+	-a 2 -t -17.25 0 0 -mx -t 17.25 0 0 -i 1 -t 9.75 -3 0 latch+nut
+
+!xform -rz 180 -rx 90 -ry -42 -t -13.9 0 -30.7 \
+	-a 2 -mx -a 2 -mz -i 1 -t 17.55 1.499 42.2 -t 9.75 -3 0 latch+nut
+
+!xform -e -ry -85 -t 44 -.125 30 latch_handle.rad
+
+void colortext exit_text
+3 helvet.fnt . EXIT
+0
+16
+	22	-1.5	17
+	2.5	0	0
+	0	0	-4
+	.15	.5	.15
+	1	1	1
+	-.2
+
+exit_text plastic exit_sign_paint
+0
+0
+5 .8 .7 .6 0 0
+
+exit_sign_paint polygon exit_sign
+0
+0
+12
+	20	-1.51	18
+	20	-1.51	12
+	35	-1.51	12
+	35	-1.51	18
+
+void colortext no_exit_text
+4 helvet.fnt . NO EXIT
+0
+16
+	36	-.5	21
+	-2.5	0	0
+	0	0	-4
+	.15	.5	.15
+	1	1	1
+	-.2
+
+no_exit_text alias no_exit_sign_paint exit_sign_paint
+
+no_exit_sign_paint polygon no_exit_sign
+0
+0
+12
+	38	-.49	22
+	38	-.49	16
+	17	-.49	16
+	17	-.49	22

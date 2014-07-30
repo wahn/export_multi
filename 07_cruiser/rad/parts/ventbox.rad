@@ -1,0 +1,58 @@
+#
+# A vent box to go in ceiling
+#
+
+!xform -e -n vent -rx 90 -rz 90 -t 0 0 -.375 ceiling_vent.rad
+
+!gensurf ceil_paint adaptorA 'x(s,t)' 'y(s,t)' 'z(s,t)' 8 24 \
+	-e 'RAD:.35;WIDTH:1.25;HEIGHT:.75;LENGTH:1.25;' -f circ2rect.cal \
+	| xform -t -2.25 0 0
+
+!gensurf ceil_paint adaptorB 'x(s,t)' 'y(s,t)' 'z(s,t)' 8 24 \
+	-e 'RAD:.35;WIDTH:1.25;HEIGHT:.75;LENGTH:1.25;' -f circ2rect.cal \
+	| xform -mx -t 2.25 0 0
+
+# xform -t -1 -.625 -.375
+# genbox ceil_paint ventbox 2 1.25 .75
+
+ceil_paint polygon ventbox.1540
+0
+0
+12
+                  1             -0.625             -0.375
+                  1             -0.625              0.375
+                 -1             -0.625              0.375
+                 -1             -0.625             -0.375
+
+ceil_paint polygon ventbox.2310
+0
+0
+30
+                 -1              0.625             -0.375
+                  1              0.625             -0.375
+                  1             -0.625             -0.375
+                 -1             -0.625             -0.375
+		 -1		-.4786	-.375
+		 .4786		-.4786	-.375
+		 .4786		.4786	-.375
+		 -.4786		.4786	-.375
+		 -.4786		-.4786	-.375
+		 -1		-.4786	-.375
+
+ceil_paint polygon ventbox.3267
+0
+0
+12
+                  1              0.625             -0.375
+                 -1              0.625             -0.375
+                 -1              0.625              0.375
+                  1              0.625              0.375
+
+ceil_paint polygon ventbox.6457
+0
+0
+12
+                 -1              0.625              0.375
+                 -1             -0.625              0.375
+                  1             -0.625              0.375
+                  1              0.625              0.375

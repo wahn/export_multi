@@ -1,0 +1,32 @@
+!genworm aluminum q_circ '.5*cos(t*PI/2)' 0 '.5*sin(t*PI/2)' .052 6 \
+	| xform -ry 90 -t .75 0 2.152
+
+aluminum cylinder start_point 
+0
+0
+7
+     0 0 1.652
+     .75 0 1.652 
+     .052
+  
+aluminum cylinder mid_section
+0
+0
+7
+     1.25 0 2.125
+     1.25 0 9.9
+     .052
+
+aluminum sphere mid_section_cap
+0
+0
+4 1.25 0 9.9 .052
+  
+aluminum cylinder end_point 
+0
+0
+7
+     0 0 9.66
+     1.25 0 9.66 
+     .052
+  

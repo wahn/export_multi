@@ -1,0 +1,76 @@
+#
+# A Rack with some jumper cables hanging on it
+# Units are in inches, origin is where rack attaches to wall
+#
+
+!gensurf wall_paint rack.lower 'R*sin(th(t))' '6*s' 'R*cos(th(t))-R' \
+	1 7 -e 'R:16;th(t)=PI/180*(t*30-15)'
+
+!genworm rubber cable1 'xp1(t)' 'yp1(t)' 'zp1(t)' .5 200 -f cable.cal
+
+!xform -n cable1.plug0 -rz 190 -ry 181 \
+	-t `rcalc -n -f cable.cal -e '$1=xp1(0);$2=yp1(0);$3=zp1(0)'` \
+	connector_plug.rad
+
+!xform -n cable1.plug1 -rz -200 -ry 175 \
+	-t `rcalc -n -f cable.cal -e '$1=xp1(1);$2=yp1(1);$3=zp1(1)'` \
+	connector_plug.rad
+
+!genworm rubber cable2 'xp2(t)' 'yp2(t)' 'zp2(t)' .5 200 -f cable.cal
+
+!xform -n cable2.plug0 -rz 185 -ry 157 \
+	-t `rcalc -n -f cable.cal -e '$1=xp2(0);$2=yp2(0);$3=zp2(0)'` \
+	connector_plug.rad
+
+!xform -n cable2.plug1 -rz -202 -ry 212 \
+	-t `rcalc -n -f cable.cal -e '$1=xp2(1);$2=yp2(1);$3=zp2(1)'` \
+	connector_plug.rad
+
+wall_paint polygon rack.end1
+0
+0
+12
+	4.12	0	-.54
+	4.12	6	-.54
+	4.12	6	-2
+	4.12	0	-2
+
+wall_paint polygon rack.end2
+0
+0
+12
+	-4.12	0	-2
+	-4.12	6	-2
+	-4.12	6	-.54
+	-4.12	0	-.54
+
+# xform -t -2 6 -.2
+# genbox wall_paint rack.upper 4 .6 6.5
+
+wall_paint polygon rack.upper.1540
+0
+0
+12
+                  2                  6               -0.2
+                  2                  6                6.3
+                 -2                  6                6.3
+                 -2                  6               -0.2
+
+wall_paint polygon rack.upper.4620
+0
+0
+12
+                 -2                  6                6.3
+                 -2                6.6                6.3
+                 -2                6.6               -0.2
+                 -2                  6               -0.2
+
+wall_paint polygon rack.upper.5137
+0
+0
+12
+                  2                  6                6.3
+                  2                  6               -0.2
+                  2                6.6               -0.2
+                  2                6.6                6.3
+

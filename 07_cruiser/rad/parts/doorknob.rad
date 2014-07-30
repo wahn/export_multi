@@ -1,0 +1,65 @@
+# A stainless steel door knob, axis in x direction, inches
+
+stainless cone knob.0
+0
+0
+8
+	0	0	0
+	.2	0	0
+	1.8	1.7
+
+stainless cone knob.1
+0
+0
+8
+	.2	0	0
+	.3	0	0
+	1.7	.6
+
+stainless cylinder knob.2
+0
+0
+7
+	.3	0	0
+	1.5	0	0
+	.6
+
+stainless cone knob.3
+0
+0
+8
+	1.5	0	0
+	1.7	0	0
+	.6	1.3
+
+stainless cone knob.4
+0
+0
+8
+	1.7	0	0
+	1.9	0	0
+	1.3	1.5
+
+stainless cylinder knob.5
+0
+0
+7
+	1.9	0	0
+	3.3	0	0
+	1.5
+
+stainless cone knob.6
+0
+0
+8
+	3.3	0	0
+	3.5	0	0
+	1.5	1.3
+
+stainless ring knob.6
+0
+0
+8
+	3.5	0	0
+	1	0	0
+	1.3	0

@@ -1,0 +1,54 @@
+#
+# A guard chain post (units in feet)
+#
+
+stainless cylinder c0
+0
+0
+7
+	0	0	0
+	0	0	.04
+	.135
+
+stainless ring c2
+0
+0
+8
+	0	0	.04
+	0	0	1
+	.08	.135
+
+dark_grey cylinder c3
+0
+0
+7
+	0	0	.04
+	0	0	2.8
+	.08
+
+black_paint ring c4
+0
+0
+8
+	0	0	2.8
+	0	0	-1
+	.08	.135
+
+black_paint cylinder c5
+0
+0
+7
+	0	0	2.8
+	0	0	2.84
+	.135
+
+black_paint ring c6
+0
+0
+8
+	0	0	2.84
+	0	0	1
+	0	.135
+
+!genworm stainless ring 0 'hermite(-.1,.1,0,0,t)' \
+	'hermite(2.84,2.84,.7,-.7,t)' .02 8

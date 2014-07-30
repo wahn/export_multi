@@ -1,0 +1,51 @@
+#
+# A connector plug for use with cable_rack.rad
+# (and connecting to connector.rad)
+# Units are inches, origin is at cable endpoint
+# Cable should have .5 inch radius
+#
+
+void colorpict plaque_pic
+15 grey grey grey pat/conplac.pic . Px Pz -ry 2 -s 1.44 -t -1.44 -.62 1.1
+0
+0
+
+plaque_pic alias plaque_mat	aluminum
+
+plaque_mat polygon plaque
+0
+0
+12
+              -1.44              -.62               1.08
+               1.44              -.62               1.08
+               1.44              -.62               2.52
+              -1.44              -.62               2.52
+
+void brightfunc dirty
+4 dirt dirt.cal -s .02
+0
+1 .4
+
+dirty plastic red_bakelite 0 0 5 .6 .1 .08 0.04 0. 
+
+!genbox red_bakelite plug 3 1.2 1.7 | xform -t -1.5 -.6 1
+
+!genbox aluminum base 2.8 1 .2 | xform -t -1.4 -.5 .8
+
+void plastic bakelite 0 0 5 .07 .07 .07 0.02 0
+
+bakelite cone strain_relief
+0
+0
+8
+	0	0	.8
+	0	0	0
+	.5	.6
+
+bakelite ring strain_relief_top
+0
+0
+8
+	0	0	0
+	0	0	-1
+	.6	0

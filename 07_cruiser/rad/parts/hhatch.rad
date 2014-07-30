@@ -1,0 +1,22 @@
+#
+# A horizontal ship hatch
+# Units in feet, origin at center of hinge
+#
+
+!xform -s .85 -t 0 0 2.4875 hatch_valve.rad hatch_valvebase.rad
+
+!xform -t 0 0 2.4875 hatch_door.rad
+
+!xform -t 0 -.15 5.1 hatch_hook.rad
+
+!xform -ry 180 -t 0 -.15 0 hatch_hook.rad
+
+!xform -ry 45 -t 1.15 -.15 2.35 -a 2 -mx -a 2 -mz -i 1 -t 0 0 2.5 hatch_hook.rad
+
+!xform -mx -ry -90 -t -1.4 -.15 1.25 -a 3 -t 0 0 1.25 hatch_hook.rad
+
+!xform -ry 90 -t 1.4 -.15 1.25 -a 3 -t 0 0 1.25 hatch_hook.rad
+
+!genbox dark_grey rhinge .08 .33 .17 | xform -t -.52 -.25 -.15
+
+!genbox dark_grey lhinge .08 .33 .17 | xform -t .52 -.25 -.15

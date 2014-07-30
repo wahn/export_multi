@@ -1,0 +1,77 @@
+# Radiance geometry file created by Vision-3D
+# Paul Bourke, Auckland University School of Architecture
+
+# Model information
+# Number of objects = 9
+# x bounds of model = -0.39 -> 0.39
+# y bounds of model = -0.215 -> 0.215
+# z bounds of model = -0.1935 -> 0.1935
+# Centroid (0,0,0)
+
+# Viewing information
+# Focal point     (-0.106584,-0.917142,-0.00996664)
+# Camera position (4.23973,-8.57063,2.92727)
+# View vector     (-4.34632,7.65349,-2.93724)
+
+# Lighting info
+#void light light1 0 0 3 100 100 100
+#void light light2 0 0 3 100 100 100
+#light1 sphere source1 0 0 4 -0.106584 -0.917142 0.570533 0.1
+#light2 sphere source2 0 0 4 1.06342 -0.272142 0.570533 0.1
+
+# A ground plane (not part of the Vision3D model)
+#void plastic groundcolour 0 0 5 0.48 0.98 0.1 0.05 0.05
+#groundcolour polygon groundplane
+#0 0 12
+#-3.9 -2.15 -0.1935
+#-3.9 2.15 -0.1935
+#3.9 2.15 -0.1935
+#3.9 -2.15 -0.1935
+
+# The model geometry follows
+#void plastic red_paint 0 0 5 0.6 0.04 0.04 0.3 0.5
+red_paint polygon obj0 0 0 12
+   0.234 -0.215 -0.1161
+   0.234 -0.215 0.1161
+   0.39 -0.215 0.1935
+   0.39 -0.215 -0.1935
+red_paint polygon obj1 0 0 12
+   -0.39 -0.215 -0.1935
+   -0.39 -0.215 0.1935
+   -0.39 0.215 0.1935
+   -0.39 0.215 -0.1935
+red_paint polygon obj2 0 0 12
+   -0.39 -0.215 0.1935
+   0.39 -0.215 0.1935
+   0.39 0.215 0.1935
+   -0.39 0.215 0.1935
+red_paint polygon obj3 0 0 12
+   -0.39 0.215 -0.1935
+   -0.39 0.215 0.1935
+   0.39 0.215 0.1935
+   0.39 0.215 -0.1935
+red_paint polygon obj4 0 0 12
+   0.39 -0.215 -0.1935
+   0.39 0.215 -0.1935
+   0.39 0.215 0.1935
+   0.39 -0.215 0.1935
+red_paint polygon obj5 0 0 12
+   -0.39 -0.215 -0.1935
+   -0.39 0.215 -0.1935
+   0.39 0.215 -0.1935
+   0.39 -0.215 -0.1935
+red_paint polygon obj6 0 0 12
+   -0.39 -0.215 -0.1935
+   -0.234 -0.215 -0.1161
+   0.234 -0.215 -0.1161
+   0.39 -0.215 -0.1935
+red_paint polygon obj7 0 0 12
+   -0.39 -0.215 0.1935
+   -0.234 -0.215 0.1161
+   0.234 -0.215 0.1161
+   0.39 -0.215 0.1935
+red_paint polygon obj8 0 0 12
+   -0.234 -0.215 -0.1161
+   -0.39 -0.215 -0.1935
+   -0.39 -0.215 0.1935
+   -0.234 -0.215 0.1161

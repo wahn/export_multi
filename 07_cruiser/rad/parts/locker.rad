@@ -1,0 +1,37 @@
+#
+# A grey foot locker
+#
+# Units in inches, origin at back right leg, all positive coordinates
+#
+
+!genbox grey_paint locker 18 12 48 | xform -t 0 0 6
+
+!genbox stainless rf_foot 1 1 6 | xform -t 0 11 0
+
+!genbox stainless lf_foot 1 1 6 | xform -t 17 11 0
+
+stainless cone handle.0
+0
+0
+8
+	14	12	30
+	14	13.5	30
+	.5	.2
+
+stainless sphere handle.1
+0
+0
+4 14 13.5 30 .35
+
+stainless cone handle.2
+0
+0
+8
+	14	13.5	30
+	17	13.5	30
+	.35	.2
+
+stainless sphere handle.3
+0
+0
+4 17 13.5 30 .2

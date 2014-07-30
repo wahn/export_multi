@@ -1,0 +1,7 @@
+# A door frame
+
+!genbox wallbase_mat left_frame 2.25 .325 84 | xform -t -2 -.328 0
+
+!genbox wallbase_mat right_frame 2.25 .325 84 | xform -t 29.75 -.328 0
+
+!genbox wall_paint top_frame 34.5 .325 2.25 | xform -t -2.25 -.328 83.75

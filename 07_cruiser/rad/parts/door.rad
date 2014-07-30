@@ -1,0 +1,85 @@
+#
+# A standard door -- opens inward to positive y direction, knob on right
+# Units in inches, overall dimensions are 
+# Origin at lower left corner -- two inches from front face
+#
+
+!genbox wall_paint door 30 1.5 83.5 | xform -t 0 -2 .5
+
+stainless polygon kickplate
+0
+0
+12
+	2	-2.001	1
+	28	-2.001	1
+	28	-2.001	9
+	2	-2.001	9
+
+dark polygon vent.front
+0
+0
+12
+	8	-2.001	10
+	22	-2.001	10
+	22	-2.001	20
+	8	-2.001	20
+
+dark polygon vent.back
+0
+0
+12
+	8	-.499	10
+	8	-.499	20
+	22	-.499	20
+	22	-.499	10
+
+!xform -n knob -rz -90 -t 0 -.75 0 -a 2 -my -i 1 -t 26 -1.25 38 doorknob.rad
+
+void colortext nosmoke
+4 helvet.fnt . NO SMOKING
+0
+16
+                  6             -2.001                 69
+                1.6                  0                  0
+                  0                  0              -3.25
+                0.9               0.03               0.03
+                  1                  1                  1
+               -0.2
+
+nosmoke plastic nosmoke_mat
+0
+0
+5               0.75               0.75               0.75                  0                  0
+
+nosmoke_mat polygon nosmoke_sign
+0
+0
+12
+               5.75             -2.001               65.5
+              24.25             -2.001               65.5
+              24.25             -2.001              69.25
+               5.75             -2.001              69.25
+
+void brighttext plac_text
+2 helvet.fnt door_placard.txt
+0
+12
+	9.7	-2.001	65
+	.2	0	0
+	0	0	-.35
+	1	.05
+	.25
+
+plac_text plastic plac_mat
+0
+0
+5	.75	.75	.75	.02	0
+
+plac_mat polygon placard
+0
+0
+12
+	8.75	-2.001	65.25
+	8.75	-2.001	61.85
+	21.25	-2.001	61.85
+	21.25	-2.001	65.25

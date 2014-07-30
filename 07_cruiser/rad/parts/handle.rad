@@ -1,0 +1,20 @@
+  
+void metal stainless
+0
+0
+5 .7 .7 .7 .9 .04
+
+!genworm stainless q_circ '.15*cos(t*PI/2)' 0 '.15*sin(t*PI/2)' .03 6 
+
+
+stainless cylinder start_point 
+0
+0
+7
+     0 0 .15
+     -.55 0 .15 
+     .03
+
+!genworm stainless q_circ '.15*cos(t*PI/2)' 0 '.15*sin(t*PI/2)' .03 6 \
+	     | xform -ry -90 -t -.55 0 0
+

@@ -1,0 +1,15 @@
+#
+# A pair of meters, units in inches, all coordinates positive
+#
+
+void colorpict meter_img
+7 red green blue pat/meters.pic . 1-Px/14 Pz/14
+0
+0
+
+meter_img plastic meter_mat
+0
+0
+5 1 1 1 0 0
+
+!genbox meter_mat meter_box 14 3 14 -r .5

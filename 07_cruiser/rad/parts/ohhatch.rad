@@ -1,0 +1,112 @@
+#
+# An open horizontal hatch with stairs going down and chain handrails
+# Units are in feet.  Origin is at front right, floor level.
+# X is long direction.  Floor panel goes from (-4,-.75,0) to (6,3.25,0).
+#
+
+deck_mat polygon floor_panel
+0
+0
+54
+	-4	-.75	0
+	6	-.75	0
+	6	3.25	0
+	-4	3.25	0
+	0	1.72	0
+	.255	2.08	0
+	.6	2.32	0
+	4.4	2.32	0
+	4.75	2.1	0
+	5	1.72	0
+	5	.079	0
+	4.79	-.05	0
+	4.4	-.32	0
+	.6	-.32	0
+	.275	-.08	0
+	0	.079	0
+	0	1.72	0
+	-4	3.25	0
+
+!xform -e -t 4.73 0 -8.487 hstairs.rad
+
+!xform -e -rz -90 -t 2.5 1 0 hatchway.rad
+
+!xform -e -rz -90 -ry -20 -t 5.25 1 .25 hhatch.rad
+
+# Hatch support struts (removable):
+
+dark_grey sphere lsupport_top
+0
+0
+4 4.510 2.206 2.430 .05
+
+dark_grey cylinder lsupport
+0
+0
+7
+	4.510	2.206	2.430
+	1.770	2.295	.263
+	.05
+
+dark_grey sphere lsupport_bot
+0
+0
+4 1.770 2.295 .263 .05
+
+dark_grey sphere rsupport_top
+0
+0
+4 4.510 -.163 2.430 .05
+
+dark_grey cylinder rsupport
+0
+0
+7
+	4.510	-.163	2.430
+	1.770	-.297	.263
+	.05
+
+dark_grey sphere rsupport_bot
+0
+0
+4 1.770 -.297 .263 .05
+
+# Guard chain and posts:
+
+!xform -e -n front_pole -rz -70 -t 0 2.75 0 chain_pole.rad
+
+!xform -e -n back_pole -rz -95 -t 5.5 2.75 0 chain_pole.rad
+
+!gencat linkmark guard_chain .090285 2.778143 2.960774 \
+	5.380447 2.7540156 2.935535  .5 .15 \
+	| replmarks -e -x links.rad linkmark
+
+# Handrail extension chains:
+
+!xform -e -n uleft_eye -s 3 -rz -90 -ry 55 \
+	-t 2.82 2.230515e+00 1.128466e+00 chainlink.rad
+
+!xform -e -n uright_eye -s 3 -rz 90 -ry 55 \
+	-t 2.82 -2.023827e-01 1.124739e+00 chainlink.rad
+
+!xform -e -n lleft_eye -s 2.5 -ry -120 \
+	-t 1.614128e+00 1.894608e+00 3.965182e-01 chainlink.rad
+
+!xform -e -n lright_eye -s 2.5 -ry -120 \
+	-t 1.606800e+00 7.746377e-02 3.900280e-01 chainlink.rad
+
+!gencat linkmark lrail_chain1 2.7887 2.1406 1.1250 \
+	1.5847 1.883 .4856  .5 .15 \
+	| replmarks -e -x links.rad linkmark
+
+!gencat linkmark rrail_chain1 2.7917 -.09766 1.1236 \
+	1.57053 .06618 .47933  .5 .15 \
+	| replmarks -e -x links.rad linkmark
+
+!gencat linkmark lrail_chain2 1.558 1.882 .4340 \
+	.43852 1.9561 -.0075  .5 .15 \
+	| replmarks -e -x links.rad linkmark
+
+!gencat linkmark rrail_chain2 1.556 .0652 .4194 \
+	.465 .0163 -.0038  .5 .15 \
+	| replmarks -e -x links.rad linkmark

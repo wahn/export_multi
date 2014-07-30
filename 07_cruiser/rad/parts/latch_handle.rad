@@ -1,0 +1,68 @@
+# xform -s 12 -t -18 0 0 -rx 60 -ry 90 -t 0 -2 0
+
+!genworm wall_paint middle_part 'hermite (0, .4, 1, 1, t)' 0 \
+		'hermite (.3, 0, -.31, -.31, t)' .04 10 \
+		| xform -t .55 0 0 -s 12 -t -18 0 0 -rx 60 -ry 90 -t 0 -2 0
+
+wall_paint cylinder stick
+0
+0
+7
+ -4.22503072821e-16                 -2                6.9
+ -1.83696988183e-17                 -2                0.3
+              0.504
+
+wall_paint cylinder ball_headed
+0
+0
+7
+                1.8     -5.11769145362                 18
+                1.8     -5.11769145362              11.52
+              0.504
+
+wall_paint sphere ball
+0
+0
+4                1.8     -5.11769145362                 18               0.75
+
+wall_paint cylinder axis_outer
+0
+0
+7
+	0	0	0
+	0	-2.6	0
+	.75
+
+wall_paint ring axis_top
+0
+0
+8
+	0	-2.6	0
+	0	-1	0
+	0	.75
+
+!xform -e -rx 90 -s .7 -t 0 -2.6 0 brass_nut
+
+brass cylinder brass_thread.0
+0
+0
+7
+                  0               -2.6  6.12323293944e-17
+                  0              -3.09  9.12361707976e-17
+              0.399
+
+brass cone brass_thread.1
+0
+0
+8
+                  0              -3.09  9.12361707976e-17
+                  0             -3.125  9.33793023264e-17
+              0.399              0.364
+
+brass ring brass_thread.2
+0
+0
+8
+                  0             -3.125  9.33793023264e-17
+                  0               -0.7  4.28626305761e-17
+                  0              0.364
