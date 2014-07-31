@@ -1,0 +1,37 @@
+7,9c7,10
+< !( ( cat hatch.pts; \
+<     cnt 21 | rcalc -e '$1=15+2*cos(2*PI/20*$1)' -e '$2=49-2*sin(2*PI/20*$1)' )\
+<    | genprism wall_paint door - -l 0 0 -1 -c ) | xform -rx 90 -t 2.25 1.5 9
+---
+> # !( ( cat hatch.pts; \
+> #     cnt 21 | rcalc -e '$1=15+2*cos(2*PI/20*$1)' -e '$2=49-2*sin(2*PI/20*$1)' )\
+> #    | genprism wall_paint door - -l 0 0 -1 -c ) | xform -rx 90 -t 2.25 1.5 9
+> !xform -n hatch hatch.rad
+11c12
+< !xform -e -n door_rib -t 3 2.5 14 -a 6 -t 0 0 9.25 hatch_rib
+---
+> !xform -e -n door_rib -t 3 2.5 14 -a 6 -t 0 0 9.25 hatch_rib.rad
+21,22c22,28
+< !genprism wall_paint lower_hinge hinge.pts -l 0 0 -.5 \
+< 	| xform -t 0 0 16
+---
+> # !genprism wall_paint lower_hinge hinge.pts -l 0 0 -.5 \
+> # 	| xform -t 0 0 16
+> !xform -n lower_hinge -t 0 0 16 hinge.rad
+> 
+> # !genprism wall_paint upper_hinge hinge.pts -l 0 0 -.5 \
+> # 	| xform -t 0 0 68
+> !xform -n upper_hinge -t 0 0 68 hinge.rad
+24,25c30,31
+< !genprism wall_paint upper_hinge hinge.pts -l 0 0 -.5 \
+< 	| xform -t 0 0 68
+---
+> # !xform -t 1.75 1.499 26 -a 3 -t 0 0 15 -a 2 -t -17.25 0 0 -mx -t 17.25 0 0 latch_plate.rad
+> !xform -n latch_plates1 latch_plates1.rad
+27,29c33,34
+< !xform -t 1.75 1.499 26 -a 3 -t 0 0 15 -a 2 -t -17.25 0 0 -mx -t 17.25 0 0 latch_plate
+< 
+< !xform -ry -42 -t -13.3 0 -30.3 -a 2 -mx -a 2 -mz -i 1 -t 17.25 1.499 42 latch_plate
+---
+> # !xform -ry -42 -t -13.3 0 -30.3 -a 2 -mx -a 2 -mz -i 1 -t 17.25 1.499 42 latch_plate.rad
+> !xform -n latch_plates2 latch_plates2.rad
