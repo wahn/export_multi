@@ -1,0 +1,7 @@
+{ Calculate fleck pattern for deck }
+
+infleck = noise3(Px*40,Py*40,Pz*40)^4-.5;
+
+deckr = if(infleck, 1.5, 1.3);
+deckg = if(infleck, 1.5, .8);
+deckb = if(infleck, 1.5, .4);

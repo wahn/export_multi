@@ -1,0 +1,11 @@
+{
+	Output distribution for GE 4546 lamp adjusted to 3.5 inch diameter
+
+	Lamp is facing negative y direction
+}
+
+lampout = if(Dy-.995,1e6/179*Dy^3500*(.75+.5*fnoise3(Dx/len*3,Dz/len*3,Py)),0)
+		+ 480/179/Dy;
+
+len = if(len2-FTINY, sqrt(len2), 1);
+len2 = Dx*Dx + Dz*Dz;

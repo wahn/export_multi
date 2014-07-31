@@ -1,0 +1,17 @@
+{
+	Compute fire extinguisher hose trajectory.
+}
+
+segment(s) = if(s-.4,2,1);
+pos(s) = select(segment(s), s/.4, (s-.4)/.6);
+
+x(s) = select(segment(s), hermite(1.5,3,28,-21,pos(s)),
+		hermite(3,5,-20,-4,pos(s)));
+
+y(s) = select(segment(s), hermite(0,5,0,9,pos(s)),
+		hermite(5,0,10,0,pos(s)));
+
+z(s) = select(segment(s), hermite(24,14,0,0,pos(s)),
+		hermite(14,16.5,0,-45,pos(s)));
+
+r(s) = if(s-.9,.7,if(s-.05,.4,.6));

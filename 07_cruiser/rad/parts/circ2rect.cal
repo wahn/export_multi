@@ -1,0 +1,35 @@
+{ Match a circular cross-section to a rectangular one }
+
+{
+RAD : .35 ;		{ Circle radius }
+WIDTH : 1.25 ;		{ Rectangle width (y dimension) }
+HEIGHT : .75 ;		{ Rectangle height (z dimension) }
+LENGTH : 1.25 ;		{ Overall length (x dimension) }
+}
+
+linterp(t,p0,p1) : (1-t)*p0 + t*p1;
+min(a,b) : if(a-b, b, a);
+max(a,b) : if(a-b, a, b);
+frac(x) : x - floor(x);
+
+side(s) : if(7/8-s,floor(4*s+.5)+1,1);
+spos(s) : frac(4*s+.5);
+
+circ_y(s) = RAD*cos(2*PI*s);
+circ_z(s) = RAD*sin(2*PI*s);
+rect_y(s) = select(side(s),
+		WIDTH/2,
+		WIDTH/2-WIDTH*spos(s),
+		-WIDTH/2,
+		-WIDTH/2+WIDTH*spos(s));
+rect_z(s) = select(side(s),
+		-HEIGHT/2+HEIGHT*spos(s),
+		HEIGHT/2,
+		HEIGHT/2-HEIGHT*spos(s),
+		-HEIGHT/2);
+
+x(s,t) = s * LENGTH;
+
+y(s,t) = linterp(s, circ_y(t), rect_y(t));
+
+z(s,t) = linterp(s, circ_z(t), rect_z(t));

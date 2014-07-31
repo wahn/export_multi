@@ -1,0 +1,20 @@
+{
+	Calculate wound cable to hang on rack
+}
+
+r : .5;		{ cable radius }
+Rx : 10;	{ smaller winding radius }
+Rz : 14;	{ larger winding radius }
+			{ major winding }
+wt(t) : 4.5*2*PI * t;		{ theta (4.5 revolutions) }
+xw(t) : Rx*cos(wt(t));
+yw(t) : r*wt(t)/(2*PI);
+zw(t) : r-Rz+Rz*sin(wt(t));
+			{ first winding }
+xp1(t) = xw(t*1.03-.015)+1.4*r*sin(3*wt(t));
+yp1(t) = r+1.5*yw(t)+.2*r*cos(-.2+4*wt(t));
+zp1(t) = zw(t*1.03-.015)+1.8*r+1.1*r*cos(.95+3.5*wt(t));
+			{ second winding }
+xp2(t) = xw(t*.95+.025)+1.25*r*sin(2.1*wt(t)-.23);
+yp2(t) = r+.5*yw(1)+1.3*yw(t)+.3*r*cos(.7+5*wt(t));
+zp2(t) = zw(t*.95+.025)+3.2*r+1.3*r*cos(-1.7+4*wt(t));

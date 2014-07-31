@@ -1,0 +1,7 @@
+#
+# A generic brass hexnut, 2 inches in diameter
+#
+
+!( cnt 7 | rcalc -e '$1=cos(2*PI/6*$1);$2=-sin(2*PI/6*$1)'; \
+	cnt 21 | rcalc -e '$1=.6*cos(2*PI/20*$1);$2=.6*sin(2*PI/20*$1)' ) \
+	| genprism brass nut - -l 0 0 .625 -c
