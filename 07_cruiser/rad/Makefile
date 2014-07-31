@@ -6,6 +6,9 @@ RVOPT = $(AMBV) -o $(DEV) $(VIEW) -w
 
 all:	shipfull.oct shipemer.oct shipbatl.oct
 
+clean:
+	-rm -f *.oct
+
 port.oct:	port.rad cvhatch.oct ohhatch.oct ovhatch.oct \
 stairs.oct ventbox.oct valve.oct connbox.oct extinguisher.oct cable_rack.oct \
 cdoor.rad horiz_rib.rad vert_rib.rad fire_valve.rad breather.oct helmet.oct \
@@ -16,6 +19,9 @@ applicator.rad applicat_head.rad
 
 view:	shipfull.oct
 	rvu $(RVOPT) shipfull.oct
+
+view_all: shipfull.oct
+	find vf/ -name "*.vf" -print -exec rvu $(AMBV) -o $(DEV) -vf {} -w shipfull.oct \;
 
 shipfull.oct:	ship.oct shipfullfixt.rad lantern.rad fixt1.rad fixt2.rad \
 portfullfixt.rad
