@@ -1,0 +1,137 @@
+# xform -t .55 0 0 -s 12 -t -18 0 0 -rx 60 -ry 90 -t 0 -2 0
+# genworm wall_paint middle_part "hermite (0, .4, 1, 1, t)" 0 "hermite (.3, 0, -.31, -.31, t)" .04 10
+
+wall_paint sphere middle_part.s0
+0
+0
+4                1.8     -5.11769145362               11.4               0.48
+
+wall_paint cylinder middle_part.c1
+0
+0
+7
+                1.8     -5.11769145362               11.4
+            1.61568     -4.79843984877            10.4016
+               0.48
+
+wall_paint sphere middle_part.s1
+0
+0
+4            1.61568     -4.79843984877            10.4016               0.48
+
+wall_paint cylinder middle_part.c2
+0
+0
+7
+            1.61568     -4.79843984877            10.4016
+            1.43424     -4.48417655025             9.7488
+               0.48
+
+wall_paint sphere middle_part.s2
+0
+0
+4            1.43424     -4.48417655025             9.7488               0.48
+
+wall_paint cylinder middle_part.c3
+0
+0
+7
+            1.43424     -4.48417655025             9.7488
+            1.25496     -4.17365448147             9.3552
+               0.48
+
+wall_paint sphere middle_part.s3
+0
+0
+4            1.25496     -4.17365448147             9.3552               0.48
+
+wall_paint cylinder middle_part.c4
+0
+0
+7
+            1.25496     -4.17365448147             9.3552
+            1.07712     -3.86562656585             9.1344
+               0.48
+
+wall_paint sphere middle_part.s4
+0
+0
+4            1.07712     -3.86562656585             9.1344               0.48
+
+wall_paint cylinder middle_part.c5
+0
+0
+7
+            1.07712     -3.86562656585             9.1344
+                0.9     -3.55884572681                  9
+               0.48
+
+wall_paint sphere middle_part.s5
+0
+0
+4                0.9     -3.55884572681                  9               0.48
+
+wall_paint cylinder middle_part.c6
+0
+0
+7
+                0.9     -3.55884572681                  9
+            0.72288     -3.25206488778             8.8656
+               0.48
+
+wall_paint sphere middle_part.s6
+0
+0
+4            0.72288     -3.25206488778             8.8656               0.48
+
+wall_paint cylinder middle_part.c7
+0
+0
+7
+            0.72288     -3.25206488778             8.8656
+            0.54504     -2.94403697216             8.6448
+               0.48
+
+wall_paint sphere middle_part.s7
+0
+0
+4            0.54504     -2.94403697216             8.6448               0.48
+
+wall_paint cylinder middle_part.c8
+0
+0
+7
+            0.54504     -2.94403697216             8.6448
+            0.36576     -2.63351490338             8.2512
+               0.48
+
+wall_paint sphere middle_part.s8
+0
+0
+4            0.36576     -2.63351490338             8.2512               0.48
+
+wall_paint cylinder middle_part.c9
+0
+0
+7
+            0.36576     -2.63351490338             8.2512
+            0.18432     -2.31925160485             7.5984
+               0.48
+
+wall_paint sphere middle_part.s9
+0
+0
+4            0.18432     -2.31925160485             7.5984               0.48
+
+wall_paint cylinder middle_part.c10
+0
+0
+7
+            0.18432     -2.31925160485             7.5984
+ -4.04120096761e-16                 -2                6.6
+               0.48
+
+wall_paint sphere middle_part.s10
+0
+0
+4 -4.04120096761e-16                 -2                6.6               0.48
