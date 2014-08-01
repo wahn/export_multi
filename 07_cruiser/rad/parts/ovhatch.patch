@@ -8,15 +8,15 @@
 > #    rcalc -e '$1=$1*.97+.5+12;$2=$2*.985+.5+9' hatch.pts ) \
 > # 	| genprism wall_paint bulkhead - -l 0 0 .25 -c \
 > # 		| xform -rx 90 -t 0 .125 0
-> !xform -n bulkhead bulkhead.rad
+> !xform -n ovhatch_bulkhead bulkhead.rad
 12c13
 < !xform -e -t 9.75 -3 0 vh_shinge
 ---
-> !xform -n vh_shinge -e -t 9.75 -3 0 vh_shinge.rad
+> !xform -n ovhatch_vh_shinge -e -t 9.75 -3 0 vh_shinge.rad
 14c15
 < !xform -e -rz -115 -t 9.75 -3 0 vert_hatch
 ---
-> !xform -n vert_hatch -e -rz -115 -t 9.75 -3 0 vert_hatch.rad
+> !xform -n ovhatch_vert_hatch -e -rz -115 -t 9.75 -3 0 vert_hatch.rad
 16,17c17,18
 < !xform -rz 105 -rx 90 -t 1 1.499 26 -a 3 -t 0 0 15 \
 < 	-a 2 -t -17.25 0 0 -mx -t 17.25 0 0 -i 1 -t 9.75 -3 0 latch+nut
