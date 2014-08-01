@@ -29,7 +29,7 @@
 > # A generic brass hexnut, 2 inches in diameter
 > #
 > # genprism brass nut - -l 0 0 .625 -c
-20c25,9213
+20c25,9073
 < !xform -e -ry -85 -t 44 -.125 30 latch_handle.rad
 ---
 > brass polygon latch_nuts1.0.0.nut.b
@@ -9081,9 +9081,20 @@
 >       41.1799260818       -1.509999976      72.9222943448
 >       40.9504114335       -1.509999976      72.1908416626
 >       40.6225674627       -1.509999976        72.42044639
-> 
+22,23c9075
+< void colortext exit_text
+< 3 helvet.fnt . EXIT
+---
 > wall_paint polygon latch_nuts2.1.1.obj31
-> 0
+25,31c9077,9229
+< 16
+< 	22	-1.5	17
+< 	2.5	0	0
+< 	0	0	-4
+< 	.15	.5	.15
+< 	1	1	1
+< 	-.2
+---
 > 0
 > 9
 >       41.1799260818       -1.509999976      72.9222943448
@@ -9221,20 +9232,9 @@
 >       39.8874031107       -2.025999976      72.2954088934
 >       40.1326409031       -2.550999976      72.5162219935
 >       39.8428144212       -2.550999976       72.255261057
-22,23c9215
-< void colortext exit_text
-< 3 helvet.fnt . EXIT
----
+> 
 > wall_paint polygon latch_nuts2.1.1.obj47
-25,31c9217,9383
-< 16
-< 	22	-1.5	17
-< 	2.5	0	0
-< 	0	0	-4
-< 	.15	.5	.15
-< 	1	1	1
-< 	-.2
----
+> 0
 > 0
 > 9
 >       39.8874031107       -2.025999976      72.2954088934
@@ -9248,7 +9248,9 @@
 >       39.8874031107       -2.025999976      72.2954088934
 >        39.575282284       -2.370999976      72.0143740387
 >       39.3746331811       -2.040999976       71.833708775
-> 
+33c9231,9401
+< exit_text plastic exit_sign_paint
+---
 > wall_paint polygon latch_nuts2.1.1.obj49
 > 0
 > 0
@@ -9402,9 +9404,7 @@
 >                0.85
 > 
 > !xform -n cvhatch_latch_handle -e -ry -85 -t 44 -.125 30 latch_handle.rad
-33c9385,9396
-< exit_text plastic exit_sign_paint
----
+> 
 > # void colortext exit_text
 > # 3 helvet.fnt . EXIT
 > # 0
@@ -9417,7 +9417,12 @@
 > # 	-.2
 > 
 > void plastic exit_sign_paint
-47,56c9410,9419
+> 0
+> 0
+> 5 .8 .7 .6 0 0
+> 
+> void plastic no_exit_sign_paint
+47,56c9415,9424
 < void colortext no_exit_text
 < 4 helvet.fnt . NO EXIT
 < 0
@@ -9439,11 +9444,7 @@
 > # 	.15	.5	.15
 > # 	1	1	1
 > # 	-.2
-58c9421
+58c9426
 < no_exit_text alias no_exit_sign_paint exit_sign_paint
 ---
 > # no_exit_text alias no_exit_sign_paint exit_sign_paint
-60c9423
-< no_exit_sign_paint polygon no_exit_sign
----
-> void polygon no_exit_sign
