@@ -1,20 +1,31 @@
-12c12
+7,10c7,11
+< !( echo 65 96  65 0  0 0  0 96  65 96; \
+<    rcalc -e '$1=$1*.97+.5+12;$2=$2*.985+.5+9' hatch.pts ) \
+< 	| genprism wall_paint bulkhead - -l 0 0 .25 -c \
+< 		| xform -rx 90 -t 0 .125 0
+---
+> # !( echo 65 96  65 0  0 0  0 96  65 96; \
+> #    rcalc -e '$1=$1*.97+.5+12;$2=$2*.985+.5+9' hatch.pts ) \
+> # 	| genprism wall_paint bulkhead - -l 0 0 .25 -c \
+> # 		| xform -rx 90 -t 0 .125 0
+> !xform -n bulkhead bulkhead.rad
+12c13
 < !xform -e -t 9.75 -3 0 vh_shinge vert_hatch
 ---
 > !xform -e -t 9.75 -3 0 vh_shinge vert_hatch.rad
-15c15
+15c16
 < 	-a 2 -t -17.25 0 0 -mx -t 17.25 0 0 -i 1 -t 9.75 -3 0 latch+nut
 ---
 > 	-a 2 -t -17.25 0 0 -mx -t 17.25 0 0 -i 1 -t 9.75 -3 0 latch+nut.rad
-18c18
+18c19
 < 	-a 2 -mx -a 2 -mz -i 1 -t 17.55 1.499 42.2 -t 9.75 -3 0 latch+nut
 ---
 > 	-a 2 -mx -a 2 -mz -i 1 -t 17.55 1.499 42.2 -t 9.75 -3 0 latch+nut.rad
-20c20
+20c21
 < !xform -e -ry -85 -t 44 -.125 30 latch_handle.rad
 ---
 > !xform -n cvhatch_latch_handle -e -ry -85 -t 44 -.125 30 latch_handle.rad
-22,31c22,31
+22,31c23,32
 < void colortext exit_text
 < 3 helvet.fnt . EXIT
 < 0
@@ -36,11 +47,11 @@
 > # 	.15	.5	.15
 > # 	1	1	1
 > # 	-.2
-33c33
+33c34
 < exit_text plastic exit_sign_paint
 ---
 > void plastic exit_sign_paint
-47,56c47,56
+47,56c48,57
 < void colortext no_exit_text
 < 4 helvet.fnt . NO EXIT
 < 0
@@ -62,11 +73,11 @@
 > # 	.15	.5	.15
 > # 	1	1	1
 > # 	-.2
-58c58
+58c59
 < no_exit_text alias no_exit_sign_paint exit_sign_paint
 ---
 > # no_exit_text alias no_exit_sign_paint exit_sign_paint
-60c60
+60c61
 < no_exit_sign_paint polygon no_exit_sign
 ---
 > void polygon no_exit_sign
