@@ -12,7 +12,7 @@
 12c13
 < !xform -e -t 9.75 -3 0 vh_shinge vert_hatch
 ---
-> !xform -e -t 9.75 -3 0 vh_shinge vert_hatch.rad
+> !xform -n cvhatch_vert_hatch -e -t 9.75 -3 0 vh_shinge vert_hatch.rad
 14,15c15,16
 < !xform -rz 180 -rx 90 -t 1 1.499 26 -a 3 -t 0 0 15 \
 < 	-a 2 -t -17.25 0 0 -mx -t 17.25 0 0 -i 1 -t 9.75 -3 0 latch+nut
