@@ -6,11 +6,11 @@
 > # !( ( cat hatch.pts; \
 > #     cnt 21 | rcalc -e '$1=15+2*cos(2*PI/20*$1)' -e '$2=49-2*sin(2*PI/20*$1)' )\
 > #    | genprism wall_paint door - -l 0 0 -1 -c ) | xform -rx 90 -t 2.25 1.5 9
-> !xform -n hatch hatch.rad
+> !xform -n vert_hatch_hatch hatch.rad
 11c12
 < !xform -e -n door_rib -t 3 2.5 14 -a 6 -t 0 0 9.25 hatch_rib
 ---
-> !xform -e -n door_rib -t 3 2.5 14 -a 6 -t 0 0 9.25 hatch_rib.rad
+> !xform -e -n vert_hatch_door_rib -t 3 2.5 14 -a 6 -t 0 0 9.25 hatch_rib.rad
 21,22c22,28
 < !genprism wall_paint lower_hinge hinge.pts -l 0 0 -.5 \
 < 	| xform -t 0 0 16

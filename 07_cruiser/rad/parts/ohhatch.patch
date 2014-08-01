@@ -1,0 +1,12 @@
+30c30
+< !xform -e -t 4.73 0 -8.487 hstairs.rad
+---
+> !xform -n ohhatch_hstairs -e -t 4.73 0 -8.487 hstairs.rad
+32c32
+< !xform -e -rz -90 -t 2.5 1 0 hatchway.rad
+---
+> !xform -n ohhatch_hatchway -e -rz -90 -t 2.5 1 0 hatchway.rad
+34c34
+< !xform -e -rz -90 -ry -20 -t 5.25 1 .25 hhatch.rad
+---
+> !xform -n ohhatch_hhatch -e -rz -90 -ry -20 -t 5.25 1 .25 hhatch.rad
