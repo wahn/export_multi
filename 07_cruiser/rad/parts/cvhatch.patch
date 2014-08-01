@@ -10,3 +10,63 @@
 < 	-a 2 -mx -a 2 -mz -i 1 -t 17.55 1.499 42.2 -t 9.75 -3 0 latch+nut
 ---
 > 	-a 2 -mx -a 2 -mz -i 1 -t 17.55 1.499 42.2 -t 9.75 -3 0 latch+nut.rad
+20c20
+< !xform -e -ry -85 -t 44 -.125 30 latch_handle.rad
+---
+> !xform -n cvhatch_latch_handle -e -ry -85 -t 44 -.125 30 latch_handle.rad
+22,31c22,31
+< void colortext exit_text
+< 3 helvet.fnt . EXIT
+< 0
+< 16
+< 	22	-1.5	17
+< 	2.5	0	0
+< 	0	0	-4
+< 	.15	.5	.15
+< 	1	1	1
+< 	-.2
+---
+> # void colortext exit_text
+> # 3 helvet.fnt . EXIT
+> # 0
+> # 16
+> # 	22	-1.5	17
+> # 	2.5	0	0
+> # 	0	0	-4
+> # 	.15	.5	.15
+> # 	1	1	1
+> # 	-.2
+33c33
+< exit_text plastic exit_sign_paint
+---
+> void plastic exit_sign_paint
+47,56c47,56
+< void colortext no_exit_text
+< 4 helvet.fnt . NO EXIT
+< 0
+< 16
+< 	36	-.5	21
+< 	-2.5	0	0
+< 	0	0	-4
+< 	.15	.5	.15
+< 	1	1	1
+< 	-.2
+---
+> # void colortext no_exit_text
+> # 4 helvet.fnt . NO EXIT
+> # 0
+> # 16
+> # 	36	-.5	21
+> # 	-2.5	0	0
+> # 	0	0	-4
+> # 	.15	.5	.15
+> # 	1	1	1
+> # 	-.2
+58c58
+< no_exit_text alias no_exit_sign_paint exit_sign_paint
+---
+> # no_exit_text alias no_exit_sign_paint exit_sign_paint
+60c60
+< no_exit_sign_paint polygon no_exit_sign
+---
+> void polygon no_exit_sign

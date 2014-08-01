@@ -1,0 +1,20 @@
+5c5,6
+< !genprism wall_paint ll_hinge shinge.pts -c -l 0 0 -.25 | xform -t 0 0 15.45
+---
+> # !genprism wall_paint ll_hinge shinge.pts -c -l 0 0 -.25 | xform -t 0 0 15.45
+> !xform -n ll_hinge -t 0 0 15.45 shinge.rad
+7c8,9
+< !genprism wall_paint lu_hinge shinge.pts -c -l 0 0 -.25 | xform -t 0 0 16.3
+---
+> # !genprism wall_paint lu_hinge shinge.pts -c -l 0 0 -.25 | xform -t 0 0 16.3
+> !xform -n lu_hinge -t 0 0 16.3 shinge.rad
+9c11,12
+< !genprism wall_paint ul_hinge shinge.pts -c -l 0 0 -.25 | xform -t 0 0 67.45
+---
+> # !genprism wall_paint ul_hinge shinge.pts -c -l 0 0 -.25 | xform -t 0 0 67.45
+> !xform -n ul_hinge -t 0 0 67.45 shinge.rad
+11c14,15
+< !genprism wall_paint uu_hinge shinge.pts -c -l 0 0 -.25 | xform -t 0 0 68.3
+---
+> # !genprism wall_paint uu_hinge shinge.pts -c -l 0 0 -.25 | xform -t 0 0 68.3
+> !xform -n uu_hinge -t 0 0 68.3 shinge.rad

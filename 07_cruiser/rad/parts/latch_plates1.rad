@@ -1,9 +1,9 @@
-# xform -n a0.0 -t 1.75 1.499 26 -i 0 -t 0 0 15 -i 0 -t -17.25 0 0 -mx -t 17.25 0 0
+# xform -n latch_plate1.0.0 -t 1.75 1.499 26 -i 0 -t 0 0 15 -i 0 -t -17.25 0 0 -mx -t 17.25 0 0
 #
 # This is the crescent pressure plate that the latch wipes on
 #
 
-brass polygon a0.0.plate
+brass polygon latch_plate1.0.0.plate
 0
 0
 36
@@ -19,12 +19,12 @@ brass polygon a0.0.plate
          2.81183894              1.499        27.69484456
         2.284997657              1.499        27.92711637
                2.25              1.499               27.8
-# xform -n a0.1 -t 1.75 1.499 26 -i 0 -t 0 0 15 -i 1 -t -17.25 0 0 -mx -t 17.25 0 0
+# xform -n latch_plate1.0.1 -t 1.75 1.499 26 -i 0 -t 0 0 15 -i 1 -t -17.25 0 0 -mx -t 17.25 0 0
 #
 # This is the crescent pressure plate that the latch wipes on
 #
 
-brass polygon a0.1.plate
+brass polygon latch_plate1.0.1.plate
 0
 0
 36
@@ -40,12 +40,12 @@ brass polygon a0.1.plate
         31.68816106              1.499        24.30515544
        32.215002343              1.499        24.07288363
               32.25              1.499               24.2
-# xform -n a1.0 -t 1.75 1.499 26 -i 1 -t 0 0 15 -i 0 -t -17.25 0 0 -mx -t 17.25 0 0
+# xform -n latch_plate1.1.0 -t 1.75 1.499 26 -i 1 -t 0 0 15 -i 0 -t -17.25 0 0 -mx -t 17.25 0 0
 #
 # This is the crescent pressure plate that the latch wipes on
 #
 
-brass polygon a1.0.plate
+brass polygon latch_plate1.1.0.plate
 0
 0
 36
@@ -61,12 +61,12 @@ brass polygon a1.0.plate
          2.81183894              1.499        42.69484456
         2.284997657              1.499        42.92711637
                2.25              1.499               42.8
-# xform -n a1.1 -t 1.75 1.499 26 -i 1 -t 0 0 15 -i 1 -t -17.25 0 0 -mx -t 17.25 0 0
+# xform -n latch_plate1.1.1 -t 1.75 1.499 26 -i 1 -t 0 0 15 -i 1 -t -17.25 0 0 -mx -t 17.25 0 0
 #
 # This is the crescent pressure plate that the latch wipes on
 #
 
-brass polygon a1.1.plate
+brass polygon latch_plate1.1.1.plate
 0
 0
 36
@@ -82,12 +82,12 @@ brass polygon a1.1.plate
         31.68816106              1.499        39.30515544
        32.215002343              1.499        39.07288363
               32.25              1.499               39.2
-# xform -n a2.0 -t 1.75 1.499 26 -i 2 -t 0 0 15 -i 0 -t -17.25 0 0 -mx -t 17.25 0 0
+# xform -n latch_plate1.2.0 -t 1.75 1.499 26 -i 2 -t 0 0 15 -i 0 -t -17.25 0 0 -mx -t 17.25 0 0
 #
 # This is the crescent pressure plate that the latch wipes on
 #
 
-brass polygon a2.0.plate
+brass polygon latch_plate1.2.0.plate
 0
 0
 36
@@ -103,12 +103,12 @@ brass polygon a2.0.plate
          2.81183894              1.499        57.69484456
         2.284997657              1.499        57.92711637
                2.25              1.499               57.8
-# xform -n a2.1 -t 1.75 1.499 26 -i 2 -t 0 0 15 -i 1 -t -17.25 0 0 -mx -t 17.25 0 0
+# xform -n latch_plate1.2.1 -t 1.75 1.499 26 -i 2 -t 0 0 15 -i 1 -t -17.25 0 0 -mx -t 17.25 0 0
 #
 # This is the crescent pressure plate that the latch wipes on
 #
 
-brass polygon a2.1.plate
+brass polygon latch_plate1.2.1.plate
 0
 0
 36

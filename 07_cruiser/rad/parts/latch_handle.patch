@@ -1,0 +1,13 @@
+3,5c3,6
+< !genworm wall_paint middle_part 'hermite (0, .4, 1, 1, t)' 0 \
+< 		'hermite (.3, 0, -.31, -.31, t)' .04 10 \
+< 		| xform -t .55 0 0 -s 12 -t -18 0 0 -rx 60 -ry 90 -t 0 -2 0
+---
+> # !genworm wall_paint middle_part 'hermite (0, .4, 1, 1, t)' 0 \
+> # 		'hermite (.3, 0, -.31, -.31, t)' .04 10 \
+> # 		| xform -t .55 0 0 -s 12 -t -18 0 0 -rx 60 -ry 90 -t 0 -2 0
+> !xform -n middle_part middle_part.rad
+44c45
+< !xform -e -rx 90 -s .7 -t 0 -2.6 0 brass_nut
+---
+> !xform -n latch_handle_brass_nut -e -rx 90 -s .7 -t 0 -2.6 0 brass_nut.rad

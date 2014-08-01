@@ -3,15 +3,18 @@ AMBV = -av .02 .02 .02
 DEV = x11
 VIEW = -vf vf/current.vf
 RVOPT = $(AMBV) -o $(DEV) $(VIEW) -w
-# parts/cvhatch.rad
 GEOMETRY = \
-parts/vert_hatch.rad
+parts/ovhatch.rad
 # port.rad
 # ship.rad
 PATCHED_FILES = \
 materials.rad \
+parts/brass_nut.rad \
 parts/cvhatch.rad \
-parts/vert_hatch.rad
+parts/latch_handle.rad \
+parts/ovhatch.rad \
+parts/vert_hatch.rad \
+parts/vh_shinge.rad
 
 all:	shipfull.oct shipemer.oct shipbatl.oct
 
@@ -19,13 +22,10 @@ clean:
 	-rm -f *~ *.oct *.rej parts/*~ parts/*.rej 
 
 clobber: clean
-	-rm -f parts/blender.rad parts/blender_patched.rad
+	-rm -f parts/blender.rad
 	git checkout $(PATCHED_FILES)
 
-blender: apply_patches parts/blender_patched.rad
-
-parts/blender_patched.rad: parts/blender.rad
-	patch parts/blender.rad -i blender.patch -o parts/blender_patched.rad
+blender: apply_patches parts/blender.rad
 
 parts/blender.rad: \
 materials.rad \
@@ -35,8 +35,12 @@ $(GEOMETRY)
 apply_patches: materials.patch
 	-echo "apply patches ..."
 	patch materials.rad -i materials.patch
+	patch parts/brass_nut.rad -i parts/brass_nut.patch
 	patch parts/cvhatch.rad -i parts/cvhatch.patch
+	patch parts/latch_handle.rad -i parts/latch_handle.patch
+	patch parts/ovhatch.rad -i parts/ovhatch.patch
 	patch parts/vert_hatch.rad -i parts/vert_hatch.patch
+	patch parts/vh_shinge.rad -i parts/vh_shinge.patch
 
 port.oct:	port.rad cvhatch.oct ohhatch.oct ovhatch.oct \
 stairs.oct ventbox.oct valve.oct connbox.oct extinguisher.oct cable_rack.oct \
