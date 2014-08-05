@@ -390,18 +390,18 @@ stainless ring knob.1.knob.6
   5.10267370542e-18           0.083333                  0
           0.1083329                  0
 
-# void colortext nosmoke
-# 4 helvet.fnt . NO SMOKING
-# 0
-# 16
-#            0.499998       -0.000916663           5.749977
-#           0.1333328                  0                  0
-#                   0                  0        -0.27083225
-#                 0.9               0.03               0.03
-#                   1                  1                  1
-#                -0.2
+void colortext nosmoke
+4 helvet.fnt . NO SMOKING
+0
+16
+           0.499998       -0.000916663           5.749977
+          0.1333328                  0                  0
+                  0                  0        -0.27083225
+                0.9               0.03               0.03
+                  1                  1                  1
+               -0.2
 
-void plastic nosmoke_mat
+nosmoke plastic nosmoke_mat
 0
 0
 5               0.75               0.75               0.75                  0                  0
@@ -415,16 +415,16 @@ nosmoke_mat polygon nosmoke_sign
          2.02082525       -0.000916663         5.77081025
          0.47916475       -0.000916663         5.77081025
 
-# void brighttext plac_text
-# 2 helvet.fnt door_placard.txt
-# 0
-# 12
-#           0.8083301       -0.000916663           5.416645
-#           0.0166666                  0                  0
-#                   0                  0        -0.02916655
-#                   1               0.05               0.25
+void brighttext plac_text
+2 helvet.fnt door_placard.txt
+0
+12
+          0.8083301       -0.000916663           5.416645
+          0.0166666                  0                  0
+                  0                  0        -0.02916655
+                  1               0.05               0.25
 
-void plastic plac_mat
+plac_text plastic plac_mat
 0
 0
 5               0.75               0.75               0.75               0.02                  0

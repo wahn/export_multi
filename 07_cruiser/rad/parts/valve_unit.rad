@@ -21,73 +21,73 @@ void metal stainless
 0
 5 .65 .65 .65 .7 .05
 
-# void colortext valve_label
-# 3 helvet.fnt . NEUTRAL
-# 0
-# 16
-# 	-.026	-.39	.132
-# 	.009	0	0
-# 	0	0	-.016
-# 	2	.1	.06
-# 	1	1	1
-# 	-.2
+void colortext valve_label
+3 helvet.fnt . NEUTRAL
+0
+16
+	-.026	-.39	.132
+	.009	0	0
+	0	0	-.016
+	2	.1	.06
+	1	1	1
+	-.2
 
-# valve_label colortext valve_label
-# 3 helvet.fnt . CLOSED
-# 0
-# 16
-# 	-.109	-.39	.1
-# 	.0078	0	.0045
-# 	.008	0	-.0139
-# 	2	.1	.06
-# 	1	1	1
-# 	-.2
+valve_label colortext valve_label
+3 helvet.fnt . CLOSED
+0
+16
+	-.109	-.39	.1
+	.0078	0	.0045
+	.008	0	-.0139
+	2	.1	.06
+	1	1	1
+	-.2
 
-# valve_label colortext valve_label
-# 3 helvet.fnt . OPEN
-# 0
-# 16
-# 	.076	-.39	.128
-# 	.0078	0	-.0045
-# 	-.008	0	-.0139
-# 	2	.1	.06
-# 	1	1	1
-# 	-.2
+valve_label colortext valve_label
+3 helvet.fnt . OPEN
+0
+16
+	.076	-.39	.128
+	.0078	0	-.0045
+	-.008	0	-.0139
+	2	.1	.06
+	1	1	1
+	-.2
 
-#valve_label alias valve_label_stainless stainless
+valve_label alias valve_label_stainless stainless
 
-#!xform -e -n valve_box -t -.12 -.25 -.166 valve_box.rad
+!xform -e -n valve_box -t -.12 -.25 -.166 valve_box.rad
 
 !genbox grey_paint valve_base 7 3 4 | xform -t -2 -3 -2 -s .08333
 
-#!xform -e -n upper_valve -rz 27 -t 0 -.18 .166 valve.rad
+!xform -e -n upper_valve -rz 27 -t 0 -.18 .166 valve.rad
 
-#!xform -e -n lower_valve -mz -rz -18 -t 0 -.18 -.166 valve.rad
+!xform -e -n lower_valve -mz -rz -18 -t 0 -.18 -.166 valve.rad
 
-#!xform -e -n control_valve -t 0 -.4 .05 control_valve.rad
+!xform -e -n control_valve -t 0 -.4 .05 control_valve.rad
 
 stainless cylinder control_valve_stem
 0
 0
 7  0 -.35 0  0 -.45 0  .015
 
-#!xform -e -n left_screw -t .00805 -.00642545 -.0019255 \
-	# -ry 70 -t -.08 -.39 .075 screw.rad
+!xform -e -n left_screw -t .00805 -.00642545 -.0019255 \
+	-ry 70 -t -.08 -.39 .075 screw.rad
 
-#!xform -e -n right_screw -t .00805 -.00642545 -.0019255 \
-	# -ry -35 -t .08 -.39 .075 screw.rad
+!xform -e -n right_screw -t .00805 -.00642545 -.0019255 \
+	-ry -35 -t .08 -.39 .075 screw.rad
 
-# void brighttext plac_text
-# 2 helvet.fnt valve_placard.txt
-# 0
-# 12
-# 	.19	-.255	.12
-# 	.013	0	0
-# 	0	0	-.025
-# 	1	.08
-# 	.2
+void brighttext plac_text
+2 helvet.fnt valve_placard.txt
+0
+12
+	.19	-.255	.12
+	.013	0	0
+	0	0	-.025
+	1	.08
+	.2
 
-void plastic plac_mat
+plac_text plastic plac_mat
 0
 0
 5 .75 .75 .75 .03 0
@@ -110,5 +110,5 @@ plac_mat polygon subplacard
 	.341	-.255	-.09
 	.341	-.255	-.04
 
-#!xform -e -n indicator -t .081675 -.007 .1216 -s 1.333 \
-	# -t .167 0 .4167 valve_indicator.rad
+!xform -e -n indicator -t .081675 -.007 .1216 -s 1.333 \
+	-t .167 0 .4167 valve_indicator.rad
