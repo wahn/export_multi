@@ -1,0 +1,179 @@
+7c7,8
+< !genworm stainless q_circ '.15*cos(t*PI/2)' 0 '.15*sin(t*PI/2)' .03 6 
+---
+> # !genworm stainless q_circ '.15*cos(t*PI/2)' 0 '.15*sin(t*PI/2)' .03 6 
+> # genworm stainless q_circ .15*cos(t*PI/2) 0 .15*sin(t*PI/2) .03 6
+8a10,91
+> stainless sphere q_circ.s0
+> 0
+> 0
+> 4               0.15                  0                  0               0.03
+> 
+> stainless cylinder q_circ.c1
+> 0
+> 0
+> 7
+>               0.15                  0                  0
+>     0.144888873943                  0    0.0388228567654
+>               0.03
+> 
+> stainless sphere q_circ.s1
+> 0
+> 0
+> 4     0.144888873943                  0    0.0388228567654               0.03
+> 
+> stainless cylinder q_circ.c2
+> 0
+> 0
+> 7
+>     0.144888873943                  0    0.0388228567654
+>     0.129903810568                  0              0.075
+>               0.03
+> 
+> stainless sphere q_circ.s2
+> 0
+> 0
+> 4     0.129903810568                  0              0.075               0.03
+> 
+> stainless cylinder q_circ.c3
+> 0
+> 0
+> 7
+>     0.129903810568                  0              0.075
+>     0.106066017178                  0     0.106066017178
+>               0.03
+> 
+> stainless sphere q_circ.s3
+> 0
+> 0
+> 4     0.106066017178                  0     0.106066017178               0.03
+> 
+> stainless cylinder q_circ.c4
+> 0
+> 0
+> 7
+>     0.106066017178                  0     0.106066017178
+>              0.075                  0     0.129903810568
+>               0.03
+> 
+> stainless sphere q_circ.s4
+> 0
+> 0
+> 4              0.075                  0     0.129903810568               0.03
+> 
+> stainless cylinder q_circ.c5
+> 0
+> 0
+> 7
+>              0.075                  0     0.129903810568
+>    0.0388228567654                  0     0.144888873943
+>               0.03
+> 
+> stainless sphere q_circ.s5
+> 0
+> 0
+> 4    0.0388228567654                  0     0.144888873943               0.03
+> 
+> stainless cylinder q_circ.c6
+> 0
+> 0
+> 7
+>    0.0388228567654                  0     0.144888873943
+>  9.18485099361e-18                  0               0.15
+>               0.03
+> 
+> stainless sphere q_circ.s6
+> 0
+> 0
+> 4  9.18485099361e-18                  0               0.15               0.03
+18,19c101,187
+< !genworm stainless q_circ '.15*cos(t*PI/2)' 0 '.15*sin(t*PI/2)' .03 6 \
+< 	     | xform -ry -90 -t -.55 0 0
+---
+> # !genworm stainless q_circ '.15*cos(t*PI/2)' 0 '.15*sin(t*PI/2)' .03 6 \
+> # 	     | xform -ry -90 -t -.55 0 0
+> # xform -ry -90 -t -.55 0 0
+> # genworm stainless q_circ .15*cos(t*PI/2) 0 .15*sin(t*PI/2) .03 6
+> 
+> stainless sphere q_circ.s0
+> 0
+> 0
+> 4              -0.55                  0               0.15               0.03
+> 
+> stainless cylinder q_circ.c1
+> 0
+> 0
+> 7
+>               -0.55                  0               0.15
+>     -0.588822856765                  0     0.144888873943
+>                0.03
+> 
+> stainless sphere q_circ.s1
+> 0
+> 0
+> 4    -0.588822856765                  0     0.144888873943               0.03
+> 
+> stainless cylinder q_circ.c2
+> 0
+> 0
+> 7
+>     -0.588822856765                  0     0.144888873943
+>              -0.625                  0     0.129903810568
+>                0.03
+> 
+> stainless sphere q_circ.s2
+> 0
+> 0
+> 4             -0.625                  0     0.129903810568               0.03
+> 
+> stainless cylinder q_circ.c3
+> 0
+> 0
+> 7
+>              -0.625                  0     0.129903810568
+>     -0.656066017178                  0     0.106066017178
+>                0.03
+> 
+> stainless sphere q_circ.s3
+> 0
+> 0
+> 4    -0.656066017178                  0     0.106066017178               0.03
+> 
+> stainless cylinder q_circ.c4
+> 0
+> 0
+> 7
+>     -0.656066017178                  0     0.106066017178
+>     -0.679903810568                  0              0.075
+>                0.03
+> 
+> stainless sphere q_circ.s4
+> 0
+> 0
+> 4    -0.679903810568                  0              0.075               0.03
+> 
+> stainless cylinder q_circ.c5
+> 0
+> 0
+> 7
+>     -0.679903810568                  0              0.075
+>     -0.694888873943                  0    0.0388228567654
+>                0.03
+> 
+> stainless sphere q_circ.s5
+> 0
+> 0
+> 4    -0.694888873943                  0    0.0388228567654               0.03
+> 
+> stainless cylinder q_circ.c6
+> 0
+> 0
+> 7
+>     -0.694888873943                  0    0.0388228567654
+>                -0.7                  0  1.83693986473e-17
+>                0.03
+> 
+> stainless sphere q_circ.s6
+> 0
+> 0
+> 4               -0.7                  0  1.83693986473e-17               0.03

@@ -6,85 +6,61 @@
 < !xform -t 0 -1 0 -a 11 -t 8 0 0 vert_rib.rad
 ---
 > !xform -n port_vert_rib -t 0 -1 0 -a 11 -t 8 0 0 vert_rib.rad
-103,274c103
+103,107c103
 < #!xform -n bow_hatch cvhatch.rad
 < #
 < #!xform -n mid_hatch -t 40 0 0 ovhatch.rad
 < #
 < #!xform -n stern_hatch -t 80 0 0 cvhatch.rad
-< 
+---
+> !xform -n bow_hatch -s .083333 -rz 90 parts/cvhatch.rad
+109,112c105
 < void instance bow_hatch
 < 1 cvhatch.oct
 < 0
 < 0
-< 
+---
+> !xform -n mid_hatch -s .083333 -rz 90 -t 40 0 0 parts/ovhatch.rad
+114,117c107
 < void instance mid_hatch
 < 5 ovhatch.oct -t 40 0 0
 < 0
 < 0
-< 
+---
+> !xform -n stern_hatch -s .083333 -rz 90 -t 80 0 0 parts/cvhatch.rad
+119,122c109,122
 < void instance stern_hatch
 < 5 cvhatch.oct -t 80 0 0
 < 0
 < 0
-< 
-< ############################################
-< # Horizontal hatch and stairs to lower deck:
-< #
-< 
+---
+> # void instance bow_hatch
+> # 1 cvhatch.oct
+> # 0
+> # 0
+> 
+> # void instance mid_hatch
+> # 5 ovhatch.oct -t 40 0 0
+> # 0
+> # 0
+> 
+> # void instance stern_hatch
+> # 5 cvhatch.oct -t 80 0 0
+> # 0
+> # 0
+126a127
+> !xform -n down_stairs -t 4 .75 0 -rz 180 -t 67 7 0 parts/ohhatch.rad
+128,131c129,132
 < void instance down_stairs
 < 1 ohhatch.oct
 < 0
 < 0
-< 
-< # xform -t 52 1 -8
-< # genbox wall_paint lower_room 12 8 8
-< 
-< wall_paint polygon lower_room.1540
-< 0
-< 0
-< 12
-<                  64                  1                 -8
-<                  64                  1                  0
-<                  52                  1                  0
-<                  52                  1                 -8
-< 
-< wall_paint polygon lower_room.4620
-< 0
-< 0
-< 12
-<                  52                  1                  0
-<                  52                  9                  0
-<                  52                  9                 -8
-<                  52                  1                 -8
-< 
-< deck_mat polygon lower_room.2310
-< 0
-< 0
-< 12
-<                  52                  9                 -8
-<                  64                  9                 -8
-<                  64                  1                 -8
-<                  52                  1                 -8
-< 
-< wall_paint polygon lower_room.3267
-< 0
-< 0
-< 12
-<                  64                  9                 -8
-<                  52                  9                 -8
-<                  52                  9                  0
-<                  64                  9                  0
-< 
-< wall_paint polygon lower_room.5137
-< 0
-< 0
-< 12
-<                  64                  1                  0
-<                  64                  1                 -8
-<                  64                  9                 -8
-<                  64                  9                  0
-< 
+---
+> # void instance down_stairs
+> # 1 ohhatch.oct
+> # 0
+> # 0
+181,883d181
 < #################################
 < # Unlatched stairs to upper deck:
 < #
@@ -179,14 +155,10 @@
 < 	28	4.2	7.1
 < 	45	4.2	7.1
 < 	.28
----
-> !xform -n bow_hatch -s .083333 -rz 90 parts/cvhatch.rad
-276,277c105
+< 
 < !genworm ceil_paint pipe1.5 'hermite(45,49,3,3,t)' 'hermite(4.2,1.8,0,0,t)' \
 < 	'hermite(7.1,7.7,0,0,if(t-.5,1,t*2))' .28 12
----
-> !xform -n mid_hatch -s .083333 -rz 90 -t 40 0 0 parts/ovhatch.rad
-279,878c107
+< 
 < ceil_paint cylinder pipe1.6
 < 0
 < 0
@@ -787,25 +759,8 @@
 <         36      4.86    2.3 
 <         36      4.86    0 
 <         .038
----
-> !xform -n stern_hatch -s .083333 -rz 90 -t 80 0 0 parts/cvhatch.rad
-880,881c109,122
+< 
 < ###############################
 < # Support brackets 
----
-> # void instance bow_hatch
-> # 1 cvhatch.oct
-> # 0
-> # 0
-> 
-> # void instance mid_hatch
-> # 5 ovhatch.oct -t 40 0 0
-> # 0
-> # 0
-> 
-> # void instance stern_hatch
-> # 5 cvhatch.oct -t 80 0 0
-> # 0
-> # 0
-883d123
+< 
 < !xform -t .5 1.41 6.95 -a 20 -t 3.5 0 0 support_bracket.rad 

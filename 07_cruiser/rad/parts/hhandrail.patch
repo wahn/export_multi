@@ -1,0 +1,91 @@
+1,2c1,87
+< !genworm aluminum q_circ '.5*cos(t*PI/2)' 0 '.5*sin(t*PI/2)' .052 6 \
+< 	| xform -ry 90 -t .75 0 2.152
+---
+> # !genworm aluminum q_circ '.5*cos(t*PI/2)' 0 '.5*sin(t*PI/2)' .052 6 \
+> # 	| xform -ry 90 -t .75 0 2.152
+> # xform -ry 90 -t .75 0 2.152
+> # genworm aluminum q_circ .5*cos(t*PI/2) 0 .5*sin(t*PI/2) .052 6
+> 
+> aluminum sphere q_circ.s0
+> 0
+> 0
+> 4               0.75                  0              1.652              0.052
+> 
+> aluminum cylinder q_circ.c1
+> 0
+> 0
+> 7
+>                0.75                  0              1.652
+>      0.879409522551                  0      1.66903708686
+>               0.052
+> 
+> aluminum sphere q_circ.s1
+> 0
+> 0
+> 4     0.879409522551                  0      1.66903708686              0.052
+> 
+> aluminum cylinder q_circ.c2
+> 0
+> 0
+> 7
+>      0.879409522551                  0      1.66903708686
+>                   1                  0      1.71898729811
+>               0.052
+> 
+> aluminum sphere q_circ.s2
+> 0
+> 0
+> 4                  1                  0      1.71898729811              0.052
+> 
+> aluminum cylinder q_circ.c3
+> 0
+> 0
+> 7
+>                   1                  0      1.71898729811
+>       1.10355339059                  0      1.79844660941
+>               0.052
+> 
+> aluminum sphere q_circ.s3
+> 0
+> 0
+> 4      1.10355339059                  0      1.79844660941              0.052
+> 
+> aluminum cylinder q_circ.c4
+> 0
+> 0
+> 7
+>       1.10355339059                  0      1.79844660941
+>       1.18301270189                  0              1.902
+>               0.052
+> 
+> aluminum sphere q_circ.s4
+> 0
+> 0
+> 4      1.18301270189                  0              1.902              0.052
+> 
+> aluminum cylinder q_circ.c5
+> 0
+> 0
+> 7
+>       1.18301270189                  0              1.902
+>       1.23296291314                  0      2.02259047745
+>               0.052
+> 
+> aluminum sphere q_circ.s5
+> 0
+> 0
+> 4      1.23296291314                  0      2.02259047745              0.052
+> 
+> aluminum cylinder q_circ.c6
+> 0
+> 0
+> 7
+>       1.23296291314                  0      2.02259047745
+>                1.25                  0              2.152
+>               0.052
+> 
+> aluminum sphere q_circ.s6
+> 0
+> 0
+> 4               1.25                  0              2.152              0.052

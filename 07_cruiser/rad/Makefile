@@ -5,14 +5,26 @@ VIEW = -vf vf/current.vf
 RVOPT = $(AMBV) -o $(DEV) $(VIEW) -w
 # parts/ovhatch.rad
 # vert_rib.rad
+# port.rad
+# parts/ohhatch.rad
+# parts/hatch_door.rad
+# parts/hhatch.rad
 GEOMETRY = \
-port.rad
+parts/hatch_hook.rad
 # ship.rad
 PATCHED_FILES = \
+applicator.rad \
 materials.rad \
 port.rad \
 parts/brass_nut.rad \
+parts/chainlink.rad \
+parts/chain_pole.rad \
 parts/cvhatch.rad \
+parts/handle.rad \
+parts/hatchway.rad \
+parts/hhandrail.rad \
+parts/hhatch.rad \
+parts/hstairs.rad \
 parts/latch_handle.rad \
 parts/ohhatch.rad \
 parts/ovhatch.rad \
@@ -25,22 +37,30 @@ clean:
 	-rm -f *~ *.oct *.rej parts/*~ parts/*.rej 
 
 clobber: clean
-	-rm -f blender.rad
+	-rm -f parts/blender.rad
 	git checkout $(PATCHED_FILES)
 
-blender: apply_patches blender.rad
+blender: apply_patches parts/blender.rad
 
-blender.rad: \
+parts/blender.rad: \
 materials.rad \
 $(GEOMETRY)
-	cat materials.rad $(GEOMETRY) > blender.rad
+	cat materials.rad $(GEOMETRY) > parts/blender.rad
 
 apply_patches: materials.patch
 	-echo "apply patches ..."
+	patch applicator.rad -i applicator.patch
 	patch materials.rad -i materials.patch
 	patch port.rad -i port.patch
 	patch parts/brass_nut.rad -i parts/brass_nut.patch
+	patch parts/chainlink.rad -i parts/chainlink.patch
+	patch parts/chain_pole.rad -i parts/chain_pole.patch
 	patch parts/cvhatch.rad -i parts/cvhatch.patch
+	patch parts/handle.rad -i parts/handle.patch
+	patch parts/hatchway.rad -i parts/hatchway.patch
+	patch parts/hhandrail.rad -i parts/hhandrail.patch
+	patch parts/hhatch.rad -i parts/hhatch.patch
+	patch parts/hstairs.rad -i parts/hstairs.patch
 	patch parts/latch_handle.rad -i parts/latch_handle.patch
 	patch parts/ohhatch.rad -i parts/ohhatch.patch
 	patch parts/ovhatch.rad -i parts/ovhatch.patch

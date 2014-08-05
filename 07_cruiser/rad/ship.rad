@@ -5,20 +5,20 @@
 ########################
 # The port side:
 
-!xform -n port -e port.rad
+# !xform -n port -e port.rad
 
-!xform -n port.bow.door -e -t 13 3 0 cdoor.rad
+# !xform -n port.bow.door -e -t 13 3 0 cdoor.rad
 
-!xform -n port.stern.door -e -t 70 5 0 cdoor.rad
+# !xform -n port.stern.door -e -t 70 5 0 cdoor.rad
 
 ########################
 # The starboard side:
 
-!xform -n starboard -e -t 0 -12.5 0 -my -t 0 12.5 0 port.rad
+# !xform -n starboard -e -t 0 -12.5 0 -my -t 0 12.5 0 port.rad
 
-!xform -n starboard.bow.door -e -rz 180 -t 15.5 22 0 cdoor.rad
+# !xform -n starboard.bow.door -e -rz 180 -t 15.5 22 0 cdoor.rad
 
-!xform -n starboard.stern.door -e -rz 180 -t 72.5 20 0 cdoor.rad
+# !xform -n starboard.stern.door -e -rz 180 -t 72.5 20 0 cdoor.rad
 
 ########################
 # Midship corridor:
@@ -44,12 +44,12 @@ wall_paint polygon midship.ceiling
 !genprism wallbase_mat iwall.m 8  8 22  0 22  0 10  7 10  7 7.5 \
 	0 7.5  0 3  8 3  -l 0 0 -.5 -c | xform -ry -90 -t 50 0 0
 
-!xform -n mid.door -e -rz -90 -t 50 10 0 cdoor.rad
+# !xform -n mid.door -e -rz -90 -t 50 10 0 cdoor.rad
 
 ###############################
 #hydrant
 
-!xform -e -n hydrant -rz 90 -t 40.5 10 4 parts/hydrant.rad
+# !xform -e -n hydrant -rz 90 -t 40.5 10 4 parts/hydrant.rad
 
 wall_paint cylinder hydrant1 
 0
@@ -62,17 +62,17 @@ wall_paint cylinder hydrant1
 ###############################
 # Wrench
 
-!xform -e -n wrench -rz 90 -t 40.5 8.8 3.5 parts/wrench.rad
+# !xform -e -n wrench -rz 90 -t 40.5 8.8 3.5 parts/wrench.rad
 
 ###############################
 # Red hose
  
-!xform -e -n applicator1 -rz 90 -s .85 -t 40.1 8.5 0  applicator.rad
-!xform -e -n applicat_head1 -rz 90 -rx -9 -s .8 -t 40.1 8.5 2.98 \
-  applicat_head.rad
-!xform -e -n applicator2 -rz 90 -s .8 -t 40.1 8 0  applicator.rad
-!xform -e -n applicat_head2 -rz 90 -rx -9 -s .75 -t 40.1 8 2.8 \
-  applicat_head.rad
+# !xform -e -n applicator1 -rz 90 -s .85 -t 40.1 8.5 0  applicator.rad
+# !xform -e -n applicat_head1 -rz 90 -rx -9 -s .8 -t 40.1 8.5 2.98 \
+#   applicat_head.rad
+# !xform -e -n applicator2 -rz 90 -s .8 -t 40.1 8 0  applicator.rad
+# !xform -e -n applicat_head2 -rz 90 -rx -9 -s .75 -t 40.1 8 2.8 \
+#   applicat_head.rad
 !genbox wall_paint applicat_clip1 .12 .1 .03 | xform -rx 40 -t 40.05 8.21 2.68 
 !genbox wall_paint applicat_clip2 .12 .1 .03 | xform -t 40.05 8.35 2.2 
 !genbox wall_paint applicat_clip3 .12 .1 .03 | xform -t 40.05 8.35 1.2 
@@ -93,12 +93,12 @@ wall_paint cylinder hydrant1
 ###############################
 # Signs on the walls:
 
-void colorpict dirsgn_pic
-7 clip clip clip pat/dirsgn.pic . (Py-7)/1.8 (Pz-4.25)/1.8
-0
-0
+# void colorpict dirsgn_pic
+# 7 clip clip clip pat/dirsgn.pic . (Py-7)/1.8 (Pz-4.25)/1.8
+# 0
+# 0
 
-dirsgn_pic plastic dirsgn_paint
+void plastic dirsgn_paint
 0
 0
 5 1 1 1 0 0

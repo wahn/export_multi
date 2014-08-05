@@ -1,0 +1,4 @@
+23c23
+< !xform -e -t .275 0 0 -rx 90 -t 0 2.4216 .04675 handle.rad
+---
+> !xform -n hatchway_handle -e -t .275 0 0 -rx 90 -t 0 2.4216 .04675 handle.rad

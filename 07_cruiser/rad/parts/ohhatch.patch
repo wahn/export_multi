@@ -1,12 +1,40 @@
-30c30
-< !xform -e -t 4.73 0 -8.487 hstairs.rad
+80,82c80,82
+< !gencat linkmark guard_chain .090285 2.778143 2.960774 \
+< 	5.380447 2.7540156 2.935535  .5 .15 \
+< 	| replmarks -e -x links.rad linkmark
 ---
-> !xform -n ohhatch_hstairs -e -t 4.73 0 -8.487 hstairs.rad
-32c32
-< !xform -e -rz -90 -t 2.5 1 0 hatchway.rad
+> # !gencat linkmark guard_chain .090285 2.778143 2.960774 \
+> # 	5.380447 2.7540156 2.935535  .5 .15 \
+> # 	| replmarks -e -x links.rad linkmark
+98,112c98,112
+< !gencat linkmark lrail_chain1 2.7887 2.1406 1.1250 \
+< 	1.5847 1.883 .4856  .5 .15 \
+< 	| replmarks -e -x links.rad linkmark
+< 
+< !gencat linkmark rrail_chain1 2.7917 -.09766 1.1236 \
+< 	1.57053 .06618 .47933  .5 .15 \
+< 	| replmarks -e -x links.rad linkmark
+< 
+< !gencat linkmark lrail_chain2 1.558 1.882 .4340 \
+< 	.43852 1.9561 -.0075  .5 .15 \
+< 	| replmarks -e -x links.rad linkmark
+< 
+< !gencat linkmark rrail_chain2 1.556 .0652 .4194 \
+< 	.465 .0163 -.0038  .5 .15 \
+< 	| replmarks -e -x links.rad linkmark
 ---
-> !xform -n ohhatch_hatchway -e -rz -90 -t 2.5 1 0 hatchway.rad
-34c34
-< !xform -e -rz -90 -ry -20 -t 5.25 1 .25 hhatch.rad
----
-> !xform -n ohhatch_hhatch -e -rz -90 -ry -20 -t 5.25 1 .25 hhatch.rad
+> # !gencat linkmark lrail_chain1 2.7887 2.1406 1.1250 \
+> # 	1.5847 1.883 .4856  .5 .15 \
+> # 	| replmarks -e -x links.rad linkmark
+> 
+> # !gencat linkmark rrail_chain1 2.7917 -.09766 1.1236 \
+> # 	1.57053 .06618 .47933  .5 .15 \
+> # 	| replmarks -e -x links.rad linkmark
+> 
+> # !gencat linkmark lrail_chain2 1.558 1.882 .4340 \
+> # 	.43852 1.9561 -.0075  .5 .15 \
+> # 	| replmarks -e -x links.rad linkmark
+> 
+> # !gencat linkmark rrail_chain2 1.556 .0652 .4194 \
+> # 	.465 .0163 -.0038  .5 .15 \
+> # 	| replmarks -e -x links.rad linkmark

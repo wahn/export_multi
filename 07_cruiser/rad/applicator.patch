@@ -1,0 +1,91 @@
+1,2c1,87
+< !genworm red_paint red_hose '.5*cos(t*PI/2.5)' 0 '.5*sin(t*PI/2.5)' .035 6 \
+<    | xform -t 0 0 3
+---
+> # !genworm red_paint red_hose '.5*cos(t*PI/2.5)' 0 '.5*sin(t*PI/2.5)' .035 6 \
+> #    | xform -t 0 0 3
+> # xform -t 0 0 3
+> # genworm red_paint red_hose .5*cos(t*PI/2.5) 0 .5*sin(t*PI/2.5) .035 6
+> 
+> red_paint sphere red_hose.s0
+> 0
+> 0
+> 4                0.5                  0                  3              0.035
+> 
+> red_paint cylinder red_hose.c1
+> 0
+> 0
+> 7
+>                 0.5                  0                  3
+>      0.489073800367                  0      3.10395584541
+>               0.035
+> 
+> red_paint sphere red_hose.s1
+> 0
+> 0
+> 4     0.489073800367                  0      3.10395584541              0.035
+> 
+> red_paint cylinder red_hose.c2
+> 0
+> 0
+> 7
+>      0.489073800367                  0      3.10395584541
+>      0.456772728821                  0      3.20336832154
+>               0.035
+> 
+> red_paint sphere red_hose.s2
+> 0
+> 0
+> 4     0.456772728821                  0      3.20336832154              0.035
+> 
+> red_paint cylinder red_hose.c3
+> 0
+> 0
+> 7
+>      0.456772728821                  0      3.20336832154
+>      0.404508497187                  0      3.29389262615
+>               0.035
+> 
+> red_paint sphere red_hose.s3
+> 0
+> 0
+> 4     0.404508497187                  0      3.29389262615              0.035
+> 
+> red_paint cylinder red_hose.c4
+> 0
+> 0
+> 7
+>      0.404508497187                  0      3.29389262615
+>      0.334565303179                  0      3.37157241274
+>               0.035
+> 
+> red_paint sphere red_hose.s4
+> 0
+> 0
+> 4     0.334565303179                  0      3.37157241274              0.035
+> 
+> red_paint cylinder red_hose.c5
+> 0
+> 0
+> 7
+>      0.334565303179                  0      3.37157241274
+>                0.25                  0      3.43301270189
+>               0.035
+> 
+> red_paint sphere red_hose.s5
+> 0
+> 0
+> 4               0.25                  0      3.43301270189              0.035
+> 
+> red_paint cylinder red_hose.c6
+> 0
+> 0
+> 7
+>                0.25                  0      3.43301270189
+>      0.154508497187                  0      3.47552825815
+>               0.035
+> 
+> red_paint sphere red_hose.s6
+> 0
+> 0
+> 4     0.154508497187                  0      3.47552825815              0.035
