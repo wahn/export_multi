@@ -1,0 +1,14 @@
+6,9c6,9
+< void colorpict meter_img
+< 11 red green blue pat/meters.pic . 1-Px/14 Pz/14 -i 1 -s .08333
+< 0
+< 0
+---
+> # void colorpict meter_img
+> # 11 red green blue pat/meters.pic . 1-Px/14 Pz/14 -i 1 -s .08333
+> # 0
+> # 0
+11c11
+< meter_img plastic meter_mat
+---
+> void plastic meter_mat

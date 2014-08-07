@@ -15,6 +15,7 @@ parts/hatch_hook.rad
 PATCHED_FILES = \
 applicator.rad \
 materials.rad \
+meters.rad \
 port.rad \
 parts/brass_nut.rad \
 parts/chainlink.rad \
@@ -51,6 +52,7 @@ apply_patches: materials.patch
 	-echo "apply patches ..."
 	patch applicator.rad -i applicator.patch
 	patch materials.rad -i materials.patch
+	patch meters.rad -i meters.patch
 	patch port.rad -i port.patch
 	patch parts/brass_nut.rad -i parts/brass_nut.patch
 	patch parts/chainlink.rad -i parts/chainlink.patch
