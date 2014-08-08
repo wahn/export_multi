@@ -1,0 +1,32 @@
+8,11c8,11
+< void colorpict plaque_pic
+< 15 grey grey grey pat/conplac.pic . Px Pz -ry 2 -s 1.44 -t -1.44 -.62 1.1
+< 0
+< 0
+---
+> # void colorpict plaque_pic
+> # 15 grey grey grey pat/conplac.pic . Px Pz -ry 2 -s 1.44 -t -1.44 -.62 1.1
+> # 0
+> # 0
+13c13
+< plaque_pic alias plaque_mat	aluminum
+---
+> # plaque_pic alias plaque_mat	aluminum
+15c15
+< plaque_mat polygon plaque
+---
+> aluminum polygon plaque
+24,27c24,27
+< void brightfunc dirty
+< 4 dirt dirt.cal -s .02
+< 0
+< 1 .4
+---
+> # void brightfunc dirty
+> # 4 dirt dirt.cal -s .02
+> # 0
+> # 1 .4
+29c29
+< dirty plastic red_bakelite 0 0 5 .6 .1 .08 0.04 0. 
+---
+> void plastic red_bakelite 0 0 5 .6 .1 .08 0.04 0. 

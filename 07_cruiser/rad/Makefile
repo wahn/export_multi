@@ -18,8 +18,10 @@ materials.rad \
 meters.rad \
 port.rad \
 parts/brass_nut.rad \
+parts/cable_rack.rad \
 parts/chainlink.rad \
 parts/chain_pole.rad \
+parts/connector_plug.rad \
 parts/cvhatch.rad \
 parts/exting2.rad \
 parts/extinguisher.rad \
@@ -58,8 +60,10 @@ apply_patches: materials.patch
 	patch meters.rad -i meters.patch
 	patch port.rad -i port.patch
 	patch parts/brass_nut.rad -i parts/brass_nut.patch
+	patch parts/cable_rack.rad -i parts/cable_rack.patch
 	patch parts/chainlink.rad -i parts/chainlink.patch
 	patch parts/chain_pole.rad -i parts/chain_pole.patch
+	patch parts/connector_plug.rad -i parts/connector_plug.patch
 	patch parts/cvhatch.rad -i parts/cvhatch.patch
 	patch parts/exting2.rad -i parts/exting2.patch
 	patch parts/extinguisher.rad -i parts/extinguisher.patch
