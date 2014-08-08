@@ -1,0 +1,10 @@
+1,7c1
+< oconv -f materials ship.rad 
+< rpict -e errfile -t 3600 -af ship.amb -av .02 .02 .02 -ab 1 -ar 80 -ad 512 -as 256 -dj .5 -ro pic/s3.port+bow_stairs.raw 
+< SOFTWARE= RADIANCE 2.2b lastmod Fri Feb 12 10:41:15 PST 1993 by greg on hobbes
+< VIEW= -vtv -vp 32 2 5.5 -vd -0.976725 0.181042 -0.115027 -vu 0 0 1 -vh 50 -vv 50 -vs 0 -vl 0
+< FORMAT=32-bit_rle_rgbe
+< pfilt -x /2 -y /2 -r .6 -1 -e +3 
+< EXPOSURE=8.000000e+00
+---
+> rview -vtv -vp 32 2 5.5 -vd -0.976725 0.181042 -0.115027 -vu 0 0 1 -vh 50 -vv 50 -vs 0 -vl 0

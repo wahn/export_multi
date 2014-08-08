@@ -30,7 +30,8 @@ parts/latch_handle.rad \
 parts/ohhatch.rad \
 parts/ovhatch.rad \
 parts/vert_hatch.rad \
-parts/vh_shinge.rad
+parts/vh_shinge.rad \
+vf/port+bow_stairs.vf
 
 all:	shipfull.oct shipemer.oct shipbatl.oct
 
@@ -68,6 +69,7 @@ apply_patches: materials.patch
 	patch parts/ovhatch.rad -i parts/ovhatch.patch
 	patch parts/vert_hatch.rad -i parts/vert_hatch.patch
 	patch parts/vh_shinge.rad -i parts/vh_shinge.patch
+	patch vf/port+bow_stairs.vf -i vf/port+bow_stairs.patch
 
 port.oct:	port.rad cvhatch.oct ohhatch.oct ovhatch.oct \
 stairs.oct ventbox.oct valve.oct connbox.oct extinguisher.oct cable_rack.oct \
