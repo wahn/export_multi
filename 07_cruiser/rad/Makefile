@@ -21,6 +21,8 @@ parts/brass_nut.rad \
 parts/chainlink.rad \
 parts/chain_pole.rad \
 parts/cvhatch.rad \
+parts/exting2.rad \
+parts/extinguisher.rad \
 parts/handle.rad \
 parts/hatchway.rad \
 parts/hhandrail.rad \
@@ -59,6 +61,8 @@ apply_patches: materials.patch
 	patch parts/chainlink.rad -i parts/chainlink.patch
 	patch parts/chain_pole.rad -i parts/chain_pole.patch
 	patch parts/cvhatch.rad -i parts/cvhatch.patch
+	patch parts/exting2.rad -i parts/exting2.patch
+	patch parts/extinguisher.rad -i parts/extinguisher.patch
 	patch parts/handle.rad -i parts/handle.patch
 	patch parts/hatchway.rad -i parts/hatchway.patch
 	patch parts/hhandrail.rad -i parts/hhandrail.patch

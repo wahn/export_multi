@@ -1,0 +1,207 @@
+31c31,32
+< !genrev red_paint bottom 'hermite(0,2,0,4,t)' 'hermite(0,4,6,0,t)' 8
+---
+> # !genrev red_paint bottom 'hermite(0,2,0,4,t)' 'hermite(0,4,6,0,t)' 8
+> # genrev red_paint bottom hermite(0,2,0,4,t) hermite(0,4,6,0,t) 8
+33c34,56
+< !genrev red_paint top 'hermite(20,23,4,6,t)' 'hermite(4,1,0,0,t)' 12
+---
+> red_paint cone bottom.1
+> 0
+> 0
+> 8
+> 	0	0	                 0
+> 	0	0	           0.03125
+> 	                 0	        0.74609375
+> 
+> red_paint cone bottom.2
+> 0
+> 0
+> 8
+> 	0	0	           0.03125
+> 	0	0	             0.125
+> 	        0.74609375	           1.46875
+> 
+> red_paint cone bottom.3
+> 0
+> 0
+> 8
+> 	0	0	             0.125
+> 	0	0	           0.28125
+> 	           1.46875	        2.14453125
+35,36c58,75
+< void colortext label_text
+< 4 helvet.fnt . CARBON DIOXIDE
+---
+> red_paint cone bottom.4
+> 0
+> 0
+> 8
+> 	0	0	           0.28125
+> 	0	0	               0.5
+> 	        2.14453125	              2.75
+> 
+> red_paint cone bottom.5
+> 0
+> 0
+> 8
+> 	0	0	               0.5
+> 	0	0	           0.78125
+> 	              2.75	        3.26171875
+> 
+> red_paint cone bottom.6
+> 0
+38,44c77,80
+< 16
+< 	-3	2.7	20
+< 	0	0	-1.2
+< 	2	.3	0
+< 	1	20	20
+< 	1	1	1
+< 	-.2
+---
+> 8
+> 	0	0	           0.78125
+> 	0	0	             1.125
+> 	        3.26171875	           3.65625
+46,47c82
+< void mixfunc label
+< 4 label_text void if(Py,1,0) .
+---
+> red_paint cone bottom.7
+49a85,211
+> 8
+> 	0	0	             1.125
+> 	0	0	           1.53125
+> 	           3.65625	        3.91015625
+> 
+> red_paint cone bottom.8
+> 0
+> 0
+> 8
+> 	0	0	           1.53125
+> 	0	0	                 2
+> 	        3.91015625	                 4
+> 
+> # !genrev red_paint top 'hermite(20,23,4,6,t)' 'hermite(4,1,0,0,t)' 12
+> # genrev red_paint top hermite(20,23,4,6,t) hermite(4,1,0,0,t) 12
+> 
+> red_paint cone top.1
+> 0
+> 0
+> 8
+> 	0	0	                20
+> 	0	0	     20.3009259259
+> 	                 4	     3.94097222222
+> 
+> red_paint cone top.2
+> 0
+> 0
+> 8
+> 	0	0	     20.3009259259
+> 	0	0	     20.5462962963
+> 	     3.94097222222	     3.77777777778
+> 
+> red_paint cone top.3
+> 0
+> 0
+> 8
+> 	0	0	     20.5462962963
+> 	0	0	             20.75
+> 	     3.77777777778	           3.53125
+> 
+> red_paint cone top.4
+> 0
+> 0
+> 8
+> 	0	0	             20.75
+> 	0	0	     20.9259259259
+> 	           3.53125	     3.22222222222
+> 
+> red_paint cone top.5
+> 0
+> 0
+> 8
+> 	0	0	     20.9259259259
+> 	0	0	      21.087962963
+> 	     3.22222222222	     2.87152777778
+> 
+> red_paint cone top.6
+> 0
+> 0
+> 8
+> 	0	0	      21.087962963
+> 	0	0	             21.25
+> 	     2.87152777778	               2.5
+> 
+> red_paint cone top.7
+> 0
+> 0
+> 8
+> 	0	0	             21.25
+> 	0	0	     21.4259259259
+> 	               2.5	     2.12847222222
+> 
+> red_paint cone top.8
+> 0
+> 0
+> 8
+> 	0	0	     21.4259259259
+> 	0	0	     21.6296296296
+> 	     2.12847222222	     1.77777777778
+> 
+> red_paint cone top.9
+> 0
+> 0
+> 8
+> 	0	0	     21.6296296296
+> 	0	0	            21.875
+> 	     1.77777777778	           1.46875
+> 
+> red_paint cone top.10
+> 0
+> 0
+> 8
+> 	0	0	            21.875
+> 	0	0	     22.1759259259
+> 	           1.46875	     1.22222222222
+> 
+> red_paint cone top.11
+> 0
+> 0
+> 8
+> 	0	0	     22.1759259259
+> 	0	0	     22.5462962963
+> 	     1.22222222222	     1.05902777778
+> 
+> red_paint cone top.12
+> 0
+> 0
+> 8
+> 	0	0	     22.5462962963
+> 	0	0	                23
+> 	     1.05902777778	                 1
+> 
+> # void colortext label_text
+> # 4 helvet.fnt . CARBON DIOXIDE
+> # 0
+> # 16
+> # 	-3	2.7	20
+> # 	0	0	-1.2
+> # 	2	.3	0
+> # 	1	20	20
+> # 	1	1	1
+> # 	-.2
+> 
+> # void mixfunc label
+> # 4 label_text void if(Py,1,0) .
+> # 0
+> # 0
+51c213
+< label alias labeled_red_paint red_paint
+---
+> # label alias labeled_red_paint red_paint
+53c215
+< labeled_red_paint cylinder body
+---
+> red_paint cylinder body
