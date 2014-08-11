@@ -1,0 +1,116 @@
+53,54c53,164
+< !genworm stainless ring 0 'hermite(-.1,.1,0,0,t)' \
+< 	'hermite(2.84,2.84,.7,-.7,t)' .02 8
+---
+> # !genworm stainless ring 0 'hermite(-.1,.1,0,0,t)' \
+> # 	'hermite(2.84,2.84,.7,-.7,t)' .02 8
+> # genworm stainless ring 0 hermite(-.1,.1,0,0,t) hermite(2.84,2.84,.7,-.7,t) .02 8
+> 
+> stainless sphere ring.s0
+> 0
+> 0
+> 4                  0               -0.1               2.84               0.02
+> 
+> stainless cylinder ring.c1
+> 0
+> 0
+> 7
+>                  0               -0.1               2.84
+>                  0        -0.09140625          2.9165625
+>               0.02
+> 
+> stainless sphere ring.s1
+> 0
+> 0
+> 4                  0        -0.09140625          2.9165625               0.02
+> 
+> stainless cylinder ring.c2
+> 0
+> 0
+> 7
+>                  0        -0.09140625          2.9165625
+>                  0           -0.06875            2.97125
+>               0.02
+> 
+> stainless sphere ring.s2
+> 0
+> 0
+> 4                  0           -0.06875            2.97125               0.02
+> 
+> stainless cylinder ring.c3
+> 0
+> 0
+> 7
+>                  0           -0.06875            2.97125
+>                  0        -0.03671875          3.0040625
+>               0.02
+> 
+> stainless sphere ring.s3
+> 0
+> 0
+> 4                  0        -0.03671875          3.0040625               0.02
+> 
+> stainless cylinder ring.c4
+> 0
+> 0
+> 7
+>                  0        -0.03671875          3.0040625
+>                  0                  0              3.015
+>               0.02
+> 
+> stainless sphere ring.s4
+> 0
+> 0
+> 4                  0                  0              3.015               0.02
+> 
+> stainless cylinder ring.c5
+> 0
+> 0
+> 7
+>                  0                  0              3.015
+>                  0         0.03671875          3.0040625
+>               0.02
+> 
+> stainless sphere ring.s5
+> 0
+> 0
+> 4                  0         0.03671875          3.0040625               0.02
+> 
+> stainless cylinder ring.c6
+> 0
+> 0
+> 7
+>                  0         0.03671875          3.0040625
+>                  0            0.06875            2.97125
+>               0.02
+> 
+> stainless sphere ring.s6
+> 0
+> 0
+> 4                  0            0.06875            2.97125               0.02
+> 
+> stainless cylinder ring.c7
+> 0
+> 0
+> 7
+>                  0            0.06875            2.97125
+>                  0         0.09140625          2.9165625
+>               0.02
+> 
+> stainless sphere ring.s7
+> 0
+> 0
+> 4                  0         0.09140625          2.9165625               0.02
+> 
+> stainless cylinder ring.c8
+> 0
+> 0
+> 7
+>                  0         0.09140625          2.9165625
+>                  0                0.1               2.84
+>               0.02
+> 
+> stainless sphere ring.s8
+> 0
+> 0
+> 4                  0                0.1               2.84               0.02

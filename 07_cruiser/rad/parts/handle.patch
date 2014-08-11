@@ -1,9 +1,9 @@
-7c7,8
+7c7,91
 < !genworm stainless q_circ '.15*cos(t*PI/2)' 0 '.15*sin(t*PI/2)' .03 6 
 ---
 > # !genworm stainless q_circ '.15*cos(t*PI/2)' 0 '.15*sin(t*PI/2)' .03 6 
 > # genworm stainless q_circ .15*cos(t*PI/2) 0 .15*sin(t*PI/2) .03 6
-8a10,91
+> 
 > stainless sphere q_circ.s0
 > 0
 > 0
@@ -86,7 +86,7 @@
 > 0
 > 0
 > 4  9.18485099361e-18                  0               0.15               0.03
-18,19c101,187
+18,19c102,188
 < !genworm stainless q_circ '.15*cos(t*PI/2)' 0 '.15*sin(t*PI/2)' .03 6 \
 < 	     | xform -ry -90 -t -.55 0 0
 ---

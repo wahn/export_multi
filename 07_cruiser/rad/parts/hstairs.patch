@@ -1,4 +1,58 @@
+4,7c4,7
+< void brightfunc steptop_pat
+< 2 if(mod(Px,.1)-.05,.05,1) .
+< 0
+< 0
+---
+> # void brightfunc steptop_pat
+> # 2 if(mod(Px,.1)-.05,.05,1) .
+> # 0
+> # 0
 9c9
 < steptop_pat alias step_top aluminum
 ---
 > # steptop_pat alias step_top aluminum
+599c599
+< step_top polygon obj2
+---
+> aluminum polygon obj2
+608c608
+< step_top polygon obj17
+---
+> aluminum polygon obj17
+617c617
+< step_top polygon obj22
+---
+> aluminum polygon obj22
+626c626
+< step_top polygon obj27
+---
+> aluminum polygon obj27
+635c635
+< step_top polygon obj32
+---
+> aluminum polygon obj32
+644c644
+< step_top polygon obj37
+---
+> aluminum polygon obj37
+653c653
+< step_top polygon obj42
+---
+> aluminum polygon obj42
+662c662
+< step_top polygon obj47
+---
+> aluminum polygon obj47
+671c671
+< step_top polygon obj52
+---
+> aluminum polygon obj52
+680c680
+< step_top polygon obj57
+---
+> aluminum polygon obj57
+689c689
+< step_top polygon obj62
+---
+> aluminum polygon obj62

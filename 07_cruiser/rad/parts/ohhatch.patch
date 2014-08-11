@@ -1,3 +1,23 @@
+30c30
+< !xform -e -t 4.73 0 -8.487 hstairs.rad
+---
+> ## !xform -e -t 4.73 0 -8.487 hstairs.rad
+32c32
+< !xform -e -rz -90 -t 2.5 1 0 hatchway.rad
+---
+> ## !xform -e -rz -90 -t 2.5 1 0 hatchway.rad
+34c34
+< !xform -e -rz -90 -ry -20 -t 5.25 1 .25 hhatch.rad
+---
+> ## !xform -e -rz -90 -ry -20 -t 5.25 1 .25 hhatch.rad
+76c76
+< !xform -e -n front_pole -rz -70 -t 0 2.75 0 chain_pole.rad
+---
+> ## !xform -e -n front_pole -rz -70 -t 0 2.75 0 chain_pole.rad
+78c78
+< !xform -e -n back_pole -rz -95 -t 5.5 2.75 0 chain_pole.rad
+---
+> ## !xform -e -n back_pole -rz -95 -t 5.5 2.75 0 chain_pole.rad
 80,82c80,82
 < !gencat linkmark guard_chain .090285 2.778143 2.960774 \
 < 	5.380447 2.7540156 2.935535  .5 .15 \
@@ -6,35 +26,59 @@
 > # !gencat linkmark guard_chain .090285 2.778143 2.960774 \
 > # 	5.380447 2.7540156 2.935535  .5 .15 \
 > # 	| replmarks -e -x links.rad linkmark
-98,112c98,112
+86,87c86,87
+< !xform -e -n uleft_eye -s 3 -rz -90 -ry 55 \
+< 	-t 2.82 2.230515e+00 1.128466e+00 chainlink.rad
+---
+> ## !xform -e -n uleft_eye -s 3 -rz -90 -ry 55 \
+> 	# -t 2.82 2.230515e+00 1.128466e+00 chainlink.rad
+89,90c89,90
+< !xform -e -n uright_eye -s 3 -rz 90 -ry 55 \
+< 	-t 2.82 -2.023827e-01 1.124739e+00 chainlink.rad
+---
+> ## !xform -e -n uright_eye -s 3 -rz 90 -ry 55 \
+> 	# -t 2.82 -2.023827e-01 1.124739e+00 chainlink.rad
+92,93c92,93
+< !xform -e -n lleft_eye -s 2.5 -ry -120 \
+< 	-t 1.614128e+00 1.894608e+00 3.965182e-01 chainlink.rad
+---
+> ## !xform -e -n lleft_eye -s 2.5 -ry -120 \
+> 	# -t 1.614128e+00 1.894608e+00 3.965182e-01 chainlink.rad
+95,96c95,96
+< !xform -e -n lright_eye -s 2.5 -ry -120 \
+< 	-t 1.606800e+00 7.746377e-02 3.900280e-01 chainlink.rad
+---
+> ## !xform -e -n lright_eye -s 2.5 -ry -120 \
+> 	# -t 1.606800e+00 7.746377e-02 3.900280e-01 chainlink.rad
+98,100c98,100
 < !gencat linkmark lrail_chain1 2.7887 2.1406 1.1250 \
 < 	1.5847 1.883 .4856  .5 .15 \
-< 	| replmarks -e -x links.rad linkmark
-< 
-< !gencat linkmark rrail_chain1 2.7917 -.09766 1.1236 \
-< 	1.57053 .06618 .47933  .5 .15 \
-< 	| replmarks -e -x links.rad linkmark
-< 
-< !gencat linkmark lrail_chain2 1.558 1.882 .4340 \
-< 	.43852 1.9561 -.0075  .5 .15 \
-< 	| replmarks -e -x links.rad linkmark
-< 
-< !gencat linkmark rrail_chain2 1.556 .0652 .4194 \
-< 	.465 .0163 -.0038  .5 .15 \
 < 	| replmarks -e -x links.rad linkmark
 ---
 > # !gencat linkmark lrail_chain1 2.7887 2.1406 1.1250 \
 > # 	1.5847 1.883 .4856  .5 .15 \
 > # 	| replmarks -e -x links.rad linkmark
-> 
+102,104c102,104
+< !gencat linkmark rrail_chain1 2.7917 -.09766 1.1236 \
+< 	1.57053 .06618 .47933  .5 .15 \
+< 	| replmarks -e -x links.rad linkmark
+---
 > # !gencat linkmark rrail_chain1 2.7917 -.09766 1.1236 \
 > # 	1.57053 .06618 .47933  .5 .15 \
 > # 	| replmarks -e -x links.rad linkmark
-> 
+106,108c106,108
+< !gencat linkmark lrail_chain2 1.558 1.882 .4340 \
+< 	.43852 1.9561 -.0075  .5 .15 \
+< 	| replmarks -e -x links.rad linkmark
+---
 > # !gencat linkmark lrail_chain2 1.558 1.882 .4340 \
 > # 	.43852 1.9561 -.0075  .5 .15 \
 > # 	| replmarks -e -x links.rad linkmark
-> 
+110,112c110,112
+< !gencat linkmark rrail_chain2 1.556 .0652 .4194 \
+< 	.465 .0163 -.0038  .5 .15 \
+< 	| replmarks -e -x links.rad linkmark
+---
 > # !gencat linkmark rrail_chain2 1.556 .0652 .4194 \
 > # 	.465 .0163 -.0038  .5 .15 \
 > # 	| replmarks -e -x links.rad linkmark
