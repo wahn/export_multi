@@ -27,6 +27,7 @@ parts/cvhatch.rad \
 parts/exting2.rad \
 parts/extinguisher.rad \
 parts/handle.rad \
+parts/handrail.rad \
 parts/hatchway.rad \
 parts/hhandrail.rad \
 parts/hhatch.rad \
@@ -34,6 +35,7 @@ parts/hstairs.rad \
 parts/latch_handle.rad \
 parts/ohhatch.rad \
 parts/ovhatch.rad \
+parts/stairs.rad \
 parts/vert_hatch.rad \
 parts/vh_shinge.rad \
 vf/port+bow_stairs.vf
@@ -70,6 +72,7 @@ apply_patches: materials.patch
 	patch parts/exting2.rad -i parts/exting2.patch
 	patch parts/extinguisher.rad -i parts/extinguisher.patch
 	patch parts/handle.rad -i parts/handle.patch
+	patch parts/handrail.rad -i parts/handrail.patch
 	patch parts/hatchway.rad -i parts/hatchway.patch
 	patch parts/hhandrail.rad -i parts/hhandrail.patch
 	patch parts/hhatch.rad -i parts/hhatch.patch
@@ -77,6 +80,7 @@ apply_patches: materials.patch
 	patch parts/latch_handle.rad -i parts/latch_handle.patch
 	patch parts/ohhatch.rad -i parts/ohhatch.patch
 	patch parts/ovhatch.rad -i parts/ovhatch.patch
+	patch parts/stairs.rad -i parts/stairs.patch
 	patch parts/vert_hatch.rad -i parts/vert_hatch.patch
 	patch parts/vh_shinge.rad -i parts/vh_shinge.patch
 	patch vf/port+bow_stairs.vf -i vf/port+bow_stairs.patch
