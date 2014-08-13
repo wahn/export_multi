@@ -41,7 +41,7 @@ wall_paint ring axis_top
 	0	-1	0
 	0	.75
 
-!xform -e -rx 90 -s .7 -t 0 -2.6 0 brass_nut
+!xform -e -rx 90 -s .7 -t 0 -2.6 0 brass_nut.rad
 
 brass cylinder brass_thread.0
 0
