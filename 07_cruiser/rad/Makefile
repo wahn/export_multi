@@ -38,8 +38,10 @@ parts/ovhatch.rad \
 parts/stairs.rad \
 parts/vert_hatch.rad \
 parts/vh_shinge.rad \
+vf/current.vf \
 vf/port+bow_cvhatch+valves.vf \
-vf/port+bow_stairs.vf
+vf/port+bow_stairs.vf \
+vf/port+mid_hatch.vf
 
 all:	shipfull.oct shipemer.oct shipbatl.oct
 
@@ -84,8 +86,10 @@ apply_patches: materials.patch
 	patch parts/stairs.rad -i parts/stairs.patch
 	patch parts/vert_hatch.rad -i parts/vert_hatch.patch
 	patch parts/vh_shinge.rad -i parts/vh_shinge.patch
+	patch vf/current.vf -i vf/current.patch
 	patch vf/port+bow_cvhatch+valves.vf -i vf/port+bow_cvhatch+valves.patch
 	patch vf/port+bow_stairs.vf -i vf/port+bow_stairs.patch
+	patch vf/port+mid_hatch.vf -i vf/port+mid_hatch.patch
 
 port.oct:	port.rad cvhatch.oct ohhatch.oct ovhatch.oct \
 stairs.oct ventbox.oct valve.oct connbox.oct extinguisher.oct cable_rack.oct \
