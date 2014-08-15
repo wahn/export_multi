@@ -1,0 +1,12 @@
+		US Naval Cruiser (U.S.S. Generic) lower deck
+
+This model was created by Saba Rofchaei and Greg Ward under contract
+from the U.S. Navy.  It is an H-shaped deck space with three lighting
+configurations.
+
+To create the octrees for the model, first run "make" in this directory.
+Then, you can render each of the models with the corresponding *.rif files:
+
+	shipfull.rif	- Ship under full lighting
+	shipemer.rif	- Ship under emergency lighting
+	shipbatl.rif	- Ship under "battle" lanterns
