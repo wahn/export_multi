@@ -1,0 +1,86 @@
+# usage:
+# make clobber
+# make -j 8
+
+ARNOLD = /lsr/local/Arnold
+KICK = $(ARNOLD)/bin/kick
+
+all: \
+cruiser_arnold_port+mid_hatch.exr \
+cruiser_arnold_current.exr \
+cruiser_arnold_port+bow_cables+exting.exr \
+cruiser_arnold_port+stern_helmets.exr \
+cruiser_arnold_port+stern_ohhatch.exr \
+cruiser_arnold_port+bow_cvhatch+valves.exr \
+cruiser_arnold_starboard+stern.exr \
+cruiser_arnold_port+bow_stairs.exr
+
+clean:
+	-rm -f *~
+
+clobber: clean
+	-rm -f *.exr
+
+# CAport+mid_hatch
+
+cruiser_arnold_port+mid_hatch.exr: cruiser.ass
+	$(KICK) -dp -dw -i cruiser.ass -o cruiser_arnold_port+mid_hatch.exr \
+-c CAport+mid_hatch -v 6 -r 800 800 \
+-set options.AA_samples 3 \
+-set options.GI_diffuse_depth 1
+
+# CAcurrent
+
+cruiser_arnold_current.exr: cruiser.ass
+	$(KICK) -dp -dw -i cruiser.ass -o cruiser_arnold_current.exr \
+-c CAcurrent -v 6 -r 800 625 \
+-set options.AA_samples 3 \
+-set options.GI_diffuse_depth 1
+
+# CAport+bow_cables+exting
+
+cruiser_arnold_port+bow_cables+exting.exr: cruiser.ass
+	$(KICK) -dp -dw -i cruiser.ass -o cruiser_arnold_port+bow_cables+exting.exr \
+-c CAport+bow_cables+exting -v 6 -r 625 800 \
+-set options.AA_samples 3 \
+-set options.GI_diffuse_depth 1
+
+# CAport+stern_helmets
+
+cruiser_arnold_port+stern_helmets.exr: cruiser.ass
+	$(KICK) -dp -dw -i cruiser.ass -o cruiser_arnold_port+stern_helmets.exr \
+-c CAport+stern_helmets -v 6 -r 800 625 \
+-set options.AA_samples 3 \
+-set options.GI_diffuse_depth 1
+
+# CAport+stern_ohhatch
+
+cruiser_arnold_port+stern_ohhatch.exr: cruiser.ass
+	$(KICK) -dp -dw -i cruiser.ass -o cruiser_arnold_port+stern_ohhatch.exr \
+-c CAport+stern_ohhatch -v 6 -r 800 625 \
+-set options.AA_samples 3 \
+-set options.GI_diffuse_depth 1
+
+# CAport+bow_cvhatch+valves
+
+cruiser_arnold_port+bow_cvhatch+valves.exr: cruiser.ass
+	$(KICK) -dp -dw -i cruiser.ass -o cruiser_arnold_port+bow_cvhatch+valves.exr \
+-c CAport+bow_cvhatch+valves -v 6 -r 800 625 \
+-set options.AA_samples 3 \
+-set options.GI_diffuse_depth 1
+
+# CAstarboard+stern
+
+cruiser_arnold_starboard+stern.exr: cruiser.ass
+	$(KICK) -dp -dw -i cruiser.ass -o cruiser_arnold_starboard+stern.exr \
+-c CAstarboard+stern -v 6 -r 800 625 \
+-set options.AA_samples 3 \
+-set options.GI_diffuse_depth 1
+
+# CAport+bow_stairs
+
+cruiser_arnold_port+bow_stairs.exr: cruiser.ass
+	$(KICK) -dp -dw -i cruiser.ass -o cruiser_arnold_port+bow_stairs.exr \
+-c CAport+bow_stairs -v 6 -r 800 800 \
+-set options.AA_samples 3 \
+-set options.GI_diffuse_depth 1
