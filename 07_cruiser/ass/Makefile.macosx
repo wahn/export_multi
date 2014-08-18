@@ -2,7 +2,7 @@
 # make clobber
 # make -j 8
 
-ARNOLD = /lsr/local/Arnold
+ARNOLD = /usr/local/Arnold
 KICK = $(ARNOLD)/bin/kick
 
 all: \
@@ -23,11 +23,44 @@ clobber: clean
 
 # CAport+mid_hatch
 
-cruiser_arnold_port+mid_hatch.exr: cruiser.ass
-	$(KICK) -dp -dw -i cruiser.ass -o cruiser_arnold_port+mid_hatch.exr \
--c CAport+mid_hatch -v 6 -r 800 800 \
--set options.AA_samples 3 \
--set options.GI_diffuse_depth 1
+cruiser_arnold_port+mid_hatch.exr: \
+cruiser_arnold_port+mid_hatch_seed_1.exr \
+cruiser_arnold_port+mid_hatch_seed_2.exr \
+cruiser_arnold_port+mid_hatch_seed_3.exr \
+cruiser_arnold_port+mid_hatch_seed_4.exr
+	echo "TODO: combine seed images into a single one"
+
+cruiser_arnold_port+mid_hatch_seed_1.exr: cruiser.ass
+	$(KICK) -dp -dw -i cruiser.ass -o cruiser_arnold_port+mid_hatch_seed_1.exr \
+-c CAport+mid_hatch -v 6 -r 1600 1600 \
+-set options.AA_samples 4 \
+-set options.GI_diffuse_depth 2 \
+-set options.GI_diffuse_samples 5 \
+-set options.AA_seed 1
+
+cruiser_arnold_port+mid_hatch_seed_2.exr: cruiser.ass
+	$(KICK) -dp -dw -i cruiser.ass -o cruiser_arnold_port+mid_hatch_seed_2.exr \
+-c CAport+mid_hatch -v 6 -r 1600 1600 \
+-set options.AA_samples 4 \
+-set options.GI_diffuse_depth 2 \
+-set options.GI_diffuse_samples 5 \
+-set options.AA_seed 2
+
+cruiser_arnold_port+mid_hatch_seed_3.exr: cruiser.ass
+	$(KICK) -dp -dw -i cruiser.ass -o cruiser_arnold_port+mid_hatch_seed_3.exr \
+-c CAport+mid_hatch -v 6 -r 1600 1600 \
+-set options.AA_samples 4 \
+-set options.GI_diffuse_depth 2 \
+-set options.GI_diffuse_samples 5 \
+-set options.AA_seed 3
+
+cruiser_arnold_port+mid_hatch_seed_4.exr: cruiser.ass
+	$(KICK) -dp -dw -i cruiser.ass -o cruiser_arnold_port+mid_hatch_seed_4.exr \
+-c CAport+mid_hatch -v 6 -r 1600 1600 \
+-set options.AA_samples 4 \
+-set options.GI_diffuse_depth 2 \
+-set options.GI_diffuse_samples 5 \
+-set options.AA_seed 4
 
 # CAcurrent
 
