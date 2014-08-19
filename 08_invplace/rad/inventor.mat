@@ -1,0 +1,213 @@
+#Changed for round 2
+##new materials
+#"Glass East Clear"
+#"Glass East Frit"
+#"Glass West Clear"
+#"Glass West Frit"
+void glass glass_west_mat
+0
+0
+3 .94 .94 .94
+
+void trans glass_west_frit_mat
+0
+0
+7 .8 .8 .8 .04 0 .4 .4
+
+void glass glass_east_mat
+0
+0
+3 .94 .94 .94
+
+void alias glass_east_frit_mat glass_west_frit_mat
+
+void glass glass_south_mat
+0
+0
+3 .94 .94 .94
+
+void glass glass_skylight_mat
+0
+0
+3 .94 .94 .94
+
+void plastic curved_wall_mat
+0
+0
+5 .72 .72 .72 0 0
+
+void plastic big_wall_mat
+0
+0
+5 .5 .5 .5  0 0
+
+void plastic column_l1_mat
+0
+0
+5 .5 .5 .5 0 0
+
+void plastic column_t1_mat
+0
+0
+5 .5 .5 .5 0 0
+
+void plastic column_t2_mat
+0
+0
+5 .5 .5 .5 0 0
+
+void plastic column_t3_mat
+0
+0
+5 .5 .5 .5 0 0
+
+void plastic column_t4_mat
+0
+0
+5 .5 .5 .5 0 0
+
+void plastic column_t5_mat
+0
+0
+5 .5 .5 .5 0 0
+
+void plastic outbldg_east_building_mat
+0
+0
+5 .5 .5 .5 0 0
+
+void plastic outbldg_northeast_building_mat
+0
+0
+5 .5 .5 .5 0 0
+
+void plastic outbldg_northeast_roof_mat
+0
+0
+5 .5 .5 .5 0 0
+
+void glass elevator_core_mat
+0
+0
+3 .88 .88 .88
+
+void plastic floor_t1_mat
+0
+0
+5 .15 .15 .4 0 0
+
+void alias floor_t2_mat floor_t1_mat
+
+void alias floor_t3_mat floor_t1_mat
+
+void alias floor_t4_mat floor_t1_mat
+
+void alias floor_t5_mat floor_t1_mat
+
+void plastic ceil_t1_mat
+0
+0
+5 .7 .7 .7 0 0
+
+void alias ceil_t2_mat ceil_t1_mat
+
+void alias ceil_t3_mat ceil_t1_mat
+
+void alias ceil_t4_mat ceil_t1_mat
+
+void alias ceil_t5_mat ceil_t1_mat
+
+void plastic floor_pent_mat
+0
+0
+5 .1 .1 .6 0 0
+
+void plastic floor_l1_mat
+0
+0
+5 .1 .1 .6 0 0
+
+void plastic fire_stair_walls_mat
+0
+0
+5 .5 .5 .5 0 0
+
+void plastic mullion_west_mat
+0
+0
+5 .25 .25 .25 .04 0
+
+void plastic mullion_south_mat
+0
+0
+5 .25 .25  .25 .04 0
+
+void plastic mullion_east_mat
+0
+0
+5 .25 .25 .25 .04 0
+
+void plastic mullion_skylight_mat
+0
+0
+5 .25 .25 .25 .04 0
+
+void plastic ground_south_slope_mat
+0
+0
+5 .5 .5 .5 0 0
+
+void plastic ground_south_mat
+0
+0
+5 .5 .5 .5 0 0
+
+void plastic ground_north_mat
+0
+0
+5 .5 .5 .5 0 0
+
+void plastic west_ground_mat
+0
+0
+5 .5 .5 .5 0 0
+
+void plastic interior_stair_mat
+0
+0
+5 .5 .5 .5 0 0
+
+void plastic south_pillars_mat
+0
+0
+5 .5 .5 .5 0 0
+
+void plastic sidewalk_parapet_mat
+0
+0
+5 .5 .5 .5 0 0
+
+void plastic sidewalk_mat
+0
+0
+5 .5 .5 .5 0 0
+
+void plastic retaining_wall_mat
+0
+0
+5 .5 .5 .5 0 0
+
+void plastic railing_mat
+0
+0
+5 .4 .4 .4 .04 0
+
+void plastic penthouse_roof_mat
+0
+0
+5 .5 .5 .5 0 0
+
+void plastic fire_stair_roof_mat
+0
+0
+5 .5 .5 .5 0 0
