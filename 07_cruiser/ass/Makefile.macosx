@@ -104,11 +104,44 @@ cruiser_arnold_port+bow_cvhatch+valves.exr: cruiser.ass
 
 # CAstarboard+stern
 
-cruiser_arnold_starboard+stern.exr: cruiser.ass
-	$(KICK) -dp -dw -i cruiser.ass -o cruiser_arnold_starboard+stern.exr \
--c CAstarboard+stern -v 6 -r 800 625 \
--set options.AA_samples 3 \
--set options.GI_diffuse_depth 1
+cruiser_arnold_starboard+stern.exr: \
+cruiser_arnold_starboard+stern_seed_1.exr \
+cruiser_arnold_starboard+stern_seed_2.exr \
+cruiser_arnold_starboard+stern_seed_3.exr \
+cruiser_arnold_starboard+stern_seed_4.exr
+	echo "TODO: combine seed images into a single one"
+
+cruiser_arnold_starboard+stern_seed_1.exr: cruiser.ass
+	$(KICK) -dp -dw -i cruiser.ass -o cruiser_arnold_starboard+stern_seed_1.exr \
+-c CAstarboard+stern -v 6 -r 1600 1250 \
+-set options.AA_samples 4 \
+-set options.GI_diffuse_depth 2 \
+-set options.GI_diffuse_samples 5 \
+-set options.AA_seed 1
+
+cruiser_arnold_starboard+stern_seed_2.exr: cruiser.ass
+	$(KICK) -dp -dw -i cruiser.ass -o cruiser_arnold_starboard+stern_seed_2.exr \
+-c CAstarboard+stern -v 6 -r 1600 1250 \
+-set options.AA_samples 4 \
+-set options.GI_diffuse_depth 2 \
+-set options.GI_diffuse_samples 5 \
+-set options.AA_seed 2
+
+cruiser_arnold_starboard+stern_seed_3.exr: cruiser.ass
+	$(KICK) -dp -dw -i cruiser.ass -o cruiser_arnold_starboard+stern_seed_3.exr \
+-c CAstarboard+stern -v 6 -r 1600 1250 \
+-set options.AA_samples 4 \
+-set options.GI_diffuse_depth 2 \
+-set options.GI_diffuse_samples 5 \
+-set options.AA_seed 3
+
+cruiser_arnold_starboard+stern_seed_4.exr: cruiser.ass
+	$(KICK) -dp -dw -i cruiser.ass -o cruiser_arnold_starboard+stern_seed_4.exr \
+-c CAstarboard+stern -v 6 -r 1600 1250 \
+-set options.AA_samples 4 \
+-set options.GI_diffuse_depth 2 \
+-set options.GI_diffuse_samples 5 \
+-set options.AA_seed 4
 
 # CAport+bow_stairs
 

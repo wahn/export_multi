@@ -113,7 +113,7 @@ cruiser_arnold_starboard+stern_seed_4.exr
 
 cruiser_arnold_starboard+stern_seed_1.exr: cruiser.ass
 	$(KICK) -dp -dw -i cruiser.ass -o cruiser_arnold_starboard+stern_seed_1.exr \
--c CAstarboard+stern -v 6 -r 1600 1600 \
+-c CAstarboard+stern -v 6 -r 1600 1250 \
 -set options.AA_samples 4 \
 -set options.GI_diffuse_depth 2 \
 -set options.GI_diffuse_samples 5 \
@@ -121,7 +121,7 @@ cruiser_arnold_starboard+stern_seed_1.exr: cruiser.ass
 
 cruiser_arnold_starboard+stern_seed_2.exr: cruiser.ass
 	$(KICK) -dp -dw -i cruiser.ass -o cruiser_arnold_starboard+stern_seed_2.exr \
--c CAstarboard+stern -v 6 -r 1600 1600 \
+-c CAstarboard+stern -v 6 -r 1600 1250 \
 -set options.AA_samples 4 \
 -set options.GI_diffuse_depth 2 \
 -set options.GI_diffuse_samples 5 \
@@ -129,7 +129,7 @@ cruiser_arnold_starboard+stern_seed_2.exr: cruiser.ass
 
 cruiser_arnold_starboard+stern_seed_3.exr: cruiser.ass
 	$(KICK) -dp -dw -i cruiser.ass -o cruiser_arnold_starboard+stern_seed_3.exr \
--c CAstarboard+stern -v 6 -r 1600 1600 \
+-c CAstarboard+stern -v 6 -r 1600 1250 \
 -set options.AA_samples 4 \
 -set options.GI_diffuse_depth 2 \
 -set options.GI_diffuse_samples 5 \
@@ -137,7 +137,7 @@ cruiser_arnold_starboard+stern_seed_3.exr: cruiser.ass
 
 cruiser_arnold_starboard+stern_seed_4.exr: cruiser.ass
 	$(KICK) -dp -dw -i cruiser.ass -o cruiser_arnold_starboard+stern_seed_4.exr \
--c CAstarboard+stern -v 6 -r 1600 1600 \
+-c CAstarboard+stern -v 6 -r 1600 1250 \
 -set options.AA_samples 4 \
 -set options.GI_diffuse_depth 2 \
 -set options.GI_diffuse_samples 5 \
