@@ -1,0 +1,72 @@
+22c22,26
+< void alias glass_east_frit_mat glass_west_frit_mat
+---
+> # void alias glass_east_frit_mat glass_west_frit_mat
+> void trans glass_east_frit_mat
+> 0
+> 0
+> 7 .8 .8 .8 .04 0 .4 .4
+99c103,107
+< void alias floor_t2_mat floor_t1_mat
+---
+> # void alias floor_t2_mat floor_t1_mat
+> void plastic floor_t2_mat
+> 0
+> 0
+> 5 .15 .15 .4 0 0
+101c109,113
+< void alias floor_t3_mat floor_t1_mat
+---
+> # void alias floor_t3_mat floor_t1_mat
+> void plastic floor_t3_mat
+> 0
+> 0
+> 5 .15 .15 .4 0 0
+103c115,119
+< void alias floor_t4_mat floor_t1_mat
+---
+> # void alias floor_t4_mat floor_t1_mat
+> void plastic floor_t4_mat
+> 0
+> 0
+> 5 .15 .15 .4 0 0
+105c121,125
+< void alias floor_t5_mat floor_t1_mat
+---
+> # void alias floor_t5_mat floor_t1_mat
+> void plastic floor_t5_mat
+> 0
+> 0
+> 5 .15 .15 .4 0 0
+112c132,136
+< void alias ceil_t2_mat ceil_t1_mat
+---
+> # void alias ceil_t2_mat ceil_t1_mat
+> void plastic ceil_t2_mat
+> 0
+> 0
+> 5 .7 .7 .7 0 0
+114c138,142
+< void alias ceil_t3_mat ceil_t1_mat
+---
+> # void alias ceil_t3_mat ceil_t1_mat
+> void plastic ceil_t3_mat
+> 0
+> 0
+> 5 .7 .7 .7 0 0
+116c144,148
+< void alias ceil_t4_mat ceil_t1_mat
+---
+> # void alias ceil_t4_mat ceil_t1_mat
+> void plastic ceil_t4_mat
+> 0
+> 0
+> 5 .7 .7 .7 0 0
+118c150,154
+< void alias ceil_t5_mat ceil_t1_mat
+---
+> # void alias ceil_t5_mat ceil_t1_mat
+> void plastic ceil_t5_mat
+> 0
+> 0
+> 5 .7 .7 .7 0 0

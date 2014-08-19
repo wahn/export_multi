@@ -1,0 +1,104 @@
+
+
+			     Inventure Musuem
+
+			3D model by Charles Ehrlich
+			  Renderings by Greg Ward
+
+
+Location: Acron, OH, Sumit County, USA
+Latitude: 41 degrees, 7 minutes, 30 seconds North
+Longitude: 81 degrees, 30 minutes, 0 seconds West
+Time Zone: -3 Hours (Eastern Time)
+Orientation: "Site North" is 28.0314 degrees to the East of North
+(rotate sky 28.0314 degrees clockwise around 3D model)
+
+Extents of interior space: 
+Min:  X=-63 Y=-14 Z=0
+Max:  X= 58 Y= 34 Z=89
+
+Floor elevations (Z=):
+Level One = L1 = 0
+Tier One  = T1 = 15
+Tier Two  = T2 = 27
+Tier Three= T3 = 39
+Tier Four = T4 = 51
+Tier Five = T5 = 63
+Tier Six  = T6 = 75
+
+TODO:
+1. Verify lat. long. meridian, and rotation of sky
+2. Create mkillum entities out of the various fenestrations
+3. Define materials (currently just grey)
+4. Pick a few explanatory times of the year/day
+5. Generate octrees/ambient files and representative views.
+6. arch2rad needs to stop interpreting the scale of the architrion
+files as anything exept an indication to the user of what the
+scaling factor would be if one was going to convert the file to meters.
+In other words, the integer data in the Architiron Text files
+is in whatever unit the user specified (inches, feet, meters, half-meters,
+1/8th inches, etc.).  Arch2rad should ask what units (or
+allow it to be specified on the command line) the user wants for the
+output.  It is possible to figure out what the conversion factor should be 
+by understanding how Architrion specifies its "Working Unit".  I'm not
+exactly sure how the "Working Unit" relates exactly to the conversion
+factor printed in the output .txt file (fhead.length).  The working unit 
+defines the smallest unit of measure of an Architrion file.  This is
+the ones place of the Architrion Text file.  Usually one specifies
+a work unit of x' or x' x/8" or x' x/16" which means that the work unit
+is some fraction of a foot or inch.  Or one can define the work unit as
+x.5 or x.xx or x.xx5 which means that the ones unit is some decimal
+fraction of a meter.  So, if the "conversion factor is divisible by
+.0254 (to at most two places of accuracy), then the ones place of the text 
+file is some fraction of a foot.  If the conversion factor is not divisible 
+by .0254 then the ones place of the text file is some decimal fraction of 
+a meter.
+
+Example:
+Classroom 3D 7/15/92
+Layer No. 1 Floors
+Layer No. 2 Base
+Layer No. 3 Furniture
+Layer No. 4 Walls
+Layer No. 5 Fixtures
+Layer No. 6 Ceiling
+Layer No. 7
+Layer No. 8
+0 0 0
+0 0.012704
+0 0.009290
+0 435 2
+Block
+
+So the conversion factor .012704 tells us that if we multiply
+every value in this file by that number, we'd end up with meters.
+Because .012704/.0254 equals approximately .500, this means that
+the work unit was some fraction of a foot.  What I don`t understand
+is why this value of .012704 corresponds to a work unit of x' x/8".
+I know that this file was created with a work unit of x' x/8" or 1/8 of an 
+inch, I know that if I modify the .txt file such that the fhead.length
+value equals 1/8/12=.010416667 then I end up with a rad file that is in
+feet and scaled properly.  Go figure?!
+
+        fprintf(fp, "# File created by: %s\n", progname);
+        fprintf(fp, "# Input file: %s\n", fhead.filename);
+        fprintf(fp, "# Input units: %s\n", fhead.length_u);
+        fprintf(fp, "# Output units: meters\n");
+        fprintf(fp, "# Named layers:\n");
+
+So instead of always outputting meters, the choice should be given between
+meters, feet and inches.
+
+	fprintf(fp, "# Output units: %s\n", unitname);
+
+where unitname is one of meters or feet or inches.  And of course,
+
+        fprintf(fp, ptfmt, p->x[i]*fhead.length_f, p->y[i]*fhead.length_f,
+                        (n&4 ? p->h[i] : p->z[i])*fhead.length_f);
+
+the above line would change such that there is only conversion
+when the output units are specified to be different from the input units.
+How that conversion factor should be calculated is unknown to me.
+
+7. rad needs a VARRIABLE to list those materials to -AExclude from
+the calculation or to -AInclude in the calculation.
