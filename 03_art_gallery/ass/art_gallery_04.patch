@@ -112,6 +112,10 @@
 >  samples 3
 > }
 > 
+364314c364324
+<  Kd 0
+---
+>  Kd 1
 364319c364329
 <  emission 1
 ---
@@ -140,3 +144,18 @@
 <  emission 1
 ---
 >  emission 0 # 1
+377069a377080,377088
+> rad_carpet
+> {
+>  name MAcarpet_blue_pat
+>  Kd_color .7 .825  .9
+>  variation 1.0 # 0.7
+>  scale 0.005334 0.005334 0.005334 # 0.0175 * 0.3048 (feet to meters)
+>  rotation 0 0 0
+> }
+> 
+377074c377093,377094
+<  Kd_color 0.699999988 0.800000012 0.899999976
+---
+>  Kd_color MAcarpet_blue_pat
+>  ##Kd_color 0.699999988 0.800000012 0.899999976
