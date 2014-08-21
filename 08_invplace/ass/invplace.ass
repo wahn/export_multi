@@ -226,6 +226,18 @@ skydome_light
  samples 6
 }
 
+plane
+{
+ name ground_plane
+ shader "ground_mat"
+}
+
+standard
+{
+ name ground_mat
+ Kd_color .28 .18 .12
+}
+
 cylinder
 {
  name CUairplane_t5
