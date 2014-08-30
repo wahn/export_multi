@@ -1,5 +1,24 @@
+invplace_indigo_augAM_f3w.png:
+==============================
+
 Tone Mapping:
 linear 1,5
 White Point:
 Preset E
+
+F-Stop: 5,6
+Exposure (1/s): 1000
+Focal Distance (m): 21,9460
+
+invplace_indigo_augAM_f3e.png:
+==============================
+
+Tone Mapping:
+linear 0,1
+White Point:
+Preset E
+
+F-Stop: 5,6
+Exposure (1/s): 60
+Focal Distance (m): 23,5244
 
