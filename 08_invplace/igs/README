@@ -22,3 +22,15 @@ F-Stop: 5,6
 Exposure (1/s): 60
 Focal Distance (m): 23,5244
 
+invplace_indigo_augAM_st.png:
+=============================
+
+Tone Mapping:
+linear 2,0
+White Point:
+Preset E
+
+F-Stop: 5,6
+Exposure (1/s): 125
+Focal Distance (m): 19,9641
+
