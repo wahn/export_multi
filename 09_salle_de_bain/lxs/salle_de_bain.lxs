@@ -1,0 +1,306 @@
+# Camera
+LookAt 3.281494617462158 -40.006858825683594 20.03567123413086 # position
+       3.056297540664673 -39.07173156738281 19.76213264465332 # target
+       -0.020315462723374367 0.27618280053138733 0.9608903527259827 # up
+Camera "perspective"
+  "float fov" [ 36.113055779559325 ]
+Film "fleximage"
+  "integer xresolution" [ 1920 ]
+  "integer yresolution" [ 1080 ]
+  "integer outlierrejection_k" [ 10 ]
+Sampler "metropolis"
+SurfaceIntegrator "bidirectional"
+WorldBegin
+  # bathmat2_mat
+  MakeNamedMaterial "bathmat2_mat"
+    "string type" [ "matte" ]
+    "color Kd" [ 0.800000011920929 0.800000011920929 0.800000011920929 ]
+  # bathmat_mat
+  MakeNamedMaterial "bathmat_mat"
+    "string type" [ "matte" ]
+    "color Kd" [ 0.800000011920929 0.800000011920929 0.800000011920929 ]
+  # bathtub_black_mat
+  MakeNamedMaterial "bathtub_black_mat"
+    "string type" [ "matte" ]
+    "color Kd" [ 0.01600000075995922 0.01600000075995922 0.01600000075995922 ]
+  # bathtub_faucet_mat
+  MakeNamedMaterial "bathtub_faucet_mat"
+    "string type" [ "mirror" ]
+    "color Kr" [ 1.0 1.0 1.0 ]
+  # bathtub_faucet_mixer_mat
+  MakeNamedMaterial "bathtub_faucet_mixer_mat"
+    "string type" [ "mirror" ]
+    "color Kr" [ 1.0 1.0 1.0 ]
+  # bathtub_faucet_plate_mat
+  MakeNamedMaterial "bathtub_faucet_plate_mat"
+    "string type" [ "mirror" ]
+    "color Kr" [ 1.0 1.0 1.0 ]
+  # bathtub_porcelain_mat
+  MakeNamedMaterial "bathtub_porcelain_mat"
+    "string type" [ "glossy" ]
+    "color Kd" [ 0.800000011920929 0.800000011920929 0.800000011920929 ]
+    "color Ks" [ 0.2639999985694885 0.2639999985694885 0.2639999985694885 ]
+    "float uroughness" [ 0.05000000074505806 ]
+    "float vroughness" [ 0.05000000074505806 ]
+  Texture "bathtub_wood_mat::Kd" "color" "imagemap"
+    "string wrap" ["repeat"]
+    "string filename" ["WoodFine0016_L.png"]
+    "float gamma" [2.2]
+    "float gain" [1.000000]
+    "string filtertype" ["bilinear"]
+    "string mapping" ["uv"]
+    "float uscale" [1.000000]
+    "float vscale" [-1.000000]
+    "float vscale" [-1.000000]
+    "float vdelta" [1.000000]
+  # bathtub_wood_mat
+  MakeNamedMaterial "bathtub_wood_mat"
+    "string type" [ "glossy" ]
+    "texture Kd" [ "bathtub_wood_mat::Kd" ]
+    "color Ks" [ 0.10000000149011612 0.10000000149011612 0.10000000149011612 ]
+    "float uroughness" [ 0.1 ]
+    "float vroughness" [ 0.1 ]
+    # "float uroughness" [ 0.30000001192092896 ]
+    # "float vroughness" [ 0.30000001192092896 ]
+  # bottle_cap_mat
+  MakeNamedMaterial "bottle_cap_mat"
+    "string type" [ "matte" ]
+    "color Kd" [ 0.800000011920929 0.800000011920929 0.800000011920929 ]
+  Texture "bottle_label_mat::Kd" "color" "imagemap"
+    "string wrap" ["repeat"]
+    "string filename" ["etiquette.png"]
+    "float gamma" [2.2]
+    "float gain" [1.000000]
+    "string filtertype" ["bilinear"]
+    "string mapping" ["uv"]
+    "float uscale" [1.000000]
+    "float vscale" [-1.000000]
+    "float vscale" [-1.000000]
+    "float vdelta" [1.000000]
+  # bottle_label_mat
+  MakeNamedMaterial "bottle_label_mat"
+    "string type" [ "matte" ]
+    "texture Kd" [ "bottle_label_mat::Kd" ]
+  # bottle_mat
+  MakeNamedMaterial "bottle_mat"
+    "string type" [ "glass" ]
+    "float index" [ 1.4500000476837158 ]
+    "color Kr" [ 1.0 1.0 1.0 ]
+    "color Kt" [ 0.800000011920929 0.800000011920929 0.800000011920929 ]
+  Texture "chest_mat::Kd" "color" "imagemap"
+    "string wrap" ["repeat"]
+    "string filename" ["WoodFine0016_L.png"]
+    "float gamma" [2.2]
+    "float gain" [1.000000]
+    "string filtertype" ["bilinear"]
+    "string mapping" ["uv"]
+    "float uscale" [1.000000]
+    "float vscale" [-1.000000]
+    "float vscale" [-1.000000]
+    "float vdelta" [1.000000]
+  # chest_mat
+  MakeNamedMaterial "chest_mat"
+    "string type" [ "glossy" ]
+    "texture Kd" [ "chest_mat::Kd" ]
+    "color Ks" [ 0.10000000149011612 0.10000000149011612 0.10000000149011612 ]
+    "float uroughness" [ 0.1 ]
+    "float vroughness" [ 0.1 ]
+    # "float uroughness" [ 0.30000001192092896 ]
+    # "float vroughness" [ 0.30000001192092896 ]
+  # cupboard_emit_mat
+  MakeNamedMaterial "cupboard_emit_mat"
+    "string type" [ "matte" ]
+    "color Kd" [ 0.8529999852180481 0.796999990940094 0.4480000138282776 ]
+  # cupboard_mat
+  MakeNamedMaterial "cupboard_mat"
+    "string type" [ "matte" ]
+    "color Kd" [ 0.800000011920929 0.800000011920929 0.800000011920929 ]
+  # emit_front_mat
+  MakeNamedMaterial "emit_front_mat"
+    "string type" [ "matte" ]
+    "color Kd" [ 1.0 1.0 1.0 ]
+  # emit_middle_mat
+  MakeNamedMaterial "emit_middle_mat"
+    "string type" [ "matte" ]
+    "color Kd" [ 1.0 1.0 1.0 ]
+  # faucet_mat
+  MakeNamedMaterial "faucet_mat"
+    "string type" [ "mirror" ]
+    "color Kr" [ 1.0 1.0 1.0 ]
+  # figure_mat
+  MakeNamedMaterial "figure_mat"
+    "string type" [ "glossy" ]
+    "color Kd" [ 0.03799999877810478 0.03799999877810478 0.03799999877810478 ]
+    "color Ks" [ 0.11999999731779099 0.11999999731779099 0.11999999731779099 ]
+    "float uroughness" [ 0.2 ]
+    "float vroughness" [ 0.2 ]
+    # "float uroughness" [ 0.5 ]
+    # "float vroughness" [ 0.5 ]
+  Texture "floor_mat::Kd" "color" "imagemap"
+    "string wrap" ["repeat"]
+    "string filename" ["WoodFine0034_7_S.jpg"]
+    "float gamma" [2.2]
+    "float gain" [1.000000]
+    "string filtertype" ["bilinear"]
+    "string mapping" ["uv"]
+    "float uscale" [1.000000]
+    "float vscale" [-1.000000]
+    "float vscale" [-1.000000]
+    "float vdelta" [1.000000]
+  # floor_mat
+  MakeNamedMaterial "floor_mat"
+    "string type" [ "glossy" ]
+    "texture Kd" [ "floor_mat::Kd" ]
+    "color Ks" [ 0.10000000149011612 0.10000000149011612 0.10000000149011612 ]
+    "float uroughness" [ 0.1 ]
+    "float vroughness" [ 0.1 ]
+    # "float uroughness" [ 0.30000001192092896 ]
+    # "float vroughness" [ 0.30000001192092896 ]
+  # mirror_emit_mat
+  MakeNamedMaterial "mirror_emit_mat"
+    "string type" [ "matte" ]
+    "color Kd" [ 1.0 1.0 1.0 ]
+  # mirror_mat
+  MakeNamedMaterial "mirror_mat"
+    "string type" [ "mirror" ]
+    "color Kr" [ 1.0 1.0 1.0 ]
+  # scale_black_mat
+  MakeNamedMaterial "scale_black_mat"
+    "string type" [ "matte" ]
+    "color Kd" [ 0.08399999886751175 0.08399999886751175 0.08399999886751175 ]
+  # scale_white_mat
+  MakeNamedMaterial "scale_white_mat"
+    "string type" [ "glossy" ]
+    "color Kd" [ 0.800000011920929 0.800000011920929 0.800000011920929 ]
+    "color Ks" [ 0.24199999868869781 0.24199999868869781 0.24199999868869781 ]
+    "float uroughness" [ 0.5 ]
+    "float vroughness" [ 0.5 ]
+  # sink1_mat
+  MakeNamedMaterial "sink1_mat"
+    "string type" [ "glossy" ]
+    "color Kd" [ 0.800000011920929 0.800000011920929 0.800000011920929 ]
+    "color Ks" [ 0.10000000149011612 0.10000000149011612 0.10000000149011612 ]
+    "float uroughness" [ 0.1 ]
+    "float vroughness" [ 0.1 ]
+    # "float uroughness" [ 0.30000001192092896 ]
+    # "float vroughness" [ 0.30000001192092896 ]
+  # skirting_right_mat
+  MakeNamedMaterial "skirting_right_mat"
+    "string type" [ "matte" ]
+    "color Kd" [ 0.23999999463558197 0.23000000417232513 0.23000000417232513 ]
+  # statue_left_handle_mat
+  MakeNamedMaterial "statue_left_handle_mat"
+    "string type" [ "matte" ]
+    "color Kd" [ 0.0949999988079071 0.08799999952316284 0.04500000178813934 ]
+  # statue_left_mat
+  MakeNamedMaterial "statue_left_mat"
+    "string type" [ "glossy" ]
+    "color Kd" [ 0.03799999877810478 0.03799999877810478 0.03799999877810478 ]
+    "color Ks" [ 0.11999999731779099 0.11999999731779099 0.11999999731779099 ]
+    "float uroughness" [ 0.2 ]
+    "float vroughness" [ 0.2 ]
+    # "float uroughness" [ 0.5 ]
+    # "float vroughness" [ 0.5 ]
+  # statue_right_mat
+  MakeNamedMaterial "statue_right_mat"
+    "string type" [ "glossy" ]
+    "color Kd" [ 0.03799999877810478 0.03799999877810478 0.03799999877810478 ]
+    "color Ks" [ 0.11999999731779099 0.11999999731779099 0.11999999731779099 ]
+    "float uroughness" [ 0.2 ]
+    "float vroughness" [ 0.2 ]
+    # "float uroughness" [ 0.5 ]
+    # "float vroughness" [ 0.5 ]
+  # switch_metal_mat
+  MakeNamedMaterial "switch_metal_mat"
+    "string type" [ "mirror" ]
+    "color Kr" [ 1.0 1.0 1.0 ]
+  # switch_plastic_mat
+  MakeNamedMaterial "switch_plastic_mat"
+    "string type" [ "matte" ]
+    "color Kd" [ 0.04100000113248825 0.04100000113248825 0.04100000113248825 ]
+  Texture "table_mat::Kd" "color" "imagemap"
+    "string wrap" ["repeat"]
+    "string filename" ["WoodFine0016_L.png"]
+    "float gamma" [2.2]
+    "float gain" [1.000000]
+    "string filtertype" ["bilinear"]
+    "string mapping" ["uv"]
+    "float uscale" [1.000000]
+    "float vscale" [-1.000000]
+    "float vscale" [-1.000000]
+    "float vdelta" [1.000000]
+  # table_mat
+  MakeNamedMaterial "table_mat"
+    "string type" [ "glossy" ]
+    "texture Kd" [ "table_mat::Kd" ]
+    "color Ks" [ 0.10000000149011612 0.10000000149011612 0.10000000149011612 ]
+    "float uroughness" [ 0.1 ]
+    "float vroughness" [ 0.1 ]
+    # "float uroughness" [ 0.5 ]
+    # "float vroughness" [ 0.5 ]
+  Texture "table_top_mat::Kd" "color" "imagemap"
+    "string wrap" ["repeat"]
+    "string filename" ["WoodFine0016_L.png"]
+    "float gamma" [2.2]
+    "float gain" [1.000000]
+    "string filtertype" ["bilinear"]
+    "string mapping" ["uv"]
+    "float uscale" [1.000000]
+    "float vscale" [-1.000000]
+    "float vscale" [-1.000000]
+    "float vdelta" [1.000000]
+  # table_top_mat
+  MakeNamedMaterial "table_top_mat"
+    "string type" [ "glossy" ]
+    "texture Kd" [ "table_top_mat::Kd" ]
+    "color Ks" [ 0.10000000149011612 0.10000000149011612 0.10000000149011612 ]
+    "float uroughness" [ 0.1 ]
+    "float vroughness" [ 0.1 ]
+    # "float uroughness" [ 0.30000001192092896 ]
+    # "float vroughness" [ 0.30000001192092896 ]
+  # towel2_mat
+  MakeNamedMaterial "towel2_mat"
+    "string type" [ "matte" ]
+    "color Kd" [ 0.800000011920929 0.800000011920929 0.800000011920929 ]
+  # towel_mat
+  MakeNamedMaterial "towel_mat"
+    "string type" [ "matte" ]
+    "color Kd" [ 0.800000011920929 0.800000011920929 0.800000011920929 ]
+  # towel_rail_mat
+  MakeNamedMaterial "towel_rail_mat"
+    "string type" [ "mirror" ]
+    "color Kr" [ 1.0 1.0 1.0 ]
+  # trash_can_metal_mat
+  MakeNamedMaterial "trash_can_metal_mat"
+    "string type" [ "mirror" ]
+    "color Kr" [ 1.0 1.0 1.0 ]
+  # trash_can_plastic_mat
+  MakeNamedMaterial "trash_can_plastic_mat"
+    "string type" [ "matte" ]
+    "color Kd" [ 0.04100000113248825 0.04100000113248825 0.04100000113248825 ]
+  # wall_right_mat
+  MakeNamedMaterial "wall_right_mat"
+    "string type" [ "matte" ]
+    "color Kd" [ 0.625 0.7699999809265137 0.800000011920929 ]
+  # walls_white_mat
+  MakeNamedMaterial "walls_white_mat"
+    "string type" [ "matte" ]
+    "color Kd" [ 0.800000011920929 0.800000011920929 0.800000011920929 ]
+  # window_button_mat
+  MakeNamedMaterial "window_button_mat"
+    "string type" [ "mirror" ]
+    "color Kr" [ 1.0 1.0 1.0 ]
+  # window_button_plate_mat
+  MakeNamedMaterial "window_button_plate_mat"
+    "string type" [ "mirror" ]
+    "color Kr" [ 1.0 1.0 1.0 ]
+  # window_emit_mat
+  MakeNamedMaterial "window_emit_mat"
+    "string type" [ "matte" ]
+    "color Kd" [ 0.800000011920929 0.800000011920929 0.800000011920929 ]
+  # window_hinges_mat
+  MakeNamedMaterial "window_hinges_mat"
+    "string type" [ "matte" ]
+    "color Kd" [ 0.800000011920929 0.800000011920929 0.800000011920929 ]
+  # ...
+WorldEnd
