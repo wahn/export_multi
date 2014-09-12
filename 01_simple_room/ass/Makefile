@@ -15,7 +15,7 @@ clobber: clean
 	-rm -f *.exr
 
 simple_room_cam1.ass: simple_room.ass
-	-cp simple_room.ass simple_room_cam1.ass
+	patch simple_room.ass -i simple_room_cam1.patch -o simple_room_cam1.ass
 
 simple_room_cam2.ass: simple_room.ass simple_room_cam2.patch
 	patch simple_room.ass -i simple_room_cam2.patch -o simple_room_cam2.ass
