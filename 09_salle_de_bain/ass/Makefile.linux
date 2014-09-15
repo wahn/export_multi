@@ -1,0 +1,37 @@
+# usage:
+# make clobber
+# make -j 4
+
+ARNOLD = /mill3d/server/apps/ARNOLD/linux-x86-64/Arnold-4.2.1.1
+KICK = $(ARNOLD)/bin/kick
+
+all: \
+salle_de_bain_seed_1.exr \
+salle_de_bain_seed_2.exr \
+salle_de_bain_seed_3.exr \
+salle_de_bain_seed_4.exr
+
+# patch
+
+salle_de_bain_patched.ass: salle_de_bain.ass
+	patch salle_de_bain.ass -i salle_de_bain.patch -o salle_de_bain_patched.ass
+
+# 4 seeds
+
+salle_de_bain_seed_1.exr: salle_de_bain_patched.ass
+	$(KICK) -dp -dw -i salle_de_bain_patched.ass -o salle_de_bain_seed_1.exr \
+-set options.AA_seed 1 -v 6
+
+salle_de_bain_seed_2.exr: salle_de_bain_patched.ass
+	$(KICK) -dp -dw -i salle_de_bain_patched.ass -o salle_de_bain_seed_2.exr \
+-set options.AA_seed 2 -v 6
+
+salle_de_bain_seed_3.exr: salle_de_bain_patched.ass
+	$(KICK) -dp -dw -i salle_de_bain_patched.ass -o salle_de_bain_seed_3.exr \
+-set options.AA_seed 3 -v 6
+
+salle_de_bain_seed_4.exr: salle_de_bain_patched.ass
+	$(KICK) -dp -dw -i salle_de_bain_patched.ass -o salle_de_bain_seed_4.exr \
+-set options.AA_seed 4 -v 6
+
+# TODO: combine 4 seeds into beauty

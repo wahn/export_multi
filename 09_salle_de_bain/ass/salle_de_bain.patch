@@ -1,0 +1,46 @@
+9c9
+<  AA_samples 5
+---
+>  AA_samples 3
+25c25
+<  GI_diffuse_depth 3
+---
+>  GI_diffuse_depth 2
+30c30
+<  GI_diffuse_samples 3
+---
+>  GI_diffuse_samples 15
+32c32
+<  GI_glossy_samples 3
+---
+>  GI_glossy_samples 9
+501285,501286c501285,501286
+<  intensity 14
+<  samples 2
+---
+>  intensity 1400 # 14
+>  samples 6
+675489,675490c675489,675490
+<  intensity 10
+<  samples 2
+---
+>  intensity 200 # 10
+>  samples 4
+675525,675526c675525,675526
+<  intensity 4.5
+<  samples 2
+---
+>  intensity 450 # 4.5
+>  samples 4
+675559,675560c675559,675560
+<  intensity 2
+<  samples 2
+---
+>  intensity 200 # 2
+>  samples 3
+675593,675594c675593,675594
+<  intensity 14
+<  samples 2
+---
+>  intensity 1400 # 14
+>  samples 5
