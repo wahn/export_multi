@@ -1,0 +1,46 @@
+9c9
+<  AA_samples 8
+---
+>  AA_samples 3
+26,27c26,27
+<  GI_diffuse_depth 3
+<  GI_glossy_depth 1
+---
+>  GI_diffuse_depth 2
+>  GI_glossy_depth 0
+31,34c31,34
+<  GI_diffuse_samples 3
+<  GI_single_scatter_samples 4
+<  GI_glossy_samples 3
+<  GI_refraction_samples 3
+---
+>  GI_diffuse_samples 7
+>  GI_single_scatter_samples 5
+>  GI_glossy_samples 2
+>  GI_refraction_samples 2
+135c135
+<  intensity 1
+---
+>  intensity 100
+188c188
+<  radius 1
+---
+>  radius 0.125
+191,193c191,193
+<  0.125 0 0 0
+<  0 0.125 0 0
+<  0 0 0.125 0
+---
+>  1 0 0 0
+>  0 1 0 0
+>  0 0 1 0
+202c202
+<  Color 1 1 1
+---
+>  Color 10 10 10
+215,216c215,216
+<  intensity 100
+<  samples 1
+---
+>  intensity 3
+>  samples 3
