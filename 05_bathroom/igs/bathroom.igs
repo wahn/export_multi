@@ -1,7 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <scene>
+<!--  <camera>-->
+<!--    <uid>1</uid>-->
+<!--    <name>uid1_Camera</name>-->
+<!--    <aperture_radius>0.003170415214244715</aperture_radius>-->
+<!--    <focus_distance>10</focus_distance>-->
+<!--    <sensor_width>0.032</sensor_width>-->
+<!--    <lens_sensor_dist>0.05072664342791544</lens_sensor_dist>-->
+<!--    <exposure_duration>0.008</exposure_duration>-->
+<!--    <lens_shift_up_distance>0</lens_shift_up_distance>-->
+<!--    <lens_shift_right_distance>0</lens_shift_right_distance>-->
+<!--    <autofocus/>-->
+<!--    <aperture_shape>-->
+<!--      <circular/>-->
+<!--    </aperture_shape>-->
+<!--    <keyframe>-->
+<!--      <time>0</time>-->
+<!--      <pos>1.5000000223517418 0.15000000223517418 1.5500000230967999</pos>-->
+<!--      <rotation_quaternion>-->
+<!--        <axis>0 0 1</axis>-->
+<!--        <angle>0</angle>-->
+<!--      </rotation_quaternion>-->
+<!--    </keyframe>-->
+<!--    <up>-0.20849284529685974 0.1459178328514099 0.9670773148536682</up>-->
+<!--    <forwards>-0.7923091650009155 0.5545132160186768 -0.2544823884963989</forwards>-->
+<!--    <camera_type>thin-lens-perspective</camera_type>-->
+<!--  </camera>-->
+<!--  <camera>-->
+<!--    <uid>2</uid>-->
+<!--    <name>uid2_Camera</name>-->
+<!--    <aperture_radius>0.003170415214244715</aperture_radius>-->
+<!--    <focus_distance>10</focus_distance>-->
+<!--    <sensor_width>0.032</sensor_width>-->
+<!--    <lens_sensor_dist>0.05072664342791544</lens_sensor_dist>-->
+<!--    <exposure_duration>0.008</exposure_duration>-->
+<!--    <lens_shift_up_distance>0</lens_shift_up_distance>-->
+<!--    <lens_shift_right_distance>0</lens_shift_right_distance>-->
+<!--    <autofocus/>-->
+<!--    <aperture_shape>-->
+<!--      <circular/>-->
+<!--    </aperture_shape>-->
+<!--    <keyframe>-->
+<!--      <time>0</time>-->
+<!--      <pos>1.4250000212341547 1.5000000223517418 1.625000024214387</pos>-->
+<!--      <rotation_quaternion>-->
+<!--        <axis>0 0 1</axis>-->
+<!--        <angle>0</angle>-->
+<!--      </rotation_quaternion>-->
+<!--    </keyframe>-->
+<!--    <up>0.024132905527949333 -0.28748685121536255 0.9574805498123169</up>-->
+<!--    <forwards>0.08009341359138489 -0.9541248083114624 -0.28849801421165466</forwards>-->
+<!--    <camera_type>thin-lens-perspective</camera_type>-->
+<!--  </camera>-->
+<!--  <camera>-->
+<!--    <uid>3</uid>-->
+<!--    <name>uid3_Camera</name>-->
+<!--    <aperture_radius>0.003170415214244715</aperture_radius>-->
+<!--    <focus_distance>10</focus_distance>-->
+<!--    <sensor_width>0.032</sensor_width>-->
+<!--    <lens_sensor_dist>0.05072664342791544</lens_sensor_dist>-->
+<!--    <exposure_duration>0.008</exposure_duration>-->
+<!--    <lens_shift_up_distance>0</lens_shift_up_distance>-->
+<!--    <lens_shift_right_distance>0</lens_shift_right_distance>-->
+<!--    <autofocus/>-->
+<!--    <aperture_shape>-->
+<!--      <circular/>-->
+<!--    </aperture_shape>-->
+<!--    <keyframe>-->
+<!--      <time>0</time>-->
+<!--      <pos>0.9750000145286322 2.3000000342726707 1.5000000223517418</pos>-->
+<!--      <rotation_quaternion>-->
+<!--        <axis>0 0 1</axis>-->
+<!--        <angle>0</angle>-->
+<!--      </rotation_quaternion>-->
+<!--    </keyframe>-->
+<!--    <up>-0.1647872030735016 -0.31840500235557556 0.9335219860076904</up>-->
+<!--    <forwards>-0.42907652258872986 -0.8290698528289795 -0.3585200011730194</forwards>-->
+<!--    <camera_type>thin-lens-perspective</camera_type>-->
+<!--  </camera>-->
   <renderer_settings>
-    <uid>1</uid>
+    <uid>4</uid>
     <watermark>false</watermark>
     <save_tonemapped_exr>false</save_tonemapped_exr>
     <hybrid>false</hybrid>
@@ -38,8 +116,8 @@
     <halt_time>-1</halt_time>
   </renderer_settings>
   <camera>
-    <uid>2</uid>
-    <name>uid2_Camera</name>
+    <uid>5</uid>
+    <name>uid5_Camera</name>
     <aperture_radius>0.003170415214244715</aperture_radius>
     <focus_distance>10</focus_distance>
     <sensor_width>0.032</sensor_width>
@@ -64,7 +142,7 @@
     <camera_type>thin-lens-perspective</camera_type>
   </camera>
   <tonemapping>
-    <uid>3</uid>
+    <uid>6</uid>
     <name>Tone Mapping</name>
     <reinhard>
       <pre_scale>4</pre_scale>
@@ -89,7 +167,7 @@
   </layer_name>
   <material>
     <name>default_material</name>
-    <uid>4</uid>
+    <uid>7</uid>
     <diffuse>
       <albedo>
         <constant>
@@ -105,12 +183,38 @@
       <layer>0</layer>
     </diffuse>
   </material>
+<!--  <camera>-->
+<!--    <uid>8</uid>-->
+<!--    <name>uid8_Camera</name>-->
+<!--    <aperture_radius>0.003170415214244715</aperture_radius>-->
+<!--    <focus_distance>10</focus_distance>-->
+<!--    <sensor_width>0.032</sensor_width>-->
+<!--    <lens_sensor_dist>0.05072664342791544</lens_sensor_dist>-->
+<!--    <exposure_duration>0.008</exposure_duration>-->
+<!--    <lens_shift_up_distance>0</lens_shift_up_distance>-->
+<!--    <lens_shift_right_distance>0</lens_shift_right_distance>-->
+<!--    <autofocus/>-->
+<!--    <aperture_shape>-->
+<!--      <circular/>-->
+<!--    </aperture_shape>-->
+<!--    <keyframe>-->
+<!--      <time>0</time>-->
+<!--      <pos>0.9750000145286322 2.3000000342726707 1.5000000223517418</pos>-->
+<!--      <rotation_quaternion>-->
+<!--        <axis>0 0 1</axis>-->
+<!--        <angle>0</angle>-->
+<!--      </rotation_quaternion>-->
+<!--    </keyframe>-->
+<!--    <up>0.0 0.0 1.0</up>-->
+<!--    <forwards>-0.7071067690849304 -0.7071067690849304 -0.0</forwards>-->
+<!--    <camera_type>thin-lens-perspective</camera_type>-->
+<!--  </camera>-->
   <layer_name>
     <layer_name>lamp_color</layer_name>
     <layer_index>3</layer_index>
   </layer_name>
   <material>
-    <uid>5</uid>
+    <uid>9</uid>
     <name>lamp_color</name>
     <diffuse>
       <base_emission>
@@ -184,7 +288,7 @@
     </material_name>
   </sphere>
   <material>
-    <uid>6</uid>
+    <uid>10</uid>
     <name>blue_enamel</name>
     <phong>
       <ior>1.0999999977648258</ior>
@@ -202,8 +306,8 @@
     </phong>
   </material>
   <mesh>
-    <uid>7</uid>
-    <name>uid7_bathroom_door</name>
+    <uid>11</uid>
+    <name>uid11_bathroom_door</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -221,7 +325,7 @@
     </external>
   </mesh>
   <material>
-    <uid>8</uid>
+    <uid>12</uid>
     <name>chrome</name>
     <phong>
       <ior>1.5</ior>
@@ -239,8 +343,8 @@
     </phong>
   </material>
   <mesh>
-    <uid>9</uid>
-    <name>uid9_outer_knobplate</name>
+    <uid>13</uid>
+    <name>uid13_outer_knobplate</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -258,8 +362,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>10</uid>
-    <name>uid10_outer_knobstem</name>
+    <uid>14</uid>
+    <name>uid14_outer_knobstem</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -288,8 +392,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>11</uid>
-    <name>uid11_inner_knobplate</name>
+    <uid>15</uid>
+    <name>uid15_inner_knobplate</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -307,8 +411,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>12</uid>
-    <name>uid12_inner_knobstem</name>
+    <uid>16</uid>
+    <name>uid16_inner_knobstem</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -337,7 +441,7 @@
     </material_name>
   </sphere>
   <material>
-    <uid>13</uid>
+    <uid>17</uid>
     <name>globe_mat</name>
     <phong>
       <ior>1.3999999910593033</ior>
@@ -355,8 +459,8 @@
     </phong>
   </material>
   <mesh>
-    <uid>14</uid>
-    <name>uid14_globe_rim</name>
+    <uid>18</uid>
+    <name>uid18_globe_rim</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -374,8 +478,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>15</uid>
-    <name>uid15_sky_globe.18</name>
+    <uid>19</uid>
+    <name>uid19_sky_globe.18</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -393,8 +497,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>16</uid>
-    <name>uid16_sky_globe.17</name>
+    <uid>20</uid>
+    <name>uid20_sky_globe.17</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -412,8 +516,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>17</uid>
-    <name>uid17_sky_globe.16</name>
+    <uid>21</uid>
+    <name>uid21_sky_globe.16</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -431,8 +535,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>18</uid>
-    <name>uid18_sky_globe.15</name>
+    <uid>22</uid>
+    <name>uid22_sky_globe.15</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -450,8 +554,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>19</uid>
-    <name>uid19_sky_globe.14</name>
+    <uid>23</uid>
+    <name>uid23_sky_globe.14</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -469,8 +573,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>20</uid>
-    <name>uid20_sky_globe.13</name>
+    <uid>24</uid>
+    <name>uid24_sky_globe.13</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -488,8 +592,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>21</uid>
-    <name>uid21_sky_globe.12</name>
+    <uid>25</uid>
+    <name>uid25_sky_globe.12</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -507,8 +611,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>22</uid>
-    <name>uid22_sky_globe.11</name>
+    <uid>26</uid>
+    <name>uid26_sky_globe.11</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -526,8 +630,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>23</uid>
-    <name>uid23_sky_globe.10</name>
+    <uid>27</uid>
+    <name>uid27_sky_globe.10</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -545,8 +649,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>24</uid>
-    <name>uid24_sky_globe.9</name>
+    <uid>28</uid>
+    <name>uid28_sky_globe.9</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -564,8 +668,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>25</uid>
-    <name>uid25_sky_globe.8</name>
+    <uid>29</uid>
+    <name>uid29_sky_globe.8</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -583,8 +687,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>26</uid>
-    <name>uid26_sky_globe.7</name>
+    <uid>30</uid>
+    <name>uid30_sky_globe.7</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -602,8 +706,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>27</uid>
-    <name>uid27_sky_globe.6</name>
+    <uid>31</uid>
+    <name>uid31_sky_globe.6</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -621,8 +725,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>28</uid>
-    <name>uid28_sky_globe.5</name>
+    <uid>32</uid>
+    <name>uid32_sky_globe.5</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -640,8 +744,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>29</uid>
-    <name>uid29_sky_globe.4</name>
+    <uid>33</uid>
+    <name>uid33_sky_globe.4</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -659,8 +763,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>30</uid>
-    <name>uid30_sky_globe.3</name>
+    <uid>34</uid>
+    <name>uid34_sky_globe.3</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -678,8 +782,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>31</uid>
-    <name>uid31_sky_globe.2</name>
+    <uid>35</uid>
+    <name>uid35_sky_globe.2</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -697,8 +801,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>32</uid>
-    <name>uid32_sky_globe.1</name>
+    <uid>36</uid>
+    <name>uid36_sky_globe.1</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -716,7 +820,7 @@
     </external>
   </mesh>
   <material>
-    <uid>33</uid>
+    <uid>37</uid>
     <name>xwood</name>
     <phong>
       <ior>1.189999993890524</ior>
@@ -734,8 +838,8 @@
     </phong>
   </material>
   <mesh>
-    <uid>34</uid>
-    <name>uid34_lid_upper</name>
+    <uid>38</uid>
+    <name>uid38_lid_upper</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -753,8 +857,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>35</uid>
-    <name>uid35_lid_lower</name>
+    <uid>39</uid>
+    <name>uid39_lid_lower</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -772,7 +876,7 @@
     </external>
   </mesh>
   <material>
-    <uid>36</uid>
+    <uid>40</uid>
     <name>white_porcelain</name>
     <phong>
       <ior>1.5000000074505806</ior>
@@ -790,8 +894,8 @@
     </phong>
   </material>
   <mesh>
-    <uid>37</uid>
-    <name>uid37_bowl</name>
+    <uid>41</uid>
+    <name>uid41_bowl</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -809,7 +913,7 @@
     </external>
   </mesh>
   <material>
-    <uid>38</uid>
+    <uid>42</uid>
     <name>brass</name>
     <phong>
       <ior>1.5</ior>
@@ -827,8 +931,8 @@
     </phong>
   </material>
   <mesh>
-    <uid>39</uid>
-    <name>uid39_handle2</name>
+    <uid>43</uid>
+    <name>uid43_handle2</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -846,8 +950,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>40</uid>
-    <name>uid40_handle1</name>
+    <uid>44</uid>
+    <name>uid44_handle1</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -865,8 +969,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>41</uid>
-    <name>uid41_handle0</name>
+    <uid>45</uid>
+    <name>uid45_handle0</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -895,8 +999,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>42</uid>
-    <name>uid42_flange1</name>
+    <uid>46</uid>
+    <name>uid46_flange1</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -914,8 +1018,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>43</uid>
-    <name>uid43_flange0</name>
+    <uid>47</uid>
+    <name>uid47_flange0</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -933,8 +1037,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>44</uid>
-    <name>uid44_tank_lid</name>
+    <uid>48</uid>
+    <name>uid48_tank_lid</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -952,8 +1056,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>45</uid>
-    <name>uid45_tank</name>
+    <uid>49</uid>
+    <name>uid49_tank</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -971,8 +1075,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>46</uid>
-    <name>uid46_QuadFaces.010</name>
+    <uid>50</uid>
+    <name>uid50_QuadFaces.010</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -990,8 +1094,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>47</uid>
-    <name>uid47_Cylinder_x4.010</name>
+    <uid>51</uid>
+    <name>uid51_Cylinder_x4.010</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1009,8 +1113,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>48</uid>
-    <name>uid48_Cylinder_x3.010</name>
+    <uid>52</uid>
+    <name>uid52_Cylinder_x3.010</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1028,8 +1132,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>49</uid>
-    <name>uid49_Cylinder_x2.010</name>
+    <uid>53</uid>
+    <name>uid53_Cylinder_x2.010</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1047,8 +1151,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>50</uid>
-    <name>uid50_Cylinder_x1</name>
+    <uid>54</uid>
+    <name>uid54_Cylinder_x1</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1066,8 +1170,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>51</uid>
-    <name>uid51_Cylinder_y4.010</name>
+    <uid>55</uid>
+    <name>uid55_Cylinder_y4.010</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1085,8 +1189,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>52</uid>
-    <name>uid52_Cylinder_y3.010</name>
+    <uid>56</uid>
+    <name>uid56_Cylinder_y3.010</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1104,8 +1208,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>53</uid>
-    <name>uid53_Cylinder_y2.010</name>
+    <uid>57</uid>
+    <name>uid57_Cylinder_y2.010</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1123,8 +1227,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>54</uid>
-    <name>uid54_Cylinder_y1</name>
+    <uid>58</uid>
+    <name>uid58_Cylinder_y1</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1142,8 +1246,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>55</uid>
-    <name>uid55_Cylinder_z4.010</name>
+    <uid>59</uid>
+    <name>uid59_Cylinder_z4.010</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1161,8 +1265,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>56</uid>
-    <name>uid56_Cylinder_z3.010</name>
+    <uid>60</uid>
+    <name>uid60_Cylinder_z3.010</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1180,8 +1284,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>57</uid>
-    <name>uid57_Cylinder_z2.010</name>
+    <uid>61</uid>
+    <name>uid61_Cylinder_z2.010</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1199,8 +1303,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>58</uid>
-    <name>uid58_Cylinder_z1</name>
+    <uid>62</uid>
+    <name>uid62_Cylinder_z1</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1306,8 +1410,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>59</uid>
-    <name>uid59_toilet_base1</name>
+    <uid>63</uid>
+    <name>uid63_toilet_base1</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1325,8 +1429,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>60</uid>
-    <name>uid60_QuadFaces.009</name>
+    <uid>64</uid>
+    <name>uid64_QuadFaces.009</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1344,8 +1448,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>61</uid>
-    <name>uid61_Cylinder_x4.009</name>
+    <uid>65</uid>
+    <name>uid65_Cylinder_x4.009</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1363,8 +1467,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>62</uid>
-    <name>uid62_Cylinder_x3.009</name>
+    <uid>66</uid>
+    <name>uid66_Cylinder_x3.009</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1382,8 +1486,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>63</uid>
-    <name>uid63_Cylinder_x2.009</name>
+    <uid>67</uid>
+    <name>uid67_Cylinder_x2.009</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1401,8 +1505,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>64</uid>
-    <name>uid64_Cylinder_x1.010</name>
+    <uid>68</uid>
+    <name>uid68_Cylinder_x1.010</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1420,8 +1524,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>65</uid>
-    <name>uid65_Cylinder_y4.009</name>
+    <uid>69</uid>
+    <name>uid69_Cylinder_y4.009</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1439,8 +1543,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>66</uid>
-    <name>uid66_Cylinder_y3.009</name>
+    <uid>70</uid>
+    <name>uid70_Cylinder_y3.009</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1458,8 +1562,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>67</uid>
-    <name>uid67_Cylinder_y2.009</name>
+    <uid>71</uid>
+    <name>uid71_Cylinder_y2.009</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1477,8 +1581,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>68</uid>
-    <name>uid68_Cylinder_y1.010</name>
+    <uid>72</uid>
+    <name>uid72_Cylinder_y1.010</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1496,8 +1600,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>69</uid>
-    <name>uid69_Cylinder_z4.009</name>
+    <uid>73</uid>
+    <name>uid73_Cylinder_z4.009</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1515,8 +1619,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>70</uid>
-    <name>uid70_Cylinder_z3.009</name>
+    <uid>74</uid>
+    <name>uid74_Cylinder_z3.009</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1534,8 +1638,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>71</uid>
-    <name>uid71_Cylinder_z2.009</name>
+    <uid>75</uid>
+    <name>uid75_Cylinder_z2.009</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1553,8 +1657,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>72</uid>
-    <name>uid72_Cylinder_z1.010</name>
+    <uid>76</uid>
+    <name>uid76_Cylinder_z1.010</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1682,8 +1786,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>73</uid>
-    <name>uid73_lid_hinge1</name>
+    <uid>77</uid>
+    <name>uid77_lid_hinge1</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1701,8 +1805,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>74</uid>
-    <name>uid74_bracket</name>
+    <uid>78</uid>
+    <name>uid78_bracket</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1720,7 +1824,7 @@
     </external>
   </mesh>
   <material>
-    <uid>75</uid>
+    <uid>79</uid>
     <name>zwood</name>
     <phong>
       <ior>1.189999993890524</ior>
@@ -1738,8 +1842,8 @@
     </phong>
   </material>
   <mesh>
-    <uid>76</uid>
-    <name>uid76_towel_rack_base</name>
+    <uid>80</uid>
+    <name>uid80_towel_rack_base</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1779,8 +1883,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>77</uid>
-    <name>uid77_bracket</name>
+    <uid>81</uid>
+    <name>uid81_bracket</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1798,8 +1902,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>78</uid>
-    <name>uid78_towel_rack_base</name>
+    <uid>82</uid>
+    <name>uid82_towel_rack_base</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1839,7 +1943,7 @@
     </material_name>
   </sphere>
   <material>
-    <uid>79</uid>
+    <uid>83</uid>
     <name>ywood</name>
     <phong>
       <ior>1.189999993890524</ior>
@@ -1857,8 +1961,8 @@
     </phong>
   </material>
   <mesh>
-    <uid>80</uid>
-    <name>uid80_rack_dowel</name>
+    <uid>84</uid>
+    <name>uid84_rack_dowel</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1876,7 +1980,7 @@
     </external>
   </mesh>
   <material>
-    <uid>81</uid>
+    <uid>85</uid>
     <name>blasted_glass</name>
     <phong>
       <ior>1.5000000074505806</ior>
@@ -1894,8 +1998,8 @@
     </phong>
   </material>
   <mesh>
-    <uid>82</uid>
-    <name>uid82_reflector</name>
+    <uid>86</uid>
+    <name>uid86_reflector</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1913,8 +2017,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>83</uid>
-    <name>uid83_lamp_holder_base</name>
+    <uid>87</uid>
+    <name>uid87_lamp_holder_base</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1943,8 +2047,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>84</uid>
-    <name>uid84_far_right_arm.c15</name>
+    <uid>88</uid>
+    <name>uid88_far_right_arm.c15</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1962,8 +2066,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>85</uid>
-    <name>uid85_far_right_arm.c14</name>
+    <uid>89</uid>
+    <name>uid89_far_right_arm.c14</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -1981,8 +2085,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>86</uid>
-    <name>uid86_far_right_arm.c13</name>
+    <uid>90</uid>
+    <name>uid90_far_right_arm.c13</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2000,8 +2104,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>87</uid>
-    <name>uid87_far_right_arm.c12</name>
+    <uid>91</uid>
+    <name>uid91_far_right_arm.c12</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2019,8 +2123,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>88</uid>
-    <name>uid88_far_right_arm.c11</name>
+    <uid>92</uid>
+    <name>uid92_far_right_arm.c11</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2038,8 +2142,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>89</uid>
-    <name>uid89_far_right_arm.c10</name>
+    <uid>93</uid>
+    <name>uid93_far_right_arm.c10</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2057,8 +2161,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>90</uid>
-    <name>uid90_far_right_arm.c9</name>
+    <uid>94</uid>
+    <name>uid94_far_right_arm.c9</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2076,8 +2180,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>91</uid>
-    <name>uid91_far_right_arm.c8</name>
+    <uid>95</uid>
+    <name>uid95_far_right_arm.c8</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2095,8 +2199,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>92</uid>
-    <name>uid92_far_right_arm.c7</name>
+    <uid>96</uid>
+    <name>uid96_far_right_arm.c7</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2114,8 +2218,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>93</uid>
-    <name>uid93_far_right_arm.c6</name>
+    <uid>97</uid>
+    <name>uid97_far_right_arm.c6</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2133,8 +2237,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>94</uid>
-    <name>uid94_far_right_arm.c5</name>
+    <uid>98</uid>
+    <name>uid98_far_right_arm.c5</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2152,8 +2256,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>95</uid>
-    <name>uid95_far_right_arm.c4</name>
+    <uid>99</uid>
+    <name>uid99_far_right_arm.c4</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2171,8 +2275,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>96</uid>
-    <name>uid96_far_right_arm.c3</name>
+    <uid>100</uid>
+    <name>uid100_far_right_arm.c3</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2190,8 +2294,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>97</uid>
-    <name>uid97_far_right_arm.c2</name>
+    <uid>101</uid>
+    <name>uid101_far_right_arm.c2</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2209,8 +2313,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>98</uid>
-    <name>uid98_far_right_arm.c1</name>
+    <uid>102</uid>
+    <name>uid102_far_right_arm.c1</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2228,8 +2332,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>99</uid>
-    <name>uid99_far_right_arm.c0</name>
+    <uid>103</uid>
+    <name>uid103_far_right_arm.c0</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2434,8 +2538,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>100</uid>
-    <name>uid100_reflector</name>
+    <uid>104</uid>
+    <name>uid104_reflector</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2453,8 +2557,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>101</uid>
-    <name>uid101_lamp_holder_base</name>
+    <uid>105</uid>
+    <name>uid105_lamp_holder_base</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2483,8 +2587,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>102</uid>
-    <name>uid102_mid_right_arm.c9</name>
+    <uid>106</uid>
+    <name>uid106_mid_right_arm.c9</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2502,8 +2606,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>103</uid>
-    <name>uid103_mid_right_arm.c8</name>
+    <uid>107</uid>
+    <name>uid107_mid_right_arm.c8</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2521,8 +2625,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>104</uid>
-    <name>uid104_mid_right_arm.c7</name>
+    <uid>108</uid>
+    <name>uid108_mid_right_arm.c7</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2540,8 +2644,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>105</uid>
-    <name>uid105_mid_right_arm.c6</name>
+    <uid>109</uid>
+    <name>uid109_mid_right_arm.c6</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2559,8 +2663,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>106</uid>
-    <name>uid106_mid_right_arm.c5</name>
+    <uid>110</uid>
+    <name>uid110_mid_right_arm.c5</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2578,8 +2682,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>107</uid>
-    <name>uid107_mid_right_arm.c4</name>
+    <uid>111</uid>
+    <name>uid111_mid_right_arm.c4</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2597,8 +2701,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>108</uid>
-    <name>uid108_mid_right_arm.c3</name>
+    <uid>112</uid>
+    <name>uid112_mid_right_arm.c3</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2616,8 +2720,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>109</uid>
-    <name>uid109_mid_right_arm.c2</name>
+    <uid>113</uid>
+    <name>uid113_mid_right_arm.c2</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2635,8 +2739,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>110</uid>
-    <name>uid110_mid_right_arm.c1</name>
+    <uid>114</uid>
+    <name>uid114_mid_right_arm.c1</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2654,8 +2758,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>111</uid>
-    <name>uid111_mid_right_arm.c0</name>
+    <uid>115</uid>
+    <name>uid115_mid_right_arm.c0</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2794,8 +2898,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>112</uid>
-    <name>uid112_reflector</name>
+    <uid>116</uid>
+    <name>uid116_reflector</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2813,8 +2917,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>113</uid>
-    <name>uid113_lamp_holder_base</name>
+    <uid>117</uid>
+    <name>uid117_lamp_holder_base</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2843,8 +2947,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>114</uid>
-    <name>uid114_mid_left_arm.c9</name>
+    <uid>118</uid>
+    <name>uid118_mid_left_arm.c9</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2862,8 +2966,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>115</uid>
-    <name>uid115_mid_left_arm.c8</name>
+    <uid>119</uid>
+    <name>uid119_mid_left_arm.c8</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2881,8 +2985,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>116</uid>
-    <name>uid116_mid_left_arm.c7</name>
+    <uid>120</uid>
+    <name>uid120_mid_left_arm.c7</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2900,8 +3004,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>117</uid>
-    <name>uid117_mid_left_arm.c6</name>
+    <uid>121</uid>
+    <name>uid121_mid_left_arm.c6</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2919,8 +3023,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>118</uid>
-    <name>uid118_mid_left_arm.c5</name>
+    <uid>122</uid>
+    <name>uid122_mid_left_arm.c5</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2938,8 +3042,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>119</uid>
-    <name>uid119_mid_left_arm.c4</name>
+    <uid>123</uid>
+    <name>uid123_mid_left_arm.c4</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2957,8 +3061,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>120</uid>
-    <name>uid120_mid_left_arm.c3</name>
+    <uid>124</uid>
+    <name>uid124_mid_left_arm.c3</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2976,8 +3080,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>121</uid>
-    <name>uid121_mid_left_arm.c2</name>
+    <uid>125</uid>
+    <name>uid125_mid_left_arm.c2</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -2995,8 +3099,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>122</uid>
-    <name>uid122_mid_left_arm.c1</name>
+    <uid>126</uid>
+    <name>uid126_mid_left_arm.c1</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -3014,8 +3118,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>123</uid>
-    <name>uid123_mid_left_arm.c0</name>
+    <uid>127</uid>
+    <name>uid127_mid_left_arm.c0</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -3154,8 +3258,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>124</uid>
-    <name>uid124_reflector</name>
+    <uid>128</uid>
+    <name>uid128_reflector</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -3173,8 +3277,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>125</uid>
-    <name>uid125_lamp_holder_base</name>
+    <uid>129</uid>
+    <name>uid129_lamp_holder_base</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -3203,8 +3307,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>126</uid>
-    <name>uid126_far_left_arm.c15</name>
+    <uid>130</uid>
+    <name>uid130_far_left_arm.c15</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -3222,8 +3326,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>127</uid>
-    <name>uid127_far_left_arm.c14</name>
+    <uid>131</uid>
+    <name>uid131_far_left_arm.c14</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -3241,8 +3345,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>128</uid>
-    <name>uid128_far_left_arm.c13</name>
+    <uid>132</uid>
+    <name>uid132_far_left_arm.c13</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -3260,8 +3364,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>129</uid>
-    <name>uid129_far_left_arm.c12</name>
+    <uid>133</uid>
+    <name>uid133_far_left_arm.c12</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -3279,8 +3383,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>130</uid>
-    <name>uid130_far_left_arm.c11</name>
+    <uid>134</uid>
+    <name>uid134_far_left_arm.c11</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -3298,8 +3402,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>131</uid>
-    <name>uid131_far_left_arm.c10</name>
+    <uid>135</uid>
+    <name>uid135_far_left_arm.c10</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -3317,8 +3421,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>132</uid>
-    <name>uid132_far_left_arm.c9</name>
+    <uid>136</uid>
+    <name>uid136_far_left_arm.c9</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -3336,8 +3440,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>133</uid>
-    <name>uid133_far_left_arm.c8</name>
+    <uid>137</uid>
+    <name>uid137_far_left_arm.c8</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -3355,8 +3459,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>134</uid>
-    <name>uid134_far_left_arm.c7</name>
+    <uid>138</uid>
+    <name>uid138_far_left_arm.c7</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -3374,8 +3478,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>135</uid>
-    <name>uid135_far_left_arm.c6</name>
+    <uid>139</uid>
+    <name>uid139_far_left_arm.c6</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -3393,8 +3497,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>136</uid>
-    <name>uid136_far_left_arm.c5</name>
+    <uid>140</uid>
+    <name>uid140_far_left_arm.c5</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -3412,8 +3516,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>137</uid>
-    <name>uid137_far_left_arm.c4</name>
+    <uid>141</uid>
+    <name>uid141_far_left_arm.c4</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -3431,8 +3535,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>138</uid>
-    <name>uid138_far_left_arm.c3</name>
+    <uid>142</uid>
+    <name>uid142_far_left_arm.c3</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -3450,8 +3554,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>139</uid>
-    <name>uid139_far_left_arm.c2</name>
+    <uid>143</uid>
+    <name>uid143_far_left_arm.c2</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -3469,8 +3573,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>140</uid>
-    <name>uid140_far_left_arm.c1</name>
+    <uid>144</uid>
+    <name>uid144_far_left_arm.c1</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -3488,8 +3592,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>141</uid>
-    <name>uid141_far_left_arm.c0</name>
+    <uid>145</uid>
+    <name>uid145_far_left_arm.c0</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -3705,8 +3809,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>142</uid>
-    <name>uid142_base_face</name>
+    <uid>146</uid>
+    <name>uid146_base_face</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -3724,8 +3828,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>143</uid>
-    <name>uid143_base_side</name>
+    <uid>147</uid>
+    <name>uid147_base_side</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -3743,8 +3847,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>144</uid>
-    <name>uid144_upper_middle_frame</name>
+    <uid>148</uid>
+    <name>uid148_upper_middle_frame</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -3762,8 +3866,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>145</uid>
-    <name>uid145_lower_middle_frame</name>
+    <uid>149</uid>
+    <name>uid149_lower_middle_frame</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -3781,8 +3885,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>146</uid>
-    <name>uid146_upper_right_frame</name>
+    <uid>150</uid>
+    <name>uid150_upper_right_frame</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -3800,8 +3904,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>147</uid>
-    <name>uid147_lower_right_frame</name>
+    <uid>151</uid>
+    <name>uid151_lower_right_frame</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -3819,8 +3923,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>148</uid>
-    <name>uid148_upper_left_frame</name>
+    <uid>152</uid>
+    <name>uid152_upper_left_frame</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -3838,8 +3942,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>149</uid>
-    <name>uid149_lower_left_frame</name>
+    <uid>153</uid>
+    <name>uid153_lower_left_frame</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -3857,8 +3961,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>150</uid>
-    <name>uid150_right_frame</name>
+    <uid>154</uid>
+    <name>uid154_right_frame</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -3876,8 +3980,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>151</uid>
-    <name>uid151_left_frame</name>
+    <uid>155</uid>
+    <name>uid155_left_frame</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -3895,8 +3999,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>152</uid>
-    <name>uid152_cabinet</name>
+    <uid>156</uid>
+    <name>uid156_cabinet</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -3914,7 +4018,7 @@
     </external>
   </mesh>
   <material>
-    <uid>153</uid>
+    <uid>157</uid>
     <name>mirror</name>
     <phong>
       <ior>1.5</ior>
@@ -3932,8 +4036,8 @@
     </phong>
   </material>
   <mesh>
-    <uid>154</uid>
-    <name>uid154_mirror</name>
+    <uid>158</uid>
+    <name>uid158_mirror</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -3951,8 +4055,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>155</uid>
-    <name>uid155_upper_middle_frame_inner</name>
+    <uid>159</uid>
+    <name>uid159_upper_middle_frame_inner</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -3970,8 +4074,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>156</uid>
-    <name>uid156_lower_middle_frame_inner</name>
+    <uid>160</uid>
+    <name>uid160_lower_middle_frame_inner</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -3989,8 +4093,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>157</uid>
-    <name>uid157_upper_right_frame_inner</name>
+    <uid>161</uid>
+    <name>uid161_upper_right_frame_inner</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4008,8 +4112,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>158</uid>
-    <name>uid158_lower_right_frame_inner</name>
+    <uid>162</uid>
+    <name>uid162_lower_right_frame_inner</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4027,8 +4131,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>159</uid>
-    <name>uid159_upper_left_frame_inner</name>
+    <uid>163</uid>
+    <name>uid163_upper_left_frame_inner</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4046,8 +4150,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>160</uid>
-    <name>uid160_lower_left_frame_inner</name>
+    <uid>164</uid>
+    <name>uid164_lower_left_frame_inner</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4065,8 +4169,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>161</uid>
-    <name>uid161_right_frame_inner</name>
+    <uid>165</uid>
+    <name>uid165_right_frame_inner</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4084,8 +4188,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>162</uid>
-    <name>uid162_left_frame_inner</name>
+    <uid>166</uid>
+    <name>uid166_left_frame_inner</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4103,8 +4207,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>163</uid>
-    <name>uid163_QuadFaces.008</name>
+    <uid>167</uid>
+    <name>uid167_QuadFaces.008</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4122,8 +4226,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>164</uid>
-    <name>uid164_Cylinder_x4.008</name>
+    <uid>168</uid>
+    <name>uid168_Cylinder_x4.008</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4141,8 +4245,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>165</uid>
-    <name>uid165_Cylinder_x3.008</name>
+    <uid>169</uid>
+    <name>uid169_Cylinder_x3.008</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4160,8 +4264,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>166</uid>
-    <name>uid166_Cylinder_x2.008</name>
+    <uid>170</uid>
+    <name>uid170_Cylinder_x2.008</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4179,8 +4283,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>167</uid>
-    <name>uid167_Cylinder_x1.009</name>
+    <uid>171</uid>
+    <name>uid171_Cylinder_x1.009</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4198,8 +4302,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>168</uid>
-    <name>uid168_Cylinder_y4.008</name>
+    <uid>172</uid>
+    <name>uid172_Cylinder_y4.008</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4217,8 +4321,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>169</uid>
-    <name>uid169_Cylinder_y3.008</name>
+    <uid>173</uid>
+    <name>uid173_Cylinder_y3.008</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4236,8 +4340,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>170</uid>
-    <name>uid170_Cylinder_y2.008</name>
+    <uid>174</uid>
+    <name>uid174_Cylinder_y2.008</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4255,8 +4359,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>171</uid>
-    <name>uid171_Cylinder_y1.009</name>
+    <uid>175</uid>
+    <name>uid175_Cylinder_y1.009</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4274,8 +4378,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>172</uid>
-    <name>uid172_Cylinder_z4.008</name>
+    <uid>176</uid>
+    <name>uid176_Cylinder_z4.008</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4293,8 +4397,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>173</uid>
-    <name>uid173_Cylinder_z3.008</name>
+    <uid>177</uid>
+    <name>uid177_Cylinder_z3.008</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4312,8 +4416,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>174</uid>
-    <name>uid174_Cylinder_z2.008</name>
+    <uid>178</uid>
+    <name>uid178_Cylinder_z2.008</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4331,8 +4435,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>175</uid>
-    <name>uid175_Cylinder_z1.009</name>
+    <uid>179</uid>
+    <name>uid179_Cylinder_z1.009</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4438,8 +4542,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>176</uid>
-    <name>uid176_QuadFaces.007</name>
+    <uid>180</uid>
+    <name>uid180_QuadFaces.007</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4457,8 +4561,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>177</uid>
-    <name>uid177_Cylinder_x4.007</name>
+    <uid>181</uid>
+    <name>uid181_Cylinder_x4.007</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4476,8 +4580,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>178</uid>
-    <name>uid178_Cylinder_x3.007</name>
+    <uid>182</uid>
+    <name>uid182_Cylinder_x3.007</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4495,8 +4599,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>179</uid>
-    <name>uid179_Cylinder_x2.007</name>
+    <uid>183</uid>
+    <name>uid183_Cylinder_x2.007</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4514,8 +4618,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>180</uid>
-    <name>uid180_Cylinder_x1.008</name>
+    <uid>184</uid>
+    <name>uid184_Cylinder_x1.008</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4533,8 +4637,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>181</uid>
-    <name>uid181_Cylinder_y4.007</name>
+    <uid>185</uid>
+    <name>uid185_Cylinder_y4.007</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4552,8 +4656,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>182</uid>
-    <name>uid182_Cylinder_y3.007</name>
+    <uid>186</uid>
+    <name>uid186_Cylinder_y3.007</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4571,8 +4675,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>183</uid>
-    <name>uid183_Cylinder_y2.007</name>
+    <uid>187</uid>
+    <name>uid187_Cylinder_y2.007</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4590,8 +4694,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>184</uid>
-    <name>uid184_Cylinder_y1.008</name>
+    <uid>188</uid>
+    <name>uid188_Cylinder_y1.008</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4609,8 +4713,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>185</uid>
-    <name>uid185_Cylinder_z4.007</name>
+    <uid>189</uid>
+    <name>uid189_Cylinder_z4.007</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4628,8 +4732,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>186</uid>
-    <name>uid186_Cylinder_z3.007</name>
+    <uid>190</uid>
+    <name>uid190_Cylinder_z3.007</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4647,8 +4751,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>187</uid>
-    <name>uid187_Cylinder_z2.007</name>
+    <uid>191</uid>
+    <name>uid191_Cylinder_z2.007</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4666,8 +4770,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>188</uid>
-    <name>uid188_Cylinder_z1.008</name>
+    <uid>192</uid>
+    <name>uid192_Cylinder_z1.008</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4773,8 +4877,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>189</uid>
-    <name>uid189_QuadFaces.006</name>
+    <uid>193</uid>
+    <name>uid193_QuadFaces.006</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4792,8 +4896,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>190</uid>
-    <name>uid190_Cylinder_x4.006</name>
+    <uid>194</uid>
+    <name>uid194_Cylinder_x4.006</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4811,8 +4915,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>191</uid>
-    <name>uid191_Cylinder_x3.006</name>
+    <uid>195</uid>
+    <name>uid195_Cylinder_x3.006</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4830,8 +4934,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>192</uid>
-    <name>uid192_Cylinder_x2.006</name>
+    <uid>196</uid>
+    <name>uid196_Cylinder_x2.006</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4849,8 +4953,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>193</uid>
-    <name>uid193_Cylinder_x1.007</name>
+    <uid>197</uid>
+    <name>uid197_Cylinder_x1.007</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4868,8 +4972,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>194</uid>
-    <name>uid194_Cylinder_y4.006</name>
+    <uid>198</uid>
+    <name>uid198_Cylinder_y4.006</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4887,8 +4991,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>195</uid>
-    <name>uid195_Cylinder_y3.006</name>
+    <uid>199</uid>
+    <name>uid199_Cylinder_y3.006</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4906,8 +5010,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>196</uid>
-    <name>uid196_Cylinder_y2.006</name>
+    <uid>200</uid>
+    <name>uid200_Cylinder_y2.006</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4925,8 +5029,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>197</uid>
-    <name>uid197_Cylinder_y1.007</name>
+    <uid>201</uid>
+    <name>uid201_Cylinder_y1.007</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4944,8 +5048,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>198</uid>
-    <name>uid198_Cylinder_z4.006</name>
+    <uid>202</uid>
+    <name>uid202_Cylinder_z4.006</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4963,8 +5067,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>199</uid>
-    <name>uid199_Cylinder_z3.006</name>
+    <uid>203</uid>
+    <name>uid203_Cylinder_z3.006</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -4982,8 +5086,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>200</uid>
-    <name>uid200_Cylinder_z2.006</name>
+    <uid>204</uid>
+    <name>uid204_Cylinder_z2.006</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5001,8 +5105,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>201</uid>
-    <name>uid201_Cylinder_z1.007</name>
+    <uid>205</uid>
+    <name>uid205_Cylinder_z1.007</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5108,8 +5212,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>202</uid>
-    <name>uid202_QuadFaces.005</name>
+    <uid>206</uid>
+    <name>uid206_QuadFaces.005</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5127,8 +5231,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>203</uid>
-    <name>uid203_Cylinder_x4.005</name>
+    <uid>207</uid>
+    <name>uid207_Cylinder_x4.005</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5146,8 +5250,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>204</uid>
-    <name>uid204_Cylinder_x3.005</name>
+    <uid>208</uid>
+    <name>uid208_Cylinder_x3.005</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5165,8 +5269,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>205</uid>
-    <name>uid205_Cylinder_x2.005</name>
+    <uid>209</uid>
+    <name>uid209_Cylinder_x2.005</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5184,8 +5288,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>206</uid>
-    <name>uid206_Cylinder_x1.006</name>
+    <uid>210</uid>
+    <name>uid210_Cylinder_x1.006</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5203,8 +5307,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>207</uid>
-    <name>uid207_Cylinder_y4.005</name>
+    <uid>211</uid>
+    <name>uid211_Cylinder_y4.005</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5222,8 +5326,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>208</uid>
-    <name>uid208_Cylinder_y3.005</name>
+    <uid>212</uid>
+    <name>uid212_Cylinder_y3.005</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5241,8 +5345,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>209</uid>
-    <name>uid209_Cylinder_y2.005</name>
+    <uid>213</uid>
+    <name>uid213_Cylinder_y2.005</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5260,8 +5364,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>210</uid>
-    <name>uid210_Cylinder_y1.006</name>
+    <uid>214</uid>
+    <name>uid214_Cylinder_y1.006</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5279,8 +5383,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>211</uid>
-    <name>uid211_Cylinder_z4.005</name>
+    <uid>215</uid>
+    <name>uid215_Cylinder_z4.005</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5298,8 +5402,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>212</uid>
-    <name>uid212_Cylinder_z3.005</name>
+    <uid>216</uid>
+    <name>uid216_Cylinder_z3.005</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5317,8 +5421,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>213</uid>
-    <name>uid213_Cylinder_z2.005</name>
+    <uid>217</uid>
+    <name>uid217_Cylinder_z2.005</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5336,8 +5440,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>214</uid>
-    <name>uid214_Cylinder_z1.006</name>
+    <uid>218</uid>
+    <name>uid218_Cylinder_z1.006</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5443,8 +5547,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>215</uid>
-    <name>uid215_QuadFaces.004</name>
+    <uid>219</uid>
+    <name>uid219_QuadFaces.004</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5462,8 +5566,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>216</uid>
-    <name>uid216_Cylinder_x4.004</name>
+    <uid>220</uid>
+    <name>uid220_Cylinder_x4.004</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5481,8 +5585,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>217</uid>
-    <name>uid217_Cylinder_x3.004</name>
+    <uid>221</uid>
+    <name>uid221_Cylinder_x3.004</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5500,8 +5604,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>218</uid>
-    <name>uid218_Cylinder_x2.004</name>
+    <uid>222</uid>
+    <name>uid222_Cylinder_x2.004</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5519,8 +5623,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>219</uid>
-    <name>uid219_Cylinder_x1.005</name>
+    <uid>223</uid>
+    <name>uid223_Cylinder_x1.005</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5538,8 +5642,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>220</uid>
-    <name>uid220_Cylinder_y4.004</name>
+    <uid>224</uid>
+    <name>uid224_Cylinder_y4.004</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5557,8 +5661,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>221</uid>
-    <name>uid221_Cylinder_y3.004</name>
+    <uid>225</uid>
+    <name>uid225_Cylinder_y3.004</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5576,8 +5680,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>222</uid>
-    <name>uid222_Cylinder_y2.004</name>
+    <uid>226</uid>
+    <name>uid226_Cylinder_y2.004</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5595,8 +5699,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>223</uid>
-    <name>uid223_Cylinder_y1.005</name>
+    <uid>227</uid>
+    <name>uid227_Cylinder_y1.005</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5614,8 +5718,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>224</uid>
-    <name>uid224_Cylinder_z4.004</name>
+    <uid>228</uid>
+    <name>uid228_Cylinder_z4.004</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5633,8 +5737,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>225</uid>
-    <name>uid225_Cylinder_z3.004</name>
+    <uid>229</uid>
+    <name>uid229_Cylinder_z3.004</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5652,8 +5756,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>226</uid>
-    <name>uid226_Cylinder_z2.004</name>
+    <uid>230</uid>
+    <name>uid230_Cylinder_z2.004</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5671,8 +5775,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>227</uid>
-    <name>uid227_Cylinder_z1.005</name>
+    <uid>231</uid>
+    <name>uid231_Cylinder_z1.005</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5778,8 +5882,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>228</uid>
-    <name>uid228_QuadFaces.003</name>
+    <uid>232</uid>
+    <name>uid232_QuadFaces.003</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5797,8 +5901,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>229</uid>
-    <name>uid229_Cylinder_x4.003</name>
+    <uid>233</uid>
+    <name>uid233_Cylinder_x4.003</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5816,8 +5920,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>230</uid>
-    <name>uid230_Cylinder_x3.003</name>
+    <uid>234</uid>
+    <name>uid234_Cylinder_x3.003</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5835,8 +5939,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>231</uid>
-    <name>uid231_Cylinder_x2.003</name>
+    <uid>235</uid>
+    <name>uid235_Cylinder_x2.003</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5854,8 +5958,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>232</uid>
-    <name>uid232_Cylinder_x1.004</name>
+    <uid>236</uid>
+    <name>uid236_Cylinder_x1.004</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5873,8 +5977,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>233</uid>
-    <name>uid233_Cylinder_y4.003</name>
+    <uid>237</uid>
+    <name>uid237_Cylinder_y4.003</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5892,8 +5996,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>234</uid>
-    <name>uid234_Cylinder_y3.003</name>
+    <uid>238</uid>
+    <name>uid238_Cylinder_y3.003</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5911,8 +6015,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>235</uid>
-    <name>uid235_Cylinder_y2.003</name>
+    <uid>239</uid>
+    <name>uid239_Cylinder_y2.003</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5930,8 +6034,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>236</uid>
-    <name>uid236_Cylinder_y1.004</name>
+    <uid>240</uid>
+    <name>uid240_Cylinder_y1.004</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5949,8 +6053,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>237</uid>
-    <name>uid237_Cylinder_z4.003</name>
+    <uid>241</uid>
+    <name>uid241_Cylinder_z4.003</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5968,8 +6072,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>238</uid>
-    <name>uid238_Cylinder_z3.003</name>
+    <uid>242</uid>
+    <name>uid242_Cylinder_z3.003</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -5987,8 +6091,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>239</uid>
-    <name>uid239_Cylinder_z2.003</name>
+    <uid>243</uid>
+    <name>uid243_Cylinder_z2.003</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6006,8 +6110,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>240</uid>
-    <name>uid240_Cylinder_z1.004</name>
+    <uid>244</uid>
+    <name>uid244_Cylinder_z1.004</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6113,8 +6217,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>241</uid>
-    <name>uid241_cab_base</name>
+    <uid>245</uid>
+    <name>uid245_cab_base</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6132,8 +6236,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>242</uid>
-    <name>uid242_cab_right</name>
+    <uid>246</uid>
+    <name>uid246_cab_right</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6151,8 +6255,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>243</uid>
-    <name>uid243_cab_left</name>
+    <uid>247</uid>
+    <name>uid247_cab_left</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6170,7 +6274,7 @@
     </external>
   </mesh>
   <material>
-    <uid>244</uid>
+    <uid>248</uid>
     <name>marble</name>
     <phong>
       <ior>1.2999999932944775</ior>
@@ -6188,8 +6292,8 @@
     </phong>
   </material>
   <mesh>
-    <uid>245</uid>
-    <name>uid245_sink_back</name>
+    <uid>249</uid>
+    <name>uid249_sink_back</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6207,8 +6311,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>246</uid>
-    <name>uid246_sink</name>
+    <uid>250</uid>
+    <name>uid250_sink</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6226,8 +6330,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>247</uid>
-    <name>uid247_sink_top_poly</name>
+    <uid>251</uid>
+    <name>uid251_sink_top_poly</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6245,8 +6349,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>248</uid>
-    <name>uid248_stophand.6</name>
+    <uid>252</uid>
+    <name>uid252_stophand.6</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6264,8 +6368,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>249</uid>
-    <name>uid249_stophand.5</name>
+    <uid>253</uid>
+    <name>uid253_stophand.5</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6283,8 +6387,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>250</uid>
-    <name>uid250_stophand.4</name>
+    <uid>254</uid>
+    <name>uid254_stophand.4</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6302,8 +6406,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>251</uid>
-    <name>uid251_stophand.3</name>
+    <uid>255</uid>
+    <name>uid255_stophand.3</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6321,8 +6425,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>252</uid>
-    <name>uid252_stophand.2</name>
+    <uid>256</uid>
+    <name>uid256_stophand.2</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6340,8 +6444,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>253</uid>
-    <name>uid253_stophand.1</name>
+    <uid>257</uid>
+    <name>uid257_stophand.1</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6359,8 +6463,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>254</uid>
-    <name>uid254_stophand_stem</name>
+    <uid>258</uid>
+    <name>uid258_stophand_stem</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6400,8 +6504,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>255</uid>
-    <name>uid255_faucet.c16</name>
+    <uid>259</uid>
+    <name>uid259_faucet.c16</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6430,8 +6534,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>256</uid>
-    <name>uid256_faucet.c15</name>
+    <uid>260</uid>
+    <name>uid260_faucet.c15</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6460,8 +6564,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>257</uid>
-    <name>uid257_faucet.c14</name>
+    <uid>261</uid>
+    <name>uid261_faucet.c14</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6490,8 +6594,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>258</uid>
-    <name>uid258_faucet.c13</name>
+    <uid>262</uid>
+    <name>uid262_faucet.c13</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6520,8 +6624,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>259</uid>
-    <name>uid259_faucet.c12</name>
+    <uid>263</uid>
+    <name>uid263_faucet.c12</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6550,8 +6654,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>260</uid>
-    <name>uid260_faucet.c11</name>
+    <uid>264</uid>
+    <name>uid264_faucet.c11</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6580,8 +6684,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>261</uid>
-    <name>uid261_faucet.c10</name>
+    <uid>265</uid>
+    <name>uid265_faucet.c10</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6610,8 +6714,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>262</uid>
-    <name>uid262_faucet.c9</name>
+    <uid>266</uid>
+    <name>uid266_faucet.c9</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6640,8 +6744,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>263</uid>
-    <name>uid263_faucet.c8</name>
+    <uid>267</uid>
+    <name>uid267_faucet.c8</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6670,8 +6774,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>264</uid>
-    <name>uid264_faucet.c7</name>
+    <uid>268</uid>
+    <name>uid268_faucet.c7</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6700,8 +6804,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>265</uid>
-    <name>uid265_faucet.c6</name>
+    <uid>269</uid>
+    <name>uid269_faucet.c6</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6730,8 +6834,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>266</uid>
-    <name>uid266_faucet.c5</name>
+    <uid>270</uid>
+    <name>uid270_faucet.c5</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6760,8 +6864,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>267</uid>
-    <name>uid267_faucet.c4</name>
+    <uid>271</uid>
+    <name>uid271_faucet.c4</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6790,8 +6894,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>268</uid>
-    <name>uid268_faucet.c3</name>
+    <uid>272</uid>
+    <name>uid272_faucet.c3</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6820,8 +6924,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>269</uid>
-    <name>uid269_faucet.c2</name>
+    <uid>273</uid>
+    <name>uid273_faucet.c2</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6850,8 +6954,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>270</uid>
-    <name>uid270_faucet.c1</name>
+    <uid>274</uid>
+    <name>uid274_faucet.c1</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6880,8 +6984,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>271</uid>
-    <name>uid271_bathroom_sink_base.7</name>
+    <uid>275</uid>
+    <name>uid275_bathroom_sink_base.7</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6899,8 +7003,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>272</uid>
-    <name>uid272_bathroom_sink_base.6</name>
+    <uid>276</uid>
+    <name>uid276_bathroom_sink_base.6</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6918,8 +7022,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>273</uid>
-    <name>uid273_bathroom_sink_base.5</name>
+    <uid>277</uid>
+    <name>uid277_bathroom_sink_base.5</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6937,8 +7041,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>274</uid>
-    <name>uid274_bathroom_sink_base.4</name>
+    <uid>278</uid>
+    <name>uid278_bathroom_sink_base.4</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6956,8 +7060,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>275</uid>
-    <name>uid275_bathroom_sink_base.3</name>
+    <uid>279</uid>
+    <name>uid279_bathroom_sink_base.3</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6975,8 +7079,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>276</uid>
-    <name>uid276_bathroom_sink_base.2</name>
+    <uid>280</uid>
+    <name>uid280_bathroom_sink_base.2</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -6994,8 +7098,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>277</uid>
-    <name>uid277_bathroom_sink_base.1</name>
+    <uid>281</uid>
+    <name>uid281_bathroom_sink_base.1</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7013,8 +7117,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>278</uid>
-    <name>uid278_base_bot</name>
+    <uid>282</uid>
+    <name>uid282_base_bot</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7032,8 +7136,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>279</uid>
-    <name>uid279_stopper</name>
+    <uid>283</uid>
+    <name>uid283_stopper</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7051,8 +7155,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>280</uid>
-    <name>uid280_handle.5</name>
+    <uid>284</uid>
+    <name>uid284_handle.5</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7070,8 +7174,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>281</uid>
-    <name>uid281_handle.4</name>
+    <uid>285</uid>
+    <name>uid285_handle.4</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7089,8 +7193,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>282</uid>
-    <name>uid282_handle.3</name>
+    <uid>286</uid>
+    <name>uid286_handle.3</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7108,8 +7212,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>283</uid>
-    <name>uid283_handle.2</name>
+    <uid>287</uid>
+    <name>uid287_handle.2</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7127,8 +7231,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>284</uid>
-    <name>uid284_handle.1</name>
+    <uid>288</uid>
+    <name>uid288_handle.1</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7157,8 +7261,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>285</uid>
-    <name>uid285_pivot_bot</name>
+    <uid>289</uid>
+    <name>uid289_pivot_bot</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7176,8 +7280,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>286</uid>
-    <name>uid286_faucet_handle_base.5</name>
+    <uid>290</uid>
+    <name>uid290_faucet_handle_base.5</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7195,8 +7299,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>287</uid>
-    <name>uid287_faucet_handle_base.4</name>
+    <uid>291</uid>
+    <name>uid291_faucet_handle_base.4</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7214,8 +7318,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>288</uid>
-    <name>uid288_faucet_handle_base.3</name>
+    <uid>292</uid>
+    <name>uid292_faucet_handle_base.3</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7233,8 +7337,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>289</uid>
-    <name>uid289_faucet_handle_base.2</name>
+    <uid>293</uid>
+    <name>uid293_faucet_handle_base.2</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7252,8 +7356,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>290</uid>
-    <name>uid290_faucet_handle_base.1</name>
+    <uid>294</uid>
+    <name>uid294_faucet_handle_base.1</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7271,8 +7375,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>291</uid>
-    <name>uid291_faucet_handle_base_bot</name>
+    <uid>295</uid>
+    <name>uid295_faucet_handle_base_bot</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7290,8 +7394,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>292</uid>
-    <name>uid292_handle.5</name>
+    <uid>296</uid>
+    <name>uid296_handle.5</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7309,8 +7413,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>293</uid>
-    <name>uid293_handle.4</name>
+    <uid>297</uid>
+    <name>uid297_handle.4</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7328,8 +7432,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>294</uid>
-    <name>uid294_handle.3</name>
+    <uid>298</uid>
+    <name>uid298_handle.3</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7347,8 +7451,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>295</uid>
-    <name>uid295_handle.2</name>
+    <uid>299</uid>
+    <name>uid299_handle.2</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7366,8 +7470,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>296</uid>
-    <name>uid296_handle.1</name>
+    <uid>300</uid>
+    <name>uid300_handle.1</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7396,8 +7500,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>297</uid>
-    <name>uid297_pivot_bot</name>
+    <uid>301</uid>
+    <name>uid301_pivot_bot</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7415,8 +7519,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>298</uid>
-    <name>uid298_faucet_handle_base.5</name>
+    <uid>302</uid>
+    <name>uid302_faucet_handle_base.5</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7434,8 +7538,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>299</uid>
-    <name>uid299_faucet_handle_base.4</name>
+    <uid>303</uid>
+    <name>uid303_faucet_handle_base.4</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7453,8 +7557,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>300</uid>
-    <name>uid300_faucet_handle_base.3</name>
+    <uid>304</uid>
+    <name>uid304_faucet_handle_base.3</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7472,8 +7576,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>301</uid>
-    <name>uid301_faucet_handle_base.2</name>
+    <uid>305</uid>
+    <name>uid305_faucet_handle_base.2</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7491,8 +7595,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>302</uid>
-    <name>uid302_faucet_handle_base.1</name>
+    <uid>306</uid>
+    <name>uid306_faucet_handle_base.1</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7510,8 +7614,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>303</uid>
-    <name>uid303_faucet_handle_base_bot</name>
+    <uid>307</uid>
+    <name>uid307_faucet_handle_base_bot</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7529,8 +7633,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>304</uid>
-    <name>uid304_sink.5137</name>
+    <uid>308</uid>
+    <name>uid308_sink.5137</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7548,8 +7652,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>305</uid>
-    <name>uid305_sink.3267</name>
+    <uid>309</uid>
+    <name>uid309_sink.3267</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7567,8 +7671,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>306</uid>
-    <name>uid306_sink.2310</name>
+    <uid>310</uid>
+    <name>uid310_sink.2310</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7586,8 +7690,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>307</uid>
-    <name>uid307_sink.4620</name>
+    <uid>311</uid>
+    <name>uid311_sink.4620</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7605,8 +7709,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>308</uid>
-    <name>uid308_sink.1540</name>
+    <uid>312</uid>
+    <name>uid312_sink.1540</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7624,8 +7728,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>309</uid>
-    <name>uid309_QuadFaces.002</name>
+    <uid>313</uid>
+    <name>uid313_QuadFaces.002</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7643,8 +7747,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>310</uid>
-    <name>uid310_Cylinder_x4.002</name>
+    <uid>314</uid>
+    <name>uid314_Cylinder_x4.002</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7662,8 +7766,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>311</uid>
-    <name>uid311_Cylinder_x3.002</name>
+    <uid>315</uid>
+    <name>uid315_Cylinder_x3.002</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7681,8 +7785,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>312</uid>
-    <name>uid312_Cylinder_x2.002</name>
+    <uid>316</uid>
+    <name>uid316_Cylinder_x2.002</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7700,8 +7804,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>313</uid>
-    <name>uid313_Cylinder_x1.003</name>
+    <uid>317</uid>
+    <name>uid317_Cylinder_x1.003</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7719,8 +7823,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>314</uid>
-    <name>uid314_Cylinder_y4.002</name>
+    <uid>318</uid>
+    <name>uid318_Cylinder_y4.002</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7738,8 +7842,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>315</uid>
-    <name>uid315_Cylinder_y3.002</name>
+    <uid>319</uid>
+    <name>uid319_Cylinder_y3.002</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7757,8 +7861,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>316</uid>
-    <name>uid316_Cylinder_y2.002</name>
+    <uid>320</uid>
+    <name>uid320_Cylinder_y2.002</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7776,8 +7880,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>317</uid>
-    <name>uid317_Cylinder_y1.003</name>
+    <uid>321</uid>
+    <name>uid321_Cylinder_y1.003</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7795,8 +7899,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>318</uid>
-    <name>uid318_Cylinder_z4.002</name>
+    <uid>322</uid>
+    <name>uid322_Cylinder_z4.002</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7814,8 +7918,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>319</uid>
-    <name>uid319_Cylinder_z3.002</name>
+    <uid>323</uid>
+    <name>uid323_Cylinder_z3.002</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7833,8 +7937,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>320</uid>
-    <name>uid320_Cylinder_z2.002</name>
+    <uid>324</uid>
+    <name>uid324_Cylinder_z2.002</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7852,8 +7956,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>321</uid>
-    <name>uid321_Cylinder_z1.003</name>
+    <uid>325</uid>
+    <name>uid325_Cylinder_z1.003</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7959,8 +8063,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>322</uid>
-    <name>uid322_QuadFaces.001</name>
+    <uid>326</uid>
+    <name>uid326_QuadFaces.001</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7978,8 +8082,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>323</uid>
-    <name>uid323_Cylinder_x4.001</name>
+    <uid>327</uid>
+    <name>uid327_Cylinder_x4.001</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -7997,8 +8101,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>324</uid>
-    <name>uid324_Cylinder_x3.001</name>
+    <uid>328</uid>
+    <name>uid328_Cylinder_x3.001</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -8016,8 +8120,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>325</uid>
-    <name>uid325_Cylinder_x2.001</name>
+    <uid>329</uid>
+    <name>uid329_Cylinder_x2.001</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -8035,8 +8139,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>326</uid>
-    <name>uid326_Cylinder_x1.002</name>
+    <uid>330</uid>
+    <name>uid330_Cylinder_x1.002</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -8054,8 +8158,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>327</uid>
-    <name>uid327_Cylinder_y4.001</name>
+    <uid>331</uid>
+    <name>uid331_Cylinder_y4.001</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -8073,8 +8177,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>328</uid>
-    <name>uid328_Cylinder_y3.001</name>
+    <uid>332</uid>
+    <name>uid332_Cylinder_y3.001</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -8092,8 +8196,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>329</uid>
-    <name>uid329_Cylinder_y2.001</name>
+    <uid>333</uid>
+    <name>uid333_Cylinder_y2.001</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -8111,8 +8215,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>330</uid>
-    <name>uid330_Cylinder_y1.002</name>
+    <uid>334</uid>
+    <name>uid334_Cylinder_y1.002</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -8130,8 +8234,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>331</uid>
-    <name>uid331_Cylinder_z4.001</name>
+    <uid>335</uid>
+    <name>uid335_Cylinder_z4.001</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -8149,8 +8253,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>332</uid>
-    <name>uid332_Cylinder_z3.001</name>
+    <uid>336</uid>
+    <name>uid336_Cylinder_z3.001</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -8168,8 +8272,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>333</uid>
-    <name>uid333_Cylinder_z2.001</name>
+    <uid>337</uid>
+    <name>uid337_Cylinder_z2.001</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -8187,8 +8291,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>334</uid>
-    <name>uid334_Cylinder_z1.002</name>
+    <uid>338</uid>
+    <name>uid338_Cylinder_z1.002</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -8294,8 +8398,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>335</uid>
-    <name>uid335_QuadFaces</name>
+    <uid>339</uid>
+    <name>uid339_QuadFaces</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -8313,8 +8417,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>336</uid>
-    <name>uid336_Cylinder_x4</name>
+    <uid>340</uid>
+    <name>uid340_Cylinder_x4</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -8332,8 +8436,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>337</uid>
-    <name>uid337_Cylinder_x3</name>
+    <uid>341</uid>
+    <name>uid341_Cylinder_x3</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -8351,8 +8455,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>338</uid>
-    <name>uid338_Cylinder_x2</name>
+    <uid>342</uid>
+    <name>uid342_Cylinder_x2</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -8370,8 +8474,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>339</uid>
-    <name>uid339_Cylinder_x1.001</name>
+    <uid>343</uid>
+    <name>uid343_Cylinder_x1.001</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -8389,8 +8493,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>340</uid>
-    <name>uid340_Cylinder_y4</name>
+    <uid>344</uid>
+    <name>uid344_Cylinder_y4</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -8408,8 +8512,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>341</uid>
-    <name>uid341_Cylinder_y3</name>
+    <uid>345</uid>
+    <name>uid345_Cylinder_y3</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -8427,8 +8531,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>342</uid>
-    <name>uid342_Cylinder_y2</name>
+    <uid>346</uid>
+    <name>uid346_Cylinder_y2</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -8446,8 +8550,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>343</uid>
-    <name>uid343_Cylinder_y1.001</name>
+    <uid>347</uid>
+    <name>uid347_Cylinder_y1.001</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -8465,8 +8569,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>344</uid>
-    <name>uid344_Cylinder_z4</name>
+    <uid>348</uid>
+    <name>uid348_Cylinder_z4</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -8484,8 +8588,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>345</uid>
-    <name>uid345_Cylinder_z3</name>
+    <uid>349</uid>
+    <name>uid349_Cylinder_z3</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -8503,8 +8607,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>346</uid>
-    <name>uid346_Cylinder_z2</name>
+    <uid>350</uid>
+    <name>uid350_Cylinder_z2</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -8522,8 +8626,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>347</uid>
-    <name>uid347_Cylinder_z1.001</name>
+    <uid>351</uid>
+    <name>uid351_Cylinder_z1.001</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -8629,7 +8733,7 @@
     </material_name>
   </sphere>
   <material>
-    <uid>348</uid>
+    <uid>352</uid>
     <name>white_enamel</name>
     <diffuse>
       <albedo>
@@ -8643,8 +8747,8 @@
     </diffuse>
   </material>
   <mesh>
-    <uid>349</uid>
-    <name>uid349_wframe.south</name>
+    <uid>353</uid>
+    <name>uid353_wframe.south</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -8662,8 +8766,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>350</uid>
-    <name>uid350_wframe.upper</name>
+    <uid>354</uid>
+    <name>uid354_wframe.upper</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -8681,8 +8785,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>351</uid>
-    <name>uid351_wframe.north</name>
+    <uid>355</uid>
+    <name>uid355_wframe.north</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -8700,8 +8804,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>352</uid>
-    <name>uid352_wframe.lower</name>
+    <uid>356</uid>
+    <name>uid356_wframe.lower</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -8716,93 +8820,6 @@
     <scale>1.0</scale>
     <external>
       <path>igmesh/wframe.lower.igmesh</path>
-    </external>
-  </mesh>
-  <mesh>
-    <uid>353</uid>
-    <name>uid353_bathfauc_handle</name>
-    <max_num_subdivisions>0</max_num_subdivisions>
-    <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
-    <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
-    <displacement_error_threshold>0.0</displacement_error_threshold>
-    <view_dependent_subdivision>false</view_dependent_subdivision>
-    <subdivision_smoothing>true</subdivision_smoothing>
-    <normal_smoothing>true</normal_smoothing>
-    <merge_vertices_with_same_pos_and_normal>true</merge_vertices_with_same_pos_and_normal>
-    <wrap_u>false</wrap_u>
-    <wrap_v>false</wrap_v>
-    <view_dependent_subdivision>false</view_dependent_subdivision>
-    <scale>1.0</scale>
-    <external>
-      <path>igmesh/bathfauc_handle.igmesh</path>
-    </external>
-  </mesh>
-  <mesh>
-    <uid>354</uid>
-    <name>uid354_bathfauc_handle.end</name>
-    <max_num_subdivisions>0</max_num_subdivisions>
-    <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
-    <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
-    <displacement_error_threshold>0.0</displacement_error_threshold>
-    <view_dependent_subdivision>false</view_dependent_subdivision>
-    <subdivision_smoothing>true</subdivision_smoothing>
-    <normal_smoothing>true</normal_smoothing>
-    <merge_vertices_with_same_pos_and_normal>true</merge_vertices_with_same_pos_and_normal>
-    <wrap_u>false</wrap_u>
-    <wrap_v>false</wrap_v>
-    <view_dependent_subdivision>false</view_dependent_subdivision>
-    <scale>1.0</scale>
-    <external>
-      <path>igmesh/bathfauc_handle.end.igmesh</path>
-    </external>
-  </mesh>
-  <sphere>
-    <radius>
-      0.010937498672865309
-    </radius>
-    <center>
-      1.4625000217929482 0.03906250058207661 0.825000012293458
-    </center>
-    <material_name>
-      brass
-    </material_name>
-  </sphere>
-  <mesh>
-    <uid>355</uid>
-    <name>uid355_bathfauc_base.top</name>
-    <max_num_subdivisions>0</max_num_subdivisions>
-    <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
-    <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
-    <displacement_error_threshold>0.0</displacement_error_threshold>
-    <view_dependent_subdivision>false</view_dependent_subdivision>
-    <subdivision_smoothing>true</subdivision_smoothing>
-    <normal_smoothing>true</normal_smoothing>
-    <merge_vertices_with_same_pos_and_normal>true</merge_vertices_with_same_pos_and_normal>
-    <wrap_u>false</wrap_u>
-    <wrap_v>false</wrap_v>
-    <view_dependent_subdivision>false</view_dependent_subdivision>
-    <scale>1.0</scale>
-    <external>
-      <path>igmesh/bathfauc_base.top.igmesh</path>
-    </external>
-  </mesh>
-  <mesh>
-    <uid>356</uid>
-    <name>uid356_bathfauc_base.bot</name>
-    <max_num_subdivisions>0</max_num_subdivisions>
-    <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
-    <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
-    <displacement_error_threshold>0.0</displacement_error_threshold>
-    <view_dependent_subdivision>false</view_dependent_subdivision>
-    <subdivision_smoothing>true</subdivision_smoothing>
-    <normal_smoothing>true</normal_smoothing>
-    <merge_vertices_with_same_pos_and_normal>true</merge_vertices_with_same_pos_and_normal>
-    <wrap_u>false</wrap_u>
-    <wrap_v>false</wrap_v>
-    <view_dependent_subdivision>false</view_dependent_subdivision>
-    <scale>1.0</scale>
-    <external>
-      <path>igmesh/bathfauc_base.bot.igmesh</path>
     </external>
   </mesh>
   <mesh>
@@ -8845,10 +8862,10 @@
   </mesh>
   <sphere>
     <radius>
-      0.010937497182749167
+      0.010937498672865309
     </radius>
     <center>
-      1.600000023841858 0.03906250058207661 0.825000012293458
+      1.4625000217929482 0.03906250058207661 0.825000012293458
     </center>
     <material_name>
       brass
@@ -8932,10 +8949,10 @@
   </mesh>
   <sphere>
     <radius>
-      0.010937498672865309
+      0.010937497182749167
     </radius>
     <center>
-      1.7375000258907676 0.03906250058207661 0.825000012293458
+      1.600000023841858 0.03906250058207661 0.825000012293458
     </center>
     <material_name>
       brass
@@ -8981,7 +8998,94 @@
   </mesh>
   <mesh>
     <uid>365</uid>
-    <name>uid365_whandle2</name>
+    <name>uid365_bathfauc_handle</name>
+    <max_num_subdivisions>0</max_num_subdivisions>
+    <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
+    <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
+    <displacement_error_threshold>0.0</displacement_error_threshold>
+    <view_dependent_subdivision>false</view_dependent_subdivision>
+    <subdivision_smoothing>true</subdivision_smoothing>
+    <normal_smoothing>true</normal_smoothing>
+    <merge_vertices_with_same_pos_and_normal>true</merge_vertices_with_same_pos_and_normal>
+    <wrap_u>false</wrap_u>
+    <wrap_v>false</wrap_v>
+    <view_dependent_subdivision>false</view_dependent_subdivision>
+    <scale>1.0</scale>
+    <external>
+      <path>igmesh/bathfauc_handle.igmesh</path>
+    </external>
+  </mesh>
+  <mesh>
+    <uid>366</uid>
+    <name>uid366_bathfauc_handle.end</name>
+    <max_num_subdivisions>0</max_num_subdivisions>
+    <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
+    <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
+    <displacement_error_threshold>0.0</displacement_error_threshold>
+    <view_dependent_subdivision>false</view_dependent_subdivision>
+    <subdivision_smoothing>true</subdivision_smoothing>
+    <normal_smoothing>true</normal_smoothing>
+    <merge_vertices_with_same_pos_and_normal>true</merge_vertices_with_same_pos_and_normal>
+    <wrap_u>false</wrap_u>
+    <wrap_v>false</wrap_v>
+    <view_dependent_subdivision>false</view_dependent_subdivision>
+    <scale>1.0</scale>
+    <external>
+      <path>igmesh/bathfauc_handle.end.igmesh</path>
+    </external>
+  </mesh>
+  <sphere>
+    <radius>
+      0.010937498672865309
+    </radius>
+    <center>
+      1.7375000258907676 0.03906250058207661 0.825000012293458
+    </center>
+    <material_name>
+      brass
+    </material_name>
+  </sphere>
+  <mesh>
+    <uid>367</uid>
+    <name>uid367_bathfauc_base.top</name>
+    <max_num_subdivisions>0</max_num_subdivisions>
+    <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
+    <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
+    <displacement_error_threshold>0.0</displacement_error_threshold>
+    <view_dependent_subdivision>false</view_dependent_subdivision>
+    <subdivision_smoothing>true</subdivision_smoothing>
+    <normal_smoothing>true</normal_smoothing>
+    <merge_vertices_with_same_pos_and_normal>true</merge_vertices_with_same_pos_and_normal>
+    <wrap_u>false</wrap_u>
+    <wrap_v>false</wrap_v>
+    <view_dependent_subdivision>false</view_dependent_subdivision>
+    <scale>1.0</scale>
+    <external>
+      <path>igmesh/bathfauc_base.top.igmesh</path>
+    </external>
+  </mesh>
+  <mesh>
+    <uid>368</uid>
+    <name>uid368_bathfauc_base.bot</name>
+    <max_num_subdivisions>0</max_num_subdivisions>
+    <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
+    <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
+    <displacement_error_threshold>0.0</displacement_error_threshold>
+    <view_dependent_subdivision>false</view_dependent_subdivision>
+    <subdivision_smoothing>true</subdivision_smoothing>
+    <normal_smoothing>true</normal_smoothing>
+    <merge_vertices_with_same_pos_and_normal>true</merge_vertices_with_same_pos_and_normal>
+    <wrap_u>false</wrap_u>
+    <wrap_v>false</wrap_v>
+    <view_dependent_subdivision>false</view_dependent_subdivision>
+    <scale>1.0</scale>
+    <external>
+      <path>igmesh/bathfauc_base.bot.igmesh</path>
+    </external>
+  </mesh>
+  <mesh>
+    <uid>369</uid>
+    <name>uid369_whandle2</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -8999,8 +9103,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>366</uid>
-    <name>uid366_ehandle2</name>
+    <uid>370</uid>
+    <name>uid370_ehandle2</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9015,82 +9119,6 @@
     <scale>1.0</scale>
     <external>
       <path>igmesh/ehandle2.igmesh</path>
-    </external>
-  </mesh>
-  <mesh>
-    <uid>367</uid>
-    <name>uid367_whandle</name>
-    <max_num_subdivisions>0</max_num_subdivisions>
-    <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
-    <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
-    <displacement_error_threshold>0.0</displacement_error_threshold>
-    <view_dependent_subdivision>false</view_dependent_subdivision>
-    <subdivision_smoothing>true</subdivision_smoothing>
-    <normal_smoothing>false</normal_smoothing>
-    <merge_vertices_with_same_pos_and_normal>true</merge_vertices_with_same_pos_and_normal>
-    <wrap_u>false</wrap_u>
-    <wrap_v>false</wrap_v>
-    <view_dependent_subdivision>false</view_dependent_subdivision>
-    <scale>1.0</scale>
-    <external>
-      <path>igmesh/whandle.igmesh</path>
-    </external>
-  </mesh>
-  <mesh>
-    <uid>368</uid>
-    <name>uid368_ehandle</name>
-    <max_num_subdivisions>0</max_num_subdivisions>
-    <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
-    <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
-    <displacement_error_threshold>0.0</displacement_error_threshold>
-    <view_dependent_subdivision>false</view_dependent_subdivision>
-    <subdivision_smoothing>true</subdivision_smoothing>
-    <normal_smoothing>false</normal_smoothing>
-    <merge_vertices_with_same_pos_and_normal>true</merge_vertices_with_same_pos_and_normal>
-    <wrap_u>false</wrap_u>
-    <wrap_v>false</wrap_v>
-    <view_dependent_subdivision>false</view_dependent_subdivision>
-    <scale>1.0</scale>
-    <external>
-      <path>igmesh/ehandle.igmesh</path>
-    </external>
-  </mesh>
-  <mesh>
-    <uid>369</uid>
-    <name>uid369_whandle.001</name>
-    <max_num_subdivisions>0</max_num_subdivisions>
-    <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
-    <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
-    <displacement_error_threshold>0.0</displacement_error_threshold>
-    <view_dependent_subdivision>false</view_dependent_subdivision>
-    <subdivision_smoothing>true</subdivision_smoothing>
-    <normal_smoothing>false</normal_smoothing>
-    <merge_vertices_with_same_pos_and_normal>true</merge_vertices_with_same_pos_and_normal>
-    <wrap_u>false</wrap_u>
-    <wrap_v>false</wrap_v>
-    <view_dependent_subdivision>false</view_dependent_subdivision>
-    <scale>1.0</scale>
-    <external>
-      <path>igmesh/whandle.001.igmesh</path>
-    </external>
-  </mesh>
-  <mesh>
-    <uid>370</uid>
-    <name>uid370_ehandle.001</name>
-    <max_num_subdivisions>0</max_num_subdivisions>
-    <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
-    <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
-    <displacement_error_threshold>0.0</displacement_error_threshold>
-    <view_dependent_subdivision>false</view_dependent_subdivision>
-    <subdivision_smoothing>true</subdivision_smoothing>
-    <normal_smoothing>false</normal_smoothing>
-    <merge_vertices_with_same_pos_and_normal>true</merge_vertices_with_same_pos_and_normal>
-    <wrap_u>false</wrap_u>
-    <wrap_v>false</wrap_v>
-    <view_dependent_subdivision>false</view_dependent_subdivision>
-    <scale>1.0</scale>
-    <external>
-      <path>igmesh/ehandle.001.igmesh</path>
     </external>
   </mesh>
   <mesh>
@@ -9133,7 +9161,83 @@
   </mesh>
   <mesh>
     <uid>373</uid>
-    <name>uid373_uhandle</name>
+    <name>uid373_whandle.001</name>
+    <max_num_subdivisions>0</max_num_subdivisions>
+    <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
+    <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
+    <displacement_error_threshold>0.0</displacement_error_threshold>
+    <view_dependent_subdivision>false</view_dependent_subdivision>
+    <subdivision_smoothing>true</subdivision_smoothing>
+    <normal_smoothing>false</normal_smoothing>
+    <merge_vertices_with_same_pos_and_normal>true</merge_vertices_with_same_pos_and_normal>
+    <wrap_u>false</wrap_u>
+    <wrap_v>false</wrap_v>
+    <view_dependent_subdivision>false</view_dependent_subdivision>
+    <scale>1.0</scale>
+    <external>
+      <path>igmesh/whandle.001.igmesh</path>
+    </external>
+  </mesh>
+  <mesh>
+    <uid>374</uid>
+    <name>uid374_ehandle.001</name>
+    <max_num_subdivisions>0</max_num_subdivisions>
+    <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
+    <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
+    <displacement_error_threshold>0.0</displacement_error_threshold>
+    <view_dependent_subdivision>false</view_dependent_subdivision>
+    <subdivision_smoothing>true</subdivision_smoothing>
+    <normal_smoothing>false</normal_smoothing>
+    <merge_vertices_with_same_pos_and_normal>true</merge_vertices_with_same_pos_and_normal>
+    <wrap_u>false</wrap_u>
+    <wrap_v>false</wrap_v>
+    <view_dependent_subdivision>false</view_dependent_subdivision>
+    <scale>1.0</scale>
+    <external>
+      <path>igmesh/ehandle.001.igmesh</path>
+    </external>
+  </mesh>
+  <mesh>
+    <uid>375</uid>
+    <name>uid375_whandle</name>
+    <max_num_subdivisions>0</max_num_subdivisions>
+    <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
+    <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
+    <displacement_error_threshold>0.0</displacement_error_threshold>
+    <view_dependent_subdivision>false</view_dependent_subdivision>
+    <subdivision_smoothing>true</subdivision_smoothing>
+    <normal_smoothing>false</normal_smoothing>
+    <merge_vertices_with_same_pos_and_normal>true</merge_vertices_with_same_pos_and_normal>
+    <wrap_u>false</wrap_u>
+    <wrap_v>false</wrap_v>
+    <view_dependent_subdivision>false</view_dependent_subdivision>
+    <scale>1.0</scale>
+    <external>
+      <path>igmesh/whandle.igmesh</path>
+    </external>
+  </mesh>
+  <mesh>
+    <uid>376</uid>
+    <name>uid376_ehandle</name>
+    <max_num_subdivisions>0</max_num_subdivisions>
+    <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
+    <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
+    <displacement_error_threshold>0.0</displacement_error_threshold>
+    <view_dependent_subdivision>false</view_dependent_subdivision>
+    <subdivision_smoothing>true</subdivision_smoothing>
+    <normal_smoothing>false</normal_smoothing>
+    <merge_vertices_with_same_pos_and_normal>true</merge_vertices_with_same_pos_and_normal>
+    <wrap_u>false</wrap_u>
+    <wrap_v>false</wrap_v>
+    <view_dependent_subdivision>false</view_dependent_subdivision>
+    <scale>1.0</scale>
+    <external>
+      <path>igmesh/ehandle.igmesh</path>
+    </external>
+  </mesh>
+  <mesh>
+    <uid>377</uid>
+    <name>uid377_uhandle</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9151,8 +9255,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>374</uid>
-    <name>uid374_lhandle</name>
+    <uid>378</uid>
+    <name>uid378_lhandle</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9170,8 +9274,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>375</uid>
-    <name>uid375_west.6457</name>
+    <uid>379</uid>
+    <name>uid379_west.6457</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9189,8 +9293,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>376</uid>
-    <name>uid376_west.5137</name>
+    <uid>380</uid>
+    <name>uid380_west.5137</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9208,8 +9312,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>377</uid>
-    <name>uid377_west.3267</name>
+    <uid>381</uid>
+    <name>uid381_west.3267</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9227,8 +9331,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>378</uid>
-    <name>uid378_west.2310</name>
+    <uid>382</uid>
+    <name>uid382_west.2310</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9246,8 +9350,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>379</uid>
-    <name>uid379_west.4620</name>
+    <uid>383</uid>
+    <name>uid383_west.4620</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9265,8 +9369,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>380</uid>
-    <name>uid380_upper.6457</name>
+    <uid>384</uid>
+    <name>uid384_upper.6457</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9284,8 +9388,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>381</uid>
-    <name>uid381_upper.5137</name>
+    <uid>385</uid>
+    <name>uid385_upper.5137</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9303,8 +9407,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>382</uid>
-    <name>uid382_upper.3267</name>
+    <uid>386</uid>
+    <name>uid386_upper.3267</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9322,8 +9426,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>383</uid>
-    <name>uid383_upper.4620</name>
+    <uid>387</uid>
+    <name>uid387_upper.4620</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9341,8 +9445,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>384</uid>
-    <name>uid384_upper.1540</name>
+    <uid>388</uid>
+    <name>uid388_upper.1540</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9360,8 +9464,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>385</uid>
-    <name>uid385_east.6457</name>
+    <uid>389</uid>
+    <name>uid389_east.6457</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9379,8 +9483,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>386</uid>
-    <name>uid386_east.5137</name>
+    <uid>390</uid>
+    <name>uid390_east.5137</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9398,8 +9502,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>387</uid>
-    <name>uid387_east.2310</name>
+    <uid>391</uid>
+    <name>uid391_east.2310</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9417,8 +9521,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>388</uid>
-    <name>uid388_east.4620</name>
+    <uid>392</uid>
+    <name>uid392_east.4620</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9436,8 +9540,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>389</uid>
-    <name>uid389_east.1540</name>
+    <uid>393</uid>
+    <name>uid393_east.1540</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9455,8 +9559,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>390</uid>
-    <name>uid390_bottom.5137</name>
+    <uid>394</uid>
+    <name>uid394_bottom.5137</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9474,8 +9578,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>391</uid>
-    <name>uid391_bottom.3267</name>
+    <uid>395</uid>
+    <name>uid395_bottom.3267</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9493,8 +9597,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>392</uid>
-    <name>uid392_bottom.2310</name>
+    <uid>396</uid>
+    <name>uid396_bottom.2310</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9512,8 +9616,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>393</uid>
-    <name>uid393_bottom.4620</name>
+    <uid>397</uid>
+    <name>uid397_bottom.4620</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9531,8 +9635,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>394</uid>
-    <name>uid394_bottom.1540</name>
+    <uid>398</uid>
+    <name>uid398_bottom.1540</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9550,8 +9654,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>395</uid>
-    <name>uid395_drain</name>
+    <uid>399</uid>
+    <name>uid399_drain</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9580,8 +9684,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>396</uid>
-    <name>uid396_drainplug.4</name>
+    <uid>400</uid>
+    <name>uid400_drainplug.4</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9610,8 +9714,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>397</uid>
-    <name>uid397_drainplug.2</name>
+    <uid>401</uid>
+    <name>uid401_drainplug.2</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9629,8 +9733,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>398</uid>
-    <name>uid398_drainplug.1</name>
+    <uid>402</uid>
+    <name>uid402_drainplug.1</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9648,8 +9752,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>399</uid>
-    <name>uid399_showerhead.7</name>
+    <uid>403</uid>
+    <name>uid403_showerhead.7</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9667,7 +9771,7 @@
     </external>
   </mesh>
   <material>
-    <uid>400</uid>
+    <uid>404</uid>
     <name>black_plastic</name>
     <diffuse>
       <albedo>
@@ -9681,8 +9785,8 @@
     </diffuse>
   </material>
   <mesh>
-    <uid>401</uid>
-    <name>uid401_showerhead.6</name>
+    <uid>405</uid>
+    <name>uid405_showerhead.6</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9700,8 +9804,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>402</uid>
-    <name>uid402_showerhead.5</name>
+    <uid>406</uid>
+    <name>uid406_showerhead.5</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9719,8 +9823,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>403</uid>
-    <name>uid403_showerhead.4</name>
+    <uid>407</uid>
+    <name>uid407_showerhead.4</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9738,8 +9842,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>404</uid>
-    <name>uid404_showerhead.3</name>
+    <uid>408</uid>
+    <name>uid408_showerhead.3</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9757,8 +9861,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>405</uid>
-    <name>uid405_showerhead.2</name>
+    <uid>409</uid>
+    <name>uid409_showerhead.2</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9776,8 +9880,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>406</uid>
-    <name>uid406_showerhead.1</name>
+    <uid>410</uid>
+    <name>uid410_showerhead.1</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9806,8 +9910,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>407</uid>
-    <name>uid407_showerpipe.c4</name>
+    <uid>411</uid>
+    <name>uid411_showerpipe.c4</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9836,8 +9940,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>408</uid>
-    <name>uid408_showerpipe.c3</name>
+    <uid>412</uid>
+    <name>uid412_showerpipe.c3</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9866,8 +9970,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>409</uid>
-    <name>uid409_showerpipe.c2</name>
+    <uid>413</uid>
+    <name>uid413_showerpipe.c2</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9896,8 +10000,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>410</uid>
-    <name>uid410_showerpipe.c1</name>
+    <uid>414</uid>
+    <name>uid414_showerpipe.c1</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9937,8 +10041,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>411</uid>
-    <name>uid411_bathfaucet.c12</name>
+    <uid>415</uid>
+    <name>uid415_bathfaucet.c12</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9967,8 +10071,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>412</uid>
-    <name>uid412_bathfaucet.c11</name>
+    <uid>416</uid>
+    <name>uid416_bathfaucet.c11</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -9997,8 +10101,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>413</uid>
-    <name>uid413_bathfaucet.c10</name>
+    <uid>417</uid>
+    <name>uid417_bathfaucet.c10</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -10027,8 +10131,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>414</uid>
-    <name>uid414_bathfaucet.c9</name>
+    <uid>418</uid>
+    <name>uid418_bathfaucet.c9</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -10057,8 +10161,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>415</uid>
-    <name>uid415_bathfaucet.c8</name>
+    <uid>419</uid>
+    <name>uid419_bathfaucet.c8</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -10087,8 +10191,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>416</uid>
-    <name>uid416_bathfaucet.c7</name>
+    <uid>420</uid>
+    <name>uid420_bathfaucet.c7</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -10117,8 +10221,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>417</uid>
-    <name>uid417_bathfaucet.c6</name>
+    <uid>421</uid>
+    <name>uid421_bathfaucet.c6</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -10147,8 +10251,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>418</uid>
-    <name>uid418_bathfaucet.c5</name>
+    <uid>422</uid>
+    <name>uid422_bathfaucet.c5</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -10177,8 +10281,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>419</uid>
-    <name>uid419_bathfaucet.c4</name>
+    <uid>423</uid>
+    <name>uid423_bathfaucet.c4</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -10207,8 +10311,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>420</uid>
-    <name>uid420_bathfaucet.c3</name>
+    <uid>424</uid>
+    <name>uid424_bathfaucet.c3</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -10237,8 +10341,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>421</uid>
-    <name>uid421_bathfaucet.c2</name>
+    <uid>425</uid>
+    <name>uid425_bathfaucet.c2</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -10267,8 +10371,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>422</uid>
-    <name>uid422_bathfaucet.c1</name>
+    <uid>426</uid>
+    <name>uid426_bathfaucet.c1</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -10297,8 +10401,8 @@
     </material_name>
   </sphere>
   <mesh>
-    <uid>423</uid>
-    <name>uid423_tub_bot</name>
+    <uid>427</uid>
+    <name>uid427_tub_bot</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -10316,8 +10420,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>424</uid>
-    <name>uid424_tub_win</name>
+    <uid>428</uid>
+    <name>uid428_tub_win</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -10335,8 +10439,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>425</uid>
-    <name>uid425_tub_sin</name>
+    <uid>429</uid>
+    <name>uid429_tub_sin</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -10354,8 +10458,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>426</uid>
-    <name>uid426_tub_nin</name>
+    <uid>430</uid>
+    <name>uid430_tub_nin</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -10373,8 +10477,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>427</uid>
-    <name>uid427_tub_ein</name>
+    <uid>431</uid>
+    <name>uid431_tub_ein</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -10392,8 +10496,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>428</uid>
-    <name>uid428_tub_rim</name>
+    <uid>432</uid>
+    <name>uid432_tub_rim</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -10411,8 +10515,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>429</uid>
-    <name>uid429_tub_sout_lip</name>
+    <uid>433</uid>
+    <name>uid433_tub_sout_lip</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -10430,8 +10534,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>430</uid>
-    <name>uid430_tub_sout</name>
+    <uid>434</uid>
+    <name>uid434_tub_sout</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -10449,8 +10553,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>431</uid>
-    <name>uid431_wnwallbdr</name>
+    <uid>435</uid>
+    <name>uid435_wnwallbdr</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -10468,8 +10572,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>432</uid>
-    <name>uid432_tubceil</name>
+    <uid>436</uid>
+    <name>uid436_tubceil</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -10487,8 +10591,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>433</uid>
-    <name>uid433_wtubwall</name>
+    <uid>437</uid>
+    <name>uid437_wtubwall</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -10506,8 +10610,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>434</uid>
-    <name>uid434_etubwall</name>
+    <uid>438</uid>
+    <name>uid438_etubwall</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -10525,8 +10629,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>435</uid>
-    <name>uid435_ntubwall</name>
+    <uid>439</uid>
+    <name>uid439_ntubwall</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -10544,8 +10648,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>436</uid>
-    <name>uid436_wwall</name>
+    <uid>440</uid>
+    <name>uid440_wwall</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -10563,8 +10667,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>437</uid>
-    <name>uid437_ewall</name>
+    <uid>441</uid>
+    <name>uid441_ewall</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -10582,7 +10686,7 @@
     </external>
   </mesh>
   <material>
-    <uid>438</uid>
+    <uid>442</uid>
     <name>blue_tile</name>
     <phong>
       <ior>1.1999999955296516</ior>
@@ -10600,8 +10704,8 @@
     </phong>
   </material>
   <mesh>
-    <uid>439</uid>
-    <name>uid439_floor</name>
+    <uid>443</uid>
+    <name>uid443_floor</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -10619,8 +10723,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>440</uid>
-    <name>uid440_ceiling</name>
+    <uid>444</uid>
+    <name>uid444_ceiling</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -10638,8 +10742,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>441</uid>
-    <name>uid441_swall</name>
+    <uid>445</uid>
+    <name>uid445_swall</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -10657,8 +10761,8 @@
     </external>
   </mesh>
   <mesh>
-    <uid>442</uid>
-    <name>uid442_window</name>
+    <uid>446</uid>
+    <name>uid446_window</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -10676,7 +10780,7 @@
     </external>
   </mesh>
   <material>
-    <uid>443</uid>
+    <uid>447</uid>
     <name>off_white_textured</name>
     <phong>
       <texture>
@@ -10706,8 +10810,8 @@
     </phong>
   </material>
   <mesh>
-    <uid>444</uid>
-    <name>uid444_nwall</name>
+    <uid>448</uid>
+    <name>uid448_nwall</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -10725,7 +10829,7 @@
     </external>
   </mesh>
   <material>
-    <uid>445</uid>
+    <uid>449</uid>
     <name>window_mat</name>
     <phong>
       <texture>
@@ -10755,8 +10859,8 @@
     </phong>
   </material>
   <mesh>
-    <uid>446</uid>
-    <name>uid446_window_pane</name>
+    <uid>450</uid>
+    <name>uid450_window_pane</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
@@ -10774,7 +10878,7 @@
     </external>
   </mesh>
   <medium>
-    <uid>447</uid>
+    <uid>451</uid>
     <name>shdoor_mat_medium</name>
     <basic>
       <ior>1.5199999809265137</ior>
@@ -10791,7 +10895,7 @@
     <precedence>2</precedence>
   </medium>
   <material>
-    <uid>448</uid>
+    <uid>452</uid>
     <name>shdoor_mat</name>
     <specular>
       <transparent>true</transparent>
@@ -10799,8 +10903,8 @@
     </specular>
   </material>
   <mesh>
-    <uid>449</uid>
-    <name>uid449_shower_door</name>
+    <uid>453</uid>
+    <name>uid453_shower_door</name>
     <max_num_subdivisions>0</max_num_subdivisions>
     <subdivide_pixel_threshold>0.0</subdivide_pixel_threshold>
     <subdivide_curvature_threshold>0.0</subdivide_curvature_threshold>
