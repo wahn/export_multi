@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <scene>
+<!-- cam_van -->
 <!--  <camera>-->
 <!--    <uid>1</uid>-->
 <!--    <name>uid1_Camera</name>-->
@@ -26,6 +27,7 @@
 <!--    <forwards>-0.7923091650009155 0.5545132160186768 -0.2544823884963989</forwards>-->
 <!--    <camera_type>thin-lens-perspective</camera_type>-->
 <!--  </camera>-->
+<!-- cam_stall -->
 <!--  <camera>-->
 <!--    <uid>2</uid>-->
 <!--    <name>uid2_Camera</name>-->
@@ -52,6 +54,7 @@
 <!--    <forwards>0.08009341359138489 -0.9541248083114624 -0.28849801421165466</forwards>-->
 <!--    <camera_type>thin-lens-perspective</camera_type>-->
 <!--  </camera>-->
+<!-- cam_sink -->
 <!--  <camera>-->
 <!--    <uid>3</uid>-->
 <!--    <name>uid3_Camera</name>-->
@@ -115,6 +118,7 @@
     </downsize_filter>
     <halt_time>-1</halt_time>
   </renderer_settings>
+<!-- cam_shwin -->
   <camera>
     <uid>5</uid>
     <name>uid5_Camera</name>
@@ -183,6 +187,7 @@
       <layer>0</layer>
     </diffuse>
   </material>
+<!-- cam_mir -->
 <!--  <camera>-->
 <!--    <uid>8</uid>-->
 <!--    <name>uid8_Camera</name>-->
