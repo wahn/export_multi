@@ -101,7 +101,7 @@
 > <!--    <forwards>0.23522722721099854 -0.9687408804893494 -0.07880008220672607</forwards>-->
 > <!--    <camera_type>thin-lens-perspective</camera_type>-->
 > <!--  </camera>-->
->  cam_mir 
+> <!-- cam_mir  -->
 123,124c150,151
 <     <uid>5</uid>
 <     <name>uid5_Camera</name>
