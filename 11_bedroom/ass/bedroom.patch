@@ -1,0 +1,32 @@
+8a9
+>  AA_samples 5
+20,23c21,24
+<  region_min_x 0
+<  region_min_y 2
+<  region_max_x 797
+<  region_max_y 800
+---
+>  # region_min_x 0
+>  # region_min_y 2
+>  # region_max_x 797
+>  # region_max_y 800
+30,31c31,32
+<  GI_diffuse_depth 3
+<  GI_glossy_depth 1
+---
+>  GI_diffuse_depth 4
+>  GI_glossy_depth 0
+35c36
+<  GI_diffuse_samples 3
+---
+>  GI_diffuse_samples 20
+106c107
+<  intensity 1
+---
+>  intensity 10
+117,118c118,119
+<  intensity 1
+<  samples 6
+---
+>  intensity 50
+>  samples 18
