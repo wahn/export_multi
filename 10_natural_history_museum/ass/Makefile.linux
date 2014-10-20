@@ -1,0 +1,40 @@
+# usage:
+# make clobber
+# make -j 4
+
+ARNOLD = /mill3d/server/apps/ARNOLD/linux-x86-64/Arnold-4.2.1.2
+KICK = $(ARNOLD)/bin/kick
+
+all: \
+natural_history_museum_seed_1.exr \
+natural_history_museum_seed_2.exr \
+natural_history_museum_seed_3.exr \
+natural_history_museum_seed_4.exr
+
+clean:
+	-rm -f *~
+
+clobber: clean
+	-rm -f *.exr
+
+# natural_history_museum
+
+natural_history_museum_seed_1.exr: natural_history_museum.ass
+	$(KICK) -dp -dw -i natural_history_museum.ass \
+-o natural_history_museum_seed_1.exr \
+-set options.AA_seed 1 -r 1600 1200 -v 6
+
+natural_history_museum_seed_2.exr: natural_history_museum.ass
+	$(KICK) -dp -dw -i natural_history_museum.ass \
+-o natural_history_museum_seed_2.exr \
+-set options.AA_seed 2 -r 1600 1200 -v 6
+
+natural_history_museum_seed_3.exr: natural_history_museum.ass
+	$(KICK) -dp -dw -i natural_history_museum.ass \
+-o natural_history_museum_seed_3.exr \
+-set options.AA_seed 3 -r 1600 1200 -v 6
+
+natural_history_museum_seed_4.exr: natural_history_museum.ass
+	$(KICK) -dp -dw -i natural_history_museum.ass \
+-o natural_history_museum_seed_4.exr \
+-set options.AA_seed 4 -r 1600 1200 -v 6
