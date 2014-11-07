@@ -11,3 +11,8 @@ clobber: clean
 
 art_gallery_01n.mi: art_gallery_01n.patch
 	patch art_gallery.mi -i art_gallery_01n.patch -o art_gallery_01n.mi
+
+# art_gallery_02n
+
+art_gallery_02n.mi: art_gallery_02n.patch
+	patch art_gallery.mi -i art_gallery_02n.patch -o art_gallery_02n.mi

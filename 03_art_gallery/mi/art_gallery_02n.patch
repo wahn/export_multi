@@ -1,0 +1,77 @@
+12c12
+<   "progressive subsampling size" 4
+---
+>   "progressive subsampling size" 1
+39a40,61
+> # cam01
+> camera "cam01_cam"
+>   framebuffer "primary"
+>     datatype "rgba_h"
+>     filtering on
+>     primary on
+>     user off
+>     filename "mental_ray.exr"
+>   focal 38.62741470336914
+>   aperture 32.0
+>   aspect 1.0
+>   resolution 500 500
+> end camera
+> 
+> instance "cam01_inst" "cam01_cam"
+>   transform
+>     -0.9954954385757446 -0.01872488297522068 0.09294161200523376 -0.0
+>     0.0 0.9803026914596558 0.19750089943408966 -0.0 #  z
+>     -0.09480908513069153 0.19661127030849457 -0.9758869409561157 -0.0 # -y
+>     34.55791473388672 -2.4309306144714355 -28.44013214111328 1.0
+> end instance
+> 
+78644c78666
+< color texture "scene1_png" "scene1.png"
+---
+> # color texture "scene1_png" "scene1.png"
+78646,78651c78668,78673
+< shader "scene1_png_diff_tex" "texture_uv" (
+<   "tex" "scene1_png",
+<   "u_scale" 1.0,
+<   "v_scale" 1.0,
+<   "u_offset" 0.0,
+<   "v_offset" 0.0)
+---
+> # shader "scene1_png_diff_tex" "texture_uv" (
+> #   "tex" "scene1_png",
+> #   "u_scale" 1.0,
+> #   "v_scale" 1.0,
+> #   "u_offset" 0.0,
+> #   "v_offset" 0.0)
+7211045c7211067
+<   "color" 1.0 1.0 1.0
+---
+>   "color" 150.0 150.0 150.0
+7232430c7232452
+<   "color" 1.0 1.0 1.0
+---
+>   "color" 28.0 28.0 28.0
+7288085c7288107
+<   "color" 1.0 1.0 1.0
+---
+>   "color" 150.0 150.0 150.0
+7642534c7642556
+<   "color" 1.0 1.0 1.0
+---
+>   "color" 78.0 78.0 78.0
+7643015c7643037
+<   "color" 1.0 1.0 1.0
+---
+>   "color" 64.0 64.0 64.0
+7756519c7756541
+<   "color" 1.0 1.0 1.0
+---
+>   "color" 90.0 90.0 90.0
+7931724c7931746
+<   "color" 1.0 1.0 1.0
+---
+>   "color" 90.0 90.0 90.0
+7990133c7990155
+<   "color" 1.0 1.0 1.0
+---
+>   "color" 150.0 150.0 150.0
