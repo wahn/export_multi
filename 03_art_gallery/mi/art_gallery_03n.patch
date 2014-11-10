@@ -1,0 +1,108 @@
+12c12
+<   "progressive subsampling size" 4
+---
+>   "progressive subsampling size" 1
+39a40,61
+> # cam01
+> camera "cam01_cam"
+>   framebuffer "primary"
+>     datatype "rgba_h"
+>     filtering on
+>     primary on
+>     user off
+>     filename "mental_ray.exr"
+>   focal 38.62741470336914
+>   aperture 32.0
+>   aspect 1.0
+>   resolution 500 500
+> end camera
+> 
+> instance "cam01_inst" "cam01_cam"
+>   transform
+>     -0.9954954385757446 -0.01872488297522068 0.09294161200523376 -0.0
+>     0.0 0.9803026914596558 0.19750089943408966 -0.0 #  z
+>     -0.09480908513069153 0.19661127030849457 -0.9758869409561157 -0.0 # -y
+>     34.55791473388672 -2.4309306144714355 -28.44013214111328 1.0
+> end instance
+> 
+61a84,105
+> # cam03
+> camera "cam03_cam"
+>   framebuffer "primary"
+>     datatype "rgba_h"
+>     filtering on
+>     primary on
+>     user off
+>     filename "mental_ray.exr"
+>   focal 38.62741470336914
+>   aperture 32.0
+>   aspect 1.0
+>   resolution 500 500
+> end camera
+> 
+> instance "cam03_inst" "cam03_cam"
+>   transform
+>     0.8265992403030396 0.05905965343117714 0.5596835613250732 -0.0
+>     3.725290742551124e-09 0.9944785237312317 -0.10494067519903183 -0.0 #  z
+>     -0.5627909898757935 0.08674387633800507 0.8220352530479431 -0.0 # -y
+>     -32.800167083740234 -5.200018405914307 -20.69080352783203 1.0
+> end instance
+> 
+78644c78688
+< color texture "scene1_png" "scene1.png"
+---
+> # color texture "scene1_png" "scene1.png"
+78646,78651c78690,78695
+< shader "scene1_png_diff_tex" "texture_uv" (
+<   "tex" "scene1_png",
+<   "u_scale" 1.0,
+<   "v_scale" 1.0,
+<   "u_offset" 0.0,
+<   "v_offset" 0.0)
+---
+> # shader "scene1_png_diff_tex" "texture_uv" (
+> #   "tex" "scene1_png",
+> #   "u_scale" 1.0,
+> #   "v_scale" 1.0,
+> #   "u_offset" 0.0,
+> #   "v_offset" 0.0)
+7211045c7211089
+<   "color" 1.0 1.0 1.0
+---
+>   "color" 150.0 150.0 150.0
+7232430c7232474
+<   "color" 1.0 1.0 1.0
+---
+>   "color" 28.0 28.0 28.0
+7288085c7288129
+<   "color" 1.0 1.0 1.0
+---
+>   "color" 150.0 150.0 150.0
+7642534c7642578
+<   "color" 1.0 1.0 1.0
+---
+>   "color" 78.0 78.0 78.0
+7643015c7643059
+<   "color" 1.0 1.0 1.0
+---
+>   "color" 64.0 64.0 64.0
+7756519c7756563
+<   "color" 1.0 1.0 1.0
+---
+>   "color" 90.0 90.0 90.0
+7931724c7931768
+<   "color" 1.0 1.0 1.0
+---
+>   "color" 90.0 90.0 90.0
+7990133c7990177
+<   "color" 1.0 1.0 1.0
+---
+>   "color" 150.0 150.0 150.0
+8592282c8592326
+<   "cam02_inst"
+---
+>   "cam03_inst"
+8592286c8592330
+< render "root_grp" "cam02_inst" "opt"
+---
+> render "root_grp" "cam03_inst" "opt"
