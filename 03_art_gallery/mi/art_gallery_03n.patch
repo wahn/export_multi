@@ -51,8 +51,8 @@
 78644c78688
 < color texture "scene1_png" "scene1.png"
 ---
-> # color texture "scene1_png" "scene1.png"
-78646,78651c78690,78695
+> local color texture "tex1" "../textures/scene1.png"
+78646,78651c78690,78692
 < shader "scene1_png_diff_tex" "texture_uv" (
 <   "tex" "scene1_png",
 <   "u_scale" 1.0,
@@ -60,49 +60,51 @@
 <   "u_offset" 0.0,
 <   "v_offset" 0.0)
 ---
-> # shader "scene1_png_diff_tex" "texture_uv" (
-> #   "tex" "scene1_png",
-> #   "u_scale" 1.0,
-> #   "v_scale" 1.0,
-> #   "u_offset" 0.0,
-> #   "v_offset" 0.0)
-7211045c7211089
+> shader "scene1_png_diff_tex" "mib_texture_lookup2" (
+>   "tex" "tex1",
+>   "factor" 1.0)
+78655c78696,78697
+<   "tint" 0.9200000166893005 0.9200000166893005 0.9200000166893005,
+---
+>   #"tint" 0.9200000166893005 0.9200000166893005 0.9200000166893005,
+>   "tint" = "scene1_png_diff_tex",
+7211045c7211087
 <   "color" 1.0 1.0 1.0
 ---
 >   "color" 150.0 150.0 150.0
-7232430c7232474
+7232430c7232472
 <   "color" 1.0 1.0 1.0
 ---
 >   "color" 28.0 28.0 28.0
-7288085c7288129
+7288085c7288127
 <   "color" 1.0 1.0 1.0
 ---
 >   "color" 150.0 150.0 150.0
-7642534c7642578
+7642534c7642576
 <   "color" 1.0 1.0 1.0
 ---
 >   "color" 78.0 78.0 78.0
-7643015c7643059
+7643015c7643057
 <   "color" 1.0 1.0 1.0
 ---
 >   "color" 64.0 64.0 64.0
-7756519c7756563
+7756519c7756561
 <   "color" 1.0 1.0 1.0
 ---
 >   "color" 90.0 90.0 90.0
-7931724c7931768
+7931724c7931766
 <   "color" 1.0 1.0 1.0
 ---
 >   "color" 90.0 90.0 90.0
-7990133c7990177
+7990133c7990175
 <   "color" 1.0 1.0 1.0
 ---
 >   "color" 150.0 150.0 150.0
-8592282c8592326
+8592282c8592324
 <   "cam02_inst"
 ---
 >   "cam03_inst"
-8592286c8592330
+8592286c8592328
 < render "root_grp" "cam02_inst" "opt"
 ---
 > render "root_grp" "cam03_inst" "opt"
