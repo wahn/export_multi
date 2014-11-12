@@ -1,0 +1,366 @@
+12c12
+<   "progressive subsampling size" 4
+---
+>   "progressive subsampling size" 1
+35a36
+>   shadow segments
+39a41,62
+> # cam01
+> camera "cam01_cam"
+>   framebuffer "primary"
+>     datatype "rgba_h"
+>     filtering on
+>     primary on
+>     user off
+>     filename "mental_ray.exr"
+>   focal 38.62741470336914
+>   aperture 32.0
+>   aspect 1.0
+>   resolution 500 500
+> end camera
+> 
+> instance "cam01_inst" "cam01_cam"
+>   transform
+>     -0.9954954385757446 -0.01872488297522068 0.09294161200523376 -0.0
+>     0.0 0.9803026914596558 0.19750089943408966 -0.0 #  z
+>     -0.09480908513069153 0.19661127030849457 -0.9758869409561157 -0.0 # -y
+>     34.55791473388672 -2.4309306144714355 -28.44013214111328 1.0
+> end instance
+> 
+61a85,128
+> # cam03
+> camera "cam03_cam"
+>   framebuffer "primary"
+>     datatype "rgba_h"
+>     filtering on
+>     primary on
+>     user off
+>     filename "mental_ray.exr"
+>   focal 38.62741470336914
+>   aperture 32.0
+>   aspect 1.0
+>   resolution 500 500
+> end camera
+> 
+> instance "cam03_inst" "cam03_cam"
+>   transform
+>     0.8265992403030396 0.05905965343117714 0.5596835613250732 -0.0
+>     3.725290742551124e-09 0.9944785237312317 -0.10494067519903183 -0.0 #  z
+>     -0.5627909898757935 0.08674387633800507 0.8220352530479431 -0.0 # -y
+>     -32.800167083740234 -5.200018405914307 -20.69080352783203 1.0
+> end instance
+> 
+> # cam04
+> camera "cam04_cam"
+>   framebuffer "primary"
+>     datatype "rgba_h"
+>     filtering on
+>     primary on
+>     user off
+>     filename "mental_ray.exr"
+>   focal 38.62741470336914
+>   aperture 32.0
+>   aspect 1.0
+>   resolution 500 500
+> end camera
+> 
+> instance "cam04_inst" "cam04_cam"
+>   transform
+>     0.6757246255874634 -0.1758997142314911 0.7158600091934204 -0.0
+>     -7.4505797087454084e-09 0.9711129665374756 0.23862001299858093 -0.0 #  z
+>     -0.7371541261672974 -0.16124141216278076 0.6562049984931946 -0.0 # -y
+>     -9.890151023864746 -5.238513469696045 -1.7299950122833252 1.0
+> end instance
+> 
+78644c78711
+< color texture "scene1_png" "scene1.png"
+---
+> local color texture "tex1" "../textures/scene1.png"
+78646,78651c78713,78715
+< shader "scene1_png_diff_tex" "texture_uv" (
+<   "tex" "scene1_png",
+<   "u_scale" 1.0,
+<   "v_scale" 1.0,
+<   "u_offset" 0.0,
+<   "v_offset" 0.0)
+---
+> shader "scene1_png_diff_tex" "mib_texture_lookup2" (
+>   "tex" "tex1",
+>   "factor" 1.0)
+78655c78719,78720
+<   "tint" 0.9200000166893005 0.9200000166893005 0.9200000166893005,
+---
+>   #"tint" 0.9200000166893005 0.9200000166893005 0.9200000166893005,
+>   "tint" = "scene1_png_diff_tex",
+1433092c1433157
+<   "distance_scale" 1.0
+---
+>   "distance_scale" 0.1
+1622282c1622347
+<   "distance_scale" 1.0
+---
+>   "distance_scale" 0.1
+7211045c7211110
+<   "color" 1.0 1.0 1.0
+---
+>   "color" 150.0 150.0 150.0
+7225284c7225349
+<   "distance_scale" 1.0
+---
+>   "distance_scale" 0.1
+7225351c7225416
+<   "distance_scale" 1.0
+---
+>   "distance_scale" 0.1
+7225478c7225543
+<   "distance_scale" 1.0
+---
+>   "distance_scale" 0.1
+7225545c7225610
+<   "distance_scale" 1.0
+---
+>   "distance_scale" 0.1
+7225612c7225677
+<   "distance_scale" 1.0
+---
+>   "distance_scale" 0.1
+7225679c7225744
+<   "distance_scale" 1.0
+---
+>   "distance_scale" 0.1
+7232430c7232495
+<   "color" 1.0 1.0 1.0
+---
+>   "color" 28.0 28.0 28.0
+7288085c7288150
+<   "color" 1.0 1.0 1.0
+---
+>   "color" 150.0 150.0 150.0
+7642534c7642599
+<   "color" 1.0 1.0 1.0
+---
+>   "color" 78.0 78.0 78.0
+7643015c7643080
+<   "color" 1.0 1.0 1.0
+---
+>   "color" 64.0 64.0 64.0
+7756519c7756584
+<   "color" 1.0 1.0 1.0
+---
+>   "color" 90.0 90.0 90.0
+7931724c7931789
+<   "color" 1.0 1.0 1.0
+---
+>   "color" 90.0 90.0 90.0
+7990133c7990198
+<   "color" 1.0 1.0 1.0
+---
+>   "color" 150.0 150.0 150.0
+8591504c8591569
+<   "typeWM1.u_light_inst"
+---
+>   # "typeWM1.u_light_inst"
+8591506c8591571
+<   "typeWM1.d_light_inst"
+---
+>   # "typeWM1.d_light_inst"
+8591510c8591575
+<   "typeWM1.u1_light_inst"
+---
+>   # "typeWM1.u1_light_inst"
+8591512c8591577
+<   "typeWM1.d1_light_inst"
+---
+>   # "typeWM1.d1_light_inst"
+8591516c8591581
+<   "typeWM1.u2_light_inst"
+---
+>   # "typeWM1.u2_light_inst"
+8591518c8591583
+<   "typeWM1.d2_light_inst"
+---
+>   # "typeWM1.d2_light_inst"
+8591522c8591587
+<   "typeWM1.u3_light_inst"
+---
+>   # "typeWM1.u3_light_inst"
+8591524c8591589
+<   "typeWM1.d3_light_inst"
+---
+>   # "typeWM1.d3_light_inst"
+8591552c8591617
+<   "typeS4.d_light_inst"
+---
+>   # "typeS4.d_light_inst"
+8591580c8591645
+<   "typeS4.d1_light_inst"
+---
+>   # "typeS4.d1_light_inst"
+8591608c8591673
+<   "typeS4.d2_light_inst"
+---
+>   # "typeS4.d2_light_inst"
+8591637c8591702
+<   "typeS4.d3_light_inst"
+---
+>   # "typeS4.d3_light_inst"
+8591665c8591730
+<   "typeS4.d4_light_inst"
+---
+>   # "typeS4.d4_light_inst"
+8591693c8591758
+<   "typeS4.d5_light_inst"
+---
+>   # "typeS4.d5_light_inst"
+8591721c8591786
+<   "typeS4.d6_light_inst"
+---
+>   # "typeS4.d6_light_inst"
+8591726c8591791
+<   "typeWM1.u4_light_inst"
+---
+>   # "typeWM1.u4_light_inst"
+8591728c8591793
+<   "typeWM1.d4_light_inst"
+---
+>   # "typeWM1.d4_light_inst"
+8591732c8591797
+<   "typeWM1.u5_light_inst"
+---
+>   # "typeWM1.u5_light_inst"
+8591734c8591799
+<   "typeWM1.d5_light_inst"
+---
+>   # "typeWM1.d5_light_inst"
+8591738c8591803
+<   "typeRLF1.d_light_inst"
+---
+>   # "typeRLF1.d_light_inst"
+8591740c8591805
+<   "typeRLF1.d1_light_inst"
+---
+>   # "typeRLF1.d1_light_inst"
+8591742c8591807
+<   "typeRLF1.d2_light_inst"
+---
+>   # "typeRLF1.d2_light_inst"
+8591744c8591809
+<   "typeRLF1.d3_light_inst"
+---
+>   # "typeRLF1.d3_light_inst"
+8591746c8591811
+<   "typeRLF1.d4_light_inst"
+---
+>   # "typeRLF1.d4_light_inst"
+8591748c8591813
+<   "typeRLF1.d5_light_inst"
+---
+>   # "typeRLF1.d5_light_inst"
+8591750c8591815
+<   "typeRLF1.d6_light_inst"
+---
+>   # "typeRLF1.d6_light_inst"
+8591752c8591817
+<   "typeRLF1.d7_light_inst"
+---
+>   # "typeRLF1.d7_light_inst"
+8591754c8591819
+<   "typeRLF1.d8_light_inst"
+---
+>   # "typeRLF1.d8_light_inst"
+8591756c8591821
+<   "typeRLF1.d9_light_inst"
+---
+>   # "typeRLF1.d9_light_inst"
+8591758c8591823
+<   "typeRLF2.d_light_inst"
+---
+>   # "typeRLF2.d_light_inst"
+8591760c8591825
+<   "typeRLF2.d1_light_inst"
+---
+>   # "typeRLF2.d1_light_inst"
+8591762c8591827
+<   "typeRLF2.d2_light_inst"
+---
+>   # "typeRLF2.d2_light_inst"
+8591764c8591829
+<   "typeRLF2.d3_light_inst"
+---
+>   # "typeRLF2.d3_light_inst"
+8591766c8591831
+<   "typeRLF2.d4_light_inst"
+---
+>   # "typeRLF2.d4_light_inst"
+8591792c8591857
+<   "typeS4.d7_light_inst"
+---
+>   # "typeS4.d7_light_inst"
+8591820c8591885
+<   "typeS1.d_light_inst"
+---
+>   # "typeS1.d_light_inst"
+8591848c8591913
+<   "typeS1.d1_light_inst"
+---
+>   # "typeS1.d1_light_inst"
+8591876c8591941
+<   "typeS1.d2_light_inst"
+---
+>   # "typeS1.d2_light_inst"
+8591904c8591969
+<   "typeS2.d_light_inst"
+---
+>   # "typeS2.d_light_inst"
+8591932c8591997
+<   "typeS5.d_light_inst"
+---
+>   # "typeS5.d_light_inst"
+8591960c8592025
+<   "typeS4.d8_light_inst"
+---
+>   # "typeS4.d8_light_inst"
+8591988c8592053
+<   "typeS4.d9_light_inst"
+---
+>   # "typeS4.d9_light_inst"
+8592017c8592082
+<   "typeS5.d1_light_inst"
+---
+>   # "typeS5.d1_light_inst"
+8592045c8592110
+<   "typeS4.d10_light_inst"
+---
+>   # "typeS4.d10_light_inst"
+8592073c8592138
+<   "typeS4.d11_light_inst"
+---
+>   # "typeS4.d11_light_inst"
+8592101c8592166
+<   "typeS4.d12_light_inst"
+---
+>   # "typeS4.d12_light_inst"
+8592129c8592194
+<   "typeS4.d13_light_inst"
+---
+>   # "typeS4.d13_light_inst"
+8592157c8592222
+<   "typeS4.d14_light_inst"
+---
+>   # "typeS4.d14_light_inst"
+8592185c8592250
+<   "typeS5.d2_light_inst"
+---
+>   # "typeS5.d2_light_inst"
+8592213c8592278
+<   "typeS4.d15_light_inst"
+---
+>   # "typeS4.d15_light_inst"
+8592282c8592347
+<   "cam02_inst"
+---
+>   "cam04_inst"
+8592286c8592351
+< render "root_grp" "cam02_inst" "opt"
+---
+> render "root_grp" "cam04_inst" "opt"
