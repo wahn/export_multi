@@ -1,0 +1,65 @@
+
+mdl 1.0;
+import df::*;
+import base::*;
+import math::*;
+
+export material wallpaper_x4_tiff(
+  uniform texture_2d diffuse_texture = texture_2d("wallpaper_x4.tiff"),
+  uniform float roughness_glossy = 0.2,
+  uniform float roughness_diffuse = 0.1,
+  uniform float ior = 1.46
+) = let {
+  base::texture_coordinate_info coordinate = base::transform_coordinate(
+    transform: base::rotation_translation_scale(0.0, 0.0, float3(1, 1, 1))
+  );
+  base::texture_return diffuse_map = base::file_texture(
+    texture: diffuse_texture,
+    uvw: coordinate
+  );
+} in  material (
+  surface: material_surface(
+    scattering: df::fresnel_layer(
+      layer: df::specular_bsdf(
+        mode: df::scatter_reflect,
+        tint: color(0.9)),
+      base: df::fresnel_layer(
+        layer: df::simple_glossy_bsdf(
+          mode: df::scatter_reflect,
+          roughness_u: roughness_glossy,
+          roughness_v: roughness_glossy,
+          tint: color(0.9)),
+        base: df::diffuse_reflection_bsdf(
+          roughness: roughness_diffuse,
+          tint: diffuse_map.tint),
+        ior: ior
+      ),
+      ior: ior
+    )
+  )
+);
+export material window_tiff(
+  uniform texture_2d diffuse_texture = texture_2d("window.tiff"),
+  uniform float roughness = 0.3,
+  uniform float ior = 2.4
+) = let {
+  base::texture_coordinate_info coordinate = base::transform_coordinate(
+    transform: base::rotation_translation_scale(0.0, 0.0, float3(1, 1, 1))
+  );
+  base::texture_return diffuse_map = base::file_texture(
+    texture: diffuse_texture,
+    uvw: coordinate
+  );
+} in  material (
+  surface: material_surface(
+    scattering: df::fresnel_layer(
+      layer: df::simple_glossy_bsdf(
+        mode: df::scatter_reflect,
+        roughness_u: roughness,
+        roughness_v: roughness,
+        tint: diffuse_map.tint),
+      ior: ior
+    )
+  )
+);
+
