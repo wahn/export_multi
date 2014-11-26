@@ -1,4 +1,4 @@
-38a39,61
+119a120,142
 > 		<white_point>
 > 			0.333333 0.333333			
 > 		</white_point>
@@ -22,22 +22,17 @@
 > 			<xyz>0.9993232488632202 0.9994908571243286 0.9989829063415527</xyz>
 > 			<gain>100</gain>
 > 		</layer_setting>
-50d72
-<     <autofocus/>
-69,76c91,93
+151,155d173
 <     <reinhard>
 <       <pre_scale>4</pre_scale>
 <       <post_scale>1</post_scale>
 <       <burn>6</burn>
 <     </reinhard>
-<     <linear>
+157c175
 <       <scale>1</scale>
-<     </linear>
 ---
-> 		<linear>
-> 			<scale>10</scale>
-> 		</linear>
-132,139c149,154
+>       <scale>10</scale>
+214,221c232,237
 <       <absorption_coefficient>
 <         <constant>
 <           <rgb>
@@ -53,19 +48,15 @@
 >           <rgb>0.9599999785423279 0.9599999785423279 0.9599999785423279</rgb>
 >         </rgb>
 >       </absorption_coefficient_spectrum>
-141c156
+223c239
 <     <precedence>2</precedence>
 ---
 >     <precedence>10</precedence>
-289c304
-<       <ior>1.5000000074505806</ior>
----
->       <ior>1.5</ior>
-291c306
+373c389
 <         <constant>4999.999925494194</constant>
 ---
 >         <constant>10000.0</constant>
-426,433c441,446
+508,515c524,529
 <       <absorption_coefficient>
 <         <constant>
 <           <rgb>
@@ -81,7 +72,7 @@
 >           <rgb>0.5 0.5 0.5</rgb>
 >         </rgb>
 >       </absorption_coefficient_spectrum>
-435c448
+517c531
 <     <precedence>2</precedence>
 ---
 >     <precedence>10</precedence>

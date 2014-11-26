@@ -1,4 +1,32 @@
-38a39,61
+57,83d56
+< <!-- cam2 -->
+< <!--  <camera>-->
+< <!--    <uid>3</uid>-->
+< <!--    <name>uid3_Camera</name>-->
+< <!--    <aperture_radius>0.0024142132842501257</aperture_radius>-->
+< <!--    <focus_distance>10</focus_distance>-->
+< <!--    <sensor_width>0.032</sensor_width>-->
+< <!--    <lens_sensor_dist>0.03862741254800201</lens_sensor_dist>-->
+< <!--    <exposure_duration>0.008</exposure_duration>-->
+< <!--    <lens_shift_up_distance>0</lens_shift_up_distance>-->
+< <!--    <lens_shift_right_distance>0</lens_shift_right_distance>-->
+< <!--    <autofocus/>-->
+< <!--    <aperture_shape>-->
+< <!--      <circular/>-->
+< <!--    </aperture_shape>-->
+< <!--    <keyframe>-->
+< <!--      <time>0</time>-->
+< <!--      <pos>3.931999921798706 0.9160000085830688 0.8930000066757202</pos>-->
+< <!--      <rotation_quaternion>-->
+< <!--        <axis>0 0 1</axis>-->
+< <!--        <angle>0</angle>-->
+< <!--      </rotation_quaternion>-->
+< <!--    </keyframe>-->
+< <!--    <up>0.09415383636951447 -0.0064704143442213535 0.9955365657806396</up>-->
+< <!--    <forwards>-0.9931941032409668 0.0682540163397789 0.09437590092420578</forwards>-->
+< <!--    <camera_type>thin-lens-perspective</camera_type>-->
+< <!--  </camera>-->
+119a93,115
 > 		<white_point>
 > 			0.333333 0.333333			
 > 		</white_point>
@@ -22,36 +50,67 @@
 > 			<xyz>0.9993232488632202 0.9994908571243286 0.9989829063415527</xyz>
 > 			<gain>100</gain>
 > 		</layer_setting>
-44c67
+121c117
+< <!-- cam1 -->
+---
+>   <!-- cam2 -->
+123,124c119,120
+<     <uid>5</uid>
+<     <name>uid5_Camera</name>
+---
+>     <uid>3</uid>
+>     <name>uid3_Camera</name>
+126c122
 <     <focus_distance>10</focus_distance>
 ---
 >     <focus_distance>1.85</focus_distance>
-50d72
+132d127
 <     <autofocus/>
-56c78
+138c133
 <       <pos>2.25 0.375 1.0</pos>
 ---
 >       <pos>3.931999921798706 0.9160000085830688 0.8930000066757202</pos>
-62,63c84,85
+144,145c139,140
 <     <up>-0.3651483952999115 0.18257419764995575 0.9128709435462952</up>
 <     <forwards>-0.8164965510368347 0.40824827551841736 -0.40824827551841736</forwards>
 ---
 >     <up>0.09415383636951447 -0.0064704143442213535 0.9955365657806396</up>
 >     <forwards>-0.9931941032409668 0.0682540163397789 0.09437590092420578</forwards>
-69,76c91,93
+147a143,169
+> <!-- cam1 -->
+> <!-- <camera> -->
+> <!--   <uid>5</uid> -->
+> <!--   <name>uid5_Camera</name> -->
+> <!--   <aperture_radius>0.0024142132842501257</aperture_radius> -->
+> <!--   <focus_distance>10</focus_distance> -->
+> <!--   <sensor_width>0.032</sensor_width> -->
+> <!--   <lens_sensor_dist>0.03862741254800201</lens_sensor_dist> -->
+> <!--   <exposure_duration>0.008</exposure_duration> -->
+> <!--   <lens_shift_up_distance>0</lens_shift_up_distance> -->
+> <!--   <lens_shift_right_distance>0</lens_shift_right_distance> -->
+> <!--   <autofocus/> -->
+> <!--   <aperture_shape> -->
+> <!--     <circular/> -->
+> <!--   </aperture_shape> -->
+> <!--   <keyframe> -->
+> <!--     <time>0</time> -->
+> <!--     <pos>2.25 0.375 1.0</pos> -->
+> <!--     <rotation_quaternion> -->
+> <!--       <axis>0 0 1</axis> -->
+> <!--       <angle>0</angle> -->
+> <!--     </rotation_quaternion> -->
+> <!--   </keyframe> -->
+> <!--   <up>-0.3651483952999115 0.18257419764995575 0.9128709435462952</up> -->
+> <!--   <forwards>-0.8164965510368347 0.40824827551841736 -0.40824827551841736</forwards> -->
+> <!--   <camera_type>thin-lens-perspective</camera_type> -->
+> <!-- </camera> -->
+151,155d172
 <     <reinhard>
 <       <pre_scale>4</pre_scale>
 <       <post_scale>1</post_scale>
 <       <burn>6</burn>
 <     </reinhard>
-<     <linear>
-<       <scale>1</scale>
-<     </linear>
----
-> 		<linear>
-> 			<scale>1</scale>
-> 		</linear>
-132,139c149,154
+214,221c231,236
 <       <absorption_coefficient>
 <         <constant>
 <           <rgb>
@@ -67,19 +126,15 @@
 >           <rgb>0.9599999785423279 0.9599999785423279 0.9599999785423279</rgb>
 >         </rgb>
 >       </absorption_coefficient_spectrum>
-141c156
+223c238
 <     <precedence>2</precedence>
 ---
 >     <precedence>10</precedence>
-289c304
-<       <ior>1.5000000074505806</ior>
----
->       <ior>1.5</ior>
-291c306
+373c388
 <         <constant>4999.999925494194</constant>
 ---
 >         <constant>10000.0</constant>
-426,433c441,446
+508,515c523,528
 <       <absorption_coefficient>
 <         <constant>
 <           <rgb>
@@ -95,7 +150,7 @@
 >           <rgb>0.5 0.5 0.5</rgb>
 >         </rgb>
 >       </absorption_coefficient_spectrum>
-435c448
+517c530
 <     <precedence>2</precedence>
 ---
 >     <precedence>10</precedence>
