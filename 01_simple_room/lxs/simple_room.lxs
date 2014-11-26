@@ -215,9 +215,9 @@ WorldBegin
       "float power" [ 100.0 ]
       "color L" [ 1.0 1.0 1.0 ]
     Shape "sphere"
-      "float radius" [ 1 ]
-      "float zmin" [ -1 ]
-      "float zmax" [ 1 ]
+      "float radius" [ 1.0 ]
+      "float zmin" [ -1.0 ]
+      "float zmax" [ 1.0 ]
       "float phimax" [ 360 ]
   AttributeEnd
   # building
@@ -407,9 +407,9 @@ WorldBegin
     ]
     NamedMaterial "chrome"
     Shape "cylinder"
-      "float radius" [ 1 ]
+      "float radius" [ 1.0 ]
       "float zmin" [ 0 ]
-      "float zmax" [ 1 ]
+      "float zmax" [ 1.0 ]
       "float phimax" [ 360 ]
   AttributeEnd
   # ball
@@ -422,9 +422,9 @@ WorldBegin
     ]
     NamedMaterial "crystal"
     Shape "sphere"
-      "float radius" [ 1 ]
-      "float zmin" [ -1 ]
-      "float zmax" [ 1 ]
+      "float radius" [ 1.0 ]
+      "float zmin" [ -1.0 ]
+      "float zmax" [ 1.0 ]
       "float phimax" [ 360 ]
   AttributeEnd
 WorldEnd
