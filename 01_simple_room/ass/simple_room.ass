@@ -1,6 +1,6 @@
-### exported: Fri Sep 12 12:55:30 2014
-### from:     Arnold 4.2.1.0 linux clang-3.4.0 glibc-2.5 oiio-1.4.10 rlm-10.1.2 2014/09/08 12:33:19
-### host app: Blender 2.71.0
+### exported: Wed Nov 26 11:46:12 2014
+### from:     Arnold 4.2.2.0 darwin clang-4.2.0 oiio-1.4.14 rlm-11.1.2 2014/11/03 15:27:51
+### host app: Blender 2.72.0
 
 
 
@@ -8,20 +8,19 @@ options
 {
  AA_samples 8
  outputs 7 1 STRING
-
-  "RGBA RGBA filter driver" 
-  "direct_diffuse RGB filter driver_direct_diffuse" 
-  "direct_specular RGB filter driver_direct_specular" 
-  "reflection RGB filter driver_reflection" 
-  "refraction RGB filter driver_refraction" 
-  "indirect_diffuse RGB filter driver_indirect_diffuse" 
+  "RGBA RGBA filter driver"
+  "direct_diffuse RGB filter driver_direct_diffuse"
+  "direct_specular RGB filter driver_direct_specular"
+  "reflection RGB filter driver_reflection"
+  "refraction RGB filter driver_refraction"
+  "indirect_diffuse RGB filter driver_indirect_diffuse"
   "indirect_specular RGB filter driver_indirect_specular"
  xres 500
  yres 500
  bucket_scanning "hilbert"
  camera "CAcam1"
  background "sun_sky"
- shader_searchpath "/usr/people/jan/Graphics/Rendering/Arnold/shaders/current"
+ shader_searchpath "/Users/jan/Graphics/Rendering/Arnold/shaders/current"
  texture_gamma 2.20000005
  GI_diffuse_depth 3
  GI_glossy_depth 1
@@ -307,14 +306,14 @@ polymesh
  nsides 9 1 UINT
   4 4 4 4 4 4 4 4 4
  vidxs 36 1 UINT
-  0 1 2 3 6 8 9 5 10 4 5 9 11 7 4 10 8 6 7 11 12 13 14 15 16 17 18 19 20 21 22 23 
-  24 25 26 27
+  0 1 2 3 6 8 9 5 10 4 5 9 11 7 4 10 8 6 7 11 12 13 14 15 16 17 18 19 20 21 22 23 24
+  25 26 27
  shidxs 9 1 BYTE
   0 1 1 1 1 1 2 1 1
  vlist 28 1 POINT
-  3 2 1.75 3 0 1.75 0 0 1.75 0 2 1.75 3 2 1.75 3 2 0 3 0 0 3 0 1.75 3 0.625 0.625 
-  3 1.375 0.625 3 1.375 1.375 3 0.625 1.375 3 2 1.75 0 2 1.75 0 2 0 3 2 0 0 0 0 3 0 0 
-  3 2 0 0 2 0 0 0 0 0 2 0 0 2 1.75 0 0 1.75 0 0 0 0 0 1.75 3 0 1.75 3 0 0
+  3 2 1.75 3 0 1.75 0 0 1.75 0 2 1.75 3 2 1.75 3 2 0 3 0 0 3 0 1.75 3 0.625 0.625 3 1.375 0.625
+  3 1.375 1.375 3 0.625 1.375 3 2 1.75 0 2 1.75 0 2 0 3 2 0 0 0 0 3 0 0 3 2 0
+  0 2 0 0 0 0 0 2 0 0 2 1.75 0 0 1.75 0 0 0 0 0 1.75 3 0 1.75 3 0 0
  matrix
  1 0 0 0
  0 1 0 0

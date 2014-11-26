@@ -2,13 +2,17 @@
 <  AA_samples 8
 ---
 >  AA_samples 3
-26,27c26,27
+23c23
+<  shader_searchpath "/Users/jan/Graphics/Rendering/Arnold/shaders/current"
+---
+>  shader_searchpath "/usr/people/jan/Graphics/Rendering/Arnold/shaders/current"
+25,26c25,26
 <  GI_diffuse_depth 3
 <  GI_glossy_depth 1
 ---
 >  GI_diffuse_depth 2
 >  GI_glossy_depth 0
-31,34c31,34
+30,33c30,33
 <  GI_diffuse_samples 3
 <  GI_single_scatter_samples 4
 <  GI_glossy_samples 3
@@ -18,15 +22,15 @@
 >  GI_single_scatter_samples 5
 >  GI_glossy_samples 2
 >  GI_refraction_samples 2
-135c135
+134c134
 <  intensity 1
 ---
 >  intensity 100
-188c188
+187c187
 <  radius 1
 ---
 >  radius 0.125
-191,193c191,193
+190,192c190,192
 <  0.125 0 0 0
 <  0 0.125 0 0
 <  0 0 0.125 0
@@ -34,11 +38,11 @@
 >  1 0 0 0
 >  0 1 0 0
 >  0 0 1 0
-202c202
+201c201
 <  Color 1 1 1
 ---
 >  Color 10 10 10
-215,216c215,216
+214,215c214,215
 <  intensity 100
 <  samples 1
 ---
