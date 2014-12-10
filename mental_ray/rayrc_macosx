@@ -1,0 +1,32 @@
+registry "{_MI_REG_INCLUDE}"
+  value ".;/usr/local/mental_ray/common/include;/usr/people/jan/git/mental_ray_shaders/include;/usr/people/jan/git/blender-add-ons/shaders/mental_ray/include"
+end registry
+
+registry "{_MI_REG_LIBRARY}"
+  value ".;/usr/local/mental_ray/macosx-x86-64-clang/shaders;/usr/people/jan/git/mental_ray_shaders/library;/usr/people/jan/git/blender-add-ons/shaders/mental_ray/library;/usr/local/mental_ray/macosx-x86-64-clang/bin"
+end registry
+
+# convenience include/link lines
+
+# include mental images' shaders (coming with mental ray)
+link "base.so"
+$include "base.mi"
+link "contour.so"
+$include "contour.mi"
+link "physics.so"
+$include "physics.mi"
+link "subsurface.so"
+$include "subsurface.mi"
+# include shaders from Andy Kopra's book
+link "wmrs.so"
+$include "wmrs.mi"
+link "newblocks.so"
+$include "newblocks.mi"
+# include shaders for Massive
+link "mill_massive.so"
+$include "mill_massive.mi"
+# include shaders for io_scene_multi
+link "mi_blender_material.so"
+$include "mi_blender_material.mi"
+link "mi_defaultsurface.so"
+$include "mi_defaultsurface.mi"
