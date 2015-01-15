@@ -1,0 +1,229 @@
+### exported: Thu Jan 15 19:53:50 2015
+### from:     Arnold 4.2.2.0 linux clang-3.4.0 glibc-2.5 oiio-1.4.14 rlm-11.1.2 2014/11/03 15:27:58
+### host app: Blender 2.73.0
+
+
+
+options
+{
+ AA_samples 5
+ outputs 7 1 STRING
+  "RGBA RGBA filter driver"
+  "direct_diffuse RGB filter driver_direct_diffuse"
+  "direct_specular RGB filter driver_direct_specular"
+  "reflection RGB filter driver_reflection"
+  "refraction RGB filter driver_refraction"
+  "indirect_diffuse RGB filter driver_indirect_diffuse"
+  "indirect_specular RGB filter driver_indirect_specular"
+ xres 500
+ yres 500
+ bucket_scanning "hilbert"
+ camera "CACamera"
+ shader_searchpath "/usr/people/jan/Graphics/Rendering/Arnold/shaders/current"
+ texture_gamma 2.20000005
+ GI_diffuse_depth 3
+ GI_glossy_depth 1
+ GI_reflection_depth 6
+ GI_refraction_depth 6
+ GI_total_depth 12
+ GI_diffuse_samples 12
+ GI_single_scatter_samples 4
+ GI_glossy_samples 3
+ GI_refraction_samples 3
+}
+
+persp_camera
+{
+ name CACamera
+ fov 39.1462517
+ matrix
+ 1 3.01991605e-07 0 0
+ -2.27997315e-14 7.54979013e-08 1 0
+ 3.01991605e-07 -1 7.54979013e-08 0
+ -0.277999938 -0.800000012 0.273000002 1
+}
+
+gaussian_filter
+{
+ name filter
+}
+
+driver_exr
+{
+ name driver
+ filename "arnold.exr"
+}
+
+driver_exr
+{
+ name driver_direct_diffuse
+ filename "arnold_aov_direct_diffuse.exr"
+}
+
+driver_exr
+{
+ name driver_direct_specular
+ filename "arnold_aov_direct_specular.exr"
+}
+
+driver_exr
+{
+ name driver_reflection
+ filename "arnold_aov_reflection.exr"
+}
+
+driver_exr
+{
+ name driver_refraction
+ filename "arnold_aov_refraction.exr"
+}
+
+driver_exr
+{
+ name driver_indirect_diffuse
+ filename "arnold_aov_indirect_diffuse.exr"
+}
+
+driver_exr
+{
+ name driver_indirect_specular
+ filename "arnold_aov_indirect_specular.exr"
+}
+
+polymesh
+{
+ name MELight
+ nsides 4
+ vidxs 4 1 UINT
+0 2 3 1
+ shidxs 0
+ vlist 4 1 POINT
+-0.06500002 0 -0.0524999872 -0.0650000051 0 0.0525000021 0.0650000051 0 -0.0525000021 0.0650000051 0 0.0525000021
+ matrix
+ -1 8.74227766e-08 0 0
+ 3.82137135e-15 4.37113883e-08 1 0
+ 8.74227766e-08 1 -4.37113883e-08 0
+ -0.278000027 0.279500008 0.547800004 1
+ shader "MAEmitter"
+ opaque on
+}
+
+ass_constant
+{
+ name MAEmitter
+ Color 1 1 1
+}
+
+mesh_light
+{
+ name MALight_light
+ mesh "MELight"
+ color 1 1 1
+ intensity 1
+ samples 5
+}
+
+polymesh
+{
+ name MElarge_box
+ nsides 6 1 UINT
+4 4 4 4 4 4
+ vidxs 24 1 UINT
+  1 0 4 5 5 6 2 1 6 7 3 2 0 3 7 4 0 1 2 3 7 6 5 4
+ shidxs 6 1 BYTE
+0 0 0 0 0 0
+ vlist 8 1 POINT
+-0.000500000024 -0.000500000024 -0.000500000024 -0.000500000024 0.000500000024 -0.000500000024 0.000500000024 0.000500000024 -0.000500000024
+  0.000500000024 -0.000500000024 -0.000500000024 -0.000500000024 -0.000500000024 0.000500000024
+  -0.000500000024 0.000500000024 0.000500000024 0.000500000024 0.000500000024 0.000500000024
+  0.000500000024 -0.000500000024 0.000500000024
+ matrix
+ -48.8863716 157.591644 -2.88495157e-05 0
+ -3.31803108e-06 5.93821751e-05 330 0
+ 157.591644 48.8863716 -7.21237893e-06 0
+ -0.36800006 0.351000011 0.165000036 1
+ shader "MAbox_Material"
+ opaque on
+}
+
+standard
+{
+ name MAbox_Material
+ Kd 1
+ Kd_color 0.5 0.5 0.5
+ Ks 0
+ Ks_color 1 1 1
+}
+
+polymesh
+{
+ name MEsmall_box
+ nsides 6 1 UINT
+4 4 4 4 4 4
+ vidxs 24 1 UINT
+  1 0 4 5 5 6 2 1 6 7 3 2 0 3 7 4 0 1 2 3 7 6 5 4
+ shidxs 6 1 BYTE
+0 0 0 0 0 0
+ vlist 8 1 POINT
+-0.00100000005 -0.00100000005 -0.00100000005 -0.00100000005 0.00100000005 -0.00100000005 0.00100000005 0.00100000005 -0.00100000005
+  0.00100000005 -0.00100000005 -0.00100000005 -0.00100000005 -0.00100000005 0.00100000005
+  -0.00100000005 0.00100000005 0.00100000005 0.00100000005 0.00100000005 0.00100000005
+  0.00100000005 -0.00100000005 0.00100000005
+ matrix
+ -79.0550308 23.5913849 3.09363463e-06 0
+ 1.18335277e-06 -6.85313262e-06 82.5000076 0
+ 23.5913849 79.0550308 6.2285776e-06 0
+ -0.185000017 0.169000015 0.0825000182 1
+ shader "MAbox_Material"
+ opaque on
+}
+
+polymesh
+{
+ name MEcornell_box
+ nsides 5 1 UINT
+4 4 4 4 4
+ vidxs 20 1 UINT
+  2 0 1 3 6 5 4 7 6 0 2 5 3 4 5 2 0 6 7 1
+ shidxs 5 1 BYTE
+0 0 0 2 1
+ vlist 8 1 POINT
+0.549600005 0 0.559200048 0.5528 0 0 0 0 0.559200048 0 0 0 0 0.548799992 0 0 0.548799992 0.559200048 0.556000054 0.548799992 0.559200048
+  0.556000054 0.548799992 0
+ matrix
+ -1 -1.50995803e-07 0 0
+ 1.13998658e-14 -7.54979013e-08 1 0
+ -1.50995803e-07 1 7.54979013e-08 0
+ 0 0 0 1
+ shader 3 1 NODE
+"MAcbox_Material" "MAcbox_red" "MAcbox_green"
+ opaque on
+}
+
+standard
+{
+ name MAcbox_Material
+ Kd 1
+ Kd_color 0.400000006 0.400000006 0.400000006
+ Ks 0
+ Ks_color 1 1 1
+}
+
+standard
+{
+ name MAcbox_red
+ Kd 1
+ Kd_color 0.5 0 0
+ Ks 0
+ Ks_color 1 1 1
+}
+
+standard
+{
+ name MAcbox_green
+ Kd 1
+ Kd_color 0 0.5 0
+ Ks 0
+ Ks_color 1 1 1
+}
+
