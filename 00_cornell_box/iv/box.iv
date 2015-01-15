@@ -1,0 +1,93 @@
+#Inventor V2.0 ascii
+
+Separator {
+Info {
+	string "The Cornell box"
+}
+
+Separator {
+Info {
+	string "The box"
+}
+ShapeHints {
+	vertexOrdering	COUNTERCLOCKWISE
+}
+Coordinate3 {
+point [
+	552.8 0.0   0.0,
+	  0.0 0.0   0.0,
+	  0.0 0.0 559.2,
+	549.6 0.0 559.2,
+
+	556.0 548.8 0.0,  
+	556.0 548.8 559.2,
+	  0.0 548.8 559.2,
+	  0.0 548.8   0.0 ]
+}
+Material {
+	ambientColor	0.5 0.5 0.5
+	diffuseColor	0.4 0.4 0.4
+}
+IndexedFaceSet {
+coordIndex  [
+	0, 1, 2, 3, -1,
+	4, 5, 6, 7, -1,
+	6, 5, 3, 2 ]
+}
+Material {
+	ambientColor	0.0 0.5 0.0
+	diffuseColor	0.0 0.5 0.0
+}
+IndexedFaceSet {
+coordIndex  [
+	7, 6, 2, 1 ]
+}
+Material {
+	ambientColor	0.5 0.0 0.0
+	diffuseColor	0.5 0.0 0.0
+}
+IndexedFaceSet {
+coordIndex  [
+	0, 3, 5, 4 ]
+}
+}
+
+Separator {
+Info {
+	string "The small box"
+}
+Material {
+	ambientColor	0.6 0.6 0.6
+	diffuseColor	0.5 0.5 0.5
+}
+Transform {
+	rotation	0 1 0  -0.29
+	translation	185 82.5 169
+}
+Cube {
+	width	165
+	height	165
+	depth	165
+}
+}
+
+Separator {
+Info {
+	string "The large box"
+}
+Material {
+	ambientColor	0.6 0.6 0.6
+	diffuseColor	0.5 0.5 0.5
+}
+Transform {
+	rotation	0 1 0  -1.27
+	translation	368 165 351
+}
+Cube {
+	width	165
+	height	330
+	depth	165
+}
+}
+
+}
