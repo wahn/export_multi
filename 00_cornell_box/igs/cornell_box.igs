@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scene>
+	<renderer_settings>
+		<uid>1</uid>
+		<name>Render Settings</name>
+		<bidirectional>true</bidirectional>
+		<verbose>false</verbose>
+		<write_aperture_preview>false</write_aperture_preview>
+		<save_tonemapped_exr>false</save_tonemapped_exr>
+		<save_untonemapped_exr>false</save_untonemapped_exr>
+		<save_igi>false</save_igi>
+		<save_png>true</save_png>
+		<auto_choose_num_threads>true</auto_choose_num_threads>
+		<cache_trees>true</cache_trees>
+		<metropolis>true</metropolis>
+		<logging>false</logging>
+		<watermark>false</watermark>
+		<aperture_diffraction>false</aperture_diffraction>
+		<post_process_diffraction>false</post_process_diffraction>
+		<material_id_tracer>false</material_id_tracer>
+		<render_foreground_alpha>false</render_foreground_alpha>
+		<depth_pass>false</depth_pass>
+		<shadow_pass>false</shadow_pass>
+		<info_overlay>true</info_overlay>
+		<wait_for_slave_frames_on_stop>false</wait_for_slave_frames_on_stop>
+		<close_gui_on_halt>false</close_gui_on_halt>
+		<save_images_on_close>false</save_images_on_close>
+		<glass_acceleration>true</glass_acceleration>
+		<vignetting>true</vignetting>
+		<merging>true</merging>
+		<dithering>true</dithering>
+		<version_three_point_four_compat_env_sphere>false</version_three_point_four_compat_env_sphere>
+		<max_depth>10000</max_depth>
+		<max_num_consec_rejections>10000</max_num_consec_rejections>
+		<num_threads>1</num_threads>
+		<width>500</width>
+		<height>500</height>
+		<super_sample_factor>2</super_sample_factor>
+		<bih_tri_threshold>1100000</bih_tri_threshold>
+		<batched>false</batched>
+		<gpu>false</gpu>
+		<halt_time>-1</halt_time>
+		<halt_samples_per_pixel>-1</halt_samples_per_pixel>
+		<frame_upload_period>40</frame_upload_period>
+		<large_mutation_prob>0.4</large_mutation_prob>
+		<max_change>0.01</max_change>
+		<image_save_period>60</image_save_period>
+		<gpu_path_tracing>false</gpu_path_tracing>
+		<hybrid>false</hybrid>
+		<splat_filter>
+			<fastbox/>
+		</splat_filter>
+		<downsize_filter>
+			<mn_cubic>
+				<blur>1</blur>
+				<ring>0</ring>
+				<radius>1.649999976158142</radius>
+			</mn_cubic>
+		</downsize_filter>
+		<white_point>
+			0.333333 0.333333			
+		</white_point>
+		<layer_setting>
+			<name>default</name>
+			<enabled>false</enabled>
+			<layer_scale>
+				<xyz>
+					<xyz>1 1 1</xyz>
+					<gain>1</gain>
+				</xyz>
+			</layer_scale>
+		</layer_setting>
+		<layer_setting>
+			<name>sun</name>
+			<enabled>false</enabled>
+			<layer_scale>
+				<xyz>
+					<xyz>1 1 1</xyz>
+					<gain>1</gain>
+				</xyz>
+			</layer_scale>
+		</layer_setting>
+		<layer_setting>
+			<name>sky</name>
+			<enabled>false</enabled>
+			<layer_scale>
+				<xyz>
+					<xyz>1 1 1</xyz>
+					<gain>1</gain>
+				</xyz>
+			</layer_scale>
+		</layer_setting>
+		<layer_setting>
+			<name>Emitter</name>
+			<enabled>true</enabled>
+			<layer_scale>
+				<xyz>
+					<xyz>1 1 1</xyz>
+					<gain>1</gain>
+				</xyz>
+			</layer_scale>
+		</layer_setting>
+	</renderer_settings>
+
+	<camera>
+		<uid>2</uid>
+		<name>uid2_Camera</name>
+		<aperture_radius>0.002812499933903203</aperture_radius>
+		<focus_distance>10</focus_distance>
+		<sensor_width>0.032</sensor_width>
+		<lens_sensor_dist>0.04499999894245125</lens_sensor_dist>
+		<exposure_duration>0.008</exposure_duration>
+		<lens_shift_up_distance>0</lens_shift_up_distance>
+		<lens_shift_right_distance>0</lens_shift_right_distance>
+	<autofocus/>
+		<aperture_shape>
+			<circular/>
+		</aperture_shape>
+		<keyframe>
+			<time>0</time>
+			<pos>-0.2779999521691323 -0.800000037997961 0.2730000129668042</pos>
+			<rotation_quaternion>
+				<axis>0 0 1</axis>
+				<angle>0</angle>
+			</rotation_quaternion>
+		</keyframe>
+		<up>-2.279973153091093e-14 7.549790126404332e-8 1</up>
+		<forwards>-3.019916050561733e-7 1 -7.549790126404332e-8</forwards>
+		<camera_type>thin-lens-perspective</camera_type>
+	</camera>
+
+	<tonemapping>
+		<uid>3</uid>
+		<name>Tone Mapping</name>
+		<linear>
+			<scale>250000</scale>
+		</linear>
+	</tonemapping>
+
+	<material>
+		<uid>4</uid>
+		<name>default_material</name>
+		<diffuse>
+			<albedo>
+				<constant>
+					<rgb>
+						<rgb>0.8 0.8 0.8</rgb>
+						<gamma>1</gamma>
+					</rgb>
+				</constant>
+			</albedo>
+			<random_triangle_colours>false</random_triangle_colours>
+			<layer>0</layer>
+		</diffuse>
+	</material>
+
+	<material>
+		<uid>5</uid>
+		<name>Emitter</name>
+		<diffuse>
+			<albedo>
+				<constant>
+					<rgb>
+						<rgb>1 1 1</rgb>
+						<gamma>1</gamma>
+					</rgb>
+				</constant>
+			</albedo>
+			<base_emission>
+				<constant>
+					<uniform>
+						<value>10000</value>
+					</uniform>
+				</constant>
+			</base_emission>
+			<emission>
+				<constant>
+					<rgb>
+						<rgb>1 1 1</rgb>
+						<gamma>1</gamma>
+					</rgb>
+				</constant>
+			</emission>
+			<random_triangle_colours>false</random_triangle_colours>
+			<layer>3</layer>
+		</diffuse>
+	</material>
+
+	<mesh>
+		<uid>6</uid>
+		<name>uid6_Light</name>
+		<max_num_subdivisions>0</max_num_subdivisions>
+		<subdivide_pixel_threshold>0</subdivide_pixel_threshold>
+		<subdivide_curvature_threshold>0</subdivide_curvature_threshold>
+		<displacement_error_threshold>0</displacement_error_threshold>
+		<view_dependent_subdivision>false</view_dependent_subdivision>
+		<subdivision_smoothing>true</subdivision_smoothing>
+		<normal_smoothing>false</normal_smoothing>
+		<merge_vertices_with_same_pos_and_normal>true</merge_vertices_with_same_pos_and_normal>
+		<view_dependent_subdivision>false</view_dependent_subdivision>
+		<scale>1</scale>
+		<external>
+			<path>cornell_box_meshes/mesh_1810852719_103.igmesh</path>
+		</external>
+	</mesh>
+
+	<material>
+		<uid>7</uid>
+		<name>box_Material</name>
+		<diffuse>
+			<albedo>
+				<constant>
+					<rgb>
+						<rgb>0.5 0.5 0.5</rgb>
+						<gamma>1</gamma>
+					</rgb>
+				</constant>
+			</albedo>
+			<random_triangle_colours>false</random_triangle_colours>
+			<layer>0</layer>
+		</diffuse>
+	</material>
+
+	<mesh>
+		<uid>8</uid>
+		<name>uid8_large_box</name>
+		<max_num_subdivisions>0</max_num_subdivisions>
+		<subdivide_pixel_threshold>0</subdivide_pixel_threshold>
+		<subdivide_curvature_threshold>0</subdivide_curvature_threshold>
+		<displacement_error_threshold>0</displacement_error_threshold>
+		<view_dependent_subdivision>false</view_dependent_subdivision>
+		<subdivision_smoothing>true</subdivision_smoothing>
+		<normal_smoothing>false</normal_smoothing>
+		<merge_vertices_with_same_pos_and_normal>true</merge_vertices_with_same_pos_and_normal>
+		<view_dependent_subdivision>false</view_dependent_subdivision>
+		<scale>1</scale>
+		<external>
+			<path>cornell_box_meshes/mesh_970142982_336.igmesh</path>
+		</external>
+	</mesh>
+
+	<mesh>
+		<uid>9</uid>
+		<name>uid9_small_box</name>
+		<max_num_subdivisions>0</max_num_subdivisions>
+		<subdivide_pixel_threshold>0</subdivide_pixel_threshold>
+		<subdivide_curvature_threshold>0</subdivide_curvature_threshold>
+		<displacement_error_threshold>0</displacement_error_threshold>
+		<view_dependent_subdivision>false</view_dependent_subdivision>
+		<subdivision_smoothing>true</subdivision_smoothing>
+		<normal_smoothing>false</normal_smoothing>
+		<merge_vertices_with_same_pos_and_normal>true</merge_vertices_with_same_pos_and_normal>
+		<view_dependent_subdivision>false</view_dependent_subdivision>
+		<scale>1</scale>
+		<external>
+			<path>cornell_box_meshes/mesh_2799352261_336.igmesh</path>
+		</external>
+	</mesh>
+
+	<material>
+		<uid>10</uid>
+		<name>cbox_Material</name>
+		<diffuse>
+			<albedo>
+				<constant>
+					<rgb>
+						<rgb>0.4000000059604645 0.4000000059604645 0.4000000059604645</rgb>
+						<gamma>1</gamma>
+					</rgb>
+				</constant>
+			</albedo>
+			<random_triangle_colours>false</random_triangle_colours>
+			<layer>0</layer>
+		</diffuse>
+	</material>
+
+	<material>
+		<uid>11</uid>
+		<name>cbox_red</name>
+		<diffuse>
+			<albedo>
+				<constant>
+					<rgb>
+						<rgb>0.5 0 0</rgb>
+						<gamma>1</gamma>
+					</rgb>
+				</constant>
+			</albedo>
+			<random_triangle_colours>false</random_triangle_colours>
+			<layer>0</layer>
+		</diffuse>
+	</material>
+
+	<material>
+		<uid>12</uid>
+		<name>cbox_green</name>
+		<diffuse>
+			<albedo>
+				<constant>
+					<rgb>
+						<rgb>0 0.5 0</rgb>
+						<gamma>1</gamma>
+					</rgb>
+				</constant>
+			</albedo>
+			<random_triangle_colours>false</random_triangle_colours>
+			<layer>0</layer>
+		</diffuse>
+	</material>
+
+	<mesh>
+		<uid>13</uid>
+		<name>uid13_cornell_box</name>
+		<max_num_subdivisions>0</max_num_subdivisions>
+		<subdivide_pixel_threshold>0</subdivide_pixel_threshold>
+		<subdivide_curvature_threshold>0</subdivide_curvature_threshold>
+		<displacement_error_threshold>0</displacement_error_threshold>
+		<view_dependent_subdivision>false</view_dependent_subdivision>
+		<subdivision_smoothing>true</subdivision_smoothing>
+		<normal_smoothing>false</normal_smoothing>
+		<merge_vertices_with_same_pos_and_normal>true</merge_vertices_with_same_pos_and_normal>
+		<view_dependent_subdivision>false</view_dependent_subdivision>
+		<scale>1</scale>
+		<external>
+			<path>cornell_box_meshes/mesh_3079769271_319.igmesh</path>
+		</external>
+	</mesh>
+
+	<model2>
+		<uid>10000000</uid>
+		<name>uid6_Light instance</name>
+		<geometry_uid>6</geometry_uid>
+		<scale>1</scale>
+		<rotation>
+			<matrix>
+				-1 3.821371353845884e-15 8.742277657347586e-8 8.742277657347586e-8 4.371138828673793e-8 1 0 1 -4.371138828673793e-8 
+			</matrix>
+		</rotation>
+		<keyframe>
+			<time>0</time>
+			<pos>-0.27800001320429146 0.27950001327553764 0.547800013812072</pos>
+			<rotation_quaternion>
+				<axis>0 0 1</axis>
+				<angle>0</angle>
+			</rotation_quaternion>
+		</keyframe>
+		<materials>
+			<material_uid>5</material_uid>
+		</materials>
+	</model2>
+
+	<model2>
+		<uid>10000001</uid>
+		<name>uid8_large_box instance</name>
+		<geometry_uid>8</geometry_uid>
+		<scale>1</scale>
+		<rotation>
+			<matrix>
+				-48.88637161254883 -0.000003318031076560146 157.59164428710938 157.59164428710938 0.00005938217509537935 48.88637161254883 -0.000028849515729234554 330 -0.0000072123789323086385 
+			</matrix>
+		</rotation>
+		<keyframe>
+			<time>0</time>
+			<pos>-0.36800004799664165 0.3510000166716054 0.16500003835465904</pos>
+			<rotation_quaternion>
+				<axis>0 0 1</axis>
+				<angle>0</angle>
+			</rotation_quaternion>
+		</keyframe>
+		<materials>
+			<material_uid>7</material_uid>
+		</materials>
+	</model2>
+
+	<model2>
+		<uid>10000002</uid>
+		<name>uid9_small_box instance</name>
+		<geometry_uid>9</geometry_uid>
+		<scale>1</scale>
+		<rotation>
+			<matrix>
+				-79.0550308227539 0.0000011833527651106124 23.591384887695312 23.591384887695312 -0.00000685313261783449 79.0550308227539 0.000003093634632023168 82.50000762939453 0.00000622857760390616 
+			</matrix>
+		</rotation>
+		<keyframe>
+			<time>0</time>
+			<pos>-0.18500002404581828 0.16900000802706927 0.08250001917732952</pos>
+			<rotation_quaternion>
+				<axis>0 0 1</axis>
+				<angle>0</angle>
+			</rotation_quaternion>
+		</keyframe>
+		<materials>
+			<material_uid>7</material_uid>
+		</materials>
+	</model2>
+
+	<model2>
+		<uid>10000003</uid>
+		<name>uid13_cornell_box instance</name>
+		<geometry_uid>13</geometry_uid>
+		<scale>1</scale>
+		<rotation>
+			<matrix>
+				-1 1.1399865765455465e-14 -1.5099580252808664e-7 -1.5099580252808664e-7 -7.549790126404332e-8 1 0 1 7.549790126404332e-8 
+			</matrix>
+		</rotation>
+		<keyframe>
+			<time>0</time>
+			<pos>0 0 0</pos>
+			<rotation_quaternion>
+				<axis>0 0 1</axis>
+				<angle>0</angle>
+			</rotation_quaternion>
+		</keyframe>
+		<materials>
+			<material_uid>10</material_uid>
+			<material_uid>11</material_uid>
+			<material_uid>12</material_uid>
+		</materials>
+	</model2>
+
+	<background_settings>
+		<uid>14</uid>
+		<name>Background Settings</name>
+	</background_settings>
+</scene>
