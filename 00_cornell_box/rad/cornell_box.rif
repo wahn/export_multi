@@ -1,0 +1,10 @@
+ZONE = I -556 0 0 559.2 0 548.8
+scene = cornell_box.rad
+VAR = High
+DET = High
+QUAL = High
+AMB = cornell_box.amb
+INDIRECT = 1
+view = -vp -278 -800 273 -vd 0 1 0 -vh 39.146 -vv 39.146
+RESOLUTION = 500
+
