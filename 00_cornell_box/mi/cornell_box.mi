@@ -1,0 +1,364 @@
+$include "export_multi.mdl"
+$include "textured.mdl"
+$include "base.mdl"
+
+options "opt"
+  "unified sampling" on
+  "samples quality" 1.0
+  "samples min" 1.0
+  "samples max" 100.0
+  "samples error cutoff" 0.005
+  "samples improved pattern" on
+  "progressive" off
+  "progressive max time" 0
+  # "progressive subsampling size" 4
+
+  "gi" on
+  "gi rays" 100
+  "gi depth" 3
+  "gi freeze" off
+
+  "light importance sampling" on
+  "multiple importance sampling" off
+  "ray differentials" on
+  "environment lighting mode" "automatic"
+
+  filter gauss 2.0 2.0
+  trace depth 2 4 5
+
+  "light relative scale" 0.31831
+  luminance weight 0.212671 0.71516 0.072169
+
+  "trace camera clip" on
+  "trace camera motion vectors" on
+
+  object space
+  desaturate off
+  colorclip raw
+  dither off
+  shadow segments
+
+  diagnostic samples on
+end options
+
+# Camera
+camera "Camera_cam"
+  framebuffer "primary"
+    datatype "rgba_h"
+    filtering on
+    primary on
+    user off
+    filename "mental_ray.exr"
+  framebuffer "aov_direct_diffuse"
+    datatype "rgb_h"
+    filtering on
+    primary off
+    user on
+    filename "mental_ray_aov_direct_diffuse.exr"
+  framebuffer "aov_direct_specular"
+    datatype "rgb_h"
+    filtering on
+    primary off
+    user on
+    filename "mental_ray_aov_direct_specular.exr"
+  framebuffer "aov_reflection"
+    datatype "rgb_h"
+    filtering on
+    primary off
+    user on
+    filename "mental_ray_aov_reflection.exr"
+  focal 45.0
+  aperture 32.0
+  aspect 1.0
+  resolution 500 500
+end camera
+
+instance "Camera_inst" "Camera_cam"
+  transform
+    1.0 -2.2799733224976824e-14 3.019916050561733e-07 -0.0
+    -1.6940658945086007e-21 1.0 7.549790126404332e-08 -0.0 #  z
+    -3.019916050561733e-07 -7.549790126404332e-08 1.0 -0.0 # -y
+    278.00018310546875 -272.99993896484375 -799.9999389648438 1.0
+end instance
+
+# Emitter
+shader "Emitter_mat" "physical_light" (
+  "color" 6000000.0 6000000.0 6000000.0
+)
+
+material "Emitter_one_color_mat"
+  "one_color" (
+    "color" 1.0 1.0 1.0 1.0,
+  )
+end material
+
+# Light
+object "Light_obj"
+  finalgather off
+  visible on
+  shadow on
+  trace on
+  tagged on
+  group
+    # vertices [4]
+    -65.00001525878906 0.0 -52.49998474121094
+    -65.0 0.0 52.5
+    65.0 0.0 -52.5
+    65.0 0.0 52.5
+    # vertex normals [4]
+    0.0 -1.0 0.0
+    0.0 -0.999969482421875 0.0
+    0.0 -1.0 0.0
+    0.0 -1.0 0.0
+    # vertex information [4]
+    v 0 n 4 # vn
+    v 2 n 6 # vn
+    v 3 n 7 # vn
+    v 1 n 5 # vn
+    # triangles/quads [1]
+    p 0  0 1 2 3
+  end group
+end object
+
+instance "Light_inst" "Light_obj"
+  material [ "Emitter_one_color_mat" ]
+  transform
+    -1.0 3.82137093032941e-15 8.742277657347586e-08 -0.0
+    8.742277657347586e-08 4.371138828673793e-08 1.0 -0.0
+    4.235164736271502e-22 1.0 -4.371138828673793e-08 -0.0
+    -278.0000305175781 -547.7999877929688 -279.49993896484375 1.0
+end instance
+
+light "Light_light"
+  = "Emitter_mat"
+  origin 0.0 0.0 0.0
+  object "Light_inst"
+  16 1 1 1 1 # 16 is the number of samples
+  visible on
+end light
+
+instance "Light_light_inst" "Light_light" 
+end instance
+
+# box_Material
+shader "box_Material_mat" "mdl::export_multi::matte" (
+  "tint" 0.5 0.5 0.5,
+  "roughness" 0.5
+)
+
+# large_box
+object "large_box_obj"
+  visible on
+  shadow on
+  trace on
+  tagged on
+  group
+    # vertices [8]
+    -0.5 -0.5 -0.5
+    -0.5 0.5 -0.5
+    0.5 0.5 -0.5
+    0.5 -0.5 -0.5
+    -0.5 -0.5 0.5
+    -0.5 0.5 0.5
+    0.5 0.5 0.5
+    0.5 -0.5 0.5
+    # vertex information [24]
+    v 1
+    v 0
+    v 4
+    v 5
+    v 5
+    v 6
+    v 2
+    v 1
+    v 6
+    v 7
+    v 3
+    v 2
+    v 0
+    v 3
+    v 7
+    v 4
+    v 0
+    v 1
+    v 2
+    v 3
+    v 7
+    v 6
+    v 5
+    v 4
+    # triangles/quads [6]
+    p 0  0 1 2 3
+    p 0  4 5 6 7
+    p 0  8 9 10 11
+    p 0  12 13 14 15
+    p 0  16 17 18 19
+    p 0  20 21 22 23
+  end group
+end object
+
+instance "large_box_inst" "large_box_obj"
+  material [ "box_Material_mat" ]
+  transform
+    -0.0017956425435841084 -3.046859292643589e-11 0.005788489244878292 -0.0
+    0.005788489244878292 5.452908125036515e-10 0.0017956425435841084 -0.0
+    -1.0596700183995722e-09 0.003030303167179227 -2.6491747684431743e-10 -0.0
+    -2.692556142807007 -0.5000003576278687 1.4998937845230103 1.0
+end instance
+
+# small_box
+object "small_box_obj"
+  visible on
+  shadow on
+  trace on
+  tagged on
+  group
+    # vertices [8]
+    -1.0 -1.0 -1.0
+    -1.0 1.0 -1.0
+    1.0 1.0 -1.0
+    1.0 -1.0 -1.0
+    -1.0 -1.0 1.0
+    -1.0 1.0 1.0
+    1.0 1.0 1.0
+    1.0 -1.0 1.0
+    # vertex information [24]
+    v 1
+    v 0
+    v 4
+    v 5
+    v 5
+    v 6
+    v 2
+    v 1
+    v 6
+    v 7
+    v 3
+    v 2
+    v 0
+    v 3
+    v 7
+    v 4
+    v 0
+    v 1
+    v 2
+    v 3
+    v 7
+    v 6
+    v 5
+    v 4
+    # triangles/quads [6]
+    p 0  0 1 2 3
+    p 0  4 5 6 7
+    p 0  8 9 10 11
+    p 0  12 13 14 15
+    p 0  16 17 18 19
+    p 0  20 21 22 23
+  end group
+end object
+
+instance "small_box_inst" "small_box_obj"
+  material [ "box_Material_mat" ]
+  transform
+    -0.011615061201155186 1.7386260486862426e-10 0.0034661346580833197 -0.0
+    0.0034661346580833197 -1.0068879063851455e-09 0.011615061201155186 -0.0
+    4.545283871504324e-10 0.012121209874749184 9.15125974998432e-10 -0.0
+    -2.7345633506774902 -0.9999997615814209 -1.3217103481292725 1.0
+end instance
+
+# cbox_Material
+shader "cbox_Material_mat" "mdl::export_multi::matte" (
+  "tint" 0.4000000059604645 0.4000000059604645 0.4000000059604645,
+  "roughness" 0.5
+)
+
+# cbox_red
+shader "cbox_red_mat" "mdl::export_multi::matte" (
+  "tint" 0.5 0.0 0.0,
+  "roughness" 0.5
+)
+
+# cbox_green
+shader "cbox_green_mat" "mdl::export_multi::matte" (
+  "tint" 0.0 0.5 0.0,
+  "roughness" 0.5
+)
+
+# cornell_box
+object "cornell_box_obj"
+  visible on
+  shadow on
+  trace on
+  tagged on
+  group
+    # vertices [8]
+    549.5999755859375 0.0 559.2000122070312
+    552.7999877929688 0.0 0.0
+    0.0 0.0 559.2000122070312
+    0.0 0.0 0.0
+    0.0 548.7999877929688 0.0
+    0.0 548.7999877929688 559.2000122070312
+    556.0 548.7999877929688 559.2000122070312
+    556.0 548.7999877929688 0.0
+    # vertex information [20]
+    v 2
+    v 0
+    v 1
+    v 3
+    v 6
+    v 5
+    v 4
+    v 7
+    v 6
+    v 0
+    v 2
+    v 5
+    v 3
+    v 4
+    v 5
+    v 2
+    v 0
+    v 6
+    v 7
+    v 1
+    # triangles/quads [5]
+    p 0  0 1 2 3
+    p 0  4 5 6 7
+    p 0  8 9 10 11
+    p 2  12 13 14 15
+    p 1  16 17 18 19
+  end group
+end object
+
+instance "cornell_box_inst" "cornell_box_obj"
+  material [ "cbox_Material_mat", "cbox_red_mat", "cbox_green_mat" ]
+  transform
+    -1.0 1.1399866612488412e-14 -1.5099580252808664e-07 -0.0
+    -1.5099580252808664e-07 -7.549790126404332e-08 1.0 0.0
+    -8.470329472543003e-22 1.0 7.549790126404332e-08 -0.0
+    -0.0 -0.0 -0.0 1.0
+end instance
+
+instgroup "rotated_root_grp"
+  "Light_inst"
+  "Light_light_inst"
+  "large_box_inst"
+  "small_box_inst"
+  "cornell_box_inst"
+end instgroup
+
+instance "rotated_root_grp_inst" "rotated_root_grp"
+  transform
+    1.0  0.0  0.0  0.0
+    0.0  0.0  1.0  0.0 #  z
+    0.0 -1.0  0.0  0.0 # -y
+    0.0  0.0  0.0  1.0
+end instance
+
+instgroup "root_grp"
+  "Camera_inst"
+  "rotated_root_grp_inst"
+end instgroup
+
+render "root_grp" "Camera_inst" "opt"
+# render "root_grp" "Camera_inst" "opt"
