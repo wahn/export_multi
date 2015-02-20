@@ -8,7 +8,8 @@ Film "fleximage"
   "integer xresolution" [ 500 ]
   "integer yresolution" [ 500 ]
   "integer outlierrejection_k" [ 10 ]
-Sampler "metropolis"
+Sampler "sobol"
+PixelFilter "blackmanharris"
 SurfaceIntegrator "bidirectional"
 WorldBegin
   # box_Material
