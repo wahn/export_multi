@@ -1,0 +1,19 @@
+# Hider "raytrace" 
+#   "constant string integrationmode" ["path"]
+#   "constant int incremental" [0] "int maxsamples" [4096]
+RMANTREE/bin/prman -progress -d openexr cornell_box.rib
+Pixar PhotoRealistic RenderMan 19.0
+copyright (c) 1988-2015 Pixar.
+linked Mon Mar 16 20:49:59 2015 PDT @1457856
+build osxMountainLion_x86-64_xcode4icc121_external_release
+
+Rendered on Tue Mar 24 20:04:31 CET 2015
+Rendering at 500x500 pixels, 4096 maxsamples
+	"cornell_box.exr" (mode = rgba, type = openexr)
+       Memory:        308.04 MB
+       Max resident mem: 308.04 MB
+       Page faults: 0, Page reclaims: 70490, Swaps: 0
+
+       Real time:     26:02
+       User time:     3:19:40
+       Sys time:      00:17
