@@ -1,12 +1,18 @@
 Option "statistics" "endofframe" [1]
 Exposure 1.0 1.0
-Display "cornell_box.exr" "openexr" "rgba"
-#Display "cornell_box.exr" "it" "rgba"
-Integrator "PxrPathTracer" "handle" "int numLightSamples" [4] "int numBxdfSamples" [4]
+#Display "cornell_box.exr" "openexr" "rgba"
+Display "cornell_box.exr" "it" "rgba"
+#Integrator "PxrPathTracer" "handle" "int numLightSamples" [4] "int numBxdfSamples" [4]
 Hider "raytrace" 
   "constant string integrationmode" ["path"]
-  "constant int incremental" [1] "int maxsamples" [4096]
-Integrator "PxrVCM" "PxrVCM" "int maxPathLength" [10] "int mergePaths" [1] "int connectPaths" [1]
+  "constant int incremental" [1]
+  "int minsamples" [32]
+  "int maxsamples" [1032]
+Integrator "PxrVCM" "PxrVCM"
+  "int maxPathLength" [10]
+  "int mergePaths" [1]
+  "int connectPaths" [1]
+PixelVariance .007
 Format 500 500 1.0
 ShadingRate 1.0
 Projection "perspective" "fov" [ 39.14625166082039 ] # lens 45.0, aspect 1.0

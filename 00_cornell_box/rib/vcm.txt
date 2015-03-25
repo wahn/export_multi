@@ -1,20 +1,26 @@
 # Hider "raytrace" 
 #   "constant string integrationmode" ["path"]
-#   "constant int incremental" [1] "int maxsamples" [4096]
-# Integrator "PxrVCM" "PxrVCM" "int maxPathLength" [10] "int mergePaths" [1] "int connectPaths" [1]
+#   "constant int incremental" [1]
+#   "int minsamples" [32]
+#   "int maxsamples" [1032]
+# Integrator "PxrVCM" "PxrVCM"
+#   "int maxPathLength" [10]
+#   "int mergePaths" [1]
+#   "int connectPaths" [1]
+# PixelVariance .007
 $RMANTREE/bin/prman -progress cornell_box.rib
 Pixar PhotoRealistic RenderMan 19.0
 copyright (c) 1988-2015 Pixar.
 linked Mon Mar 16 20:49:59 2015 PDT @1457856
 build osxMountainLion_x86-64_xcode4icc121_external_release
 
-Rendered on Tue Mar 24 21:40:26 CET 2015
-Rendering at 500x500 pixels, 4096 maxsamples
-	"cornell_box.exr" (mode = rgba, type = openexr)
-       Memory:        639.24 MB
-       Max resident mem: 639.24 MB
-       Page faults: 0, Page reclaims: 304326, Swaps: 0
+Rendered on Wed Mar 25 10:27:55 CET 2015
+Rendering at 500x500 pixels, 1032 maxsamples
+	"cornell_box.exr" (mode = rgba, type = it)
+       Memory:        638.53 MB
+       Max resident mem: 638.53 MB
+       Page faults: 2476, Page reclaims: 217606, Swaps: 0
 
-       Real time:     1:19:28
-       User time:     9:40:35
-       Sys time:      02:00
+       Real time:     18:48
+       User time:     2:13:03
+       Sys time:      01:10
