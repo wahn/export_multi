@@ -5,10 +5,16 @@ Display "cafe_scene2.exr" "it" "rgba"
 Hider "raytrace"
   "constant string integrationmode" ["path"]
   "constant int incremental" [1]
+  "int minsamples" [64]
+  "int maxsamples" [4096]
 Integrator "PxrVCM" "PxrVCM"
-  "int maxPathLength" [10]
   "int mergePaths" [1]
   "int connectPaths" [1]
+  "int maxPathLength" [10]
+  "int numLightSamples" [4]
+  "int numBxdfSamples" [4]
+  "int clampDepth" [2]
+  "float clampLuminance" [2.0]
 PixelVariance .001
 Format 500 500 1.0
 ShadingRate 1.0
@@ -36,8 +42,11 @@ WorldBegin
     Sides 2
     Opacity [1 1 1]
     Color [1.0 0.6607142686843872 0.0632440447807312]
-    AreaLightSource "PxrAreaLight" "lightring2" "string shape" ["rect"] "float intensity" [1344.0]
-    Bxdf "PxrLightEmission" "1344.0"
+    AreaLightSource "PxrAreaLight" "lightring2"
+    "string shape" ["rect"]
+    "float intensity" [537.6]
+    "color lightcolor" [1.0 0.6607142686843872 0.0632440447807312]
+    Bxdf "PxrLightEmission" "537.6"
     Attribute "visibility"      "int indirect" [0]
     Hyperboloid 0.25 0.0 0.0 0.0 0.0 0.0 360
   AttributeEnd
@@ -54,8 +63,11 @@ WorldBegin
     Sides 2
     Opacity [1 1 1]
     Color [1.0 0.6593114733695984 0.24876654148101807]
-    AreaLightSource "PxrAreaLight" "lightring" "string shape" ["rect"] "float intensity" [229.1304931640625]
-    Bxdf "PxrLightEmission" "229.1304931640625"
+    AreaLightSource "PxrAreaLight" "lightring"
+    "string shape" ["rect"]
+    "float intensity" [91.652197265625]
+    "color lightcolor" [1.0 0.6593114733695984 0.24876654148101807]
+    Bxdf "PxrLightEmission" "91.652197265625"
     Attribute "visibility"      "int indirect" [0]
     Hyperboloid 0.25 0.0 0.0 0.0 0.0 0.0 360
   AttributeEnd
@@ -72,8 +84,11 @@ WorldBegin
     Sides 2
     Opacity [1 1 1]
     Color [1.0 0.6593114733695984 0.24876654148101807]
-    AreaLightSource "PxrAreaLight" "lightring" "string shape" ["rect"] "float intensity" [229.1304931640625]
-    Bxdf "PxrLightEmission" "229.1304931640625"
+    AreaLightSource "PxrAreaLight" "lightring"
+    "string shape" ["rect"]
+    "float intensity" [91.652197265625]
+    "color lightcolor" [1.0 0.6593114733695984 0.24876654148101807]
+    Bxdf "PxrLightEmission" "91.652197265625"
     Attribute "visibility"      "int indirect" [0]
     Hyperboloid 0.25 0.0 0.0 0.0 0.0 0.0 360
   AttributeEnd
@@ -90,8 +105,11 @@ WorldBegin
     Sides 2
     Opacity [1 1 1]
     Color [1.0 0.6593009829521179 0.2528175115585327]
-    AreaLightSource "PxrAreaLight" "lumensf" "string shape" ["sphere"] "float intensity" [15.793999671936035]
-    Bxdf "PxrLightEmission" "15.793999671936035"
+    AreaLightSource "PxrAreaLight" "lumensf"
+    "string shape" ["sphere"]
+    "float intensity" [6.317599868774414]
+    "color lightcolor" [1.0 0.6593009829521179 0.2528175115585327]
+    Bxdf "PxrLightEmission" "6.317599868774414"
     Attribute "visibility"      "int indirect" [0]
     Sphere 1 -1 1 360
   AttributeEnd
@@ -108,9 +126,15 @@ WorldBegin
     Sides 2
     Opacity [1.0 1.0 1.0]
     Color [1.0 0.6538461446762085 0.23076923191547394]
-    Bxdf "PxrLMDiffuse" "diffuse"
-      "color frontColor" [1.0 0.6538461446762085 0.23076923191547394]
-      "color backColor" [1.0 0.6538461446762085 0.23076923191547394]
+    AreaLightSource "PxrAreaLight" "lumensf"
+    "string shape" ["sphere"]
+    "float intensity" [2.0]
+    "color lightcolor" [1.0 0.6538461446762085 0.23076923191547394]
+    Bxdf "PxrLightEmission" "2.0"
+    Attribute "visibility"      "int indirect" [0]
+    # Bxdf "PxrLMDiffuse" "diffuse"
+    #   "color frontColor" [1.0 0.6538461446762085 0.23076923191547394]
+    #   "color backColor" [1.0 0.6538461446762085 0.23076923191547394]
     PointsPolygons
       [ 4 ]
       [ 0 1 2 3 ]
@@ -214,8 +238,11 @@ WorldBegin
     Sides 2
     Opacity [1 1 1]
     Color [1.0 0.6593009829521179 0.2528175115585327]
-    AreaLightSource "PxrAreaLight" "lumensf" "string shape" ["sphere"] "float intensity" [15.793999671936035]
-    Bxdf "PxrLightEmission" "15.793999671936035"
+    AreaLightSource "PxrAreaLight" "lumensf"
+    "string shape" ["sphere"]
+    "float intensity" [6.317599868774414]
+    "color lightcolor" [1.0 0.6593009829521179 0.2528175115585327]
+    Bxdf "PxrLightEmission" "6.317599868774414"
     Attribute "visibility"      "int indirect" [0]
     Sphere 1 -1 1 360
   AttributeEnd
@@ -232,9 +259,15 @@ WorldBegin
     Sides 2
     Opacity [1.0 1.0 1.0]
     Color [1.0 0.6538461446762085 0.23076923191547394]
-    Bxdf "PxrLMDiffuse" "diffuse"
-      "color frontColor" [1.0 0.6538461446762085 0.23076923191547394]
-      "color backColor" [1.0 0.6538461446762085 0.23076923191547394]
+    AreaLightSource "PxrAreaLight" "lumensf"
+    "string shape" ["sphere"]
+    "float intensity" [2.0]
+    "color lightcolor" [1.0 0.6538461446762085 0.23076923191547394]
+    Bxdf "PxrLightEmission" "2.0"
+    Attribute "visibility"      "int indirect" [0]
+    # Bxdf "PxrLMDiffuse" "diffuse"
+    #   "color frontColor" [1.0 0.6538461446762085 0.23076923191547394]
+    #   "color backColor" [1.0 0.6538461446762085 0.23076923191547394]
     PointsPolygons
       [ 4 ]
       [ 0 1 2 3 ]
