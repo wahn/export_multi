@@ -5,10 +5,16 @@ Display "cafe_scene1.exr" "it" "rgba"
 Hider "raytrace"
   "constant string integrationmode" ["path"]
   "constant int incremental" [1]
-Integrator "PxrVCM" "PxrVCM"
-  "int maxPathLength" [10]
-  "int mergePaths" [1]
-  "int connectPaths" [1]
+Integrator "PxrPathTracer" "PxrPathTracer"
+"int maxPathLength" [3]
+"int numLightSamples" [256]
+"int numBxdfSamples" [256]
+"int numIndirectSamples" [256]
+"float clampLuminance" [2.0]
+# Integrator "PxrVCM" "PxrVCM"
+#   "int maxPathLength" [10]
+#   "int mergePaths" [1]
+#   "int connectPaths" [1]
 PixelVariance .001
 Format 500 500 1.0
 ShadingRate 1.0
@@ -37,7 +43,7 @@ WorldBegin
     Opacity [1 1 1]
     Color [1.0 1.0 1.0]
     AreaLightSource "PxrAreaLight" "lumens" "string shape" ["sphere"] "float intensity" [200.0]
-    Bxdf "PxrLightEmission" "200.0"
+    Bxdf "PxrLightEmission" "500.0"
     Attribute "visibility"      "int indirect" [0]
     Sphere 1 -1 1 360
   AttributeEnd
@@ -225,7 +231,7 @@ WorldBegin
     Opacity [1 1 1]
     Color [1.0 1.0 1.0]
     AreaLightSource "PxrAreaLight" "lumens" "string shape" ["sphere"] "float intensity" [200.0]
-    Bxdf "PxrLightEmission" "200.0"
+    Bxdf "PxrLightEmission" "500.0"
     Attribute "visibility"      "int indirect" [0]
     Sphere 1 -1 1 360
   AttributeEnd
