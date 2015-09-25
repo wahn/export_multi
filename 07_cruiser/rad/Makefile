@@ -46,7 +46,7 @@ vf/port+mid_hatch.vf
 all:	shipfull.oct shipemer.oct shipbatl.oct
 
 clean:
-	-rm -f *~ *.oct *.rej parts/*~ parts/*.rej 
+	-rm -f *~ *.oct *.rej parts/*~ parts/*.rej *.sh *.amb *.tiff *.hdr
 
 clobber: clean
 	-rm -f parts/blender.rad
