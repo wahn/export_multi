@@ -1,0 +1,14 @@
+ZONE= Interior -3.8 84.2 -1.8 26.8 0 8
+OCTREE= shipfull.oct
+VAR= M
+DET= H
+QUAL= M
+AMB= cruiser.amb
+INDIRECT= 1
+RESOLUTION= 1024
+view= def -vtv -vp 66 23 5.5 -vd -0.987384 -0.0541911 -0.148783 -vu 0 0 1 -vh 60 -vv 50 -vs 0 -vl 0
+view= stern -vf vf/starboard+stern.vf
+view= stairs -vf vf/port+bow_stairs.vf
+view= cables -vf vf/port+bow_cables+exting.vf
+view= valves -vf vf/port+bow_cvhatch+valves.vf
+##view= plan -vf vf/plan.vf
