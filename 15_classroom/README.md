@@ -1,7 +1,7 @@
 Class Room
 ==========
 
-Modern bathroom scene from
+Classroom scene from
 [blender.org](http://www.blender.org/download/demo-files)
 
 * **Name:** [classroom](http://download.blender.org/demo/test/classroom.zip)
