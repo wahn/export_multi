@@ -7,7 +7,7 @@ Hider "raytrace"
   "constant string integrationmode" ["path"]
   "constant int incremental" [1]
   "int minsamples" [32]
-  "int maxsamples" [1032]
+  "int maxsamples" [1024]
 Integrator "PxrVCM" "PxrVCM"
   "int maxPathLength" [10]
   "int mergePaths" [1]
