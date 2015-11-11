@@ -3,6 +3,7 @@ KICK = $(ARNOLD)/bin/kick
 
 EXR = \
 arnold.exr \
+arnold_aov_emission.exr \
 arnold_aov_direct_diffuse.exr \
 arnold_aov_direct_specular.exr \
 arnold_aov_reflection.exr \
