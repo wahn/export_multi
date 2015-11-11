@@ -1,5 +1,5 @@
-### exported: Thu Oct  1 11:49:22 2015
-### from:     Arnold 4.2.10.0 linux clang-3.6.0 glibc-2.12 oiio-1.5.15 rlm-11.3.1 2015/09/30 08:15:07
+### exported: Wed Nov 11 11:35:43 2015
+### from:     Arnold 4.2.11.0 linux clang-3.6.0 glibc-2.12 oiio-1.5.20 rlm-11.3.1 2015/10/27 15:51:25
 ### host app: Blender 2.76.0
 
 
@@ -7,8 +7,9 @@
 options
 {
  AA_samples 5
- outputs 7 1 STRING
+ outputs 8 1 STRING
   "RGBA RGBA filter driver"
+  "emission RGB filter driver_emission"
   "direct_diffuse RGB filter driver_direct_diffuse"
   "direct_specular RGB filter driver_direct_specular"
   "reflection RGB filter driver_reflection"
@@ -27,9 +28,9 @@ options
  GI_refraction_depth 6
  GI_total_depth 12
  GI_diffuse_samples 3
- GI_single_scatter_samples 4
  GI_glossy_samples 3
  GI_refraction_samples 3
+ GI_single_scatter_samples 4
 }
 
 persp_camera
@@ -52,6 +53,12 @@ driver_exr
 {
  name driver
  filename "arnold.exr"
+}
+
+driver_exr
+{
+ name driver_emission
+ filename "arnold_aov_emission.exr"
 }
 
 driver_exr
