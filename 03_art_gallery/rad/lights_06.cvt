@@ -6,10 +6,10 @@
 #     Turn on a circuit:	-m >0  (.8 for reasonable LLF)
 
 #spotlights for the art gallery
-ies2rad -df -t default -m .8  -c  1 1 1   -o lib/typeS1  ies_lib/90pfl.ies
-ies2rad -df -t default -m .8  -c  1 1 1   -o lib/typeS2  ies_lib/90psp.ies
+ies2rad -df -t default -m 0  -c  1 1 1   -o lib/typeS1  ies_lib/90pfl.ies
+ies2rad -df -t default -m 0  -c  1 1 1   -o lib/typeS2  ies_lib/90psp.ies
 ies2rad -df -t default -m 0  -c  1 1 1   -o lib/typeS3  ies_lib/90pns.ies
-ies2rad -df -t default -m .8  -c  1 1 1   -o lib/typeS4  ies_lib/q150p38f.ies
+ies2rad -df -t default -m 0  -c  1 1 1   -o lib/typeS4  ies_lib/q150p38f.ies
 ies2rad -df -t default -m .8  -c  1 1 1   -o lib/typeS5  ies_lib/q150p38s.ies
 
 # tapestry lighting
