@@ -8,11 +8,13 @@ Display "renderman.exr" "exr" "rgba"  "quantize" [0 0 0 0]
 Hider "raytrace"
   "constant string integrationmode" ["path"]
   "constant int incremental" [1]
+  "int minsamples" [32]
+  "int maxsamples" [1024]
 Integrator "PxrVCM" "PxrVCM"
   "int maxPathLength" [10]
   "int mergePaths" [1]
   "int connectPaths" [1]
-PixelVariance .001
+PixelVariance .007
 Format 500 500 1.0
 ShadingRate 1.0
 # lens 45.0, aspect 1.0
@@ -42,7 +44,7 @@ WorldBegin
     Color [1.0 1.0 1.0]
     AreaLightSource "PxrAreaLight" "Emitter"
       "string shape" ["rect"]
-      "float intensity" [100.0]
+      "float intensity" [50.0]
       "color lightcolor" [1.0 1.0 1.0]
     Bxdf "PxrLightEmission" "Emitter_emit"
     Attribute "visibility"      "int indirect" [0]
