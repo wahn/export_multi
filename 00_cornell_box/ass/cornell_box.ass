@@ -1,5 +1,5 @@
-### exported: Wed Nov 11 11:35:43 2015
-### from:     Arnold 4.2.11.0 linux clang-3.6.0 glibc-2.12 oiio-1.5.20 rlm-11.3.1 2015/10/27 15:51:25
+### exported: Mon Dec  7 13:24:18 2015
+### from:     Arnold 4.2.11.2 darwin clang-3.7.0 oiio-1.5.20 rlm-11.3.1 2015/12/07 08:41:29
 ### host app: Blender 2.76.0
 
 
@@ -20,7 +20,7 @@ options
  yres 500
  bucket_scanning "hilbert"
  camera "CACamera"
- shader_searchpath "/usr/people/jan/Graphics/Rendering/Arnold/shaders/current"
+ shader_searchpath "/Users/jan/Graphics/Rendering/Arnold/shaders/current"
  texture_gamma 2.20000005
  GI_diffuse_depth 3
  GI_glossy_depth 1
