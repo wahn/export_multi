@@ -2,41 +2,39 @@
 <  AA_samples 8
 ---
 >  AA_samples 3
-21,23c21,24
+22,23c22,24
 <  camera "CAcam1"
 <  background "sun_sky"
-<  shader_searchpath "/Users/jan/Graphics/Rendering/Arnold/shaders/current"
 ---
 >  camera "CAcam3"
 >  # background "sun_sky"
 >  background "PhysicalSky"
->  shader_searchpath "/usr/people/jan/Graphics/Rendering/Arnold/shaders/current"
-25,26c26,27
+26,27c27,28
 <  GI_diffuse_depth 3
 <  GI_glossy_depth 1
 ---
 >  GI_diffuse_depth 0 # 2
 >  GI_glossy_depth 0
-30,33c31,34
+31,34c32,35
 <  GI_diffuse_samples 3
-<  GI_single_scatter_samples 4
 <  GI_glossy_samples 3
 <  GI_refraction_samples 3
+<  GI_single_scatter_samples 4
 ---
 >  GI_diffuse_samples 2 # 7
->  GI_single_scatter_samples 5
 >  GI_glossy_samples 2
 >  GI_refraction_samples 2
-127c128
+>  GI_single_scatter_samples 5
+134c135
 < physical_sky
 ---
 > aaPhysicalSky
-129c130,131
+136c137,138
 <  name sun_sky
 ---
 >  name PhysicalSky
 >  y_is_up off
-131,146c133,154
+138,153c140,161
 <  elevation 43.2858849
 <  azimuth -54.6264381
 <  sun_direction 0 1 0
@@ -76,7 +74,7 @@
 >  samples 1
 >  affect_diffuse on
 >  affect_specular on
-148a157,178
+155a164,185
 > # physical_sky
 > # {
 > #  name sun_sky
@@ -99,11 +97,11 @@
 > #  samples 6
 > # }
 > 
-187c217
+194c224
 <  radius 1
 ---
 >  radius 0.125
-190,192c220,222
+197,199c227,229
 <  0.125 0 0 0
 <  0 0.125 0 0
 <  0 0 0.125 0
@@ -111,11 +109,11 @@
 >  1 0 0 0
 >  0 1 0 0
 >  0 0 1 0
-201c231
+208c238
 <  Color 1 1 1
 ---
 >  Color 10 10 10
-214,215c244,245
+221,222c251,252
 <  intensity 100
 <  samples 1
 ---
