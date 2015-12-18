@@ -1,0 +1,385 @@
+Option "statistics" "endofframe" [1]
+Option "shading" "int directlightinglocalizedsampling" [4]
+Exposure 1.0 1.0
+# 3Delight
+Display "renderman.exr" "exr" "rgba"  "quantize" [0 0 0 0]
+# PRMan
+# Display "prman.tif" "file" "rgba"  "quantize" [0 0 0 0]
+Hider "raytrace"
+  "constant string integrationmode" ["path"]
+  "constant int incremental" [1]
+  "int minsamples" [32]
+  "int maxsamples" [1024]
+Integrator "PxrVCM" "PxrVCM"
+  "int mergePaths" [1]
+  "int connectPaths" [1]
+  "int maxPathLength" [5]
+  "int numLightSamples" [4]
+  "int numBxdfSamples" [1]
+  "int numDiffuseSamples" [256]
+  "int numSpecularSamples" [1]
+  "float clampLuminance" [1e30]
+  "int allowCaustics" [1]
+PixelVariance .001
+Format 500 500 1.0
+ShadingRate 1.0
+# lens 38.62741470336914, aspect 1.0
+Projection "perspective" "fov" [ 45.00000240668388 ]
+Rotate 180 0 1 0 # right handed
+Scale -1 1 1 # right handed
+# cam1
+# ConcatTransform [
+#   0.4472135305404663 -0.3651483654975891 0.8164965510368347 -0.0
+#   0.8944270610809326 0.18257418274879456 -0.40824827551841736 0.0
+#   0.0 0.9128708839416504 0.40824830532073975 -0.0
+#   -1.341640591621399 -0.15975244343280792 -2.0922722816467285 1.0
+#   ]
+# cam2
+# ConcatTransform [
+#   0.06856001913547516 0.09415383636951447 0.9931941032409668 -0.0
+#   0.9976469278335571 -0.006470413878560066 -0.0682540163397789 0.0
+#   -4.656612873077393e-10 0.9955366849899292 -0.09437590837478638 -0.0
+#   -1.183422565460205 -1.2533001899719238 -3.7584409713745117 1.0
+#   ]
+# cam3
+# ConcatTransform [
+#   0.0 -0.2580360174179077 0.9661353230476379 -0.0
+#   1.0 0.0 -0.0 0.0
+#   0.0 0.9661352634429932 0.2580360472202301 -0.0
+#   -0.9879999756813049 -0.8073476552963257 -8.099616050720215 1.0
+#   ]
+# cam4
+ConcatTransform [
+  0.17238028347492218 -0.0 0.985030472278595 -0.0
+  0.985030472278595 0.0 -0.17238028347492218 0.0
+  0.0 1.0 0.0 -0.0
+  -6.772083282470703 -2.7249999046325684 -24.19481086730957 1.0
+  ]
+WorldBegin
+  # sun
+  Attribute "identifier" "string name" ["sun"]
+  AttributeBegin
+    AreaLightSource "PxrStdEnvDayLight" "sun"
+      "float intensity" [3]
+      "vector directionVector" [0.4214090243561426 0.6856390606443076 -0.5935600329452747]
+      "float haziness" [2.0]
+    Bxdf "PxrLightEmission" "visibleToCamera"
+    Rotate 180 0 1 0 # right handed
+    Scale -1 1 1 # right handed
+    Geometry "envsphere"
+  AttributeEnd
+  # window
+  AttributeBegin
+    Attribute "identifier" "string name" ["window"]
+    ConcatTransform [
+      0.009999990463256836 0.0 0.0 0.0
+      0.0 0.75 0.0 0.0
+      0.0 0.0 0.75 0.0
+      2.990000009536743 0.625 0.625 1.0
+    ]
+    # window_glass
+    Sides 2
+    Opacity [0.11999999731779099 0.11999999731779099 0.11999999731779099]
+    Color [0.9599999785423279 0.9599999785423279 0.9599999785423279]
+    Attribute "trace" "constant int maxspeculardepth" [6]
+    Attribute "visibility"
+      "constant int transmission" [1]
+      "constant int indirect" [1]
+    Bxdf "PxrLMGlass" "window_glass"
+      "float eta" [1.5199999809265137]
+      "color reflectionColor" [1.0 1.0 1.0]
+      "color refractionColor" [0.9599999785423279 0.9599999785423279 0.9599999785423279]
+      "int shadows" [1]
+    PointsPolygons
+      [ 4 4 4 4 4 4 ]
+      [ 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 ]
+      "P" [
+        0.0 1.0 0.0
+        0.0 0.0 0.0
+        0.0 0.0 1.0
+        0.0 1.0 1.0
+        0.0 1.0 1.0
+        1.0 1.0 1.0
+        1.0 1.0 0.0
+        0.0 1.0 0.0
+        1.0 1.0 1.0
+        1.0 0.0 1.0
+        1.0 0.0 0.0
+        1.0 1.0 0.0
+        0.0 0.0 0.0
+        1.0 0.0 0.0
+        1.0 0.0 1.0
+        0.0 0.0 1.0
+        0.0 0.0 0.0
+        0.0 1.0 0.0
+        1.0 1.0 0.0
+        1.0 0.0 0.0
+        1.0 0.0 1.0
+        1.0 1.0 1.0
+        0.0 1.0 1.0
+        0.0 0.0 1.0
+      ]
+  AttributeEnd
+  # fixture
+  AttributeBegin
+    Attribute "identifier" "string name" ["fixture"]
+    ConcatTransform [
+      0.125 0.0 0.0 0.0
+      0.0 0.125 0.0 0.0
+      0.0 0.0 0.125 0.0
+      2.0 1.0 1.5 1.0
+    ]
+    # bright
+    Sides 2
+    Opacity [1 1 1]
+    Color [1.0 1.0 1.0]
+    AreaLightSource "PxrAreaLight" "bright"
+      "string shape" ["sphere"]
+      "float intensity" [20.0]
+      "color lightcolor" [1.0 1.0 1.0]
+    Bxdf "PxrLightEmission" "bright_emit"
+    Attribute "visibility"      "int indirect" [0]
+    Sphere 1 -1 1 360
+  AttributeEnd
+  # building
+  AttributeBegin
+    Attribute "identifier" "string name" ["building"]
+    ConcatTransform [
+      10.0 0.0 0.0 0.0
+      0.0 10.0 0.0 0.0
+      0.0 0.0 2.0 0.0
+      10.0 5.0 0.0 1.0
+    ]
+    # reflect20
+    Sides 2
+    Opacity [1.0 1.0 1.0]
+    Color [0.15000000596046448 0.20000000298023224 0.20000000298023224]
+    Bxdf "PxrLMMetal" "reflect20"
+      "color specularColor" [0.15000000596046448 0.20000000298023224 0.20000000298023224]
+      "float roughness" [0.0]
+    PointsPolygons
+      [ 4 4 4 4 4 4 ]
+      [ 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 ]
+      "P" [
+        0.0 1.0 0.0
+        0.0 0.0 0.0
+        0.0 0.0 1.0
+        0.0 1.0 1.0
+        0.0 1.0 1.0
+        1.0 1.0 1.0
+        1.0 1.0 0.0
+        0.0 1.0 0.0
+        1.0 1.0 1.0
+        1.0 0.0 1.0
+        1.0 0.0 0.0
+        1.0 1.0 0.0
+        0.0 0.0 0.0
+        1.0 0.0 0.0
+        1.0 0.0 1.0
+        0.0 0.0 1.0
+        0.0 0.0 0.0
+        0.0 1.0 0.0
+        1.0 1.0 0.0
+        1.0 0.0 0.0
+        1.0 0.0 1.0
+        1.0 1.0 1.0
+        0.0 1.0 1.0
+        0.0 0.0 1.0
+      ]
+  AttributeEnd
+  # groundplane
+  AttributeBegin
+    Attribute "identifier" "string name" ["groundplane"]
+    ConcatTransform [
+      1.0 0.0 0.0 0.0
+      0.0 1.0 0.0 0.0
+      0.0 0.0 1.0 0.0
+      0.0 0.0 -0.009999999776482582 1.0
+    ]
+    # ground_mat
+    Sides 2
+    Opacity [1 1 1]
+    Color [0.2800000011920929 0.18000000715255737 0.11999999731779099]
+    Bxdf "PxrLMDiffuse" "ground_mat"
+      "color frontColor" [0.2800000011920929 0.18000000715255737 0.11999999731779099]
+      "color backColor" [0.2800000011920929 0.18000000715255737 0.11999999731779099]
+    Hyperboloid 0.0 0.0 0.0 30.0 0.0 0.0 360
+  AttributeEnd
+  # box
+  AttributeBegin
+    Attribute "identifier" "string name" ["box"]
+    ConcatTransform [
+      0.48296284675598145 0.12940944731235504 0.0 0.0
+      -0.12940944731235504 0.48296284675598145 0.0 0.0
+      0.0 0.0 0.5 0.0
+      0.5 0.75 0.0 1.0
+    ]
+    # blue_plastic
+    Sides 2
+    Opacity [1.0 1.0 1.0]
+    Color [0.10000000149011612 0.10000000149011612 0.6000000238418579]
+    Bxdf "PxrLMPlastic" "blue_plastic"
+      "color diffuseColor" [0.10000000149011612 0.10000000149011612 0.6000000238418579]
+      "color specularColor" [1.0 1.0 1.0]
+      "float diffuseRoughness" [0.3162277683729184]
+      "float specularRoughness" [0.3162277683729184]
+    PointsPolygons
+      [ 4 4 4 4 4 4 ]
+      [ 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 ]
+      "P" [
+        0.0 1.0 0.0
+        0.0 0.0 0.0
+        0.0 0.0 1.0
+        0.0 1.0 1.0
+        0.0 1.0 1.0
+        1.0 1.0 1.0
+        1.0 1.0 0.0
+        0.0 1.0 0.0
+        1.0 1.0 1.0
+        1.0 0.0 1.0
+        1.0 0.0 0.0
+        1.0 1.0 0.0
+        0.0 0.0 0.0
+        1.0 0.0 0.0
+        1.0 0.0 1.0
+        0.0 0.0 1.0
+        0.0 0.0 0.0
+        0.0 1.0 0.0
+        1.0 1.0 0.0
+        1.0 0.0 0.0
+        1.0 0.0 1.0
+        1.0 1.0 1.0
+        0.0 1.0 1.0
+        0.0 0.0 1.0
+      ]
+  AttributeEnd
+  # room
+  AttributeBegin
+    Attribute "identifier" "string name" ["room"]
+    ConcatTransform [
+      1.0 0.0 0.0 0.0
+      0.0 1.0 0.0 0.0
+      0.0 0.0 1.0 0.0
+      0.0 0.0 0.0 1.0
+    ]
+    # white [0]
+    Sides 2
+    Opacity [1.0 1.0 1.0]
+    Color [0.699999988079071 0.699999988079071 0.699999988079071]
+    Bxdf "PxrLMDiffuse" "white"
+      "color frontColor" [0.699999988079071 0.699999988079071 0.699999988079071]
+      "color backColor" [0.699999988079071 0.699999988079071 0.699999988079071]
+    PointsPolygons
+      [ 4 ]
+      [ 0 1 2 3 ]
+      "P" [
+        3.0 2.0 1.75
+        3.0 0.0 1.75
+        0.0 0.0 1.75
+        0.0 2.0 1.75
+      ]
+    # gray_paint [1]
+    Sides 2
+    Opacity [1.0 1.0 1.0]
+    Color [0.5 0.5 0.5]
+    Bxdf "PxrLMDiffuse" "gray_paint"
+      "color frontColor" [0.5 0.5 0.5]
+      "color backColor" [0.5 0.5 0.5]
+    PointsPolygons
+      [ 4 4 4 4 4 4 4 ]
+      [ 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 ]
+      "P" [
+        3.0 0.0 0.0
+        3.0 0.625 0.625
+        3.0 1.375 0.625
+        3.0 2.0 0.0
+        3.0 1.375 1.375
+        3.0 2.0 1.75
+        3.0 2.0 0.0
+        3.0 1.375 0.625
+        3.0 0.625 1.375
+        3.0 0.0 1.75
+        3.0 2.0 1.75
+        3.0 1.375 1.375
+        3.0 0.625 0.625
+        3.0 0.0 0.0
+        3.0 0.0 1.75
+        3.0 0.625 1.375
+        3.0 2.0 1.75
+        0.0 2.0 1.75
+        0.0 2.0 0.0
+        3.0 2.0 0.0
+        0.0 0.0 0.0
+        0.0 2.0 0.0
+        0.0 2.0 1.75
+        0.0 0.0 1.75
+        0.0 0.0 0.0
+        0.0 0.0 1.75
+        3.0 0.0 1.75
+        3.0 0.0 0.0
+      ]
+    # brown [2]
+    Sides 2
+    Opacity [1.0 1.0 1.0]
+    Color [0.20000000298023224 0.10000000149011612 0.10000000149011612]
+    Bxdf "PxrLMDiffuse" "brown"
+      "color frontColor" [0.20000000298023224 0.10000000149011612 0.10000000149011612]
+      "color backColor" [0.20000000298023224 0.10000000149011612 0.10000000149011612]
+    PointsPolygons
+      [ 4 ]
+      [ 0 1 2 3 ]
+      "P" [
+        0.0 0.0 0.0
+        3.0 0.0 0.0
+        3.0 2.0 0.0
+        0.0 2.0 0.0
+      ]
+  AttributeEnd
+  # fixture_support
+  AttributeBegin
+    Attribute "identifier" "string name" ["fixture_support"]
+    ConcatTransform [
+      0.050000011920928955 0.0 0.0 0.0
+      0.0 0.050000011920928955 0.0 0.0
+      0.0 0.0 0.1499999761581421 0.0
+      2.0 1.0 1.600000023841858 1.0
+    ]
+    # chrome
+    Sides 2
+    Opacity [1 1 1]
+    Color [0.800000011920929 0.800000011920929 0.800000011920929]
+    Bxdf "PxrLMPlastic" "chrome"
+      "float diffuseRoughness" [0.0]
+      "float specularRoughness" [0.0]
+      "color diffuseColor" [0.08000002026557951 0.08000002026557951 0.08000002026557951]
+      "color specularColor" [0.7199999916553494 0.7199999916553494 0.7199999916553494]
+      "color clearcoatColor" [0.8999999761581421 0.8999999761581421 0.8999999761581421]
+      "float clearcoatEta" [3.0]
+    Cylinder 1 0 1 360
+  AttributeEnd
+  # ball
+  AttributeBegin
+    Attribute "identifier" "string name" ["ball"]
+    ConcatTransform [
+      0.125 0.0 0.0 0.0
+      0.0 0.125 0.0 0.0
+      0.0 0.0 0.125 0.0
+      0.699999988079071 1.125 0.625 1.0
+    ]
+    # crystal
+    Sides 2
+    Opacity [0.07999999821186066 0.07999999821186066 0.07999999821186066]
+    Color [0.5 0.5 0.5]
+    Attribute "trace" "constant int maxspeculardepth" [6]
+    Attribute "visibility"
+      "constant int transmission" [1]
+      "constant int indirect" [1]
+    Bxdf "PxrLMGlass" "crystal"
+      "float eta" [1.5]
+      "color reflectionColor" [1.0 1.0 1.0]
+      "color refractionColor" [1.0 1.0 1.0]
+      "float roughness" [0.01]
+      "int shadows" [1]
+    Sphere 1 -1 1 360
+  AttributeEnd
+WorldEnd
