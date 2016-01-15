@@ -1,5 +1,5 @@
-### exported: Mon Dec  7 13:24:18 2015
-### from:     Arnold 4.2.11.2 darwin clang-3.7.0 oiio-1.5.20 rlm-11.3.1 2015/12/07 08:41:29
+### exported: Fri Jan 15 10:46:00 2016
+### from:     Arnold 4.2.12.2 linux clang-3.7.0 glibc-2.12 oiio-1.5.22 rlm-11.3.1 2016/01/12 22:06:48
 ### host app: Blender 2.76.0
 
 
@@ -116,10 +116,15 @@ polymesh
  opaque on
 }
 
-ass_constant
+ray_switch
 {
  name MAEmitter
- Color 1 1 1
+ camera 1 1 1 1
+ shadow 0 0 0 0
+ reflection 0 0 0 0
+ refraction 0 0 0 0
+ diffuse 0 0 0 0
+ glossy 0 0 0 0
 }
 
 mesh_light
