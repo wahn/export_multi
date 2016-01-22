@@ -1,4 +1,4 @@
-### exported: Fri Jan 15 10:46:00 2016
+### exported: Thu Jan 21 15:49:27 2016
 ### from:     Arnold 4.2.12.2 linux clang-3.7.0 glibc-2.12 oiio-1.5.22 rlm-11.3.1 2016/01/12 22:06:48
 ### host app: Blender 2.76.0
 
@@ -119,12 +119,12 @@ polymesh
 ray_switch
 {
  name MAEmitter
- camera 1 1 1 1
+ camera 100 100 100 1
  shadow 0 0 0 0
- reflection 0 0 0 0
- refraction 0 0 0 0
+ reflection 100 100 100 1
+ refraction 100 100 100 1
  diffuse 0 0 0 0
- glossy 0 0 0 0
+ glossy 100 100 100 1
 }
 
 mesh_light
