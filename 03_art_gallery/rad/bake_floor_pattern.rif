@@ -6,4 +6,4 @@ OCTREE= bake_floor_pattern.oct
 oconv= -f
 AMBF= bake_floor_pattern.amb
 render= 
-RESOLUTION = 2000
+RESOLUTION = 4000
