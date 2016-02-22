@@ -5,7 +5,7 @@
 
 AMBFILE= scene2_07.amb
 DETAIL= Medium
-EXPOSURE= -4
+EXPOSURE= -3
 INDIRECT= 2
 OCTREE= scene2_07.oct
 PENUMBRAS= False

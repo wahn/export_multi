@@ -70,3 +70,15 @@ pics/scene2_06_cam06.png: clobber
 	rad scene2_06.rif
 	ra_tiff pics/scene2_06_cam06.hdr pics/scene2_06_cam06.tiff
 	imf_copy pics/scene2_06_cam06.tiff pics/scene2_06_cam06.png
+
+pics/scene2_07_cam07.png: clobber
+	./lights_01.cvt
+	rad scene2_07.rif
+	ra_tiff pics/scene2_07_cam07.hdr pics/scene2_07_cam07.tiff
+	imf_copy pics/scene2_07_cam07.tiff pics/scene2_07_cam07.png
+
+pics/scene2_07n_cam07.png: clobber
+	./lights_01n.cvt
+	rad scene2_07n.rif
+	ra_tiff pics/scene2_07n_cam07.hdr pics/scene2_07n_cam07.tiff
+	imf_copy pics/scene2_07n_cam07.tiff pics/scene2_07n_cam07.png
