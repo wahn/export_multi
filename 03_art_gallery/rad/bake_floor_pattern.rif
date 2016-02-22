@@ -1,0 +1,9 @@
+scene= lib/floor.rad bake_floor_pattern.rad
+EXPOSURE= .5
+UP= Z
+view= -vp 20.0 12.5 50.0 -vd 0.0 0.0 -1.0 -vu 0 1 0 -vh 45 -vv 45
+OCTREE= bake_floor_pattern.oct
+oconv= -f
+AMBF= bake_floor_pattern.amb
+render= 
+RESOLUTION = 2000
