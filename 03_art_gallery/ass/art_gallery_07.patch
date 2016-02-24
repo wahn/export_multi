@@ -1,0 +1,593 @@
+9c9,11
+<  AA_samples 16
+---
+>  AA_samples 5
+>  AA_sample_clamp 1.0 # 1e+30
+>  AA_sample_clamp_affects_aovs true # false
+26,28c28,30
+<  texture_gamma 2.20000005
+<  GI_diffuse_depth 3
+<  GI_glossy_depth 1
+---
+>  # texture_gamma 2.20000005
+>  GI_diffuse_depth 2 # 3
+>  GI_glossy_depth 2 # 1
+32c34
+<  GI_diffuse_samples 3
+---
+>  GI_diffuse_samples 15 # 3
+186c188
+<  intensity 1
+---
+>  intensity 10
+197,198c199,200
+<  intensity 1
+<  samples 6
+---
+>  intensity 5
+>  samples 12
+14004c14006
+<  filename "/usr/people/jan/git/github/export_multi/03_art_gallery/textures/scene1.png"
+---
+>  filename "../textures/scene1.hdr"
+14732c14734
+<  specular_roughness 0.707106769
+---
+>  specular_roughness 0 # 0.707106769
+14737c14739,14740
+<  IOR 1.39999998
+---
+>  IOR 1 # 1.39999998
+>  opacity .5 .5 .5
+346132c346135
+< ray_switch
+---
+> standard
+346135,346140c346138,346141
+<  camera 150 150 150 1
+<  shadow 0 0 0 0
+<  reflection 150 150 150 1
+<  refraction 150 150 150 1
+<  diffuse 0 0 0 0
+<  glossy 150 150 150 1
+---
+>  Kd 0.8
+>  Kd_color 1 1 1
+>  Ks 0.2
+>  Ks_color 1 1 1
+346142a346144,346154
+> # ray_switch
+> # {
+> #  name MAtypeS4T_light
+> #  camera 150 150 150 1
+> #  shadow 0 0 0 0
+> #  reflection 150 150 150 1
+> #  refraction 150 150 150 1
+> #  diffuse 0 0 0 0
+> #  glossy 150 150 150 1
+> # }
+> 
+346148,346149c346160,346161
+<  intensity 150
+<  samples 2
+---
+>  intensity 0 # 15.0
+>  samples 4
+346238,346239c346250,346251
+<  intensity 150
+<  samples 2
+---
+>  intensity 0 # 15.0
+>  samples 4
+346318,346319c346330,346331
+<  intensity 150
+<  samples 2
+---
+>  intensity 0 # 15.0
+>  samples 4
+346398,346399c346410,346411
+<  intensity 150
+<  samples 2
+---
+>  intensity 0 # 15.0
+>  samples 4
+346874c346886
+< ray_switch
+---
+> standard
+346877,346882c346889,346892
+<  camera 26 26 26 1
+<  shadow 0 0 0 0
+<  reflection 26 26 26 1
+<  refraction 26 26 26 1
+<  diffuse 0 0 0 0
+<  glossy 26 26 26 1
+---
+>  Kd 0.8
+>  Kd_color 1 1 1
+>  Ks 0.2
+>  Ks_color 1 1 1
+346884a346895,346905
+> # ray_switch
+> # {
+> #  name MAtypeWM1_light
+> #  camera 26 26 26 1
+> #  shadow 0 0 0 0
+> #  reflection 26 26 26 1
+> #  refraction 26 26 26 1
+> #  diffuse 0 0 0 0
+> #  glossy 26 26 26 1
+> # }
+> 
+346890,346891c346911,346912
+<  intensity 26
+<  samples 2
+---
+>  intensity 0 # 2.6
+>  samples 4
+346924,346925c346945,346946
+<  intensity 26
+<  samples 2
+---
+>  intensity 0 # 2.6
+>  samples 4
+347011,347012c347032,347033
+<  intensity 26
+<  samples 2
+---
+>  intensity 0 # 2.6
+>  samples 4
+347044,347045c347065,347066
+<  intensity 26
+<  samples 2
+---
+>  intensity 0 # 2.6
+>  samples 4
+347131,347132c347152,347153
+<  intensity 26
+<  samples 2
+---
+>  intensity 0 # 2.6
+>  samples 4
+347164,347165c347185,347186
+<  intensity 26
+<  samples 2
+---
+>  intensity 0 # 2.6
+>  samples 4
+347251,347252c347272,347273
+<  intensity 26
+<  samples 2
+---
+>  intensity 0 # 2.6
+>  samples 4
+347284,347285c347305,347306
+<  intensity 26
+<  samples 2
+---
+>  intensity 0 # 2.6
+>  samples 4
+347784c347805
+< ray_switch
+---
+> standard
+347787,347792c347808,347811
+<  camera 150 150 150 1
+<  shadow 0 0 0 0
+<  reflection 150 150 150 1
+<  refraction 150 150 150 1
+<  diffuse 0 0 0 0
+<  glossy 150 150 150 1
+---
+>  Kd 0.8
+>  Kd_color 1 1 1
+>  Ks 0.2
+>  Ks_color 1 1 1
+347794a347814,347824
+> # ray_switch
+> # {
+> #  name MAtypeS4_light
+> #  camera 150 150 150 1
+> #  shadow 0 0 0 0
+> #  reflection 150 150 150 1
+> #  refraction 150 150 150 1
+> #  diffuse 0 0 0 0
+> #  glossy 150 150 150 1
+> # }
+> 
+347800,347801c347830,347831
+<  intensity 150
+<  samples 2
+---
+>  intensity 0 # 15.0
+>  samples 4
+348279,348280c348309,348310
+<  intensity 150
+<  samples 2
+---
+>  intensity 0 # 15.0
+>  samples 4
+348758,348759c348788,348789
+<  intensity 150
+<  samples 2
+---
+>  intensity 0 # 15.0
+>  samples 4
+349258,349259c349288,349289
+<  intensity 150
+<  samples 2
+---
+>  intensity 0 # 15.0
+>  samples 4
+349737,349738c349767,349768
+<  intensity 150
+<  samples 2
+---
+>  intensity 0 # 15.0
+>  samples 4
+350216,350217c350246,350247
+<  intensity 150
+<  samples 2
+---
+>  intensity 0 # 15.0
+>  samples 4
+350695,350696c350725,350726
+<  intensity 150
+<  samples 2
+---
+>  intensity 0 # 15.0
+>  samples 4
+350778,350779c350808,350809
+<  intensity 26
+<  samples 2
+---
+>  intensity 0 # 2.6
+>  samples 4
+350811,350812c350841,350842
+<  intensity 26
+<  samples 2
+---
+>  intensity 0 # 2.6
+>  samples 4
+350898,350899c350928,350929
+<  intensity 26
+<  samples 2
+---
+>  intensity 0 # 2.6
+>  samples 4
+350931,350932c350961,350962
+<  intensity 26
+<  samples 2
+---
+>  intensity 0 # 2.6
+>  samples 4
+351014c351044
+< ray_switch
+---
+> standard
+351017,351022c351047,351050
+<  camera 38.6699982 38.6699982 38.6699982 1
+<  shadow 0 0 0 0
+<  reflection 38.6699982 38.6699982 38.6699982 1
+<  refraction 38.6699982 38.6699982 38.6699982 1
+<  diffuse 0 0 0 0
+<  glossy 38.6699982 38.6699982 38.6699982 1
+---
+>  Kd 0.8
+>  Kd_color 1 1 1
+>  Ks 0.2
+>  Ks_color 1 1 1
+351024a351053,351063
+> # ray_switch
+> # {
+> #  name MAtypeRLF1_light
+> #  camera 38.6699982 38.6699982 38.6699982 1
+> #  shadow 0 0 0 0
+> #  reflection 38.6699982 38.6699982 38.6699982 1
+> #  refraction 38.6699982 38.6699982 38.6699982 1
+> #  diffuse 0 0 0 0
+> #  glossy 38.6699982 38.6699982 38.6699982 1
+> # }
+> 
+351030,351031c351069,351070
+<  intensity 38.6699982
+<  samples 2
+---
+>  intensity 0 # 3.86699982
+>  samples 4
+351063,351064c351102,351103
+<  intensity 38.6699982
+<  samples 2
+---
+>  intensity 0 # 3.86699982
+>  samples 4
+351096,351097c351135,351136
+<  intensity 38.6699982
+<  samples 2
+---
+>  intensity 0 # 3.86699982
+>  samples 4
+351129,351130c351168,351169
+<  intensity 38.6699982
+<  samples 2
+---
+>  intensity 0 # 3.86699982
+>  samples 4
+351162,351163c351201,351202
+<  intensity 38.6699982
+<  samples 2
+---
+>  intensity 0 # 3.86699982
+>  samples 4
+351195,351196c351234,351235
+<  intensity 38.6699982
+<  samples 2
+---
+>  intensity 0 # 3.86699982
+>  samples 4
+351228,351229c351267,351268
+<  intensity 38.6699982
+<  samples 2
+---
+>  intensity 0 # 3.86699982
+>  samples 4
+351261,351262c351300,351301
+<  intensity 38.6699982
+<  samples 2
+---
+>  intensity 0 # 3.86699982
+>  samples 4
+351294,351295c351333,351334
+<  intensity 38.6699982
+<  samples 2
+---
+>  intensity 0 # 3.86699982
+>  samples 4
+351327,351328c351366,351367
+<  intensity 38.6699982
+<  samples 2
+---
+>  intensity 0 # 3.86699982
+>  samples 4
+351356c351395
+< ray_switch
+---
+> standard
+351359,351364c351398,351401
+<  camera 38.6699982 38.6699982 38.6699982 1
+<  shadow 0 0 0 0
+<  reflection 38.6699982 38.6699982 38.6699982 1
+<  refraction 38.6699982 38.6699982 38.6699982 1
+<  diffuse 0 0 0 0
+<  glossy 38.6699982 38.6699982 38.6699982 1
+---
+>  Kd 0.8
+>  Kd_color 1 1 1
+>  Ks 0.2
+>  Ks_color 1 1 1
+351366a351404,351414
+> # ray_switch
+> # {
+> #  name MAtypeRLF2_light
+> #  camera 38.6699982 38.6699982 38.6699982 1
+> #  shadow 0 0 0 0
+> #  reflection 38.6699982 38.6699982 38.6699982 1
+> #  refraction 38.6699982 38.6699982 38.6699982 1
+> #  diffuse 0 0 0 0
+> #  glossy 38.6699982 38.6699982 38.6699982 1
+> # }
+> 
+351372,351373c351420,351421
+<  intensity 38.6699982
+<  samples 2
+---
+>  intensity 0 # 3.86699982
+>  samples 4
+351405,351406c351453,351454
+<  intensity 38.6699982
+<  samples 2
+---
+>  intensity 0 # 3.86699982
+>  samples 4
+351438,351439c351486,351487
+<  intensity 38.6699982
+<  samples 2
+---
+>  intensity 0 # 3.86699982
+>  samples 4
+351471,351472c351519,351520
+<  intensity 38.6699982
+<  samples 2
+---
+>  intensity 0 # 3.86699982
+>  samples 4
+351504,351505c351552,351553
+<  intensity 38.6699982
+<  samples 2
+---
+>  intensity 0 # 3.86699982
+>  samples 4
+351954,351955c352002,352003
+<  intensity 150
+<  samples 2
+---
+>  intensity 0 # 15.0
+>  samples 4
+352429c352477
+< ray_switch
+---
+> standard
+352432,352437c352480,352483
+<  camera 90 90 90 1
+<  shadow 0 0 0 0
+<  reflection 90 90 90 1
+<  refraction 90 90 90 1
+<  diffuse 0 0 0 0
+<  glossy 90 90 90 1
+---
+>  Kd 0.8
+>  Kd_color 1 1 1
+>  Ks 0.2
+>  Ks_color 1 1 1
+352439a352486,352496
+> # ray_switch
+> # {
+> #  name MAtypeS1_light
+> #  camera 90 90 90 1
+> #  shadow 0 0 0 0
+> #  reflection 90 90 90 1
+> #  refraction 90 90 90 1
+> #  diffuse 0 0 0 0
+> #  glossy 90 90 90 1
+> # }
+> 
+352445,352446c352502,352503
+<  intensity 90
+<  samples 2
+---
+>  intensity 0 # 9.0
+>  samples 4
+352924,352925c352981,352982
+<  intensity 90
+<  samples 2
+---
+>  intensity 0 # 9.0
+>  samples 4
+353403,353404c353460,353461
+<  intensity 90
+<  samples 2
+---
+>  intensity 0 # 9.0
+>  samples 4
+353878c353935
+< ray_switch
+---
+> standard
+353881,353886c353938,353941
+<  camera 90 90 90 1
+<  shadow 0 0 0 0
+<  reflection 90 90 90 1
+<  refraction 90 90 90 1
+<  diffuse 0 0 0 0
+<  glossy 90 90 90 1
+---
+>  Kd 0.8
+>  Kd_color 1 1 1
+>  Ks 0.2
+>  Ks_color 1 1 1
+353888a353944,353954
+> # ray_switch
+> # {
+> #  name MAtypeS2_light
+> #  camera 90 90 90 1
+> #  shadow 0 0 0 0
+> #  reflection 90 90 90 1
+> #  refraction 90 90 90 1
+> #  diffuse 0 0 0 0
+> #  glossy 90 90 90 1
+> # }
+> 
+353894,353895c353960,353961
+<  intensity 90
+<  samples 2
+---
+>  intensity 0 # 9.0
+>  samples 4
+354369c354435
+< ray_switch
+---
+> standard
+354372,354377c354438,354441
+<  camera 150 150 150 1
+<  shadow 0 0 0 0
+<  reflection 150 150 150 1
+<  refraction 150 150 150 1
+<  diffuse 0 0 0 0
+<  glossy 150 150 150 1
+---
+>  Kd 0.8
+>  Kd_color 1 1 1
+>  Ks 0.2
+>  Ks_color 1 1 1
+354379a354444,354454
+> # ray_switch
+> # {
+> #  name MAtypeS5_light
+> #  camera 150 150 150 1
+> #  shadow 0 0 0 0
+> #  reflection 150 150 150 1
+> #  refraction 150 150 150 1
+> #  diffuse 0 0 0 0
+> #  glossy 150 150 150 1
+> # }
+> 
+354385,354386c354460,354461
+<  intensity 150
+<  samples 2
+---
+>  intensity 0 # 15.0
+>  samples 4
+354864,354865c354939,354940
+<  intensity 150
+<  samples 2
+---
+>  intensity 0 # 15.0
+>  samples 4
+355343,355344c355418,355419
+<  intensity 150
+<  samples 2
+---
+>  intensity 0 # 15.0
+>  samples 4
+355843,355844c355918,355919
+<  intensity 150
+<  samples 2
+---
+>  intensity 0 # 15.0
+>  samples 4
+356322,356323c356397,356398
+<  intensity 150
+<  samples 2
+---
+>  intensity 0 # 15.0
+>  samples 4
+356801,356802c356876,356877
+<  intensity 150
+<  samples 2
+---
+>  intensity 0 # 15.0
+>  samples 4
+357280,357281c357355,357356
+<  intensity 150
+<  samples 2
+---
+>  intensity 0 # 15.0
+>  samples 4
+357759,357760c357834,357835
+<  intensity 150
+<  samples 2
+---
+>  intensity 0 # 15.0
+>  samples 4
+358238,358239c358313,358314
+<  intensity 150
+<  samples 2
+---
+>  intensity 0 # 15.0
+>  samples 4
+358717,358718c358792,358793
+<  intensity 150
+<  samples 2
+---
+>  intensity 0 # 15.0
+>  samples 4
+359196,359197c359271,359272
+<  intensity 150
+<  samples 2
+---
+>  intensity 0 # 15.0
+>  samples 4
+360732c360807
+<  filename "/usr/people/jan/git/github/export_multi/03_art_gallery/textures/floor_pattern.png"
+---
+>  filename "../textures/floor_pattern.hdr"

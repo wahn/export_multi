@@ -1,0 +1,405 @@
+9c9,11
+<  AA_samples 16
+---
+>  AA_samples 5
+>  AA_sample_clamp 1.0 # 1e+30
+>  AA_sample_clamp_affects_aovs true # false
+23,24c25,26
+<  camera "CAcam07"
+<  background "sun_sky"
+---
+>  camera "CAcam01"
+>  # background "sun_sky"
+26,28c28,30
+<  texture_gamma 2.20000005
+<  GI_diffuse_depth 3
+<  GI_glossy_depth 1
+---
+>  # texture_gamma 2.20000005
+>  GI_diffuse_depth 1 # 3
+>  GI_glossy_depth 0 # 2 # 1
+179,199c181,201
+< physical_sky
+< {
+<  name sun_sky
+<  turbidity 2
+<  elevation 73.9559555
+<  azimuth -76.0981598
+<  sun_direction 0 1 0
+<  intensity 1
+<  X 1 0 0
+<  Y 0 0 1
+<  Z 0 1 0
+< }
+< 
+< skydome_light
+< {
+<  name sun_skydome
+<  resolution 4096
+<  color sun_sky
+<  intensity 1
+<  samples 6
+< }
+---
+> # physical_sky
+> # {
+> #  name sun_sky
+> #  turbidity 2
+> #  elevation 73.9559555
+> #  azimuth -76.0981598
+> #  sun_direction 0 1 0
+> #  intensity 1
+> #  X 1 0 0
+> #  Y 0 0 1
+> #  Z 0 1 0
+> # }
+> 
+> # skydome_light
+> # {
+> #  name sun_skydome
+> #  resolution 4096
+> #  color sun_sky
+> #  intensity 1
+> #  samples 6
+> # }
+14004c14006
+<  filename "/usr/people/jan/git/github/export_multi/03_art_gallery/textures/scene1.png"
+---
+>  filename "../textures/scene1.hdr"
+14732c14734
+<  specular_roughness 0.707106769
+---
+>  specular_roughness 0 # 0.707106769
+14737c14739,14740
+<  IOR 1.39999998
+---
+>  IOR 1 # 1.39999998
+>  opacity .5 .5 .5
+346148,346149c346151,346152
+<  intensity 150
+<  samples 2
+---
+>  intensity 15.0
+>  samples 4
+346238,346239c346241,346242
+<  intensity 150
+<  samples 2
+---
+>  intensity 15.0
+>  samples 4
+346318,346319c346321,346322
+<  intensity 150
+<  samples 2
+---
+>  intensity 15.0
+>  samples 4
+346398,346399c346401,346402
+<  intensity 150
+<  samples 2
+---
+>  intensity 15.0
+>  samples 4
+346890,346891c346893,346894
+<  intensity 26
+<  samples 2
+---
+>  intensity 2.6
+>  samples 4
+346924,346925c346927,346928
+<  intensity 26
+<  samples 2
+---
+>  intensity 2.6
+>  samples 4
+347011,347012c347014,347015
+<  intensity 26
+<  samples 2
+---
+>  intensity 2.6
+>  samples 4
+347044,347045c347047,347048
+<  intensity 26
+<  samples 2
+---
+>  intensity 2.6
+>  samples 4
+347131,347132c347134,347135
+<  intensity 26
+<  samples 2
+---
+>  intensity 2.6
+>  samples 4
+347164,347165c347167,347168
+<  intensity 26
+<  samples 2
+---
+>  intensity 2.6
+>  samples 4
+347251,347252c347254,347255
+<  intensity 26
+<  samples 2
+---
+>  intensity 2.6
+>  samples 4
+347284,347285c347287,347288
+<  intensity 26
+<  samples 2
+---
+>  intensity 2.6
+>  samples 4
+347800,347801c347803,347804
+<  intensity 150
+<  samples 2
+---
+>  intensity 15.0
+>  samples 4
+348279,348280c348282,348283
+<  intensity 150
+<  samples 2
+---
+>  intensity 15.0
+>  samples 4
+348758,348759c348761,348762
+<  intensity 150
+<  samples 2
+---
+>  intensity 15.0
+>  samples 4
+349258,349259c349261,349262
+<  intensity 150
+<  samples 2
+---
+>  intensity 15.0
+>  samples 4
+349737,349738c349740,349741
+<  intensity 150
+<  samples 2
+---
+>  intensity 15.0
+>  samples 4
+350216,350217c350219,350220
+<  intensity 150
+<  samples 2
+---
+>  intensity 15.0
+>  samples 4
+350695,350696c350698,350699
+<  intensity 150
+<  samples 2
+---
+>  intensity 15.0
+>  samples 4
+350778,350779c350781,350782
+<  intensity 26
+<  samples 2
+---
+>  intensity 2.6
+>  samples 4
+350811,350812c350814,350815
+<  intensity 26
+<  samples 2
+---
+>  intensity 2.6
+>  samples 4
+350898,350899c350901,350902
+<  intensity 26
+<  samples 2
+---
+>  intensity 2.6
+>  samples 4
+350931,350932c350934,350935
+<  intensity 26
+<  samples 2
+---
+>  intensity 2.6
+>  samples 4
+351030,351031c351033,351034
+<  intensity 38.6699982
+<  samples 2
+---
+>  intensity 3.86699982
+>  samples 4
+351063,351064c351066,351067
+<  intensity 38.6699982
+<  samples 2
+---
+>  intensity 3.86699982
+>  samples 4
+351096,351097c351099,351100
+<  intensity 38.6699982
+<  samples 2
+---
+>  intensity 3.86699982
+>  samples 4
+351129,351130c351132,351133
+<  intensity 38.6699982
+<  samples 2
+---
+>  intensity 3.86699982
+>  samples 4
+351162,351163c351165,351166
+<  intensity 38.6699982
+<  samples 2
+---
+>  intensity 3.86699982
+>  samples 4
+351195,351196c351198,351199
+<  intensity 38.6699982
+<  samples 2
+---
+>  intensity 3.86699982
+>  samples 4
+351228,351229c351231,351232
+<  intensity 38.6699982
+<  samples 2
+---
+>  intensity 3.86699982
+>  samples 4
+351261,351262c351264,351265
+<  intensity 38.6699982
+<  samples 2
+---
+>  intensity 3.86699982
+>  samples 4
+351294,351295c351297,351298
+<  intensity 38.6699982
+<  samples 2
+---
+>  intensity 3.86699982
+>  samples 4
+351327,351328c351330,351331
+<  intensity 38.6699982
+<  samples 2
+---
+>  intensity 3.86699982
+>  samples 4
+351372,351373c351375,351376
+<  intensity 38.6699982
+<  samples 2
+---
+>  intensity 3.86699982
+>  samples 4
+351405,351406c351408,351409
+<  intensity 38.6699982
+<  samples 2
+---
+>  intensity 3.86699982
+>  samples 4
+351438,351439c351441,351442
+<  intensity 38.6699982
+<  samples 2
+---
+>  intensity 3.86699982
+>  samples 4
+351471,351472c351474,351475
+<  intensity 38.6699982
+<  samples 2
+---
+>  intensity 3.86699982
+>  samples 4
+351504,351505c351507,351508
+<  intensity 38.6699982
+<  samples 2
+---
+>  intensity 3.86699982
+>  samples 4
+351954,351955c351957,351958
+<  intensity 150
+<  samples 2
+---
+>  intensity 15.0
+>  samples 4
+352445,352446c352448,352449
+<  intensity 90
+<  samples 2
+---
+>  intensity 9.0
+>  samples 4
+352924,352925c352927,352928
+<  intensity 90
+<  samples 2
+---
+>  intensity 9.0
+>  samples 4
+353403,353404c353406,353407
+<  intensity 90
+<  samples 2
+---
+>  intensity 9.0
+>  samples 4
+353894,353895c353897,353898
+<  intensity 90
+<  samples 2
+---
+>  intensity 9.0
+>  samples 4
+354385,354386c354388,354389
+<  intensity 150
+<  samples 2
+---
+>  intensity 15.0
+>  samples 4
+354864,354865c354867,354868
+<  intensity 150
+<  samples 2
+---
+>  intensity 15.0
+>  samples 4
+355343,355344c355346,355347
+<  intensity 150
+<  samples 2
+---
+>  intensity 15.0
+>  samples 4
+355843,355844c355846,355847
+<  intensity 150
+<  samples 2
+---
+>  intensity 15.0
+>  samples 4
+356322,356323c356325,356326
+<  intensity 150
+<  samples 2
+---
+>  intensity 15.0
+>  samples 4
+356801,356802c356804,356805
+<  intensity 150
+<  samples 2
+---
+>  intensity 15.0
+>  samples 4
+357280,357281c357283,357284
+<  intensity 150
+<  samples 2
+---
+>  intensity 15.0
+>  samples 4
+357759,357760c357762,357763
+<  intensity 150
+<  samples 2
+---
+>  intensity 15.0
+>  samples 4
+358238,358239c358241,358242
+<  intensity 150
+<  samples 2
+---
+>  intensity 15.0
+>  samples 4
+358717,358718c358720,358721
+<  intensity 150
+<  samples 2
+---
+>  intensity 15.0
+>  samples 4
+359196,359197c359199,359200
+<  intensity 150
+<  samples 2
+---
+>  intensity 15.0
+>  samples 4
+360732c360735
+<  filename "/usr/people/jan/git/github/export_multi/03_art_gallery/textures/floor_pattern.png"
+---
+>  filename "../textures/floor_pattern.hdr"
