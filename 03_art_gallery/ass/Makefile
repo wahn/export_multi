@@ -78,6 +78,14 @@ art_gallery_arnold_03.exr: art_gallery_07.ass
 -logfile art_gallery_03.log -c CAcam03 \
 -o art_gallery_arnold_03.exr
 
+# art_gallery_arnold_05
+
+# re-use art_gallery_07.ass (using CAcam05)
+art_gallery_arnold_05.exr: art_gallery_07.ass
+	$(KICK) art_gallery_07.ass -dp -dw -v 6 -log \
+-logfile art_gallery_05.log -c CAcam05 \
+-o art_gallery_arnold_05.exr
+
 # TODO: art_gallery_arnold_04
 
 # TODO: art_gallery_arnold_05
