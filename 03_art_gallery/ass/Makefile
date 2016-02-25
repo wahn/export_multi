@@ -90,7 +90,18 @@ art_gallery_arnold_05.exr: art_gallery_07.ass
 
 # TODO: art_gallery_arnold_05
 
-# TODO: art_gallery_arnold_06
+# art_gallery_arnold_06
+
+art_gallery_06.ass: \
+art_gallery_06.patch \
+art_gallery.ass
+	patch art_gallery.ass -i art_gallery_06.patch \
+-o art_gallery_06.ass
+
+art_gallery_arnold_06.exr: art_gallery_06.ass
+	$(KICK) art_gallery_06.ass -dp -dw -v 6 -log \
+-logfile art_gallery_06.log \
+-o art_gallery_arnold_06.exr
 
 # art_gallery_arnold_07n
 
