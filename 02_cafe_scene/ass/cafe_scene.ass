@@ -6,7 +6,7 @@
 
 options
 {
- AA_samples 3
+ AA_samples 5
  outputs 8 1 STRING
   "RGBA RGBA filter driver"
   "emission RGB filter driver_emission"
@@ -22,14 +22,14 @@ options
  bucket_scanning "hilbert"
  camera "CACamera"
  shader_searchpath "/Users/jan/Graphics/Rendering/Arnold/shaders/current"
- GI_diffuse_depth 2 # 3
- GI_glossy_depth 0 # 1
+ GI_diffuse_depth 3
+ GI_glossy_depth 1
  GI_reflection_depth 6
  GI_refraction_depth 6
  GI_total_depth 12
- GI_diffuse_samples 20 # 3
- GI_glossy_samples 2 # 3
- GI_refraction_samples 2 # 3
+ GI_diffuse_samples 3
+ GI_glossy_samples 3
+ GI_refraction_samples 3
  GI_single_scatter_samples 4
 }
 
@@ -97,170 +97,170 @@ driver_exr
  filename "arnold_aov_indirect_specular.exr"
 }
 
-# disk
-# {
-#  name CUdownlight2
-#  radius 0.0762000009
-#  hole 0
-#  matrix
-#  1 0 0 0
-#  0 -1 -1.50995803e-07 0
-#  0 1.50995803e-07 -1 0
-#  0 -0.152400002 2.43535185 1
-#  shader "MAlightring2"
-#  opaque on
-# }
+disk
+{
+ name CUdownlight2
+ radius 0.0762000009
+ hole 0
+ matrix
+ 1 0 0 0
+ 0 -1 -1.50995803e-07 0
+ 0 1.50995803e-07 -1 0
+ 0 -0.152400002 2.43535185 1
+ shader "MAlightring2"
+ opaque on
+}
 
-# standard
-# {
-#  name MAlightring2
-#  Kd 0
-#  Kd_color 1 0.660714269 0.0632440448
-#  Ks 0
-#  Ks_color 1 1 1
-#  emission 1344
-#  emission_color 1 0.660714269 0.0632440448
-#  opacity 1 1 1
-# }
+standard
+{
+ name MAlightring2
+ Kd 0
+ Kd_color 1 0.660714269 0.0632440448
+ Ks 0
+ Ks_color 1 1 1
+ emission 1344
+ emission_color 1 0.660714269 0.0632440448
+ opacity 1 1 1
+}
 
-# disk
-# {
-#  name CUdownlight
-#  radius 0.0762000009
-#  hole 0
-#  matrix
-#  1 0 0 0
-#  0 -1 -1.50995803e-07 0
-#  0 1.50995803e-07 -1 0
-#  0.914399981 -0.304800004 2.43535185 1
-#  shader "MAlightring"
-#  opaque on
-# }
+disk
+{
+ name CUdownlight
+ radius 0.0762000009
+ hole 0
+ matrix
+ 1 0 0 0
+ 0 -1 -1.50995803e-07 0
+ 0 1.50995803e-07 -1 0
+ 0.914399981 -0.304800004 2.43535185 1
+ shader "MAlightring"
+ opaque on
+}
 
-# standard
-# {
-#  name MAlightring
-#  Kd 0
-#  Kd_color 1 0.659311473 0.248766541
-#  Ks 0
-#  Ks_color 1 1 1
-#  emission 229.130493
-#  emission_color 1 0.659311473 0.248766541
-#  opacity 1 1 1
-# }
+standard
+{
+ name MAlightring
+ Kd 0
+ Kd_color 1 0.659311473 0.248766541
+ Ks 0
+ Ks_color 1 1 1
+ emission 229.130493
+ emission_color 1 0.659311473 0.248766541
+ opacity 1 1 1
+}
 
-# disk
-# {
-#  name CUdownlight_un0000
-#  radius 0.0762000009
-#  hole 0
-#  matrix
-#  1 0 0 0
-#  0 -1 -1.50995803e-07 0
-#  0 1.50995803e-07 -1 0
-#  -0.914399981 -0.304800004 2.43535185 1
-#  shader "MAlightring"
-#  opaque on
-# }
+disk
+{
+ name CUdownlight_un0000
+ radius 0.0762000009
+ hole 0
+ matrix
+ 1 0 0 0
+ 0 -1 -1.50995803e-07 0
+ 0 1.50995803e-07 -1 0
+ -0.914399981 -0.304800004 2.43535185 1
+ shader "MAlightring"
+ opaque on
+}
 
-# sphere
-# {
-#  name CUbulbf
-#  radius 0.304800004
-#  visibility 253
-#  matrix
-#  0.141421333 0 -0.141421363 0
-#  0 0.199999988 0 0
-#  0.141421363 0 0.141421333 0
-#  0.838200033 1.14300001 1.98119998 1
-#  shader "MAlumensf"
-#  opaque on
-# }
+sphere
+{
+ name CUbulbf
+ radius 0.304800004
+ visibility 253
+ matrix
+ 0.141421333 0 -0.141421363 0
+ 0 0.199999988 0 0
+ 0.141421363 0 0.141421333 0
+ 0.838200033 1.14300001 1.98119998 1
+ shader "MAlumensf"
+ opaque on
+}
 
-# ray_switch
-# {
-#  name MAlumensf
-#  camera 15.7939997 10.4129992 3.99299979 1
-#  shadow 0 0 0 0
-#  reflection 15.7939997 10.4129992 3.99299979 1
-#  refraction 15.7939997 10.4129992 3.99299979 1
-#  diffuse 0 0 0 0
-#  glossy 15.7939997 10.4129992 3.99299979 1
-# }
+ray_switch
+{
+ name MAlumensf
+ camera 15.7939997 10.4129992 3.99299979 1
+ shadow 0 0 0 0
+ reflection 15.7939997 10.4129992 3.99299979 1
+ refraction 15.7939997 10.4129992 3.99299979 1
+ diffuse 0 0 0 0
+ glossy 15.7939997 10.4129992 3.99299979 1
+}
 
-# point_light
-# {
-#  name LAbulbf
-#  radius 0.0609599985
-#  matrix
-#  1 0 -0.141421363 0
-#  0 1 0 0
-#  0.141421363 0 1 0
-#  0.838200033 1.14300001 1.98119998 1
-#  color 1 0.659300983 0.252817512
-#  intensity 15.7939997
-#  samples 1
-# }
+point_light
+{
+ name LAbulbf
+ radius 0.0609599985
+ matrix
+ 1 0 -0.141421363 0
+ 0 1 0 0
+ 0.141421363 0 1 0
+ 0.838200033 1.14300001 1.98119998 1
+ color 1 0.659300983 0.252817512
+ intensity 15.7939997
+ samples 1
+}
 
-# polymesh
-# {
-#  name MElens
-#  nsides 4
-#  vidxs 4 1 UINT
-# 0 1 2 3
-#  shidxs 0
-#  vlist 4 1 POINT
-# -0.152400002 -0.152400002 -0.152400002 0.152400002 -0.152400002 -0.152400002 0.152400002 -0.152400002 0.152400002
-#   -0.152400002 -0.152400002 0.152400002
-#  matrix
-#  0.707106709 0 -0.707106829 0
-#  0 1 0 0
-#  0.707106829 0 0.707106709 0
-#  0.838200033 1.21920002 1.98119998 1
-#  shader "MAdiffuse"
-#  opaque on
-#  declare Pref_matrix constant MATRIX
-#  Pref_matrix 
-#  1 0 0 0
-#  0 1 0 0
-#  0 0 1 0
-#  0 0 0 1
-# }
+polymesh
+{
+ name MElens
+ nsides 4
+ vidxs 4 1 UINT
+0 1 2 3
+ shidxs 0
+ vlist 4 1 POINT
+-0.152400002 -0.152400002 -0.152400002 0.152400002 -0.152400002 -0.152400002 0.152400002 -0.152400002 0.152400002
+  -0.152400002 -0.152400002 0.152400002
+ matrix
+ 0.707106709 0 -0.707106829 0
+ 0 1 0 0
+ 0.707106829 0 0.707106709 0
+ 0.838200033 1.21920002 1.98119998 1
+ shader "MAdiffuse"
+ opaque on
+ declare Pref_matrix constant MATRIX
+ Pref_matrix 
+ 1 0 0 0
+ 0 1 0 0
+ 0 0 1 0
+ 0 0 0 1
+}
 
-# ray_switch
-# {
-#  name MAdiffuse
-#  camera 2.5999999 1.69999993 0.599999964 1
-#  shadow 0 0 0 0
-#  reflection 2.5999999 1.69999993 0.599999964 1
-#  refraction 2.5999999 1.69999993 0.599999964 1
-#  diffuse 0 0 0 0
-#  glossy 2.5999999 1.69999993 0.599999964 1
-# }
+ray_switch
+{
+ name MAdiffuse
+ camera 2.5999999 1.69999993 0.599999964 1
+ shadow 0 0 0 0
+ reflection 2.5999999 1.69999993 0.599999964 1
+ refraction 2.5999999 1.69999993 0.599999964 1
+ diffuse 0 0 0 0
+ glossy 2.5999999 1.69999993 0.599999964 1
+}
 
-# mesh_light
-# {
-#  name MAlens_light
-#  mesh "MElens"
-#  color 1 0.653846145 0.230769232
-#  intensity 2.5999999
-#  samples 2
-# }
+mesh_light
+{
+ name MAlens_light
+ mesh "MElens"
+ color 1 0.653846145 0.230769232
+ intensity 2.5999999
+ samples 2
+}
 
-# cylinder
-# {
-#  name CUpost4
-#  bottom 0 0 0
-#  top 0 0 0.304800004
-#  radius 0.304800004
-#  matrix
-#  0.0176776517 0 -0.0176776536 0
-#  0.0176776536 -1.09278364e-09 0.0176776517 0
-#  -1.39088794e-08 -0.449999988 -1.39088776e-08 0
-#  0.838200033 1.21920002 2.17517352 1
-#  shader "MAred_porcelain"
-#  opaque on
-# }
+cylinder
+{
+ name CUpost4
+ bottom 0 0 0
+ top 0 0 0.304800004
+ radius 0.304800004
+ matrix
+ 0.0176776517 0 -0.0176776536 0
+ 0.0176776536 -1.09278364e-09 0.0176776517 0
+ -1.39088794e-08 -0.449999988 -1.39088776e-08 0
+ 0.838200033 1.21920002 2.17517352 1
+ shader "MAred_porcelain"
+ opaque on
+}
 
 standard
 {
@@ -269,173 +269,173 @@ standard
  Kd_color 0.699999988 0.0500000007 0.0500000007
  Ks 0.0500000007
  Ks_color 1 1 1
- specular_roughness 0.0199999996
+ specular_roughness 0.141421348
 }
 
-# cylinder
-# {
-#  name CUpost3
-#  bottom 0 0 0
-#  top 0 0 0.304800004
-#  radius 0.304800004
-#  matrix
-#  0.0176776517 0 -0.0176776536 0
-#  0.0176776536 -1.09278364e-09 0.0176776517 0
-#  -1.39088794e-08 -0.449999988 -1.39088776e-08 0
-#  1.03217351 1.21920002 1.98119998 1
-#  shader "MAred_porcelain"
-#  opaque on
-# }
+cylinder
+{
+ name CUpost3
+ bottom 0 0 0
+ top 0 0 0.304800004
+ radius 0.304800004
+ matrix
+ 0.0176776517 0 -0.0176776536 0
+ 0.0176776536 -1.09278364e-09 0.0176776517 0
+ -1.39088794e-08 -0.449999988 -1.39088776e-08 0
+ 1.03217351 1.21920002 1.98119998 1
+ shader "MAred_porcelain"
+ opaque on
+}
 
-# cylinder
-# {
-#  name CUpost2
-#  bottom 0 0 0
-#  top 0 0 0.304800004
-#  radius 0.304800004
-#  matrix
-#  0.0176776517 0 -0.0176776536 0
-#  0.0176776536 -1.09278364e-09 0.0176776517 0
-#  -1.39088794e-08 -0.449999988 -1.39088776e-08 0
-#  0.838200033 1.21920002 1.78722656 1
-#  shader "MAred_porcelain"
-#  opaque on
-# }
+cylinder
+{
+ name CUpost2
+ bottom 0 0 0
+ top 0 0 0.304800004
+ radius 0.304800004
+ matrix
+ 0.0176776517 0 -0.0176776536 0
+ 0.0176776536 -1.09278364e-09 0.0176776517 0
+ -1.39088794e-08 -0.449999988 -1.39088776e-08 0
+ 0.838200033 1.21920002 1.78722656 1
+ shader "MAred_porcelain"
+ opaque on
+}
 
-# cylinder
-# {
-#  name CUpost1
-#  bottom 0 0 0
-#  top 0 0 0.304800004
-#  radius 0.304800004
-#  matrix
-#  0.0176776517 0 -0.0176776536 0
-#  0.0176776536 -1.09278364e-09 0.0176776517 0
-#  -1.39088794e-08 -0.449999988 -1.39088776e-08 0
-#  0.644226432 1.21920002 1.98119998 1
-#  shader "MAred_porcelain"
-#  opaque on
-# }
+cylinder
+{
+ name CUpost1
+ bottom 0 0 0
+ top 0 0 0.304800004
+ radius 0.304800004
+ matrix
+ 0.0176776517 0 -0.0176776536 0
+ 0.0176776536 -1.09278364e-09 0.0176776517 0
+ -1.39088794e-08 -0.449999988 -1.39088776e-08 0
+ 0.644226432 1.21920002 1.98119998 1
+ shader "MAred_porcelain"
+ opaque on
+}
 
-# sphere
-# {
-#  name CUbulbf_un0001
-#  radius 0.304800004
-#  visibility 253
-#  matrix
-#  0.141421333 0 -0.141421363 0
-#  0 0.199999988 0 0
-#  0.141421363 0 0.141421333 0
-#  -0.838200033 1.14300001 1.98119998 1
-#  shader "MAlumensf"
-#  opaque on
-# }
+sphere
+{
+ name CUbulbf_un0001
+ radius 0.304800004
+ visibility 253
+ matrix
+ 0.141421333 0 -0.141421363 0
+ 0 0.199999988 0 0
+ 0.141421363 0 0.141421333 0
+ -0.838200033 1.14300001 1.98119998 1
+ shader "MAlumensf"
+ opaque on
+}
 
-# point_light
-# {
-#  radius 0.0609599985
-#  matrix
-#  1 0 -0.141421363 0
-#  0 1 0 0
-#  0.141421363 0 1 0
-#  -0.838200033 1.14300001 1.98119998 1
-#  color 1 0.659300983 0.252817512
-#  intensity 15.7939997
-#  samples 1
-# }
+point_light
+{
+ radius 0.0609599985
+ matrix
+ 1 0 -0.141421363 0
+ 0 1 0 0
+ 0.141421363 0 1 0
+ -0.838200033 1.14300001 1.98119998 1
+ color 1 0.659300983 0.252817512
+ intensity 15.7939997
+ samples 1
+}
 
-# polymesh
-# {
-#  name MElens_un0002
-#  nsides 4
-#  vidxs 4 1 UINT
-# 0 1 2 3
-#  shidxs 0
-#  vlist 4 1 POINT
-# -0.152400002 -0.152400002 -0.152400002 0.152400002 -0.152400002 -0.152400002 0.152400002 -0.152400002 0.152400002
-#   -0.152400002 -0.152400002 0.152400002
-#  matrix
-#  0.707106709 0 -0.707106829 0
-#  0 1 0 0
-#  0.707106829 0 0.707106709 0
-#  -0.838200033 1.21920002 1.98119998 1
-#  shader "MAdiffuse"
-#  opaque on
-#  declare Pref_matrix constant MATRIX
-#  Pref_matrix 
-#  1 0 0 0
-#  0 1 0 0
-#  0 0 1 0
-#  0 0 0 1
-# }
+polymesh
+{
+ name MElens_un0002
+ nsides 4
+ vidxs 4 1 UINT
+0 1 2 3
+ shidxs 0
+ vlist 4 1 POINT
+-0.152400002 -0.152400002 -0.152400002 0.152400002 -0.152400002 -0.152400002 0.152400002 -0.152400002 0.152400002
+  -0.152400002 -0.152400002 0.152400002
+ matrix
+ 0.707106709 0 -0.707106829 0
+ 0 1 0 0
+ 0.707106829 0 0.707106709 0
+ -0.838200033 1.21920002 1.98119998 1
+ shader "MAdiffuse"
+ opaque on
+ declare Pref_matrix constant MATRIX
+ Pref_matrix 
+ 1 0 0 0
+ 0 1 0 0
+ 0 0 1 0
+ 0 0 0 1
+}
 
-# mesh_light
-# {
-#  mesh "MElens_un0002"
-#  color 1 0.653846145 0.230769232
-#  intensity 2.5999999
-#  samples 2
-# }
+mesh_light
+{
+ mesh "MElens_un0002"
+ color 1 0.653846145 0.230769232
+ intensity 2.5999999
+ samples 2
+}
 
-# cylinder
-# {
-#  name CUpost4_un0003
-#  bottom 0 0 0
-#  top 0 0 0.304800004
-#  radius 0.304800004
-#  matrix
-#  0.0176776517 0 -0.0176776536 0
-#  0.0176776536 -1.09278364e-09 0.0176776517 0
-#  -1.39088794e-08 -0.449999988 -1.39088776e-08 0
-#  -0.838200033 1.21920002 2.17517352 1
-#  shader "MAred_porcelain"
-#  opaque on
-# }
+cylinder
+{
+ name CUpost4_un0003
+ bottom 0 0 0
+ top 0 0 0.304800004
+ radius 0.304800004
+ matrix
+ 0.0176776517 0 -0.0176776536 0
+ 0.0176776536 -1.09278364e-09 0.0176776517 0
+ -1.39088794e-08 -0.449999988 -1.39088776e-08 0
+ -0.838200033 1.21920002 2.17517352 1
+ shader "MAred_porcelain"
+ opaque on
+}
 
-# cylinder
-# {
-#  name CUpost3_un0004
-#  bottom 0 0 0
-#  top 0 0 0.304800004
-#  radius 0.304800004
-#  matrix
-#  0.0176776517 0 -0.0176776536 0
-#  0.0176776536 -1.09278364e-09 0.0176776517 0
-#  -1.39088794e-08 -0.449999988 -1.39088776e-08 0
-#  -0.644226432 1.21920002 1.98119998 1
-#  shader "MAred_porcelain"
-#  opaque on
-# }
+cylinder
+{
+ name CUpost3_un0004
+ bottom 0 0 0
+ top 0 0 0.304800004
+ radius 0.304800004
+ matrix
+ 0.0176776517 0 -0.0176776536 0
+ 0.0176776536 -1.09278364e-09 0.0176776517 0
+ -1.39088794e-08 -0.449999988 -1.39088776e-08 0
+ -0.644226432 1.21920002 1.98119998 1
+ shader "MAred_porcelain"
+ opaque on
+}
 
-# cylinder
-# {
-#  name CUpost2_un0005
-#  bottom 0 0 0
-#  top 0 0 0.304800004
-#  radius 0.304800004
-#  matrix
-#  0.0176776517 0 -0.0176776536 0
-#  0.0176776536 -1.09278364e-09 0.0176776517 0
-#  -1.39088794e-08 -0.449999988 -1.39088776e-08 0
-#  -0.838200033 1.21920002 1.78722656 1
-#  shader "MAred_porcelain"
-#  opaque on
-# }
+cylinder
+{
+ name CUpost2_un0005
+ bottom 0 0 0
+ top 0 0 0.304800004
+ radius 0.304800004
+ matrix
+ 0.0176776517 0 -0.0176776536 0
+ 0.0176776536 -1.09278364e-09 0.0176776517 0
+ -1.39088794e-08 -0.449999988 -1.39088776e-08 0
+ -0.838200033 1.21920002 1.78722656 1
+ shader "MAred_porcelain"
+ opaque on
+}
 
-# cylinder
-# {
-#  name CUpost1_un0006
-#  bottom 0 0 0
-#  top 0 0 0.304800004
-#  radius 0.304800004
-#  matrix
-#  0.0176776517 0 -0.0176776536 0
-#  0.0176776536 -1.09278364e-09 0.0176776517 0
-#  -1.39088794e-08 -0.449999988 -1.39088776e-08 0
-#  -1.03217351 1.21920002 1.98119998 1
-#  shader "MAred_porcelain"
-#  opaque on
-# }
+cylinder
+{
+ name CUpost1_un0006
+ bottom 0 0 0
+ top 0 0 0.304800004
+ radius 0.304800004
+ matrix
+ 0.0176776517 0 -0.0176776536 0
+ 0.0176776536 -1.09278364e-09 0.0176776517 0
+ -1.39088794e-08 -0.449999988 -1.39088776e-08 0
+ -1.03217351 1.21920002 1.98119998 1
+ shader "MAred_porcelain"
+ opaque on
+}
 
 sphere
 {
@@ -454,12 +454,12 @@ sphere
 ray_switch
 {
  name MAlumens
- camera 1 1 1 1
+ camera 200 200 200 1
  shadow 0 0 0 0
- reflection 1 1 1 1
- refraction 1 1 1 1
+ reflection 200 200 200 1
+ refraction 200 200 200 1
  diffuse 0 0 0 0
- glossy 1 1 1 1
+ glossy 200 200 200 1
 }
 
 point_light
@@ -472,7 +472,7 @@ point_light
  0 0 1 0
  0.914399981 0 2.2098 1
  color 1 1 1
- intensity 2 # 200
+ intensity 200
  samples 1
 }
 
@@ -582,7 +582,7 @@ standard
  Kd_color 0.100000001 0.600000024 0.200000003
  Ks 0.100000001
  Ks_color 1 1 1
- specular_roughness 0.0199999996
+ specular_roughness 0.141421348
 }
 
 cone
@@ -656,7 +656,7 @@ point_light
  0 0 1 0
  -0.914399981 0 2.2098 1
  color 1 1 1
- intensity 2 # 200
+ intensity 200
  samples 1
 }
 
@@ -856,9 +856,9 @@ standard
  name MAantique_copper
  Kd 0.699999988
  Kd_color 0.136000007 0.101999998 0.0829999968
- Ks 0
- Ks_color 1 1 1
- specular_roughness 0.200000003
+ Ks 0.300000012
+ Ks_color 0.136000007 0.101999998 0.0829999968
+ specular_roughness 0.44721359
  Kr 0.300000012
  Kr_color 0.136000007 0.101999998 0.0829999968
 }
@@ -914,7 +914,7 @@ standard
  Kd_color 0.800000012 0.800000012 0.800000012
  Ks 0
  Ks_color 1 1 1
- specular_roughness 0.5
+ specular_roughness 0
  Kr 1
  Kr_color 0.800000012 0.800000012 0.800000012
 }
@@ -2056,7 +2056,7 @@ standard
  Kd_color 0.600000024 0.5 0.300000012
  Ks 0.0199999996
  Ks_color 1 1 1
- specular_roughness 0.0299999993
+ specular_roughness 0.173205078
 }
 
 polymesh
@@ -2101,7 +2101,7 @@ standard
  Kd_color 0.5 0.00999999978 0.0500000007
  Ks 0.0199999996
  Ks_color 1 1 1
- specular_roughness 0.0299999993
+ specular_roughness 0.173205078
 }
 
 polymesh
@@ -4309,7 +4309,7 @@ standard
  Kd_color 0.200000003 0.100000001 0.00999999978
  Ks 0.0500000007
  Ks_color 1 1 1
- specular_roughness 0.0299999993
+ specular_roughness 0.173205078
 }
 
 polymesh
@@ -5238,7 +5238,7 @@ standard
  Kd_color 0.600000024 0.449999988 0.300000012
  Ks 0.0500000007
  Ks_color 1 1 1
- specular_roughness 0.0199999996
+ specular_roughness 0.141421348
 }
 
 cone
