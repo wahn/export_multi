@@ -362,3 +362,18 @@
 <  Kd_color 0.980000019 0.182999998 0.165000007
 ---
 >  Kd_color MAcloth1_pat # 0.980000019 0.182999998 0.165000007
+91730a91873,91882
+> rad_woodpat
+> {
+>  name MAtable_pat
+>  Kd_color 0.289999992 0.150000006 0.129999995
+>  magnitude 0.6
+>  direction "xgrain"
+>  scale 0.12192 0.12192 0.12192 # 0.4 * 0.3048 (feet to meters)
+>  rotation 0 0 0
+> }
+> 
+91735c91887
+<  Kd_color 0.289999992 0.150000006 0.129999995
+---
+>  Kd_color MAtable_pat # 0.289999992 0.150000006 0.129999995
