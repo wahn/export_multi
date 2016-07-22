@@ -1,0 +1,259 @@
+00:00:00    25MB         | log started Fri Jul 22 11:33:32 2016
+00:00:00    25MB         | Arnold 4.2.14.2 linux clang-3.8.0 glibc-2.12 oiio-1.5.24 rlm-12.0.2 2016/07/15 10:04:36
+00:00:00    25MB         | running on ws94.mill.co.uk, pid=23661
+00:00:00    25MB         |  2 x Intel(R) Xeon(R) CPU E5520 @ 2.27GHz (8 cores, 8 logical) with 11905MB
+00:00:00    25MB         |  (redhat) CentOS release 6.5 (Final), Linux kernel 2.6.32-431.3.1.el6.x86_64
+00:00:00    25MB         |  
+00:00:00    25MB         | [kick] command: /mill3d/server/apps/ARNOLD/linux-x86-64/Arnold-4.2.14.2/bin/kick attic.ass -dp -dw -log -v 6
+00:00:00    25MB         | loading plugins from . ...
+00:00:00    25MB         |  alLayer.so: alLayer uses Arnold 4.2.14.1
+00:00:00    25MB         | loaded 1 plugins from 1 lib(s) in 0:00.00
+00:00:00    25MB         | [ass] loading attic.ass ...
+00:00:00    25MB         |  loading plugins from . ...
+00:00:00    25MB         |  no plugins loaded
+00:00:00    32MB         | [ass] read 13646046 bytes, 86 nodes in 0:00.42
+00:00:00    32MB         |  
+00:00:00    32MB         | [rlm] checkout of "arnold 20160715" in progress ...
+00:00:00    32MB         | [rlm] checkout of "arnold 20160715" from server licence2 in 0:00.33
+00:00:00    32MB         | 
+00:00:00    32MB         | [texturesys] automatic texture_max_open_files set to 7680
+00:00:00    50MB         |  
+00:00:00    50MB         | there are 1 light and 24 objects:
+00:00:00    50MB         |       1 persp_camera
+00:00:00    50MB         |       1 skydome_light
+00:00:00    50MB         |      24 image
+00:00:00    50MB         |       1 utility
+00:00:00    50MB         |      21 standard
+00:00:00    50MB         |       1 physical_sky
+00:00:00    50MB         |       8 driver_exr
+00:00:00    50MB         |       1 gaussian_filter
+00:00:00    50MB         |      23 polymesh
+00:00:00    50MB         |       1 list_aggregate
+00:00:00    50MB         |       5 alLayer
+00:00:00    50MB         |  
+00:00:00    50MB         | rendering image at 960 x 540, 5 AA samples
+00:00:00    50MB         |   AA sample clamp   2
+00:00:00    50MB         |   diffuse           samples 16 / depth  1
+00:00:00    50MB         |   glossy            <disabled by depth>
+00:00:00    50MB         |   reflection        samples  1 / depth  6
+00:00:00    50MB         |   refraction        samples  1 / depth  6
+00:00:00    50MB         |   volume indirect   <disabled by depth>
+00:00:00    50MB         |   total                          depth 12
+00:00:00    50MB         |   bssrdf            samples  2
+00:00:00    50MB         |   single scatter    samples  1
+00:00:00    50MB         |   transparency      depth 10 / threshold 0.99 / fast opacity off
+00:00:00    50MB         |  initializing 88 nodes ...
+00:00:00    51MB WARNING |   [polymesh] MEdebris_03: mesh has 156 free-floating vertices
+00:00:00    51MB WARNING |   [polymesh] MEtrash_02: mesh has 77 free-floating vertices
+00:00:00    51MB WARNING |   [polymesh] MEdebris_01: mesh has 156 free-floating vertices
+00:00:00    51MB WARNING |   [polymesh] MEcardboard_01: mesh has 23 free-floating vertices
+00:00:00    51MB WARNING |   [polymesh] MEtrash_01: mesh has 77 free-floating vertices
+00:00:00    51MB         |   creating root object list ...
+00:00:00    51MB         |   no objects
+00:00:00    51MB         |  node initialization done in 0:00.01 (single-threaded)
+00:00:00    51MB         |  updating 89 nodes ...
+00:00:00    51MB         |   sun_skydome: skydome_light using 12 samples, 2 volume samples
+00:00:00    51MB         |  node update done in 0:00.00 (single-threaded)
+00:00:00    51MB         |  [aov] parsing output statement: "RGBA RGBA filter driver"
+00:00:00    51MB         |  [aov] parsing output statement: "emission RGB filter driver_emission"
+00:00:00    51MB         |  [aov] parsing output statement: "direct_diffuse RGB filter driver_direct_diffuse"
+00:00:00    51MB         |  [aov] parsing output statement: "direct_specular RGB filter driver_direct_specular"
+00:00:00    51MB         |  [aov] parsing output statement: "reflection RGB filter driver_reflection"
+00:00:00    51MB         |  [aov] parsing output statement: "refraction RGB filter driver_refraction"
+00:00:00    51MB         |  [aov] parsing output statement: "indirect_diffuse RGB filter driver_indirect_diffuse"
+00:00:00    51MB         |  [aov] parsing output statement: "indirect_specular RGB filter driver_indirect_specular"
+00:00:00    51MB         |  [aov] registered driver: "driver_direct_diffuse" (driver_exr)
+00:00:00    51MB         |  [aov]  * "direct_diffuse" of type RGB filtered by "filter" (gaussian_filter)
+00:00:00    51MB         |  [aov] registered driver: "driver_emission" (driver_exr)
+00:00:00    51MB         |  [aov]  * "emission" of type RGB filtered by "filter" (gaussian_filter)
+00:00:00    51MB         |  [aov] registered driver: "driver" (driver_exr)
+00:00:00    51MB         |  [aov]  * "RGBA" of type RGBA filtered by "filter" (gaussian_filter)
+00:00:00    51MB         |  [aov] registered driver: "driver_indirect_specular" (driver_exr)
+00:00:00    51MB         |  [aov]  * "indirect_specular" of type RGB filtered by "filter" (gaussian_filter)
+00:00:00    51MB         |  [aov] registered driver: "driver_indirect_diffuse" (driver_exr)
+00:00:00    51MB         |  [aov]  * "indirect_diffuse" of type RGB filtered by "filter" (gaussian_filter)
+00:00:00    51MB         |  [aov] registered driver: "driver_refraction" (driver_exr)
+00:00:00    51MB         |  [aov]  * "refraction" of type RGB filtered by "filter" (gaussian_filter)
+00:00:00    51MB         |  [aov] registered driver: "driver_reflection" (driver_exr)
+00:00:00    51MB         |  [aov]  * "reflection" of type RGB filtered by "filter" (gaussian_filter)
+00:00:00    51MB         |  [aov] registered driver: "driver_direct_specular" (driver_exr)
+00:00:00    51MB         |  [aov]  * "direct_specular" of type RGB filtered by "filter" (gaussian_filter)
+00:00:00    51MB         |  [aov] done preparing 8 AOVs for 8 outputs to 8 drivers (0 deep AOVs)
+00:00:00    52MB         |  starting 8 bucket workers of size 32x32 ...
+00:00:00    79MB         |   [accel] bvh4 done - 0:00.00 - 23 prims, 1 key
+00:00:00    81MB         |   [accel] bvh4 done - 0:00.00 - 1987 prims, 1 key
+00:00:00    82MB         |   [accel] bvh4 done - 0:00.00 - 7290 prims, 1 key
+00:00:00    82MB         |   [accel] bvh4 done - 0:00.00 - 1987 prims, 1 key
+00:00:00    82MB         |   [accel] bvh4 done - 0:00.00 - 145 prims, 1 key
+00:00:01   226MB         |   [skydome_light] sun_skydome: 4096x4096 importance map done in 0:00.96, average energy 2.344854
+00:00:01   226MB         |   [accel] bvh4 done - 0:00.00 - 2 prims, 1 key
+00:00:01   226MB         |   [accel] bvh4 done - 0:00.00 - 145 prims, 1 key
+00:00:01   233MB         |   [accel] bvh4 done - 0:00.00 - 18519 prims, 1 key
+00:00:01   233MB         |   [accel] bvh4 done - 0:00.00 - 9 prims, 1 key
+00:00:05   555MB         |   [accel] bvh4 done - 0:00.00 - 5830 prims, 1 key
+00:00:05   572MB         |   [accel] bvh4 done - 0:00.00 - 7290 prims, 1 key
+00:00:05   572MB         |   [accel] bvh4 done - 0:00.01 - 12969 prims, 1 key
+00:00:05   573MB         |   [accel] bvh4 done - 0:00.01 - 18519 prims, 1 key
+00:00:05   573MB         |   [accel] bvh4 done - 0:00.00 - 4695 prims, 1 key
+00:00:06   596MB         |   [accel] bvh4 done - 0:00.00 - 1390 prims, 1 key
+00:00:06   599MB         |   [accel] bvh4 done - 0:00.00 - 5177 prims, 1 key
+00:00:06   600MB         |   [accel] bvh4 done - 0:00.00 - 5177 prims, 1 key
+00:00:06   601MB         |   [accel] bvh4 done - 0:00.00 - 6 prims, 1 key
+00:00:06   602MB         |   [accel] bvh4 done - 0:00.00 - 3520 prims, 1 key
+00:00:06   604MB         |   [accel] bvh4 done - 0:00.00 - 5830 prims, 1 key
+00:00:08   861MB         |   [accel] bvh4 done - 0:00.00 - 1578 prims, 1 key
+00:00:09   887MB         |   [accel] bvh4 done - 0:00.00 - 56 prims, 1 key
+00:01:55   910MB         |     0% done - 16756 rays/pixel
+00:07:30   917MB         |     5% done - 16715 rays/pixel
+00:13:08   922MB         |    10% done - 17272 rays/pixel
+00:18:58   922MB         |    15% done - 17064 rays/pixel
+00:25:22   922MB         |    20% done - 17167 rays/pixel
+00:30:48   922MB         |    25% done - 16077 rays/pixel
+00:36:21   922MB         |    30% done - 17313 rays/pixel
+00:42:18   922MB         |    35% done - 19375 rays/pixel
+00:48:04   922MB         |    40% done - 19772 rays/pixel
+00:53:47   922MB         |    45% done - 17200 rays/pixel
+00:59:53   922MB         |    50% done - 18488 rays/pixel
+01:05:58   922MB         |    55% done - 20061 rays/pixel
+01:12:25   922MB         |    60% done - 18652 rays/pixel
+01:18:55   922MB         |    65% done - 18689 rays/pixel
+01:25:11   922MB         |    70% done - 19326 rays/pixel
+01:31:08   922MB         |    75% done - 19728 rays/pixel
+01:37:32   922MB         |    80% done - 19057 rays/pixel
+01:44:09   922MB         |    85% done - 18337 rays/pixel
+01:50:10   922MB         |    90% done - 19104 rays/pixel
+01:56:23   922MB         |    95% done - 19245 rays/pixel
+02:01:51   922MB         |   100% done - 18755 rays/pixel
+02:01:51   910MB         |  bucket workers done in 2:01:50.37
+02:01:51   910MB         |  [driver_exr] writing file `arnold_aov_direct_diffuse.exr'
+02:01:51   910MB         |  [driver_exr] writing file `arnold_aov_emission.exr'
+02:01:51   910MB         |  [driver_exr] writing file `arnold.exr'
+02:01:51   910MB         |  [driver_exr] writing file `arnold_aov_indirect_specular.exr'
+02:01:51   910MB         |  [driver_exr] writing file `arnold_aov_indirect_diffuse.exr'
+02:01:51   910MB         |  [driver_exr] writing file `arnold_aov_refraction.exr'
+02:01:51   910MB         |  [driver_exr] writing file `arnold_aov_reflection.exr'
+02:01:51   910MB         |  [driver_exr] writing file `arnold_aov_direct_specular.exr'
+02:01:51   910MB         | render done
+02:01:51   910MB         |  
+02:01:51   910MB         | -----------------------------------------------------------------------------------
+02:01:51   910MB         | scene creation time:
+02:01:51   910MB         |  plugin loading               0:00.00
+02:01:51   910MB         |  .ass parsing                 0:00.42
+02:01:51   910MB         |  total                        0:00.43  (12.42% machine utilization)
+02:01:51   910MB         | -----------------------------------------------------------------------------------
+02:01:51   910MB         | render time:                  (multi-threaded render, values may not be reliable)
+02:01:51   910MB         |  node init                    0:00.01
+02:01:51   910MB         |   sanity checks               0:00.01
+02:01:51   910MB         |  driver init/close            0:00.05
+02:01:51   910MB         |  bucket rendering          2:01:50.37
+02:01:51   910MB         |   mesh processing             0:00.04
+02:01:51   910MB         |   accel. building             0:00.09
+02:01:51   910MB         |   importance maps             0:00.96
+02:01:51   910MB         |   output driver               0:01.52
+02:01:51   910MB         |   pixel rendering          2:01:47.75
+02:01:51   910MB         |  unaccounted                  0:00.35
+02:01:51   910MB         |  total                     2:01:50.80  (97.91% machine utilization)
+02:01:51   910MB         | -----------------------------------------------------------------------------------
+02:01:51   910MB         | memory consumed in MB:
+02:01:51   910MB         |  at startup                22.51
+02:01:51   910MB         |  plugins                    0.11
+02:01:51   910MB         |  AOV samples               25.80
+02:01:51   910MB         |  output buffers             0.78
+02:01:51   910MB         |  node overhead              0.09
+02:01:51   910MB         |  message passing            0.02
+02:01:51   910MB         |  memory pools              19.07
+02:01:51   910MB         |  geometry                   2.20
+02:01:51   910MB         |    polymesh                 2.20
+02:01:51   910MB         |  accel. structs             2.99
+02:01:51   910MB         |  skydome importance map   128.02
+02:01:51   910MB         |  strings                    0.08
+02:01:51   910MB         |  texture cache            666.69
+02:01:51   910MB         |  unaccounted               53.93
+02:01:51   910MB         |  total peak               922.29
+02:01:51   910MB         | -----------------------------------------------------------------------------------
+02:01:51   910MB         | ray counts:                      ( /pixel, /sample) (% total) (avg. hits) (max hits)
+02:01:51   910MB         |  camera                 13728360 (  23.45,    1.00) (  0.13%) (     1.03) (       4)
+02:01:51   910MB         |  shadow               7223776883 (12338.21,  526.19) ( 67.24%) (     1.03) (      11)
+02:01:51   910MB         |  refraction               101005 (   0.17,    0.01) (  0.00%) (     0.35) (       2)
+02:01:51   910MB         |  diffuse              3505239085 (5986.95,  255.33) ( 32.63%) (     1.09) (       5)
+02:01:51   910MB         |  total               10742845333 (18348.78,  782.53) (100.00%) (     1.05) (      11)
+02:01:51   910MB         | by ray depth:              0     1     2
+02:01:51   910MB         |  total                   30.8% 69.0%  0.2% 
+02:01:51   910MB         | -----------------------------------------------------------------------------------
+02:01:51   910MB         | shader calls                     (  /pixel,  /sample) (% total)
+02:01:51   910MB         |  primary             18512768785 (31619.81,  1348.51) ( 83.61%)
+02:01:51   910MB         |  transparent_shadow   3596179917 ( 6142.28,   261.95) ( 16.24%)
+02:01:51   910MB         |  background             34129253 (   58.29,     2.49) (  0.15%)
+02:01:51   910MB         |  total               22143077955 (37820.38,  1612.94) (100.00%)
+02:01:51   910MB         | by ray depth:              0     1     2
+02:01:51   910MB         |  total                    6.7% 93.2%  0.2% 
+02:01:51   910MB         | -----------------------------------------------------------------------------------
+02:01:51   910MB         | geometry:                        (% hit ) (instances) (  init mem,  final mem)
+02:01:51   910MB         |  lists                         1 (100.0%) (        0) (      0.00,       0.00)
+02:01:51   910MB         |  polymeshes                   23 (100.0%) (        0) (      4.49,       2.20)
+02:01:51   910MB         | -----------------------------------------------------------------------------------
+02:01:51   910MB         | geometric elements:              (      min) (       avg.) (      max)
+02:01:51   910MB         |  polygons                 102123 (        1) (     4440.1) (    18519)
+02:01:51   910MB         | -----------------------------------------------------------------------------------
+02:01:51   910MB         | triangle tessellation:           (      min) (       avg.) (      max) (/ element) (% total)
+02:01:51   910MB         |  polymeshes               107089 (        1) (     4656.0) (    18519) (     1.05) (100.00%)
+02:01:51   910MB         |  unique triangles         107089
+02:01:51   910MB         |  memory use (in MB)         2.20
+02:01:51   910MB         |   vertices                  0.69
+02:01:51   910MB         |   vertex indices            0.48
+02:01:51   910MB         |   packed normals            0.01
+02:01:51   910MB         |   normal indices            0.01
+02:01:51   910MB         |   uv coords                 0.25
+02:01:51   910MB         |   uv coords idxs            0.48
+02:01:51   910MB         |   uniform indices           0.17
+02:01:51   910MB         |  largest polymeshes by triangle count:
+02:01:51   910MB         |       18519 tris -- MEdebris_04
+02:01:51   910MB         |       18519 tris -- MEdebris_02
+02:01:51   910MB         |       12969 tris -- MEcardboard_02
+02:01:51   910MB         |        7290 tris -- MEdebris_03
+02:01:51   910MB         |        7290 tris -- MEdebris_01
+02:01:51   910MB         | -----------------------------------------------------------------------------------
+02:01:51   910MB         | acceleration structures:         (% total)
+02:01:51   910MB         |  list                          2 (  8.33%)
+02:01:51   910MB         |  bvh                          22 ( 91.67%)
+02:01:51   910MB         |  total                        24 (100.00%)
+02:01:51   910MB         | -----------------------------------------------------------------------------------
+02:01:51   910MB         | OpenImageIO Texture statistics
+02:01:51   910MB         |   Queries/batches : 
+02:01:51   910MB         |     texture     :  10153017112 queries in 10153017112 batches
+02:01:51   910MB         |     texture 3d  :  0 queries in 0 batches
+02:01:51   910MB         |     shadow      :  0 queries in 0 batches
+02:01:51   910MB         |     environment :  0 queries in 0 batches
+02:01:51   910MB         |   Interpolations :
+02:01:51   910MB         |     closest  : 0
+02:01:51   910MB         |     bilinear : 19652652810
+02:01:51   910MB         |     bicubic  : 2313613731
+02:01:51   910MB         |   Average anisotropic probes : 1.1
+02:01:51   910MB         |   Max anisotropy in the wild : 1e+06
+02:01:51   910MB         | 
+02:01:51   910MB         | OpenImageIO ImageCache statistics (0x7fd62e464000) ver 1.5.24
+02:01:51   910MB         |   Images : 23 unique
+02:01:51   910MB         |     ImageInputs : 23 created, 23 current, 23 peak
+02:01:51   910MB         |     Total size of all images referenced : 500.0 MB
+02:01:51   910MB         |     Read from disk : 500.0 MB
+02:01:51   910MB         |     File I/O time : 2m 7.6s (15.9s average per thread)
+02:01:51   910MB         |     File open time only : 0.0s
+02:01:51   910MB         |   Tiles: 1733 created, 1688 current, 1690 peak
+02:01:51   910MB         |     total tile requests : 26160081470
+02:01:51   910MB         |     micro-cache misses : 39853011 (0.152343%)
+02:01:51   910MB         |     main cache misses : 1733 (6.6246e-06%)
+02:01:51   910MB         |     Peak cache memory : 666.7 MB
+02:01:51   910MB         |   23 not tiled, 23 not MIP-mapped
+02:01:51   910MB         | -----------------------------------------------------------------------------------
+02:01:51   910MB         | number of warnings, warning type:
+02:01:51   910MB         |     7:  [polymesh] %s: mesh has %u free-floating %s
+02:01:51   910MB         | -----------------------------------------------------------------------------------
+02:01:51   910MB         | performance warnings:
+02:01:51   910MB WARNING |  You are tracing 18349 rays per pixel. You may want to double check and reduce your sampling settings.
+02:01:51   910MB         | -----------------------------------------------------------------------------------
+02:01:51   910MB         |  
+02:01:51   910MB         | releasing resources
+02:01:51   789MB         |  unloading 1 plugin
+02:01:51   789MB         |   closing alLayer.so ...
+02:01:51   789MB         |  unloading plugins done
+02:01:51   789MB         | Arnold shutdown
