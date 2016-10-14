@@ -1,0 +1,13 @@
+# These lights represent the position optional spot lights mounted around
+# the stage.  These points are colinear with the inside edge of the GALV
+# stage support columns. 
+
+# This group of lights should face +30 degrees from the positive x axis & down
+
+!xform -e -n spotl.1 -t 2 0 0 -rz 30 -ry 30 -t 82.33335 24.04167 16.43060 spot_light.rad
+!xform -e -n spotl.2 -t 2 0 0 -rz 30 -ry 20 -t 81.91667 33.46390 27.83334 spot_light.rad
+
+# This group of lights should face -30 degrees from the positive x axis & down
+
+!xform -e -n spotl.3 -t 2 0 0 -rz -30 -ry 30 -t 82.33335 64.91669 17.26320 spot_light.rad
+!xform -e -n spotl.4 -t 2 0 0 -rz -30 -ry 20 -t 81.91667 53.98001 28.16667 spot_light.rad

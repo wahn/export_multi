@@ -11,33 +11,33 @@ render= -av .006 .006 .006 -aa .1 -ad 512 -as 256 -ar 64
 render= -ai LTGREY -ai CATWALK -ai REDPLY -ai CONCBLK -ai SPLITFAC
 
 ##ALL Scenes
-scene= materials.ray scene.ray railing.ray grate.ray
+scene= materials.rad scene.rad railing.rad grate.rad
 
 ##BRIGHT Lights
-scene= lhouse.ray libooth.ray lhstage.ray lubalcony.ray
-scene= lubooth.ray lwbalcony.ray lwubalcony.ray lstep.ray
-scene= HMFA1400.ray BO-75_none step_light wall_light
+scene= lhouse.rad libooth.rad lhstage.rad lubalcony.rad
+scene= lubooth.rad lwbalcony.rad lwubalcony.rad lstep.rad
+scene= HMFA1400.rad BO-75_none.rad step_light.rad wall_light.rad
 EXP = 13.8
 
 ##DIM Lights
-#scene= libooth.ray lstage.ray lhstage.ray lstep.ray lubalcony.ray
-#scene= lubooth.ray lwbalcony.ray lwubalcony.ray
-#scene= HMFA1400.ray BO-75_none spot_light step_light wall_light
+#scene= libooth.rad lstage.rad lhstage.rad lstep.rad lubalcony.rad
+#scene= lubooth.rad lwbalcony.rad lwubalcony.rad
+#scene= HMFA1400.rad BO-75_none spot_light step_light wall_light
 
-view= c1 -vf views/entry_c.vp  
-view= c2 -vf views/right_c.vp  
-view= c3 -vf views/row3_c.vp   
-view= c4 -vf views/stage_c.vp  
-view= c5 -vf views/stair_c.vp
+# view= c1 -vf vf/entry_c.vf  
+# view= c2 -vf vf/right_c.vf  
+# view= c3 -vf vf/row3_c.vf   
+# view= c4 -vf vf/stage_c.vf  
+# view= c5 -vf vf/stair_c.vf
 
-#view= v1 -vf views/corner.vp
-#view= v2 -vf views/entry.vp
-#view= v3 -vf views/leftbalc.vp
-#view= v4 -vf views/middle.vp
-#view= v5 -vf views/rightbalc.vp
-#view= v6 -vf views/stair.vf
-#view= v7 -vf views/row3.vp
-#view= v8 -vf views/stage.vp
-#view= p1 -vf views/plan.vp
-#view= p2 -vf views/ceil.vp
+#view= v1 -vf vf/corner.vf
+#view= v2 -vf vf/entry.vf
+#view= v3 -vf vf/leftbalc.vf
+#view= v4 -vf vf/middle.vf
+#view= v5 -vf vf/rightbalc.vf
+#view= v6 -vf vf/stair.vf
+#view= v7 -vf vf/row3.vf
+view= v8 -vf vf/stage.vf
+#view= p1 -vf vf/plan.vf
+#view= p2 -vf vf/ceil.vf
 #

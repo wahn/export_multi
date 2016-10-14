@@ -35,8 +35,8 @@ EXP = 13.8
 # ##view= v4 -vf vf/middle.vf
 # view= v5 -vf vf/rightbalc.vf
 # view= v6 -vf vf/stair.vf
-# view= v7 -vf vf/row3.vf
-view= v8 -vf vf/stage.vf
+view= v7 -vf vf/row3.vf
+# view= v8 -vf vf/stage.vf
 # ##view= p1 -vf vf/plan.vf
 # ##view= p2 -vf vf/ceil.vf
 
