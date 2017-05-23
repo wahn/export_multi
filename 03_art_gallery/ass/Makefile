@@ -33,7 +33,7 @@ art_gallery.ass
 -o art_gallery_01n.ass
 
 art_gallery_arnold_01n.exr: art_gallery_01n.ass
-	$(KICK) art_gallery_01n.ass -dp -dw -v 6 -log \
+	$(KICK) art_gallery_01n.ass -dp -dw -v 6 \
 -logfile art_gallery_01n.log \
 -o art_gallery_arnold_01n.exr
 
@@ -42,7 +42,7 @@ art_gallery_arnold_01n.exr: art_gallery_01n.ass
 
 # re-use art_gallery_07.ass (using CAcam01)
 art_gallery_arnold_01.exr: art_gallery_07.ass
-	$(KICK) art_gallery_07.ass -dp -dw -v 6 -log \
+	$(KICK) art_gallery_07.ass -dp -dw -v 6 \
 -logfile art_gallery_01.log -c CAcam01 \
 -o art_gallery_arnold_01.exr
 
@@ -50,7 +50,7 @@ art_gallery_arnold_01.exr: art_gallery_07.ass
 
 # re-use art_gallery_01n.ass (using CAcam02)
 art_gallery_arnold_02n.exr: art_gallery_01n.ass
-	$(KICK) art_gallery_01n.ass -dp -dw -v 6 -log \
+	$(KICK) art_gallery_01n.ass -dp -dw -v 6 \
 -logfile art_gallery_02n.log -c CAcam02 \
 -o art_gallery_arnold_02n.exr
 
@@ -58,7 +58,7 @@ art_gallery_arnold_02n.exr: art_gallery_01n.ass
 
 # re-use art_gallery_07.ass (using CAcam02)
 art_gallery_arnold_02.exr: art_gallery_07.ass
-	$(KICK) art_gallery_07.ass -dp -dw -v 6 -log \
+	$(KICK) art_gallery_07.ass -dp -dw -v 6 \
 -logfile art_gallery_02.log -c CAcam02 \
 -o art_gallery_arnold_02.exr
 
@@ -66,7 +66,7 @@ art_gallery_arnold_02.exr: art_gallery_07.ass
 
 # re-use art_gallery_01n.ass (using CAcam03)
 art_gallery_arnold_03n.exr: art_gallery_01n.ass
-	$(KICK) art_gallery_01n.ass -dp -dw -v 6 -log \
+	$(KICK) art_gallery_01n.ass -dp -dw -v 6 \
 -logfile art_gallery_03n.log -c CAcam03 \
 -o art_gallery_arnold_03n.exr
 
@@ -74,7 +74,7 @@ art_gallery_arnold_03n.exr: art_gallery_01n.ass
 
 # re-use art_gallery_07.ass (using CAcam03)
 art_gallery_arnold_03.exr: art_gallery_07.ass
-	$(KICK) art_gallery_07.ass -dp -dw -v 6 -log \
+	$(KICK) art_gallery_07.ass -dp -dw -v 6 \
 -logfile art_gallery_03.log -c CAcam03 \
 -o art_gallery_arnold_03.exr
 
@@ -82,7 +82,7 @@ art_gallery_arnold_03.exr: art_gallery_07.ass
 
 # re-use art_gallery_07.ass (using CAcam05)
 art_gallery_arnold_05.exr: art_gallery_07.ass
-	$(KICK) art_gallery_07.ass -dp -dw -v 6 -log \
+	$(KICK) art_gallery_07.ass -dp -dw -v 6 \
 -logfile art_gallery_05.log -c CAcam05 \
 -o art_gallery_arnold_05.exr
 
@@ -99,7 +99,7 @@ art_gallery.ass
 -o art_gallery_06.ass
 
 art_gallery_arnold_06.exr: art_gallery_06.ass
-	$(KICK) art_gallery_06.ass -dp -dw -v 6 -log \
+	$(KICK) art_gallery_06.ass -dp -dw -v 6 \
 -logfile art_gallery_06.log \
 -o art_gallery_arnold_06.exr
 
@@ -112,7 +112,7 @@ art_gallery.ass
 -o art_gallery_07n.ass
 
 art_gallery_arnold_07n.exr: art_gallery_07n.ass
-	$(KICK) art_gallery_07n.ass -dp -dw -v 6 -log \
+	$(KICK) art_gallery_07n.ass -dp -dw -v 6 \
 -logfile art_gallery_07n.log \
 -o art_gallery_arnold_07n.exr
 
@@ -125,6 +125,6 @@ art_gallery.ass
 -o art_gallery_07.ass
 
 art_gallery_arnold_07.exr: art_gallery_07.ass
-	$(KICK) art_gallery_07.ass -dp -dw -v 6 -log \
+	$(KICK) art_gallery_07.ass -dp -dw -v 6 \
 -logfile art_gallery_07.log \
 -o art_gallery_arnold_07.exr
