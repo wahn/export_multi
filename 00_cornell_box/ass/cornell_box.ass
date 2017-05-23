@@ -1,6 +1,6 @@
-### exported: Thu Jan 21 15:49:27 2016
-### from:     Arnold 4.2.12.2 linux clang-3.7.0 glibc-2.12 oiio-1.5.22 rlm-11.3.1 2016/01/12 22:06:48
-### host app: Blender 2.76.0
+### exported: Tue May 23 09:06:30 2017
+### from:     Arnold 5.0.0.2 [f2591180] linux clang-3.9.0 oiio-1.7.12 osl-1.8.2 vdb-4.0.0 rlm-12.2.2 2017/05/08 11:44:37
+### host app: Blender 2.78.0
 
 
 
@@ -20,28 +20,33 @@ options
  yres 500
  bucket_scanning "hilbert"
  camera "CACamera"
- shader_searchpath "/Users/jan/Graphics/Rendering/Arnold/shaders/current"
- texture_gamma 2.20000005
+ plugin_searchpath "/Users/jan/Graphics/Rendering/Arnold/shaders/current"
  GI_diffuse_depth 3
- GI_glossy_depth 1
- GI_reflection_depth 6
- GI_refraction_depth 6
+ GI_specular_depth 1
+ GI_transmission_depth 6
  GI_total_depth 12
  GI_diffuse_samples 3
- GI_glossy_samples 3
- GI_refraction_samples 3
- GI_single_scatter_samples 4
+ GI_specular_samples 3
+ GI_transmission_samples 3
 }
 
 persp_camera
 {
  name CACamera
- fov 39.1462517
  matrix
  1 3.01991605e-07 0 0
  -2.27997315e-14 7.54979013e-08 1 0
  3.01991605e-07 -1 7.54979013e-08 0
  -0.277999938 -0.800000012 0.273000002 1
+ fov 39.1462517
+ focus_distance 0
+ flat_field_focus off
+ aperture_size 0
+}
+
+standard
+{
+ name MAdefault
 }
 
 gaussian_filter
@@ -100,13 +105,6 @@ driver_exr
 polymesh
 {
  name MELight
- nsides 4
- vidxs 4 1 UINT
-0 2 3 1
- shidxs 0
- vlist 4 1 POINT
--0.06500002 0 -0.0524999872 -0.0650000051 0 0.0525000021 0.0650000051 0 -0.0525000021
-  0.0650000051 0 0.0525000021
  matrix
  -1 8.74227766e-08 0 0
  3.82137135e-15 4.37113883e-08 1 0
@@ -114,42 +112,38 @@ polymesh
  -0.278000027 0.279500008 0.547800004 1
  shader "MAEmitter"
  opaque on
+ nsides 4
+ vidxs 4 1 UINT
+0 2 3 1
+ shidxs 0
+ vlist 4 1 VECTOR
+-0.06500002 0 -0.0524999872 -0.0650000051 0 0.0525000021 0.0650000051 0 -0.0525000021
+  0.0650000051 0 0.0525000021
 }
 
-ray_switch
+ray_switch_rgba
 {
  name MAEmitter
  camera 100 100 100 1
- shadow 0 0 0 0
- reflection 100 100 100 1
- refraction 100 100 100 1
- diffuse 0 0 0 0
- glossy 100 100 100 1
+ shadow 0 0 0 1
+ diffuse_reflection 0 0 0 1
+ diffuse_transmission 0 0 0 1
+ specular_reflection 100 100 100 1
+ specular_transmission 100 100 100 1
 }
 
 mesh_light
 {
  name MALight_light
- mesh "MELight"
  color 1 1 1
  intensity 100
  samples 2
+ mesh "MELight"
 }
 
 polymesh
 {
  name MElarge_box
- nsides 6 1 UINT
-4 4 4 4 4 4
- vidxs 24 1 UINT
-  1 0 4 5 5 6 2 1 6 7 3 2 0 3 7 4 0 1 2 3 7 6 5 4
- shidxs 6 1 BYTE
-0 0 0 0 0 0
- vlist 8 1 POINT
--0.000500000024 -0.000500000024 -0.000500000024 -0.000500000024 0.000500000024 -0.000500000024
-  0.000500000024 0.000500000024 -0.000500000024 0.000500000024 -0.000500000024 -0.000500000024
-  -0.000500000024 -0.000500000024 0.000500000024 -0.000500000024 0.000500000024 0.000500000024
-  0.000500000024 0.000500000024 0.000500000024 0.000500000024 -0.000500000024 0.000500000024
  matrix
  -48.8863716 157.591644 -2.88495157e-05 0
  -3.31803108e-06 5.93821751e-05 330 0
@@ -157,6 +151,17 @@ polymesh
  -0.36800006 0.351000011 0.165000036 1
  shader "MAbox_Material"
  opaque on
+ nsides 6 1 UINT
+4 4 4 4 4 4
+ vidxs 24 1 UINT
+  1 0 4 5 5 6 2 1 6 7 3 2 0 3 7 4 0 1 2 3 7 6 5 4
+ shidxs 6 1 BYTE
+0 0 0 0 0 0
+ vlist 8 1 VECTOR
+-0.000500000024 -0.000500000024 -0.000500000024 -0.000500000024 0.000500000024 -0.000500000024
+  0.000500000024 0.000500000024 -0.000500000024 0.000500000024 -0.000500000024 -0.000500000024
+  -0.000500000024 -0.000500000024 0.000500000024 -0.000500000024 0.000500000024 0.000500000024
+  0.000500000024 0.000500000024 0.000500000024 0.000500000024 -0.000500000024 0.000500000024
 }
 
 standard
@@ -171,17 +176,6 @@ standard
 polymesh
 {
  name MEsmall_box
- nsides 6 1 UINT
-4 4 4 4 4 4
- vidxs 24 1 UINT
-  1 0 4 5 5 6 2 1 6 7 3 2 0 3 7 4 0 1 2 3 7 6 5 4
- shidxs 6 1 BYTE
-0 0 0 0 0 0
- vlist 8 1 POINT
--0.00100000005 -0.00100000005 -0.00100000005 -0.00100000005 0.00100000005 -0.00100000005
-  0.00100000005 0.00100000005 -0.00100000005 0.00100000005 -0.00100000005 -0.00100000005
-  -0.00100000005 -0.00100000005 0.00100000005 -0.00100000005 0.00100000005 0.00100000005
-  0.00100000005 0.00100000005 0.00100000005 0.00100000005 -0.00100000005 0.00100000005
  matrix
  -79.0550308 23.5913849 3.09363463e-06 0
  1.18335277e-06 -6.85313262e-06 82.5000076 0
@@ -189,20 +183,22 @@ polymesh
  -0.185000017 0.169000015 0.0825000182 1
  shader "MAbox_Material"
  opaque on
+ nsides 6 1 UINT
+4 4 4 4 4 4
+ vidxs 24 1 UINT
+  1 0 4 5 5 6 2 1 6 7 3 2 0 3 7 4 0 1 2 3 7 6 5 4
+ shidxs 6 1 BYTE
+0 0 0 0 0 0
+ vlist 8 1 VECTOR
+-0.00100000005 -0.00100000005 -0.00100000005 -0.00100000005 0.00100000005 -0.00100000005
+  0.00100000005 0.00100000005 -0.00100000005 0.00100000005 -0.00100000005 -0.00100000005
+  -0.00100000005 -0.00100000005 0.00100000005 -0.00100000005 0.00100000005 0.00100000005
+  0.00100000005 0.00100000005 0.00100000005 0.00100000005 -0.00100000005 0.00100000005
 }
 
 polymesh
 {
  name MEcornell_box
- nsides 5 1 UINT
-4 4 4 4 4
- vidxs 20 1 UINT
-  2 0 1 3 6 5 4 7 6 0 2 5 3 4 5 2 0 6 7 1
- shidxs 5 1 BYTE
-0 0 0 2 1
- vlist 8 1 POINT
-0.549600005 0 0.559200048 0.5528 0 0 0 0 0.559200048 0 0 0 0 0.548799992 0 0 0.548799992 0.559200048
-  0.556000054 0.548799992 0.559200048 0.556000054 0.548799992 0
  matrix
  -1 -1.50995803e-07 0 0
  1.13998658e-14 -7.54979013e-08 1 0
@@ -211,6 +207,15 @@ polymesh
  shader 3 1 NODE
 "MAcbox_Material" "MAcbox_red" "MAcbox_green"
  opaque on
+ nsides 5 1 UINT
+4 4 4 4 4
+ vidxs 20 1 UINT
+  2 0 1 3 6 5 4 7 6 0 2 5 3 4 5 2 0 6 7 1
+ shidxs 5 1 BYTE
+0 0 0 2 1
+ vlist 8 1 VECTOR
+0.549600005 0 0.559200048 0.5528 0 0 0 0 0.559200048 0 0 0 0 0.548799992 0 0 0.548799992 0.559200048
+  0.556000054 0.548799992 0.559200048 0.556000054 0.548799992 0
 }
 
 standard
