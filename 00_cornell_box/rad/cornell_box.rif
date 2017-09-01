@@ -1,7 +1,7 @@
 ZONE = I -556 0 0 559.2 0 548.8
 scene = cornell_box.rad
-VAR = High
-DET = High
+VAR = Medium
+DET = Medium
 QUAL = High
 AMB = cornell_box.amb
 INDIRECT = 1

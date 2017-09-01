@@ -16,3 +16,7 @@ cornell_box:
 	sh cornell_box.sh
 	ra_tiff cornell_box_1.hdr cornell_box.tiff
 	imf_copy cornell_box.tiff cornell_box.png
+
+# rad -o x11 -N 8 cornell_box.rif
+# wait for result (creates cornell_box.amb and cornell_box.oct)
+# then run 'make all'
