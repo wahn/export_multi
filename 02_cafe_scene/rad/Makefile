@@ -13,10 +13,10 @@ all: lights1 lights2
 x11: lights1_x11 lights2_x11
 
 lights1_x11:
-	rad -o x11 lights1_x11.rif
+	rad -o x11 -N 8 lights1_x11.rif
 
 lights2_x11:
-	rad -o x11 lights2_x11.rif
+	rad -o x11 -N 8 lights2_x11.rif
 
 lights1: clean
 	rad -n lights1.rif > lights1.sh
