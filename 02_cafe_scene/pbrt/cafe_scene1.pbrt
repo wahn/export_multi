@@ -11,7 +11,7 @@ Film "image"
   "integer xresolution" [ 500 ]
   "integer yresolution" [ 500 ]
 #Sampler "metropolis"
-Sampler "lowdiscrepancy" "integer pixelsamples" [1024] # [8]
+Sampler "lowdiscrepancy" "integer pixelsamples" [8192] # [8]
 PixelFilter "gaussian" "float xwidth" [2.000000 ] "float ywidth" [2.000000 ]
 Integrator "path"
 ##Integrator "directlighting" "integer maxdepth" [10]
