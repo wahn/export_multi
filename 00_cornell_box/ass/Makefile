@@ -4,12 +4,12 @@ KICK = $(ARNOLD)/bin/kick
 EXR = \
 arnold.exr \
 arnold_aov_emission.exr \
-arnold_aov_direct_diffuse.exr \
-arnold_aov_direct_specular.exr \
-arnold_aov_reflection.exr \
-arnold_aov_refraction.exr \
-arnold_aov_indirect_diffuse.exr \
-arnold_aov_indirect_specular.exr
+arnold_aov_diffuse_direct.exr \
+arnold_aov_diffuse_indirect.exr \
+arnold_aov_specular_direct.exr \
+arnold_aov_specular_indirect.exr \
+arnold_aov_transmission_direct.exr \
+arnold_aov_transmission_indirect.exr
 
 all: render
 

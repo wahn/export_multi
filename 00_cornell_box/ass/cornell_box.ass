@@ -1,6 +1,6 @@
-### exported: Tue May 23 09:06:30 2017
-### from:     Arnold 5.0.0.2 [f2591180] linux clang-3.9.0 oiio-1.7.12 osl-1.8.2 vdb-4.0.0 rlm-12.2.2 2017/05/08 11:44:37
-### host app: Blender 2.78.0
+### exported: Tue Oct 24 18:34:36 2017
+### from:     Arnold 5.0.1.5 [fd1cdf40] linux clang-4.0.0 oiio-1.7.15 osl-1.9.0 vdb-4.0.0 clm-1.0.3.513 rlm-12.2.2 2017/10/13 10:53:08
+### host app: Blender 2.79.0
 
 
 
@@ -10,14 +10,15 @@ options
  outputs 8 1 STRING
   "RGBA RGBA filter driver"
   "emission RGB filter driver_emission"
-  "direct_diffuse RGB filter driver_direct_diffuse"
-  "direct_specular RGB filter driver_direct_specular"
-  "reflection RGB filter driver_reflection"
-  "refraction RGB filter driver_refraction"
-  "indirect_diffuse RGB filter driver_indirect_diffuse"
-  "indirect_specular RGB filter driver_indirect_specular"
+  "diffuse_direct RGB filter driver_diffuse_direct"
+  "specular_direct RGB filter driver_specular_direct"
+  "transmission_direct RGB filter driver_transmission_direct"
+  "transmission_indirect RGB filter driver_transmission_indirect"
+  "diffuse_indirect RGB filter driver_diffuse_indirect"
+  "specular_indirect RGB filter driver_specular_indirect"
  xres 500
  yres 500
+ bucket_size 32
  bucket_scanning "hilbert"
  camera "CACamera"
  plugin_searchpath "/Users/jan/Graphics/Rendering/Arnold/shaders/current"
@@ -44,7 +45,7 @@ persp_camera
  aperture_size 0
 }
 
-standard
+standard_surface
 {
  name MAdefault
 }
@@ -68,38 +69,38 @@ driver_exr
 
 driver_exr
 {
- name driver_direct_diffuse
- filename "arnold_aov_direct_diffuse.exr"
+ name driver_diffuse_direct
+ filename "arnold_aov_diffuse_direct.exr"
 }
 
 driver_exr
 {
- name driver_direct_specular
- filename "arnold_aov_direct_specular.exr"
+ name driver_specular_direct
+ filename "arnold_aov_specular_direct.exr"
 }
 
 driver_exr
 {
- name driver_reflection
- filename "arnold_aov_reflection.exr"
+ name driver_transmission_direct
+ filename "arnold_aov_transmission_direct.exr"
 }
 
 driver_exr
 {
- name driver_refraction
- filename "arnold_aov_refraction.exr"
+ name driver_transmission_indirect
+ filename "arnold_aov_transmission_indirect.exr"
 }
 
 driver_exr
 {
- name driver_indirect_diffuse
- filename "arnold_aov_indirect_diffuse.exr"
+ name driver_diffuse_indirect
+ filename "arnold_aov_diffuse_indirect.exr"
 }
 
 driver_exr
 {
- name driver_indirect_specular
- filename "arnold_aov_indirect_specular.exr"
+ name driver_specular_indirect
+ filename "arnold_aov_specular_indirect.exr"
 }
 
 polymesh
@@ -164,13 +165,13 @@ polymesh
   0.000500000024 0.000500000024 0.000500000024 0.000500000024 -0.000500000024 0.000500000024
 }
 
-standard
+standard_surface
 {
  name MAbox_Material
- Kd 1
- Kd_color 0.5 0.5 0.5
- Ks 0
- Ks_color 1 1 1
+ base 1
+ base_color 0.5 0.5 0.5
+ specular 0
+ specular_color 1 1 1
 }
 
 polymesh
@@ -218,30 +219,30 @@ polymesh
   0.556000054 0.548799992 0.559200048 0.556000054 0.548799992 0
 }
 
-standard
+standard_surface
 {
  name MAcbox_Material
- Kd 1
- Kd_color 0.400000006 0.400000006 0.400000006
- Ks 0
- Ks_color 1 1 1
+ base 1
+ base_color 0.400000006 0.400000006 0.400000006
+ specular 0
+ specular_color 1 1 1
 }
 
-standard
+standard_surface
 {
  name MAcbox_red
- Kd 1
- Kd_color 0.5 0 0
- Ks 0
- Ks_color 1 1 1
+ base 1
+ base_color 0.5 0 0
+ specular 0
+ specular_color 1 1 1
 }
 
-standard
+standard_surface
 {
  name MAcbox_green
- Kd 1
- Kd_color 0 0.5 0
- Ks 0
- Ks_color 1 1 1
+ base 1
+ base_color 0 0.5 0
+ specular 0
+ specular_color 1 1 1
 }
 
