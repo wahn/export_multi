@@ -6,41 +6,48 @@ ARNOLD = /usr/local/Arnold
 KICK = $(ARNOLD)/bin/kick
 
 all: \
-simple_room_cam1.ass \
-simple_room_cam2.ass \
-simple_room_cam3.ass \
-simple_room_cam4.ass
+simple_room_cam1.exr \
+simple_room_cam2.exr \
+simple_room_cam3.exr \
+simple_room_cam4.exr
 
 clean:
-	-rm -f *~ simple_room_cam?.ass 
+	-rm -f *~
 
 clobber: clean
 	-rm -f *.exr
 
-simple_room_cam1.ass: simple_room.ass
-	patch simple_room.ass -i simple_room_cam1.patch -o simple_room_cam1.ass
+simple_room_cam1.exr: simple_room.ass
+	$(KICK) -dp -dw -c CAcam1 -i simple_room.ass -o simple_room_cam1.exr -v 6
 
-simple_room_cam2.ass: simple_room.ass simple_room_cam2.patch
-	patch simple_room.ass -i simple_room_cam2.patch -o simple_room_cam2.ass
+simple_room_cam2.exr: simple_room.ass
+	$(KICK) -dp -dw -c CAcam2 -i simple_room.ass -o simple_room_cam2.exr -v 6 \
+-e -3 \
+-set options.GI_diffuse_samples 2 \
+-set options.GI_specular_samples 2 \
+-set options.GI_transmission_samples 2 \
+-set options.AA_samples 16 \
+-set sun_skydome.samples 1 \
+-set LAfixture.samples 3
 
-simple_room_cam3.ass: simple_room.ass simple_room_cam3.patch
-	patch simple_room.ass -i simple_room_cam3.patch -o simple_room_cam3.ass
+simple_room_cam3.exr: simple_room.ass
+	$(KICK) -dp -dw -c CAcam3 -i simple_room.ass -o simple_room_cam3.exr -v 6 \
+-e -5 \
+-set options.GI_diffuse_samples 2 \
+-set options.GI_specular_samples 2 \
+-set options.GI_transmission_samples 2 \
+-set options.AA_samples 16 \
+-set sun_skydome.samples 1 \
+-set LAfixture.samples 3 \
+-set LAfixture.intensity 50
 
-simple_room_cam4.ass: simple_room.ass simple_room_cam4.patch
-	patch simple_room.ass -i simple_room_cam4.patch -o simple_room_cam4.ass
-
-simple_room_cam1.exr: simple_room_cam1.ass
-	$(KICK) -dp -dw -i simple_room_cam1.ass -o simple_room_cam1.exr \
--r 2000 2000 -v 6
-
-simple_room_cam2.exr: simple_room_cam2.ass
-	$(KICK) -dp -dw -i simple_room_cam2.ass -o simple_room_cam2.exr \
--r 2000 2000 -v 6
-
-simple_room_cam3.exr: simple_room_cam3.ass
-	$(KICK) -dp -dw -i simple_room_cam3.ass -o simple_room_cam3.exr \
--r 2000 2000 -v 6
-
-simple_room_cam4.exr: simple_room_cam4.ass
-	$(KICK) -dp -dw -i simple_room_cam4.ass -o simple_room_cam4.exr \
--r 2000 2000 -v 6
+simple_room_cam4.exr: simple_room.ass
+	$(KICK) -dp -dw -c CAcam4 -i simple_room.ass -o simple_room_cam4.exr -v 6 \
+-e -5 \
+-set options.GI_diffuse_samples 2 \
+-set options.GI_specular_samples 2 \
+-set options.GI_transmission_samples 2 \
+-set options.AA_samples 16 \
+-set sun_skydome.samples 1 \
+-set LAfixture.samples 3 \
+-set LAfixture.intensity 50
