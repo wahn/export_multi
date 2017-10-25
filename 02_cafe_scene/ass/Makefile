@@ -12,7 +12,7 @@ clean:
 	-rm -f *~
 
 clobber: clean
-	-rm -f *.exr *.log
+	-rm -f *.exr
 
 cafe_scene1.exr: cafe_scene1.ass
 	$(KICK) -dp -dw -i cafe_scene1.ass -o cafe_scene1.exr -v 6 -e -4 \

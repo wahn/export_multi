@@ -1,0 +1,308 @@
+00:00:00    36MB         | log started Wed Oct 25 13:26:36 2017
+00:00:00    36MB         | Arnold 5.0.1.5 [fd1cdf40] linux clang-4.0.0 oiio-1.7.15 osl-1.9.0 vdb-4.0.0 clm-1.0.3.513 rlm-12.2.2 2017/10/13 10:53:08
+00:00:00    36MB         | running on localhost, pid=8632
+00:00:00    36MB         |  2 x Intel(R) Xeon(R) CPU E5520 @ 2.27GHz (8 cores, 8 logical) with 11849MB
+00:00:00    36MB         |  CentOS Linux 7 (Core), Linux kernel 3.10.0-514.6.1.el7.x86_64
+00:00:00    36MB         |  soft limit for open files raised from 8192 to 8190
+00:00:00    36MB         |  
+00:00:00    36MB         | [kick] command: /usr/local/Arnold/bin/kick -dp -dw -i cafe_scene2.ass -o cafe_scene2.exr -v 6 -logfile cafe_scene2.log
+00:00:00    36MB         | loading plugins from . ...
+00:00:00    36MB         | no plugins loaded
+00:00:00    36MB         | [ass] loading cafe_scene2.ass ...
+00:00:00    37MB         | [ass] read 157645 bytes, 219 nodes in 0:00.01
+00:00:00    37MB         | 
+00:00:00    37MB         | authorizing ...
+00:00:01    41MB         | [clm] authorized for "86985ARNOL_2018_0F" in 0:01.19
+00:00:01    41MB         | [clm] expiration date: 2017/11/08, in use: 1/5
+00:00:01    41MB         | 
+00:00:01    41MB         | [color_manager] no color manager is active
+00:00:01    41MB         | [color_manager] rendering color space is "linear" with declared chromaticities:
+00:00:01    41MB         |                 r(0.6400, 0.3300) g(0.3000, 0.6000) b(0.1500, 0.0600) and w(0.3127, 0.3290)
+00:00:01    58MB         |  
+00:00:01    58MB         | there are 5 lights and 176 objects:
+00:00:01    58MB         |       1 persp_camera
+00:00:01    58MB         |       2 point_light
+00:00:01    58MB         |       3 spot_light
+00:00:01    58MB         |       3 ray_switch_rgba
+00:00:01    58MB         |       1 utility
+00:00:01    58MB         |      19 standard_surface
+00:00:01    58MB         |       6 mix_shader
+00:00:01    58MB         |       8 driver_exr
+00:00:01    58MB         |       1 gaussian_filter
+00:00:01    58MB         |      10 sphere
+00:00:01    58MB         |      25 cylinder
+00:00:01    58MB         |       5 cone
+00:00:01    58MB         |       6 disk
+00:00:01    58MB         |     129 polymesh
+00:00:01    58MB         |       1 list_aggregate
+00:00:01    58MB         |  
+00:00:01    58MB         | rendering image at 500 x 500, 3 AA samples
+00:00:01    58MB         |   AA sample clamp   <disabled>
+00:00:01    58MB         |   diffuse           samples 16 / depth  3
+00:00:01    58MB         |   specular          samples  1 / depth  1
+00:00:01    58MB         |   transmission      <disabled by depth>
+00:00:01    58MB         |   volume indirect   <disabled by depth>
+00:00:01    58MB         |   total                          depth 12
+00:00:01    58MB         |   bssrdf            samples  1
+00:00:01    58MB         |   transparency      depth 10
+00:00:01    58MB         |  initializing 221 nodes ...
+00:00:01    59MB         |   creating root object list ...
+00:00:01    59MB         |  node initialization done in 0:00.00 (single-threaded)
+00:00:01    59MB         |  updating 222 nodes ...
+00:00:01    59MB         |   CUdownlight2_spot: spot_light using 1 sample, 2 volume samples
+00:00:01    59MB         |   CUdownlight1_point: spot_light using 4 samples, 2 volume samples
+00:00:01    59MB         |   CUdownlight3_point: spot_light using 4 samples, 2 volume samples
+00:00:01    59MB         |   LAbulbf_un0001: point_light using 8 samples, 2 volume samples
+00:00:01    59MB         |   LAbulbf_un0003: point_light using 8 samples, 2 volume samples
+00:00:01    59MB         |   scene bounds: (-1.21920002 -1.21920002 -0.0304800011) -> (1.21920002 1.28016007 2.49936008)
+00:00:01    59MB         |  node update done in 0:00.00 (single-threaded)
+00:00:01    59MB         |  [aov] parsing 8 output statements ...
+00:00:01    59MB         |  [aov] registered driver: "driver_specular_direct" (driver_exr)
+00:00:01    59MB         |  [aov]  * "specular_direct" of type RGB filtered by "filter" (gaussian_filter)
+00:00:01    59MB         |  [aov] registered driver: "driver" (driver_exr)
+00:00:01    59MB         |  [aov]  * "RGBA" of type RGBA filtered by "filter" (gaussian_filter)
+00:00:01    59MB         |  [aov] registered driver: "driver_emission" (driver_exr)
+00:00:01    59MB         |  [aov]  * "emission" of type RGB filtered by "filter" (gaussian_filter)
+00:00:01    59MB         |  [aov] registered driver: "driver_diffuse_direct" (driver_exr)
+00:00:01    59MB         |  [aov]  * "diffuse_direct" of type RGB filtered by "filter" (gaussian_filter)
+00:00:01    59MB         |  [aov] registered driver: "driver_transmission_direct" (driver_exr)
+00:00:01    59MB         |  [aov]  * "transmission_direct" of type RGB filtered by "filter" (gaussian_filter)
+00:00:01    59MB         |  [aov] registered driver: "driver_transmission_indirect" (driver_exr)
+00:00:01    59MB         |  [aov]  * "transmission_indirect" of type RGB filtered by "filter" (gaussian_filter)
+00:00:01    59MB         |  [aov] registered driver: "driver_diffuse_indirect" (driver_exr)
+00:00:01    59MB         |  [aov]  * "diffuse_indirect" of type RGB filtered by "filter" (gaussian_filter)
+00:00:01    59MB         |  [aov] registered driver: "driver_specular_indirect" (driver_exr)
+00:00:01    59MB         |  [aov]  * "specular_indirect" of type RGB filtered by "filter" (gaussian_filter)
+00:00:01    59MB         |  [aov] done preparing 8 AOVs for 8 outputs to 8 drivers (0 deep AOVs)
+00:00:01    60MB         |  starting 8 bucket workers of size 16x16 ...
+00:00:01    63MB         |     0% done - 10 rays/pixel
+00:00:01    64MB         |   [accel] list_aggregate bvh4 done - 0:00.00 - 175 prims, 1 key
+00:00:01    65MB         |   [accel] polymesh bvh4 done - 0:00.00 - 6 prims, 1 key
+00:00:01    66MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    67MB         |   [accel] polymesh bvh4 done - 0:00.00 - 6 prims, 1 key
+00:00:01    67MB         |   [accel] polymesh bvh4 done - 0:00.00 - 6 prims, 1 key
+00:00:01    67MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    67MB         |   [accel] polymesh bvh4 done - 0:00.00 - 6 prims, 1 key
+00:00:01    67MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    67MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    67MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    68MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    68MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    68MB         |   [accel] polymesh bvh4 done - 0:00.00 - 6 prims, 1 key
+00:00:01    68MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    69MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    70MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 6 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 6 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 6 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 6 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 6 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 17 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 6 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 6 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 6 prims, 1 key
+00:00:01    71MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 6 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 6 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 6 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 26 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:01    72MB         |   [accel] polymesh bvh4 done - 0:00.00 - 7 prims, 1 key
+00:00:04    73MB         |     5% done - 2216 rays/pixel
+00:00:08    73MB         |    10% done - 2518 rays/pixel
+00:00:23    73MB         |    15% done - 7638 rays/pixel
+00:00:32    74MB         |    20% done - 4943 rays/pixel
+00:00:33    74MB         |    25% done - 563 rays/pixel
+00:00:34    74MB         |    30% done - 443 rays/pixel
+00:00:35    74MB         |    35% done - 269 rays/pixel
+00:00:46    74MB         |    40% done - 5410 rays/pixel
+00:01:01    74MB         |    45% done - 6713 rays/pixel
+00:01:18    74MB         |    50% done - 8073 rays/pixel
+00:01:32    74MB         |    55% done - 7106 rays/pixel
+00:01:49    74MB         |    60% done - 7868 rays/pixel
+00:01:59    74MB         |    65% done - 5094 rays/pixel
+00:02:01    74MB         |    70% done - 1055 rays/pixel
+00:02:02    74MB         |    75% done - 413 rays/pixel
+00:02:02    74MB         |    80% done - 34 rays/pixel
+00:02:12    74MB         |    85% done - 5878 rays/pixel
+00:02:26    74MB         |    90% done - 7092 rays/pixel
+00:02:29    74MB         |    95% done - 2239 rays/pixel
+00:02:32    74MB         |   100% done - 1601 rays/pixel
+00:02:32    74MB         |  bucket workers done in 2:31.10
+00:02:32    74MB         |  [driver_exr] writing file `arnold_aov_specular_direct.exr'
+00:02:32    74MB         |  [driver_exr] writing file `cafe_scene2.exr'
+00:02:32    74MB         |  [driver_exr] writing file `arnold_aov_emission.exr'
+00:02:32    74MB         |  [driver_exr] writing file `arnold_aov_diffuse_direct.exr'
+00:02:32    74MB         |  [driver_exr] writing file `arnold_aov_transmission_direct.exr'
+00:02:32    74MB         |  [driver_exr] writing file `arnold_aov_transmission_indirect.exr'
+00:02:32    74MB         |  [driver_exr] writing file `arnold_aov_diffuse_indirect.exr'
+00:02:32    74MB         |  [driver_exr] writing file `arnold_aov_specular_indirect.exr'
+00:02:32    74MB         | render done
+00:02:32    74MB         |  
+00:02:32    74MB         | -----------------------------------------------------------------------------------
+00:02:32    74MB         | scene creation time:
+00:02:32    74MB         |  plugin loading               0:00.00
+00:02:32    74MB         |  .ass parsing                 0:00.01
+00:02:32    74MB         |  total                        0:00.01  ( 7.57% machine utilization)
+00:02:32    74MB         | -----------------------------------------------------------------------------------
+00:02:32    74MB         | render time:                  (multi-threaded render, values may not be reliable)
+00:02:32    74MB         |  node init                    0:00.00
+00:02:32    74MB         |   sanity checks               0:00.00
+00:02:32    74MB         |  driver init/close            0:00.03
+00:02:32    74MB         |  bucket rendering             2:31.10
+00:02:32    74MB         |   mesh processing             0:00.00
+00:02:32    74MB         |   accel. building             0:00.01
+00:02:32    74MB         |   output driver               0:00.89
+00:02:32    74MB         |   pixel rendering             2:30.19
+00:02:32    74MB         |  unaccounted                  0:01.22
+00:02:32    74MB         |  total                        2:32.36  (96.08% machine utilization)
+00:02:32    74MB         | -----------------------------------------------------------------------------------
+00:02:32    74MB         | memory consumed in MB:
+00:02:32    74MB         |  at startup                32.98
+00:02:32    74MB         |  AOV samples                3.21
+00:02:32    74MB         |  output buffers             0.20
+00:02:32    74MB         |  node overhead              0.11
+00:02:32    74MB         |  message passing            0.02
+00:02:32    74MB         |  memory pools              19.07
+00:02:32    74MB         |  geometry                   0.08
+00:02:32    74MB         |    polymesh                 0.08
+00:02:32    74MB         |  accel. structs             0.82
+00:02:32    74MB         |  strings                   12.01
+00:02:32    74MB         |  texture cache              0.00
+00:02:32    74MB         |  unaccounted                5.84
+00:02:32    74MB         |  total peak                74.34
+00:02:32    74MB         | -----------------------------------------------------------------------------------
+00:02:32    74MB         | ray counts:                      ( /pixel, /sample) (% total) (avg. hits) (max hits)
+00:02:32    74MB         |  camera                  2508048 (  10.03,    1.00) (  0.26%) (     0.54) (       1)
+00:02:32    74MB         |  shadow                503476550 (2013.91,  200.74) ( 52.68%) (     0.51) (       1)
+00:02:32    74MB         |  diffuse_reflect       449205557 (1796.82,  179.11) ( 47.00%) (     0.44) (       1)
+00:02:32    74MB         |  specular_reflect         492545 (   1.97,    0.20) (  0.05%) (     0.58) (       1)
+00:02:32    74MB         |  total                 955682700 (3822.73,  381.05) (100.00%) (     0.48) (       1)
+00:02:32    74MB         | by ray depth:              0     1     2     3     4
+00:02:32    74MB         |  total                   18.6% 57.9% 17.4%  6.0%  0.0% 
+00:02:32    74MB         | -----------------------------------------------------------------------------------
+00:02:32    74MB         | shader calls                     (  /pixel,  /sample) (% total)
+00:02:32    74MB         |  primary               396691793 ( 1586.77,   158.17) (100.00%)
+00:02:32    74MB         |  total                 396691793 ( 1586.77,   158.17) (100.00%)
+00:02:32    74MB         | by ray depth:              0     1     2     3     4
+00:02:32    74MB         |  total                    0.6% 68.7% 22.6%  8.1%  0.0% 
+00:02:32    74MB         | -----------------------------------------------------------------------------------
+00:02:32    74MB         | geometry:                        (% hit ) (instances) (  init mem,  final mem)
+00:02:32    74MB         |  lists                         1 (100.0%) (        0) (      0.00,       0.00)
+00:02:32    74MB         |  polymeshes                  129 (100.0%) (        0) (      0.09,       0.08)
+00:02:32    74MB         |  simple                       46 (100.0%) (        0) (      0.00,       0.00)
+00:02:32    74MB         | -----------------------------------------------------------------------------------
+00:02:32    74MB         | geometric elements:              (      min) (       avg.) (      max)
+00:02:32    74MB         |  polygons                   2041 (        1) (       15.8) (       26)
+00:02:32    74MB         | -----------------------------------------------------------------------------------
+00:02:32    74MB         | triangle tessellation:           (      min) (       avg.) (      max) (/ element) (% total)
+00:02:32    74MB         |  polymeshes                 3308 (        2) (       25.6) (       44) (     1.62) (100.00%)
+00:02:32    74MB         |  unique triangles           3308
+00:02:32    74MB         |  memory use (in MB)         0.08
+00:02:32    74MB         |   vertices                  0.02
+00:02:32    74MB         |   vertex indices            0.01
+00:02:32    74MB         |   userdata                  0.01
+00:02:32    74MB         |  largest polymeshes by triangle count:
+00:02:32    74MB         |          44 tris -- MEtile_c
+00:02:32    74MB         |          44 tris -- MEtile_c_un0077
+00:02:32    74MB         |          44 tris -- MEtile_c_un0049
+00:02:32    74MB         |          44 tris -- MEtile_b_un0090
+00:02:32    74MB         |          44 tris -- MEtile_b_un0094
+00:02:32    74MB         | -----------------------------------------------------------------------------------
+00:02:32    74MB         | acceleration structures:         (% total)
+00:02:32    74MB         |  list                         12 (  9.23%)
+00:02:32    74MB         |  bvh                         118 ( 90.77%)
+00:02:32    74MB         |  total                       130 (100.00%)
+00:02:32    74MB         | -----------------------------------------------------------------------------------
+00:02:32    74MB         | performance warnings:
+00:02:32    74MB WARNING |  You are tracing 3823 rays per pixel. You may want to double check and reduce your sampling settings.
+00:02:32    74MB         | -----------------------------------------------------------------------------------
+00:02:32    74MB         |  
+00:02:32    74MB         | releasing resources
+00:02:32    74MB         | Arnold shutdown
