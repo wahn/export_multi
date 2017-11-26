@@ -1,0 +1,6 @@
+-Sampler "lowdiscrepancy" "integer pixelsamples" [8]
++Sampler "lowdiscrepancy" "integer pixelsamples" [4096] # [64]
+ PixelFilter "gaussian" "float xwidth" [2.000000 ] "float ywidth" [2.000000 ]
+-Integrator "path"
++Integrator "path" "integer maxdepth" [5]
+
