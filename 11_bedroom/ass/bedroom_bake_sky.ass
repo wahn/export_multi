@@ -1,0 +1,80 @@
+### exported: Fri Aug  7 09:45:40 2015
+### from:     Arnold 4.2.7.5 linux clang-3.6.0 glibc-2.12 oiio-1.5.15 rlm-11.2.2 2015/07/01 15:09:31
+### host app: Blender 2.75.0
+
+
+
+options
+{
+ AA_samples 5
+ outputs 1 1 STRING
+  "RGBA RGBA filter driver"
+ # xres 800
+ # yres 600
+ xres 4096
+ yres 2048
+ bucket_size 32
+ bucket_scanning "hilbert"
+ camera "CACamera"
+ background "sun_sky"
+ shader_searchpath "/usr/people/jan/Graphics/Rendering/Arnold/shaders/current"
+ texture_gamma 2.20000005
+ GI_diffuse_depth 4
+ GI_glossy_depth 0
+ GI_reflection_depth 6
+ GI_refraction_depth 6
+ GI_total_depth 12
+ GI_diffuse_samples 20
+ GI_single_scatter_samples 4
+ GI_glossy_samples 3
+ GI_refraction_samples 3
+}
+
+cyl_camera
+{
+ name CACamera
+ horizontal_fov 360
+ vertical_fov 120
+ position 0 0 0
+ look_at 0 -1 0
+ up 0 0 1
+ # fov 60
+ # matrix
+ # -0.863367438 0.504575551 1.86264493e-09 0
+ # -0.0313938484 -0.0537172854 0.998062491 0
+ # 0.503598034 0.861694813 0.0622183345 0
+ # 1.29769945 1.16920304 1.0478034 1
+}
+
+gaussian_filter
+{
+ name filter
+}
+
+driver_exr
+{
+ name driver
+ filename "arnold.exr"
+}
+
+physical_sky
+{
+ name sun_sky
+ turbidity 2
+ elevation 33.4225655
+ azimuth -160.244003
+ sun_direction 0 1 0
+ intensity 5 # 500
+ X 1 0 0
+ Y 0 0 1
+ Z 0 1 0
+}
+
+skydome_light
+{
+ name sun_skydome
+ resolution 4096
+ color sun_sky
+ intensity 1 # 0.50
+ samples 18
+}
