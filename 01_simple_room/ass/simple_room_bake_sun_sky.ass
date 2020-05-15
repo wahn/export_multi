@@ -1,0 +1,79 @@
+### exported: Tue Oct 24 11:31:28 2017
+### from:     Arnold 5.0.1.5 [fd1cdf40] linux clang-4.0.0 oiio-1.7.15 osl-1.9.0 vdb-4.0.0 clm-1.0.3.513 rlm-12.2.2 2017/10/13 10:53:08
+### host app: Blender 2.79.0
+
+
+
+options
+{
+ AA_samples 1
+ outputs 1 1 STRING
+  "RGBA RGBA filter driver"
+ # xres 500
+ # yres 500
+ xres 4096
+ yres 2048
+ bucket_size 16
+ bucket_scanning "hilbert"
+ camera "CAbake"
+ background "sun_sky"
+ plugin_searchpath "/Users/jan/Graphics/Rendering/Arnold/shaders/current"
+ GI_diffuse_depth 2
+ GI_specular_depth 1
+ GI_transmission_depth 1
+ GI_volume_depth 0
+ GI_total_depth 1
+ GI_diffuse_samples 1
+ GI_specular_samples 0
+ GI_transmission_samples 0 # 2
+ GI_sss_samples 0
+ GI_volume_samples 0
+}
+
+cyl_camera
+{
+ name CAbake
+ horizontal_fov 360
+ vertical_fov 140
+ position 0 0 0
+ look_at 0 -1 0
+ up 0 0 1
+}
+
+standard_surface
+{
+ name MAdefault
+}
+
+gaussian_filter
+{
+ name filter
+}
+
+driver_exr
+{
+ name driver
+ filename "arnold.exr"
+}
+
+physical_sky
+{
+ name sun_sky
+ turbidity 2
+ elevation 43.2858849
+ azimuth -54.6264381
+ sun_direction 0 1 0
+ intensity 100
+ X 1 0 0
+ Y 0 0 1
+ Z 0 1 0
+}
+
+skydome_light
+{
+ name sun_skydome
+ color sun_sky
+ intensity 1
+ samples 16
+ resolution 4096
+}
