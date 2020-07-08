@@ -1,0 +1,74 @@
+diff --git a/00_cornell_box/ass/cornell_box.ass b/00_cornell_box/ass/cornell_box.ass
+index f144aa42..a5ccf27c 100644
+--- a/00_cornell_box/ass/cornell_box.ass
++++ b/00_cornell_box/ass/cornell_box.ass
+@@ -9,13 +9,13 @@ options
+  AA_samples 5
+  outputs 8 1 STRING
+   "RGBA RGBA filter driver"
+-  "emission RGB filter driver_emission"
+-  "diffuse_direct RGB filter driver_diffuse_direct"
+-  "specular_direct RGB filter driver_specular_direct"
+-  "transmission_direct RGB filter driver_transmission_direct"
+-  "transmission_indirect RGB filter driver_transmission_indirect"
+-  "diffuse_indirect RGB filter driver_diffuse_indirect"
+-  "specular_indirect RGB filter driver_specular_indirect"
++  "emission RGB filter driver"
++  "diffuse_direct RGB filter driver"
++  "specular_direct RGB filter driver"
++  "transmission_direct RGB filter driver"
++  "transmission_indirect RGB filter driver"
++  "diffuse_indirect RGB filter driver"
++  "specular_indirect RGB filter driver"
+  xres 500
+  yres 500
+  bucket_size 32
+@@ -61,48 +61,6 @@ driver_exr
+  filename "arnold.exr"
+ }
+ 
+-driver_exr
+-{
+- name driver_emission
+- filename "arnold_aov_emission.exr"
+-}
+-
+-driver_exr
+-{
+- name driver_diffuse_direct
+- filename "arnold_aov_diffuse_direct.exr"
+-}
+-
+-driver_exr
+-{
+- name driver_specular_direct
+- filename "arnold_aov_specular_direct.exr"
+-}
+-
+-driver_exr
+-{
+- name driver_transmission_direct
+- filename "arnold_aov_transmission_direct.exr"
+-}
+-
+-driver_exr
+-{
+- name driver_transmission_indirect
+- filename "arnold_aov_transmission_indirect.exr"
+-}
+-
+-driver_exr
+-{
+- name driver_diffuse_indirect
+- filename "arnold_aov_diffuse_indirect.exr"
+-}
+-
+-driver_exr
+-{
+- name driver_specular_indirect
+- filename "arnold_aov_specular_indirect.exr"
+-}
+-
+ polymesh
+ {
+  name MELight

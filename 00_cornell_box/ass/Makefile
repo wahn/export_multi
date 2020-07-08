@@ -26,6 +26,15 @@ render: cornell_box.ass
 -set MALight_light.samples 3 \
 -set options.GI_diffuse_samples 6
 
+cornell_box_denoise.ass: cornell_box_denoise.patch
+	patch -i cornell_box_denoise.patch -o cornell_box_denoise.ass
+
+denoise: cornell_box_denoise.ass
+	$(KICK) -dp -dw -i cornell_box_denoise.ass -v 6 \
+-set MALight_light.intensity 1 \
+-set MALight_light.samples 3 \
+-set options.GI_diffuse_samples 1
+
 backup-dir:
 	mkdir -p backup
 
