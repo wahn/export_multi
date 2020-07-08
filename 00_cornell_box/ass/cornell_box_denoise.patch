@@ -1,10 +1,13 @@
 diff --git a/00_cornell_box/ass/cornell_box.ass b/00_cornell_box/ass/cornell_box.ass
-index f144aa42..a5ccf27c 100644
+index f144aa42..c21de9e5 100644
 --- a/00_cornell_box/ass/cornell_box.ass
 +++ b/00_cornell_box/ass/cornell_box.ass
-@@ -9,13 +9,13 @@ options
+@@ -7,15 +7,19 @@
+ options
+ {
   AA_samples 5
-  outputs 8 1 STRING
+- outputs 8 1 STRING
++ outputs 12 1 STRING
    "RGBA RGBA filter driver"
 -  "emission RGB filter driver_emission"
 -  "diffuse_direct RGB filter driver_diffuse_direct"
@@ -20,13 +23,23 @@ index f144aa42..a5ccf27c 100644
 +  "transmission_indirect RGB filter driver"
 +  "diffuse_indirect RGB filter driver"
 +  "specular_indirect RGB filter driver"
++  "variance RGB variance_filter driver"
++  "diffuse_albedo RGB variance_filter driver"
++  "Z FLOAT filter driver"
++  "N VECTOR filter driver"
   xres 500
   yres 500
   bucket_size 32
-@@ -61,48 +61,6 @@ driver_exr
-  filename "arnold.exr"
+@@ -55,50 +59,14 @@ gaussian_filter
+  name filter
  }
  
+-driver_exr
+-{
+- name driver
+- filename "arnold.exr"
+-}
+-
 -driver_exr
 -{
 - name driver_emission
@@ -40,13 +53,16 @@ index f144aa42..a5ccf27c 100644
 -}
 -
 -driver_exr
--{
++variance_filter
+ {
 - name driver_specular_direct
 - filename "arnold_aov_specular_direct.exr"
--}
--
--driver_exr
--{
++ name variance_filter
++ filter_weights gaussian
+ }
+
+ driver_exr
+ {
 - name driver_transmission_direct
 - filename "arnold_aov_transmission_direct.exr"
 -}
@@ -67,8 +83,8 @@ index f144aa42..a5ccf27c 100644
 -{
 - name driver_specular_indirect
 - filename "arnold_aov_specular_indirect.exr"
--}
--
++ name driver
++ filename "arnold.exr"
+ }
+
  polymesh
- {
-  name MELight

@@ -19,6 +19,7 @@ clean:
 
 clobber: clean
 	-rm -f $(EXR) 
+	-rm -f cornell_box_denoise.ass
 
 render: cornell_box.ass
 	$(KICK) -dp -dw -i cornell_box.ass -v 6 \
