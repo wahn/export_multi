@@ -1,5 +1,5 @@
 diff --git a/00_cornell_box/ass/cornell_box.ass b/00_cornell_box/ass/cornell_box.ass
-index f144aa42..2d99cc6c 100644
+index f144aa42..49f0f84d 100644
 --- a/00_cornell_box/ass/cornell_box.ass
 +++ b/00_cornell_box/ass/cornell_box.ass
 @@ -9,13 +9,13 @@ options
@@ -16,7 +16,7 @@ index f144aa42..2d99cc6c 100644
 +  "emission RGB filter driver"
 +  "diffuse_direct RGB filter driver"
 +  "diffuse_indirect RGB filter driver"
-+  "variance RGBA variance_filter driver"
++  "RGB RGB variance_filter driver variance"
 +  "diffuse_albedo RGB filter driver"
 +  "Z FLOAT filter driver"
 +  "N VECTOR filter driver"

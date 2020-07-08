@@ -1,8 +1,10 @@
 ARNOLD = /usr/local/Arnold
 KICK = $(ARNOLD)/bin/kick
+NOICE = $(ARNOLD)/bin/noice
 
 EXR = \
 arnold.exr \
+noice.exr \
 arnold_aov_emission.exr \
 arnold_aov_diffuse_direct.exr \
 arnold_aov_diffuse_indirect.exr \
@@ -35,6 +37,7 @@ denoise: cornell_box_denoise.ass
 -set MALight_light.intensity 1 \
 -set MALight_light.samples 3 \
 -set options.GI_diffuse_samples 1
+	$(NOICE) -i arnold.exr -o noice.exr
 
 backup-dir:
 	mkdir -p backup
