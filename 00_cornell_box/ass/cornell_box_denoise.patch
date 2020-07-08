@@ -1,13 +1,10 @@
 diff --git a/00_cornell_box/ass/cornell_box.ass b/00_cornell_box/ass/cornell_box.ass
-index f144aa42..c21de9e5 100644
+index f144aa42..2d99cc6c 100644
 --- a/00_cornell_box/ass/cornell_box.ass
 +++ b/00_cornell_box/ass/cornell_box.ass
-@@ -7,15 +7,19 @@
- options
- {
+@@ -9,13 +9,13 @@ options
   AA_samples 5
-- outputs 8 1 STRING
-+ outputs 12 1 STRING
+  outputs 8 1 STRING
    "RGBA RGBA filter driver"
 -  "emission RGB filter driver_emission"
 -  "diffuse_direct RGB filter driver_diffuse_direct"
@@ -18,19 +15,15 @@ index f144aa42..c21de9e5 100644
 -  "specular_indirect RGB filter driver_specular_indirect"
 +  "emission RGB filter driver"
 +  "diffuse_direct RGB filter driver"
-+  "specular_direct RGB filter driver"
-+  "transmission_direct RGB filter driver"
-+  "transmission_indirect RGB filter driver"
 +  "diffuse_indirect RGB filter driver"
-+  "specular_indirect RGB filter driver"
-+  "variance RGB variance_filter driver"
-+  "diffuse_albedo RGB variance_filter driver"
++  "variance RGBA variance_filter driver"
++  "diffuse_albedo RGB filter driver"
 +  "Z FLOAT filter driver"
 +  "N VECTOR filter driver"
   xres 500
   yres 500
   bucket_size 32
-@@ -55,50 +59,14 @@ gaussian_filter
+@@ -55,50 +55,14 @@ gaussian_filter
   name filter
  }
  
