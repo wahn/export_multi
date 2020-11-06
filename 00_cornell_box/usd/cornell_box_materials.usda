@@ -1,0 +1,21 @@
+#usda 1.0
+(
+    subLayers = [@./cornell_box.usda@]
+)
+
+over "Light" {
+    over "Light" {
+        rel material:binding = </arnold_materials/arnold_surface_emission>
+    }
+}
+
+def Scope "arnold_materials"
+{
+    def Shader "standard_surface_emission"
+    {
+        uniform token info:id = "arnold:standard_surface"
+        float inputs:emission = 1
+        color3f inputs:emission_color = (1, 1, 1)
+        token outputs:surface
+    }
+}
