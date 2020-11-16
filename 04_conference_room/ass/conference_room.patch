@@ -1,49 +1,245 @@
 20a21
 >  bucket_size 32
-12985a12987,12996
+23c24
+<  shader_searchpath "/Users/jan/Graphics/Rendering/Arnold/shaders/current"
+---
+>  plugin_searchpath "/home/jan/git/bitbucket/arnold_shaders/shaders/Radiance"
+25,27c26,27
+<  GI_glossy_depth 1
+<  GI_reflection_depth 6
+<  GI_refraction_depth 6
+---
+>  GI_specular_depth 1
+>  GI_transmission_depth 6
+30,32c30,31
+<  GI_glossy_samples 3
+<  GI_refraction_samples 3
+<  GI_single_scatter_samples 4
+---
+>  GI_specular_samples 3
+>  GI_transmission_samples 3
+178c177
+< standard
+---
+> standard_surface
+181,184c180,183
+<  Kd 1
+<  Kd_color 0.469000012 0.451999992 0.432999998
+<  Ks 0
+<  Ks_color 1 1 1
+---
+>  base 1
+>  base_color 0.469000012 0.451999992 0.432999998
+>  specular 0
+>  specular_color 1 1 1
+12086c12085
+< standard
+---
+> standard_surface
+12089,12092c12088,12091
+<  Kd 0.300000012
+<  Kd_color 0.600000024 0.600000024 0.600000024
+<  Ks 0
+<  Ks_color 1 1 1
+---
+>  base 0.699999988 # 0.300000012
+>  base_color 0.600000024 0.600000024 0.600000024
+>  specular 0
+>  specular_color 1 1 1
+12094,12095c12093,12095
+<  Kr 0.699999988
+<  Kr_color 0.600000024 0.600000024 0.600000024
+---
+>  metalness 0.699999988
+>  ##Kr 0.699999988
+>  ##Kr_color 0.600000024 0.600000024 0.600000024
+12401c12401
+< standard
+---
+> standard_surface
+12404,12407c12404,12407
+<  Kd 0
+<  Kd_color 0.800000012 0.800000012 0.800000012
+<  Ks 0.0799999982
+<  Ks_color 1 1 1
+---
+>  base 0
+>  base_color 0.800000012 0.800000012 0.800000012
+>  specular 0.0799999982
+>  specular_color 1 1 1
+12409,12413c12409,12413
+<  Kr 0.0799999982
+<  Kr_color 1 1 1
+<  Kt 0.920000017
+<  Kt_color 1 1 1
+<  IOR 1.51999998
+---
+>  ##Kr 0.0799999982
+>  ##Kr_color 1 1 1
+>  transmission 0.920000017
+>  transmission_color 1 1 1
+>  specular_IOR 1.51999998
+12446c12446
+< standard
+---
+> standard_surface
+12449,12452c12449,12452
+<  Kd 1
+<  Kd_color 0.100000001 0.100000001 0.100000001
+<  Ks 0
+<  Ks_color 1 1 1
+---
+>  base 1
+>  base_color 0.100000001 0.100000001 0.100000001
+>  specular 0
+>  specular_color 1 1 1
+12887c12887
+< standard
+---
+> standard_surface
+12890,12893c12890,12893
+<  Kd 0.200000003
+<  Kd_color 0.699999988 0.699999988 0.699999988
+<  Ks 0
+<  Ks_color 1 1 1
+---
+>  base 0.800000012 # 0.200000003
+>  base_color 0.699999988 0.699999988 0.699999988
+>  specular 0
+>  specular_color 1 1 1
+12895,12896c12895,12897
+<  Kr 0.800000012
+<  Kr_color 0.699999988 0.699999988 0.699999988
+---
+>  metalness 0.800000012
+>  ##Kr 0.800000012
+>  ##Kr_color 0.699999988 0.699999988 0.699999988
+12949c12950
+< standard
+---
+> standard_surface
+12952,12955c12953,12956
+<  Kd 0.980000019
+<  Kd_color 0.819999993 0.0900000036 0.0700000003
+<  Ks 0.0199999996
+<  Ks_color 1 1 1
+---
+>  base 0.980000019
+>  base_color 0.819999993 0.0900000036 0.0700000003
+>  specular 0.0199999996
+>  specular_color 1 1 1
+12986c12987
+< standard
+---
 > rad_woodpat
-> {
+12988,12989c12989
+<  name MAspeaker_zwood_mat
+<  Kd 0.980000019
+---
 >  name MAspeaker_zwood_pat
->  Kd_color 0.289999992 0.150000006 0.129999995
+12991,12992c12991,13003
+<  Ks 0.0199999996
+<  Ks_color 1 1 1
+---
 >  magnitude 0.6
 >  direction "zgrain"
 >  scale 0.1524 0.1524 0.1524 # 0.5 * 0.3048 (feet to meters)
 >  rotation 0 0 0
 > }
 > 
-12990c13001
-<  Kd_color 0.289999992 0.150000006 0.129999995
----
->  Kd_color MAspeaker_zwood_pat # 0.289999992 0.150000006 0.129999995
-13049a13061,13070
-> rad_woodpat
+> standard_surface
 > {
+>  name MAspeaker_zwood_mat
+>  base 0.980000019
+>  base_color 0.289999992 0.150000006 0.129999995 # MAspeaker_zwood_pat # 0.289999992 0.150000006 0.129999995
+>  specular 0.0199999996
+>  specular_color 1 1 1
+13050c13061
+< standard
+---
+> rad_woodpat
+13052,13053c13063
+<  name MAspeaker_xwood_mat
+<  Kd 0.980000019
+---
 >  name MAspeaker_xwood_pat
->  Kd_color 0.289999992 0.150000006 0.129999995
+13055,13056c13065,13077
+<  Ks 0.0199999996
+<  Ks_color 1 1 1
+---
 >  magnitude 0.6
 >  direction "xgrain"
 >  scale 0.1524 0.1524 0.1524 # 0.5 * 0.3048 (feet to meters)
 >  rotation 0 0 0
 > }
 > 
-13054c13075
-<  Kd_color 0.289999992 0.150000006 0.129999995
+> standard_surface
+> {
+>  name MAspeaker_xwood_mat
+>  base 0.980000019
+>  base_color 0.289999992 0.150000006 0.129999995 # MAspeaker_xwood_pat # 0.289999992 0.150000006 0.129999995
+>  specular 0.0199999996
+>  specular_color 1 1 1
+13112c13133
+< standard
 ---
->  Kd_color MAspeaker_xwood_pat # 0.289999992 0.150000006 0.129999995
+> standard_surface
+13115,13118c13136,13139
+<  Kd 1
+<  Kd_color 0.0799999982 0.0799999982 0.0799999982
+<  Ks 0
+<  Ks_color 1 1 1
+---
+>  base 1
+>  base_color 0.0799999982 0.0799999982 0.0799999982
+>  specular 0
+>  specular_color 1 1 1
+13134c13155
+< standard
+---
+> standard_surface
+13137,13140c13158,13161
+<  Kd 0.980000019
+<  Kd_color 0.829999983 0.699999988 0.430000007
+<  Ks 0.0199999996
+<  Ks_color 1 1 1
+---
+>  base 0.980000019
+>  base_color 0.829999983 0.699999988 0.430000007
+>  specular 0.0199999996
+>  specular_color 1 1 1
+13706c13727
+< standard
+---
+> standard_surface
+13709,13712c13730,13733
+<  Kd 0.949999988
+<  Kd_color 0.879999995 0.720000029 0.579999983
+<  Ks 0.0500000007
+<  Ks_color 1 1 1
+---
+>  base 0.949999988
+>  base_color 0.879999995 0.720000029 0.579999983
+>  specular 0.0500000007
+>  specular_color 1 1 1
+13748c13769
+< ray_switch
+---
+> ray_switch_rgba
 13751c13772
 <  camera 1 0.0500000007 0.0250000004 1
 ---
 >  camera 1 0.716 0.337 1
-13753,13754c13774,13775
+13753,13756c13774,13777
 <  reflection 1 0.0500000007 0.0250000004 1
 <  refraction 1 0.0500000007 0.0250000004 1
----
->  reflection 1 0.716 0.337 1
->  refraction 1 0.716 0.337 1
-13756c13777
+<  diffuse 0 0 0 0
 <  glossy 1 0.0500000007 0.0250000004 1
 ---
->  glossy 1 0.716 0.337 1
+>  specular_reflection 1 0.716 0.337 1
+>  specular_transmission 1 0.716 0.337 1
+>  diffuse_reflection 0 0 0 0
+>  diffuse_transmission 1 0.716 0.337 1
 13764c13785
 <  intensity 1
 ---
@@ -60,6 +256,34 @@
 <  intensity 1
 ---
 >  intensity 0.05 # 1
+13928c13949
+< standard
+---
+> standard_surface
+13931,13934c13952,13955
+<  Kd 0.949999988
+<  Kd_color 0.5 0.5 0.5
+<  Ks 0.0500000007
+<  Ks_color 1 1 1
+---
+>  base 0.949999988
+>  base_color 0.5 0.5 0.5
+>  specular 0.0500000007
+>  specular_color 1 1 1
+14044c14065
+< standard
+---
+> standard_surface
+14047,14050c14068,14071
+<  Kd 0.949999988
+<  Kd_color 0.400000006 0.400000006 0.400000006
+<  Ks 0.0500000007
+<  Ks_color 1 1 1
+---
+>  base 0.949999988
+>  base_color 0.400000006 0.400000006 0.400000006
+>  specular 0.0500000007
+>  specular_color 1 1 1
 14117c14138
 <  intensity 1
 ---
@@ -76,26 +300,108 @@
 <  intensity 1
 ---
 >  intensity 0.05 # 1
-14404a14426,14435
+14405c14426
+< standard
+---
 > rad_woodpat
-> {
+14407,14408c14428
+<  name MAshaft_wood_mat
+<  Kd 1
+---
 >  name MAshaft_wood_pat
->  Kd_color 0.639999986 0.395000011 0.127000004
+14410,14411c14430,14442
+<  Ks 0
+<  Ks_color 1 1 1
+---
 >  magnitude 0.3
 >  direction "zgrain"
 >  scale 0.03048 0.03048 0.03048 # 0.1 * 0.3048 (feet to meters)
 >  rotation 0 0 0
 > }
 > 
-14409c14440
-<  Kd_color 0.639999986 0.395000011 0.127000004
----
->  Kd_color MAshaft_wood_pat # 0.639999986 0.395000011 0.127000004
-15634a15666,15682
-> rad_dirt
+> standard_surface
 > {
+>  name MAshaft_wood_mat
+>  base 1
+>  base_color 0.639999986 0.395000011 0.127000004 # MAshaft_wood_pat # 0.639999986 0.395000011 0.127000004
+>  specular 0
+>  specular_color 1 1 1
+14588c14619
+< standard
+---
+> standard_surface
+14591,14594c14622,14625
+<  Kd 0.5
+<  Kd_color 0.449999988 0.449999988 0.449999988
+<  Ks 0
+<  Ks_color 1 1 1
+---
+>  base 0.5
+>  base_color 0.449999988 0.449999988 0.449999988
+>  specular 0
+>  specular_color 1 1 1
+14596,14597c14627,14629
+<  Kr 0.5
+<  Kr_color 0.449999988 0.449999988 0.449999988
+---
+>  metalness 0.5
+>  ##Kr 0.5
+>  ##Kr_color 0.449999988 0.449999988 0.449999988
+15269c15301
+< standard
+---
+> standard_surface
+15272,15275c15304,15307
+<  Kd 0.100000001
+<  Kd_color 0.400000006 0.400000006 0.400000006
+<  Ks 0
+<  Ks_color 1 1 1
+---
+>  base 0.899999976 # 0.100000001
+>  base_color 0.400000006 0.400000006 0.400000006
+>  specular 0
+>  specular_color 1 1 1
+15277,15278c15309,15311
+<  Kr 0.899999976
+<  Kr_color 0.400000006 0.400000006 0.400000006
+---
+>  metalness 0.899999976
+>  ##Kr 0.899999976
+>  ##Kr_color 0.400000006 0.400000006 0.400000006
+15518c15551
+< standard
+---
+> standard_surface
+15521,15524c15554,15557
+<  Kd 0.5
+<  Kd_color 0.430000007 0.430000007 0.430000007
+<  Ks 0
+<  Ks_color 1 1 1
+---
+>  base 0.5
+>  base_color 0.430000007 0.430000007 0.430000007
+>  specular 0
+>  specular_color 1 1 1
+15526,15527c15559,15561
+<  Kr 0.5
+<  Kr_color 0.430000007 0.430000007 0.430000007
+---
+>  metalness 0.5
+>  ##Kr 0.5
+>  ##Kr_color 0.430000007 0.430000007 0.430000007
+15635c15669
+< standard
+---
+> rad_dirt
+15637,15638c15671
+<  name MAwhite_mat
+<  Kd 1
+---
 >  name MAwhite_pat1
->  Kd_color 0.515999973 0.449999988 0.340000004
+15640,15641c15673,15692
+<  Ks 0
+<  Ks_color 1 1 1
+---
 >  dirtiness 0.4
 >  scale 0.0009144 0.0009144 0.0009144 # 0.003 * 0.3048 (feet to meters)
 >  rotation 0 0 0
@@ -109,74 +415,246 @@
 >  rotation 90 0 0
 > }
 > 
-15639c15687
-<  Kd_color 0.515999973 0.449999988 0.340000004
----
->  Kd_color MAwhite_pat2 # 0.515999973 0.449999988 0.340000004
-15949a15998,16007
-> rad_woodpat
+> standard_surface
 > {
+>  name MAwhite_mat
+>  base 1
+>  base_color 0.515999973 0.449999988 0.340000004 # MAwhite_pat2 # 0.515999973 0.449999988 0.340000004
+>  specular 0
+>  specular_color 1 1 1
+15711c15762
+< standard
+---
+> standard_surface
+15714,15717c15765,15768
+<  Kd 1
+<  Kd_color 0.123000003 0.263000011 0.150999993
+<  Ks 0
+<  Ks_color 1 1 1
+---
+>  base 1
+>  base_color 0.123000003 0.263000011 0.150999993
+>  specular 0
+>  specular_color 1 1 1
+15950c16001
+< standard
+---
+> rad_woodpat
+15952,15953c16003
+<  name MAzwood_base_mat
+<  Kd 0.949999988
+---
 >  name MAzwood_base_pat
->  Kd_color 0.692300022 0.426299989 0.174999997
+15955,15956c16005,16017
+<  Ks 0.0500000007
+<  Ks_color 1 1 1
+---
 >  magnitude 0.3
 >  direction "zgrain"
 >  scale 0.006096 0.006096 0.006096 # 0.02 * 0.3048 (feet to meters)
 >  rotation 0 0 0
 > }
 > 
-15954c16012
-<  Kd_color 0.692300022 0.426299989 0.174999997
----
->  Kd_color MAzwood_base_pat # 0.692300022 0.426299989 0.174999997
-16043a16102,16111
-> rad_woodpat
+> standard_surface
 > {
+>  name MAzwood_base_mat
+>  base 0.949999988
+>  base_color 0.692300022 0.426299989 0.174999997 # MAzwood_base_pat # 0.692300022 0.426299989 0.174999997
+>  specular 0.0500000007
+>  specular_color 1 1 1
+16044c16105
+< standard
+---
+> rad_woodpat
+16046,16047c16107
+<  name MAxwood_base_mat
+<  Kd 0.949999988
+---
 >  name MAxwood_base_pat
->  Kd_color 0.692300022 0.426299989 0.174999997
+16049,16050c16109,16121
+<  Ks 0.0500000007
+<  Ks_color 1 1 1
+---
 >  magnitude 0.3
 >  direction "xgrain"
 >  scale 0.006096 0.006096 0.006096 # 0.02 * 0.3048 (feet to meters)
 >  rotation 0 0 0
 > }
 > 
-16048c16116
-<  Kd_color 0.692300022 0.426299989 0.174999997
----
->  Kd_color MAxwood_base_pat # 0.692300022 0.426299989 0.174999997
-18181a18250,18259
-> rad_woodpat
+> standard_surface
 > {
+>  name MAxwood_base_mat
+>  base 0.949999988
+>  base_color 0.692300022 0.426299989 0.174999997 # MAxwood_base_pat # 0.692300022 0.426299989 0.174999997
+>  specular 0.0500000007
+>  specular_color 1 1 1
+16099c16170
+< standard
+---
+> standard_surface
+16102,16105c16173,16176
+<  Kd 1
+<  Kd_color 0.600000024 0.600000024 0.600000024
+<  Ks 0
+<  Ks_color 1 1 1
+---
+>  base 1
+>  base_color 0.600000024 0.600000024 0.600000024
+>  specular 0
+>  specular_color 1 1 1
+16626c16697
+< standard
+---
+> standard_surface
+16629,16632c16700,16703
+<  Kd 0.300000012
+<  Kd_color 0.708999991 0.708999991 0.708999991
+<  Ks 0
+<  Ks_color 1 1 1
+---
+>  base 0.699999988 # 0.300000012
+>  base_color 0.708999991 0.708999991 0.708999991
+>  specular 0
+>  specular_color 1 1 1
+16634,16635c16705,16707
+<  Kr 0.699999988
+<  Kr_color 0.708999991 0.708999991 0.708999991
+---
+>  metalness 0.699999988
+>  ##Kr 0.699999988
+>  ##Kr_color 0.708999991 0.708999991 0.708999991
+18182c18254
+< standard
+---
+> rad_woodpat
+18184,18185c18256
+<  name MAywood_base_mat
+<  Kd 0.949999988
+---
 >  name MAywood_base_pat
->  Kd_color 0.692300022 0.426299989 0.174999997
+18187,18188c18258,18270
+<  Ks 0.0500000007
+<  Ks_color 1 1 1
+---
 >  magnitude 0.3
 >  direction "ygrain"
 >  scale 0.006096 0.006096 0.006096 # 0.02 * 0.3048 (feet to meters)
 >  rotation 0 0 0
 > }
 > 
-18186c18264
-<  Kd_color 0.692300022 0.426299989 0.174999997
----
->  Kd_color MAywood_base_pat # 0.692300022 0.426299989 0.174999997
-19065a19144,19152
-> rad_speck
+> standard_surface
 > {
+>  name MAywood_base_mat
+>  base 0.949999988
+>  base_color 0.692300022 0.426299989 0.174999997 # MAywood_base_pat # 0.692300022 0.426299989 0.174999997
+>  specular 0.0500000007
+>  specular_color 1 1 1
+18362c18444
+< standard
+---
+> standard_surface
+18365,18368c18447,18450
+<  Kd 0.980000019
+<  Kd_color 0.699999988 0.699999988 0.699999988
+<  Ks 0.0199999996
+<  Ks_color 1 1 1
+---
+>  base 0.980000019
+>  base_color 0.699999988 0.699999988 0.699999988
+>  specular 0.0199999996
+>  specular_color 1 1 1
+18518c18600
+< standard
+---
+> standard_surface
+18521,18524c18603,18606
+<  Kd 0.970000029
+<  Kd_color 0.0689999983 0.0689999983 0.0689999983
+<  Ks 0.0299999993
+<  Ks_color 1 1 1
+---
+>  base 0.970000029
+>  base_color 0.0689999983 0.0689999983 0.0689999983
+>  specular 0.0299999993
+>  specular_color 1 1 1
+18987c19069
+< standard
+---
+> standard_surface
+18990,18993c19072,19075
+<  Kd 1
+<  Kd_color 0.639999986 0.600000024 0.610000014
+<  Ks 0
+<  Ks_color 1 1 1
+---
+>  base 1
+>  base_color 0.639999986 0.600000024 0.610000014
+>  specular 0
+>  specular_color 1 1 1
+19015c19097
+< standard
+---
+> standard_surface
+19018,19021c19100,19103
+<  Kd 0
+<  Kd_color 0.959999979 0.959999979 0.959999979
+<  Ks 0.0799999982
+<  Ks_color 1 1 1
+---
+>  base 0
+>  base_color 0.959999979 0.959999979 0.959999979
+>  specular 0.0799999982
+>  specular_color 1 1 1
+19023,19027c19105,19109
+<  Kr 0.0799999982
+<  Kr_color 1 1 1
+<  Kt 0.920000017
+<  Kt_color 1 1 1
+<  IOR 1.51999998
+---
+>  ##Kr 0.0799999982
+>  ##Kr_color 1 1 1
+>  transmission 0.920000017
+>  transmission_color 1 1 1
+>  specular_IOR 1.51999998
+19066c19148
+< standard
+---
+> rad_speck
+19068,19069c19150
+<  name MAceiling_mat
+<  Kd 1
+---
 >  name MAceiling_pat
->  Kd_color 0.899999976 0.899999976 0.899999976
+19071,19072c19152,19163
+<  Ks 0
+<  Ks_color 1 1 1
+---
 >  brightness 0.1
 >  scale 0.01524 0.01524 0.01524 # 0.05 * 0.3048 (feet to meters)
 >  rotation 0 0 0
 > }
 > 
-19070c19157
-<  Kd_color 0.899999976 0.899999976 0.899999976
----
->  Kd_color MAceiling_pat # 0.899999976 0.899999976 0.899999976
-19092a19180,19196
-> rad_dirt
+> standard_surface
 > {
+>  name MAceiling_mat
+>  base 1
+>  base_color 0.899999976 0.899999976 0.899999976 # MAceiling_pat # 0.899999976 0.899999976 0.899999976
+>  specular 0
+>  specular_color 1 1 1
+19093c19184
+< standard
+---
+> rad_dirt
+19095,19096c19186
+<  name MAfloor_mat
+<  Kd 1
+---
 >  name MAfloor_pat1
->  Kd_color 0.180000007 0.0649999976 0.0579999983
+19098,19099c19188,19207
+<  Ks 0
+<  Ks_color 1 1 1
+---
 >  dirtiness 0.15
 >  scale 0.04572 0.04572 0.04572 # 0.15 * 0.3048 (feet to meters)
 >  rotation 0 0 0
@@ -190,151 +668,266 @@
 >  rotation 0 0 0
 > }
 > 
-19097c19201
-<  Kd_color 0.180000007 0.0649999976 0.0579999983
+> standard_surface
+> {
+>  name MAfloor_mat
+>  base 1
+>  base_color 0.180000007 0.0649999976 0.0579999983 # MAfloor_pat2 # 0.180000007 0.0649999976 0.0579999983
+>  specular 0
+>  specular_color 1 1 1
+19121c19229
+< standard
 ---
->  Kd_color MAfloor_pat2 # 0.180000007 0.0649999976 0.0579999983
-19611c19715
+> standard_surface
+19124,19127c19232,19235
+<  Kd 0.5
+<  Kd_color 0.370000005 0.370000005 0.370000005
+<  Ks 0
+<  Ks_color 1 1 1
+---
+>  base 0.5
+>  base_color 0.370000005 0.370000005 0.370000005
+>  specular 0
+>  specular_color 1 1 1
+19129,19130c19237,19239
+<  Kr 0.5
+<  Kr_color 0.370000005 0.370000005 0.370000005
+---
+>  metalness 0.5
+>  ##Kr 0.5
+>  ##Kr_color 0.370000005 0.370000005 0.370000005
+19170c19279
+< standard
+---
+> standard_surface
+19173,19176c19282,19285
+<  Kd 0.980000019
+<  Kd_color 0.74000001 0.400000006 0.159999996
+<  Ks 0.0199999996
+<  Ks_color 1 1 1
+---
+>  base 0.980000019
+>  base_color 0.74000001 0.400000006 0.159999996
+>  specular 0.0199999996
+>  specular_color 1 1 1
+19608c19717
+< ray_switch
+---
+> ray_switch_rgba
+19611c19720
 <  camera 1.54999995 1.54999995 1.54999995 1
 ---
 >  camera 1.0 1.0 1.0 1
-19613,19614c19717,19718
+19613,19616c19722,19725
 <  reflection 1.54999995 1.54999995 1.54999995 1
 <  refraction 1.54999995 1.54999995 1.54999995 1
----
->  reflection 1.0 1.0 1.0 1
->  refraction 1.0 1.0 1.0 1
-19616c19720
+<  diffuse 0 0 0 0
 <  glossy 1.54999995 1.54999995 1.54999995 1
 ---
->  glossy 1.0 1.0 1.0 1
-19624c19728
+>  specular_reflection 1.0 1.0 1.0 1
+>  specular_transmission 1.0 1.0 1.0 1
+>  diffuse_reflection 0 0 0 0
+>  diffuse_transmission 1.0 1.0 1.0 1
+19624c19733
 <  intensity 1.54999995
 ---
 >  intensity 3.1 # 1.54999995
-19657c19761
+19657c19766
 <  intensity 1.54999995
 ---
 >  intensity 3.1 # 1.54999995
-19690c19794
+19690c19799
 <  intensity 1.54999995
 ---
 >  intensity 3.1 # 1.54999995
-19723c19827
+19723c19832
 <  intensity 1.54999995
 ---
 >  intensity 3.1 # 1.54999995
-19756c19860
+19756c19865
 <  intensity 1.54999995
 ---
 >  intensity 3.1 # 1.54999995
-19789c19893
+19789c19898
 <  intensity 1.54999995
 ---
 >  intensity 3.1 # 1.54999995
-19822c19926
+19822c19931
 <  intensity 1.54999995
 ---
 >  intensity 3.1 # 1.54999995
-19855c19959
+19855c19964
 <  intensity 1.54999995
 ---
 >  intensity 3.1 # 1.54999995
-19888c19992
+19888c19997
 <  intensity 1.54999995
 ---
 >  intensity 3.1 # 1.54999995
-19921c20025
+19921c20030
 <  intensity 1.54999995
 ---
 >  intensity 3.1 # 1.54999995
-19954c20058
+19954c20063
 <  intensity 1.54999995
 ---
 >  intensity 3.1 # 1.54999995
-19987c20091
+19987c20096
 <  intensity 1.54999995
 ---
 >  intensity 3.1 # 1.54999995
-20020c20124
+20020c20129
 <  intensity 1.54999995
 ---
 >  intensity 3.1 # 1.54999995
-20053c20157
+20053c20162
 <  intensity 1.54999995
 ---
 >  intensity 3.1 # 1.54999995
-20086c20190
+20086c20195
 <  intensity 1.54999995
 ---
 >  intensity 3.1 # 1.54999995
-20119c20223
+20119c20228
 <  intensity 1.54999995
 ---
 >  intensity 3.1 # 1.54999995
-20152c20256
+20152c20261
 <  intensity 1.54999995
 ---
 >  intensity 3.1 # 1.54999995
-20185c20289
+20185c20294
 <  intensity 1.54999995
 ---
 >  intensity 3.1 # 1.54999995
-20218c20322
+20218c20327
 <  intensity 1.54999995
 ---
 >  intensity 3.1 # 1.54999995
-20251c20355
+20251c20360
 <  intensity 1.54999995
 ---
 >  intensity 3.1 # 1.54999995
-20284c20388
+20284c20393
 <  intensity 1.54999995
 ---
 >  intensity 3.1 # 1.54999995
-20317c20421
+20317c20426
 <  intensity 1.54999995
 ---
 >  intensity 3.1 # 1.54999995
-20350c20454
+20350c20459
 <  intensity 1.54999995
 ---
 >  intensity 3.1 # 1.54999995
-20383c20487
+20383c20492
 <  intensity 1.54999995
 ---
 >  intensity 3.1 # 1.54999995
-20411a20516,20525
+20412c20521
+< standard
+---
 > rad_speck
-> {
+20414,20415c20523
+<  name MAcurtain_mat
+<  Kd 1
+---
 >  name MAcurtain_pat
->  Kd_color 0.600000024 0.600000024 0.600000024
+20417,20418c20525,20537
+<  Ks 0
+<  Ks_color 1 1 1
+---
 >  brightness 0.2
 >  use_Pref_matrix false
 >  scale 0.006096 0.006096 0.006096 # 0.02 * 0.3048 (feet to meters)
 >  rotation 0 0 0
 > }
 > 
-20416c20530
-<  Kd_color 0.600000024 0.600000024 0.600000024
----
->  Kd_color MAcurtain_pat # 0.600000024 0.600000024 0.600000024
-51333a51448,51457
-> rad_woodpat
+> standard_surface
 > {
+>  name MAcurtain_mat
+>  base 1
+>  base_color 0.600000024 0.600000024 0.600000024 # MAcurtain_pat # 0.600000024 0.600000024 0.600000024
+>  specular 0
+>  specular_color 1 1 1
+50464c50583
+< standard
+---
+> standard_surface
+50467,50470c50586,50589
+<  Kd 0.800000012
+<  Kd_color 0.800000012 0.800000012 0.800000012
+<  Ks 0.5
+<  Ks_color 1 1 1
+---
+>  base 0.800000012
+>  base_color 0.800000012 0.800000012 0.800000012
+>  specular 0.5
+>  specular_color 1 1 1
+50507c50626
+< standard
+---
+> standard_surface
+50510,50513c50629,50632
+<  Kd 0.99000001
+<  Kd_color 0.0500000007 0.0500000007 0.0500000007
+<  Ks 0.00999999978
+<  Ks_color 1 1 1
+---
+>  base 0.99000001
+>  base_color 0.0500000007 0.0500000007 0.0500000007
+>  specular 0.00999999978
+>  specular_color 1 1 1
+50941c51060
+< standard
+---
+> standard_surface
+50944,50947c51063,51066
+<  Kd 0.0500000007
+<  Kd_color 0.600000024 0.600000024 0.600000024
+<  Ks 0
+<  Ks_color 1 1 1
+---
+>  base 0.949999988 # 0.0500000007
+>  base_color 0.600000024 0.600000024 0.600000024
+>  specular 0
+>  specular_color 1 1 1
+50949,50950c51068,51070
+<  Kr 0.949999988
+<  Kr_color 0.600000024 0.600000024 0.600000024
+---
+>  metalness 0.949999988
+>  ##Kr 0.949999988
+>  ##Kr_color 0.600000024 0.600000024 0.600000024
+51334c51454
+< standard
+---
+> rad_woodpat
+51336,51337c51456
+<  name MAarm_mat
+<  Kd 0.949999988
+---
 >  name MAarm_pat
->  Kd_color 0.479999989 0.236000001 0.120999999
+51339,51340c51458,51470
+<  Ks 0.0500000007
+<  Ks_color 1 1 1
+---
 >  magnitude 0.8
 >  direction "ygrain"
 >  scale 0.09144 0.09144 0.09144 # 0.3 * 0.3048 (feet to meters)
 >  rotation -4.43 0 0
 > }
 > 
-51338c51462
-<  Kd_color 0.479999989 0.236000001 0.120999999
+> standard_surface
+> {
+>  name MAarm_mat
+>  base 0.949999988
+>  base_color 0.479999989 0.236000001 0.120999999 # MAarm_pat # 0.479999989 0.236000001 0.120999999
+>  specular 0.0500000007
+>  specular_color 1 1 1
+83305c83435,83445
+< standard
 ---
->  Kd_color MAarm_pat # 0.479999989 0.236000001 0.120999999
-83304a83429,83438
 > rad_woodpat
 > {
 >  name MAchair_ywood_pat
@@ -345,35 +938,148 @@
 >  rotation 0 0 0
 > }
 > 
-83309c83443
+> standard_surface
+83308,83311c83448,83451
+<  Kd 0.980000019
 <  Kd_color 0.5 0.230000004 0.140000001
+<  Ks 0.0199999996
+<  Ks_color 1 1 1
 ---
->  Kd_color MAchair_ywood_pat # 0.5 0.230000004 0.140000001
-83432a83567,83574
+>  base 0.980000019
+>  base_color 0.5 0.230000004 0.140000001 # MAchair_ywood_pat # 0.5 0.230000004 0.140000001
+>  specular 0.0199999996
+>  specular_color 1 1 1
+83433c83573
+< standard
+---
 > rad_upholstery
-> {
+83435,83436c83575
+<  name MAcloth1_mat
+<  Kd 1
+---
 >  name MAcloth1_pat
->  Kd_color 0.980000019 0.182999998 0.165000007
+83438,83439c83577,83587
+<  Ks 0
+<  Ks_color 1 1 1
+---
 >  scale 0.0381 0.0381 0.0381 # 0.125 * 0.3048 (feet to meters)
 >  rotation 0 -45 0
 > }
 > 
-83437c83579
-<  Kd_color 0.980000019 0.182999998 0.165000007
----
->  Kd_color MAcloth1_pat # 0.980000019 0.182999998 0.165000007
-91730a91873,91882
-> rad_woodpat
+> standard_surface
 > {
+>  name MAcloth1_mat
+>  base 1
+>  base_color 0.980000019 0.182999998 0.165000007 # MAcloth1_pat # 0.980000019 0.182999998 0.165000007
+>  specular 0
+>  specular_color 1 1 1
+83624c83772
+< standard
+---
+> standard_surface
+83627,83630c83775,83778
+<  Kd 0.980000019
+<  Kd_color 0.5 0.230000004 0.140000001
+<  Ks 0.00200000009
+<  Ks_color 1 1 1
+---
+>  base 0.980000019
+>  base_color 0.5 0.230000004 0.140000001
+>  specular 0.00200000009
+>  specular_color 1 1 1
+83818c83966
+< standard
+---
+> standard_surface
+83821,83824c83969,83972
+<  Kd 0.980000019
+<  Kd_color 0.5 0.230000004 0.140000001
+<  Ks 0.00200000009
+<  Ks_color 1 1 1
+---
+>  base 0.980000019
+>  base_color 0.5 0.230000004 0.140000001
+>  specular 0.00200000009
+>  specular_color 1 1 1
+90398c90546
+< standard
+---
+> standard_surface
+90401,90404c90549,90552
+<  Kd 1
+<  Kd_color 0.0599999987 0.0599999987 0.0599999987
+<  Ks 0
+<  Ks_color 1 1 1
+---
+>  base 1
+>  base_color 0.0599999987 0.0599999987 0.0599999987
+>  specular 0
+>  specular_color 1 1 1
+91731c91879
+< standard
+---
+> rad_woodpat
+91733,91734c91881
+<  name MAtable_mat
+<  Kd 0.995000005
+---
 >  name MAtable_pat
->  Kd_color 0.289999992 0.150000006 0.129999995
+91736,91737c91883,91895
+<  Ks 0.00499999989
+<  Ks_color 1 1 1
+---
 >  magnitude 0.6
 >  direction "xgrain"
 >  scale 0.12192 0.12192 0.12192 # 0.4 * 0.3048 (feet to meters)
 >  rotation 0 0 0
 > }
 > 
-91735c91887
-<  Kd_color 0.289999992 0.150000006 0.129999995
+> standard_surface
+> {
+>  name MAtable_mat
+>  base 0.995000005
+>  base_color 0.289999992 0.150000006 0.129999995 # MAtable_pat # 0.289999992 0.150000006 0.129999995
+>  specular 0.00499999989
+>  specular_color 1 1 1
+93708c93866
+< standard
 ---
->  Kd_color MAtable_pat # 0.289999992 0.150000006 0.129999995
+> standard_surface
+93711,93714c93869,93872
+<  Kd 1
+<  Kd_color 0.639999986 0.439999998 0.316000015
+<  Ks 0
+<  Ks_color 1 1 1
+---
+>  base 1
+>  base_color 0.639999986 0.439999998 0.316000015
+>  specular 0
+>  specular_color 1 1 1
+94362c94520
+< standard
+---
+> standard_surface
+94365,94368c94523,94526
+<  Kd 0.980000019
+<  Kd_color 0.289999992 0.150000006 0.129999995
+<  Ks 0.0199999996
+<  Ks_color 1 1 1
+---
+>  base 0.980000019
+>  base_color 0.289999992 0.150000006 0.129999995
+>  specular 0.0199999996
+>  specular_color 1 1 1
+94453c94611
+< standard
+---
+> standard_surface
+94456,94459c94614,94617
+<  Kd 0.980000019
+<  Kd_color 0.289999992 0.150000006 0.129999995
+<  Ks 0.0199999996
+<  Ks_color 1 1 1
+---
+>  base 0.980000019
+>  base_color 0.289999992 0.150000006 0.129999995
+>  specular 0.0199999996
+>  specular_color 1 1 1
