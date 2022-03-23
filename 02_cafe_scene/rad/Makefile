@@ -22,10 +22,10 @@ lights1: clean
 	rad -n lights1.rif > lights1.sh
 	sh lights1.sh
 	ra_tiff lights1_Camera.hdr lights1.tiff
-	imf_copy lights1.tiff lights1.png
+	convert lights1.tiff lights1.png
 
 lights2: clean
 	rad -n lights2.rif > lights2.sh
 	sh lights2.sh
 	ra_tiff lights2_Camera.hdr lights2.tiff
-	imf_copy lights2.tiff lights2.png
+	convert lights2.tiff lights2.png
