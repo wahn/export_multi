@@ -106,6 +106,7 @@ driver_exr
 polymesh
 {
  name MELight
+ smoothing off
  matrix
  -1 8.74227766e-08 0 0
  3.82137135e-15 4.37113883e-08 1 0
@@ -145,6 +146,7 @@ mesh_light
 polymesh
 {
  name MElarge_box
+ smoothing off
  matrix
  -48.8863716 157.591644 -2.88495157e-05 0
  -3.31803108e-06 5.93821751e-05 330 0
@@ -177,6 +179,7 @@ standard_surface
 polymesh
 {
  name MEsmall_box
+ smoothing off
  matrix
  -79.0550308 23.5913849 3.09363463e-06 0
  1.18335277e-06 -6.85313262e-06 82.5000076 0
@@ -200,6 +203,7 @@ polymesh
 polymesh
 {
  name MEcornell_box
+ smoothing off
  matrix
  -1 -1.50995803e-07 0 0
  1.13998658e-14 -7.54979013e-08 1 0
